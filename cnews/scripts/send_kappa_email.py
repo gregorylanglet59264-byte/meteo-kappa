@@ -8,6 +8,11 @@ import datetime
 from email.utils import formatdate
 import unicodedata
 
+def get_french_date_string(date_obj):
+    months = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+    weekdays = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+    return f"{weekdays[date_obj.weekday()]} {date_obj.day} {months[date_obj.month - 1]} {date_obj.year}"
+
 def send_email(body_text, subject, recipients_str):
     gmail_email = os.environ.get("GMAIL_EMAIL", "langlet.gregory@gmail.com")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
@@ -24,7 +29,7 @@ def send_email(body_text, subject, recipients_str):
     # Nettoyage ASCII du sujet pour éviter les rejets SMTP
     clean_subj = unicodedata.normalize('NFKD', subject).encode('ASCII', 'ignore').decode('ASCII')
     
-    # Corps textuel en Base64
+    # Corps HTML en Base64
     body_text = body_text.replace('\ufeff', '').replace('\ufffe', '')
     text_b64 = base64.b64encode(body_text.encode('utf-8')).decode('ascii')
     
@@ -39,7 +44,7 @@ def send_email(body_text, subject, recipients_str):
         f'Content-Type: multipart/mixed; boundary="{boundary}"\r\n'
         f'\r\n'
         f'--{boundary}\r\n'
-        f'Content-Type: text/plain; charset=utf-8\r\n'
+        f'Content-Type: text/html; charset=utf-8\r\n'
         f'Content-Transfer-Encoding: base64\r\n'
         f'\r\n'
         f'{text_b64}\r\n'
@@ -120,19 +125,22 @@ def main():
     else:
         print(f"Erreur : {json_path} introuvable. Impossible de créer le ZIP.")
 
-    # Ajouter le lien de téléchargement au début du rapport
+    # Génération du lien de téléchargement
     download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/raw/main/cnews/{zip_name}"
-    email_intro = (
-        f"=== AUTOMATISATION METEO KAPPA ===\n"
-        f"Bonjour,\n\n"
-        f"Le bulletin météo automatique pour demain ({tomorrow.strftime('%d/%m/%Y')}) a été généré.\n\n"
-        f"🔗 Télécharger le fichier ZIP des données : {download_url}\n\n"
-        f"==================================================\n"
+    
+    # Corps HTML de l'e-mail avec style épuré et bouton/lien masqué
+    email_body = (
+        f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"
+        f"Bonjour,<br><br>"
+        f"Le bulletin météo automatique pour demain (<strong>{get_french_date_string(tomorrow)}</strong>) a été généré avec succès.<br><br>"
+        f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
+        f"Cordialement,<br>"
+        f"L'automatisation Météo Kappa"
+        f"</body></html>"
     )
-    email_body = email_intro
         
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
-    subject = f"Bulletins Météo Kappa - {tomorrow.strftime('%d/%m/%Y')}"
+    subject = f"Vos bulletins radio du {get_french_date_string(tomorrow)}"
     
     recipients = os.environ.get("RECIPIENT_EMAILS", "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr")
     send_email(email_body, subject, recipients)

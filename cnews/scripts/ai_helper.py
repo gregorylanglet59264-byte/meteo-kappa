@@ -584,16 +584,39 @@ Données météo réelles par ville JOUR 1 ({date_j1}) :
 Données météo réelles par ville JOUR 2 ({date_j2}) :
 {j2_data if j2_data else "(données non disponibles)"}
 
-CONSIGNES ABSOLUES DE JOURNALISTE RADIO :
-1. Style parlé et fluide : Utilise des tournures radiophoniques naturelles (ex: "Du côté des températures...", "Le réveil s'annonce...", "Une journée placée sous le signe de...", "Nous retrouvons...", "Le mercure s'affole..."). Évite de faire des listes de villes brutales, intègre les chiffres naturellement dans ton récit.
-2. Causalité & Synoptique : Explique brièvement mais avec expertise la cause météorologique en début de bulletin (dorsale anticyclonique des Açores, flux océanique perturbé de sud-ouest, marais barométrique estival, talweg d'altitude, advection d'air subtropical).
-3. Nébulosité précise : Qualifie précisément le ciel et les nuages (cirrus d'altitude, cumulus bourgeonnants de l'après-midi, bancs de brouillards côtiers, grisailles matinales).
-4. Vents & Géographie : Contextualise le vent selon la région de la radio (brise marine rafraîchissante, mistral sensible, brises thermiques en Manche).
-5. Données exactes : Utilise UNIQUEMENT les températures officielles de Météo-France et d'Open-Meteo fournies ci-dessus (aucun chiffre inventé, aucun décimal).
-6. Variété des villes : Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. Varie ton choix de villes pour chaque bulletin pour ne pas lasser l'auditeur.
-7. Rythme radio : Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme de lecture confortable d'environ 1 minute à l'antenne.
-8. Repères temporels stricts : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...".
-9. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France), tu DOIS obligatoirement alerter les auditeurs de façon explicite et dynamique dans `summaryAfternoon` en précisant le risque de violentes averses orageuses locales, d'activité électrique et de fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
+CONSIGNES DE JOURNALISTE RADIO & CLÉ DE LECTURE DES CARTES :
+
+=== GUIDE DE RECONNAISSANCE DES PICTOGRAMMES MÉTÉO SUR LES IMAGES ===
+Pour analyser les images des cartes fournies, identifie précisément les fichiers images des pictogrammes affichés sur chaque ville :
+- "orages.png" (CRITIQUE) : Représente un nuage sombre zébré d'un éclair (foudre) blanc/jaune. Signifie un risque d'orages !
+- "Orages accompagnés de grêle.png" : Représente un nuage avec un éclair et des grêlons (petits points blancs/noirs).
+- "P9 (averses).png" : Un nuage blanc avec des gouttes de pluie et un soleil derrière.
+- "P10 (pluies faibles).png" : Un nuage blanc avec quelques fines gouttes de pluie.
+- "P11 (fortes pluies).png" : Un nuage gris avec de nombreuses lignes de pluie épaisses et denses.
+- "brouillards.png" : Trois lignes horizontales superposées sans nuage.
+- "P1 (soleil).png" : Un grand soleil jaune.
+- "P2 (peu nuageux).png" : Un soleil avec un petit nuage blanc devant.
+- "P8 (nuageux).png" : Un soleil masqué de moitié par un nuage blanc.
+- "P4 (très nuageux).png" : Un nuage blanc couvrant.
+- "P5 (couvert).png" : Un double nuage gris.
+- "P6 (soleil voilé).png" : Un soleil rayé de lignes horizontales très fines.
+- "P12 (neige).png" : Un nuage blanc avec des flocons de neige (étoiles).
+
+Prends ton temps pour examiner chaque image de carte pour repérer ces pictogrammes (surtout les orages "orages.png" et "Orages accompagnés de grêle.png") sur toutes les régions !
+
+=== RÈGLES DE STYLE ET MOTS INTERDITS (STRICT ET ABSOLU) ===
+1. INTERDICTION DE NOMMER LE SUPPORT : Tu es à la radio. Tes auditeurs ne voient pas les images. Par conséquent, il est FORMELLEMENT INTERDIT d'utiliser les mots suivants dans tes commentaires :
+   ❌ MOTS INTERDITS : "carte(s)", "visuel(s)", "image(s)", "graphique(s)", "le montre", "le visuel", "comme on le voit", "comme le montre", "ci-dessous", "pictogramme(s)", "icône(s)", "code(s)", "nos secteurs", "nos zones".
+   Fais comme si tu parlais en direct de la météo des régions sans aucun écran devant toi.
+2. Style parlé et fluide : Utilise des tournures de présentateur radio senior (ex: "Du côté des températures...", "Le réveil s'annonce...", "Une journée placée sous le signe de...", "Nous retrouvons...", "Le mercure s'affole..."). Évite de faire des listes de villes brutales, intègre les chiffres naturellement dans ton récit.
+3. Causalité & Synoptique : Explique brièvement mais avec expertise la cause météorologique en début de bulletin (dorsale anticyclonique des Açores, flux océanique perturbé de sud-ouest, marais barométrique estival, talweg d'altitude, advection d'air subtropical).
+4. Nébulosité précise : Qualifie précisément le ciel et les nuages (cirrus d'altitude, cumulus bourgeonnants de l'après-midi, bancs de brouillards côtiers, grisailles matinales).
+5. Vents & Géographie : Contextualise le vent selon la région de la radio (brise marine rafraîchissante, mistral sensible, brises thermiques en Manche).
+6. Données exactes : Utilise UNIQUEMENT les températures officielles de Météo-France et d'Open-Meteo fournies ci-dessus (aucun chiffre inventé, aucun décimal).
+7. Variété des villes : Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. Varie ton choix de villes pour chaque bulletin pour ne pas lasser l'auditeur.
+8. Rythme radio : Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme de lecture confortable d'environ 1 minute à l'antenne.
+9. Repères temporels stricts : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...".
+10. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France, ou si tu vois le pictogramme d'orage sur l'image), tu DOIS obligatoirement alerter les auditeurs de façon explicite et dynamique dans `summaryAfternoon` en précisant le risque de violentes averses orageuses locales, d'activité électrique et de fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
 
 
 TU DOIS OBLIGATOIREMENT GÉNÉRER LES 6 BALISES XML DANS TA RÉPONSE, DANS CET ORDRE EXACT :
