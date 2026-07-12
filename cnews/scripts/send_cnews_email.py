@@ -77,9 +77,9 @@ def run_command(cmd, cwd):
 
 def main():
     scripts_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.abspath(os.path.join(scripts_dir, ".."))
-    cnews_dir = os.path.join(project_root, "meteo_cnews_2")
-    cartes_dir = os.path.join(project_root, "cartes_alertes")
+    repo_root = os.path.abspath(os.path.join(scripts_dir, "..", ".."))
+    cnews_dir = os.path.join(repo_root, "meteo_cnews_2")
+    cartes_dir = os.path.join(repo_root, "cartes_alertes")
     if not os.path.exists(cartes_dir):
         cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
         
