@@ -61,7 +61,20 @@ def get_french_date_string(date_obj, include_year=True):
         return f"{weekday} {day} {month}"
 
 def update_form_dates_locally(form, day_offset):
-    today = datetime.date.today()
+    try:
+        from zoneinfo import ZoneInfo
+    except ImportError:
+        try:
+            from backports.zoneinfo import ZoneInfo
+        except ImportError:
+            ZoneInfo = None
+
+    if ZoneInfo:
+        PARIS_TZ = ZoneInfo("Europe/Paris")
+        today = datetime.datetime.now(PARIS_TZ).date()
+    else:
+        today = datetime.date.today()
+
     date_j1 = today + datetime.timedelta(days=day_offset)
     date_j2 = today + datetime.timedelta(days=day_offset + 1)
     
@@ -76,7 +89,20 @@ def update_form_dates_locally(form, day_offset):
 def save_vision_forecast_report(clients, output_filename, day_offset):
     """Sauvegarde dans un fichier texte structuré l'intégralité des prévisions et commentaires visuels par carte pour chaque client."""
     report_lines = []
-    today = datetime.date.today()
+    try:
+        from zoneinfo import ZoneInfo
+    except ImportError:
+        try:
+            from backports.zoneinfo import ZoneInfo
+        except ImportError:
+            ZoneInfo = None
+
+    if ZoneInfo:
+        PARIS_TZ = ZoneInfo("Europe/Paris")
+        today = datetime.datetime.now(PARIS_TZ).date()
+    else:
+        today = datetime.date.today()
+
     d1 = today + datetime.timedelta(days=day_offset)
     date_str = get_french_date_string(d1, include_year=True)
     
@@ -259,7 +285,18 @@ def main():
                 
             img_forets = get_base64_image(forets_path)
             if img_forets:
-                date_j1 = datetime.date.today() + datetime.timedelta(days=args.day_offset)
+                try:
+                    from zoneinfo import ZoneInfo
+                except ImportError:
+                    try:
+                        from backports.zoneinfo import ZoneInfo
+                    except ImportError:
+                        ZoneInfo = None
+                if ZoneInfo:
+                    today_paris = datetime.datetime.now(ZoneInfo("Europe/Paris")).date()
+                else:
+                    today_paris = datetime.date.today()
+                date_j1 = today_paris + datetime.timedelta(days=args.day_offset)
                 day1_str = get_french_date_string(date_j1, include_year=True)
                 c["form"]["forestAlertImageUrl"] = img_forets
                 c["form"]["forestAlertTitle"] = f"🌲 MÉTÉO DES FORÊTS DU {day1_str.upper()}"
