@@ -25,6 +25,7 @@ from datetime import date as dt_date, timedelta
 
 # ── Chemins ──────────────────────────────────────────────────────────────────
 current_dir = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = current_dir
 DB_PATH = os.path.join(current_dir, "data", "meteo_data.db")
 DATA_JSON = os.path.join(current_dir, "meteociel_obs_data.json")
 PORT = 8002
@@ -687,7 +688,9 @@ def main():
     zone_cfg = ZONE_MAP.get(args.zone, ZONE_MAP["france"])
 
     # ── Copier les fonds ──
-    src_dir = r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT"
+    src_dir = os.path.join(PROJECT_DIR, "A_CONSERVER_ABSOLUMENT")
+    if not os.path.exists(src_dir):
+        src_dir = r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT"
     for src_name, dst_name in [("VIGILANCE PORTRAIT.png","bg_portrait.png"),("VIGILANCE PAYSAGE.png","bg_landscape.png")]:
         src = os.path.join(src_dir, src_name)
         if os.path.exists(src):
