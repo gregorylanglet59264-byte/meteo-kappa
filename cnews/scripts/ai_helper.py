@@ -22,7 +22,7 @@ def normalize_city(name):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 OPENROUTER_MODEL = "deepseek/deepseek-v4-flash"
-OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "google/gemini-2.5-flash")
+OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "google/gemini-2.5-pro")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -570,8 +570,8 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     j2_data = fetch_raw_weather(cities, day_offset + 1)
     vig_context = fetch_vigilance_and_national_context(day_offset)
 
-    prompt = f"""Tu es un rédacteur météo professionnel pour la télévision et la radio françaises (CNews, Europe 1).
-Rédige les prévisions météo très détaillées, riches et complètes en français pour le bulletin "{client_name}".
+    prompt = f"""Tu es un journaliste et présentateur météo radio senior (comme Louis Bodin ou Guillaume Séchet) sur une grande antenne nationale ou régionale.
+Rédige les prévisions météo sous forme de chronique parlée, fluide, vivante et très professionnelle en français pour le bulletin "{client_name}". Le ton doit être chaleureux, expert et captivant, parfaitement adapté pour être lu directement au micro d'un studio de radio. Évite les phrases mécaniques ou robotiques, et réalise des transitions naturelles entre les régions.
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
 Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
 
@@ -584,16 +584,17 @@ Données météo réelles par ville JOUR 1 ({date_j1}) :
 Données météo réelles par ville JOUR 2 ({date_j2}) :
 {j2_data if j2_data else "(données non disponibles)"}
 
-CONSIGNES ABSOLUES DE CHEF PRÉVISIONNISTE :
-1. Style radiophonique d'expert professionnel (comme Louis Bodin ou Guillaume Séchet), fluide, immersif et très riche.
-2. Causalité & Synoptique : Explique TOUJOURS la cause météorologique en début de bulletin (dorsale anticyclonique des Açores, flux océanique perturbé de sud-ouest, talweg d'altitude, marais barométrique estival, advection d'air subtropical).
-3. Nébulosité précise : Qualifie l'étage des nuages (cirrus/cirrostratus d'altitude, altocumulus pré-orageux, cumulus bourgeonnants de l'après-midi sur les reliefs, bancs de stratus et grisailles maritimes à l'aube).
-4. Vents & Géographie : Contextualise le vent selon la région de la radio (brises thermiques en Manche/mer du Nord, réchauffement diurne dans l'intérieur, effet de foehn, bise, mistral/tramontane).
-5. Utilise UNIQUEMENT les températures officielles de Météo-France et d'Open-Meteo fournies ci-dessus (aucun chiffre inventé, aucun décimal).
-6. Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. VARIE le choix de ces villes pour ne pas toujours citer les mêmes (fais un mix équilibré entre grandes villes, villes côtières, et petites communes des terres).
-7. Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme radio impeccable.
-8. IMPÉRATIF CRITIQUE : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Ne JAMAIS citer un autre jour !
-9. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France), tu DOIS obligatoirement en parler de façon explicite et alarmante dans `summaryAfternoon` en précisant la localisation des orages, le risque d'averses soutenues et les fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
+CONSIGNES ABSOLUES DE JOURNALISTE RADIO :
+1. Style parlé et fluide : Utilise des tournures radiophoniques naturelles (ex: "Du côté des températures...", "Le réveil s'annonce...", "Une journée placée sous le signe de...", "Nous retrouvons...", "Le mercure s'affole..."). Évite de faire des listes de villes brutales, intègre les chiffres naturellement dans ton récit.
+2. Causalité & Synoptique : Explique brièvement mais avec expertise la cause météorologique en début de bulletin (dorsale anticyclonique des Açores, flux océanique perturbé de sud-ouest, marais barométrique estival, talweg d'altitude, advection d'air subtropical).
+3. Nébulosité précise : Qualifie précisément le ciel et les nuages (cirrus d'altitude, cumulus bourgeonnants de l'après-midi, bancs de brouillards côtiers, grisailles matinales).
+4. Vents & Géographie : Contextualise le vent selon la région de la radio (brise marine rafraîchissante, mistral sensible, brises thermiques en Manche).
+5. Données exactes : Utilise UNIQUEMENT les températures officielles de Météo-France et d'Open-Meteo fournies ci-dessus (aucun chiffre inventé, aucun décimal).
+6. Variété des villes : Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. Varie ton choix de villes pour chaque bulletin pour ne pas lasser l'auditeur.
+7. Rythme radio : Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme de lecture confortable d'environ 1 minute à l'antenne.
+8. Repères temporels stricts : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...".
+9. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France), tu DOIS obligatoirement alerter les auditeurs de façon explicite et dynamique dans `summaryAfternoon` en précisant le risque de violentes averses orageuses locales, d'activité électrique et de fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
+
 
 TU DOIS OBLIGATOIREMENT GÉNÉRER LES 6 BALISES XML DANS TA RÉPONSE, DANS CET ORDRE EXACT :
 <todaySummary>
