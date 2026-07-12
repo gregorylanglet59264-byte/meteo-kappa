@@ -216,8 +216,8 @@ def main():
         f"</body></html>"
     )
     
-    recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
-    print("[SMTP] Envoi uniquement à Grégory (Patrick Wanadoo exclu pour l'instant).")
+    recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
+    print("[SMTP] Envoi à Grégory et Patrick.")
     
     send_email(email_body, subject, recipients)
 
