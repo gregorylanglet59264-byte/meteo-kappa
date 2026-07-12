@@ -96,10 +96,10 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
   position: relative;
 }
 .header-title {
-  font-size:88px; font-weight:900; letter-spacing:-1.5px; line-height:1.05; text-transform:uppercase;
+  font-size:100px; font-weight:900; letter-spacing:-1.5px; line-height:1.05; text-transform:uppercase;
   text-shadow:0 3px 8px rgba(0,0,0,0.6);
 }
-.portrait .header-title { font-size:72px; }
+.portrait .header-title { font-size:80px; }
 
 .header-subtitle {
   display: flex;
@@ -596,13 +596,18 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
 }
 .bilan-card-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  flex-grow: 1;
 }
 .portrait .bilan-card-content {
   width: 48%;
   height: auto;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
 .bilan-card-station {
@@ -611,14 +616,19 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
   font-weight: 700;
   color: rgba(255,255,255,0.85);
   text-transform: uppercase;
-  max-width: 75%;
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
   white-space: nowrap; /* Force une ligne unique */
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
 }
 .portrait .bilan-card-station {
   font-size: 36px;
   max-width: 100%;
+  width: 100%;
+  text-align: center;
   color: rgba(255,255,255,0.65);
 }
 .station-len-long {
@@ -637,11 +647,16 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
   font-family: 'Outfit', sans-serif;
   font-size: 58px;
   font-weight: 900;
-  text-align: right;
+  text-align: center;
   line-height: 1;
   white-space: nowrap;
+  width: 100%;
 }
-.portrait .bilan-card-value { font-size: 92px; }
+.portrait .bilan-card-value {
+  font-size: 92px;
+  text-align: right;
+  width: auto;
+}
 .bilan-card-rec-pill {
   position: absolute;
   top: 12px;
@@ -719,16 +734,16 @@ document.getElementById('logo-img').src = logoImg;
 
 // Parameter style & icon map
 const PARAM_STYLES = {
-  tmax:            { title: 'Chaleur record',        subtitle: 'Températures maximales', theme: 'hot' },
-  tmin:            { title: 'Fraîcheur record',       subtitle: 'Températures minimales',  theme: 'cold' },
+  tmax:            { title: 'Température maximale',   subtitle: 'Températures maximales', theme: 'hot' },
+  tmin:            { title: 'Température minimale',   subtitle: 'Températures minimales',  theme: 'cold' },
   anomalie_tmax:   { title: 'Anomalie Tmax',          subtitle: 'Écart à la normale',      theme: 'hot' },
   anomalie_tmin:   { title: 'Anomalie Tmin',          subtitle: 'Écart à la normale',      theme: 'cold' },
   amplitude:       { title: 'Amplitude thermique',    subtitle: 'Écart Tmax - Tmin',       theme: 'hot' },
   tmoy:            { title: 'Température moyenne',    subtitle: 'Moyenne journalière',     theme: 'hot' },
-  precip:          { title: 'Pluies diluviennes',     subtitle: 'Cumuls de précipitations',theme: 'rain' },
+  precip:          { title: 'Cumul de précipitations', subtitle: 'Cumuls de précipitations',theme: 'rain' },
   anomalie_precip: { title: 'Anomalie pluie',        subtitle: '% normale mensuelle',     theme: 'rain' },
   secheresse:      { title: 'Sécheresse record',      subtitle: 'Stations sans pluie',     theme: 'sun' },
-  gust:            { title: 'Violentes rafales',      subtitle: 'Rafales de vent max.',    theme: 'wind' },
+  gust:            { title: 'Rafales maximales',      subtitle: 'Rafales de vent max.',    theme: 'wind' },
   coups_de_vent:   { title: 'Tempête / Fort vent',    subtitle: 'Rafales les plus fortes', theme: 'wind' },
   records_tmax:    { title: 'Records de chaleur',     subtitle: 'Records battus ou égalés',theme: 'trophy' },
   records_tmin:    { title: 'Records de froid',       subtitle: 'Records battus ou égalés',theme: 'trophy' },
@@ -736,6 +751,7 @@ const PARAM_STYLES = {
   records_gust:    { title: 'Records de vent',        subtitle: 'Records battus ou égalés',theme: 'trophy' },
   records_all:     { title: 'Bilan des records',      subtitle: 'Records battus ou égalés',theme: 'trophy' },
   records_absolus: { title: 'Records absolus',       subtitle: 'Records historiques',     theme: 'trophy' },
+  records_mensuels: { title: 'Records mensuels',       subtitle: 'Records battus ou égalés',theme: 'trophy' },
   bilan_jour:      { title: 'Bilan du jour',          subtitle: 'Les extrêmes nationaux',  theme: 'trophy' }
 };
 
@@ -810,17 +826,15 @@ function applyStyles(cfg) {
       title = "AUCUNE PLUIE";
     } else if (maxPrecip < 5) {
       title = "PLUIES FAIBLES";
-    } else if (maxPrecip < 15) {
-      title = "CUMULS DE PLUIE";
     } else {
-      title = "PLUIES DILUVIENNES";
+      title = "CUMUL DE PRÉCIPITATIONS";
     }
   }
   // Logique pour le vent
   if (p === 'gust') {
     const maxGust = cfg.stations.length > 0 ? cfg.stations[0].value : 0;
     if (maxGust < 60) {
-      title = "VENT MODÉRÉ";
+      title = "RAFALES MAXIMALES";
     } else if (maxGust < 85) {
       title = "COUP DE VENT";
     } else {
@@ -1121,7 +1135,7 @@ function renderBilanJour(cfg, container) {
       card.innerHTML = `
         <div class="bilan-card-header">
           <div class="bilan-card-icon">${svgIcon}</div>
-          <div style="display:flex; flex-direction:column; gap:4px; margin-left: 20px;">
+          <div style="display:flex; flex-direction:column; gap:4px; margin-left: 20px; align-items: center; text-align: center; flex-grow: 1; min-width: 0;">
             <div class="bilan-card-label">${st.label}</div>
             <div class="bilan-card-station${lenClass}">${fullname}</div>
           </div>
@@ -1150,12 +1164,10 @@ function renderBilanJour(cfg, container) {
 
   container.appendChild(grid);
 
-  // ── Stat banner premium en bas (bannière de records du jour) ──
+  // ── Stat banner premium en bas (bannière de records du jour - Records Absolus uniquement) ──
   const nbAbsolu = cfg.nb_records_a || 0;
-  const nbMensuel = cfg.nb_records_m || 0;
-  const nbTotal = nbAbsolu + nbMensuel;
 
-  if (nbTotal > 0) {
+  if (nbAbsolu > 0) {
     const banner = document.createElement('div');
     const isPort = ORIENTATION === 'portrait';
     const trophyColor = '#ffcc00';
@@ -1175,11 +1187,7 @@ function renderBilanJour(cfg, container) {
     const iconSize = isPort ? '36px' : '30px';
     const labelSize = isPort ? '28px' : '25px';
 
-    let statLabel = '';
-    let parts = [];
-    if (nbAbsolu > 0) parts.push(`${nbAbsolu} record${nbAbsolu>1?'s':''} absolu${nbAbsolu>1?'s':''}`);
-    if (nbMensuel > 0) parts.push(`${nbMensuel} record${nbMensuel>1?'s':''} mensuel${nbMensuel>1?'s':''}`);
-    statLabel = parts.join(' et ');
+    const statLabel = `${nbAbsolu} record${nbAbsolu>1?'s':''} absolu${nbAbsolu>1?'s':''}`;
 
     banner.innerHTML = `
       <svg viewBox="0 0 24 24" style="width:${iconSize};height:${iconSize};flex-shrink:0" fill="none" stroke="${trophyColor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
@@ -1197,6 +1205,20 @@ function renderBilanJour(cfg, container) {
     `;
     container.appendChild(banner);
   }
+
+  // ── Auto-fit de la taille de police des villes (anti-débordement) ──
+  setTimeout(() => {
+    const isPort = document.getElementById('capture-area').classList.contains('portrait');
+    document.querySelectorAll('.bilan-card-station').forEach(el => {
+      let size = isPort ? 36 : 30;
+      el.style.fontSize = size + 'px';
+      // Réduction progressive pixel par pixel si overflow horizontal détecté
+      while (el.scrollWidth > el.clientWidth && size > 14) {
+        size--;
+        el.style.fontSize = size + 'px';
+      }
+    });
+  }, 50);
 }
 
 function getValueColor(val, theme) {
