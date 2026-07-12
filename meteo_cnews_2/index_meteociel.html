@@ -532,9 +532,10 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
 .landscape .bilan-card {
   width: 25%;
   height: 250px;
-  padding: 28px 24px;
+  padding: 24px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 .portrait .bilan-card {
@@ -631,18 +632,7 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
   text-align: center;
   color: rgba(255,255,255,0.65);
 }
-.station-len-long {
-  font-size: 24px !important;
-}
-.portrait .station-len-long {
-  font-size: 30px !important;
-}
-.station-len-xlong {
-  font-size: 20px !important;
-}
-.portrait .station-len-xlong {
-  font-size: 26px !important;
-}
+/* Classes station-len supprimees au profit de l'auto-fit JS purement dynamique */
 .bilan-card-value {
   font-family: 'Outfit', sans-serif;
   font-size: 58px;
@@ -1070,7 +1060,7 @@ function applyStyles(cfg) {
 function renderBilanJour(cfg, container) {
   // Vector icons map (beautiful SVGs corresponding to the mockups)
   const isPortrait = ORIENTATION === 'portrait';
-  const iconSize = isPortrait ? '52px' : '28px';
+  const iconSize = isPortrait ? '52px' : '36px';
 
   const SVG_ICONS = {
     tmax: `
@@ -1121,13 +1111,6 @@ function renderBilanJour(cfg, container) {
     }
 
     const fullname = `${st.name} (${st.dept})`;
-    let lenClass = "";
-    if (fullname.length > 25) {
-      lenClass = " station-len-xlong";
-    } else if (fullname.length > 18) {
-      lenClass = " station-len-long";
-    }
-
     const svgIcon = SVG_ICONS[st.param] || '';
 
     if (isPortrait) {
@@ -1137,7 +1120,7 @@ function renderBilanJour(cfg, container) {
           <div class="bilan-card-icon">${svgIcon}</div>
           <div style="display:flex; flex-direction:column; gap:4px; margin-left: 20px; align-items: center; text-align: center; flex-grow: 1; min-width: 0;">
             <div class="bilan-card-label">${st.label}</div>
-            <div class="bilan-card-station${lenClass}">${fullname}</div>
+            <div class="bilan-card-station">${fullname}</div>
           </div>
           ${recBadgeHTML}
         </div>
@@ -1149,14 +1132,10 @@ function renderBilanJour(cfg, container) {
       // ── LANDSCAPE LAYOUT ──
       card.innerHTML = `
         ${recBadgeHTML}
-        <div class="bilan-card-header">
-          <div class="bilan-card-label">${st.label}</div>
-          <div class="bilan-card-icon">${svgIcon}</div>
-        </div>
-        <div class="bilan-card-content">
-          <div class="bilan-card-station${lenClass}">${fullname}</div>
-          <div class="bilan-card-value" style="color: ${getValueColor(st.value, st.theme)}">${valDisp}</div>
-        </div>
+        <div class="bilan-card-label" style="text-align: center; width: 100%; height: 28px; line-height: 28px;">${st.label}</div>
+        <div class="bilan-card-icon" style="margin: auto 0; display: flex; align-items: center; justify-content: center;">${svgIcon}</div>
+        <div class="bilan-card-station" style="text-align: center; width: 100%; margin-bottom: 4px;">${fullname}</div>
+        <div class="bilan-card-value" style="color: ${getValueColor(st.value, st.theme)}; text-align: center; width: 100%; height: 58px; line-height: 58px; margin-top: 4px;">${valDisp}</div>
       `;
     }
     grid.appendChild(card);

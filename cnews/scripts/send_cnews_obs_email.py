@@ -109,8 +109,7 @@ def main():
         sys.exit(1)
 
     # 2. ÉTAPE 2 : Génération des cartes pour la France et toutes les régions (generate_meteociel_obs_maps.py)
-    # Les zones à générer : la France + les 13 régions
-    zones = ["france", "hdf", "normandie", "idf", "ges", "ara", "naq", "occ", "paca", "bfc", "bre", "pdl", "cvl", "cor"]
+    zones = ["france", "hdf", "npdc", "59", "62", "normandie", "idf", "ges", "ara", "naq", "occ", "paca", "bfc", "bre", "pdl", "cvl", "cor"]
     params = "bilan_jour,tmax,tmin,precip,gust"
     
     print(f"\n=== ÉTAPE 2 : Génération des cartes d'observations ===")
