@@ -88,12 +88,12 @@ def main():
             os.makedirs(cartes_dir, exist_ok=True)
         
     print("=== ÉTAPE 0.1 : Génération séquentielle des cartes France ===")
-    cmd_maps_france = ["python", "generate_meteofrance_maps.py", "--region", "france_pictos", "--days", "5"]
+    cmd_maps_france = ["python", "generate_meteofrance_maps.py", "--zone", "france_pictos", "--days", "5"]
     if not run_command(cmd_maps_france, cnews_dir):
         sys.exit(1)
         
     print("=== ÉTAPE 0.2 : Génération séquentielle des cartes Hauts-de-France ===")
-    cmd_maps_hdf = ["python", "generate_meteofrance_maps.py", "--region", "hdf", "--days", "5"]
+    cmd_maps_hdf = ["python", "generate_meteofrance_maps.py", "--zone", "hdf", "--days", "5"]
     if not run_command(cmd_maps_hdf, cnews_dir):
         sys.exit(1)
 
