@@ -166,8 +166,8 @@ def main():
         print(f"Erreur lors de la compression ZIP : {e}")
         sys.exit(1)
         
-    # Génération du lien de téléchargement
-    download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/raw/main/cartes_alertes/{zip_name}"
+    # Génération du lien de téléchargement (GitHub Releases — pas de limite de taille)
+    download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/releases/download/bulletins-patrick-latest/{zip_name}"
     
     # Calcul de la date du lendemain
     tomorrow = datetime.date.today() + datetime.timedelta(days=1)
