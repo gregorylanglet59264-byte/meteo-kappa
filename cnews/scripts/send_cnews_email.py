@@ -87,14 +87,24 @@ def main():
             cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
             os.makedirs(cartes_dir, exist_ok=True)
         
-    print("=== ÉTAPE 0.1 : Génération séquentielle des cartes France ===")
-    cmd_maps_france = ["python", "generate_meteofrance_maps.py", "--zone", "france_pictos", "--days", "5"]
-    if not run_command(cmd_maps_france, cnews_dir):
+    print("=== ÉTAPE 0.1a : Génération cartes France paysage ===")
+    cmd_maps_france_land = ["python", "generate_meteofrance_maps.py", "--zone", "france_pictos", "--days", "5", "--orientation", "landscape", "--patrick", "--temp-highlight"]
+    if not run_command(cmd_maps_france_land, cnews_dir):
         sys.exit(1)
-        
-    print("=== ÉTAPE 0.2 : Génération séquentielle des cartes Hauts-de-France ===")
-    cmd_maps_hdf = ["python", "generate_meteofrance_maps.py", "--zone", "hdf", "--days", "5"]
-    if not run_command(cmd_maps_hdf, cnews_dir):
+
+    print("=== ÉTAPE 0.1b : Génération cartes France portrait (TikTok) ===")
+    cmd_maps_france_port = ["python", "generate_meteofrance_maps.py", "--zone", "france_pictos", "--days", "5", "--orientation", "portrait", "--patrick", "--temp-highlight"]
+    if not run_command(cmd_maps_france_port, cnews_dir):
+        sys.exit(1)
+
+    print("=== ÉTAPE 0.2a : Génération cartes Hauts-de-France paysage ===")
+    cmd_maps_hdf_land = ["python", "generate_meteofrance_maps.py", "--zone", "hdf", "--days", "5", "--orientation", "landscape", "--patrick", "--temp-highlight"]
+    if not run_command(cmd_maps_hdf_land, cnews_dir):
+        sys.exit(1)
+
+    print("=== ÉTAPE 0.2b : Génération cartes Hauts-de-France portrait (TikTok) ===")
+    cmd_maps_hdf_port = ["python", "generate_meteofrance_maps.py", "--zone", "hdf", "--days", "5", "--orientation", "portrait", "--patrick", "--temp-highlight"]
+    if not run_command(cmd_maps_hdf_port, cnews_dir):
         sys.exit(1)
 
     print("=== ÉTAPE 1 : Génération en parallèle des 4 vidéos du Pack Patrick CNews ===")
