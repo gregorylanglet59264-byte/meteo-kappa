@@ -807,7 +807,25 @@ def main():
             if max_val is not None: parts.append(f"lte{int(max_val)}")
             if orientation == "portrait": parts.append("portrait")
             suffix = ("_" + "_".join(parts)) if parts else ""
-            filename = f"carte_obs_{args.zone}_{param}_{file_suffix}{suffix}.jpg"
+            # Clean region names for filenames
+            zone_clean_names = {
+                "france": "France",
+                "hdf": "Hauts-de-France",
+                "normandie": "Normandie",
+                "idf": "Ile-de-France",
+                "ges": "Grand-Est",
+                "ara": "Auvergne-Rhone-Alpes",
+                "naq": "Nouvelle-Aquitaine",
+                "occ": "Occitanie",
+                "paca": "PACA",
+                "bfc": "Bourgogne-Franche-Comte",
+                "bre": "Bretagne",
+                "pdl": "Pays-de-la-Loire",
+                "cvl": "Centre-Val-de-Loire",
+                "cor": "Corse"
+            }
+            clean_zone_name = zone_clean_names.get(args.zone.lower(), args.zone)
+            filename = f"carte_obs_{clean_zone_name}_{param}_{file_suffix}{suffix}.jpg"
             filepath = os.path.join(dest, filename)
 
             print(f"  [{n:2d}/{total}] {param:<25} {orientation:<10} ", end="", flush=True)

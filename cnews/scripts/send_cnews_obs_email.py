@@ -131,23 +131,6 @@ def main():
     zip_name = "cartes_observations_cnews.zip"
     zip_path = os.path.join(cartes_dir, zip_name)
     
-    zone_labels = {
-        "france": "France entière", 
-        "hdf": "Hauts-de-France", 
-        "normandie": "Normandie",
-        "idf": "Île-de-France", 
-        "ges": "Grand Est", 
-        "ara": "Auvergne-Rhône-Alpes",
-        "naq": "Nouvelle-Aquitaine", 
-        "occ": "Occitanie", 
-        "paca": "PACA",
-        "bfc": "Bourgogne-Franche-Comté", 
-        "bre": "Bretagne", 
-        "pdl": "Pays de la Loire",
-        "cvl": "Centre-Val de Loire", 
-        "cor": "Corse",
-    }
-    
     import zipfile
     print(f"Création de l'archive {zip_path}...")
     try:
@@ -166,9 +149,10 @@ def main():
                             parts = file.split("_")
                             folder_name = "Autres"
                             if len(parts) >= 3:
-                                zone_code = parts[2].lower()
-                                if zone_code in zone_labels:
-                                    folder_name = zone_labels[zone_code]
+                                # Le nom de la région est en clair (ex: Hauts-de-France)
+                                folder_name = parts[2]
+                                if folder_name.lower() == "france":
+                                    folder_name = "France entière"
                             
                             arcname = f"{folder_name}/{file}"
                             zipf.write(f_path, arcname=arcname)
