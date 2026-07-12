@@ -144,14 +144,14 @@ def main():
                         f_path = os.path.join(root, file)
                         is_obs_file = any(p in file for p in ["tmax", "tmin", "precip", "gust", "bilan_jour", "anomalie", "amplitude", "secheresse"])
                         if is_obs_file:
-                            # Déterminer le sous-dossier par région
-                            parts = file.split("_")
-                            folder_name = "Autres"
-                            if len(parts) >= 3:
-                                # Le nom de la région est en clair (ex: Hauts-de-France)
-                                folder_name = parts[2]
-                                if folder_name.lower() == "france":
-                                    folder_name = "France entière"
+                            if "_France_" in file:
+                                folder_name = "France"
+                            elif "_Nord-Pas-de-Calais_" in file:
+                                folder_name = "Nord-Pas-de-Calais"
+                            elif "_Nord_" in file or "_Pas-de-Calais_" in file:
+                                folder_name = "Departements"
+                            else:
+                                folder_name = "Regions"
                             
                             arcname = f"{folder_name}/{file}"
                             zipf.write(f_path, arcname=arcname)
