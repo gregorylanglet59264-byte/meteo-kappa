@@ -127,9 +127,9 @@ def main():
         f"Bonjour,\n\n"
         f"Le bulletin météo automatique pour demain ({tomorrow.strftime('%d/%m/%Y')}) a été généré.\n\n"
         f"🔗 Télécharger le fichier ZIP des données : {download_url}\n\n"
-        f"==================================================\n\n"
+        f"==================================================\n"
     )
-    email_body = email_intro + report_text
+    email_body = email_intro
         
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
     subject = f"Bulletins Météo Kappa - {tomorrow.strftime('%d/%m/%Y')}"
