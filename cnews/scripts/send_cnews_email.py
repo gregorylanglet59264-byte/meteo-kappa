@@ -87,26 +87,42 @@ def main():
             cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
             os.makedirs(cartes_dir, exist_ok=True)
         
-    print("=== ÉTAPE 1 : Génération des 4 vidéos du Pack Patrick CNews ===")
+    print("=== ÉTAPE 0.1 : Génération séquentielle des cartes France ===")
+    cmd_maps_france = ["python", "generate_meteofrance_maps.py", "--region", "france_pictos", "--days", "5"]
+    if not run_command(cmd_maps_france, cnews_dir):
+        sys.exit(1)
+        
+    print("=== ÉTAPE 0.2 : Génération séquentielle des cartes Hauts-de-France ===")
+    cmd_maps_hdf = ["python", "generate_meteofrance_maps.py", "--region", "hdf", "--days", "5"]
+    if not run_command(cmd_maps_hdf, cnews_dir):
+        sys.exit(1)
+
+    print("=== ÉTAPE 1 : Génération en parallèle des 4 vidéos du Pack Patrick CNews ===")
     
-    # 1. France Paysage
-    cmd1 = ["python", "generate_video_bulletin.py", "--zone", "france_pictos", "--days", "5", "--orientation", "landscape", "--patrick"]
-    if not run_command(cmd1, cnews_dir):
-        sys.exit(1)
+    cmds = [
+        # France Paysage
+        ["python", "generate_video_bulletin.py", "--zone", "france_pictos", "--days", "5", "--orientation", "landscape", "--patrick", "--skip-maps"],
+        # France Portrait (TikTok)
+        ["python", "generate_video_bulletin.py", "--zone", "france_pictos", "--days", "5", "--orientation", "portrait", "--patrick", "--skip-maps"],
+        # Hauts-de-France Paysage
+        ["python", "generate_video_bulletin.py", "--zone", "hdf", "--days", "5", "--orientation", "landscape", "--patrick", "--skip-maps"],
+        # Hauts-de-France Portrait (TikTok)
+        ["python", "generate_video_bulletin.py", "--zone", "hdf", "--days", "5", "--orientation", "portrait", "--patrick", "--skip-maps"]
+    ]
+    
+    processes = []
+    for cmd in cmds:
+        p = subprocess.Popen(cmd, cwd=cnews_dir)
+        processes.append((cmd, p))
         
-    # 2. France Portrait (TikTok)
-    cmd2 = ["python", "generate_video_bulletin.py", "--zone", "france_pictos", "--days", "5", "--orientation", "portrait", "--patrick"]
-    if not run_command(cmd2, cnews_dir):
-        sys.exit(1)
-        
-    # 3. Hauts-de-France Paysage
-    cmd3 = ["python", "generate_video_bulletin.py", "--zone", "hdf", "--days", "5", "--orientation", "landscape", "--patrick"]
-    if not run_command(cmd3, cnews_dir):
-        sys.exit(1)
-        
-    # 4. Hauts-de-France Portrait (TikTok)
-    cmd4 = ["python", "generate_video_bulletin.py", "--zone", "hdf", "--days", "5", "--orientation", "portrait", "--patrick"]
-    if not run_command(cmd4, cnews_dir):
+    success = True
+    for cmd, p in processes:
+        exit_code = p.wait()
+        if exit_code != 0:
+            print(f"Erreur lors de la génération de la vidéo : {' '.join(cmd)}")
+            success = False
+            
+    if not success:
         sys.exit(1)
         
     print("\n=== ÉTAPE 2 : Compression ZIP des 4 vidéos ===")
