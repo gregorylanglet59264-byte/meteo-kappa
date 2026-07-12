@@ -62,7 +62,13 @@ def draw_gradient(width, height):
 
 def create_transition_frames(day_str, sub_str, width, height, logo_path, output_dir, prefix):
     # Check if we can use the custom templates
-    cartes_dir = os.path.dirname(logo_path) if logo_path else r"C:\Users\grego\Desktop\cartes_alertes"
+    if logo_path:
+        cartes_dir = os.path.dirname(logo_path)
+    else:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        cartes_dir = os.path.abspath(os.path.join(script_dir, "..", "cartes_alertes"))
+        if not os.path.exists(cartes_dir):
+            cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
     template_name = "AVANT PREVI 008.png" if width > height else "AVANT PREVI 007.png"
     template_path = os.path.join(cartes_dir, template_name)
     
@@ -733,14 +739,15 @@ def capture_and_compose_vigilance(zone, orientation, output_path):
                 template_names = ["VIGILANCE PAYSAGE.png", "AVANT PREVI 009.png", "AVANT METEO 009.png"]
                 
             cartes_dir = os.path.dirname(output_path)
-            template_path = None
+            script_dir = os.path.dirname(os.path.abspath(__file__))
             for name in template_names:
+                p_script = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT", name)
                 p1 = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT", name)
                 p2 = os.path.join(cartes_dir, name)
                 p3 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes", name)
                 p4 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT", name)
                 p5 = os.path.join(r"C:\Users\grego\Documents\METEO_CLIMAT\meteo cnews 2", name)
-                for p_check in [p1, p2, p3, p4, p5]:
+                for p_check in [p_script, p1, p2, p3, p4, p5]:
                     if os.path.exists(p_check):
                         template_path = p_check
                         break
@@ -849,7 +856,12 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
         log("Option --skip-maps active : utilisation des cartes existantes sans régénération.")
     
     # Répertoires
-    cartes_dir = r"C:\Users\grego\Desktop\cartes_alertes"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.abspath(os.path.join(script_dir, ".."))
+    cartes_dir = os.path.join(project_root, "cartes_alertes")
+    if not os.path.exists(cartes_dir):
+        cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+        
     temp_dir = os.path.join(cartes_dir, f"temp_transitions_period_{os.getpid()}")
     if os.path.exists(temp_dir):
         safe_rmtree(temp_dir)
@@ -873,7 +885,10 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
         else:
             out_filename = f"bulletin_{zone}_landscape.mp4"
         
-    assets_dir = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT")
+    assets_dir = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT")
+    if not os.path.exists(assets_dir):
+        assets_dir = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT")
+        
     jingle_path = os.path.join(assets_dir, jingle_name)
     music_path = os.path.join(assets_dir, "musique de fond.mp3")
     logo_path = os.path.join(assets_dir, "logo meteo climat pro 3.png")
