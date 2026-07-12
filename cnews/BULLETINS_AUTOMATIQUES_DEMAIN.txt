@@ -10,13 +10,14 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone BULLETIN EUROPE1 à 6h est caractérisée par la poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante. Cette dynamique aérologique gouverne une ambiance déjà en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+🔥 CANICULE : 72 DÉPARTEMENTS EN ALERTE ORANGE, LA FRANCE CUIT SOUS UN DÔME DE CHALEUR !  
+Ce lundi, le réveil est déjà étouffant avec des nuits tropicales : 22°C à Paris, 25°C à Rennes, 19°C à Brest. Le ciel est calme, quelques brumes matinales se dissipent vite. L’après-midi, le soleil de plomb domine, à peine voilé par quelques cirrus. Les maximales explosent : 36°C à Tours, 35°C à Poitiers, 33°C à Nantes, mais seulement 27°C à Caen grâce à la brise marine. Le vent reste discret, le ressenti est lourd. En soirée, la douceur persiste, idéale pour les sorties mais attention à l’hydratation. Vigilance orange canicule maintenue sur 72 départements : la chaleur ne faiblit pas.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 22°C à Laon, 25°C à Rennes, 26°C à Poitiers, 20°C à Caen, 18°C à Lille. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce lundi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 22°C à Paris, 20°C à Caen, 25°C à Rennes, 19°C à Brest, 25°C à Poitiers. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 31°C à Rouen, 34°C à Paris, 32°C à Lille, 33°C à Laon, 27°C à Caen. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 35°C à Poitiers, 27°C à Caen, 33°C à Nantes, 31°C à Brest, 36°C à Tours. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 13 juillet 2026)
@@ -68,11 +69,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
+Mercredi 15 juillet : la canicule s’installe durablement. Le ciel reste dégagé sur la moitié sud, avec des pointes à 38°C dans le Sud-Ouest. Au nord, quelques nuages d’altitude filtrent un peu le soleil, mais les températures dépassent encore 30°C. Nuits toujours tropicales, pas de répit. Vent faible.
 
-- mercredi 15 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 19°C, maximales atteignant 38°C en journée.
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 18°C, maximales atteignant 35°C en journée.
-- vendredi 17 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 18°C, maximales atteignant 34°C en journée.
+Jeudi 16 juillet : le dôme de chaleur commence à se fissurer par l’ouest. Des nuages d’orage se développent en fin d’après-midi sur les reliefs du Jura et des Alpes, avec risque de fortes précipitations localisées. Ailleurs, le soleil reste dominant, mais la chaleur est un peu moins écrasante : 34°C à Paris, 36°C à Lyon. La vigilance orange pourrait être étendue aux orages.
+
+Vendredi 17 juillet : la tendance se confirme : une dégradation orageuse gagne le quart nord-est et le Centre-Est en cours de journée. Des averses parfois violentes accompagnées de grêle sont possibles. Sur le reste du pays, le temps reste très chaud mais plus respirable, avec des maximales autour de 30-32°C. La canicule faiblit lentement, mais la prudence reste de mise.
 
 
 --------------------------------------------------------------------------------
@@ -81,13 +82,18 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone RADIO - ICI NORD est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+☀️ CHALEUR CANICULAIRE ET ORAGES VIOLENTS : UN LUNDI À DOUBLE FACE !  
+Ce lundi, notre région vit un véritable contraste. Sur le littoral et le nord-ouest, une brise rafraîchissante limite la chaleur à 22-23 degrés, avec un ciel nuageux. Mais dès qu’on s’enfonce dans les terres, le thermomètre flambe : 32°C à Lille, jusqu’à 36°C dans le sud et l’est. L’atmosphère devient explosive : des orages parfois forts éclatent sur une large moitié sud, avec foudre, rafales, pluies intenses et grêle possible. La vigilance orange canicule concerne 72 départements, dont le nôtre. Prudence maximale sur les routes et en extérieur.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Dunkerque, 18°C à Lille, 19°C à Valenciennes, 19°C à Maubeuge, 19°C à Troisvilles. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 17°C à Steenvoorde, 18°C à Roubaix, 17°C à Watten, 19°C à Dunkerque, 18°C à St-Hilaire-sur-Helpe. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 31°C à St-Hilaire-sur-Helpe, 32°C à Roubaix, 23°C à Dunkerque, 33°C à Valenciennes, 26°C à Watten. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Bonjour à tous, et bienvenue sur RADIO - ICI NORD pour votre point météo complet.
+
+Ce lundi après-midi, notre région est littéralement coupée en deux ! Sur la partie nord-ouest, le ciel est bien chargé en nuages, avec quelques éclaircies plus marquées près des côtes. Le vent de nord-ouest, une bonne brise côtière, rafraîchit nettement l'atmosphère avec seulement 22 à 23 degrés sur le littoral. Mais dès qu'on s'éloigne de la mer, le thermomètre grimpe vite pour atteindre 32 degrés dans la métropole lilloise.
+
+Et puis, changement radical de temps plus au sud et à l'est ! **ATTENTION, une alerte est de mise sur une large partie sud de la région.** L'atmosphère devient lourde et instable. Des orages parfois forts vont éclater. Soyez très prudents, car ces orages s'accompagneront de risques de foudre, de fortes rafales de vent et de pluies intenses sous les cellules les plus actives. Des chutes de grêle sont également possibles. Les températures y sont caniculaires, atteignant 34, 35 et même 36 degrés localement.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 13 juillet 2026)
@@ -137,11 +143,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
-
-- mercredi 15 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 19°C, maximales atteignant 31°C en journée.
-- jeudi 16 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 31°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 28°C en journée.
+Tendance pour les trois prochains jours :  
+Mercredi 15 juillet : La canicule reste bien installée. Soleil généreux le matin, mais l’après-midi, des nuages pourraient débouler sur le sud de la région, avec un risque d’orages isolés. Les températures oscillent entre 28°C sur la côte et 35°C dans l’intérieur.  
+Jeudi 16 juillet : Toujours très chaud, avec un ciel voilé par moments. Le vent de nord-ouest apporte un peu de fraîcheur sur le littoral, mais ailleurs, on attend 30 à 36°C. Pas d’orage annoncé, mais l’air reste lourd.  
+Vendredi 17 juillet : La chaleur persiste, avec un temps sec et ensoleillé sur l’ensemble de la région. Les maximales atteignent encore 34°C dans les terres, 25°C près de la mer. Attention à l’hydratation et à la protection solaire.  
+En résumé : une semaine sous le signe de la canicule. Restez vigilants, surtout pour les personnes fragiles.
 
 
 --------------------------------------------------------------------------------
@@ -150,13 +156,22 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone RADIO - ICI LA ROCHELLE est caractérisée par la poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante. Cette dynamique aérologique gouverne une ambiance déjà en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+🔥 **CHALEUR ÉCRASANTE : NUAGES ET VENT SUR LA CÔTE, SOLEIL AILLEURS !**  
+Ce lundi, la vigilance orange canicule concerne 72 départements, et nous sommes en plein dedans. La nuit a été tropicale : 24 °C à La Rochelle et Angoulême, 23 °C à Cognac. Ce matin, le soleil brille mais le vent d’ouest souffle fort sur le littoral (40 km/h à La Rochelle, 60 km/h à Chassiron). L’après-midi, le ciel se voile : nuages nombreux sur la majeure partie de la région, sauf autour de Cognac et Jarnac où le soleil reste franc. Pas de pluie en vue, mais une chaleur lourde et persistante. Pensez à bien vous hydrater et à protéger les plus fragiles.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 23°C à Cognac, 23°C à Soyaux, 24°C à La Rochelle, 24°C à La Couronne, 24°C à Angoulême. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à tous et bienvenue sur RADIO - ICI LA ROCHELLE ! J'espère que vous avez passé un excellent week-end.
+
+Ce lundi matin, l'été s'installe avec autorité et une chaleur déjà bien présente. Sur le littoral, le soleil est franc et généreux, mais attention, il faut composer avec un vent de secteur Ouest déjà bien réveillé ! Il souffle de manière modérée autour de 40 km/h à La Rochelle, et se renforce nettement vers la pointe de Chassiron avec des pointes à 60 km/h.
+
+La grande différence avec l'intérieur des terres, c'est justement ce vent. Une fois passé Rochefort, il s'apaise pour devenir une simple petite brise. Le ciel se partage alors plus volontiers entre soleil et quelques nuages.
+
+Côté thermomètre, la nuit a été tropicale ! On relève au petit matin 24 degrés à La Rochelle comme à Angoulême, 23 degrés à Cognac, et pas moins de 22 degrés du côté de Jarnac ou Blanzac-Porcheresse.
+
+Je vous rassure, pas de foudre à l'horizon, le temps reste sec. Passez une excellente matinée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 34°C à Montbron, 29°C à Chassiron, 34°C à Gond-Pontouvre, 35°C à La Couronne, 34°C à Blanzac-Porcheresse. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 33°C à Soyaux, 34°C à Montbron, 33°C à Gond-Pontouvre, 29°C à Chassiron, 34°C à Angoulême. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (lundi 13 juillet 2026)
@@ -207,11 +222,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
+**TENDANCE À 3 JOURS : LA CANICULE S’INSTALLE DURABLEMENT**  
 
-- mercredi 15 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 22°C, maximales atteignant 34°C en journée.
-- jeudi 16 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 21°C, maximales atteignant 29°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 19°C, maximales atteignant 26°C en journée.
+**Mercredi 15 juillet** : Le soleil reprend ses droits partout dès le matin. Le vent faiblit sur la côte, la chaleur monte encore d’un cran. Les maximales atteignent 35 à 38 °C dans l’intérieur, 30 à 33 °C sur le littoral. Nuit de nouveau très chaude, attention aux coups de chaleur.
+
+**Jeudi 16 juillet** : Ciel dégagé du matin au soir, pas un nuage à l’horizon. La chaleur devient accablante : 36 à 39 °C prévus dans les terres, 32 °C à La Rochelle. Vent très faible. Vigilance orange maintenue, on frôle les records.
+
+**Vendredi 17 juillet** : Même scénario : grand soleil et températures très élevées, sans baisse significative. Le pic de chaleur se prolonge, avec des pointes à 40 °C possibles en Charente. Pas de dégradation en vue. Restez prudents, évitez les sorties aux heures les plus chaudes.
 
 
 --------------------------------------------------------------------------------
@@ -220,13 +237,22 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone RADIO 6 est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+☀️🌩️ UN LUNDI À DEUX VISAGES : FRAÎCHEUR AU NORD, ORAGES VIOLENTS AU SUD !  
+Ce lundi, la France vit un véritable grand écart météo. Sur la moitié nord, une agréable brise de mer apporte un temps plus clément : ciel partagé entre soleil et nuages, avec des maximales de 22 à 27°C. Mais dans la moitié sud, l’ambiance devient explosive : de forts orages éclatent, accompagnés de foudre, de rafales puissantes et localement de grêle, sous une chaleur écrasante de 34 à 36°C. 72 départements restent en vigilance orange canicule, et la chaleur persistante va durer plusieurs jours. Prudence maximale au sud, respirez au nord !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 16°C à Remilly-Wirquin, 18°C à Marck, 16°C à Racquinghem, 17°C à Cauchy-à-la-Tour, 17°C à Lefaux. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Leffrinckoucke, 16°C à Racquinghem, 18°C à Offekerque, 18°C à Marck, 18°C à Gravelines. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 25°C à Lefaux, 31°C à Cauchy-à-la-Tour, 22°C à Gravelines, 23°C à Leffrinckoucke, 25°C à Remilly-Wirquin. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+(Début de la musique entraînante de jingle météo, qui s'estompe)
+
+Bonjour à tous ! C'est le moment de faire le point sur votre météo pour cet après-midi du lundi 13 juillet, sur l'antenne de RADIO 6.
+
+Ce lundi après-midi, nous aurons un temps véritablement coupé en deux sur la région. La moitié nord respire ! Sur le littoral, vous profiterez de conditions bien plus clémentes. Une agréable brise de mer viendra rafraîchir l'atmosphère, avec un ciel qui partage généreusement le soleil et les nuages. On attend des maximales de 22 à 23 degrés près des côtes, jusqu'à 27 degrés en s'éloignant un peu.
+
+Mais le décor change radicalement dans la moitié sud ! L'ambiance y deviendra lourde et surtout très instable. **ALERTE ORAGES** : soyez très prudents, car de forts orages vont éclater. Ils s'accompagneront de foudre, de brusques et fortes averses, de puissantes rafales de vent, et localement un peu de grêle est possible. Tout cela dans une chaleur écrasante, puisque le thermomètre affichera 34, 35, et même des pointes à 36 degrés. Un après-midi à deux visages donc, vigilance maximale au sud !
+
+(La musique du jingle météo remonte)
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 13 juillet 2026)
@@ -276,11 +302,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
+**Mercredi 15 juillet** : La chaleur reste très lourde sur l’ensemble du pays, avec des températures encore élevées, souvent entre 30 et 35°C. Le ciel sera plus nuageux l’après-midi, notamment sur le sud où des averses orageuses pourraient éclater localement. Le nord conservera un temps plus calme, avec un vent de mer rafraîchissant.
 
-- mercredi 15 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 19°C, maximales atteignant 31°C en journée.
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 18°C, maximales atteignant 32°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 30°C en journée.
+**Jeudi 16 juillet** : La canicule s’accentue. Le soleil domine largement, mais l’atmosphère devient étouffante. Les maximales atteignent 36 à 38°C dans le sud, 28 à 32°C au nord. Quelques nuages d’orage pourraient se former en fin de journée sur les reliefs. Pensez à vous hydrater et à éviter les heures les plus chaudes.
+
+**Vendredi 17 juillet** : La tendance se confirme : chaleur persistante et orages localisés. Le matin, le ciel est souvent dégagé, mais l’après-midi, des orages parfois forts éclatent sur une bonne moitié sud, avec des risques de grêle et de rafales. Les températures restent très élevées, entre 32 et 37°C. La vigilance canicule est toujours de mise.
 
 
 --------------------------------------------------------------------------------
@@ -289,13 +315,20 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone MONA FM est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+**
+🚨 **ALERTE CANICULE : LE NORD COUPÉ EN DEUX CE LUNDI !** Ce lundi, la région vit un véritable contraste. Le matin démarre sous un soleil radieux et une douceur agréable, avec 17 à 19°C au réveil. Mais l'après-midi, le ciel se déchire ! Sur la Côte d'Opale et le littoral, la brise de nord-ouest vous offre un répit avec 22 à 26°C sous un ciel nuageux. En revanche, dans les terres, l'atmosphère devient étouffante. Lille atteint 32°C, Amiens 31°C, et le sud de l'Oise flirte avec les 36°C. **Prudence maximale : des orages parfois violents éclatent sur la moitié sud, avec pluies diluviennes, rafales et foudre.** La vigilance orange canicule couvre 72 départements. Ne relâchez pas votre attention !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 17°C à Steenvoorde, 19°C à Troisvilles, 18°C à Dunkerque, 18°C à St-Hilaire-sur-Helpe, 18°C à Douai. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Valenciennes, 18°C à Lille, 18°C à Maubeuge, 17°C à Steenvoorde, 18°C à St-Hilaire-sur-Helpe. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 32°C à Roubaix, 23°C à Dunkerque, 31°C à Troisvilles, 31°C à St-Hilaire-sur-Helpe, 32°C à Maubeuge. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+(Début de jingle MONA FM)
+
+Ce lundi après-midi, la région est littéralement coupée en deux ! Au nord et le long des côtes, vous profiterez d'un temps plutôt agréable, partagé entre de belles éclaircies et quelques passages nuageux. La brise de nord-ouest qui souffle sur le littoral maintiendra une atmosphère bien respirable, avec des maximales de 22 à 26 degrés en bord de mer.
+
+En revanche, plus on s'enfonce dans les terres, plus l'ambiance devient lourde et chaude. On attend 32 degrés du côté de Lille. Et puis, sur toute la moitié sud, **ATTENTION** ! La situation devient potentiellement dangereuse. Des orages parfois forts vont éclater. Soyez très vigilants, car ils pourront s'accompagner de fortes pluies en peu de temps, de brusques rafales de vent et d'un risque de foudre bien présent. Les températures atteindront 31 degrés vers Amiens, 34 à Saint-Quentin, avec un pic à 36 degrés plus au sud. Prudence sur les routes !
+
+(Fin de jingle MONA FM)
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 13 juillet 2026)
@@ -345,11 +378,14 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
+**
+**TENDANCE À 3 JOURS (du mercredi 15 au vendredi 17 juillet)**
 
-- mercredi 15 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 19°C, maximales atteignant 31°C en journée.
-- jeudi 16 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 31°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 28°C en journée.
+**Mercredi 15 juillet :** La chaleur reste bien installée, mais le ciel se dégage sur l'ensemble de la région. Le matin, le soleil est déjà au rendez-vous avec 18 à 20°C. L'après-midi, les températures grimpent encore : comptez 30°C à Lille, 33°C à Saint-Quentin et jusqu'à 35°C dans le sud de l'Oise. Le vent reste faible. Attention à la pollution à l'ozone en ville. C'est une journée à passer à l'ombre ou près de l'eau. La nuit sera chaude, avec des minimales peinant à descendre sous les 20°C.
+
+**Jeudi 16 juillet :** Nouvelle journée caniculaire. Le soleil règne en maître du matin au soir. Les maximales atteignent 31°C sur le littoral (Dunkerque, Calais) grâce à une petite brise, mais explosent à 36°C dans l'Amiénois et le Saint-Quentinois. L'air devient très lourd. Quelques nuages pourraient pointer en fin d'après-midi sur les reliefs, mais sans risque d'orage. **Hydratez-vous très régulièrement et évitez les efforts physiques aux heures les plus chaudes (12h-16h).**
+
+**Vendredi 17 juillet :** La tendance se confirme : toujours pas de répit. Le soleil est écrasant dès le lever du jour. Les températures matinales sont déjà élevées (20 à 22°C). L'après-midi, on attend 33°C à Valenciennes, 35°C à Lille et 37°C dans le sud de la région. Le vent tourne au sud-ouest, apportant un air encore plus sec. Les nuits restent tropicales. **Le pic de cette vague de chaleur est attendu ce vendredi.** Tenez-vous prêts, la vigilance orange pourrait être prolongée.
 
 
 --------------------------------------------------------------------------------
@@ -358,25 +394,30 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce lundi, la situation générale sur l'ensemble de la zone RADIO ICI NORMANDIE est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+⛈️ ORAGES VIOLENTS ET CHALEUR ÉTOUFFANTE : UN LUNDI À DOUBLE VISAGE EN NORMANDIE !  
+Ce lundi, la Normandie vit un contraste saisissant. Après une matinée lumineuse et douce, l'après-midi bascule avec des orages parfois forts sur une large moitié est, de Rouen à Alençon, où le mercure flirte avec les 32 à 34°C. La foudre et les pluies soudaines menacent le littoral seine-marin comme l'intérieur des terres. À l'ouest, une brise rafraîchissante offre un temps plus clément : 27°C à Caen sous un ciel partagé, et seulement 21°C à Cherbourg en plein soleil. La vigilance orange canicule reste en vigueur sur 72 départements, la chaleur persistant sur les prochains jours. Prudence face aux orages et à la forte chaleur.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 20°C à Caen, 20°C à Rouen, 17°C à Cherbourg, 18°C à Dieppe, 20°C à Evreux. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce lundi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 22°C à Alençon, 20°C à Rouen, 19°C à Le Havre, 18°C à Dieppe, 20°C à Lisieux. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 22°C à Cherbourg, 31°C à Rouen, 33°C à Alençon, 26°C à Le Havre, 31°C à Evreux. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Ce lundi après-midi, la Normandie est coupée en deux avec une ambiance qui devient lourde et électrique sur une grande partie de la région.
+
+**ATTENTION, PRUDENCE !** Des orages parfois forts vont éclater. Soyez très vigilants, car ils présentent un risque de foudre et de fortes pluies soudaines. Cette menace concerne une large partie de nos départements, y compris le littoral de la Seine-Maritime du côté du Havre et de Dieppe. Dans les terres, la chaleur sera accablante et favorisera les éclairs, avec 32 degrés à Évreux et 31 à Rouen. Le mercure grimpera même jusqu'à 34 degrés vers Alençon !
+
+À l'ouest, le temps est plus clément. Une brise de secteur ouest apporte un air bien plus respirable sur les côtes de la Manche. On attend 27 degrés à Caen sous un ciel partagé entre nuages et éclaircies. Et c'est le grand soleil qui s'impose sur la pointe du Cotentin, avec seulement 21 degrés prévus à Cherbourg ! Un contraste vraiment saisissant.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (lundi 13 juillet 2026)
 
 🌴 Le Havre / Deauville / Cabourg
 ☀️ Temps très agréable et ensoleillé ce lundi, avec une ambiance estivale douce et lumineuse.
-🌡️ Température sur les plages : 23 à 26°C
+🌡️ Température sur les plages : 22 à 25°C
 🌊 Température de l’eau : 18 à 19°C
 
 🌴 Dieppe / Fécamp / Cherbourg
 ☀️ Belle luminosité dès le matin ce lundi après dissipation des grisailles côtières, brise de nord-est sensible.
-🌡️ Température maximale sous abri : 22 à 24°C
+🌡️ Température maximale sous abri : 21 à 23°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -413,9 +454,9 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 13 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (mercredi 15 juillet au vendredi 17 juillet)
+Mercredi 15 juillet : Le calme revient progressivement après les orages de lundi. Le ciel sera variable, avec des éclaircies de plus en plus larges. Les températures restent élevées, entre 28 et 32°C selon les secteurs, mais la sensation de lourdeur s’atténue. Un vent de nord-ouest modéré apporte un peu de fraîcheur sur les côtes.
 
-- mercredi 15 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 19°C, maximales atteignant 34°C en journée.
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 18°C, maximales atteignant 34°C en journée.
-- vendredi 17 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 19°C, maximales atteignant 33°C en journée.
+Jeudi 16 juillet : Nouvelle hausse du mercure. Le soleil domine largement, avec seulement quelques nuages passagers l’après-midi. Les maximales grimpent jusqu’à 33-35°C dans les terres, et 26-28°C sur le littoral. La canicule s’installe durablement : pensez à vous hydrater et à éviter les heures les plus chaudes.
+
+Vendredi 17 juillet : Pic de chaleur attendu sur la région. Ciel dégagé du matin au soir, pas une goutte de pluie en vue. Les températures atteignent 35 à 37°C à l’intérieur, jusqu’à 30°C sur les plages. La vigilance orange canicule est maintenue. Un temps idéal pour la plage, mais attention aux coups de chaud.
 
