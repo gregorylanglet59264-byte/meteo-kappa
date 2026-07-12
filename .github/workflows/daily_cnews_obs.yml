@@ -48,4 +48,5 @@ jobs:
           git add -f cartes_alertes/*.zip || true
           git add -f cartes_alertes/*.jpg || true
           git commit -m "chore: archivage automatique des cartes d'observations du $(date '+%d/%m/%Y')" || echo "Aucune modification à commiter"
+          git pull --rebase origin main || true
           git push origin main || echo "Aucun push nécessaire"
