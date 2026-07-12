@@ -141,7 +141,7 @@ def main():
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
             for root, dirs, files in os.walk(cartes_dir):
                 for file in files:
-                    if file.endswith(".jpg") and (date_str in file or "carte_forets" not in file and "carte_vigilance" not in file):
+                    if file.endswith(".jpg") and date_str in file:
                         f_path = os.path.join(root, file)
                         is_obs_file = any(p in file for p in ["tmax", "tmin", "precip", "gust", "bilan_jour", "anomalie", "amplitude", "secheresse"])
                         if is_obs_file:
