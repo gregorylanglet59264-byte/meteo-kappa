@@ -258,7 +258,7 @@ def main():
             
             # Generate and inject AI texts if available and not skipped (transmitting explicit base64 maps)
             if not args.skip_ai:
-                img_list = [img for img in [img_m1, img_a1, img_m2, img_a2] if img]
+                img_list = [img_m1, img_a1, img_m2, img_a2]
                 ai_texts = generate_bulletin_texts(name, c.get("cities", []), args.day_offset, images=img_list)
                 if ai_texts:
                     print(f" - Injected AI-generated forecast texts for '{name}'")
