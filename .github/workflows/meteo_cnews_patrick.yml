@@ -23,6 +23,11 @@ jobs:
       - name: Récupérer le code du dépôt
         uses: actions/checkout@v4
 
+      - name: Installer FFmpeg (requis pour la compilation vidéo)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
       - name: Configurer Python
         uses: actions/setup-python@v5
         with:
