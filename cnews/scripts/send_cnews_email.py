@@ -80,8 +80,12 @@ def main():
     repo_root = os.path.abspath(os.path.join(scripts_dir, "..", ".."))
     cnews_dir = os.path.join(repo_root, "meteo_cnews_2")
     cartes_dir = os.path.join(repo_root, "cartes_alertes")
-    if not os.path.exists(cartes_dir):
-        cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+    if os.environ.get("GITHUB_ACTIONS"):
+        os.makedirs(cartes_dir, exist_ok=True)
+    else:
+        if not os.path.exists(cartes_dir):
+            cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+            os.makedirs(cartes_dir, exist_ok=True)
         
     print("=== ÉTAPE 1 : Génération des 4 vidéos du Pack Patrick CNews ===")
     
