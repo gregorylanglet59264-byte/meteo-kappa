@@ -46,7 +46,7 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           # Envoi à Patrick uniquement en production (cron schedule ou test_mode désactivé)
-          RECIPIENT_EMAILS: ${{ (github.event_name == 'schedule' || github.event.inputs.test_mode == 'false') && 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr, langletcharlotte480@gmail.com' || 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com' }}
+          RECIPIENT_EMAILS: ${{ (github.event_name == 'schedule' || github.event.inputs.test_mode == 'false') && 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr, langletcharlotte480@gmail.com' || 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, langletcharlotte480@gmail.com' }}
         run: |
           python cnews/scripts/send_kappa_email.py
 
