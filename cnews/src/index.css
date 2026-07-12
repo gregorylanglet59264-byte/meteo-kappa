@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 47.4% 11.2%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+
+    /* Slate theme colors */
+    --slate-950: 222.2 47.4% 4.9%;
+    --slate-900: 222.2 47.4% 8%;
+    --slate-800: 217.2 32.6% 12%;
+    --slate-700: 215.3 25% 20%;
+    --slate-600: 215.4 16.3% 32%;
+    --slate-500: 215.4 16.3% 46.9%;
+    --slate-400: 214.3 13.8% 59%;
+    --slate-300: 212.7 12.2% 70%;
+    --slate-200: 214.3 31.8% 91.4%;
+    --slate-100: 214.3 31.8% 95%;
+    --slate-50: 210 40% 98%;
+
+    /* Brand colors */
+    --brand-blue: 222.2 47.4% 24%;
+    --brand-green: 142.1 76.2% 36.3%;
+    --brand-amber: 38 92% 50%;
+    --brand-red: 0 84.2% 60.2%;
+    --brand-sky: 199 89% 48%;
+    --brand-orange: 24.6 95% 53.1%;
+    --brand-indigo: 226 70.7% 40.2%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-slate-800 text-foreground;
+    font-family: 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbars */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--slate-900));
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--slate-600));
+    border-radius: 3px;
+  }
+
+  .light-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .light-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--slate-100));
+  }
+  .light-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--slate-300));
+    border-radius: 3px;
+  }
+
+  /* Loader animation */
+  .loader {
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Section checkbox scaling */
+  .section-check {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  /* Hide number input arrows */
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* PDF page-break rules */
+  @media print {
+    #email-content table {
+      page-break-inside: avoid;
+    }
+    #email-content h2,
+    #email-content h3 {
+      page-break-after: avoid;
+    }
+  }
+
+  #email-content table {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  #email-content [style*="border-left"] {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  #email-content .pdf-summary-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

@@ -1,0 +1,331 @@
+================================================================================
+📡 RAPPORT EXHAUSTIF DES PRÉVISIONS VISUELLES (MODE VISIO EN PLATEAU)
+DATE CIBLE : LUNDI 13 JUILLET 2026
+FICHIER SOURCE : C:\Users\grego\.gemini\antigravity\scratch\meteo-kappa\cnews\BULLETINS_AUTOMATIQUES_DEMAIN.json
+================================================================================
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : BULLETIN EUROPE1 à 6h
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+Un puissant anticyclone centré sur les îles Britanniques s'associe à une dorsale de haute pression s'étendant vers l'Europe centrale, maintenant des conditions exceptionnellement calmes et sèches sur l'ensemble de la France pour ce dimanche 12 juillet. Cette configuration synoptique favorise un flux de secteur sud-est particulièrement chaud et sec, avec une masse d'air continental brûlant d'origine saharienne qui engendre des ressentis étouffants et un air lourd sur la majorité des régions françaises. L'ensoleillement est généralisé sous un ciel bleu azur limpide à peine perturbé par de rares cirrus de haute altitude. Les brises marines peinent à s'installer sur la façade Atlantique en raison du flux de terre dominant, tandis que le mistral souffle modérément dans la vallée du Rhône à 30 km/h en rafales, apportant une ventilation bienvenue mais asséchante.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, la France s'éveille sous des conditions remarquablement ensoleillées et déjà très douces. Le ciel est d'un bleu pur et sans nuages sur la quasi-totalité du territoire, à l'exception de quelques bancs de nuages bas sur le littoral de la Manche et vers la frontière belge, ainsi qu'un voile nuageux inoffensif sur la pointe bretonne et le Pays Basque. La nuit tropicale n'a apporté que peu de répit avec des minimales très élevées pour un début de matinée. On relève ainsi 21°C à Paris, 22°C à Lille, 16°C à Rouen sous une relative fraîcheur, 24°C à Brest et 25°C à Nantes. Dans la moitié sud, la tiédeur est également marquée avec 26°C à Bordeaux, 24°C à Lyon et 25°C à Nice et Marseille. Le vent reste généralement faible, ce qui accentue la sensation de lourdeur dans les grandes agglomérations.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, l'Hexagone se transforme en une véritable fournaise sous un soleil de plomb. La chaleur devient caniculaire et écrasante avec des valeurs exceptionnelles sous abri. Le thermomètre s'emballe et atteint 37°C à Paris, 33°C à Lille, 30°C à Rouen et 37°C à Brest. Dans l'Ouest et le Sud-Ouest, les maximales s'envolent pour atteindre 40°C à Nantes, 40°C à Bourges et Limoges, et jusqu'à 42°C à Bordeaux sous un ciel à peine voilé par des nuages élevés en provenance du golfe de Gascogne. Le ressenti est lourd et étouffant. Sur la côte méditerranéenne, les brises marines limitent la hausse des températures à 31°C à Marseille et Nice, tandis que Lyon affiche 38°C sous une atmosphère étouffante. La vigilance canicule concerne de très nombreux départements.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 10 juillet 2026)
+
+🌴 Dunkerque / Malo-les-Bains
+☀️ Belle journée estivale et lumineuse ce vendredi.
+🌡️ Température sous abri : 32°C (ambiance plus respirable qu’à l’intérieur)
+🌊 Température de l’eau : 19 à 20°C
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 31 à 32°C
+🌊 Température de l’eau : 19 à 20°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 10 juillet 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
+⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Une vigilance canicule de niveau orange ou rouge est en cours sur une grande partie du pays en raison d'un épisode de fortes chaleurs particulièrement intenses et durables, avec des températures atteignant localement 40 à 42°C dans l'ouest et le sud-ouest.
+🏔️ Météo montagne
+
+Alpes : Conditions très ensoleillées ce dimanche avec une chaleur marquée dans les vallées. Risque d'orages de chaleur localisés sur les sommets du sud en fin de journée.
+
+Pyrénées : Soleil dominant en matinée ce dimanche, avant le développement de cumulus bourgeonnants et un risque d'averses orageuses isolées sur les crêtes l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions s'annoncent plus respirables mais très contrastées à l'échelle du pays. Le front orageux de la veille s'évacue lentement par les frontières de l'est, laissant à l'arrière un ciel de traîne partagé entre belles éclaircies et nuages inoffensifs. Concernant le thermomètre de ce mardi, les minimales oscillent entre 17°C à Rennes et 23°C à Bordeaux dans la matinée, tandis que les maximales fléchissent nettement par l'ouest avec 27°C à Rennes, 35°C à Bordeaux, 33°C à Lille, 35°C à Paris et encore 40°C à Lyon où la chaleur restera encore lourde et étouffante en cours d'après-midi.
+
+Le mercredi 15 juillet verra l'installation d'une masse d'air océanique beaucoup plus fraîche et agréable sur l'ensemble du territoire national. Le ciel sera le plus souvent partagé entre de larges éclaircies lumineuses et de petits passages nuageux inoffensifs, principalement le long des côtes de la Manche et sur le Nord-Pas-de-Calais. Au niveau du thermomètre de ce mercredi, les températures minimales s'échiolent de 17°C à Rennes à 23°C à Bordeaux, tandis que les maximales affichent des valeurs confortables de 28°C à Rennes, 33°C à Bordeaux, 33°C à Lille, 34°C à Paris et 38°C à Lyon.
+
+Enfin, pour le jeudi 16 juillet, les conditions anticycloniques de saison s'imposent à nouveau avec un grand soleil généreux et des températures agréables. Le ciel sera totalement dégagé sur la majeure partie du pays, offrant d'excellentes conditions estivales sans chaleur excessive. Pour le thermomètre de ce jeudi, les minimales baissent d'un cran pour afficher 18°C à Rennes et 22°C à Bordeaux au lever du jour, tandis que les maximales de l'après-midi seront agréablement respirables avec 28°C à Rennes, 32°C à Bordeaux, 31°C à Lille, 32°C à Paris et 35°C à Lyon.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO - ICI NORD
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+L'anticyclone positionné sur les îles Britanniques et s'étendant vers le nord de l'Europe protège les Hauts-de-France pour ce dimanche 12 juillet. Le flux continental de secteur sud-est draine de l'air particulièrement chaud et sec sur l'ensemble des départements de la région. Le soleil brille de manière continue et sans partage du matin au soir sous un ciel immaculé, garantissant un fort rayonnement solaire. Le ressenti est de plus en plus chaud et estival au fil des heures. Une légère bise d'est souffle modérément à 20 km/h sur les collines de l'Artois et les plaines de la Flandre, apportant une ventilation bienvenue mais insuffisante pour empêcher la chaleur de s'installer durablement dans les terres.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, les conditions sont optimales et extrêmement ensoleillées dès le réveil sur l'ensemble de la région des Hauts-de-France. Le soleil brille sans l'ombre d'un nuage sur la Flandre, le Hainaut et le Cambrésis, bien que quelques légers voiles nuageux inoffensifs puissent transiter dans le sud de la région vers l'Oise et le long de la vallée de la Somme. L'atmosphère est particulièrement douce et agréable au lever du jour après une nuit très calme. Les températures minimales s'élèvent à des niveaux élevés de 19°C à Lille, 20°C à Amiens, 20°C à Dunkerque, 19°C à Valenciennes, 19°C à Arras et 20°C à Abbeville. Le vent de secteur est est faible à modéré, ce qui permet à la douceur de s'installer rapidement et de donner une ambiance estivale sur tous nos départements.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, la chaleur s'accentue sur l'ensemble du territoire régional sous un ciel largement bleu et ensoleillé. Le thermomètre affiche des valeurs caniculaires et éprouvantes dans l'intérieur des terres, avec des maximales atteignant 34°C à Lille, 35°C à Amiens, 34°C à Abbeville et Valenciennes, 34°C à Arras et jusqu'à 37°C à Château-Thierry dans l'Aisne. Sur le littoral de la Côte d'Opale, la brise marine modère l'atmosphère en limitant la hausse des températures à 27°C à Calais et 29°C à Boulogne-sur-Mer, offrant un répit appréciable pour les estivants. Le vent de secteur est souffle à 20 km/h en rafales dans l'intérieur, ce qui limite légèrement la sensation de lourdeur sous cette chape de chaleur.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+🌴 Dunkerque / Malo-les-Bains
+☀️ Très belle journée ensoleillée et chaude ce dimanche sur le sable dunkerquois.
+🌡️ Température sous abri : 34°C (ressenti chaud mais tempéré par une légère brise)
+🌊 Température de l’eau : 19 à 20°C
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil radieux sur toutes les plages ce dimanche, avec des conditions idéales pour la baignade.
+🌡️ Température maximale : 27 à 29°C
+🌊 Température de l’eau : 18 à 19°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante sur la région.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré à 20 km/h en cours de journée ce dimanche, faiblissant en soirée.
+🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
+⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale pour la navigation.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Aucune précipitation n'est attendue ce dimanche, accentuant la sécheresse de surface.
+
+Vent : Vent d'Est faible à modéré atteignant 20 km/h en rafales, limitant peu l'accumulation de la chaleur.
+
+Orages : Risque nul sur l'ensemble de la région pour cette journée de dimanche.
+
+Brouillards : Dissipation rapide de rares brumes matinales sur les plaines de l'Artois.
+🏔️ Météo montagne
+
+Vosges : Temps très chaud et généreusement ensoleillé ce dimanche avec quelques nuages de beau temps l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions restent très chaudes et ensoleillées sur l'ensemble de la région des Hauts-de-France. Le ciel sera lumineux avec seulement quelques nuages d'altitude décoratifs qui n'altéreront pas l'ensoleillement. Concernant le thermomètre de ce mardi, les températures minimales s'éveillent sous une grande douceur à 21°C à Amiens et 19°C à Lille, tandis que les maximales de l'après-midi restent élevées pour la saison, atteignant 33°C à Amiens, 32°C à Lille, 33°C à Abbeville and 34°C à Valenciennes.
+
+Le mercredi 15 juillet s'annonce tout aussi ensoleillé et agréable sur tous nos départements sous un ciel bleu peu nuageux. Les brises marines de nord-est viendront tempérer le littoral tandis que l'intérieur des terres conservera une ambiance estivale classique. Au niveau du thermomètre de ce mercredi, les minimales matinales restent très douces, s'élevant à 21°C à Amiens et 19°C à Lille, tandis que les maximales affichent 32°C à Amiens, 32°C à Lille, 32°C à Abbeville et 33°C à Valenciennes.
+
+Enfin, pour le jeudi 16 juillet, les conditions restent dominées par un temps sec, calme et largement ensoleillé sur toute la région après la dissipation de rares brumes matinales. Pour le thermomètre de ce jeudi, les minimales en matinée fraîchissent légèrement pour s'établir à 20°C à Amiens et 21°C à Lille, tandis que les maximales de l'après-midi seront agréablement respirables avec 32°C à Amiens, 31°C à Lille, 31°C à Abbeville et 32°C à Valenciennes.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO - ICI LA ROCHELLE
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+L'anticyclone positionné sur le golfe de Gascogne draine un flux continental de secteur sud-est particulièrement chaud et sec sur la Nouvelle-Aquitaine pour ce dimanche 12 juillet. Cette configuration synoptique favorise une advection d'air tropical d'origine saharienne extrêmement brûlant, provoquant des températures caniculaires exceptionnelles sur l'ensemble de la région. Le soleil règne en maître absolu sur la côte charentaise et les plaines de l'ouest, bien que des voiles nuageux inoffensifs commencent à remonter par le sud en fin d'après-midi sous l'effet de l'instabilité thermique accumulée. Le ressenti est extrêmement lourd et étouffant, avec des brises de mer de nord-est qui peinent à s'installer sur le littoral charentais.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, les conditions sont claires, limpides et extrêmement douces dès le lever du soleil sur l'ensemble de la région Nouvelle-Aquitaine. Le ciel est d'un bleu pur et totalement dégagé de la Charente-Maritime aux plaines girondines, à l'exception de quelques entrées maritimes inoffensives et brumes de surface localisées sur le Pays Basque vers Hendaye et Bayonne. La douceur matinale est remarquable et s'apparente à une véritable nuit tropicale sur les côtes. Les minimales s'élèvent à des niveaux exceptionnellement hauts de 21°C à La Rochelle, 25°C à Bordeaux, 19°C à Limoges, 26°C à Angoulême et 20°C à Brive. Le vent de secteur sud-est est calme, laissant une atmosphère lourde s'installer rapidement.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, la chaleur devient torride et historique sur notre région sous un soleil implacable. Des voiles nuageux d'altitude de type cirrus remontent du golfe de Gascogne et du Pays Basque mais n'atténuent en rien la fournaise. Les températures maximales s'envolent pour atteindre des niveaux exceptionnels avec 42°C à La Rochelle, 42°C à Bordeaux, 41°C à Limoges, 42°C à Angoulême, tandis que Brive, Niort et Poitiers affichent 40°C et Tulle culmine à 43°C. Le littoral basque respire légèrement mieux avec 35°C à Biarritz. Le vent d'est-sud-est souffle faiblement à 15 km/h, ce qui renforce la sensation de four sec en limitant les brises marines.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (dimanche 12 juillet 2026)
+
+🌴 La Rochelle / Île de Ré / Île d’Oléron
+☀️ Grand soleil et chaleur caniculaire extrême sur toutes les plages charentaises ce dimanche.
+🌡️ Température sur le littoral : 38 à 40°C (atmosphère étouffante sur le sable)
+🌊 Température de l’eau : 21 à 23°C (conditions de baignade exceptionnelles)
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – LITTORAL CHARENTAIS (dimanche 12 juillet 2026)
+
+📍 Zones : La Rochelle • Île de Ré • Île d'Oléron • Royan
+
+☀️ Situation générale : Flux continental de sud-est particulièrement brûlant sous l'influence d'un puissant anticyclone s'étendant sur le golfe de Gascogne.
+🌬️ Vent : Vent d'Est-Sud-Est faible à 15 km/h ce dimanche, avec de rares brises côtières très localisées.
+🌊 État de la mer : Mer belle et calme, visibilité parfaite sur tout le bassin maritime charentais.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Canicule & Vigilance : De nombreux départements de la Nouvelle-Aquitaine sont placés en vigilance orange Canicule avec des températures exceptionnelles atteignant 40 à 42°C.
+
+Pluies : Temps totalement sec ce dimanche, aucune averse n'est attendue.
+
+Vent : Vent faible d'Est-Sud-Est à 15 km/h limitant l'installation des brises marines.
+
+Orages : Activité orageuse isolée possible uniquement sur les crêtes pyrénéennes en fin d'après-midi.
+🏔️ Météo montagne
+
+Pyrénées : Soleil dominant en matinée ce dimanche, avant le développement de cumulus bourgeonnants et un risque d'averses orageuses isolées sur les crêtes l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions s'annoncent plus changeantes et respirables sur la Nouvelle-Aquitaine. Le ciel sera partagé entre de larges éclaircies et des passages nuageux plus denses dans l'intérieur. Concernant le thermomètre de ce mardi, les minimales matinales oscillent autour de 22°C à La Rochelle et 22°C à Bordeaux, tandis que les maximales de l'après-midi fléchissent nettement avec 37°C à La Rochelle, 36°C à Bordeaux et 35°C à Limoges.
+
+Le mercredi 15 juillet, les conditions s'améliorent avec le retour d'un soleil généreux sur l'ensemble de nos départements. L'atmosphère sera agréable et estivale sans chaleur excessive grâce à un flux d'ouest modéré. Au niveau du thermomètre de ce mercredi, les températures minimales s'éveillent sous une grande douceur avec 22°C à La Rochelle et 22°C à Bordeaux, tandis que les maximales affichent des valeurs de 35°C à La Rochelle, 36°C à Bordeaux et 35°C à Limoges.
+
+Enfin, pour la journée du jeudi 16 juillet, le grand beau temps sec et très ensoleillé s'impose à nouveau sous de légères brises marines. Pour le thermomètre de ce jeudi, les minimales en matinée fraîchissent légèrement pour s'établir à 23°C à La Rochelle et 22°C à Bordeaux, tandis que les maximales de l'après-midi seront tout à fait agréables avec 29°C à La Rochelle, 31°C à Bordeaux et 33°C à Limoges.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO 6
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+L'anticyclone positionné sur les îles Britanniques et s'étendant vers le nord de l'Europe protège les Hauts-de-France pour ce dimanche 12 juillet. Le flux continental de secteur sud-est draine de l'air particulièrement chaud et sec sur l'ensemble des départements de la région. Le soleil brille de manière continue et sans partage du matin au soir sous un ciel immaculé, garantissant un fort rayonnement solaire. Le ressenti est de plus en plus chaud et estival au fil des heures. Une légère bise d'est souffle modérément à 20 km/h sur les collines de l'Artois et les plaines de la Flandre, apportant une ventilation bienvenue mais insuffisante pour empêcher la chaleur de s'installer durablement dans les terres.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, les conditions sont optimales et extrêmement ensoleillées dès le réveil sur l'ensemble de la région des Hauts-de-France. Le soleil brille sans l'ombre d'un nuage sur la Flandre, le Hainaut et le Cambrésis, bien que quelques légers voiles nuageux inoffensifs puissent transiter dans le sud de la région vers l'Oise et le long de la vallée de la Somme. L'atmosphère est particulièrement douce et agréable au lever du jour après une nuit très calme. Les températures minimales s'élèvent à des niveaux élevés de 19°C à Lille, 20°C à Amiens, 20°C à Dunkerque, 19°C à Valenciennes, 19°C à Arras et 20°C à Abbeville. Le vent de secteur est est faible à modéré, ce qui permet à la douceur de s'installer rapidement et de donner une ambiance estivale sur tous nos départements.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, la chaleur s'accentue sur l'ensemble du territoire régional sous un ciel largement bleu et ensoleillé. Le thermomètre affiche des valeurs caniculaires et éprouvantes dans l'intérieur des terres, avec des maximales atteignant 34°C à Lille, 35°C à Amiens, 34°C à Abbeville et Valenciennes, 34°C à Arras et jusqu'à 37°C à Château-Thierry dans l'Aisne. Sur le littoral de la Côte d'Opale, la brise marine modère l'atmosphère en limitant la hausse des températures à 27°C à Calais et 29°C à Boulogne-sur-Mer, offrant un répit appréciable pour les estivants. Le vent de secteur est souffle à 20 km/h en rafales dans l'intérieur, ce qui limite légèrement la sensation de lourdeur sous cette chape de chaleur.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+🌴 Dunkerque / Malo-les-Bains
+☀️ Très belle journée ensoleillée et chaude ce dimanche sur le sable dunkerquois.
+🌡️ Température sous abri : 34°C (ressenti chaud mais tempéré par une légère brise)
+🌊 Température de l’eau : 19 à 20°C
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil radieux sur toutes les plages ce dimanche, avec des conditions idéales pour la baignade.
+🌡️ Température maximale : 27 à 29°C
+🌊 Température de l’eau : 18 à 19°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante sur la région.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré à 20 km/h en cours de journée ce dimanche, faiblissant en soirée.
+🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
+⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale pour la navigation.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Aucune précipitation n'est attendue ce dimanche, accentuant la sécheresse de surface.
+
+Vent : Vent d'Est faible à modéré atteignant 20 km/h en rafales, limitant peu l'accumulation de la chaleur.
+
+Orages : Risque nul sur l'ensemble de la région pour cette journée de dimanche.
+
+Brouillards : Dissipation rapide de rares brumes matinales sur les plaines de l'Artois.
+🏔️ Météo montagne
+
+Vosges : Temps très chaud et généreusement ensoleillé ce dimanche avec quelques nuages de beau temps l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions restent très chaudes et ensoleillées sur l'ensemble de la région des Hauts-de-France. Le ciel sera lumineux avec seulement quelques nuages d'altitude décoratifs qui n'altéreront pas l'ensoleillement. Concernant le thermomètre de ce mardi, les températures minimales s'éveillent sous une grande douceur à 21°C à Amiens et 19°C à Lille, tandis que les maximales de l'après-midi restent élevées pour la saison, atteignant 33°C à Amiens, 32°C à Lille, 33°C à Abbeville and 34°C à Valenciennes.
+
+Le mercredi 15 juillet s'annonce tout aussi ensoleillé et agréable sur tous nos départements sous un ciel bleu peu nuageux. Les brises marines de nord-est viendront tempérer le littoral tandis que l'intérieur des terres conservera une ambiance estivale classique. Au niveau du thermomètre de ce mercredi, les minimales matinales restent très douces, s'élevant à 21°C à Amiens et 19°C à Lille, tandis que les maximales affichent 32°C à Amiens, 32°C à Lille, 32°C à Abbeville et 33°C à Valenciennes.
+
+Enfin, pour le jeudi 16 juillet, les conditions restent dominées par un temps sec, calme et largement ensoleillé sur toute la région après la dissipation de rares brumes matinales. Pour le thermomètre de ce jeudi, les minimales en matinée fraîchissent légèrement pour s'établir à 20°C à Amiens et 21°C à Lille, tandis que les maximales de l'après-midi seront agréablement respirables avec 32°C à Amiens, 31°C à Lille, 31°C à Abbeville et 32°C à Valenciennes.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : MONA FM
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+L'anticyclone positionné sur les îles Britanniques et s'étendant vers le nord de l'Europe protège les Hauts-de-France pour ce dimanche 12 juillet. Le flux continental de secteur sud-est draine de l'air particulièrement chaud et sec sur l'ensemble des départements de la région. Le soleil brille de manière continue et sans partage du matin au soir sous un ciel immaculé, garantissant un fort rayonnement solaire. Le ressenti est de plus en plus chaud et estival au fil des heures. Une légère bise d'est souffle modérément à 20 km/h sur les collines de l'Artois et les plaines de la Flandre, apportant une ventilation bienvenue mais insuffisante pour empêcher la chaleur de s'installer durablement dans les terres.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, les conditions sont optimales et extrêmement ensoleillées dès le réveil sur l'ensemble de la région des Hauts-de-France. Le soleil brille sans l'ombre d'un nuage sur la Flandre, le Hainaut et le Cambrésis, bien que quelques légers voiles nuageux inoffensifs puissent transiter dans le sud de la région vers l'Oise et le long de la vallée de la Somme. L'atmosphère est particulièrement douce et agréable au lever du jour après une nuit très calme. Les températures minimales s'élèvent à des niveaux élevés de 19°C à Lille, 20°C à Amiens, 20°C à Dunkerque, 19°C à Valenciennes, 19°C à Arras et 20°C à Abbeville. Le vent de secteur est est faible à modéré, ce qui permet à la douceur de s'installer rapidement et de donner une ambiance estivale sur tous nos départements.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, la chaleur s'accentue sur l'ensemble du territoire régional sous un ciel largement bleu et ensoleillé. Le thermomètre affiche des valeurs caniculaires et éprouvantes dans l'intérieur des terres, avec des maximales atteignant 34°C à Lille, 35°C à Amiens, 34°C à Abbeville et Valenciennes, 34°C à Arras et jusqu'à 37°C à Château-Thierry dans l'Aisne. Sur le littoral de la Côte d'Opale, la brise marine modère l'atmosphère en limitant la hausse des températures à 27°C à Calais et 29°C à Boulogne-sur-Mer, offrant un répit appréciable pour les estivants. Le vent de secteur est souffle à 20 km/h en rafales dans l'intérieur, ce qui limite légèrement la sensation de lourdeur sous cette chape de chaleur.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+🌴 Dunkerque / Malo-les-Bains
+☀️ Très belle journée ensoleillée et chaude ce dimanche sur le sable dunkerquois.
+🌡️ Température sous abri : 34°C (ressenti chaud mais tempéré par une légère brise)
+🌊 Température de l’eau : 19 à 20°C
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil radieux sur toutes les plages ce dimanche, avec des conditions idéales pour la baignade.
+🌡️ Température maximale : 27 à 29°C
+🌊 Température de l’eau : 18 à 19°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (dimanche 12 juillet 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante sur la région.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré à 20 km/h en cours de journée ce dimanche, faiblissant en soirée.
+🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
+⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale pour la navigation.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Aucune précipitation n'est attendue ce dimanche, accentuant la sécheresse de surface.
+
+Vent : Vent d'Est faible à modéré atteignant 20 km/h en rafales, limitant peu l'accumulation de la chaleur.
+
+Orages : Risque nul sur l'ensemble de la région pour cette journée de dimanche.
+
+Brouillards : Dissipation rapide de rares brumes matinales sur les plaines de l'Artois.
+🏔️ Météo montagne
+
+Vosges : Temps très chaud et généreusement ensoleillé ce dimanche avec quelques nuages de beau temps l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions restent très chaudes et ensoleillées sur l'ensemble de la région des Hauts-de-France. Le ciel sera lumineux avec seulement quelques nuages d'altitude décoratifs qui n'altéreront pas l'ensoleillement. Concernant le thermomètre de ce mardi, les températures minimales s'éveillent sous une grande douceur à 21°C à Amiens et 19°C à Lille, tandis que les maximales de l'après-midi restent élevées pour la saison, atteignant 33°C à Amiens, 32°C à Lille, 33°C à Abbeville and 34°C à Valenciennes.
+
+Le mercredi 15 juillet s'annonce tout aussi ensoleillé et agréable sur tous nos départements sous un ciel bleu peu nuageux. Les brises marines de nord-est viendront tempérer le littoral tandis que l'intérieur des terres conservera une ambiance estivale classique. Au niveau du thermomètre de ce mercredi, les minimales matinales restent très douces, s'élevant à 21°C à Amiens et 19°C à Lille, tandis que les maximales affichent 32°C à Amiens, 32°C à Lille, 32°C à Abbeville et 33°C à Valenciennes.
+
+Enfin, pour le jeudi 16 juillet, les conditions restent dominées par un temps sec, calme et largement ensoleillé sur toute la région après la dissipation de rares brumes matinales. Pour le thermomètre de ce jeudi, les minimales en matinée fraîchissent légèrement pour s'établir à 20°C à Amiens et 21°C à Lille, tandis que les maximales de l'après-midi seront agréablement respirables avec 32°C à Amiens, 31°C à Lille, 31°C à Abbeville et 32°C à Valenciennes.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO ICI NORMANDIE
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+Une dorsale anticyclonique s'étend des îles Britanniques vers le bassin parisien et protège la Normandie pour ce dimanche 12 juillet. Le flux continental de secteur sud-est draine de l'air très sec et chaud, garantissant un ciel globalement lumineux et ensoleillé du matin au soir sur l'ensemble de la région. Le ressenti est chaud et sec dans les terres, tandis que les côtes de la Manche profitent de brises de nord-est à 20 km/h apportant un peu de fraîcheur l'après-midi en bord de mer, alors que de légers voiles nuageux apparaissent vers le sud de la région en fin de journée sous l'effet du réchauffement diurne marqué.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce dimanche matin, les conditions sont optimales et extrêmement ensoleillées dès le réveil sur les cinq départements normands sous un ciel bleu immaculé. Le soleil brille sans partage de Cherbourg à Évreux, bien que de rares nuages bas locaux ou brumes de surface puissent temporairement traîner sur le littoral de la côte d'Albâtre vers Dieppe avant de se dissiper sous les premiers rayons. Les températures minimales sont douces pour la saison au lever du jour, s'élevant à des valeurs de 19°C à Rouen, 18°C à Caen, 18°C à Le Havre, 20°C à Cherbourg, 20°C à Évreux, 21°C à Alençon et 18°C à Lisieux. La bise de secteur est souffle faiblement, garantissant une matinée calme et limpide.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Dans l'après-midi de ce dimanche, le soleil brille généreusement sur toute la région dans une ambiance très chaude et estivale. Le thermomètre grimpe à des valeurs élevées et éprouvantes dans l'intérieur des terres, avec des maximales atteignant 36°C à Rouen, 36°C à Évreux, 36°C à Dieppe et 36°C à Lisieux, tandis qu'Alençon affiche 32°C. Sur le littoral du Calvados et de la Seine-Maritime, les brises côtières modérées de nord-est à 20 km/h tempèrent l'atmosphère en limitant la hausse des températures à 28°C à Caen et 26°C à Le Havre, tandis que le Cotentin subit une forte chaleur de 35°C à Cherbourg sous un ciel peu nuageux.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – LITTORAL NORMAND (dimanche 12 juillet 2026)
+
+🌴 Cabourg / Deauville / Le Havre / Dieppe
+☀️ Superbe ensoleillement estival sur toutes les plages normandes ce dimanche.
+🌡️ Température sur le littoral : 26 à 28°C sur les plages de Seine-Maritime et du Calvados.
+🌊 Température de l’eau : 17 à 18°C (baignade vivifiante)
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – MANCHE (dimanche 12 juillet 2026)
+
+📍 Zones : Le Havre • Fécamp • Dieppe • Cherbourg
+
+☀️ Situation générale : Protection anticyclonique solide avec advection d'air sec et chaud continental sur le bassin de la Manche.
+🌬️ Vent : Brises thermiques de secteur Nord-Est soufflant modérément à 20 km/h en journée ce dimanche.
+🌊 État de la mer : Mer peu agitée, excellente visibilité pour toutes les activités nautiques.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Temps sec et ensoleillé sur les cinq départements, aucune pluie à signaler ce dimanche.
+
+Vent : Brises marines de secteur Nord-Est soufflant jusqu'à 20 km/h le long des plages de la Manche en cours d'après-midi.
+
+Orages : Risque orageux nul ce dimanche sur toute la Normandie.
+
+Brouillards : Rares grisailles maritimes locales se dissipant rapidement en matinée.
+🏔️ Météo montagne
+
+Massif Central : Soleil dominant et chaleur marquée ce dimanche, évolution nuageuse inoffensive l'après-midi.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+Pour la journée du mardi 14 juillet, jour de la Fête Nationale, les conditions restent agréables et ensoleillées sur l'ensemble de la Normandie. Le ciel sera lumineux avec seulement quelques passages nuageux inoffensifs en matinée qui se dissiperont rapidement. Concernant le thermomètre de ce mardi, les températures minimales s'éveillent sous une grande douceur avec 19°C à Caen et 19°C à Rouen, tandis que les maximales affichent 28°C à Caen, 33°C à Rouen, 26°C à Le Havre et 32°C à Lisieux.
+
+Le mercredi 15 juillet s'annonce tout aussi agréable et lumineux sous un soleil généreux sur nos cinq départements. Les brises côtières tempéreront le littoral tandis que l'intérieur des terres conservera une ambiance estivale très agréable. Au niveau du thermomètre de ce mercredi, les minimales matinales restent stables à 18°C à Caen et 19°C à Rouen, tandis que les maximales de l'après-midi affichent 27°C à Caen, 33°C à Rouen, 26°C à Le Havre et 31°C à Lisieux.
+
+Enfin, pour le jeudi 16 juillet, les conditions se rafraîchissent sensiblement par le nord-ouest avec l'arrivée d'une masse d'air océanique plus fraîche sous un ciel variable. Pour le thermomètre de ce jeudi, les minimales en matinée s'établissent à 23°C à Caen et 18°C à Rouen, tandis que les maximales fléchissent nettement avec 23°C à Caen, 23°C à Rouen, 26°C à Le Havre et 30°C à Cherbourg.
+

@@ -1,0 +1,24 @@
+# Node dependencies
+**/node_modules/
+**/dist/
+**/.vercel/
+
+# Python cache & env
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.local
+.env.*.local
+venv/
+.venv/
+
+# Chrome profiles & logs
+**/.chrome_profile*/
+*.log
+logs/
+
+# Local cards directory
+cartes_alertes/
+cnews/reports/

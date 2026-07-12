@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Météo Climat Pro</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 40px; background-color: #f4f4f9; display: flex; flex-direction: column; align-items: center; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 350px; text-align: center; }
+        .temp { font-size: 3.5em; font-weight: bold; color: #ff5e00; margin: 10px 0; }
+        .condition { font-size: 1.2em; color: #555; text-transform: uppercase; font-weight: bold;}
+        .picto { font-size: 1.1em; color: #007bff; font-weight: bold; margin-top: 15px; padding: 10px; background: #e9f2ff; border-radius: 8px;}
+        button { background-color: #000000; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 1em; font-weight: bold; margin-bottom: 20px; transition: background 0.3s;}
+        button:hover { background-color: #333333; }
+        .details { margin-top: 20px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2 style="margin-top: 0;">Météo à Paris</h2>
+    <button onclick="chargerMeteo()" id="btnMeteo">Charger la météo via API</button>
+    
+    <div id="resultat" style="display: none;">
+        <div class="condition" id="conditionMeteo">--</div>
+        <div class="temp" id="tempActuelle">--°C</div>
+        
+        <div class="picto">Code Image : <span id="pictoCode">--</span></div>
+        
+        <div class="details">
+            <p>Rafales de vent max prévues : <br><strong style="font-size: 1.2em; color:#d9534f;"><span id="ventMax">--</span> km/h</strong></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function chargerMeteo() {
+        const btn = document.getElementById('btnMeteo');
+        btn.innerText = "Chargement...";
+        
+        // 1. Définition des coordonnées (Paris)
+        const lat = 48.85;
+        const lon = 2.35;
+        
+        // 2. URL de l'API (Projet de Production Climat Pro)
+        const url = `https://ubdevaemtwbzxksjlhjg.supabase.co/functions/v1/weather/forecast?lat=${lat}&lon=${lon}`;
+        
+        try {
+            // 3. Appel de l'API avec la fonction "fetch"
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    // La clé secrète indispensable !
+                    "x-api-key": "weather-master-key-2026-cnews"
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Erreur lors de la récupération des données");
+            }
+
+            // 4. On convertit la réponse en JSON
+            const data = await response.json();
+            
+            // 5. On injecte les données dans le code HTML (DOM)
+            document.getElementById('tempActuelle').innerText = data.current.temp_actuelle + '°C';
+            document.getElementById('conditionMeteo').innerText = data.current.condition_meteo;
+            document.getElementById('pictoCode').innerText = data.current.pictogramme;
+            document.getElementById('ventMax').innerText = data.daily[0].vent_10_max;
+
+            // On affiche le bloc résultat
+            document.getElementById('resultat').style.display = 'block';
+            btn.innerText = "Mettre à jour la météo";
+
+        } catch (error) {
+            alert("Erreur de connexion à l'API: " + error.message);
+            btn.innerText = "Réessayer";
+        }
+    }
+</script>
+
+</body>
+</html>

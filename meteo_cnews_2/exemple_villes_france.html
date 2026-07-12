@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test API Météo Climat Pro - Toutes les Villes</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9; text-align: center;}
+        h1 { color: #333; margin-bottom: 5px; }
+        p { color: #666; margin-bottom: 30px; }
+        button { background-color: #000000; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 1em; font-weight: bold; margin-bottom: 20px; transition: background 0.3s;}
+        button:hover { background-color: #333333; }
+        
+        /* Un système de grille fluide pour afficher de nombreuses villes joliment */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+            text-align: center;
+            border-top: 4px solid #007bff;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        
+        .city-name { font-size: 1.4em; font-weight: 900; color: #111; margin-bottom: 5px;}
+        .temp { font-size: 2.5em; font-weight: bold; color: #ff5e00; margin: 10px 0; }
+        .condition { font-size: 0.9em; color: #555; text-transform: uppercase; font-weight: bold;}
+        .picto { font-size: 1em; color: #007bff; font-weight: bold; margin-top: 15px; padding: 5px; background: #e9f2ff; border-radius: 8px;}
+        .details { margin-top: 15px; font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 10px; }
+        
+        #loader { display: none; font-size: 1.2em; color: #007bff; font-weight: bold; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Carte France Pictos - API Météo Climat Pro</h1>
+    <p>Ce programme récupère la météo de <strong>toutes les villes de France</strong> en un seul appel réseau !</p>
+    
+    <button onclick="chargerToutesLesVilles()" id="btnMeteo">Charger les villes du groupe "france_pictos"</button>
+    <div id="loader">Interrogation de l'API Supabase en cours...</div>
+    
+    <!-- Les cartes des villes s'afficheront ici -->
+    <div class="grid-container" id="resultatGrid"></div>
+
+<script>
+    async function chargerToutesLesVilles() {
+        const btn = document.getElementById('btnMeteo');
+        const loader = document.getElementById('loader');
+        const grid = document.getElementById('resultatGrid');
+        
+        // Affichage du loader, masquage du bouton
+        btn.style.display = "none";
+        loader.style.display = "block";
+        grid.innerHTML = ""; // On vide la grille précédente
+        
+        // URL de l'API avec le point d'accès spécial /region et l'ID france_pictos
+        const url = `https://ubdevaemtwbzxksjlhjg.supabase.co/functions/v1/weather/region?id=france_pictos`;
+        
+        try {
+            // Appel API global (ramène la data de toutes les villes d'un coup)
+            const response = await fetch(url, {
+                method: "GET",
+                headers: {
+                    "x-api-key": "weather-master-key-2026-cnews" // Clé de sécurité
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error("Erreur HTTP: " + response.status);
+            }
+
+            // On récupère le tableau JSON contenant toutes les villes
+            const data = await response.json();
+            
+            // On boucle sur chaque ville pour créer sa petite case (card) dans le HTML
+            data.cities.forEach(ville => {
+                const nom = ville.name;
+                const temp = ville.current.temp_actuelle;
+                const condition = ville.current.condition_meteo;
+                const picto = ville.current.pictogramme;
+                const ventMax = ville.daily[0].vent_10_max; // Vent maximum du jour
+                
+                // On génère le bloc HTML de la ville
+                const cardHTML = `
+                    <div class="card">
+                        <div class="city-name">${nom}</div>
+                        <div class="condition">${condition}</div>
+                        <div class="temp">${temp}°C</div>
+                        <div class="picto">Image : ${picto}</div>
+                        <div class="details">Rafales max (J0) : <strong>${ventMax} km/h</strong></div>
+                    </div>
+                `;
+                
+                // On l'ajoute dans la grille globale
+                grid.innerHTML += cardHTML;
+            });
+
+        } catch (error) {
+            alert("Erreur de connexion à l'API: " + error.message);
+        } finally {
+            // Fin du chargement : on remet le bouton
+            loader.style.display = "none";
+            btn.style.display = "inline-block";
+            btn.innerText = "Rafraîchir les prévisions";
+        }
+    }
+</script>
+
+</body>
+</html>

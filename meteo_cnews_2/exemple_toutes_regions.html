@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Climat Pro - Multi-Régions</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; background-color: #f0f2f5; margin: 0; }
+        .header { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .header h1 { margin-top: 0; color: #1a1a1a; font-size: 24px; }
+        
+        .controls { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; align-items: center; }
+        select { padding: 12px 20px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; outline: none; background: white; min-width: 250px; cursor: pointer; }
+        select:focus { border-color: #007bff; }
+        
+        button { padding: 12px 25px; background-color: #007bff; color: white; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.2s; }
+        button:hover { background-color: #0056b3; }
+        button:disabled { background-color: #ccc; cursor: not-allowed; }
+        
+        .loader { display: none; text-align: center; margin: 30px 0; color: #666; font-size: 18px; font-weight: bold; }
+        
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        
+        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #007bff; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .ville { font-size: 20px; font-weight: bold; color: #333; margin-bottom: 15px; text-transform: uppercase; }
+        .temp { font-size: 36px; font-weight: bold; color: #e74c3c; margin: 10px 0; }
+        .meteo-desc { font-size: 16px; color: #666; font-weight: 500; margin-bottom: 10px; }
+        .picto { font-size: 22px; font-weight: bold; background: #f8f9fa; padding: 8px 15px; border-radius: 20px; color: #007bff; display: inline-block; margin-bottom: 15px; border: 1px solid #e9ecef; }
+        
+        .details { display: flex; justify-content: space-between; border-top: 1px solid #eee; padding-top: 15px; margin-top: 10px; font-size: 14px; color: #555; }
+        .detail-item { display: flex; flex-direction: column; align-items: center; }
+        .detail-value { font-weight: bold; color: #222; margin-top: 5px; }
+
+        .region-title { text-align: center; margin: 30px 0 20px; color: #333; display: none; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🌍 Visualiseur Météo Multi-Régions</h1>
+    <p style="color: #666; margin-bottom: 20px;">Sélectionnez une carte pour charger les données de toutes les villes de la région instantanément.</p>
+    
+    <div class="controls">
+        <select id="regionSelector">
+            <option value="fra_pic">🇫🇷 France Entière (39 villes)</option>
+            <option value="idf">Île-de-France</option>
+            <option value="hdf">Hauts-de-France</option>
+            <option value="nor">Normandie</option>
+            <option value="bre">Bretagne</option>
+            <option value="pdl">Pays de la Loire</option>
+            <option value="cvl">Centre-Val de Loire</option>
+            <option value="ges">Grand Est</option>
+            <option value="bfc">Bourgogne-Franche-Comté</option>
+            <option value="ara">Auvergne-Rhône-Alpes</option>
+            <option value="naq">Nouvelle-Aquitaine</option>
+            <option value="occ">Occitanie</option>
+            <option value="pac">Provence-Alpes-Côte d'Azur</option>
+            <option value="cor">Corse</option>
+        </select>
+        <button id="loadBtn" onclick="chargerMeteo()">Charger la carte</button>
+    </div>
+</div>
+
+<div class="loader" id="loader">Récupération des prévisions météo en cours... Veuillez patienter ⏳</div>
+
+<h2 class="region-title" id="regionTitle">Résultats pour : <span></span></h2>
+<div class="grid-container" id="gridResultats"></div>
+
+<script>
+    async function chargerMeteo() {
+        const regionId = document.getElementById('regionSelector').value;
+        const regionName = document.getElementById('regionSelector').options[document.getElementById('regionSelector').selectedIndex].text;
+        const btn = document.getElementById('loadBtn');
+        const loader = document.getElementById('loader');
+        const grid = document.getElementById('gridResultats');
+        const titleBloc = document.getElementById('regionTitle');
+        const titleText = titleBloc.querySelector('span');
+
+        // URL de l'API Supabase - Pointant vers l'endpoint /region
+        const apiUrl = `https://ubdevaemtwbzxksjlhjg.supabase.co/functions/v1/weather/region?id=${regionId}`;
+        const apiKey = "weather-master-key-2026-cnews"; // Clé d'authentification
+
+        // Interface en mode chargement
+        btn.disabled = true;
+        btn.innerText = "Chargement...";
+        loader.style.display = "block";
+        grid.innerHTML = "";
+        titleBloc.style.display = "none";
+
+        try {
+            const response = await fetch(apiUrl, {
+                method: "GET",
+                headers: {
+                    "x-api-key": apiKey
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error(`Code erreur ${response.status}`);
+            }
+
+            const data = await response.json();
+            
+            // On met à jour le titre
+            titleText.innerText = regionName + " (" + data.count + " villes)";
+            titleBloc.style.display = "block";
+
+            // Si aucune ville n'est retournée
+            if (!data.cities || data.cities.length === 0) {
+                grid.innerHTML = `<p style="text-align:center; grid-column: 1 / -1;">Aucune donnée météo trouvée pour cette région.</p>`;
+                return;
+            }
+
+            // Génération des cartes pour chaque ville
+            data.cities.forEach(city => {
+                // S'il y a eu une erreur spécifique sur cette ville, on l'ignore ou on l'affiche différemment
+                if (city.error) return; 
+
+                const divCard = document.createElement('div');
+                divCard.className = 'card';
+                
+                divCard.innerHTML = `
+                    <div class="ville">${city.name}</div>
+                    
+                    <!-- Code Pictogramme CNEWS : P1, P2, P10 etc... -->
+                    <div class="picto">Picto: ${city.pictogramme}</div>
+                    
+                    <div class="meteo-desc">${city.current.condition_meteo}</div>
+                    <div class="temp">${Math.round(city.current.temp_actuelle)}°C</div>
+                    
+                    <div class="details">
+                        <div class="detail-item">
+                            <span>Vent max</span>
+                            <span class="detail-value">${city.daily[0].vent_10_max} km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Précipitations</span>
+                            <span class="detail-value">${city.daily[0].pluie_cumul} mm</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Risque pluie</span>
+                            <span class="detail-value">${city.daily[0].probabilite_pluie_max || 0}%</span>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(divCard);
+            });
+
+        } catch (error) {
+            console.error("Erreur:", error);
+            alert("Erreur lors de la récupération des données de la région : " + error.message);
+        } finally {
+            // Fin du chargement
+            loader.style.display = "none";
+            btn.disabled = false;
+            btn.innerText = "Charger la carte";
+        }
+    }
+    
+    // Charger la France par défaut au démarrage
+    window.onload = chargerMeteo;
+</script>
+
+</body>
+</html>
