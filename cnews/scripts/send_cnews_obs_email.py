@@ -98,9 +98,9 @@ def main():
             os.makedirs(cartes_dir, exist_ok=True)
 
     # 1. ÉTAPE 1 : Scraping et alimentation SQLite (update_daily_obs.py)
-    # On scrape les données de la veille (hier) par défaut
-    yesterday = datetime.date.today() - datetime.timedelta(days=1)
-    date_str = yesterday.strftime("%Y%m%d")
+    # On scrape les données d'aujourd'hui (date courante)
+    today = datetime.date.today()
+    date_str = today.strftime("%Y%m%d")
     
     print(f"\n=== ÉTAPE 1 : Collecte des observations Météociel pour le {date_str} ===")
     cmd_scrape = ["python", "update_daily_obs.py", "--date", date_str]
@@ -178,7 +178,7 @@ def main():
             subprocess.run([
                 "gh", "release", "create", tag, zip_path,
                 "--title", "Cartes Observations CNews - Dernière mise à jour",
-                "--notes", f"Pack d'observations climatologiques Météociel du {get_french_date_string(yesterday)}.",
+                "--notes", f"Pack d'observations climatologiques Météociel du {get_french_date_string(today)}.",
                 "--latest"
             ], check=True)
             print("ZIP publié sur GitHub Releases avec succès.")
@@ -189,7 +189,7 @@ def main():
 
     # 5. ÉTAPE 5 : Envoi de l'e-mail (uniquement à Grégory pour l'instant)
     print("\n=== ÉTAPE 5 : Envoi de l'e-mail ===")
-    date_label = get_french_date_string(yesterday)
+    date_label = get_french_date_string(today)
     subject = f"cartes d'observations du {date_label}"
     
     email_body = (
