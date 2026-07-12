@@ -41,7 +41,11 @@ def get_api_key():
 def read_meteofrance_local_data():
     """Reads local Météo-France CSV files from Cartes Alerte to prefer exact Météo-France temperatures."""
     mf_data = {}
-    csv_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    csv_dir = os.path.abspath(os.path.join(project_root, "..", "cartes_alertes"))
+    if not os.path.exists(csv_dir):
+        csv_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+        
     if os.path.exists(csv_dir):
         for fname in os.listdir(csv_dir):
             if fname.startswith("meteofrance_daily_forecast") and fname.endswith(".csv"):
@@ -518,7 +522,11 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     # Automatic Vision Mode image discovery if not passed directly
     vision_images = images
     if not vision_images and os.environ.get("VISION_MODE", "true").lower() in ["true", "1", "yes"]:
-        maps_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+        project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        maps_dir = os.path.abspath(os.path.join(project_root, "..", "cartes_alertes"))
+        if not os.path.exists(maps_dir):
+            maps_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+            
         reg_prefix = get_client_region_prefix(client_name)
         img_m_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset}_matin.jpg")
         img_a_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset}_apresmidi.jpg")
@@ -575,7 +583,7 @@ CONSIGNES ABSOLUES DE CHEF PRÉVISIONNISTE :
 6. Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. VARIE le choix de ces villes pour ne pas toujours citer les mêmes (fais un mix équilibré entre grandes villes, villes côtières, et petites communes des terres).
 7. Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme radio impeccable.
 8. IMPÉRATIF CRITIQUE : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Ne JAMAIS citer un autre jour !
-9. IMPÉRATIF ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80), tu DOIS obligatoirement en parler dans `summaryAfternoon` en précisant le risque d'averses orageuses et de rafales locales sous cellules instables.
+9. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France), tu DOIS obligatoirement en parler de façon explicite et alarmante dans `summaryAfternoon` en précisant la localisation des orages, le risque d'averses soutenues et les fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
 
 TU DOIS OBLIGATOIREMENT GÉNÉRER LES 6 BALISES XML DANS TA RÉPONSE, DANS CET ORDRE EXACT :
 <todaySummary>
