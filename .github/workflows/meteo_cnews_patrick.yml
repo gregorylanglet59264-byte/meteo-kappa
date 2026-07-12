@@ -59,5 +59,7 @@ jobs:
           git config --global user.email "langlet.gregory@gmail.com"
           git add cartes_alertes/bulletins_cnews_patrick.zip
           git commit -m "Mise à jour automatique du pack Patrick [GHA]" || echo "Aucune modification à commiter"
+          git checkout -- .
+          git clean -fd
           git pull --rebase origin main
           git push origin main
