@@ -2,8 +2,8 @@ name: Météo CNews Patrick Automatique
 
 on:
   schedule:
-    # 17h00 heure française d'été (15h00 UTC)
-    - cron: '0 15 * * *'
+    # 16h30 heure française d'été (14h30 UTC)
+    - cron: '30 14 * * *'
   workflow_dispatch:
     inputs:
       test_mode:
