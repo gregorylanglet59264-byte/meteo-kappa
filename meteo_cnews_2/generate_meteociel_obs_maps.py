@@ -24,15 +24,23 @@ import http.server, socketserver
 from datetime import date as dt_date, timedelta
 
 # ── Chemins ──────────────────────────────────────────────────────────────────
-METEO_SCRIPTS  = r"C:\Users\grego\.gemini\config\skills\meteo\scripts"
-PROJECT_DIR    = r"C:\Users\grego\Documents\METEO_CLIMAT\meteo cnews 2"
-DEST_DIR       = r"C:\Users\grego\Desktop\cartes_alertes"
-CHROME_PATH    = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
-DB_PATH        = r"C:\Users\grego\.gemini\config\skills\meteo\data\meteo_data.db"
-DATA_JSON      = os.path.join(PROJECT_DIR, "meteociel_obs_data.json")
-PORT           = 8002
+current_dir = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(current_dir, "data", "meteo_data.db")
+DATA_JSON = os.path.join(current_dir, "meteociel_obs_data.json")
+PORT = 8002
 
-sys.path.insert(0, METEO_SCRIPTS)
+if not os.path.exists(DB_PATH):
+    DB_PATH = r"C:\Users\grego\.gemini\config\skills\meteo\data\meteo_data.db"
+
+if os.environ.get("GITHUB_ACTIONS"):
+    DEST_DIR = os.path.abspath(os.path.join(current_dir, "..", "cartes_alertes"))
+    os.makedirs(DEST_DIR, exist_ok=True)
+    CHROME_PATH = "/usr/bin/google-chrome"
+else:
+    DEST_DIR = r"C:\Users\grego\Desktop\cartes_alertes"
+    CHROME_PATH = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+
+sys.path.insert(0, current_dir)
 
 # ── Zones → départements ─────────────────────────────────────────────────────
 ZONE_DEPTS = {
