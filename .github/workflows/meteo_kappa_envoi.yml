@@ -1,9 +1,10 @@
 name: Météo Kappa - 3. Envoi Bulletins
 
 on:
-  schedule:
-    # 18h00 heure française d'été (16h00 UTC)
-    - cron: '0 16 * * *'
+  workflow_run:
+    workflows: ["Météo Kappa - 2. Analyse Gemini Pro"]
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       test_mode:
@@ -18,6 +19,7 @@ permissions:
 jobs:
   run-envoi-kappa:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Récupérer le code du dépôt

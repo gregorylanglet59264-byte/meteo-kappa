@@ -1,9 +1,10 @@
 name: Météo Kappa - 2. Analyse Gemini Pro
 
 on:
-  schedule:
-    # 17h30 heure française d'été (15h30 UTC)
-    - cron: '30 15 * * *'
+  workflow_run:
+    workflows: ["Météo Kappa - 1. Cartes & Données"]
+    types:
+      - completed
   workflow_dispatch:
     inputs:
       test_mode:
@@ -18,6 +19,7 @@ permissions:
 jobs:
   run-analyse-gemini:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
       - name: Récupérer le code du dépôt
