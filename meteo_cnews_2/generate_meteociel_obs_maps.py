@@ -392,6 +392,15 @@ def build_stations(rows, param, min_dist_km):
         reverse_sort = False # lowest first
 
     stations.sort(key=lambda s: s["value"], reverse=reverse_sort)
+    
+    # Juste avant le return stations à la fin de build_stations :
+    seen_names = set()
+    unique_stations = []
+    for s in stations:
+        if s["name"] not in seen_names:
+            seen_names.add(s["name"])
+            unique_stations.append(s)
+    stations = unique_stations
     return stations
 
 # ── Sélection de période ─────────────────────────────────────────────────────
@@ -735,6 +744,18 @@ def main():
             if max_val is not None:
                 stations = [s for s in stations if s["value"] is not None and s["value"] <= max_val]
             stations = stations[:args.top]
+            # Éviter de générer des cartes "Pluies diluviennes" s'il ne pleut pas
+            if param == "precip" and len(stations) > 0:
+                max_val_param = stations[0]["value"]
+                if max_val_param < 1.0: # Moins de 1 mm
+                    print(f"  ⚠️  {param:<25} Cumuls trop faibles ({max_val_param} mm) — carte ignorée")
+                    continue
+            # Éviter de générer des cartes de rafales si le vent est faible
+            if param == "gust" and len(stations) > 0:
+                max_val_param = stations[0]["value"]
+                if max_val_param < 50.0: # Moins de 50 km/h
+                    print(f"  ⚠️  {param:<25} Vent trop faible ({max_val_param} km/h) — carte ignorée")
+                    continue
             if not stations:
                 fmsg = f" (aucune station ≥{min_val})" if min_val else (f" (aucune station ≤{max_val})" if max_val else "")
                 print(f"  ⚠️  {param:<25} Aucune station avec données{fmsg} — ignoré"); continue
