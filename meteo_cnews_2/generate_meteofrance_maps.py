@@ -716,6 +716,8 @@ def main():
             CHROME_PATH,
             "--headless=new",
             "--disable-gpu",
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
             f"--window-size={w_size}",
             "--mute-audio",
             "--hide-scrollbars",
