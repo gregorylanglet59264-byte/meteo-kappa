@@ -146,15 +146,15 @@ def main():
     email_body = (
         f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"
         f"Bonjour,<br><br>"
-        f"Les bulletins vidéo météo CNews (Pack Patrick) pour demain (<strong>{get_french_date_string(tomorrow)}</strong>) ont été générés avec succès.<br><br>"
-        f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers (Pack Patrick)</a><br><br>"
+        f"Veuillez trouver ci-joint vos bulletins vidéo, veuillez cliquer sur le lien ci-dessous.<br><br>"
+        f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
         f"Cordialement,<br>"
         f"L'automatisation Météo CNews"
         f"</body></html>"
     )
         
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
-    subject = f"Vos bulletins CNews - Pack Patrick du {get_french_date_string(tomorrow)}"
+    subject = f"bulletin vidéo du {get_french_date_string(tomorrow)}"
     
     # Gestion du mode test : si argument "test_mode" ou variable d'env GHA active
     test_mode = os.environ.get("TEST_MODE", "false").lower() in ["true", "1", "yes"]
