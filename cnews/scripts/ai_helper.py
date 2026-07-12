@@ -542,21 +542,22 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
         img_a_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset}_apresmidi.jpg")
         img_m2_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset+1}_matin.jpg")
         img_a2_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset+1}_apresmidi.jpg")
-        discovered_imgs = []
+        discovered_imgs = [None, None, None, None]
         print(f"  [Vision Mode] Découverte des cartes dans : {maps_dir}")
-        for p in [img_m_path, img_a_path, img_m2_path, img_a2_path]:
+        paths = [img_m_path, img_a_path, img_m2_path, img_a2_path]
+        for i, p in enumerate(paths):
             if os.path.exists(p):
                 print(f"    -> Carte trouvée et chargée : {os.path.basename(p)}")
                 try:
                     import base64
                     with open(p, "rb") as f:
                         b64_str = base64.b64encode(f.read()).decode("utf-8")
-                        discovered_imgs.append(f"data:image/jpeg;base64,{b64_str}")
+                        discovered_imgs[i] = f"data:image/jpeg;base64,{b64_str}"
                 except Exception as e:
                     print(f"Warning: Could not read map image {p} for Vision Mode: {e}")
             else:
                 print(f"    -> Carte manquante (passée) : {os.path.basename(p)}")
-        if discovered_imgs:
+        if any(discovered_imgs):
             vision_images = discovered_imgs
 
     try:
@@ -588,179 +589,216 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     j2_data = fetch_raw_weather(cities, day_offset + 1)
     vig_context = fetch_vigilance_and_national_context(day_offset)
 
-    prompt = f"""Tu es un journaliste et présentateur météo radio/TV senior (comme Patrick Marlière, Louis Bodin, Guillaume Séchet, Évelyne Dhéliat).
-Tu t'adresses au GRAND PUBLIC avec un langage clair, vivant, chaleureux, expert et captivant. Le ton doit être extrêmement professionnel et fluide, parfaitement adapté pour être lu directement au micro d'un studio de radio.
+    local_fallback = generate_local_fallback_texts(client_name, cities, day_offset)
 
-Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
-Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
-
-DONNÉES OFFICIELLES VIGILANCE & BULLETIN NATIONAL MÉTÉO-FRANCE (À INTÉGRER ET SYNTHÉTISER EN PRIORITÉ DANS TON RÉSUMÉ ET TES PRÉVISIONS) :
-{vig_context}
-
-Données météo réelles par ville JOUR 1 ({date_j1}) :
-{j1_data if j1_data else "(données non disponibles)"}
-
-Données météo réelles par ville JOUR 2 ({date_j2}) :
-{j2_data if j2_data else "(données non disponibles)"}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-ÉTAPE 1 OBLIGATOIRE — RECONNAISSANCE DES PICTOS SUR CHAQUE CARTE (AVANT TOUTE RÉDACTION)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Tu reçois 4 cartes météo officielles Météo-France dans l'ordre :
-  Carte 1 = {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1})
-  Carte 2 = {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1})
-  Carte 3 = {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2})
-  Carte 4 = {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2})
-
-RÉFÉRENTIEL DES 13 FICHES DE PICTOGRAMMES DE LA BANQUE D'IMAGES (À RECONNAÎTRE ABSOLUMENT) :
-Pour analyser les images des cartes fournies, tu dois identifier précisément les fichiers images des pictogrammes affichés sur chaque ville :
-  1. "orages.png" (CRITIQUE) : Représente un nuage sombre zébré d'un éclair (foudre) blanc/jaune. Signifie un risque d'orages !
+    picto_guide = """RÉFÉRENTIEL DES 13 PICTOGRAMMES DE LA BANQUE D'IMAGES (À RECONNAÎTRE ABSOLUMENT) :
+  1. "orages.png" (CRITIQUE) : Représente un nuage sombre zébré d'un éclair (foudre) jaune/blanc très visible. Signifie un risque d'orages !
   2. "Orages accompagnés de grêle.png" (CRITIQUE) : Représente un nuage avec un éclair et des grêlons (petits points blancs/noirs).
   3. "P9 (averses).png" : Un nuage blanc avec des gouttes de pluie et un soleil jaune bien visible derrière.
   4. "P10 (pluies faibles).png" : Un nuage blanc avec quelques fines gouttes de pluie.
   5. "P11 (fortes pluies).png" : Un nuage gris avec de nombreuses lignes de pluie épaisses et denses.
   6. "brouillards.png" : Trois lignes horizontales grises superposées sans nuage. Ciel bouché au sol.
   7. "P1 (soleil).png" : Un grand soleil jaune éclatant sans aucun nuage.
-  8. "P2 (peu nuageux).png" : Un grand soleil avec un petit nuage blanc devant.
+  8. "P2 (peu nuageux).png" : Un grand soleil avec un tout petit nuage blanc devant.
   9. "P8 (nuageux).png" : Un soleil masqué de moitié par un nuage blanc.
   10. "P4 (très nuageux).png" : Un gros nuage blanc couvrant.
   11. "P5 (couvert).png" : Un double nuage gris superposé, ciel totalement fermé.
   12. "P6 (soleil voilé).png" : Un soleil rayé de lignes horizontales fines (cirrus d'altitude).
-  13. "P12 (neige).png" : Un nuage blanc avec des flocons de neige (étoiles blanches).
+  13. "P12 (neige).png" : Un nuage blanc avec des flocons de neige (étoiles blanches)."""
 
-Prends ton temps pour examiner chaque image de carte pour repérer ces pictogrammes sur toutes les régions !
+    # Split images list
+    img_m1 = vision_images[0] if (vision_images and len(vision_images) > 0) else None
+    img_a1 = vision_images[1] if (vision_images and len(vision_images) > 1) else None
+    img_m2 = vision_images[2] if (vision_images and len(vision_images) > 2) else None
+    img_a2 = vision_images[3] if (vision_images and len(vision_images) > 3) else None
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-RÈGLES DE STYLE ET DE RÉDACTION (ABSOLUES)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    recon_lines = []
 
-1. ❌ MOTS FORMELLEMENT INTERDITS : "carte", "visuel", "image", "graphique", "pictogramme", "icône", "code", "comme on le voit", "le montre", "nos secteurs", "nos zones", "ci-dessous". Tu parles à des auditeurs qui ne voient rien.
+    # Appel 1 : Matinée Jour 1 (Carte 1)
+    summaryMorning = ""
+    if img_m1:
+        prompt_m1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour la MATINÉE du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+Règles de style :
+- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
+- Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
+- Intègre obligatoirement des indications précises sur le VENT (brise, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- Si tu vois un éclair (orage ou grêle), mentionne-le expressément (risque orageux, foudre).
 
-2. 🎙️ TON GRAND PUBLIC & JOURNALISTIQUE : Chaleureux, clair, captivant. Évite de faire des listes de villes brutes. Fais des phrases fluides.
+{picto_guide}
 
-3. 💨 INTÉGRATION DU VENT (OBLIGATOIRE) : Tu DOIS impérativement parler du vent dans tes commentaires principaux (summaryMorning et summaryAfternoon) (mistral sensible, brise marine sur les côtes, vent d'ouest modéré, rafales sous orages, etc.).
+Données réelles pour ce matin :
+{j1_data}
 
-4. 🌡️ GROUPEMENT DES TEMPÉRATURES (TERRE vs LITTORAL) : Pour les températures, rassemble les valeurs du littoral d'un côté et de l'intérieur des terres de l'autre s'il y a les deux (ex: "Il fera 18 degrés sur le littoral contre 23 dans l'intérieur des terres").
-
-5. ⛈️ ALERTE ORAGES SYSTEMATIQUE : Si tu détectes un picto d'orage ou de grêle sur une carte, mentionne-le obligatoirement de manière explicite et dynamique.
-
-6. 📰 TITRE ACCROCHEUR (PUTACLIC) : La balise <todaySummary> doit IMPÉRATIVEMENT commencer par un titre court, percutant et accrocheur en majuscules (style titre de journal ou de post LinkedIn) reprenant le temps général de la journée (ex: "🚨 MÉTÉO EXPLOSIVE : LE SUD SOUS LES ORAGES !" ou "☀️ CHALEUR RECORD ET PLEIN SOLEIL SUR LA RÉGION !").
-
-7. ⏱️ DURÉE : summaryMorning/summaryAfternoon = 150-180 mots. todaySummary/summaryMorning2/summaryAfternoon2 = 120-150 mots.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-FORMAT : 7 BALISES XML OBLIGATOIRES DANS CET ORDRE EXACT
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-<reconnaissance>
-CARTE 1 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1}) :
-[Pour chaque ville visible sur cette carte, note son pictogramme exact. Ex: "Lille = soleil, Amiens = nuageux, Douai = ORAGE ⚠️"]
-
-CARTE 2 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1}) :
-[Idem, ville par ville. Signale clairement tout picto orage ou grêle avec ⚠️]
-
-CARTE 3 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2}) :
-[Idem, ville par ville]
-
-CARTE 4 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2}) :
-[Idem, ville par ville. Signale clairement tout picto orage ou grêle avec ⚠️]
-
-BILAN DES PHÉNOMÈNES DÉTECTÉS :
-[Synthèse des phénomènes significatifs détectés et sur quelle(s) carte(s)]
-</reconnaissance>
-
-<todaySummary>
-[Insère ici un titre en majuscules court et percutant de type putaclic/journalistique].
-Résumé météo global de {date_j1} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
-Situation synoptique globale, masses d'air, phénomènes marquants. Intègre les alertes vigilance si présentes.
-</todaySummary>
-
-<summaryMorning>
-Matinée de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin...".
-Basé sur ta reconnaissance de la CARTE 1. Style parlé Grand Public. 5-6 villes avec minimales exactes. Intègre des indications de vent et le contraste littoral/terres si applicable.
-Si orage détecté sur Carte 1 → alerte obligatoire.
-</summaryMorning>
-
-<summaryAfternoon>
-Après-midi de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...".
-Basé sur ta reconnaissance de la CARTE 2. Style parlé Grand Public. 5-6 villes avec maximales exactes. Intègre le vent et le contraste littoral/terres si applicable.
-⚠️ Si orage détecté sur Carte 2 → alerte OBLIGATOIRE et EXPLICITE sur risques de foudre, rafales et fortes pluies.
-</summaryAfternoon>
-
-<summaryMorning2>
-Matinée de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin...".
-Basé sur ta reconnaissance de la CARTE 3. Style parlé. 4-5 villes avec minimales réelles.
-</summaryMorning2>
-
-<summaryAfternoon2>
-Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi...".
-Basé sur ta reconnaissance de la CARTE 4. Style parlé. 4-5 villes avec maximales réelles.
-⚠️ Si orage détecté sur Carte 4 → alerte OBLIGATOIRE.
-</summaryAfternoon2>
-
-<forecastRaw>
-📉 Tendance – 3 jours suivants ({date_j3} au {date_j5})
-
-- {date_j3} : [description riche 60-80 mots avec températures min/max et phénomènes]
-- {french_date(today + datetime.timedelta(days=day_offset + 3), False)} : [description riche 60-80 mots]
-- {date_j5} : [description riche 60-80 mots]
-</forecastRaw>
+Instructions :
+1. Remplis la balise <reconnaissance_matin> avec la liste des villes visibles sur la carte et leur picto. Ex: "Lille = soleil, Douai = ORAGE ⚠️"
+2. Remplis la balise <texte_matin> avec ton commentaire parlé de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
 """
+        try:
+            print(f"[{client_name}] Calling Gemini Pro for J1 Morning map...")
+            res_m1 = call_openrouter(api_key, prompt_m1, images=[img_m1])
+            recon_m1 = extract_xml_tag(res_m1, "reconnaissance_matin")
+            summaryMorning = extract_xml_tag(res_m1, "texte_matin")
+            recon_lines.append(f"CARTE 1 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1}) :\n{recon_m1}")
+        except Exception as e:
+            print(f"Error calling AI for Morning 1: {e}")
+            summaryMorning = local_fallback["summaryMorning"]
+            recon_lines.append(f"CARTE 1 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1}) :\n(Échec analyse IA)")
+    else:
+        summaryMorning = local_fallback["summaryMorning"]
+        recon_lines.append(f"CARTE 1 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1}) :\n(Carte absente)")
 
-    if vision_images and any(vision_images):
-        prompt += (
-            f"\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-            f"MODE VISION — {len(vision_images)} CARTES MÉTÉO HD FOURNIES\n"
-            f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n"
-            f"Les {len(vision_images)} images attachées sont dans l'ordre chronologique :\n"
-            f"  Image 1 = Carte {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1})\n"
-            f"  Image 2 = Carte {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1})\n"
-            f"  Image 3 = Carte {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2})\n"
-            f"  Image 4 = Carte {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2})\n\n"
-            f"PROCESSUS EN 2 ÉTAPES :\n"
-            f"  ÉTAPE A — Examine chaque image attentivement, ville par ville. Cherche les pictogrammes de la banque (notamment orages ⚠️).\n"
-            f"            Renseigne la balise <reconnaissance> avec le résultat complet.\n"
-            f"  ÉTAPE B — Rédige les 6 autres balises XML en te basant STRICTEMENT sur ta reconnaissance.\n\n"
-            f"⚠️ RÈGLE ABSOLUE ORAGES : Un seul éclair détecté sur une carte = alerte orage obligatoire dans le bulletin.\n"
-            f"⚠️ RÈGLE ABSOLUE RADIO/TV : Interdit d'écrire 'carte', 'image', 'visuel', 'pictogramme' dans les blocs de bulletin."
-        )
+    # Appel 2 : Après-midi Jour 1 (Carte 2)
+    summaryAfternoon = ""
+    if img_a1:
+        prompt_a1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+Règles de style :
+- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
+- Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
+- Intègre obligatoirement des indications précises sur le VENT (mistral, brise côtière, vent d'ouest, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite (risques de foudre, fortes pluies sous cellules, grêle).
 
+{picto_guide}
+
+Données réelles pour cet après-midi :
+{j1_data}
+
+Instructions :
+1. Remplis la balise <reconnaissance_apresmidi> avec la liste des villes et leur picto.
+2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
+"""
+        try:
+            print(f"[{client_name}] Calling Gemini Pro for J1 Afternoon map...")
+            res_a1 = call_openrouter(api_key, prompt_a1, images=[img_a1])
+            recon_a1 = extract_xml_tag(res_a1, "reconnaissance_apresmidi")
+            summaryAfternoon = extract_xml_tag(res_a1, "texte_apresmidi")
+            recon_lines.append(f"CARTE 2 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1}) :\n{recon_a1}")
+        except Exception as e:
+            print(f"Error calling AI for Afternoon 1: {e}")
+            summaryAfternoon = local_fallback["summaryAfternoon"]
+            recon_lines.append(f"CARTE 2 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1}) :\n(Échec analyse IA)")
+    else:
+        summaryAfternoon = local_fallback["summaryAfternoon"]
+        recon_lines.append(f"CARTE 2 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1}) :\n(Carte absente)")
+
+    # Appel 3 : Matinée Jour 2 (Carte 3)
+    summaryMorning2 = ""
+    if img_m2:
+        prompt_m2 = f"""Tu es un présentateur météo radio. Rédige le commentaire parlé pour la MATINÉE du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+Règles :
+- Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
+- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
+
+{picto_guide}
+
+Données réelles pour ce matin-là :
+{j2_data}
+
+Instructions :
+1. Remplis la balise <reconnaissance_matin2> avec la liste des villes et leur picto.
+2. Remplis la balise <texte_matin2> avec ton commentaire.
+"""
+        try:
+            print(f"[{client_name}] Calling Gemini Pro for J2 Morning map...")
+            res_m2 = call_openrouter(api_key, prompt_m2, images=[img_m2])
+            recon_m2 = extract_xml_tag(res_m2, "reconnaissance_matin2")
+            summaryMorning2 = extract_xml_tag(res_m2, "texte_matin2")
+            recon_lines.append(f"CARTE 3 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2}) :\n{recon_m2}")
+        except Exception as e:
+            print(f"Error calling AI for Morning 2: {e}")
+            summaryMorning2 = local_fallback["summaryMorning2"]
+            recon_lines.append(f"CARTE 3 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2}) :\n(Échec analyse IA)")
+    else:
+        summaryMorning2 = local_fallback["summaryMorning2"]
+        recon_lines.append(f"CARTE 3 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2}) :\n(Carte absente)")
+
+    # Appel 4 : Après-midi Jour 2 (Carte 4)
+    summaryAfternoon2 = ""
+    if img_a2:
+        prompt_a2 = f"""Tu es un présentateur météo radio. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+Règles :
+- Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
+- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
+- Si orage visible, mentionne-le expressément.
+
+{picto_guide}
+
+Données réelles pour cet après-midi-là :
+{j2_data}
+
+Instructions :
+1. Remplis la balise <reconnaissance_apresmidi2> avec la liste des villes et leur picto.
+2. Remplis la balise <texte_apresmidi2> avec ton commentaire.
+"""
+        try:
+            print(f"[{client_name}] Calling Gemini Pro for J2 Afternoon map...")
+            res_a2 = call_openrouter(api_key, prompt_a2, images=[img_a2])
+            recon_a2 = extract_xml_tag(res_a2, "reconnaissance_apresmidi2")
+            summaryAfternoon2 = extract_xml_tag(res_a2, "texte_apresmidi2")
+            recon_lines.append(f"CARTE 4 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2}) :\n{recon_a2}")
+        except Exception as e:
+            print(f"Error calling AI for Afternoon 2: {e}")
+            summaryAfternoon2 = local_fallback["summaryAfternoon2"]
+            recon_lines.append(f"CARTE 4 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2}) :\n(Échec analyse IA)")
+    else:
+        summaryAfternoon2 = local_fallback["summaryAfternoon2"]
+        recon_lines.append(f"CARTE 4 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2}) :\n(Carte absente)")
+
+    # Appel 5 : Synthèse (todaySummary & forecastRaw)
+    recon_final = "\n\n".join(recon_lines)
+    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée et la tendance à 3 jours pour le bulletin "{client_name}".
+Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visuel', 'image').
+
+Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
+Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
+
+DONNÉES OFFICIELLES VIGILANCE & BULLETIN NATIONAL MÉTÉO-FRANCE :
+{vig_context}
+
+PRÉVISIONS DE LA JOURNÉE PAR L'IA :
+Matinée Jour 1 : {summaryMorning}
+Après-midi Jour 1 : {summaryAfternoon}
+
+BILAN DE LA RECONNAISSANCE DES CARTES :
+{recon_final}
+
+Instructions :
+1. Remplis la balise <todaySummary> (120-150 mots) en commençant obligatoirement par un titre court, percutant et accrocheur/putaclic en MAJUSCULES (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1} (synoptique, vigilance...). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
+2. Remplis la balise <forecastRaw> avec la tendance détaillée à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
+"""
     try:
-        if vision_images and any(vision_images):
-            print(f"Calling OpenRouter Vision ({OPENROUTER_VISION_MODEL}) with {len(vision_images)} HD maps for '{client_name}'...")
-        else:
-            print(f"Calling OpenRouter ({OPENROUTER_MODEL}) for '{client_name}'...")
-        text = call_openrouter(api_key, prompt, images=vision_images)
-
-        result = {
-            "todaySummary":    extract_xml_tag(text, "todaySummary"),
-            "summaryMorning":  extract_xml_tag(text, "summaryMorning"),
-            "summaryAfternoon": extract_xml_tag(text, "summaryAfternoon"),
-            "summaryMorning2": extract_xml_tag(text, "summaryMorning2"),
-            "summaryAfternoon2": extract_xml_tag(text, "summaryAfternoon2"),
-            "forecastRaw":     extract_xml_tag(text, "forecastRaw"),
-        }
-        result["forecastTextRaw"] = result["forecastRaw"]
-
-        # Merge with local fallback for any missing field or invalid date mention
-        wd1_target = f"Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin"
-        for k, v in result.items():
-            if not v or len(v.strip()) < 20:
-                print(f"Warning: Field '{k}' missing or short from AI, filling with local fallback.")
-                result[k] = local_fallback[k]
-            elif k in ["summaryMorning", "todaySummary"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:50].lower():
-                print(f"Warning: AI {k} had wrong start ('{v[:30]}...'), replacing with exact local fallback.")
-                result[k] = local_fallback[k]
-
-        # Attach dynamic phenomena, mountain, beach, and marine texts
-        for extra_key in ["recordsRaw", "mountain", "mountainTitle", "beach", "marine"]:
-            if extra_key in local_fallback:
-                result[extra_key] = local_fallback[extra_key]
-
-        print(f"✅ Texts generated & verified successfully for '{client_name}'.")
-        return result
-
+        print(f"[{client_name}] Calling Gemini Pro for final synthesis...")
+        res_syn = call_openrouter(api_key, prompt_syn)
+        todaySummary = extract_xml_tag(res_syn, "todaySummary")
+        forecastRaw = extract_xml_tag(res_syn, "forecastRaw")
     except Exception as e:
-        print(f"Error during AI text generation ({e}) — falling back to 100% deterministic local generation.")
-        return local_fallback
+        print(f"Error calling AI for Synthesis: {e}")
+        todaySummary = local_fallback["todaySummary"]
+        forecastRaw = local_fallback["forecastRaw"]
+
+    result = {
+        "todaySummary": todaySummary,
+        "summaryMorning": summaryMorning,
+        "summaryAfternoon": summaryAfternoon,
+        "summaryMorning2": summaryMorning2,
+        "summaryAfternoon2": summaryAfternoon2,
+        "forecastRaw": forecastRaw,
+    }
+    result["forecastTextRaw"] = result["forecastRaw"]
+
+    # Merge with local fallback for any missing field or invalid date mention
+    wd1_target = f"Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin"
+    for k, v in result.items():
+        if not v or len(v.strip()) < 20:
+            print(f"Warning: Field '{k}' missing or short from AI, filling with local fallback.")
+            result[k] = local_fallback[k]
+        elif k in ["summaryMorning", "todaySummary"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:150].lower():
+            print(f"Warning: AI {k} had wrong start ('{v[:30]}...'), replacing with exact local fallback.")
+            result[k] = local_fallback[k]
+
+    # Attach dynamic phenomena, mountain, beach, and marine texts
+    for extra_key in ["recordsRaw", "mountain", "mountainTitle", "beach", "marine"]:
+        if extra_key in local_fallback:
+            result[extra_key] = local_fallback[extra_key]
+
+    print(f"✅ Texts generated & verified successfully for '{client_name}'.")
+    return result
