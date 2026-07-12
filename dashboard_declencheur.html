@@ -531,7 +531,18 @@
     }
 
     async function triggerWf(btn, repo, workflowFile) {
-      const token = localStorage.getItem('github_pat');
+      // Lire la cle directement depuis le champ de saisie en priorite (au cas ou l'utilisateur a colle sans enregistrer)
+      const input = document.getElementById('pat-input');
+      let token = input.value.trim();
+      
+      if (!token) {
+        token = localStorage.getItem('github_pat');
+      } else {
+        // Enregistrer automatiquement si present pour simplifier l'utilisation
+        localStorage.setItem('github_pat', token);
+        updateTokenStatus();
+      }
+      
       if (!token) {
         showToast("Veuillez d'abord configurer votre clé d'accès !", "error");
         return;
@@ -546,8 +557,8 @@
         const response = await fetch(`https://api.github.com/repos/gregorylanglet59264-byte/${repo}/actions/workflows/${workflowFile}/dispatches`, {
           method: 'POST',
           headers: {
-            'Authorization': `token ${token}`,
-            'Accept': 'application/vnd.github.v3+json',
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ ref: 'main' })
