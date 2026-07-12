@@ -1,0 +1,56 @@
+name: Météo Kappa - 3. Envoi Bulletins
+
+on:
+  schedule:
+    # 18h00 heure française d'été (16h00 UTC)
+    - cron: '0 16 * * *'
+  workflow_dispatch:
+    inputs:
+      test_mode:
+        description: "Mode test"
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  run-envoi-kappa:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Lancer la compression ZIP et l'envoi de l'e-mail Kappa
+        env:
+          PYTHONUNBUFFERED: "1"
+          GMAIL_EMAIL: "langlet.gregory@gmail.com"
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          # Envoi à Patrick temporairement désactivé pour validation (Charlotte + Gregory uniquement)
+          RECIPIENT_EMAILS: ${{ (github.event_name == 'schedule' || github.event.inputs.test_mode == 'false') && 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, langletcharlotte480@gmail.com' || 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, langletcharlotte480@gmail.com' }}
+        run: |
+          python cnews/scripts/send_kappa_email.py --skip-generation
+
+      - name: Commiter et pousser l'archive ZIP (pour le lien de téléchargement)
+        run: |
+          git config --global user.name "Gregory LANGLET"
+          git config --global user.email "langlet.gregory@gmail.com"
+          git add cnews/AUTOMATISATION_*.zip
+          git commit -m "Mise à jour automatique du ZIP Kappa [GHA]" || echo "Aucune modification à commiter"
+          git checkout -- .
+          git clean -fd
+          git pull --rebase origin main
+          git push origin main

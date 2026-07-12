@@ -67,21 +67,30 @@ def send_email(body_text, subject, recipients_str):
         return False
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Send Kappa weather email")
+    parser.add_argument("--skip-generation", action="store_true", help="Skip map generation and AI call, send email directly using existing files")
+    parser.add_argument("--day-offset", type=int, default=1, help="Day offset (default 1 for tomorrow)")
+    args = parser.parse_args()
+
     scripts_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.abspath(os.path.join(scripts_dir, ".."))
     export_script = os.path.join(scripts_dir, "export_all_bulletins.py")
     
-    day_offset = 1  # Toujours le lendemain par défaut
+    day_offset = args.day_offset
     
-    print("=== ÉTAPE 1 : Génération des cartes et des bulletins Kappa ===")
-    cmd = ["python", export_script, "--day-offset", str(day_offset), "--generate-maps"]
-    print(f"Exécution : {' '.join(cmd)}")
-    
-    try:
-        subprocess.run(cmd, check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Erreur lors de la génération des bulletins : {e}")
-        sys.exit(1)
+    if not args.skip_generation:
+        print("=== ÉTAPE 1 : Génération des cartes et des bulletins Kappa ===")
+        cmd = ["python", export_script, "--day-offset", str(day_offset), "--generate-maps"]
+        print(f"Exécution : {' '.join(cmd)}")
+        
+        try:
+            subprocess.run(cmd, check=True)
+        except subprocess.CalledProcessError as e:
+            print(f"Erreur lors de la génération des bulletins : {e}")
+            sys.exit(1)
+    else:
+        print("=== ÉTAPE 1 (Sautée) : Utilisation des bulletins existants ===")
         
     print("\n=== ÉTAPE 2 : Lecture du rapport textuel ===")
     suffix = "demain" if day_offset == 1 else "aujourdhui"

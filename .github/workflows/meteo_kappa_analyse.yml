@@ -1,9 +1,9 @@
-name: Météo Kappa - 1. Cartes & Données
+name: Météo Kappa - 2. Analyse Gemini Pro
 
 on:
   schedule:
-    # 17h00 heure française d'été (15h00 UTC)
-    - cron: '0 15 * * *'
+    # 17h30 heure française d'été (15h30 UTC)
+    - cron: '30 15 * * *'
   workflow_dispatch:
     inputs:
       test_mode:
@@ -16,7 +16,7 @@ permissions:
   contents: write
 
 jobs:
-  run-cartes-kappa:
+  run-analyse-gemini:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,25 +34,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Installer Playwright Chromium (pour les captures de cartes)
-        run: |
-          playwright install chromium
-
-      - name: Lancer la génération des cartes et de la structure du programme
+      - name: Lancer l'analyse des cartes par Gemini Pro (Vision)
         env:
           PYTHONUNBUFFERED: "1"
-          CHROME_PATH: "/usr/bin/google-chrome"
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          python cnews/scripts/export_all_bulletins.py --day-offset 1 --generate-maps --skip-ai
+          python cnews/scripts/export_all_bulletins.py --day-offset 1
 
-      - name: Commiter et pousser les cartes et données (pour mise à jour Vercel)
+      - name: Commiter et pousser les textes de prévision (pour mise à jour Vercel)
         run: |
           git config --global user.name "Gregory LANGLET"
           git config --global user.email "langlet.gregory@gmail.com"
-          # Forcer l'ajout des cartes .jpg générées bien qu'elles soient dans le dossier ignoré cartes_alertes/
           git add cnews/AUTOMATISATION.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.txt
-          git add -f cartes_alertes/*.jpg || echo "Aucune carte jpg à ajouter"
-          git commit -m "Mise à jour automatique des cartes et données Kappa [GHA]" || echo "Aucune modification à commiter"
+          git commit -m "Mise à jour automatique des prévisions Gemini Kappa [GHA]" || echo "Aucune prévision à commiter"
           git checkout -- .
           git clean -fd
           git pull --rebase origin main
