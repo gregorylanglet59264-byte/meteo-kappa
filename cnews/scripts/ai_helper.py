@@ -185,8 +185,6 @@ def fetch_weather_struct(cities, day_offset):
                     })
                 except (IndexError, KeyError):
                     pass
-    except Exception as e:
-        print(f"Warning: Could not fetch weather struct: {e}")
     return results_list
 
 
