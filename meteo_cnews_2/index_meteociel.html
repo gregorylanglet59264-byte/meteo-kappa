@@ -102,11 +102,23 @@ body, html { width:100%; height:100%; font-family:'Outfit',sans-serif; color:#ff
 .portrait .header-title { font-size:72px; }
 
 .header-subtitle {
-  font-size:46px; font-weight:800; color:#ff5a24; letter-spacing:0.5px; text-transform:uppercase;
-  text-shadow:0 2px 5px rgba(0,0,0,0.5);
-  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
 }
-.portrait .header-subtitle { font-size:32px; }
+.subtitle-region {
+  font-size:42px; font-weight:900; color:#ff5a24; letter-spacing:0.5px; text-transform:uppercase;
+  text-shadow:0 2px 5px rgba(0,0,0,0.5);
+  line-height: 1.1;
+}
+.subtitle-date {
+  font-size:26px; font-weight:700; color:rgba(255,255,255,0.80); letter-spacing:0.5px; text-transform:uppercase;
+  text-shadow:0 2px 4px rgba(0,0,0,0.5);
+  line-height: 1.1;
+}
+.portrait .subtitle-region { font-size:32px; }
+.portrait .subtitle-date { font-size:22px; }
 
 .header-desc {
   font-family: 'Outfit', sans-serif;
@@ -773,20 +785,21 @@ function applyStyles(cfg) {
   // Set titles
   document.getElementById('title-text').textContent = meta.title;
   
-  let subtitleText = `CE ${dayName.toUpperCase()} ${dateWithoutYear.toUpperCase()}`;
+  let datePart = `CE ${dayName.toUpperCase()} ${dateWithoutYear.toUpperCase()}`;
   if (cfg.date_mode === 'period') {
-    subtitleText = cfg.date_fr.toUpperCase();
+    datePart = cfg.date_fr.toUpperCase();
+  }
+  if (cfg.filter_label) {
+    datePart += ` · ${cfg.filter_label.toUpperCase()}`;
   }
 
-  // Si régional, préfixer par le nom de la région
+  let subtitleHTML = "";
   if (cfg.zone && cfg.zone !== 'france') {
-    subtitleText = `${cfg.zone_label.toUpperCase()} · ${subtitleText}`;
+    subtitleHTML = `<div class="subtitle-region">${cfg.zone_label.toUpperCase()}</div><div class="subtitle-date">${datePart}</div>`;
+  } else {
+    subtitleHTML = `<div class="subtitle-date">${datePart}</div>`;
   }
-  
-  if (cfg.filter_label) {
-    subtitleText += ` · ${cfg.filter_label.toUpperCase()}`;
-  }
-  document.getElementById('subtitle-text').textContent = subtitleText;
+  document.getElementById('subtitle-text').innerHTML = subtitleHTML;
 
   // Render rows/capsules
   const container = document.getElementById('rows-container');
