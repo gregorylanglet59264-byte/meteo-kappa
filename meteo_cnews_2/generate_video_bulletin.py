@@ -45,6 +45,30 @@ def safe_rmtree(path):
 def log(msg):
     print(f"[VIDEO-GEN] {msg}")
 
+def get_font_path(prefer_bold=False):
+    paths = []
+    if prefer_bold:
+        paths = [
+            r"C:\Windows\Fonts\ARIALNB.TTF",
+            r"C:\Windows\Fonts\arialbd.ttf",
+            r"C:\Windows\Fonts\arial.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf",
+        ]
+    else:
+        paths = [
+            r"C:\Windows\Fonts\arial.ttf",
+            r"C:\Windows\Fonts\arialbd.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
+        ]
+    for p in paths:
+        if os.path.exists(p):
+            return p
+    return None
+
 def get_video_duration(path):
     cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", path]
     res = subprocess.run(cmd, capture_output=True, text=True, check=True)
@@ -96,7 +120,9 @@ def create_transition_frames(day_str, sub_str, width, height, logo_path, output_
             # Create text layer
             text_layer = Image.new("RGBA", (t_width, t_height), (0, 0, 0, 0))
             draw = ImageDraw.Draw(text_layer)
-            font_path_bold = r"C:\Windows\Fonts\ARIALNB.TTF"
+            font_path_bold = get_font_path(prefer_bold=True)
+            if not font_path_bold:
+                raise FileNotFoundError("Aucune police TTF supportée n'a été trouvée sur le système pour dessiner les transitions.")
             
             if width > height:
                 # Landscape (1448 x 1086 template)
@@ -176,7 +202,9 @@ def create_transition_frames(day_str, sub_str, width, height, logo_path, output_
             img.paste(logo, (logo_x, logo_y), logo)
             logo_y += target_h + (70 if width > height else 90)
             
-        font_path_bold = r"C:\Windows\Fonts\arialbd.ttf"
+        font_path_bold = get_font_path(prefer_bold=True)
+        if not font_path_bold:
+            raise FileNotFoundError("Aucune police TTF supportée n'a été trouvée sur le système pour dessiner les textes.")
         day_size = 75 if width > height else 65
         sub_size = 85 if width > height else 90
         
