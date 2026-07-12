@@ -610,40 +610,84 @@ Pour analyser les images des cartes fournies, identifie précisément les fichie
 
 Prends ton temps pour examiner chaque image de carte pour repérer ces pictogrammes (surtout les orages "orages.png" et "Orages accompagnés de grêle.png") sur toutes les régions !
 
-=== RÈGLES DE STYLE ET MOTS INTERDITS (STRICT ET ABSOLU) ===
-1. INTERDICTION DE NOMMER LE SUPPORT : Tu es à la radio. Tes auditeurs ne voient pas les images. Par conséquent, il est FORMELLEMENT INTERDIT d'utiliser les mots suivants dans tes commentaires :
-   ❌ MOTS INTERDITS : "carte(s)", "visuel(s)", "image(s)", "graphique(s)", "le montre", "le visuel", "comme on le voit", "comme le montre", "ci-dessous", "pictogramme(s)", "icône(s)", "code(s)", "nos secteurs", "nos zones".
-   Fais comme si tu parlais en direct de la météo des régions sans aucun écran devant toi.
-2. Style parlé et fluide : Utilise des tournures de présentateur radio senior (ex: "Du côté des températures...", "Le réveil s'annonce...", "Une journée placée sous le signe de...", "Nous retrouvons...", "Le mercure s'affole..."). Évite de faire des listes de villes brutales, intègre les chiffres naturellement dans ton récit.
-3. Causalité & Synoptique : Explique brièvement mais avec expertise la cause météorologique en début de bulletin (dorsale anticyclonique des Açores, flux océanique perturbé de sud-ouest, marais barométrique estival, talweg d'altitude, advection d'air subtropical).
-4. Nébulosité précise : Qualifie précisément le ciel et les nuages (cirrus d'altitude, cumulus bourgeonnants de l'après-midi, bancs de brouillards côtiers, grisailles matinales).
-5. Vents & Géographie : Contextualise le vent selon la région de la radio (brise marine rafraîchissante, mistral sensible, brises thermiques en Manche).
-6. Données exactes : Utilise UNIQUEMENT les températures officielles de Météo-France et d'Open-Meteo fournies ci-dessus (aucun chiffre inventé, aucun décimal).
-7. Variété des villes : Cite impérativement 5 à 6 villes différentes avec leurs températures exactes. Varie ton choix de villes pour chaque bulletin pour ne pas lasser l'auditeur.
-8. Rythme radio : Chaque bloc (`summaryMorning`, `summaryAfternoon`) doit faire entre 140 et 180 mots pour un rythme de lecture confortable d'environ 1 minute à l'antenne.
-9. Repères temporels stricts : summaryMorning et summaryAfternoon doivent parler du jour cible {date_j1} et commencer impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...".
-10. IMPÉRATIF SÉCURITÉ & ORAGES : Si le bulletin de vigilance contient la mention d'orages, ou si des villes ont un code météo d'orage (code >= 80 pour Open-Meteo, ou code 10/11 pour Météo-France, ou si tu vois le pictogramme d'orage sur l'image), tu DOIS obligatoirement alerter les auditeurs de façon explicite et dynamique dans `summaryAfternoon` en précisant le risque de violentes averses orageuses locales, d'activité électrique et de fortes rafales sous cellules instables. Ne passe pas sous silence ce risque majeur.
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ÉTAPE 1 OBLIGATOIRE — RECONNAISSANCE DES PICTOS SUR CHAQUE CARTE (AVANT TOUTE RÉDACTION)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+Tu reçois 4 cartes météo officielles Météo-France dans l'ordre :
+  Carte 1 = {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1})
+  Carte 2 = {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1})
+  Carte 3 = {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2})
+  Carte 4 = {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2})
 
-TU DOIS OBLIGATOIREMENT GÉNÉRER LES 6 BALISES XML DANS TA RÉPONSE, DANS CET ORDRE EXACT :
+GUIDE VISUEL DES PICTOGRAMMES :
+  ⛈️  ORAGE            = nuage SOMBRE avec éclair blanc/jaune en zigzag → ALERTE OBLIGATOIRE
+  ⛈️🌨️ ORAGE + GRÊLE   = nuage sombre + éclair + grêlons blancs → ALERTE OBLIGATOIRE
+  🌦️  AVERSES          = nuage blanc + gouttes + soleil visible derrière
+  🌧️  PLUIE FAIBLE     = nuage gris + quelques fines gouttes
+  🌧️🌧️ FORTES PLUIES   = nuage gris foncé + lignes de pluie épaisses et denses
+  🌫️  BROUILLARD       = 3 lignes horizontales sans nuage
+  ☀️  SOLEIL           = grand disque jaune vif sans nuage
+  🌤️  PEU NUAGEUX      = soleil + petit nuage blanc devant
+  ⛅  NUAGEUX          = soleil à moitié masqué par nuage
+  🌥️  TRÈS NUAGEUX     = gros nuage blanc couvrant
+  ☁️  COUVERT          = double nuage gris complet
+  🌨️  NEIGE            = nuage blanc + flocons étoilés
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RÈGLES ABSOLUES DE RÉDACTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ❌ MOTS FORMELLEMENT INTERDITS : "carte", "visuel", "image", "graphique", "pictogramme", "icône", "code", "comme on le voit", "le montre", "nos secteurs", "nos zones", "ci-dessous". Tu parles à des auditeurs qui ne voient rien.
+
+2. 🎙️ TON GRAND PUBLIC : Chaleureux, clair, vivant. Phrases types : "Le soleil s'impose dès le matin...", "Attention, le ciel devient menaçant...", "Des orages violents éclatent en fin d'après-midi...", "Les parapluies restent de rigueur...", "La chaleur est étouffante...", "L'activité électrique devient menaçante..."
+
+3. ⛈️ ORAGES — RÈGLE ABSOLUE INVIOLABLE (sécurité publique) : Si tu détectes UN SEUL pictogramme d'orage ou de grêle sur une carte, le bloc correspondant DOIT mentionner explicitement : risque d'averses orageuses, activité électrique, fortes rafales sous cellules. Ne jamais minimiser ce risque.
+
+4. 📊 DONNÉES EXACTES : Températures Météo-France uniquement. Aucun chiffre inventé. Pas de décimales. 5-6 villes par bloc.
+
+5. 🌍 SYNOPTIQUE : Commence todaySummary par la cause météo (dorsale anticyclonique, flux perturbé, masse d'air subtropical...).
+
+6. ⏱️ DURÉE : summaryMorning/summaryAfternoon = 150-180 mots. todaySummary/summaryMorning2/summaryAfternoon2 = 120-150 mots.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FORMAT : 7 BALISES XML OBLIGATOIRES DANS CET ORDRE EXACT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<reconnaissance>
+CARTE 1 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} MATIN ({date_j1}) :
+[Liste chaque ville visible et son pictogramme exact. Signale orage avec ⚠️. Ex: "Lille=soleil, Douai=ORAGE⚠️, Amiens=nuageux"]
+
+CARTE 2 — {FRENCH_WEEKDAYS[d1.weekday()].upper()} APRÈS-MIDI ({date_j1}) :
+[Idem ville par ville. Signale tout picto orage/grêle avec ⚠️]
+
+CARTE 3 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} MATIN ({date_j2}) :
+[Idem ville par ville]
+
+CARTE 4 — {FRENCH_WEEKDAYS[d2.weekday()].upper()} APRÈS-MIDI ({date_j2}) :
+[Idem ville par ville. Signale tout picto orage/grêle avec ⚠️]
+
+BILAN PHÉNOMÈNES DÉTECTÉS : [Synthèse des phénomènes significatifs et sur quelle(s) carte(s)]
+</reconnaissance>
+
 <todaySummary>
-Résumé météo global de {date_j1} (120-150 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". Situation synoptique globale, masses d'air et phénomènes marquants du jour. Ne parle jamais de la veille.
+Résumé météo global de {date_j1} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". Situation synoptique, phénomènes marquants, alertes vigilance si présentes.
 </todaySummary>
 
 <summaryMorning>
-Matinée de {date_j1} (150-180 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin...". Analyse l'Image 1 : vérifie chaque picto (soleil, nuages, pluie, brouillards) affiché sur les villes de la région. Rédige en style parlé, intègre 5-6 villes avec leurs minimales exactes.
+Matinée de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin...". Basé sur CARTE 1. 5-6 villes avec minimales exactes. Si orage sur Carte 1 → alerte obligatoire.
 </summaryMorning>
 
 <summaryAfternoon>
-Après-midi de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Analyse l'Image 2 : vérifie très attentivement chaque picto (surtout les orages de "orages.png" ou grêle de "Orages accompagnés de grêle.png") affiché sur les villes. Rédige en style parlé, intègre 5-6 villes avec leurs maximales exactes.
+Après-midi de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Basé sur CARTE 2. 5-6 villes avec maximales exactes. ⚠️ Si orage sur Carte 2 → alerte OBLIGATOIRE et EXPLICITE (foudre, rafales, pluies intenses).
 </summaryAfternoon>
 
 <summaryMorning2>
-Matinée de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin...". Analyse l'Image 3 : vérifie chaque picto sur les villes pour ce réveil météo du surlendemain. Rédige en style parlé, intègre 4-5 villes avec leurs minimales réelles.
+Matinée de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin...". Basé sur CARTE 3. 4-5 villes avec minimales réelles.
 </summaryMorning2>
 
 <summaryAfternoon2>
-Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi...". Analyse l'Image 4 : vérifie chaque picto (surtout "orages.png" / orages de grêle) pour l'évolution en seconde partie de journée du surlendemain. Rédige en style parlé, intègre 4-5 villes avec leurs maximales réelles.
+Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi...". Basé sur CARTE 4. 4-5 villes avec maximales réelles. Si orage sur Carte 4 → alerte obligatoire.
 </summaryAfternoon2>
 
 <forecastRaw>
@@ -657,12 +701,6 @@ Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.we
 
     if vision_images and any(vision_images):
         prompt += (
-            f"\n\n[MODE MULTIMODAL 👁️ - ANALYSE CHRONOLOGIQUE DES 4 IMAGES FOURNIES] :\n"
-            f"Tu as sous les yeux précisément 4 cartes météo officielles HD dans l'ordre chronologique :\n"
-            f"1. Image 1 : Carte de {FRENCH_WEEKDAYS[d1.weekday()]} matin ({date_j1})\n"
-            f"2. Image 2 : Carte de {FRENCH_WEEKDAYS[d1.weekday()]} après-midi ({date_j1})\n"
-            f"3. Image 3 : Carte de {FRENCH_WEEKDAYS[d2.weekday()]} matin ({date_j2})\n"
-            f"4. Image 4 : Carte de {FRENCH_WEEKDAYS[d2.weekday()]} après-midi ({date_j2})\n\n"
             f"Vérifie attentivement CHAQUE image pour rédiger la section correspondante :\n"
             f"- Utilise l'Image 1 pour rédiger <summaryMorning> (J1 matin)\n"
             f"- Utilise l'Image 2 pour rédiger <summaryAfternoon> (J1 après-midi)\n"
