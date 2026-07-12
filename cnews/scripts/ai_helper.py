@@ -104,12 +104,24 @@ def fetch_weather_struct(cities, day_offset):
         f"&timezone=Europe/Paris&forecast_days=10"
     )
     results_list = []
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            results = data if isinstance(data, list) else [data]
-            for i, r in enumerate(results):
+    import time
+    data = None
+    for attempt in range(3):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            break
+        except Exception as e:
+            if attempt == 2:
+                print(f"Warning: Could not fetch weather struct: {e}")
+                return []
+            print(f"  [open-meteo struct] Retry {attempt+1}/3 due to: {e}")
+            time.sleep(3)
+            
+    if data:
+        results = data if isinstance(data, list) else [data]
+        for i, r in enumerate(results):
                 city = selected[i]
                 cname = normalize_city(city["name"])
                 try:
