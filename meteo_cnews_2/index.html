@@ -8464,11 +8464,12 @@
                 const orient = urlParams.get('orientation') || 'landscape';
                 const isPortrait = orient === 'portrait';
                 const isSquare = orient === 'square';
+                const isLandscape = !isPortrait && !isSquare;
                 
                 if (workArea) {
                     workArea.style.left = '0';
-                    workArea.style.width = isPortrait ? '1080px' : (isSquare ? '1080px' : '100vw');
-                    workArea.style.height = isPortrait ? '1920px' : (isSquare ? '1080px' : '100vh');
+                    workArea.style.width = isPortrait ? '1080px' : (isSquare ? '1080px' : '1920px');
+                    workArea.style.height = isPortrait ? '1920px' : (isSquare ? '1080px' : '1080px');
                     workArea.style.padding = '0';
                 }
                 const captureArea = document.getElementById('capture-area');
@@ -8482,13 +8483,14 @@
                         captureArea.style.width = '1080px';
                         captureArea.style.height = '1080px';
                     } else {
-                        captureArea.style.width = '100vw';
-                        captureArea.style.height = '100vh';
+                        captureArea.classList.add('landscape-mode');
+                        captureArea.style.width = '1920px';
+                        captureArea.style.height = '1080px';
                     }
                     captureArea.style.boxShadow = 'none';
                 }
-                if (isPortrait || isSquare) {
-                    const w = '1080px';
+                if (isPortrait || isSquare || isLandscape) {
+                    const w = isLandscape ? '1920px' : '1080px';
                     const h = isPortrait ? '1920px' : '1080px';
                     document.body.style.width = w;
                     document.body.style.height = h;
