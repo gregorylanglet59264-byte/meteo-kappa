@@ -131,29 +131,50 @@ def main():
     zip_name = "cartes_observations_cnews.zip"
     zip_path = os.path.join(cartes_dir, zip_name)
     
+    zone_labels = {
+        "france": "France entière", 
+        "hdf": "Hauts-de-France", 
+        "normandie": "Normandie",
+        "idf": "Île-de-France", 
+        "ges": "Grand Est", 
+        "ara": "Auvergne-Rhône-Alpes",
+        "naq": "Nouvelle-Aquitaine", 
+        "occ": "Occitanie", 
+        "paca": "PACA",
+        "bfc": "Bourgogne-Franche-Comté", 
+        "bre": "Bretagne", 
+        "pdl": "Pays de la Loire",
+        "cvl": "Centre-Val de Loire", 
+        "cor": "Corse",
+    }
+    
     import zipfile
     print(f"Création de l'archive {zip_path}...")
     try:
         if os.path.exists(zip_path):
             os.remove(zip_path)
             
-        # Parcourir et ajouter toutes les images d'observations créées dans cartes_alertes
         obs_count = 0
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
             for root, dirs, files in os.walk(cartes_dir):
                 for file in files:
-                    # On cherche les cartes qui concernent la date du scraping et qui ne sont pas des prévisions ou vidéos
-                    # Les fichiers d'obs contiennent généralement la date ou les noms de paramètres obs
                     if file.endswith(".jpg") and (date_str in file or "carte_forets" not in file and "carte_vigilance" not in file):
                         f_path = os.path.join(root, file)
-                        # Pour éviter de zipper d'anciennes prévisions J1/J2, on vérifie que ce sont des obs
-                        # Les cartes d'observations ont des noms comme : tmax_france.jpg, bilan_jour_hdf.jpg, etc.
                         is_obs_file = any(p in file for p in ["tmax", "tmin", "precip", "gust", "bilan_jour", "anomalie", "amplitude", "secheresse"])
                         if is_obs_file:
-                            zipf.write(f_path, arcname=file)
+                            # Déterminer le sous-dossier par région
+                            parts = file.split("_")
+                            folder_name = "Autres"
+                            if len(parts) >= 3:
+                                zone_code = parts[2].lower()
+                                if zone_code in zone_labels:
+                                    folder_name = zone_labels[zone_code]
+                            
+                            arcname = f"{folder_name}/{file}"
+                            zipf.write(f_path, arcname=arcname)
                             obs_count += 1
                             
-        print(f"Archive ZIP créée avec succès contenant {obs_count} cartes d'observations.")
+        print(f"Archive ZIP créée avec succès contenant {obs_count} cartes d'observations classées par dossier.")
         if obs_count == 0:
             print("⚠️ Attention : Aucune carte d'observation trouvée pour le ZIP !")
     except Exception as e:
