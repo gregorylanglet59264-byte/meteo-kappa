@@ -540,10 +540,14 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
         reg_prefix = get_client_region_prefix(client_name)
         img_m_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset}_matin.jpg")
         img_a_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset}_apresmidi.jpg")
+        img_m2_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset+1}_matin.jpg")
+        img_a2_path = os.path.join(maps_dir, f"carte_{reg_prefix}J{day_offset+1}_apresmidi.jpg")
         
         discovered_imgs = []
-        for p in [img_m_path, img_a_path]:
+        print(f"  [Vision Mode] Découverte des cartes dans : {maps_dir}")
+        for p in [img_m_path, img_a_path, img_m2_path, img_a2_path]:
             if os.path.exists(p):
+                print(f"    -> Carte trouvée et chargée : {os.path.basename(p)}")
                 try:
                     import base64
                     with open(p, "rb") as f:
@@ -551,6 +555,8 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
                         discovered_imgs.append(f"data:image/jpeg;base64,{b64_str}")
                 except Exception as e:
                     print(f"Warning: Could not read map image {p} for Vision Mode: {e}")
+            else:
+                print(f"    -> Carte manquante (passée) : {os.path.basename(p)}")
         if discovered_imgs:
             vision_images = discovered_imgs
 
@@ -621,23 +627,23 @@ Prends ton temps pour examiner chaque image de carte pour repérer ces pictogram
 
 TU DOIS OBLIGATOIREMENT GÉNÉRER LES 6 BALISES XML DANS TA RÉPONSE, DANS CET ORDRE EXACT :
 <todaySummary>
-Résumé météo global de {date_j1} (120-150 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". Situation synoptique, masses d'air, phénomènes dominants. Ne parle JAMAIS de la journée de la veille.
+Résumé météo global de {date_j1} (120-150 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". Situation synoptique globale, masses d'air et phénomènes marquants du jour. Ne parle jamais de la veille.
 </todaySummary>
 
 <summaryMorning>
-Matinée de {date_j1} (150-180 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin...". Ciel, brumes, dissipation, vents, 5-6 villes avec leurs minimales exactes.
+Matinée de {date_j1} (150-180 mots). Commence impérativement par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin...". Analyse l'Image 1 : vérifie chaque picto (soleil, nuages, pluie, brouillards) affiché sur les villes de la région. Rédige en style parlé, intègre 5-6 villes avec leurs minimales exactes.
 </summaryMorning>
 
 <summaryAfternoon>
-Après-midi de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Évolution nuageuse, chaleur, orages éventuels, rafales, 5-6 villes avec leurs maximales exactes.
+Après-midi de {date_j1} (150-180 mots). Commence par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi...". Analyse l'Image 2 : vérifie très attentivement chaque picto (surtout les orages de "orages.png" ou grêle de "Orages accompagnés de grêle.png") affiché sur les villes. Rédige en style parlé, intègre 5-6 villes avec leurs maximales exactes.
 </summaryAfternoon>
 
 <summaryMorning2>
-Matinée de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin...". Réveil météo, vent, 4-5 villes avec leurs minimales réelles.
+Matinée de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin...". Analyse l'Image 3 : vérifie chaque picto sur les villes pour ce réveil météo du surlendemain. Rédige en style parlé, intègre 4-5 villes avec leurs minimales réelles.
 </summaryMorning2>
 
 <summaryAfternoon2>
-Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi...". Évolution, températures, 4-5 villes avec leurs maximales réelles.
+Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi...". Analyse l'Image 4 : vérifie chaque picto (surtout "orages.png" / orages de grêle) pour l'évolution en seconde partie de journée du surlendemain. Rédige en style parlé, intègre 4-5 villes avec leurs maximales réelles.
 </summaryAfternoon2>
 
 <forecastRaw>
@@ -651,12 +657,20 @@ Après-midi de {date_j2} (120-150 mots). Commence par "Ce {FRENCH_WEEKDAYS[d2.we
 
     if vision_images and any(vision_images):
         prompt += (
-            "\n\n[MODE VISIO ACTIF 👁️ - COMMENTAIRE MULTIMODAL EN PLATEAU] :\n"
-            "Tu as sous les yeux les cartes météo officielles HD (Matin et Après-midi) générées pour la station. "
-            "Regarde attentivement la répartition visuelle des nuages, du soleil et surtout des ORAGES/AVERSES ORAGEUSES (pictogrammes d'éclairs ou de pluie sous nuage noir) sur ces cartes. "
-            "⚠️ ATTENTION CRITIQUE : Si et seulement si tu vois des pictogrammes d'orage ou d'averse orageuse (nuages noirs avec éclairs ou pluie) dessinés sur les cartes de la région de la station, tu DOIS le mentionner dans le résumé (`summaryMorning` ou `summaryAfternoon`). S'il n'y a aucun pictogramme d'orage ou d'averse dessiné sur la carte sur la région de la station, tu ne dois absolument pas en parler dans le texte pour éviter d'inventer des intempéries inexistantes sur la carte. "
-            "⚠️ ATTENTION CRITIQUE : Pour les valeurs de températures, fie-toi EXCLUSIVEMENT aux chiffres écrits dans la section 'Données météo réelles par ville' ci-dessus. Ne tente PAS de lire les chiffres sur l'image car ils peuvent être mal interprétés. "
-            "Commente le bulletin avec l'œil d'un présentateur en plateau qui décrit la carte à son auditoire ('Comme nous le voyons sur notre carte ce matin...', 'Sur la carte de cet après-midi...')."
+            f"\n\n[MODE MULTIMODAL 👁️ - ANALYSE CHRONOLOGIQUE DES 4 IMAGES FOURNIES] :\n"
+            f"Tu as sous les yeux précisément 4 cartes météo officielles HD dans l'ordre chronologique :\n"
+            f"1. Image 1 : Carte de {FRENCH_WEEKDAYS[d1.weekday()]} matin ({date_j1})\n"
+            f"2. Image 2 : Carte de {FRENCH_WEEKDAYS[d1.weekday()]} après-midi ({date_j1})\n"
+            f"3. Image 3 : Carte de {FRENCH_WEEKDAYS[d2.weekday()]} matin ({date_j2})\n"
+            f"4. Image 4 : Carte de {FRENCH_WEEKDAYS[d2.weekday()]} après-midi ({date_j2})\n\n"
+            f"Vérifie attentivement CHAQUE image pour rédiger la section correspondante :\n"
+            f"- Utilise l'Image 1 pour rédiger <summaryMorning> (J1 matin)\n"
+            f"- Utilise l'Image 2 pour rédiger <summaryAfternoon> (J1 après-midi)\n"
+            f"- Utilise l'Image 3 pour rédiger <summaryMorning2> (J2 matin)\n"
+            f"- Utilise l'Image 4 pour rédiger <summaryAfternoon2> (J2 après-midi)\n\n"
+            f"Regarde attentivement la répartition visuelle des nuages, du soleil, et surtout repère l'éclair en zigzag (le pictogramme 'orages.png' ou 'Orages accompagnés de grêle.png') sur chacune de ces 4 images.\n"
+            f"⚠️ ATTENTION CRITIQUE : N'invente jamais de pluie ou d'orage s'il n'y a aucun pictogramme correspondant visible sur la carte pour la région de la station. Par contre, si un picto d'orage ou d'averses est dessiné, tu DOIS le mentionner de manière claire et explicite pour alerter les auditeurs.\n"
+            f"⚠️ ATTENTION CRITIQUE : Ne fais JAMAIS référence aux images ou au support dans tes textes. Les expressions comme 'sur la carte', 'comme le montre le visuel', 'le pictogramme indique' sont formellement INTERDITES car tu parles à la radio à des auditeurs qui ne peuvent pas voir. Décris simplement le temps comme si tu le voyais par la fenêtre."
         )
 
     try:
