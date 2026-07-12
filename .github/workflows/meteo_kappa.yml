@@ -56,4 +56,5 @@ jobs:
           git config --global user.email "langlet.gregory@gmail.com"
           git add cnews/AUTOMATISATION.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.txt cnews/AUTOMATISATION_*.zip
           git commit -m "Mise à jour automatique des bulletins Kappa du jour [GHA]" || echo "Aucune modification à commiter"
-          git push
+          git pull --rebase origin main
+          git push origin main
