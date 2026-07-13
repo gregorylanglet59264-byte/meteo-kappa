@@ -792,6 +792,43 @@ def capture_and_compose_vigilance(zone, orientation, output_path):
             card_img = Image.open(temp_png).convert("RGBA")
             # Superposer à (0, 0) car card_img est exactement de taille v_width x v_height
             bg.paste(card_img, (0, 0), card_img)
+            
+            # Rechercher le logo Météo Climat Pro
+            logo_path = None
+            logo_names = ["logo meteo climat pro 3.png", "logo.png"]
+            for name in logo_names:
+                p_script = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT", name)
+                p1 = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT", name)
+                p2 = os.path.join(cartes_dir, name)
+                p3 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes", name)
+                p4 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT", name)
+                p5 = os.path.join(r"C:\Users\grego\Documents\METEO_CLIMAT\meteo cnews 2", name)
+                for p_check in [p_script, p1, p2, p3, p4, p5]:
+                    if os.path.exists(p_check):
+                        logo_path = p_check
+                        break
+                if logo_path:
+                    break
+
+            if logo_path and os.path.exists(logo_path):
+                log(f"Superposition du logo sur la carte de vigilance : {logo_path}")
+                logo_img = Image.open(logo_path).convert("RGBA")
+                if orientation == "portrait":
+                    target_w = 240
+                else:
+                    target_w = 280
+                aspect = logo_img.height / logo_img.width
+                target_h = int(target_w * aspect)
+                logo_resized = logo_img.resize((target_w, target_h), Image.Resampling.LANCZOS)
+                
+                if orientation == "portrait":
+                    logo_x = v_width - target_w - 40
+                    logo_y = 40
+                else:
+                    logo_x = v_width - target_w - 50
+                    logo_y = 45
+                bg.paste(logo_resized, (logo_x, logo_y), logo_resized)
+                
             bg.convert("RGB").save(output_path, "JPEG", quality=95)
             log(f"Carte de vigilance CNews TV Studio générée avec succès : {output_path}")
             
