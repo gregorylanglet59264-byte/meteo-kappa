@@ -175,13 +175,43 @@ def main():
     # Génération du lien de téléchargement (GitHub Releases — pas de limite de taille)
     download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/releases/download/bulletins-patrick-latest/{zip_name}"
 
+    # Calcul des textes pour les réseaux sociaux de Patrick
+    try:
+        import zoneinfo
+        tz = zoneinfo.ZoneInfo("Europe/Paris")
+    except ImportError:
+        tz = None
+
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    now_local = now_utc.astimezone(tz) if tz else now_utc
     
+    weekdays_upper = ["LUNDI", "MARDI", "MERCREDI", "JEUDI", "VENDREDI", "SAMEDI", "DIMANCHE"]
+    months_upper = ["JANVIER", "FÉVRIER", "MARS", "AVRIL", "MAI", "JUIN", "JUILLET", "AOÛT", "SEPTEMBRE", "OCTOBRE", "NOVEMBRE", "DÉCEMBRE"]
+    
+    today_weekday = weekdays_upper[now_local.weekday()]
+    run_hour = f"{now_local.hour}H"
+    
+    j_plus_5 = tomorrow + datetime.timedelta(days=4)
+    
+    tomorrow_str_upper = f"{weekdays_upper[tomorrow.weekday()]} {tomorrow.day} {months_upper[tomorrow.month - 1]} {tomorrow.year}"
+    j_plus_5_str_upper = f"{weekdays_upper[j_plus_5.weekday()]} {j_plus_5.day} {months_upper[j_plus_5.month - 1]}"
+    
+    social_text_hdf = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  HAUTS DE FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #hautsdefrance"
+    social_text_france = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #france"
+
     # Corps HTML de l'e-mail avec style épuré et bouton/lien masqué
     email_body = (
         f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"
         f"Bonjour,<br><br>"
         f"Veuillez trouver ci-joint vos bulletins vidéo, veuillez cliquer sur le lien ci-dessous.<br><br>"
         f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
+        f"<div style='margin-top: 25px; padding: 15px; border-left: 4px solid #1a73e8; background-color: #f8f9fa; border-radius: 4px; max-width: 800px;'>"
+        f"<h4 style='margin-top: 0; color: #1a73e8; font-size: 16px;'>📱 Texte pour vos réseaux sociaux :</h4>"
+        f"<p style='margin: 5px 0;'><strong>Hauts-de-France :</strong></p>"
+        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; margin-bottom: 15px; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_hdf}</div>"
+        f"<p style='margin: 5px 0;'><strong>France :</strong></p>"
+        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_france}</div>"
+        f"</div><br>"
         f"Cordialement,<br>"
         f"L'automatisation Météo CNews"
         f"</body></html>"
