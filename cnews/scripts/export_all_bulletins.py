@@ -292,14 +292,16 @@ def main():
                     for key, val in ai_texts.items():
                         form[key] = val
             
+            # Store public raw GitHub URL instead of heavy Base64 to keep JSON size under 100KB
+            base_url = "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes"
             if img_m1:
-                c["form"]["summaryMapMorningUrl1"] = img_m1
+                c["form"]["summaryMapMorningUrl1"] = f"{base_url}/{os.path.basename(map_morning_1)}"
             if img_a1:
-                c["form"]["summaryMapAfternoonUrl1"] = img_a1
+                c["form"]["summaryMapAfternoonUrl1"] = f"{base_url}/{os.path.basename(map_afternoon_1)}"
             if img_m2:
-                c["form"]["summaryMapMorningUrl2"] = img_m2
+                c["form"]["summaryMapMorningUrl2"] = f"{base_url}/{os.path.basename(map_morning_2)}"
             if img_a2:
-                c["form"]["summaryMapAfternoonUrl2"] = img_a2
+                c["form"]["summaryMapAfternoonUrl2"] = f"{base_url}/{os.path.basename(map_afternoon_2)}"
 
             # Inject forest fire risk map (regional map if available, fallback to national)
             zone_key = region if (region and region.strip()) else "france_pictos"
@@ -325,7 +327,7 @@ def main():
                     today_paris = datetime.date.today()
                 date_j1 = today_paris + datetime.timedelta(days=args.day_offset)
                 day1_str = get_french_date_string(date_j1, include_year=True)
-                c["form"]["forestAlertImageUrl"] = img_forets
+                c["form"]["forestAlertImageUrl"] = f"https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/{os.path.basename(forets_path)}"
                 c["form"]["forestAlertTitle"] = f"🌲 MÉTÉO DES FORÊTS DU {day1_str.upper()}"
                 c["form"].setdefault("forestAlertSource", "Météo-Climat PRO — minisite-douai.vercel.app")
                 c["form"]["showForestMap"] = True
