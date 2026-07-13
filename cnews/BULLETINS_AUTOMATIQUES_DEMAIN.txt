@@ -10,14 +10,23 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**
-🔥 **CANICULE : 72 DÉPARTEMENTS EN ORANGE, LA FRANCE CUIT !** Ce mardi 14 juillet, la France est sous l’emprise d’un dôme de chaleur exceptionnel. Dès l’aube, les températures ne descendent pas sous les 19 à 24°C, signe de nuits tropicales éprouvantes. L’après-midi, le soleil est de plomb : on attend 27°C à Caen, 32°C à Rouen, et jusqu’à 35°C à Paris et Nantes. Seules les côtes bretonnes respirent un peu grâce à la brise marine. L’atmosphère reste lourde et étouffante, avec quelques cumulus sur les reliefs. En soirée, la douceur persiste, idéale pour les sorties… mais attention à l’hydratation et à la protection des plus fragiles. Vigilance orange canicule maintenue sur 72 départements pour les jours à venir.
+☀️ CANICULE EXPLOSIVE : 72 DÉPARTEMENTS EN ORANGE ! Ce mardi 14 juillet, la France se réveille sous un soleil radieux, avec des températures déjà très douces dès 6h : 22°C à Paris, 23°C à Nantes. La vigilance orange canicule concerne 72 départements. L’après-midi, la chaleur s’envole : 35°C à Lille et Paris, 36°C à Poitiers. Seuls les Alpes et le Jura verront quelques orages isolés en fin de journée. Le vent reste faible à modéré, avec une petite brise sur la façade atlantique. Une journée estivale parfaite pour profiter, mais attention à la chaleur ! Hydratez-vous et protégez les plus fragiles. La fête nationale s’annonce brûlante sous un ciel bleu éclatant.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Caen, 21°C à Rennes, 22°C à Paris, 19°C à Rouen, 24°C à Tours. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce mardi matin, on se réveille sous un soleil généreux sur l'ensemble du territoire ! Une journée estivale s'annonce, avec des températures déjà bien douces. Dès 6h, comptez 18°C à Lille, 19°C à Rouen, 21°C à Rennes, et même 23°C à Nantes. À Paris, le thermomètre affichera 22°C, et 24°C à Tours, un vrai avant-goût de chaleur !
+
+Le vent sera généralement faible à modéré, avec une petite brise de 15 à 20 km/h sur la façade atlantique, notamment du côté de Brest et Caen. Ailleurs, le vent se fera plus discret, soufflant à peine 10 km/h dans le Centre-Val de Loire et le Poitou. Pas de mistral aujourd'hui, et tant mieux !
+
+Sur le littoral, les températures seront déjà très agréables, mais l'intérieur des terres connaîtra une montée en puissance plus rapide, avec des maximales qui s'envoleront bien au-delà des 30°C. Le ciel sera dégagé, sans le moindre nuage pour l'instant. Une journée parfaite pour profiter du soleil, mais attention à la chaleur qui va s'installer !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 32°C à Rouen, 29°C à Brest, 27°C à Caen, 35°C à Paris, 35°C à Nantes. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Bonjour à toutes et à tous ! Ce mardi après-midi, le soleil sera le maître incontesté sur une grande partie de la France, mais attention, la chaleur sera bien présente, et même très forte par endroits !
+
+Dans le Nord, de Lille à Laon, le ciel sera d’un bleu éclatant, avec des maximales grimpant jusqu'à 33°C à Lille et 35°C à Laon. Le vent restera modéré, soufflant autour de 20 km/h. Plus à l'ouest, la Bretagne et la Normandie profiteront également d'un grand soleil, avec 29°C à Brest et 32°C à Rouen. Attention, on note un contraste marqué entre le littoral, où la brise marine apportera un peu de fraîcheur, et l'intérieur des terres où la chaleur sera plus intense.
+
+En Île-de-France, Paris affichera un généreux 35°C sous un soleil radieux et un vent léger de 15 km/h. Plus au sud, de Tours à Poitiers, le thermomètre s'envolera, atteignant 35°C à Tours et même 36°C à Poitiers. Le vent restera faible, autour de 10 km/h.
+
+Cependant, une vigilance s'impose sur les Alpes et le Jura, où des orages isolés pourraient éclater en fin d'après-midi. Soyez prudents si vous êtes dans ces régions, des averses intenses et des coups de tonnerre sont possibles. Pour le reste du pays, l'après-midi s'annonce estivale et très ensoleillée. Pensez à bien vous hydrater !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
@@ -69,14 +78,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**
-**Mercredi 15 juillet :** La chaleur reste très forte, mais le ciel se charge par l’ouest. Le matin, soleil à Lille, Lyon et Marseille, mais nuages à Paris et Brest. L’après-midi, attention : des orages éclatent de Cherbourg à Nantes, Limoges et Lyon. Bordeaux et Marseille gardent le soleil. Les températures maximales restent élevées, entre 28 et 35°C.
+Tendance à 3 jours : la canicule se maintient, mais le temps se dégrade localement.
 
-**Jeudi 16 juillet :** L’instabilité gagne du terrain. Le matin, des averses orageuses concernent un large quart nord-ouest et le Centre. Le soleil résiste encore sur le pourtour méditerranéen et l’Alsace. L’après-midi, les orages deviennent plus fréquents et localement forts, surtout de la Bretagne au Massif Central. La chaleur reste lourde, avec des maximales de 26 à 33°C.
+➜ Jeudi 16 juillet : encore très chaud, avec des maximales de 33 à 38°C du nord au sud. Le ciel reste dégagé sur la moitié est, mais des orages éclatent en Bretagne, Normandie et Pays de la Loire en cours d’après-midi. Vent faible à modéré. Attention aux coup de tonnerre.
 
-**Vendredi 17 juillet :** Le temps reste perturbé sur une grande moitié nord avec un ciel très nuageux et des averses passagères. Au sud, le soleil domine encore largement, mais la chaleur est moins écrasante. Les températures baissent légèrement, de 24 à 30°C selon les régions.
+➜ Vendredi 17 juillet : la chaleur ne faiblit pas. Le soleil domine largement, mais des averses orageuses grignotent le quart nord-ouest et le Sud-Ouest. Températures : 30°C à Brest, 37°C à Toulouse. Toujours une vigilance orange sur une large façade.
 
-**Samedi 18 juillet :** Amélioration progressive par l’ouest. Le soleil revient sur les régions atlantiques, tandis que l’est reste sous un ciel variable avec quelques ondées possibles. La chaleur redevient supportable, avec des maximales de 23 à 29°C. Enfin un peu de répit !
+➜ Samedi 18 juillet : malgré un épisode orageux possible sur le relief des Alpes et du Massif central, le ciel reste lumineux sur les trois quarts du pays. Les températures restent caniculaires, avec 35 à 39°C en vallée du Rhône. Brise marine sur les côtes.
 
 
 --------------------------------------------------------------------------------
@@ -85,15 +93,22 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🔥 **CANICULE INSTALLÉE : 72 DÉPARTEMENTS EN ORANGE, LE NORD BRÛLE !**
-
-Ce mardi 14 juillet, la fête nationale a des airs de fournaise sous un ciel d’azur sans nuages. Dès l’aube, les brumes matinales se sont évaporées pour laisser place à un soleil déjà mordant. Les températures ont grimpé très vite : il faisait déjà 17 à 19°C au réveil, et l’après-midi, le mercure a dépassé les 35°C dans l’intérieur des terres, entre Lille, Valenciennes et Maubeuge. Seul le littoral dunkerquois a profité d’un petit répit avec une brise de mer contenant la hausse. Le vent, quasi absent, n’a offert aucun soulagement. La vigilance orange canicule reste active : cette chaleur est durable et pèse sur l’organisme. Il faut absolument s’hydrater et protéger les plus fragiles. La nuit ne permettra qu’un rafraîchissement limité, avec des minimales qui peineront à descendre sous les 20°C.
+☀️ FÊTE NATIONALE SOUS UN SOLEIL DE PLOMB : 33°C DANS LES TERRES !  
+Ce mardi 14 juillet, le Nord vit une véritable fournaise. Soleil éclatant du matin au soir sur toute la région, sans le moindre nuage. Les maximales grimpent jusqu’à 33°C à Lille, Douai et Valenciennes. Heureusement, le littoral respire mieux : 25°C à Dunkerque et 28°C à Watten, grâce à une brise marine rafraîchissante de 20 à 25 km/h. Dans les terres, le vent d’ouest, plus léger (15-20 km/h), ne fait qu’attiser la chaleur. La vigilance orange canicule est en vigueur sur 72 départements, dont le nôtre. N’oubliez pas de vous hydrater et de protéger les plus fragiles. Profitez bien de ce 14 juillet radieux, mais avec prudence !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Maubeuge, 19°C à Dunkerque, 17°C à Steenvoorde, 18°C à Troisvilles, 18°C à St-Hilaire-sur-Helpe. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à tous les auditeurs d'ICI NORD et bienvenue pour ce bulletin météo du mardi 14 juillet ! Un magnifique soleil nous attend pour ce matin, un vrai temps de fête nationale !
+
+Dès le lever du jour, le ciel sera d'un bleu éclatant sur l'ensemble de notre région. Les températures sont déjà très douces, voire chaudes, avec 19°C à Dunkerque et Douai, 18°C à Lille, Roubaix, Maubeuge, Steenvoorde, St-Hilaire-sur-Helpe et Troisvilles. Seule Watten affiche 18°C.
+
+Le vent soufflera en brise légère à modérée, autour de 15 à 20 km/h sur l'intérieur des terres, et jusqu'à 25 km/h le long du littoral, notamment du côté de Dunkerque et Steenvoorde. Préparez-vous à une journée très estivale ! Les maximales atteindront 33°C à Lille, Douai, Valenciennes et St-Hilaire-sur-Helpe, tandis que le bord de mer sera un peu plus respirable avec 25°C à Dunkerque et 28°C à Watten. Profitez bien de ce beau temps !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 33°C à Troisvilles, 32°C à St-Hilaire-sur-Helpe, 33°C à Douai, 32°C à Roubaix, 33°C à Maubeuge. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Bonjour à toutes et à tous, et bienvenue sur RADIO - ICI NORD pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
+
+Ce mardi après-midi, attendez-vous à un soleil généreux et éclatant sur l'ensemble de notre belle région. Pas un nuage à l'horizon pour venir gâcher la fête nationale ! Les températures vont grimper, grimpettes, avec des maximales qui atteindront les 33°C à Lille, Douai et Valenciennes, 32°C à Roubaix, Maubeuge et Troisvilles, et même 33°C à St-Hilaire-sur-Helpe.
+
+Mais attention, le contraste est saisissant sur le littoral ! À Dunkerque, on respirera un peu mieux avec 25°C, et 28°C à Watten, grâce à une brise marine rafraîchissante soufflant entre 20 et 25 km/h. Dans les terres, le vent sera plus léger, autour de 15 à 20 km/h, un vent d'ouest qui ne fera qu'attiser cette chaleur estivale. Profitez bien de ce beau temps, mais n'oubliez pas de vous hydrater !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
@@ -143,17 +158,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance à 3 jours :**
+Tendance pour les trois prochains jours :
 
-**Mercredi 15 juillet** – Le soleil continue de régner en maître sur toute la région, mais son éclat sera légèrement tamisé en seconde partie de journée. Le ciel deviendra peu nuageux sur le littoral et les grandes villes (Dunkerque, Lille, Valenciennes, Maubeuge). En revanche, la moitié sud de la région, notamment l’Avesnois et le Cambrésis, basculera vers un ciel plus nuageux (type P8) sans toutefois menacer de pluie. Les températures resteront caniculaires : de 33 à 37°C l’après-midi. Vent très faible. Toujours en vigilance orange.
+**Jeudi 16 juillet** : La canicule s’installe durablement. Toujours un soleil de plomb sur l’ensemble du Nord. Les températures restent très élevées : 32 à 34°C dans les terres, 26 à 28°C sur le littoral. Vent faible à modéré d’ouest. Nuit très douce.
 
-**Jeudi 16 juillet** – La masse d’air chaud ne faiblit pas. Le ciel alternera entre larges éclaircies et passages nuageux plus marqués dans l’après-midi, surtout sur le sud-est de la région. Quelques rares ondées orageuses pourraient éclater en fin de journée en direction de l’Avesnois, mais sans grand risque. Chaleur toujours écrasante : 32 à 36°C. Nuits tropicales (minima autour de 20°C). Maintenez la vigilance.
+**Vendredi 17 juillet** : Nouvelle journée estivale avec un ciel bleu parfait. Les maximales atteignent encore 33 à 35°C à Lille, Douai et Valenciennes. Côté mer, comptez 27°C à Dunkerque. Attention aux pics de chaleur en après-midi. La vigilance orange canicule est maintenue.
 
-**Vendredi 17 juillet** – La situation évolue lentement : l’air chaud reste en place, mais l’humidité gagne du terrain. Nuages plus nombreux dès le matin, surtout sur la moitié sud. Risque d’averses orageuses localement fortes en fin d’après-midi, notamment du Cambrésis au Valenciennois. Températures encore élevées (29 à 34°C), avec un ressenti plus lourd. Fin de la canicule ? Pas encore, mais l’air pourrait devenir plus instable.
-
-**Samedi 18 juillet** – Le début de week-end marque une possible inflexion : le flux bascule au nord-ouest, apportant un air un peu moins chaud. Ciel très nuageux avec des averses orageuses possibles sur l’ensemble de la région. Les températures baissent sensiblement : de 25 à 30°C l’après-midi. La canicule devrait enfin céder, mais l’humidité restera marquée.
-
-**Recommandations :** Continuez à bien vous hydrater, évitez les efforts physiques aux heures les plus chaudes (12h-16h) et maintenez les pièces fraîches. Les nuits restent lourdes. Surveillez les prévisions actualisées sur ICI NORD.
+**Samedi 18 juillet** : Le soleil reste omniprésent. Les températures amorcent une légère baisse ? Non, elles se maintiennent à des niveaux caniculaires : 31-33°C dans l’intérieur, 25-27°C sur la côte. Toujours pas de pluie en vue. Pensez à bien vous protéger et à limiter les efforts physiques aux heures les plus chaudes.
 
 
 --------------------------------------------------------------------------------
@@ -162,15 +173,21 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🔥 CANICULE ORANGE : MARDI ÉTOUFFANT, SOLEIL ÉCLATANT MAIS NUAGES SUR LA CÔTE !
-
-Ce mardi 14 juillet, jour de fête nationale, la Charente-Maritime et ses environs sont placés en vigilance orange canicule. La journée démarre sous une chaleur déjà pesante, avec des nuits tropicales : 19 à 20°C au lever du jour. Quelques brumes matinales se dissipent vite, laissant place à un soleil généreux sur l’intérieur des terres. En revanche, sur La Rochelle et le littoral, le ciel reste plus nuageux, avec des passages voilés qui limitent un peu l’ardeur du soleil. Angoulême, Cognac, Montbron ou Jarnac profitent d’un grand soleil. Le vent est faible. L’après-midi les températures grimpent fortement, rendant l’atmosphère étouffante, surtout à l’écart des brises côtières. Hydratez-vous et évitez les efforts aux heures les plus chaudes.
+☀️ CHALEUR ÉTINCELANTE SUR LE LITTORAL, CANICULE À L’INTÉRIEUR ! Ce mardi 14 juillet, la France est en vigilance orange canicule, et notre région ne fait pas exception. Le soleil domine largement après une matinée légèrement nuageuse. Sur le littoral, la brise marine tempère l’atmosphère : 31°C à La Rochelle, 25°C à Chassiron avec un vent de 25 km/h. Mais dès qu’on s’enfonce dans les terres, le mercure explose : 36°C à Angoulême, 37°C à La Couronne et Montbron, 35°C à Jarnac. Le vent faible (10-15 km/h) ne suffit pas à rafraîchir. Une journée de fête nationale sous le signe de la chaleur intense : hydratez-vous, restez à l’ombre, et profitez du soleil en fin de journée sur la côte.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à La Couronne, 19°C à Gond-Pontouvre, 19°C à Cognac, 19°C à Blanzac-Porcheresse, 20°C à Angoulême. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à toutes et à tous et bienvenue sur les ondes d'ICI LA ROCHELLE pour votre bulletin météo du matin !
+
+Ce mardi matin, le soleil se lève sur notre belle région, mais il ne sera pas seul pour nous saluer ! En effet, le ciel sera partagé entre de belles éclaircies et quelques passages nuageux. Les températures minimales sont déjà bien douces, voire chaudes. On relève 22°C à La Rochelle, 21°C à Chassiron, 19°C à Gond-Pontouvre et La Couronne, et même 18°C à Jarnac. Seul Montbron profite d'un soleil éclatant avec 17°C.
+
+Attention, une nette différence se fait sentir entre le littoral et l'intérieur des terres. Sur nos côtes, notamment à Chassiron, une brise marine souffle à 25 km/h, apportant un peu de fraîcheur. Mais dès que l'on s'éloigne du bord de mer, le vent sera plus léger, autour de 10 à 15 km/h, et les températures vont très vite grimper. Préparez-vous à une journée estivale, avec un soleil généreux qui va rapidement prendre le dessus sur les quelques nuages matinaux.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 35°C à Cognac, 37°C à La Couronne, 37°C à Montbron, 25°C à Chassiron, 36°C à Gond-Pontouvre. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo de l'après-midi ! Ce mardi après-midi, le soleil sera le roi incontesté sur notre belle région. Attendez-vous à un ciel radieux, sans un nuage à l'horizon pour la majorité d'entre nous.
+
+Les températures vont grimper, mes amis ! À La Rochelle, nous atteindrons les 31°C, avec une légère brise côtière de 15 km/h qui tentera de rafraîchir l'atmosphère. Du côté de Chassiron, le soleil sera également au rendez-vous, avec 25°C et un vent un peu plus soutenu de 25 km/h.
+
+Mais attention, le contraste est saisissant entre le littoral et l'intérieur des terres ! Si vous êtes du côté d'Angoulême, préparez-vous à une chaleur intense avec 36°C, tout comme à Gond-Pontouvre et Soyaux. Jarnac et Blanzac-Porcheresse ne seront pas en reste avec 35°C, et même 37°C à La Couronne et Montbron ! Le vent restera faible à modéré, autour de 10 à 15 km/h, ne suffisant malheureusement pas à tempérer cette chaleur estivale. Profitez bien de ce bel après-midi ensoleillé, mais n'oubliez pas de vous hydrater !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (mardi 14 juillet 2026)
@@ -221,13 +238,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Tendance à 3 jours :
+**Tendance à 3 jours (jeudi 16, vendredi 17, samedi 18 juillet) :**
 
-Jeudi 16 juillet : La canicule se maintient, mais l’instabilité gagne du terrain. Après un mercredi marqué par des orages généralisés (sauf sur le sud du secteur), jeudi reste sous la menace d’averses orageuses parfois fortes, en particulier dans l’après-midi. Le ciel alterne entre éclaircies et nuages menaçants. Les températures baissent légèrement, mais restent élevées, avec des maximales autour de 30 à 32°C. Nuits toujours chaudes.
+**Jeudi 16 juillet** – La canicule se maintient, avec un temps encore très ensoleillé sur tout le département. Les températures restent élevées : 30-33°C sur le littoral, 35-38°C dans l’intérieur. Attention, l’après-midi, des nuages menaçants pourraient se développer sur l’est de la Charente (Angoulême, Cognac, Montbron) avec un risque d’orages localisés, parfois forts. Le vent devient plus variable, mais la chaleur reste lourde.
 
-Vendredi 17 juillet : Retour d’un temps plus calme et ensoleillé. Les orages s’éloignent, le soleil domine largement sur l’ensemble de la région. La chaleur s’installe de nouveau, avec des pointes à 34°C possibles dans l’intérieur. Vent faible, atmosphère lourde. Pensez à vous protéger du soleil.
+**Vendredi 17 juillet** – Le ciel se dégrade par l’intérieur. Le matin, encore du soleil sur le littoral, mais dès la mi-journée, des orages éclatent sur l’ensemble de la Charente, remontant jusqu’à la côte en soirée. À La Rochelle, le soleil persiste jusqu’en fin d’après-midi, puis l’orage gronde. Les températures baissent légèrement : 28-30°C sur le bord de mer, 32-34°C ailleurs. Attention aux rafales de vent et à la grêle possible.
 
-Samedi 18 juillet : Soleil radieux et chaleur accablante. La vigilance canicule reste d’actualité. Les températures maximales atteignent 35 à 36°C, voire localement plus. Les nuits sont tropicales, avec des minimales souvent supérieures à 20°C. Pas de rafraîchissement en vue : la région reste sous l’influence d’une masse d’air très chaude. Préconisations : restez au frais, buvez régulièrement.
+**Samedi 18 juillet** – Amélioration progressive. Le temps reste instable le matin avec des averses résiduelles, surtout sur l’est. L’après-midi, le soleil reprend le dessus, mais la chaleur reste modérée : 27-29°C sur la côte, 30-33°C dans les terres. La vigilance canicule pourrait être levée, mais la fraîcheur ne sera pas encore au rendez-vous. Profitez des éclaircies pour sortir, mais gardez un œil sur le ciel.
 
 
 --------------------------------------------------------------------------------
@@ -236,17 +253,27 @@ Samedi 18 juillet : Soleil radieux et chaleur accablante. La vigilance canicule 
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ 14 JUILLET CANICULAIRE : JUSQU'À 32°C DANS LES TERRES, MAIS LA BRISE SAUVE LE LITTORAL ! Ce mardi, la fête nationale s'annonce sous un soleil radieux sur toute la région, sans un nuage. Mais attention, deux visages bien distincts : sur le littoral, une brise de mer tempère l'atmosphère avec 23 à 25°C, idéal pour les festivités. En revanche, dès qu'on s'éloigne de la côte, la chaleur s'installe franchement avec 30°C à Groffliers et jusqu'à 32°C dans les terres à Robecq ou Cauchy-à-la-Tour. Un temps estival qui s'affirme, alors que 72 départements sont placés en vigilance orange Canicule par Météo-France. Profitez bien de ce 14 juillet, mais restez prudents face à cette chaleur persistante qui s'annonce durable.
+☀️ 14 JUILLET ÉBLOUISSANT : CHALEUR CANICULAIRE SANS NUAGE SUR LE NORD !
+
+Ce mardi, le 14 juillet est placé sous le signe d’un soleil écrasant et d’une vigilance orange canicule qui concerne 72 départements français. Chez nous, le ciel est d’un bleu parfait du matin au soir, sans une goutte de pluie. Dès l’aube, la douceur est déjà là avec 17 à 19°C sur le littoral. L’après-midi, le contraste est saisissant : si la brise marine offre un répit à Leffrinckoucke (26°C) et Gravelines (23°C), l’intérieur des terres suffoque avec des pointes à 32°C à Robecq et Cauchy-à-la-Tour. Le vent d’ouest, modéré, tente d’adoucir l’atmosphère sans grand succès. Profitez des bords de mer pour vous rafraîchir et hydratez-vous très régulièrement.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 17°C à Remilly-Wirquin, 17°C à Racquinghem, 17°C à Lefaux, 17°C à Groffliers, 17°C à Robecq. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à toutes et à tous, et bienvenue sur RADIO 6 pour votre bulletin météo du matin ! Ce mardi 14 juillet, le soleil est le roi incontesté de nos régions, un vrai bonheur pour ce jour de fête nationale !
+
+Dès le lever du jour, le ciel est d'un bleu éclatant partout, sans le moindre nuage pour gâcher le spectacle. Les températures minimales sont déjà très douces : comptez 19°C à Leffrinckoucke, 18°C à Gravelines, 17°C à Offekerque et Marck, et une agréable douceur de 17°C également à Lefaux et Groffliers.
+
+Le vent se montre discret sur le littoral, avec une légère brise de 20 à 25 km/h le long de la côte, notamment à Gravelines ou Offekerque. Plus à l'intérieur des terres, comme à Robecq ou Cauchy-à-la-Tour, le vent reste modéré, autour de 20 à 25 km/h également.
+
+Les températures vont vite grimper, avec déjà un contraste marqué entre le bord de mer et l'intérieur. Si les maximales atteindront 26°C à Leffrinckoucke et 23°C à Gravelines, on attend déjà 30°C à Groffliers et même 32°C à Robecq et Cauchy-à-la-Tour. Préparez-vous à une journée estivale, sous un soleil généreux !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mardi après-midi, et pour célébrer comme il se doit ce 14 juillet, les conditions sont absolument splendides ! Le soleil s'impose généreusement sur toute la région, sans l'ombre d'un nuage à l'horizon. Attention cependant, le thermomètre propose deux ambiances bien distinctes.
+Bonjour à toutes et à tous, et bienvenue sur RADIO 6 pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
 
-Sur le littoral, l'atmosphère est très agréable, presque tempérée, grâce à une brise de mer qui se lève et souffle jusqu'à 25 km/h. On attend 23 degrés à Gravelines et Marck, jusqu'à 25°C à Leffrinckoucke.
+Ce mardi après-midi, le soleil sera le maître absolu du ciel sur l'ensemble de notre région, un grand soleil éclatant pour tout le monde ! Les températures vont grimper, grimpent même déjà, pour atteindre des sommets dignes d'un vrai été. Le contraste sera saisissant entre le littoral et l'intérieur des terres.
 
-En revanche, dès qu'on s'éloigne de la côte, la chaleur s'installe franchement. Le mercure grimpe pour atteindre 30°C à Groffliers, et même 32°C dans les terres du côté de Robecq et Cauchy-à-la-Tour ! C'est donc une chaleur estivale qui s'affirme loin du rivage, avec un vent d'ouest un peu plus discret. Un temps parfait pour toutes les festivités ! Excellent après-midi à tous sur RADIO 6.
+Sur nos côtes, on respire un peu mieux grâce à une brise marine qui souffle entre 20 et 25 km/h. À Leffrinckoucke, attendez-vous à 26°C, et 23°C à Gravelines et Marck. En revanche, dès que l'on s'éloigne un peu, la chaleur s'installe. À Lefaux, on attend un très agréable 28°C, tandis que Groffliers affichera 30°C. Les terres intérieures seront les plus chaudes, avec des pointes à 31°C à Racquinghem et même 32°C à Robecq et Cauchy-à-la-Tour. Le vent sera modéré, autour de 20 à 25 km/h, un vent d'ouest qui tentera, sans grand succès, d'adoucir l'atmosphère.
+
+Profitez bien de ce bel après-midi ensoleillé, mais n'oubliez pas de vous hydrater ! À tout à l'heure pour le prochain point météo.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
@@ -298,11 +325,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
 **Tendance à 3 jours :**
 
-**Jeudi 16 juillet :** La chaleur reste bien installée, avec un ciel partagé. Le matin, le soleil domine au nord et sur le littoral, mais des nuages plus nombreux gagnent le sud de la région. L'après-midi, le contraste s'accentue : au nord-ouest, le soleil et la brise maintiennent des températures supportables autour de 27°C. Au nord-est et au centre, le mercure flirte avec 31 à 32°C sous un grand soleil. En revanche, dans le sud, les nuages l'emportent, mais cela n'empêche pas la chaleur de grimper à 33-34°C. Ambiance lourde et orageuse possible en fin de journée.
+**Jeudi 16 juillet :** Le soleil reste le maître absolu. La chaleur s’accentue encore sur l’ensemble de la région. Les températures matinales seront déjà estivales, autour de 18 à 20°C. L’après-midi, attendez-vous à une fournaise généralisée : de 28°C sur la côte à 35°C dans les terres. Le vent sera quasi nul, rendant la chaleur plus pesante. La vigilance orange canicule se poursuit. Prudence absolue pour les personnes fragiles.
 
-**Vendredi 17 juillet :** Nouvelle journée très chaude, avec un ciel variable. Le soleil est généreux sur la moitié nord, tandis que le sud reste sous les nuages, parfois menaçants. Les températures restent élevées : 28°C sur le littoral, 30 à 32°C dans les terres, et jusqu'à 34°C au sud. Un risque d'averses orageuses isolées est à surveiller, surtout en fin d'après-midi. La vigilance Canicule reste de mise.
+**Vendredi 17 juillet :** Nouvelle journée de canicule intense. Le ciel reste dégagé et le mercure continue de grimper. Les maximales atteindront 30°C sur le littoral et jusqu’à 37°C à l’intérieur des terres, notamment à Robecq et Cauchy-à-la-Tour. L’atmosphère devient lourde et orageuse en fin de journée, mais sans précipitations attendues pour l’instant. On recommande d’éviter les sorties aux heures les plus chaudes.
 
-**Samedi 18 juillet :** La tendance se confirme : chaleur persistante et ciel partagé. Le matin, le soleil s'impose au nord, mais le sud reste nuageux. L'après-midi, le temps est plus sec et ensoleillé sur l'ensemble de la région, avec des températures toujours élevées : 26-28°C sur la côte, 30-33°C ailleurs. Le vent d'ouest faiblit. Une accalmie relative, mais la canicule n'a pas dit son dernier mot.
+**Samedi 18 juillet :** Le pic de chaleur semble atteint. Le soleil brille encore, mais un changement se profile en soirée. Les températures restent très élevées, entre 27°C et 34°C. En fin de journée, le ciel pourrait se voiler et des nuages orageux pourraient faire leur apparition, apportant peut-être une première bouffée d’air plus frais. À suivre de près.
 
 
 --------------------------------------------------------------------------------
@@ -311,19 +338,24 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🌡️ CANICULE ET SOLEIL ÉCLATANT : UN 14 JUILLET BRÛLANT ! Ce mardi, la fête nationale s'annonce radieuse mais torride. Le grand soleil domine dès l'aube, avec un ciel d'un bleu limpide sur tout le nord de la France. Les températures matinales sont déjà douces, entre 18 et 19 degrés. L'après-midi, la chaleur s'intensifie nettement dans l'intérieur des terres : jusqu'à 34°C à Valenciennes, 33°C à Lille, Douai et Maubeuge. Heureusement, le littoral reste plus respirable grâce à une brise marine, avec seulement 25°C à Dunkerque. Attention, 72 départements sont placés en vigilance orange canicule par Météo-France. La chaleur persistera dans les prochains jours. Profitez des festivités, mais n'oubliez pas de vous hydrater et de chercher la fraîcheur !
+☀️ CANICULE : UN 14 JUILLET DE TOUS LES RECORDS SUR LE NORD !
+Ce mardi 14 juillet, le soleil est le roi incontesté de notre région pour cette fête nationale. Météo-France a placé 72 départements en vigilance orange canicule, et notre secteur est en première ligne. Le ciel est d'une pureté absolue, pas un nuage à l'horizon, de Dunkerque à Valenciennes. Les températures s'envolent : on atteint 33°C à Lille, Douai ou Saint-Hilaire-sur-Helpe. Seul le littoral profite d'une brise d'ouest modérée qui limite la casse avec 25°C à Dunkerque. C'est une journée magnifique pour les festivités, mais la chaleur est accablante. On se répète : hydratez-vous très régulièrement, portez un chapeau et évitez les efforts aux heures les plus chaudes. La vigilance est de mise pour tous, en particulier pour les personnes fragiles.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à tous sur MONA FM ! Ce mardi matin, pour cette fête nationale du 14 juillet, la météo est tout simplement radieuse ! Le soleil s'impose généreusement dès le lever du jour sur un ciel parfaitement dégagé, d'un bleu limpide. Côté températures, la douceur est déjà bien installée avec 18 degrés relevés à Lille, Douai et Maubeuge, et même 19 degrés pour Valenciennes et Dunkerque. C'est une matinée vraiment très agréable qui s'annonce. Le vent, parlons-en : une légère brise de secteur sud-ouest, autour de 20 km/h, nous accompagne. Elle sera un peu plus sensible sur le littoral. C'est d'ailleurs cette brise marine qui maintiendra une atmosphère bien plus respirable sur la côte cet après-midi, alors que le mercure s'envolera dans l'intérieur des terres. Une météo parfaite pour profiter des festivités ! Passez une excellente matinée et une très belle journée à l'écoute de MONA FM !
+Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo du mardi 14 juillet ! Quel plaisir de vous retrouver en ce jour de fête nationale, et la météo s'annonce tout simplement radieuse pour la matinée.
+
+Ce mardi matin, le soleil sera roi sur l'ensemble de notre région ! Pas un seul nuage à l'horizon, un ciel d'un bleu éclatant qui nous promet une journée magnifique. On se lève avec des températures déjà très douces. Comptez 18°C à Lille et Roubaix, 19°C à Valenciennes et Douai, et même 18°C à Maubeuge et St-Hilaire-sur-Helpe.
+
+Le vent sera présent, mais sans excès. Il soufflera une brise modérée de 15 à 20 km/h sur l'intérieur des terres, comme à Douai et Valenciennes. Près du littoral, du côté de Dunkerque et Steenvoorde, le vent sera un peu plus soutenu, autour de 25 km/h, apportant une agréable sensation de fraîcheur avec 19°C à Dunkerque. Cette brise marine créera un contraste de températures bienvenu : 25°C attendus sur le littoral, tandis que l'intérieur des terres grimpera déjà vers les 32 à 33°C.
+
+Profitez bien de ce soleil généreux pour ce 14 juillet !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mardi après-midi, c'est un temps absolument magnifique qui nous accompagne pour ce 14 juillet, un grand soleil généreux sur toute la région ! Pas un seul nuage pour troubler ce ciel d'un bleu pur, les conditions sont vraiment idéales pour profiter de cette journée de fête.
+Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
 
-Attention tout de même à la chaleur, qui est bien présente dans l'intérieur des terres. Le thermomètre grimpe jusqu'à 34 degrés à Valenciennes, 33 degrés sont attendus du côté de Lille, Douai et Maubeuge.
+Ce mardi après-midi, le soleil sera le maître absolu de notre ciel ! Attendez-vous à un grand bleu éclatant sur l'ensemble de la région, sans le moindre nuage pour venir gâcher la fête nationale. Les températures vont grimper, avec des maximales qui atteindront les 33°C à Lille, Douai et Valenciennes. À St-Hilaire-sur-Helpe, on attend également 33°C, tandis que Maubeuge et Roubaix profiteront de 32°C.
 
-Le contraste est saisissant avec le littoral, où l'ambiance est bien plus respirable. Une agréable brise de mer rafraîchit l'atmosphère, et on ne dépassera pas les 25 degrés à Dunkerque ! Plus on s'éloigne de la côte, plus ça chauffe, avec par exemple 28 degrés prévus à Watten. Partout, le vent reste faible à modéré.
-
-Profitez bien de votre après-midi estival, et très belle fête nationale à tous !
+Une nette différence se fera sentir entre l'intérieur des terres et le littoral. Si l'intérieur des terres suffoque sous la chaleur, les bords de mer seront un peu plus respirables. À Watten, le mercure affichera 28°C, et à Dunkerque, la brise côtière apportera un peu de fraîcheur avec 25°C. Le vent, justement, soufflera modérément, entre 15 et 25 km/h, avec une légère brise d'ouest sur la côte qui sera la bienvenue pour atténuer la sensation de chaleur. Pas d'alerte orage ou grêle à l'horizon, profitez bien de ce soleil radieux !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
@@ -373,7 +405,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Tendance pour les trois prochains jours : la canicule reste bien installée. Mercredi, le soleil sera encore généreux mais voilé par moments, avec des températures stables (32 à 34°C dans l'intérieur, 26°C sur la côte). Jeudi, la chaleur s'accentue : on attend jusqu'à 36°C à Lille et Valenciennes, avec un ciel toujours très ensoleillé. Vendredi, aucun répit : le thermomètre grimpe encore un peu, flirtant avec les 37°C par endroits. Un léger risque d'orages isolés en fin de journée sur les reliefs. Samedi, la tendance se confirme : soleil écrasant, températures caniculaires, et toujours une brise bienvenue sur le littoral. Pensez à vous protéger et à limiter vos efforts physiques aux heures les plus chaudes.
+La tendance pour les trois prochains jours reste lourde et caniculaire. La chaleur ne nous lâche pas !
+
+**Jeudi 16 juillet :** Le soleil brille encore de mille feux. Le ciel reste parfaitement dégagé sur l'ensemble de la région. Les températures maximales restent très élevées, entre 32 et 35°C à l'intérieur des terres. Sur le littoral, la brise de mer apporte un léger répit avec 26 à 28°C. On continue de s'adapter à cette canicule.
+
+**Vendredi 17 juillet :** Le temps reste sec et très ensoleillé. L'atmosphère devient de plus en plus lourde au fil des heures. Les températures ne baissent pas d'un cran. En fin d'après-midi, l'air devient instable et quelques nuages pourraient pointer le bout de leur nez, mais sans conséquence majeure pour l'instant. La vigilance reste de mise.
+
+**Samedi 18 juillet :** La chaleur est toujours bien installée. Le soleil est généreux le matin, mais l'humidité grimpe nettement dans l'après-midi. Le risque d'orages violents se précise pour la fin de journée et la soirée. Il faudra suivre l'évolution de très près. En attendant, on profite du soleil avec prudence et on reste à l'écoute des consignes des autorités.
 
 
 --------------------------------------------------------------------------------
@@ -382,21 +420,26 @@ Tendance pour les trois prochains jours : la canicule reste bien installée. Mer
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ UN 14 JUILLET BRÛLANT SUR LA NORMANDIE ! Ce mardi, la Normandie bascule en plein épisode caniculaire avec 72 départements français placés en vigilance orange. Le réveil est doux et lumineux, mais dès l’après-midi, le thermomètre s’affole : 22 °C à Dieppe grâce à la brise marine, 27 °C à Caen, mais 32 °C à Rouen, 33 °C à Alençon et jusqu’à 34 °C à Évreux. Quelques nuages blancs passent sans gêner le soleil. Côté ciel, Dieppe profite d’un grand soleil tandis que le reste de la région reste sous un ciel nuageux mais lumineux. Un vent d’ouest discret rafraîchit le littoral, mais les terres cuisent. Passez un excellent 14 juillet sous la chaleur, mais n’oubliez pas de vous hydrater !
+**
+☀️ **14 JUILLET CANICULAIRE : LA NORMANDIE CUIT SOUS UN SOLEIL DE PLOMB !** Ce mardi, la Normandie bascule en plein été avec une vigilance orange canicule qui concerne 72 départements français. La matinée débute sous un ciel voilé et nuageux sur les côtes, mais le soleil prend rapidement le pouvoir. L'après-midi est radieux et sans le moindre nuage de Cherbourg à Évreux. Les températures s'emballent sérieusement : 24°C à Cherbourg, 27°C à Caen, mais on frôle les 34°C à Évreux et 33°C à Alençon. Seule Dieppe respire un peu avec 22°C grâce à une brise marine. Pas d'orages à signaler, mais une chaleur accablante. Pensez à vous hydrater, à protéger les plus fragiles et à éviter les efforts aux heures les plus chaudes. La fête nationale sera chaude, très chaude !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Rouen, 17°C à Cherbourg, 22°C à Alençon, 18°C à Dieppe, 18°C à Lisieux. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo du mardi 14 juillet !
+
+Ce mardi matin, la Normandie se réveille sous un ciel souvent voilé, mais globalement agréable. Les nuages sont bien présents par endroits, notamment sur le littoral, mais le soleil parvient tout de même à percer généreusement. Les températures sont déjà douces pour cette heure matinale, avec 17°C à Cherbourg et Dieppe, 18°C à Lisieux et Le Havre, et déjà 19°C à Caen et Rouen.
+
+Le vent se fera sentir, particulièrement sur les côtes. Comptez une brise modérée de 20 à 25 km/h le long du littoral de la Manche, notamment du côté de Cherbourg et du Havre. À l'intérieur des terres, comme à Rouen ou Alençon, le vent sera plus léger, autour de 15 km/h.
+
+Une belle journée se profile, même si les températures vont grimper en flèche cet après-midi, surtout à l'intérieur des terres. Restez à l'écoute pour le bulletin de l'après-midi !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-(Début de la chronique, jingle météo qui s'estompe)
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo de l'après-midi ! Ce mardi 14 juillet, l'ambiance estivale est bien au rendez-vous sur toute la région.
 
-Bonjour à tous, et un très bon 14 juillet sur l'antenne de RADIO ICI NORMANDIE !
+Le soleil sera le maître du ciel normand cet après-midi, avec un grand bleu éclatant partout ! Pas un nuage à l'horizon, de la côte jusqu'à l'intérieur des terres, pour profiter pleinement de cette journée de fête nationale.
 
-Ce mardi après-midi, la Normandie profite de conditions estivales exceptionnelles pour célébrer notre fête nationale ! Le soleil est le grand gagnant, même si quelques jolis nuages blancs décorent le ciel ici ou là, sans jamais gâcher le plaisir.
+Côté températures, ça grimpe ! Nous aurons 24°C à Cherbourg, 27°C à Caen, et même 22°C à Dieppe, où la brise marine de secteur nord-ouest soufflera à environ 20 km/h, apportant un peu de fraîcheur bienvenue. Plus on s'éloigne du littoral, plus le mercure s'affole : comptez 32°C à Lisieux et Rouen, avec un vent faible de 20 km/h. Les maximales atteindront 33°C à Alençon et 34°C à Évreux, où le vent restera modéré, autour de 15 km/h.
 
-Côté températures, attention, c'est le grand écart ! Le littoral bénéficie d'une agréable brise de mer qui vient tempérer l'atmosphère. On respirera bien à Dieppe avec 22 degrés, 24 à Cherbourg et un confortable 27 degrés à Caen. En revanche, dès qu'on s'éloigne des côtes, la chaleur devient bien plus marquée. Le thermomètre grimpe à 32 degrés à Rouen, 33 à Alençon et jusqu'à 34 degrés à Évreux ! Ce vent de secteur ouest, plus sensible sur les plages, restera très discret dans les terres.
-
-Bref, un temps parfait pour profiter des festivités. Passez un excellent après-midi du 14 juillet !
+Attention, pas d'orages ni de grêle à signaler, mais le soleil tape fort, alors pensez à bien vous hydrater et à vous protéger ! Profitez bien de cet après-midi ensoleillé.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (mardi 14 juillet 2026)
@@ -445,11 +488,12 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance à 3 jours : la canicule s’installe durablement**
+**
+**Mercredi 15 juillet :** Le ciel se charge nettement dès le matin avec des nuages épais sur toute la région. L'après-midi, la dégradation s'accentue et des orages éclatent partout en Normandie, de Rouen à Cherbourg en passant par Caen et Alençon. Ces orages pourront être localement forts. Les températures restent élevées mais baissent un peu, avec des maximales autour de 28 à 30°C. Attention aux phénomènes violents sous les orages : rafales de vent et fortes précipitations.
 
-🔴 **Jeudi 16 juillet** – La vigilance orange Canicule se maintient. Le soleil règne en maître dès le matin, avec quelques nuages élevés sans conséquence. Les températures repartent à la hausse : 19 à 22 °C au lever du jour, puis 30 à 33 °C sur le littoral (grâce à la brise) et 35 à 38 °C dans l’intérieur (Rouen, Évreux, Alençon). Vent faible, atmosphère lourde. Soirée très chaude, idéale pour les festivités nocturnes.
+**Jeudi 16 juillet :** Le temps reste instable avec un ciel très nuageux et des averses orageuses encore possibles, surtout sur l'est de la région. Le vent s'oriente au nord-ouest, apportant un peu d'air plus frais. Les maximales reculent nettement pour atteindre 22 à 25°C. Une accalmie est attendue en fin de journée.
 
-🟠 **Vendredi 17 juillet** – Pic de chaleur attendu. Ciel dégagé toute la journée, pas un nuage. Les minimales grimpent encore (21 à 24 °C), les maximales atteignent 33 °C sur la côte et 39 °C dans les terres. La brise de mer reste sensible de Dieppe au Cotentin, mais ailleurs, l’air est irrespirable. Attention aux coups de chaleur, restez à l’ombre aux heures les plus chaudes.
+**Vendredi 17 juillet :** Retour d'un temps plus calme et sec. Le soleil reprend ses droits avec un ciel alternant éclaircies et passages nuageux inoffensifs. Les températures remontent doucement pour atteindre 24 à 27°C. La chaleur est de retour, mais sans excès. Agréable pour profiter des soirées d'été.
 
-🟡 **Samedi 18 juillet** – Toujours très chaud, mais quelques signes d’évolution en soirée. La journée reste ensoleillée, avec des températures similaires à vendredi (37-39 °C dans l’intérieur). En fin de journée, un risque d’orages secs isolés pourrait pointer sur l’est de la région, sans garantie de pluie. Nuit de samedi à dimanche toujours très douce. La canicule devrait se prolonger au-delà.
+**Samedi 18 juillet :** Belle journée ensoleillée et stable sur l'ensemble de la Normandie. Le mercure grimpe à nouveau avec des maximales de 27 à 30°C. Attention, la vigilance canicule pourrait être réactivée si la chaleur persiste. Profitez-en, mais restez prudents.
 
