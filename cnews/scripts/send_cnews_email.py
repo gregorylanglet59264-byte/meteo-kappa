@@ -309,18 +309,18 @@ def main():
         if os.environ.get("OPENROUTER_API_KEY"):
             system_prompt = (
                 "Tu es un prévisionniste météo senior. Ton rôle est de rédiger deux résumés "
-                "détaillés et complets d'environ 4 lignes chacun (soit environ 120 à 150 mots par résumé) "
+                "d'environ 3 à 4 lignes chacun (soit environ 80 à 100 mots par résumé) "
                 "des prévisions pour demain : un pour la France entière, et un spécifique "
                 "pour la région Hauts-de-France. Base-toi sur le bulletin national fourni pour en extraire "
                 "les détails importants (phénomènes, températures, vents).\n\n"
                 "RÈGLES CRITIQUES :\n"
                 "- N'utilise pas de formatage markdown (pas de **).\n"
                 "- Reste factuel, précis et professionnel.\n"
-                "- Chaque résumé doit faire au moins 4 lignes complètes.\n"
+                "- Chaque résumé doit faire environ 3 à 4 lignes de texte.\n"
                 "- Retourne uniquement un JSON brut avec la structure suivante (sans bloc de code ```json) :\n"
                 "{\n"
-                "  \"france\": \"Résumé détaillé pour la France (environ 4 lignes, 120-150 mots)\",\n"
-                "  \"hdf\": \"Résumé détaillé pour les Hauts-de-France (environ 4 lignes, 120-150 mots)\"\n"
+                "  \"france\": \"Résumé pour la France (environ 3-4 lignes, 80-100 mots)\",\n"
+                "  \"hdf\": \"Résumé pour les Hauts-de-France (environ 3-4 lignes, 80-100 mots)\"\n"
                 "}"
             )
             user_prompt = f"Prévisions brutes de Météo-France :\n{raw_temps}"
