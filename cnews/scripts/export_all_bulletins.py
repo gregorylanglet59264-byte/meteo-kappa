@@ -255,6 +255,23 @@ def main():
                     form["alertSource"] = "Météo-France — vigilance.meteofrance.fr"
             except Exception as e:
                 print(f"Warning: Could not fetch vigilance: {e}")
+
+            # Synchronisation automatique de la carte de vigilance (alertImageUrl)
+            try:
+                opts = c.get("options", {})
+                scope = opts.get("vigilanceScope", "national")
+                region_id = opts.get("vigilanceRegionId", "")
+                day_key = "tomorrow" if args.day_offset == 1 else "today"
+                
+                if scope == "regional" and region_id:
+                    fileName = f"vigilance_region_{region_id}_{day_key}.png"
+                else:
+                    fileName = f"vigilance_france_{day_key}.png"
+                
+                form["alertImageUrl"] = f"https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/{fileName}?t={int(time.time())}"
+                print(f" - Synchronized vigilance map for '{name}': {fileName}")
+            except Exception as e:
+                print(f"Warning: Could not synchronize vigilance map for '{name}': {e}")
             
             # Generate and inject AI texts if available and not skipped (transmitting explicit base64 maps)
             if not args.skip_ai:

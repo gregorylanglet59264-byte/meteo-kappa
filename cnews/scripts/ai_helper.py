@@ -449,12 +449,14 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
 
     return {
         "todaySummary": today_summary,
+        "summaryLancement": f"PRÉVISIONS DE VOTRE JOURNÉE : Voici les conditions détaillées pour ce {wd1} :",
         "summaryMorning": summary_morning,
         "summaryAfternoon": summary_afternoon,
         "summaryMorning2": summary_morning2,
         "summaryAfternoon2": summary_afternoon2,
         "forecastRaw": forecast_raw,
         "forecastTextRaw": forecast_raw,
+        "forecastLancement": "TENDANCE DES PROCHAINS JOURS : Voyons ce qui nous attend pour la suite de la période :",
         "recordsRaw": records_raw,
         "mountain": mountain_text,
         "mountainTitle": f"🏔️ MÉTÉO DES MONTAGNES DU {date_j1.upper()}",
@@ -745,7 +747,7 @@ Instructions :
 
     # Appel 5 : Synthèse (todaySummary & forecastRaw)
     recon_final = "\n\n".join(recon_lines)
-    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée et la tendance à 3 jours pour le bulletin "{client_name}".
+    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin "{client_name}".
 Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visuel', 'image').
 
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
@@ -764,24 +766,32 @@ BILAN DE LA RECONNAISSANCE DES CARTES :
 Instructions :
 1. Remplis la balise <todaySummary> (120-150 mots) en commençant obligatoirement par un titre court, percutant et accrocheur/putaclic en MAJUSCULES (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1} (synoptique, vigilance...). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
 2. Remplis la balise <forecastRaw> avec la tendance détaillée à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
+3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (environ 4 à 8 mots) résumant le phénomène météo le plus marquant de la journée (court-terme), suivi d'une courte phrase de lancement parlée, chaleureuse et fluide, pour introduire les prévisions (ex: "☀️ CHALEUR ACCABLANTE : Sortez les bouteilles d'eau, voici vos prévisions pour ce vendredi :").
+4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (environ 4 à 8 mots) résumant le phénomène météo le plus marquant de la période de tendance, suivi d'une courte phrase de lancement parlée pour introduire la tendance (ex: "📉 RETOUR DE LA FRAÎCHEUR : Voyons maintenant ce qui nous attend pour la suite des prochains jours :").
 """
     try:
         print(f"[{client_name}] Calling Gemini Flash for final synthesis...")
         res_syn = call_openrouter(api_key, prompt_syn)
         todaySummary = extract_xml_tag(res_syn, "todaySummary")
         forecastRaw = extract_xml_tag(res_syn, "forecastRaw")
+        summaryLancement = extract_xml_tag(res_syn, "summaryLancement")
+        forecastLancement = extract_xml_tag(res_syn, "forecastLancement")
     except Exception as e:
         print(f"Error calling AI for Synthesis: {e}")
         todaySummary = local_fallback["todaySummary"]
         forecastRaw = local_fallback["forecastRaw"]
+        summaryLancement = local_fallback["summaryLancement"]
+        forecastLancement = local_fallback["forecastLancement"]
 
     result = {
         "todaySummary": todaySummary,
+        "summaryLancement": summaryLancement,
         "summaryMorning": summaryMorning,
         "summaryAfternoon": summaryAfternoon,
         "summaryMorning2": summaryMorning2,
         "summaryAfternoon2": summaryAfternoon2,
         "forecastRaw": forecastRaw,
+        "forecastLancement": forecastLancement,
     }
     result["forecastTextRaw"] = result["forecastRaw"]
 
