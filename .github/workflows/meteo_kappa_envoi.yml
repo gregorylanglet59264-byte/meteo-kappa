@@ -2,7 +2,7 @@ name: Météo Kappa - 3. Envoi Bulletins
 
 on:
   workflow_run:
-    workflows: ["Météo Kappa - 2. Analyse Gemini Pro"]
+    workflows: ["Météo Kappa - 2. Analyse Gemini Flash"]
     types:
       - completed
   workflow_dispatch:
@@ -41,8 +41,8 @@ jobs:
           PYTHONUNBUFFERED: "1"
           GMAIL_EMAIL: "langlet.gregory@gmail.com"
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          # Envoi à Patrick temporairement désactivé pour validation (Charlotte + Gregory uniquement)
-          RECIPIENT_EMAILS: ${{ (github.event_name == 'schedule' || github.event.inputs.test_mode == 'false') && 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, langletcharlotte480@gmail.com' || 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, langletcharlotte480@gmail.com' }}
+          # Destinataires : Grégory + Patrick en Prod, Grégory seul en Test (adresse Charlotte retirée)
+          RECIPIENT_EMAILS: ${{ (github.event_name == 'schedule' || github.event.inputs.test_mode == 'false') && 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr' || 'gregory.langlet@sfr.fr, langlet.gregory@gmail.com' }}
         run: |
           python cnews/scripts/send_kappa_email.py --skip-generation
 

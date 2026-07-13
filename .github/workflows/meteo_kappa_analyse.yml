@@ -1,4 +1,4 @@
-name: Météo Kappa - 2. Analyse Gemini Pro
+name: Météo Kappa - 2. Analyse Gemini Flash
 
 on:
   workflow_run:
@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lancer l'analyse des cartes par Gemini Pro (Vision)
+      - name: Lancer l'analyse des cartes par Gemini Flash (Vision)
         env:
           PYTHONUNBUFFERED: "1"
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}

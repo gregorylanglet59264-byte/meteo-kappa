@@ -22,7 +22,7 @@ def normalize_city(name):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 OPENROUTER_MODEL = "deepseek/deepseek-v4-flash"
-OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "google/gemini-2.5-pro")
+OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "google/gemini-2.5-flash")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -634,7 +634,7 @@ Instructions :
 2. Remplis la balise <texte_matin> avec ton commentaire parlé de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
 """
         try:
-            print(f"[{client_name}] Calling Gemini Pro for J1 Morning map...")
+            print(f"[{client_name}] Calling Gemini Flash for J1 Morning map...")
             res_m1 = call_openrouter(api_key, prompt_m1, images=[img_m1])
             recon_m1 = extract_xml_tag(res_m1, "reconnaissance_matin")
             summaryMorning = extract_xml_tag(res_m1, "texte_matin")
@@ -667,7 +667,7 @@ Instructions :
 2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
 """
         try:
-            print(f"[{client_name}] Calling Gemini Pro for J1 Afternoon map...")
+            print(f"[{client_name}] Calling Gemini Flash for J1 Afternoon map...")
             res_a1 = call_openrouter(api_key, prompt_a1, images=[img_a1])
             recon_a1 = extract_xml_tag(res_a1, "reconnaissance_apresmidi")
             summaryAfternoon = extract_xml_tag(res_a1, "texte_apresmidi")
@@ -698,7 +698,7 @@ Instructions :
 2. Remplis la balise <texte_matin2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling Gemini Pro for J2 Morning map...")
+            print(f"[{client_name}] Calling Gemini Flash for J2 Morning map...")
             res_m2 = call_openrouter(api_key, prompt_m2, images=[img_m2])
             recon_m2 = extract_xml_tag(res_m2, "reconnaissance_matin2")
             summaryMorning2 = extract_xml_tag(res_m2, "texte_matin2")
@@ -730,7 +730,7 @@ Instructions :
 2. Remplis la balise <texte_apresmidi2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling Gemini Pro for J2 Afternoon map...")
+            print(f"[{client_name}] Calling Gemini Flash for J2 Afternoon map...")
             res_a2 = call_openrouter(api_key, prompt_a2, images=[img_a2])
             recon_a2 = extract_xml_tag(res_a2, "reconnaissance_apresmidi2")
             summaryAfternoon2 = extract_xml_tag(res_a2, "texte_apresmidi2")
@@ -766,7 +766,7 @@ Instructions :
 2. Remplis la balise <forecastRaw> avec la tendance détaillée à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
 """
     try:
-        print(f"[{client_name}] Calling Gemini Pro for final synthesis...")
+        print(f"[{client_name}] Calling Gemini Flash for final synthesis...")
         res_syn = call_openrouter(api_key, prompt_syn)
         todaySummary = extract_xml_tag(res_syn, "todaySummary")
         forecastRaw = extract_xml_tag(res_syn, "forecastRaw")
