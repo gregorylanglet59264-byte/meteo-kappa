@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Patrick</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: radial-gradient(circle at top right, #091a3a 0%, #030a16 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+    
+    /* ── HEADER ── */
+    header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .logo-text {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .logo-text span {
+      font-weight: 400;
+      color: rgba(255,255,255,0.6);
+      -webkit-text-fill-color: initial;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .subtitle {
+      font-size: 15px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 500;
+    }
+
+    /* ── BLOCS CONFIGURATION (GLASSMORPHISM) ── */
+    .config-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .config-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .config-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.85);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .status-badge {
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .status-badge.missing {
+      background: rgba(239, 83, 80, 0.15);
+      color: #ef5350;
+      border: 1px solid rgba(239, 83, 80, 0.25);
+    }
+    .status-badge.ready {
+      background: rgba(102, 187, 106, 0.15);
+      color: #66bb6a;
+      border: 1px solid rgba(102, 187, 106, 0.25);
+    }
+    .input-group {
+      display: flex;
+      gap: 8px;
+      width: 100%;
+    }
+    input[type="password"] {
+      flex: 1;
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 14px;
+      padding: 12px 16px;
+      color: #fff;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+    input[type="password"]:focus {
+      border-color: #00c6ff;
+      background: rgba(0, 0, 0, 0.35);
+      box-shadow: 0 0 12px rgba(0, 198, 255, 0.25);
+    }
+
+    /* ── BOUTONS MULTITOUCH MOBILE ── */
+    .btn {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+      height: 48px; /* Touch target confortable */
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+      color: #fff;
+      padding: 0 20px;
+      box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
+    }
+    .btn-primary:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 6px rgba(0, 114, 255, 0.2);
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.8);
+      width: 48px;
+    }
+    .btn-secondary:active {
+      background: rgba(255,255,255,0.12);
+    }
+
+    /* ── LISTE DES WORKFLOWS ── */
+    .section-title {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.9);
+    }
+    .section-title span {
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: #00c6ff;
+      border-radius: 2px;
+    }
+    .workflows-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+    .wf-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transition: all 0.25s ease;
+    }
+    .wf-card:hover {
+      border-color: rgba(0, 198, 255, 0.15);
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .wf-info {
+      flex: 1;
+    }
+    .wf-repo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.04);
+      padding: 3px 8px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .wf-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+    .wf-desc {
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.45;
+    }
+    .btn-trigger {
+      background: linear-gradient(135deg, #ff5a24 0%, #ff2400 100%);
+      color: #fff;
+      padding: 0 24px;
+      height: 52px; /* Hauteur tactile mobile */
+      border-radius: 16px;
+      font-size: 15px;
+      box-shadow: 0 6px 20px rgba(255, 90, 36, 0.25);
+    }
+    .btn-trigger:active {
+      transform: scale(0.96);
+      box-shadow: 0 2px 8px rgba(255, 90, 36, 0.15);
+    }
+    .btn-trigger.loading {
+      background: rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    /* ── SPINNER ANIMATION ── */
+    .spinner {
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+
+    /* ── TOAST NOTIFICATIONS ── */
+    #toast-container {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: calc(100% - 32px);
+      max-width: 400px;
+    }
+    .toast {
+      background: rgba(18, 30, 49, 0.95);
+      border-radius: 16px;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .toast-success {
+      border: 1px solid rgba(76, 175, 80, 0.4);
+      color: #81c784;
+    }
+    .toast-error {
+      border: 1px solid rgba(244, 67, 54, 0.4);
+      color: #e57373;
+    }
+    .toast-msg {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* ── RESPONSIVE MOBILE ── */
+    @media (max-width: 480px) {
+      body {
+        padding: 16px 12px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      .config-card {
+        padding: 16px;
+        border-radius: 20px;
+      }
+      .input-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+      .btn-secondary {
+        width: 100%;
+      }
+      .wf-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px 16px;
+        border-radius: 20px;
+        gap: 16px;
+      }
+      .btn-trigger {
+        width: 100%;
+      }
+      #toast-container {
+        bottom: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header>
+      <div class="logo-container">
+        <div class="logo-text"><i class="fa-solid fa-cloud-sun-rain"></i> Météo-climat <span>pro</span></div>
+      </div>
+      <h1>Dashboard Patrick</h1>
+      <div class="subtitle">Lancez vos bulletins et observations d'un clic</div>
+    </header>
+
+    <!-- CONFIGURATION DU TOKEN GITHUB -->
+    <div class="config-card">
+      <div class="config-header">
+        <div class="config-title"><i class="fa-solid fa-key"></i> Clé d'accès GitHub</div>
+        <div id="status-badge" class="status-badge missing">
+          <i class="fa-solid fa-triangle-exclamation"></i> Non configuré
+        </div>
+      </div>
+      <div class="input-group">
+        <input type="password" id="pat-input" placeholder="Collez votre Personal Access Token (PAT) ici">
+        <button id="toggle-pwd-btn" class="btn btn-secondary" onclick="togglePasswordVisibility()">
+          <i id="toggle-icon" class="fa-solid fa-eye"></i>
+        </button>
+        <button class="btn btn-primary" onclick="saveToken()"><i class="fa-solid fa-floppy-disk"></i> Enregistrer</button>
+      </div>
+    </div>
+
+    <!-- LISTE DES AUTOMATISATIONS -->
+    <div class="section-title"><span></span>Automatisations disponibles</div>
+    
+    <div class="workflows-list">
+      
+      <!-- OBSERVATIONS CNEWS -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🌦️ Observations CNews</div>
+          <div class="wf-desc">Génère les cartes d'observations Météociel du jour et envoie le rapport.</div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'daily_cnews_obs.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- BULLETINS RADIO IA -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🎙️ Météo Kappa (Radio)</div>
+          <div class="wf-desc">Lance l'analyse des cartes de prévisions par l'IA et envoie les bulletins rédigés.</div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'meteo_kappa.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- VIDÉOS PATRICK CNEWS -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🎬 Vidéos Patrick CNews</div>
+          <div class="wf-desc">Génère les diaporamas météo automatiques au format MP4 pour CNews.</div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'meteo_cnews_patrick.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- VIGILANCE MF -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">🚨 Vigilance Météo-France</div>
+          <div class="wf-desc">Collecte le bulletin officiel de vigilance nationale Météo-France et l'envoie.</div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'vigilance_quotidienne.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- BILAN RÉGIONAL HAUTS-DE-FRANCE -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">🌾 Bilan Régional Hauts-de-France</div>
+          <div class="wf-desc">Génère le bilan climatologique régional complet et anomalies pour les Hauts-de-France.</div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'bilan_journalier.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- CONTAINER DE TOASTS -->
+  <div id="toast-container"></div>
+
+  <script>
+    // Vérification initiale du token enregistré
+    document.addEventListener("DOMContentLoaded", () => {
+      updateTokenStatus();
+    });
+
+    function updateTokenStatus() {
+      const token = localStorage.getItem('github_pat');
+      const badge = document.getElementById('status-badge');
+      const input = document.getElementById('pat-input');
+      
+      if (token) {
+        badge.className = "status-badge ready";
+        badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> Prêt';
+        input.value = token;
+      } else {
+        badge.className = "status-badge missing";
+        badge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Non configuré';
+        input.value = "";
+      }
+    }
+
+    function saveToken() {
+      const input = document.getElementById('pat-input');
+      const token = input.value.trim();
+      
+      if (token) {
+        localStorage.setItem('github_pat', token);
+        showToast("Clé d'accès GitHub enregistrée avec succès !", "success");
+      } else {
+        localStorage.removeItem('github_pat');
+        showToast("Clé d'accès supprimée.", "error");
+      }
+      updateTokenStatus();
+    }
+
+    function togglePasswordVisibility() {
+      const input = document.getElementById('pat-input');
+      const icon = document.getElementById('toggle-icon');
+      if (input.type === "password") {
+        input.type = "text";
+        icon.className = "fa-solid fa-eye-slash";
+      } else {
+        input.type = "password";
+        icon.className = "fa-solid fa-eye";
+      }
+    }
+
+    async function triggerWf(btn, repo, workflowFile) {
+      // Lire la cle directement depuis le champ de saisie en priorite (au cas ou l'utilisateur a colle sans enregistrer)
+      const input = document.getElementById('pat-input');
+      let token = input.value.trim();
+      
+      if (!token) {
+        token = localStorage.getItem('github_pat');
+      } else {
+        // Enregistrer automatiquement si present pour simplifier l'utilisation
+        localStorage.setItem('github_pat', token);
+        updateTokenStatus();
+      }
+      
+      if (!token) {
+        showToast("Veuillez d'abord configurer votre clé d'accès !", "error");
+        return;
+      }
+
+      // Modifier le bouton en état de chargement
+      const originalHTML = btn.innerHTML;
+      btn.className = "btn btn-trigger loading";
+      btn.innerHTML = '<i class="fa-solid fa-circle-notch spinner"></i> Envoi...';
+
+      try {
+        const response = await fetch(`https://api.github.com/repos/gregorylanglet59264-byte/${repo}/actions/workflows/${workflowFile}/dispatches`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github+json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ ref: 'main' })
+        });
+
+        if (response.status === 204) {
+          showToast(`Lancement de ${workflowFile.replace('.yml', '')} envoyé !`, "success");
+        } else {
+          let errText = response.statusText;
+          try {
+            const err = await response.json();
+            if (err && err.message) errText = err.message;
+          } catch(e) {}
+          showToast(`Erreur GitHub (${response.status}) : ${errText}`, "error");
+        }
+      } catch (e) {
+        showToast(`Erreur de connexion : ${e.message}`, "error");
+      } finally {
+        // Restaurer le bouton
+        btn.className = "btn btn-trigger";
+        btn.innerHTML = originalHTML;
+      }
+    }
+
+    function showToast(message, type = "success") {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast toast-${type}`;
+      
+      const icon = type === "success" 
+        ? '<i class="fa-solid fa-circle-check fa-lg"></i>' 
+        : '<i class="fa-solid fa-triangle-exclamation fa-lg"></i>';
+        
+      toast.innerHTML = `
+        ${icon}
+        <div class="toast-msg">${message}</div>
+      `;
+      
+      container.appendChild(toast);
+      
+      // Animation d'entrée
+      setTimeout(() => {
+        toast.classList.add('show');
+      }, 50);
+      
+      // Animation de sortie
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+          toast.remove();
+        }, 400);
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
