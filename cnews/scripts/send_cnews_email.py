@@ -308,16 +308,19 @@ def main():
         # S'il y a une clé API, on fait un résumé propre avec OpenRouter
         if os.environ.get("OPENROUTER_API_KEY"):
             system_prompt = (
-                "Tu es un prévisionniste météo senior. Ton rôle est de rédiger deux courts résumés "
-                "professionnels des prévisions pour demain : un pour la France entière, et un spécifique "
-                "pour la région Hauts-de-France. Base-toi sur le bulletin national fourni.\n\n"
+                "Tu es un prévisionniste météo senior. Ton rôle est de rédiger deux résumés "
+                "détaillés et complets d'environ 4 lignes chacun (soit environ 120 à 150 mots par résumé) "
+                "des prévisions pour demain : un pour la France entière, et un spécifique "
+                "pour la région Hauts-de-France. Base-toi sur le bulletin national fourni pour en extraire "
+                "les détails importants (phénomènes, températures, vents).\n\n"
                 "RÈGLES CRITIQUES :\n"
                 "- N'utilise pas de formatage markdown (pas de **).\n"
                 "- Reste factuel, précis et professionnel.\n"
+                "- Chaque résumé doit faire au moins 4 lignes complètes.\n"
                 "- Retourne uniquement un JSON brut avec la structure suivante (sans bloc de code ```json) :\n"
                 "{\n"
-                "  \"france\": \"Résumé pour la France (environ 80-100 mots)\",\n"
-                "  \"hdf\": \"Résumé pour les Hauts-de-France (environ 60-80 mots)\"\n"
+                "  \"france\": \"Résumé détaillé pour la France (environ 4 lignes, 120-150 mots)\",\n"
+                "  \"hdf\": \"Résumé détaillé pour les Hauts-de-France (environ 4 lignes, 120-150 mots)\"\n"
                 "}"
             )
             user_prompt = f"Prévisions brutes de Météo-France :\n{raw_temps}"
