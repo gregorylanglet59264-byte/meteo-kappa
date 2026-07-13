@@ -13,7 +13,7 @@ def get_french_date_string(date_obj):
     weekdays = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
     return f"{weekdays[date_obj.weekday()]} {date_obj.day} {months[date_obj.month - 1]} {date_obj.year}"
 
-def send_email(body_text, subject, recipients_str):
+def send_email(body_text, subject, recipients_str, cartes_dir):
     gmail_email = os.environ.get("GMAIL_EMAIL", "langlet.gregory@gmail.com")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
     if not gmail_password:
@@ -35,6 +35,46 @@ def send_email(body_text, subject, recipients_str):
     
     boundary = uuid.uuid4().hex
     
+    # Attacher les cartes de vigilance si elles existent
+    vigilance_attachments = []
+    vig_files = [
+        ("carte_vigilance_france_pictos.jpg", "vigilance_france.jpg"),
+        ("carte_vigilance_hdf.jpg", "vigilance_hauts_de_france.jpg")
+    ]
+    
+    for filename, attachment_name in vig_files:
+        path = os.path.join(cartes_dir, filename)
+        if os.path.exists(path):
+            try:
+                with open(path, "rb") as f:
+                    img_data = f.read()
+                img_b64 = base64.b64encode(img_data).decode("ascii")
+                vigilance_attachments.append((attachment_name, img_b64))
+                print(f"  -> Ajout de la vigilance en pièce jointe : {filename}")
+            except Exception as e:
+                print(f"  -> Impossible de lire la vigilance {filename} : {e}")
+        else:
+            print(f"  -> Vigilance {filename} introuvable à {path}")
+
+    # Construction du MIME avec pièces jointes
+    mime_parts = [
+        f'--{boundary}\r\n',
+        f'Content-Type: text/html; charset=utf-8\r\n',
+        f'Content-Transfer-Encoding: base64\r\n',
+        f'\r\n',
+        f'{text_b64}\r\n'
+    ]
+    
+    for att_name, att_b64 in vigilance_attachments:
+        mime_parts.append(f'\r\n--{boundary}\r\n')
+        mime_parts.append(f'Content-Type: image/jpeg; name="{att_name}"\r\n')
+        mime_parts.append(f'Content-Disposition: attachment; filename="{att_name}"\r\n')
+        mime_parts.append(f'Content-Transfer-Encoding: base64\r\n')
+        mime_parts.append(f'\r\n')
+        mime_parts.append(f'{att_b64}\r\n')
+        
+    mime_parts.append(f'\r\n--{boundary}--\r\n')
+    
     raw_message = (
         f'From: Meteo Climat Pro <{sender}>\r\n'
         f'To: {", ".join(recipients)}\r\n'
@@ -45,13 +85,7 @@ def send_email(body_text, subject, recipients_str):
         f'MIME-Version: 1.0\r\n'
         f'Content-Type: multipart/mixed; boundary="{boundary}"\r\n'
         f'\r\n'
-        f'--{boundary}\r\n'
-        f'Content-Type: text/html; charset=utf-8\r\n'
-        f'Content-Transfer-Encoding: base64\r\n'
-        f'\r\n'
-        f'{text_b64}\r\n'
-        f'\r\n'
-        f'--{boundary}--\r\n'
+        + "".join(mime_parts)
     )
     
     print(f"[SMTP] Envoi via Gmail à {', '.join(recipients)}...")
@@ -232,7 +266,7 @@ def main():
         recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
         print("[MODE PRODUCTION] Envoi à Grégory et Patrick.")
         
-    send_email(email_body, subject, recipients)
+    send_email(email_body, subject, recipients, cartes_dir)
 
 if __name__ == "__main__":
     main()
