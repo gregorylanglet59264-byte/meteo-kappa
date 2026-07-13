@@ -36,10 +36,12 @@ def send_email(body_text, subject, recipients_str):
     boundary = uuid.uuid4().hex
     
     raw_message = (
-        f'From: Gregory LANGLET <{sender}>\r\n'
+        f'From: Meteo Climat Pro <{sender}>\r\n'
         f'To: {", ".join(recipients)}\r\n'
+        f'Reply-To: gregory.langlet@sfr.fr\r\n'
         f'Subject: {clean_subj}\r\n'
         f'Date: {formatdate(localtime=True)}\r\n'
+        f'X-Mailer: Python\r\n'
         f'MIME-Version: 1.0\r\n'
         f'Content-Type: multipart/mixed; boundary="{boundary}"\r\n'
         f'\r\n'
@@ -184,7 +186,7 @@ def main():
     )
         
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
-    subject = f"bulletin vidéo du {get_french_date_string(tomorrow)}"
+    subject = f"Dossier du {get_french_date_string(tomorrow)}"
     
     # Gestion du mode test : si argument "test_mode" ou variable d'env GHA active
     test_mode = os.environ.get("TEST_MODE", "false").lower() in ["true", "1", "yes"]

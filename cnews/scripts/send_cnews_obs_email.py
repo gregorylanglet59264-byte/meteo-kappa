@@ -45,10 +45,12 @@ def send_email(body_text, subject, recipients_str):
     boundary = uuid.uuid4().hex
     
     raw_message = (
-        f'From: Gregory LANGLET <{sender}>\r\n'
+        f'From: Meteo Climat Pro <{sender}>\r\n'
         f'To: {", ".join(recipients)}\r\n'
+        f'Reply-To: gregory.langlet@sfr.fr\r\n'
         f'Subject: {clean_subj}\r\n'
         f'Date: {formatdate(localtime=True)}\r\n'
+        f'X-Mailer: Python\r\n'
         f'MIME-Version: 1.0\r\n'
         f'Content-Type: multipart/mixed; boundary="{boundary}"\r\n'
         f'\r\n'
@@ -217,7 +219,7 @@ def main():
     # 5. ÉTAPE 5 : Envoi de l'e-mail (uniquement à Grégory pour l'instant)
     print("\n=== ÉTAPE 5 : Envoi de l'e-mail ===")
     date_label = get_french_date_string(today)
-    subject = f"cartes d'observations du {date_label}"
+    subject = f"Observations - {date_label}"
     
     email_body = (
         f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"

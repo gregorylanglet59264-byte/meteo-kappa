@@ -36,10 +36,12 @@ def send_email(body_text, subject, recipients_str):
     boundary = uuid.uuid4().hex
     
     raw_message = (
-        f'From: Gregory LANGLET <{sender}>\r\n'
+        f'From: Meteo Climat Pro <{sender}>\r\n'
         f'To: {", ".join(recipients)}\r\n'
+        f'Reply-To: gregory.langlet@sfr.fr\r\n'
         f'Subject: {clean_subj}\r\n'
         f'Date: {formatdate(localtime=True)}\r\n'
+        f'X-Mailer: Python\r\n'
         f'MIME-Version: 1.0\r\n'
         f'Content-Type: multipart/mixed; boundary="{boundary}"\r\n'
         f'\r\n'
@@ -149,7 +151,7 @@ def main():
     )
         
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
-    subject = f"Vos bulletins radio du {get_french_date_string(tomorrow)}"
+    subject = f"Notes du {get_french_date_string(tomorrow)}"
     
     recipients = os.environ.get("RECIPIENT_EMAILS", "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr")
     send_email(email_body, subject, recipients)
