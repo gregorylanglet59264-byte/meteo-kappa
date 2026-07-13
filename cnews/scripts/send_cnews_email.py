@@ -296,9 +296,10 @@ def main():
     social_text_hdf = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  HAUTS DE FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #hautsdefrance"
     social_text_france = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #france"
 
-    # Récupérer et résumer la prévision nationale de demain
-    print("\n=== ÉTAPE 2.5 : Récupération et résumé de la prévision nationale ===")
-    forecast_summary = "Non disponible"
+    # Récupérer et résumer les prévisions nationale et régionale de demain
+    print("\n=== ÉTAPE 2.5 : Récupération et résumé des prévisions ===")
+    france_summary = "Non disponible"
+    hdf_summary = "Non disponible"
     forecast_data = get_national_forecast()
     if forecast_data and 'temps' in forecast_data:
         raw_temps = forecast_data['temps']
@@ -307,19 +308,37 @@ def main():
         # S'il y a une clé API, on fait un résumé propre avec OpenRouter
         if os.environ.get("OPENROUTER_API_KEY"):
             system_prompt = (
-                "Tu es un prévisionniste météo senior. Ton rôle est de rédiger un court résumé "
-                "(en 2 paragraphes maximum, environ 100 mots au total) et professionnel des prévisions "
-                "de Météo-France pour demain. Utilise un ton dynamique et expert, et n'utilise pas de "
-                "formatage markdown (pas de **)."
+                "Tu es un prévisionniste météo senior. Ton rôle est de rédiger deux courts résumés "
+                "professionnels des prévisions pour demain : un pour la France entière, et un spécifique "
+                "pour la région Hauts-de-France. Base-toi sur le bulletin national fourni.\n\n"
+                "RÈGLES CRITIQUES :\n"
+                "- N'utilise pas de formatage markdown (pas de **).\n"
+                "- Reste factuel, précis et professionnel.\n"
+                "- Retourne uniquement un JSON brut avec la structure suivante (sans bloc de code ```json) :\n"
+                "{\n"
+                "  \"france\": \"Résumé pour la France (environ 80-100 mots)\",\n"
+                "  \"hdf\": \"Résumé pour les Hauts-de-France (environ 60-80 mots)\"\n"
+                "}"
             )
             user_prompt = f"Prévisions brutes de Météo-France :\n{raw_temps}"
-            summary = call_openrouter_llm(system_prompt, user_prompt)
-            if summary:
-                forecast_summary = summary
+            summary_raw = call_openrouter_llm(system_prompt, user_prompt)
+            if summary_raw:
+                try:
+                    import json
+                    clean_res = summary_raw.strip().replace("```json", "").replace("```", "").strip()
+                    data = json.loads(clean_res)
+                    france_summary = data.get("france", raw_temps)
+                    hdf_summary = data.get("hdf", "Prévisions régionales à retrouver dans le bulletin vidéo.")
+                except Exception as e:
+                    print(f"[LLM] Erreur parsing JSON : {e}. Utilisation du fallback.")
+                    france_summary = raw_temps
+                    hdf_summary = "Prévisions régionales à retrouver dans le bulletin vidéo."
             else:
-                forecast_summary = raw_temps
+                france_summary = raw_temps
+                hdf_summary = "Prévisions régionales à retrouver dans le bulletin vidéo."
         else:
-            forecast_summary = raw_temps
+            france_summary = raw_temps
+            hdf_summary = "Prévisions régionales à retrouver dans le bulletin vidéo."
     else:
         print("[Forecast] Impossible d'extraire la prévision nationale de Météo-France.")
 
@@ -329,17 +348,23 @@ def main():
         f"Bonjour,<br><br>"
         f"Veuillez trouver ci-joint vos bulletins vidéo, veuillez cliquer sur le lien ci-dessous.<br><br>"
         f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
-        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #1a73e8; background-color: #f8f9fa; border-radius: 4px; max-width: 800px; margin-bottom: 20px;'>"
-        f"<h4 style='margin-top: 0; color: #1a73e8; font-size: 16px;'>📱 Texte pour vos réseaux sociaux :</h4>"
-        f"<p style='margin: 5px 0;'><strong>Hauts-de-France :</strong></p>"
-        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; margin-bottom: 15px; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_hdf}</div>"
-        f"<p style='margin: 5px 0;'><strong>France :</strong></p>"
-        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_france}</div>"
+        
+        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #00c6ff; background-color: #f0faff; border-radius: 4px; max-width: 800px; margin-bottom: 20px;'>"
+        f"<h3 style='margin-top: 0; color: #007bb6; font-size: 17px;'>📍 HAUTS-DE-FRANCE</h3>"
+        f"<p style='margin: 5px 0 2px 0;'><strong>Texte réseaux sociaux :</strong></p>"
+        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; margin-bottom: 12px; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_hdf}</div>"
+        f"<p style='margin: 5px 0 2px 0;'><strong>Résumé des prévisions du lendemain :</strong></p>"
+        f"<div style='background: #fffbeb; padding: 10px; border: 1px solid #ffeeba; font-size: 14px; text-align: justify; line-height: 1.5; border-radius: 3px; color: #856404;'>{hdf_summary}</div>"
         f"</div>"
-        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #f2a900; background-color: #fffbeb; border-radius: 4px; max-width: 800px;'>"
-        f"<h4 style='margin-top: 0; color: #d97706; font-size: 16px;'>📝 Résumé des prévisions du lendemain (Météo-France) :</h4>"
-        f"<p style='margin: 0; font-size: 14px; text-align: justify; line-height: 1.5;'>{forecast_summary}</p>"
+        
+        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #66bb6a; background-color: #f1f9f1; border-radius: 4px; max-width: 800px;'>"
+        f"<h3 style='margin-top: 0; color: #2e7d32; font-size: 17px;'>📍 FRANCE</h3>"
+        f"<p style='margin: 5px 0 2px 0;'><strong>Texte réseaux sociaux :</strong></p>"
+        f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; margin-bottom: 12px; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_france}</div>"
+        f"<p style='margin: 5px 0 2px 0;'><strong>Résumé des prévisions du lendemain :</strong></p>"
+        f"<div style='background: #fffbeb; padding: 10px; border: 1px solid #ffeeba; font-size: 14px; text-align: justify; line-height: 1.5; border-radius: 3px; color: #856404;'>{france_summary}</div>"
         f"</div><br>"
+        
         f"Cordialement,<br>"
         f"L'automatisation Météo CNews"
         f"</body></html>"
