@@ -1,9 +1,9 @@
 name: Météo Kappa - 1. Cartes & Données
 
 on:
-  schedule:
-    # 17h45 heure française d'été (15h45 UTC) - l'enchaînement automatique finira vers 18h00
-    - cron: '45 15 * * *'
+  # schedule:
+  #   # 17h45 heure française d'été (15h45 UTC) - l'enchaînement automatique finira vers 18h00
+  #   - cron: '45 15 * * *'
   workflow_dispatch:
     inputs:
       test_mode:
