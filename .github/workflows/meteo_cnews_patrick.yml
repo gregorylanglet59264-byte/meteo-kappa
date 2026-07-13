@@ -50,6 +50,7 @@ jobs:
           GMAIL_EMAIL: "langlet.gregory@gmail.com"
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TEST_MODE: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.test_mode == 'true') && 'true' || 'false' }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           python cnews/scripts/send_cnews_email.py
 

@@ -13,6 +13,14 @@ def get_french_date_string(date_obj):
     weekdays = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
     return f"{weekdays[date_obj.weekday()]} {date_obj.day} {months[date_obj.month - 1]} {date_obj.year}"
 
+def fix_encoding(text):
+    if not text:
+        return ""
+    try:
+        return text.encode('latin-1').decode('utf-8')
+    except Exception:
+        return text
+
 def call_openrouter_llm(system_prompt, user_prompt):
     openrouter_key = os.environ.get("OPENROUTER_API_KEY")
     if not openrouter_key:
@@ -27,7 +35,7 @@ def call_openrouter_llm(system_prompt, user_prompt):
         "Authorization": f"Bearer {openrouter_key}"
     }
     payload = {
-        "model": "deepseek/deepseek-chat",
+        "model": "deepseek/deepseek-v4-flash",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
@@ -66,11 +74,11 @@ def get_national_forecast():
         
         result = {}
         if obs:
-            result['observation'] = obs.group(1).strip()
+            result['observation'] = fix_encoding(obs.group(1).strip())
         if date_val and titre and temps:
-            result['date'] = date_val.group(1).strip()
-            result['titre'] = titre.group(1).strip()
-            result['temps'] = temps.group(1).strip()
+            result['date'] = fix_encoding(date_val.group(1).strip())
+            result['titre'] = fix_encoding(titre.group(1).strip())
+            result['temps'] = fix_encoding(temps.group(1).strip())
         return result
     except Exception as e:
         print(f"[Forecast] Erreur de récupération Météo-France : {e}")
