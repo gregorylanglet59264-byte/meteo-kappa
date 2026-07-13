@@ -13,6 +13,69 @@ def get_french_date_string(date_obj):
     weekdays = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
     return f"{weekdays[date_obj.weekday()]} {date_obj.day} {months[date_obj.month - 1]} {date_obj.year}"
 
+def call_openrouter_llm(system_prompt, user_prompt):
+    openrouter_key = os.environ.get("OPENROUTER_API_KEY")
+    if not openrouter_key:
+        print("[LLM] OPENROUTER_API_KEY manquante, pas de résumé IA.")
+        return None
+    import urllib.request
+    import json
+    openrouter_key = openrouter_key.replace('\ufeff', '').replace('\ufffe', '').strip()
+    url = "https://openrouter.ai/api/v1/chat/completions"
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {openrouter_key}"
+    }
+    payload = {
+        "model": "deepseek/deepseek-chat",
+        "messages": [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt}
+        ]
+    }
+    try:
+        req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST")
+        with urllib.request.urlopen(req, timeout=30) as response:
+            res_data = json.loads(response.read().decode("utf-8"))
+            text = res_data["choices"][0]["message"]["content"]
+            return text.replace('\ufeff', '').replace('\ufffe', '').strip()
+    except Exception as e:
+        print(f"[LLM] Erreur appel OpenRouter : {e}")
+        return None
+
+def get_national_forecast():
+    import urllib.request
+    import re
+    url = "https://meteofrance.com/"
+    try:
+        req = urllib.request.Request(
+            url, 
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        )
+        with urllib.request.urlopen(req, timeout=15) as response:
+            html_content = response.read().decode('utf-8', errors='ignore')
+        bulletins = re.findall(r'<bulletin.*?</bulletin>', html_content, re.DOTALL)
+        if not bulletins:
+            return None
+        b = bulletins[0]
+        
+        obs = re.search(r'<observation>(.*?)</observation>', b, re.DOTALL)
+        date_val = re.search(r'<date>(.*?)</date>', b, re.DOTALL)
+        titre = re.search(r'<titre>(.*?)</titre>', b, re.DOTALL)
+        temps = re.search(r'<temps>(.*?)</temps>', b, re.DOTALL)
+        
+        result = {}
+        if obs:
+            result['observation'] = obs.group(1).strip()
+        if date_val and titre and temps:
+            result['date'] = date_val.group(1).strip()
+            result['titre'] = titre.group(1).strip()
+            result['temps'] = temps.group(1).strip()
+        return result
+    except Exception as e:
+        print(f"[Forecast] Erreur de récupération Météo-France : {e}")
+        return None
+
 def send_email(body_text, subject, recipients_str, cartes_dir):
     gmail_email = os.environ.get("GMAIL_EMAIL", "langlet.gregory@gmail.com")
     gmail_password = os.environ.get("GMAIL_APP_PASSWORD")
@@ -233,13 +296,44 @@ def main():
     social_text_hdf = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  HAUTS DE FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #hautsdefrance"
     social_text_france = f"{today_weekday} {run_hour} - ACTU - PREVISIONS ET ALERTES ---METEO-CLIMAT PRO.  FRANCE --- CE {tomorrow_str_upper}  ET JUSQU'AU  {j_plus_5_str_upper}  #expertmeteo  #meteo #meteofrance #assurance  #france"
 
+    # Récupérer et résumer la prévision nationale de demain
+    print("\n=== ÉTAPE 2.5 : Récupération et résumé de la prévision nationale ===")
+    forecast_summary = "Non disponible"
+    forecast_data = get_national_forecast()
+    if forecast_data and 'temps' in forecast_data:
+        raw_temps = forecast_data['temps']
+        raw_temps = " ".join(raw_temps.split())
+        
+        # S'il y a une clé API, on fait un résumé propre avec OpenRouter
+        if os.environ.get("OPENROUTER_API_KEY"):
+            system_prompt = (
+                "Tu es un prévisionniste météo senior. Ton rôle est de rédiger un court résumé "
+                "(en 2 paragraphes maximum, environ 100 mots au total) et professionnel des prévisions "
+                "de Météo-France pour demain. Utilise un ton dynamique et expert, et n'utilise pas de "
+                "formatage markdown (pas de **)."
+            )
+            user_prompt = f"Prévisions brutes de Météo-France :\n{raw_temps}"
+            summary = call_openrouter_llm(system_prompt, user_prompt)
+            if summary:
+                forecast_summary = summary
+            else:
+                forecast_summary = raw_temps
+        else:
+            forecast_summary = raw_temps
+    else:
+        print("[Forecast] Impossible d'extraire la prévision nationale de Météo-France.")
+
     # Corps HTML de l'e-mail avec style épuré et bouton/lien masqué
     email_body = (
         f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"
         f"Bonjour,<br><br>"
         f"Veuillez trouver ci-joint vos bulletins vidéo, veuillez cliquer sur le lien ci-dessous.<br><br>"
         f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
-        f"<div style='margin-top: 25px; padding: 15px; border-left: 4px solid #1a73e8; background-color: #f8f9fa; border-radius: 4px; max-width: 800px;'>"
+        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #f2a900; background-color: #fffbeb; border-radius: 4px; max-width: 800px; margin-bottom: 20px;'>"
+        f"<h4 style='margin-top: 0; color: #d97706; font-size: 16px;'>📝 Résumé des prévisions du lendemain (Météo-France) :</h4>"
+        f"<p style='margin: 0; font-size: 14px; text-align: justify; line-height: 1.5;'>{forecast_summary}</p>"
+        f"</div>"
+        f"<div style='margin-top: 20px; padding: 15px; border-left: 4px solid #1a73e8; background-color: #f8f9fa; border-radius: 4px; max-width: 800px;'>"
         f"<h4 style='margin-top: 0; color: #1a73e8; font-size: 16px;'>📱 Texte pour vos réseaux sociaux :</h4>"
         f"<p style='margin: 5px 0;'><strong>Hauts-de-France :</strong></p>"
         f"<div style='background: #fff; padding: 10px; border: 1px solid #ddd; margin-bottom: 15px; font-family: monospace; font-size: 13px; border-radius: 3px; word-break: break-all; white-space: pre-wrap;'>{social_text_hdf}</div>"
