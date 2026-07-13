@@ -137,15 +137,19 @@ def main():
     if not success:
         sys.exit(1)
         
+    # Calcul de la date du lendemain (date cible du bulletin)
+    tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+    date_suffix = tomorrow.strftime("%Y_%m_%d")
+
     print("\n=== ÉTAPE 2 : Compression ZIP des 4 vidéos ===")
-    zip_name = "bulletins_cnews_patrick.zip"
+    zip_name = f"bulletins_cnews_patrick_{date_suffix}.zip"
     zip_path = os.path.join(cartes_dir, zip_name)
     
     video_files = [
-        "bulletin_france_pictos_patrick_landscape.mp4",
-        "bulletin_france_pictos_patrick_portrait.mp4",
-        "bulletin_hdf_patrick_landscape.mp4",
-        "bulletin_hdf_patrick_portrait.mp4"
+        f"bulletin_france_pictos_patrick_landscape_{date_suffix}.mp4",
+        f"bulletin_france_pictos_patrick_portrait_{date_suffix}.mp4",
+        f"bulletin_hdf_patrick_landscape_{date_suffix}.mp4",
+        f"bulletin_hdf_patrick_portrait_{date_suffix}.mp4"
     ]
     
     import zipfile
@@ -170,9 +174,7 @@ def main():
         
     # Génération du lien de téléchargement (GitHub Releases — pas de limite de taille)
     download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/releases/download/bulletins-patrick-latest/{zip_name}"
-    
-    # Calcul de la date du lendemain
-    tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+
     
     # Corps HTML de l'e-mail avec style épuré et bouton/lien masqué
     email_body = (

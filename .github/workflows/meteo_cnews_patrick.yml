@@ -57,7 +57,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ZIP_PATH="cartes_alertes/bulletins_cnews_patrick.zip"
+          ZIP_PATH=$(ls cartes_alertes/bulletins_cnews_patrick_*.zip | head -n 1)
           TAG="bulletins-patrick-latest"
           # Supprimer le release existant s'il existe, ignorer l'erreur si absent
           gh release delete "$TAG" --yes 2>/dev/null || true

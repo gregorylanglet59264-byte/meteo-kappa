@@ -895,23 +895,26 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
         safe_rmtree(temp_dir)
     os.makedirs(temp_dir)
     
+    target_date = datetime.date.today() + datetime.timedelta(days=1)
+    date_suffix = target_date.strftime("%Y_%m_%d")
+
     # Paramètres de format
     if orientation == "portrait":
         jingle_name = "jingle_tiktok.mp4"
         suffix = "_portrait"
         width, height = 1080, 1920  # TikTok standard (cartes portrait: 1593x2880 → downscale propre)
         if patrick:
-            out_filename = f"bulletin_{zone}_patrick_portrait.mp4"
+            out_filename = f"bulletin_{zone}_patrick_portrait_{date_suffix}.mp4"
         else:
-            out_filename = f"bulletin_{zone}_portrait.mp4"
+            out_filename = f"bulletin_{zone}_portrait_{date_suffix}.mp4"
     else:
         jingle_name = "jingle_facebook.mp4"
         suffix = ""
         width, height = 1920, 1080  # Full HD 1920x1080 (broadcast + réseaux sociaux)
         if patrick:
-            out_filename = f"bulletin_{zone}_patrick_landscape.mp4"
+            out_filename = f"bulletin_{zone}_patrick_landscape_{date_suffix}.mp4"
         else:
-            out_filename = f"bulletin_{zone}_landscape.mp4"
+            out_filename = f"bulletin_{zone}_landscape_{date_suffix}.mp4"
         
     assets_dir = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT")
     if not os.path.exists(assets_dir):
