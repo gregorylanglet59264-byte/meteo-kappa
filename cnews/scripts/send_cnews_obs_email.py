@@ -124,17 +124,30 @@ def main():
         "80", "81", "82", "83", "84", "85", "86", "87", "88", "89",
         "90", "91", "92", "93", "94", "95"
     ]
-    zones = zones_france + zones_regions + zones_npdc + zones_depts
-    params = "bilan_jour,tmax,tmin,precip,gust"
-    
     print(f"\n=== ÉTAPE 2 : Génération des cartes d'observations ===")
-    for zone in zones:
-        print(f"\n👉 Génération pour la zone : {zone.upper()}")
+    
+    # Zones qui reçoivent tous les paramètres (France, Régions, NPDC)
+    zones_full = zones_france + zones_regions + zones_npdc
+    
+    for zone in zones_full:
+        print(f"\n👉 Génération (Paramètres complets) pour la zone : {zone.upper()}")
         cmd_maps = [
             "python", "generate_meteociel_obs_maps.py",
             "--date", date_str,
             "--zone", zone,
-            "--param", params,
+            "--param", "bilan_jour,tmax,tmin,precip,gust",
+            "--orientation", "both"
+        ]
+        if not run_command(cmd_maps, cnews_dir):
+            print(f"Avertissement : échec pour la zone {zone}, on continue...")
+            
+    for zone in zones_depts:
+        print(f"\n👉 Génération (Bilan du Jour uniquement) pour la zone : {zone.upper()}")
+        cmd_maps = [
+            "python", "generate_meteociel_obs_maps.py",
+            "--date", date_str,
+            "--zone", zone,
+            "--param", "bilan_jour",
             "--orientation", "both"
         ]
         if not run_command(cmd_maps, cnews_dir):
