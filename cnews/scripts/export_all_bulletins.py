@@ -188,7 +188,17 @@ def main():
         "RADIO 6": "hdf",
         "MONA FM": "hdf",
         "RADIO ICI NORMANDIE": "normandie",
-        "RADIO ICI NORMANDIE ": "normandie"
+        "RADIO ICI NORMANDIE ": "normandie",
+        "RADIO ICI AUVERGNE-RHÔNE-ALPES": "ara",
+        "RADIO ICI BOURGOGNE-FRANCHE-COMTÉ": "bfc",
+        "RADIO ICI BRETAGNE": "bretagne",
+        "RADIO ICI CENTRE-VAL DE LOIRE": "cvl",
+        "RADIO ICI CORSE": "corse",
+        "RADIO ICI GRAND EST": "grand-est",
+        "RADIO ICI ÎLE-DE-FRANCE": "ile-de-france",
+        "RADIO ICI OCCITANIE": "occitanie",
+        "RADIO ICI PAYS DE LA LOIRE": "pdl",
+        "RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR": "paca"
     }
     
     # 1.5 Generate maps for unique zones sequentially (Chrome ProcessSingleton ne supporte pas le parallèle)
