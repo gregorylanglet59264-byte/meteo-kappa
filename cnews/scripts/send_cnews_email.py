@@ -317,18 +317,18 @@ def main():
         if os.environ.get("OPENROUTER_API_KEY"):
             system_prompt = (
                 "Tu es un prévisionniste météo senior. Ton rôle est de rédiger deux résumés "
-                "d'environ 3 à 4 lignes chacun (soit environ 80 à 100 mots par résumé) "
+                "de maximum 4 lignes chacun (soit environ 60 à 80 mots par résumé) "
                 "des prévisions pour demain : un pour la France entière, et un spécifique "
                 "pour la région Hauts-de-France. Base-toi sur le bulletin national fourni pour en extraire "
                 "les détails importants (phénomènes, températures, vents).\n\n"
                 "RÈGLES CRITIQUES :\n"
                 "- N'utilise pas de formatage markdown (pas de **).\n"
                 "- Reste factuel, précis et professionnel.\n"
-                "- Chaque résumé doit faire environ 3 à 4 lignes de texte.\n"
+                "- Chaque résumé doit faire strictement un maximum de 4 lignes de texte.\n"
                 "- Retourne uniquement un JSON brut avec la structure suivante (sans bloc de code ```json) :\n"
                 "{\n"
-                "  \"france\": \"Résumé pour la France (environ 3-4 lignes, 80-100 mots)\",\n"
-                "  \"hdf\": \"Résumé pour les Hauts-de-France (environ 3-4 lignes, 80-100 mots)\"\n"
+                "  \"france\": \"Résumé pour la France (maximum 4 lignes, 60-80 mots)\",\n"
+                "  \"hdf\": \"Résumé pour les Hauts-de-France (maximum 4 lignes, 60-80 mots)\"\n"
                 "}"
             )
             user_prompt = f"Prévisions brutes de Météo-France :\n{raw_temps}"
@@ -393,9 +393,8 @@ def main():
         recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
         print("[MODE TEST ACTIVE] Envoi restreint à Grégory uniquement.")
     else:
-        # ponytail: temporairement restreint à Grégory pour la phase de test
-        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
-        print("[MODE PRODUCTION - TEMPORAIREMENT TEST] Envoi restreint à Grégory uniquement.")
+        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
+        print("[MODE PRODUCTION] Envoi à Grégory et Patrick.")
         
     send_email(email_body, subject, recipients, cartes_dir)
 
