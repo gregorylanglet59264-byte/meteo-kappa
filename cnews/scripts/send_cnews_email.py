@@ -444,9 +444,8 @@ def main():
         recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
         print("[MODE TEST ACTIVE] Envoi restreint à Grégory uniquement.")
     else:
-        # ponytail: temporairement restreint à Grégory pour la phase de test
-        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
-        print("[MODE PRODUCTION - TEMPORAIREMENT TEST] Envoi restreint à Grégory uniquement.")
+        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
+        print("[MODE PRODUCTION] Envoi à Grégory et Patrick.")
         
     send_email(email_body, subject, recipients, cartes_dir)
 
