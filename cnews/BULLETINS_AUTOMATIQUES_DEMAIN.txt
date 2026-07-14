@@ -10,83 +10,72 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-⛔ CANICULE HISTORIQUE : 72 DÉPARTEMENTS EN ALERTE ORANGE ! Ce mardi 14 juillet 2026, la France est sous l'emprise d'une canicule exceptionnelle. 72 départements sont placés en vigilance orange par Météo-France pour un épisode de chaleur persistant et dangereux. Dès le matin, le soleil est roi sur les trois quarts du pays, avec des températures déjà élevées : 18°C à Lille, 22°C à Paris, jusqu'à 24°C à Montpellier. Seules les côtes bretonnes et normandes restent sous quelques nuages inoffensifs. L'après-midi, le mercure explose : on attend 33°C à Lille, 35°C à Paris et 36°C à Poitiers ! Attention toutefois : des orages violents éclateront sur les Alpes, le Jura et le Massif Central, avec de fortes pluies et de la foudre.
+☀️⛈️ CANICULE ET ORAGES : UNE JOURNÉE À DOUBLE VISAGE  
+Ce mercredi, 72 départements restent en vigilance orange canicule. La chaleur est déjà écrasante au réveil, surtout sur la moitié nord et le Centre. L’après-midi, le soleil domine largement de la Bretagne aux Hauts-de-France, avec 32 à 33°C à Lille et Paris. Mais attention : l’instabilité gagne le sud-ouest et la Bretagne intérieure. Des orages parfois forts éclatent sur Rennes, Poitiers et la Nouvelle-Aquitaine, avec des rafales de vent et de la foudre. Sur le littoral breton, Brest respire un peu avec 30°C, tandis que l’intérieur suffoque. Prudence si vous êtes dans ces zones : le contraste est saisissant entre un Nord ensoleillé et un Ouest orageux.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Europe 1 pour votre bulletin météo de ce mardi 14 juillet ! Préparez-vous à une matinée très estivale, avec des températures déjà bien élevées dès le lever du soleil.
-
-Ce mardi matin, le soleil brille généreusement sur une grande partie du pays. De Lille, où il fait déjà 18 degrés, jusqu'à Paris avec 22 degrés, en passant par Tours où le mercure affiche 24 degrés, le ciel est dégagé et l'ambiance est radieuse. Le vent sera faible, une petite brise de 10 à 20 km/h, juste assez pour apporter un peu d'air frais sans gêner.
-
-Plus à l'ouest, quelques nuages voilent le soleil sur la Bretagne et les Pays de la Loire. À Brest, on relève 17 degrés avec un ciel un peu plus couvert, et à Nantes, 23 degrés sous un soleil timide. Sur ces zones côtières, le vent sera un peu plus présent, modéré, autour de 15 km/h. Mais pas d'inquiétude, ces nuages ne sont pas menaçants et ne devraient pas gâcher votre matinée.
-
-Dans le sud, de Poitiers à Montpellier, le soleil est roi et les températures grimpent vite. Comptez déjà 21 degrés à Poitiers et 24 degrés à Montpellier. Le contraste est net entre un littoral déjà chaud et un intérieur des terres qui s'annonce brûlant. Pas de risque orageux à l'horizon pour cette matinée. Profitez bien de ce début de journée ensoleillé !
+Ce mercredi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 21°C à Lille, 21°C à Rennes, 23°C à Rouen, 24°C à Paris, 24°C à Nantes. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Europe 1 pour ce bulletin météo de l'après-midi du mardi 14 juillet 2026 !
+Ce mercredi après-midi, l'ambiance sera estivale sur une grande partie du pays, mais attention, l'instabilité gagne du terrain ! Le soleil brillera généreusement de la Bretagne aux Hauts-de-France, avec un ciel peu nuageux et des températures très élevées. On attend 32 degrés à Lille, 30 à Rouen et 33 à Paris, le tout sous une petite brise de 15 à 20 km/h.
 
-Ce mardi après-midi, le soleil continuera de briller généreusement sur une grande partie du pays. Les températures seront estivales, voire caniculaires, avec des maximales qui grimpent très haut. À Lille, on attendra 33 degrés, 35 degrés pour Paris, et même 36 degrés à Poitiers !
-
-Attention toutefois aux régions de l'est et du sud-est : des orages éclateront sur les Alpes, le Jura et le Massif Central. Soyez vigilants si vous êtes dans ces zones, car ces cellules orageuses pourront s'accompagner de fortes pluies et de coups de foudre.
-
-Côté vent, une légère brise d'ouest soufflera sur les côtes de la Manche, aux alentours de 15 à 20 km/h, apportant un peu de fraîcheur. Sur le littoral atlantique, le vent sera également modéré, autour de 15 km/h, avec des températures qui resteront élevées, comme à Nantes où l'on atteindra les 35 degrés. Dans le sud-est, le mistral soufflera faiblement, laissant place à une forte chaleur. Le contraste est saisissant : si la brise côtière adoucit un peu l'ambiance près de la mer, l'intérieur des terres, lui, sera écrasé par la chaleur.
-
-Préparez-vous à une après-midi très chaude, surtout dans les terres !
+Plus au sud, l'atmosphère se fera plus lourde. Des orages éclateront sur la Nouvelle-Aquitaine et une partie de la Bretagne. À Rennes, les cellules orageuses pourraient déverser des averses parfois fortes avec des risques de foudre, tandis qu'à Poitiers, le ciel grondera également, avec des températures qui atteindront les 36 degrés. Prudence donc si vous êtes dans ces régions ! Le vent sera généralement faible, sauf sous les orages où les rafales pourront être plus marquées. Le contraste est saisissant entre le littoral breton, plus frais avec 30 degrés à Brest, et l'intérieur des terres qui suffoque sous la chaleur.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce mardi.
-🌡️ Température sous abri : 27°C (ambiance plus respirable qu’à l’intérieur)
+☀️ Belle journée estivale et lumineuse ce mercredi.
+🌡️ Température sous abri : 28°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 19 à 20°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce mardi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 26 à 27°C
+☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 27 à 28°C
 🌊 Température de l’eau : 19 à 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mardi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mercredi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : La canicule s'accentue. Soleil écrasant du nord au sud. Les températures maximales grimpent encore : de 34°C à Lille à 39°C à Toulouse et Montpellier. Quelques nuages résiduels sur le nord-ouest en matinée, mais sans conséquence. Vent très faible. Nuits étouffantes, surtout en ville. Le record de chaleur pour un 16 juillet pourrait être battu par endroits.
+**Vendredi 17 juillet** : La canicule se maintient, avec des températures encore très élevées, de 30 à 38°C du nord au sud. Le ciel reste peu nuageux sur les régions de l’est, mais des orages éclatent de nouveau sur le quart nord-ouest, de la Bretagne aux Hauts-de-France, et sur le Massif central. Rafales et grêle possibles localement.
 
-**Vendredi 17 juillet** : Toujours ce dôme de chaleur. Soleil omniprésent et températures caniculaires : de 35°C à Brest (exceptionnel) à 40°C dans le Sud-Ouest et la vallée du Rhône. L'air est lourd et sec. La vigilance orange reste indispensable : risques de coups de chaud pour les personnes fragiles. En montagne, début d'instabilité en fin de journée avec des orages possibles sur les Alpes du Nord.
+**Samedi 18 juillet** : Toujours cette chaleur lourde. Le soleil brille sur la majeure partie du pays, mais l’instabilité gagne du terrain. Des orages parfois violents se déclenchent l’après-midi sur un axe allant de la Nouvelle-Aquitaine au Grand Est. Les températures restent caniculaires, entre 32 et 40°C au sud.
 
-**Samedi 18 juillet** : Légère inflexion ? Le soleil reste dominant mais les températures pourraient baisser de 1 à 2 degrés près des côtes grâce à un vent marin. À l'intérieur, on attend encore 33 à 38°C. Risque orageux accru sur le Massif central et les Pyrénées en soirée. La chaleur reste très marquée et la vigilance devrait être maintenue.
+**Dimanche 19 juillet** : L’accalmie n’est pas encore pour demain. La vigilance orange canicule est toujours en vigueur sur une large moitié sud et est. Le temps reste très chaud et lourd, avec des ondées orageuses surtout sur les reliefs et le nord-ouest. Les maximales atteignent encore 35 à 42°C dans le sud.
 
 
 --------------------------------------------------------------------------------
@@ -95,77 +84,80 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE DÉBARQUE : LE NORD BRILLE SOUS UN SOLEIL DE PLOMB ! Ce mardi 14 juillet, jour de fête nationale, le soleil est roi sur toute la région. Pas un nuage, un ciel d’un bleu immaculé du matin au soir. Les températures grimpent fort : 33°C attendus à Lille, Valenciennes ou Douai, et jusqu’à 25°C à Dunkerque grâce à la brise marine. Côté vigilance, la France compte 72 départements en orange canicule, et notre région n’est pas épargnée. Le vent reste faible à modéré, entre 20 et 25 km/h, offrant un peu de répit sur le littoral. Bref, une journée radieuse mais très chaude : hydratez-vous, évitez les efforts aux heures les plus chaudes, et profitez du feu d’artifice en soirée !
+☀️ CANICULE PERSISTANTE : LE NORD SOUS UN SOLEIL DE PLOMB !  
+Ce mercredi 15 juillet 2026, la région Nord subit une chaleur intense avec un grand soleil omniprésent du matin au soir. Les températures grimpent rapidement : dès l’aube, on relève 19 à 21°C, et l’après-midi le mercure atteint 32°C à Lille, Valenciennes ou Douai, tandis que le littoral reste plus frais avec 25°C à Dunkerque. Le vent d’ouest, modéré sur l’intérieur (20 km/h), apporte une brise marine plus marquée sur la côte (25 à 30 km/h). Aucun nuage, aucun orage à l’horizon. Ce temps estival est lié à une puissante masse d’air chaud, classant 72 départements en vigilance orange canicule par Météo-France. Un épisode de chaleur durable qui exige prudence et hydratation.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO - ICI NORD pour votre bulletin météo du mardi 14 juillet 2026 ! Quel beau matin pour ce jour de fête nationale !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Nord pour votre bulletin météo du matin ! Ce mercredi 15 juillet 2026, on démarre la journée sous les meilleurs auspices avec un grand soleil qui brille généreusement sur l'ensemble de notre région.
 
-Ce mardi matin, le soleil est le maître incontesté de notre ciel. Pas un nuage à l'horizon, une journée qui s'annonce radieuse sur l'ensemble de la région. Les températures minimales sont déjà très douces, avec 18°C à St-Hilaire-sur-Helpe et Lille, 19°C à Valenciennes et Maubeuge. Même sur la côte, à Dunkerque, nous avons déjà 19°C, et 18°C à Watten.
+Les températures minimales sont déjà bien douces, voire chaudes pour la saison. On relève 19°C à St-Hilaire-sur-Helpe et Troisvilles, 20°C à Maubeuge et Roubaix, et même 21°C à Valenciennes et Lille. Un vrai temps estival dès le lever du jour !
 
-Côté vent, il souffle une brise légère à modérée, entre 20 et 25 km/h. Plus précisément, attendez-vous à 20 km/h sur la plupart des terres comme à Douai ou Roubaix, et jusqu'à 25 km/h vers Steenvoorde et Dunkerque. Cela apportera un peu de fraîcheur, surtout sur le littoral où le contraste est marqué : 25°C maximum attendus à Dunkerque, alors que l'intérieur des terres, de Valenciennes à Lille, pourra atteindre les 33°C ! Un vrai régal pour les amateurs de soleil !
+Le vent sera présent mais modéré sur l'intérieur des terres, soufflant autour de 20 km/h. Sur le littoral, notamment du côté de Dunkerque et Watten, attendez-vous à une brise un peu plus marquée, autour de 25 km/h, voire 30 km/h vers Steenvoorde, ce qui apportera un peu de fraîcheur bienvenue.
 
-Profitez bien de cette magnifique journée !
+Justement, parlons du contraste : les températures maximales prévues ce matin seront très agréables sur le littoral, avec 25°C à Dunkerque et 27°C à Watten. Mais dès que l'on s'éloigne de la côte, la chaleur monte d'un cran : on attend 30°C à St-Hilaire-sur-Helpe, Troisvilles et Maubeuge, et même 32°C à Valenciennes, Douai et Lille. Pas d'orages ni de foudre à l'horizon pour cette matinée, le ciel est d'un bleu éclatant partout !
+
+Profitez bien de ce magnifique début de journée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Nord pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
+Ce mercredi après-midi, c'est un véritable festival de soleil qui nous attend sur l'ensemble de notre belle région ! Attendez-vous à un ciel d'un bleu immaculé, sans le moindre nuage pour venir gâcher la fête. Les températures vont continuer de grimper pour atteindre des sommets estivaux.
 
-Ce mardi après-midi, le soleil sera le maître incontesté de notre belle région. Attendez-vous à un ciel d'un bleu immaculé, sans le moindre petit nuage pour venir gâcher la fête ! Les températures vont grimper, grimper, et nous offrir une chaleur estivale bien présente.
+Dans les terres, la chaleur sera bien présente avec 32°C attendus à Valenciennes, 32°C également à Douai et Lille, et 31°C à Roubaix et Steenvoorde. Le vent, lui, soufflera faiblement, une petite brise d'ouest de 20 km/h en général, montant à 30 km/h du côté de Steenvoorde.
 
-Dans l'intérieur des terres, les valeurs seront élevées, on attend par exemple 32°C à St-Hilaire-sur-Helpe, 33°C à Valenciennes et Douai, ou encore 32°C à Maubeuge. Du côté de Lille, le thermomètre affichera 33°C. Le vent, lui, soufflera faiblement à modérément, une petite brise d'ouest à sud-ouest, autour de 20 km/h, qui ne rafraîchira malheureusement que très peu l'atmosphère.
-
-Sur le littoral, la situation est un peu plus respirable ! À Dunkerque, on aura 25°C, et 28°C à Watten. La brise marine sera un peu plus sensible, avec des rafales pouvant atteindre 25 km/h, ce qui apportera un peu de fraîcheur bienvenue. Profitez bien de cet après-midi ensoleillé, mais n'oubliez pas de vous hydrater !
+Sur le littoral, l'ambiance sera un peu plus douce grâce à l'influence de la mer. On comptera 25°C à Dunkerque et 27°C à Watten. La brise côtière sera plus sensible, autour de 25 km/h, offrant un peu de répit face à la chaleur intérieure. Pas l'ombre d'un orage à l'horizon, profitez-en bien !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce mardi.
+☀️ Belle journée estivale et lumineuse ce mercredi.
 🌡️ Température sous abri : 25°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 19 à 20°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce mardi, bercé par de légères brises thermiques de Nord-Est.
+☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
 🌡️ Température maximale : 24 à 25°C
 🌊 Température de l’eau : 19 à 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mardi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mercredi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-• **Jeudi 16 juillet** : Soleil toujours au programme, quelques nuages inoffensifs en fin de journée sur le littoral. Températures quasi stables : 24°C à Dunkerque, 32 à 34°C ailleurs. Vent faible d’ouest. Chaleur accablante, vigilance orange maintenue.
-• **Vendredi 17 juillet** : Ciel voilé en matinée, puis grand soleil l’après-midi. Pas de rafraîchissement significatif : 25°C sur la côte, 33°C dans l’intérieur. Brise marine sensible. Nuits douces, autour de 18-20°C.
-• **Samedi 18 juillet** : Toujours le même scénario estival : soleil écrasant, très chaud. Maximales : 26°C à Dunkerque, 34°C à Lille et Valenciennes. Quelques cumulus en fin de journée sans conséquences. On reste en vigilance canicule.
+**Vendredi 17 juillet** : Le soleil reste roi. Températures similaires, avec 26°C à Dunkerque et 33°C dans l’intérieur. Vent faible d’ouest. Pas de changement significatif.
+
+**Samedi 18 juillet** : Toujours un ciel dégagé. La chaleur s’accentue légèrement : 27°C sur la côte, jusqu’à 34°C à Lille et Valenciennes. Brise côtière toujours présente.
+
+**Dimanche 19 juillet** : Le pic de chaleur se maintient. Comptez 28°C à Dunkerque, 35°C dans les terres. Vent très faible. L’ambiance reste lourde, avec un ressenti caniculaire. Aucun orage en vue.
 
 
 --------------------------------------------------------------------------------
@@ -174,35 +166,41 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce mardi, la situation générale sur l'ensemble de la zone RADIO - ICI LA ROCHELLE est caractérisée par la poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante. Cette dynamique aérologique gouverne une ambiance déjà en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+☀️ CANICULE ET ORAGES : UNE JOURNÉE À DEUX FACES ! Ce mercredi, la météo joue les montagnes russes. Le matin, le ciel est agité : averses orageuses et même grêle touchent La Rochelle, Chassiron, Jarnac et Cognac, avec un vent soutenu jusqu’à 40 km/h à Chassiron. À l’intérieur, le temps est plus calme, peu nuageux, mais les températures grimpent déjà. L’après-midi, le soleil prend le pouvoir : c’est une véritable fournaise qui s’installe. Au bord de l’océan, la brise marine limite la casse avec 30°C à La Rochelle, mais dans les terres, on frôle les 36°C à Montbron et La Couronne. La vigilance orange canicule est en vigueur sur 72 départements, dont le nôtre. Attention aux coups de chaleur, hydratez-vous bien !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo du mardi 14 juillet !
+Bonjour à toutes et à tous, et bienvenue sur ICI LA ROCHELLE pour votre bulletin météo de ce mercredi matin, 15 juillet 2026 !
 
-Ce mardi matin, le soleil se lève sur notre belle région, mais il est un peu timide. Il se cache derrière de jolis nuages blancs qui parsèment le ciel. Les températures sont déjà bien douces, voire chaudes ! À La Rochelle, nous avons 22°C, tandis qu'à Chassiron, il fait 21°C avec une brise marine un peu plus marquée, autour de 25 km/h. Plus à l'intérieur des terres, les minimales sont un peu plus fraîches, avec 19°C à Gond-Pontouvre et à La Couronne, et même 18°C à Jarnac. Le vent est léger, soufflant autour de 10 à 15 km/h sur l'ensemble du département. Pas de pluie à l'horizon, juste un ciel légèrement voilé. Une matinée agréable pour démarrer cette journée estivale !
+Ce mercredi matin, le réveil est un peu agité sur notre belle région. On débute la journée avec un ciel plutôt chargé et des averses parfois orageuses. Du côté de La Rochelle, on enregistre déjà 24°C, mais attention, le vent souffle modérément, autour de 25 km/h, avec des risques d'averses accompagnées de grêle. Même ambiance à Chassiron, où la température est de 22°C, mais le vent est bien plus soutenu, atteignant les 40 km/h, et là aussi, des averses orageuses avec de la grêle sont au programme.
+
+En s'éloignant du littoral, vers l'intérieur des terres, les températures grimpent un peu plus. À Gond-Pontouvre et Angoulême, il fait déjà 23°C et 25°C respectivement, avec un ciel peu nuageux, mais le vent reste modéré, autour de 20 km/h. Du côté de Jarnac, 21°C, des averses orageuses sont attendues, avec des bourrasques à 20 km/h. Soyez vigilants sur les routes !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo de l'après-midi ! Ce mardi après-midi, le soleil sera bien présent sur l'ensemble de notre région, mais il jouera à cache-cache avec quelques nuages d'altitude, sans conséquence.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo de l'après-midi en ce mercredi 15 juillet 2026 !
 
-Les températures vont continuer de grimper, avec des maximales qui atteindront 31°C à La Rochelle et 26°C à Chassiron. On sentira la brise marine rafraîchir un peu l'ambiance sur le littoral, avec un vent de 15 km/h à La Rochelle et un peu plus soutenu, 25 km/h, vers Chassiron.
+Ce mercredi après-midi, le soleil sera le maître du jeu sur l'ensemble de notre belle région ! Attendez-vous à un ciel très largement ensoleillé, avec juste quelques petits nuages discrets qui se baladeront ici et là, sans jamais gâcher le spectacle.
 
-En s'éloignant des côtes, l'air sera bien plus chaud ! Préparez-vous à des pointes à 36°C à Gond-Pontouvre, 35°C à Blanzac-Porcheresse, et même 36°C à Jarnac. Du côté de Montbron, on attendra 37°C, tandis que La Couronne et Soyaux afficheront 37°C et 36°C respectivement. Cognac ne sera pas en reste avec 35°C et Angoulême 36°C. Le vent restera faible à modéré sur l'intérieur des terres, autour de 10 à 15 km/h, venant principalement de l'ouest. Pas d'orages à l'horizon, le ciel restera sec.
+Côté températures, ça va grimper, ça va même chauffer ! À l'intérieur des terres, on attend des maximales caniculaires : 35°C à Angoulême et Jarnac, 36°C à Montbron et La Couronne, et 34°C à Blanzac-Porcheresse. Près du littoral, l'ambiance sera un peu plus respirable grâce à la brise marine. À La Rochelle, on affichera un agréable 30°C, tandis que Chassiron verra 26°C, avec un vent d'ouest soutenu, soufflant jusqu'à 40 km/h, ce qui apportera un petit coup de frais bienvenu. Ailleurs, le vent restera modéré, autour de 20 km/h.
+
+Attention, même si le soleil est généreux, il y a eu quelques averses éparses ce matin, et même si elles sont faibles, restez vigilants, car le risque d'un petit orage isolé n'est jamais totalement exclu en cette saison. Mais pour l'après-midi, le risque est très faible.
+
+Profitez bien de ce bel après-midi ensoleillé !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (mercredi 15 juillet 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
-☀️ Soleil omniprésent et chaleur estivale marquée sur l'ensemble des plages charentaises ce mardi.
+☀️ Soleil omniprésent et chaleur estivale marquée sur l'ensemble des plages charentaises ce mercredi.
 🌡️ Température sur le littoral : 29 à 32°C
 🌊 Température de l’eau : 21 à 23°C
 
 🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce mardi, chaleur intense tempérée par une brise thermique l'après-midi.
+☀️ Ensoleillement généreux ce mercredi, chaleur intense tempérée par une brise thermique l'après-midi.
 🌡️ Température maximale : 31 à 34°C
 🌊 Température de l’eau : 22 à 24°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (mardi 14 juillet 2026)
+🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (mercredi 15 juillet 2026)
 
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
@@ -213,35 +211,35 @@ En s'éloignant des côtes, l'air sera bien plus chaud ! Préparez-vous à des p
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (jeudi 16 juillet au samedi 18 juillet)
+**Vendredi 17 juillet** : La canicule se poursuit. Le soleil domine largement, mais des nuages orageux pourraient éclater en fin de journée, surtout sur l’intérieur des terres. Les maximales atteignent encore 34 à 36°C, avec un ressenti étouffant. Sur le littoral, la brise marine apporte un peu de répit avec 28 à 30°C. Vent modéré d’ouest.
 
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 22°C, maximales atteignant 34°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 20°C, maximales atteignant 29°C en journée.
-- samedi 18 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 19°C, maximales atteignant 31°C en journée.
+**Samedi 18 juillet** : Chaleur encore plus intense ! Les températures grimpent jusqu’à 37°C à Angoulême et dans le sud de la Charente. Le ciel reste très ensoleillé le matin, mais l’après-midi des orages isolés peuvent se déclencher, localement forts, avec des risques de grêle. Prudence en extérieur.
+
+**Dimanche 19 juillet** : La situation évolue peu. Toujours très chaud, avec des maximales de 35 à 37°C. Le risque orageux devient plus généralisé, surtout sur le département. Le vent d’ouest se renforce sur les côtes. Une vigilance particulière s’impose, car la canicule dure : pensez à protéger les plus fragiles.
 
 
 --------------------------------------------------------------------------------
@@ -250,77 +248,77 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE : UN 14 JUILLET SOUS HAUTE TENSION ! Ce mardi, la fête nationale s’annonce radieuse mais accablante sur notre région. Le soleil règne en maître du littoral à l’intérieur des terres, avec un contraste saisissant : une brise marine rafraîchit la côte (23 à 25°C à Gravelines ou Leffrinckoucke), tandis que l’intérieur flambe jusqu’à 32°C à Robecq et Cauchy-à-la-Tour. Le vent d’ouest modéré apporte un peu d’air, mais la vigilance orange canicule est activée dans 72 départements. Les minimales déjà douces (17-19°C) annoncent une nuit chaude. Pensez à vous hydrater, à protéger les plus fragiles et à éviter les efforts aux heures les plus chaudes. Un 14 juillet qui sent bon l’été… mais attention à la chaleur !
+🚨 **72 DÉPARTEMENTS EN ALERTE CANICULE : CHALEUR RECORD SUR LA FRANCE !** Ce mercredi, la France suffoque sous une vague de chaleur intense avec 72 départements placés en vigilance orange canicule par Météo-France. Dans notre région, le soleil a rapidement pris le dessus après un matin un peu nuageux dans l’intérieur des terres. Sur le littoral, les températures restent agréables avec 25°C à Leffrinckoucke et Gravelines, tandis que l’intérieur flirte avec les 31°C à Robecq. Une brise d’ouest-sud-ouest de 30 km/h apporte un peu de répit près des côtes. Aucun orage à signaler aujourd’hui, mais la chaleur est accablante. Pensez à vous hydrater et à protéger les personnes vulnérables.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous et bienvenue sur Radio 6 pour votre bulletin météo du mardi 14 juillet ! Quel plaisir de vous retrouver pour ce matin qui s'annonce radieux sur l'ensemble de notre belle région.
+Bonjour à toutes et à tous et bienvenue sur Radio 6 pour votre bulletin météo du matin ! Ce mercredi matin, le soleil est le roi incontesté sur une grande partie du littoral, avec un ciel dégagé et des températures déjà très agréables. On relève 19°C à Leffrinckoucke, 20°C à Gravelines et 19°C à Marck, avec un vent modéré soufflant à 30 km/h, apportant une brise marine rafraîchissante.
 
-Ce mardi matin, le soleil sera le maître des lieux, brillant de mille feux du littoral jusqu'à l'intérieur des terres. Les minimales sont déjà douces, avec 19°C à Leffrinckoucke, 18°C à Gravelines et 17°C à Offekerque. Plus à l'intérieur, on relève également 17°C à Marck et 17°C à Lefaux.
-
-Le vent sera présent mais agréable : une brise marine soufflera sur la côte, atteignant 30 km/h à Leffrinckoucke et Lefaux, et 20 km/h à Gravelines et Marck. À l'intérieur, il restera modéré, autour de 20 à 25 km/h.
-
-Côté températures, on sent déjà la chaleur monter. Si le littoral bénéficie encore de la fraîcheur de la mer avec des maximales de 23°C à Gravelines et Marck, l'intérieur des terres va vite grimper. Attendez-vous à 30°C à Groffliers, 31°C à Racquinghem et même 32°C à Robecq et Cauchy-à-la-Tour. Un contraste saisissant !
-
-Profitez bien de ce beau soleil ! Restez à l'écoute pour le bulletin de la mi-journée.
+En s'éloignant des côtes, vers l'intérieur des terres, le ciel se fait un peu plus timide. Des nuages sont présents, mais le soleil devrait percer sans difficulté au fil des heures. Les températures sont un peu plus fraîches, avec par exemple 17°C à Remilly-Wirquin et 18°C à Racquinghem. Le vent reste également modéré, autour de 25 à 30 km/h. Pas de risque orageux à l'horizon, ni de foudre à signaler pour ce matin. Une belle journée s'annonce, avec des températures qui vont grimper rapidement !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio 6 pour votre bulletin météo de l'après-midi ! Ce mardi après-midi, le soleil sera le maître du jeu sur l'ensemble de notre région, un grand soleil éclatant pour ce 14 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur RADIO 6 pour votre bulletin météo de l'après-midi !
 
-Côté températures, attendez-vous à une belle chaleur. Le littoral sera un peu plus frais grâce à une brise côtière qui soufflera entre 20 et 30 km/h. On attend par exemple 25°C à Leffrinckoucke et 23°C à Gravelines. Mais dès que l'on s'éloigne de la côte, ça monte en flèche ! Comptez 28°C à Lefaux et Remilly-Wirquin. Dans les terres, le vent d'ouest sera plus modéré, autour de 20 à 25 km/h, et les maximales atteindront les 31°C à Racquinghem, et même 32°C à Robecq et Cauchy-à-la-Tour. Un après-midi idéal pour profiter du soleil, mais pensez à bien vous hydrater !
+Ce mercredi après-midi, le soleil sera le maître du jeu sur l'ensemble de notre région, avec un ciel dégagé et un grand soleil éclatant partout. Pas l'ombre d'un nuage à l'horizon pour gâcher votre plaisir !
+
+Côté températures, on va avoir un beau contraste entre le littoral et l'intérieur des terres. Sur nos côtes, comme à Leffrinckoucke et Gravelines, on attend un agréable 25°C. Mais dès que l'on s'éloigne un peu, ça monte ! À Lefaux, on atteindra les 28°C, tandis que Groffliers et Racquinghem flirteront avec les 30°C. Et pour les plus aventureux, Robecq affichera un généreux 31°C.
+
+Le vent soufflera d'ouest à sud-ouest, avec des rafales autour de 30 km/h sur la côte et dans les terres, apportant une petite brise rafraîchissante, surtout près de la mer. Une excellente nouvelle pour profiter de cette belle journée d'été !
+
+Je vous souhaite un excellent après-midi ensoleillé sur RADIO 6 !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce mardi.
-🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
-🌊 Température de l’eau : 17 à 18°C
+☀️ Belle journée estivale et lumineuse ce mercredi.
+🌡️ Température sous abri : 25°C (ambiance plus respirable qu’à l’intérieur)
+🌊 Température de l’eau : 19 à 20°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce mardi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 22 à 23°C
-🌊 Température de l’eau : 17 à 18°C
+☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 24 à 25°C
+🌊 Température de l’eau : 19 à 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mardi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mercredi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : Le soleil reste dominant, mais l’air devient plus lourd. Les températures maximales grimpent encore : 30 à 33°C dans l’intérieur, 24 à 26°C sur le littoral. Vent faible à modéré. Nuits tropicales (minimales autour de 20°C). Vigilance canicule maintenue.
+**Vendredi 17 juillet :** La canicule s’accentue encore. Soleil radieux du matin au soir, températures maximales comprises entre 30 et 34°C dans l’intérieur, 26 à 28°C sur le littoral. Vent faible à modéré. Pas de pluie en vue.
 
-**Vendredi 17 juillet** : Toujours très chaud, avec un ciel voilé en cours d’après-midi. Quelques nuages pourraient s’inviter sans donner de pluie. Maximales stables : 31-34°C à l’intérieur, 25-27°C sur la côte. Rafales de vent d’ouest jusqu’à 35 km/h en bord de mer.
+**Samedi 18 juillet :** Pic de chaleur attendu. Ciel dégagé, mercure grimpe jusqu’à 35°C à l’intérieur, 29°C sur la côte. Rafales de sud-ouest un peu plus marquées en bord de mer. Risque de quelques nuages élevés en soirée.
 
-**Samedi 18 juillet** : La chaleur persiste, mais l’instabilité gagne du terrain. Risque d’orages isolés en fin de journée, surtout dans les terres. Températures encore élevées : 29-32°C à l’intérieur, 23-25°C sur le littoral. Vent plus soutenu. À confirmer.
+**Dimanche 19 juillet :** Légère accentuation de l’instabilité. Toujours très chaud (30-33°C), mais des nuages pourraient faire leur apparition dans l’après-midi, avec un risque d’orages isolés en fin de journée sur les terres. La chaleur reste écrasante.
 
 
 --------------------------------------------------------------------------------
@@ -329,73 +327,73 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE : LE NORD CUIT SOUS UN SOLEIL DE PLOMB ! Ce mardi 14 juillet, l'été montre ses crocs avec une chaleur accablante. 72 départements sont placés en vigilance orange canicule par Météo-France, une situation qui va durer plusieurs jours. Chez nous, le soleil règne en maître du matin au soir sur toute la région. Les minimales sont déjà douces, entre 18 et 19°C, puis les maximales s'envolent : 33°C attendus à Lille, Douai et Valenciennes, 32°C à Maubeuge et Roubaix. Seule la côte respire grâce à la brise marine, avec 25°C à Dunkerque. Le vent modéré de 20 à 25 km/h apporte un peu de répit, mais il faut rester vigilant : hydratez-vous, évitez les efforts aux heures les plus chaudes. Une journée de fête nationale sous le signe de la canicule, on en profite avec prudence !
+**☀️ CANICULE : LE NORD CUIT SOUS UN SOLEIL DE PLOMB !**
+
+Ce mercredi, le soleil règne en maître absolu sur l'ensemble de la région. Pas un nuage à l'horizon, du littoral à l'Avesnois. Les minimales sont déjà très élevées, avec 21°C à Lille et Valenciennes. Côté vent, une petite brise de 20 à 30 km/h nous offre un peu de répit, surtout sur le littoral dunkerquois. L'après-midi reste identique : un ciel d'azur et une chaleur qui s'intensifie. Attention, la vigilance orange canicule est déclenchée sur 72 départements français. On se protège du soleil, on s'hydrate et on évite les efforts aux heures les plus chaudes. Une journée magnifique, mais à prendre avec beaucoup de précautions.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo du mardi 14 juillet ! Quel plaisir de vous retrouver pour une journée qui s'annonce radieuse.
+Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo du mercredi 15 juillet 2026 ! Ce matin, le soleil est le maître incontesté de notre belle région. Préparez-vous à une journée estivale, car dès le lever du jour, les rayons du soleil sont déjà généreux, chassant les dernières traces de la nuit.
 
-Ce mardi matin, le soleil est le maître des lieux sur l'ensemble de notre région, un grand soleil éclatant qui nous promet de belles heures. On respire déjà la douceur de l'été avec des températures minimales très agréables. Comptez 18°C à St-Hilaire-sur-Helpe et à Troisvilles, 19°C à Valenciennes, Maubeuge et Douai, et 18°C à Lille et Roubaix.
+Les températures minimales sont déjà très douces, voire chaudes : on relève 21°C à Lille et Valenciennes, 20°C à Maubeuge et Douai, et 19°C à St-Hilaire-sur-Helpe et Troisvilles. Le contraste est léger avec le littoral, où Dunkerque affiche 20°C et Watten 17°C, mais la chaleur est déjà bien présente partout.
 
-Le vent sera présent mais modéré, soufflant autour de 20 km/h sur la majeure partie de l'intérieur des terres, avec quelques pointes à 25 km/h sur le littoral, notamment du côté de Steenvoorde et Dunkerque. Cette petite brise marine nous apportera un peu de fraîcheur, car oui, il y a un contraste marqué : les températures maximales grimperont jusqu'à 33°C à Lille et Douai, tandis que sur la côte, à Dunkerque par exemple, nous ne dépasserons pas les 25°C. Une belle journée en perspective !
+Côté vent, une brise légère souffle sur l'ensemble de la région, avec des pointes à 20 km/h dans l'intérieur des terres et jusqu'à 25 km/h sur le littoral, notamment du côté de Dunkerque et Watten. Steenvoorde connaîtra un vent un peu plus soutenu, autour de 30 km/h. Un temps idéal pour profiter de l'extérieur ! Très belle journée à tous sur MONA FM !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo de l'après-midi ! Ce mardi 14 juillet, l'été est bel et bien au rendez-vous et nous offre un après-midi radieux. Le soleil va briller généreusement sur l'ensemble de la région, sans le moindre nuage pour perturber ce ciel d'un bleu éclatant.
-
-Les températures vont continuer de grimper, atteignant des sommets. On attend par exemple 33°C à Douai et Valenciennes, 32°C à Maubeuge et Roubaix, et même 33°C à Lille. Près du littoral, l'ambiance sera un peu plus respirable grâce à la brise marine : comptez 28°C à Watten et 25°C à Dunkerque. Le vent, lui, soufflera de manière modérée, autour de 20 km/h en général, et jusqu'à 25 km/h sur les côtes, venant principalement de l'ouest. Un après-midi idéal pour profiter du grand air, mais n'oubliez pas de bien vous hydrater et de vous protéger du soleil ! Très bel après-midi à l'écoute de MONA FM.
+L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 30°C à Troisvilles, 30°C à Maubeuge, 32°C à Lille, 32°C à Valenciennes, 31°C à Roubaix. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce mardi.
+☀️ Belle journée estivale et lumineuse ce mercredi.
 🌡️ Température sous abri : 25°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 19 à 20°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce mardi, bercé par de légères brises thermiques de Nord-Est.
+☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
 🌡️ Température maximale : 24 à 25°C
 🌊 Température de l’eau : 19 à 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 14 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 15 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mardi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce mercredi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : Le soleil reste omniprésent, la chaleur s’accentue encore un peu. Les maximales grimperont entre 32 et 35°C dans l’intérieur, toujours 25-28°C sur le littoral. Vent faible à modéré. Nuits très douces, autour de 20°C. La vigilance orange canicule se poursuit.
+**Vendredi 17 juillet :** Le soleil reste dominant mais l'atmosphère devient plus lourde. Les températures restent très élevées, entre 30 et 33°C. L'après-midi, des nuages pourraient faire leur apparition sur le sud-est de la région (Valenciennois, Avesnois), avec un risque d'orages isolés en fin de journée.
 
-**Vendredi 17 juillet** : Nouvelle journée caniculaire. Le ciel est dégagé, les températures atteignent un pic, avec 34 à 36°C possibles dans les terres. Près de la mer, comptez 26-29°C. Attention aux risques de malaises, aux personnes fragiles. Pas de changement notable.
+**Samedi 18 juillet :** La tendance se confirme. La matinée est encore belle et chaude. Mais l'après-midi, le ciel se voile et le risque d'orages augmente sur l'ensemble de la région. Ils pourraient être localement forts, avec de la grêle et des rafales de vent. Les températures baissent légèrement (28 à 31°C).
 
-**Samedi 18 juillet** : La chaleur persiste, mais un léger voile nuageux pourrait faire son apparition dans l’après-midi, sans amélioration significative. Les températures restent très élevées : 30 à 34°C en intérieur, 24-27°C sur la côte. La tendance est à la stabilité caniculaire jusqu’à dimanche au moins.
+**Dimanche 19 juillet :** Le temps reste instable. Alternance de passages nuageux et d'éclaircies. Des averses orageuses sont encore possibles, surtout dans l'intérieur des terres. La chaleur persiste mais devient moins écrasante, avec des maximales autour de 26 à 29°C.
 
 
 --------------------------------------------------------------------------------
@@ -404,78 +402,75 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ FÊTE NATIONALE SOUS LE SIGNE DE LA CHALEUR : La Normandie en vigilance orange canicule ce mardi 14 juillet !
-
-Ce mardi, la Normandie bascule en plein été avec une vigilance orange canicule sur 72 départements français. La matinée est contrastée : un ciel partagé entre nuages et éclaircies, avec des températures déjà douces de 17 à 21°C. L'après-midi, le soleil prend le pouvoir sur toute la région. Attention à la forte chaleur dans l'intérieur des terres : on attend 34°C à Évreux, 33°C à Alençon et 32°C à Rouen. Le littoral reste respirable grâce à la brise marine, avec 22°C à Dieppe et 24°C à Cherbourg. Pas de pluie ni d'orage à signaler, mais une vigilance s'impose face à cette chaleur persistante.
+**☀️🌩️ CHALEUR PUIS ORAGES : UNE JOURNÉE À DEUX VISAGES SUR LA NORMANDIE !**  
+Ce mercredi, la Normandie bascule d’un matin doux et voilé à un après-midi instable. Le soleil joue les timides au réveil, avec des voiles nuageux et des températures déjà estivales : 23°C à Rouen, 20°C à Caen, 18°C à Cherbourg. Mais attention, l’après-midi vire aux orages ! De Cherbourg à Alençon en passant par Évreux, le ciel s’assombrit et des cellules orageuses éclatent. Les zones côtières comme Le Havre et Dieppe restent sous un ciel nuageux mais moins actif. La vigilance orange Canicule concerne 72 départements français, et la Normandie n’est pas épargnée par cette chaleur lourde. Le vent modéré de 15-20 km/h n’apporte qu’un répit léger. Profitez de la matinée pour vous aérer, car l’après-midi réserve son lot d’averses et de coups de tonnerre.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo du mardi 14 juillet !
+Bonjour à toutes et à tous, amis auditeurs de RADIO ICI NORMANDIE ! Quel plaisir de vous retrouver pour ce bulletin météo de la matinée du mercredi 15 juillet.
 
-Ce mardi matin, la Normandie se réveille sous un ciel partagé entre soleil et quelques passages nuageux. Les températures sont déjà douces, avec 17°C à Cherbourg et Dieppe, 18°C au Havre et Lisieux, 19°C à Caen et Rouen, et déjà 21°C du côté d'Évreux et Alençon. Le vent sera plutôt modéré, soufflant entre 15 et 25 km/h, apportant une légère brise sur le littoral.
+Ce mercredi matin, la Normandie se réveille sous un ciel plutôt généreux, mais attention, le soleil joue à cache-cache avec quelques voiles nuageux d'altitude sur l'ensemble de notre belle région. Pas de quoi gâcher le moral, mais on sentira une légère atténuation de la luminosité.
 
-On observe un contraste de températures assez marqué entre le bord de mer et l'intérieur des terres. Les zones côtières, comme Cherbourg ou Dieppe, bénéficient d'une atmosphère un peu plus fraîche grâce à cette brise marine, tandis que l'intérieur des terres, notamment l'Eure et l'Orne, voit les températures grimper plus rapidement. Pas de risque d'orage ni de pluie à signaler pour cette matinée, le soleil tentera de s'imposer partout.
+Les températures minimales sont déjà bien douces, voire chaudes, avec 23°C à Rouen et Évreux, 22°C du côté d'Alençon, 20°C à Caen et Dieppe, et 18°C à Cherbourg. Une belle douceur matinale qui annonce une journée estivale !
 
-Profitez bien de cette matinée normande !
+Le vent, lui, sera modéré, soufflant entre 15 et 20 km/h sur l'ensemble de la région. Une brise légère en bord de mer, un peu plus présente dans l'intérieur des terres, mais rien de bien violent. On notera d'ailleurs un contraste de températures assez marqué : les zones côtières, comme Cherbourg ou Dieppe, restent un peu plus fraîches avec 23°C, tandis que l'intérieur des terres, notamment vers Alençon et Évreux, grimpe déjà vers les 32-33°C.
+
+Pas de pluie à l'horizon pour cette matinée, ni de risque orageux ou de foudre, c'est une bonne nouvelle ! Profitez bien de ce début de journée ensoleillé, même si le soleil se fait un peu timide par endroits. Je vous retrouve très vite pour le bulletin de l'après-midi !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo de l'après-midi ! Ce mardi après-midi, le soleil sera le grand gagnant sur l'ensemble de la région, avec un ciel dégagé et un franc soleil qui nous accompagnera partout.
-
-Les températures vont continuer de grimper, notamment dans l'intérieur des terres. Attendez-vous à 34 degrés à Évreux, 33 degrés à Alençon, et un bon 32 degrés à Rouen et Lisieux. Le contraste est net avec le littoral, où la brise marine va adoucir l'atmosphère. À Dieppe, on restera autour de 22 degrés, 24 degrés à Cherbourg et 27 degrés à Caen. Le vent, justement, sera modéré, soufflant généralement de l'ouest à 15-20 km/h, un peu plus soutenu sur le Cotentin avec des pointes à 25 km/h. Aucune alerte à signaler, pas d'orages, pas de grêle, juste un beau soleil estival. Profitez bien de cet après-midi ensoleillé !
+L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 28°C à Caen, 32°C à Evreux, 28°C à Le Havre, 30°C à Rouen, 33°C à Alençon. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (mardi 14 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (mercredi 15 juillet 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps très agréable et ensoleillé ce mardi, avec une ambiance estivale douce et lumineuse.
-🌡️ Température sur les plages : 23 à 26°C
+☀️ Temps très agréable et ensoleillé ce mercredi, avec une ambiance estivale douce et lumineuse.
+🌡️ Température sur les plages : 24 à 27°C
 🌊 Température de l’eau : 18 à 19°C
 
 🌴 Dieppe / Fécamp / Cherbourg
-☀️ Belle luminosité dès le matin ce mardi après dissipation des grisailles côtières, brise de nord-est sensible.
-🌡️ Température maximale sous abri : 22 à 24°C
+☀️ Belle luminosité dès le matin ce mercredi après dissipation des grisailles côtières, brise de nord-est sensible.
+🌡️ Température maximale sous abri : 23 à 25°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (mardi 14 juillet 2026)
+🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (mercredi 15 juillet 2026)
 
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
-🌬️ Vent : Flux de Nord-Est modéré (20 à 30 km/h avec quelques pointes à 35 km/h sur les caps exposés) ce mardi.
+🌬️ Vent : Flux de Nord-Est modéré (20 à 30 km/h avec quelques pointes à 35 km/h sur les caps exposés) ce mercredi.
 🌊 État de la mer : Mer peu agitée à localement agitée au large du Cotentin, belle en Baie de Seine. Visibilité bonne après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance à 3 jours :**
+**Vendredi 17 juillet** : La chaleur reste bien installée, mais l’atmosphère devient plus lourde. Le matin, quelques éclaircies voilées, puis des nuages d’orage se développent rapidement l’après-midi, surtout sur l’intérieur des terres. Les températures maximales oscillent entre 30°C et 34°C, avec un vent faible. Risque d’averses localement fortes.
 
-*   **Jeudi 16 juillet :** Le temps se dégrade nettement. La matinée sera très nuageuse sur l'ensemble de la région, de Cherbourg à Évreux. L'après-midi, le ciel se charge davantage et des orages éclateront sur toute la Normandie, de Rouen à Alençon en passant par Caen et Le Havre. Ces orages pourront être localement forts, avec des précipitations intenses. Les températures baisseront sensiblement, restant toutefois lourdes et orageuses, autour de 24 à 28°C.
+**Samedi 18 juillet** : Toujours sous le signe de la canicule. Le soleil domine largement le matin, mais l’après-midi, des orages éclatent par endroits, notamment sur l’ouest et le sud de la région. Les températures grimpent jusqu’à 35°C à Alençon, 32°C à Rouen. La vigilance orange reste active. Vent de secteur sud-ouest modéré.
 
-*   **Vendredi 17 juillet :** Le temps reste instable et humide. Le ciel sera très nuageux à couvert le matin, avec des averses résiduelles possibles. L'après-midi, le risque d'orages persiste sur l'ensemble de la région, mais ils seront moins organisés que la veille. Le vent sera modéré. Les maximales continueront de baisser, oscillant entre 20 et 25°C, offrant un répit bienvenu après la canicule.
-
-*   **Samedi 18 juillet :** Une amélioration timide se profile. La journée débutera sous un ciel encore très nuageux, notamment sur le Cotentin et la Seine-Maritime. Dans l'après-midi, des éclaircies devraient faire leur retour par le sud de la région (Eure, Orne). Les températures resteront sages, avec des maximales comprises entre 21 et 26°C. Le vent sera faible à modéré.
+**Dimanche 19 juillet** : La tendance se confirme : chaleur persistante et orages épars. Le ciel se partage entre éclaircies et passages nuageux menaçants. Les maximales atteignent 33°C à Caen, 36°C dans l’Eure. Quelques averses orageuses possibles en soirée. Nuits très douces, autour de 20°C.
 
 
 --------------------------------------------------------------------------------
@@ -484,56 +479,65 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ FEU DE JOIE SUR LA RÉGION : 14-JUILLET CANICULAIRE !**
-
-Ce mardi 14 juillet, l'Auvergne-Rhône-Alpes est en plein cœur d'une vague de chaleur exceptionnelle. La vigilance orange Canicule concerne 72 départements français, et notre région n'est pas épargnée. Le soleil règne en maître absolu dès le matin, avec des minimales déjà très élevées (24°C à Bourg-en-Bresse). L'après-midi, le ciel est d'un bleu pur et le mercure s'envole : attendez-vous à 39°C à Montélimar, 37°C à Privas et jusqu'à 36°C dans le nord de la région. Le vent est quasi inexistant, ce qui renforce la sensation de chaleur écrasante. Un 14 juillet historique sous le signe de la fournaise, où la prudence est de mise.
+🔥⛈️ ORAGES ET CANICULE : UN MERCREDI SOUS HAUTE TENSION  
+Ce mercredi, l'Auvergne-Rhône-Alpes vit une journée contrastée entre chaleur accablante et orages violents. 72 départements français sont placés en vigilance orange canicule, et notre région n’y échappe pas. Dès le matin, des orages éclatent sur Bourg-en-Bresse, Vichy, Montluçon et Privas, avec des températures déjà élevées (21 à 24°C). L’après-midi, le ciel se charge encore davantage : seuls Aurillac profite d’un grand soleil (33°C), tandis que Saint-Flour affronte des orages accompagnés de grêle. Partout ailleurs, le tonnerre gronde et les rafales de vent atteignent 35 km/h sur Montélimar où le mercure frôle les 38°C. Prudence face à la foudre et aux fortes pluies sous ces cellules orageuses. Une journée électrique, à suivre de près.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI AUVERGNE-RHÔNE-ALPES pour votre bulletin météo du mardi 14 juillet 2026 !
+Bonjour à toutes et à tous et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre bulletin météo du matin !
 
-Ce mardi matin, l'Auvergne-Rhône-Alpes se réveille sous un soleil généreux sur la majeure partie de la région. Les températures minimales sont déjà bien élevées : comptez 24°C à Bourg-en-Bresse et Moulins, 23°C à Vichy et Montélimar, 22°C à Montluçon, et 19°C à Aurillac.
+Ce mercredi matin, le temps s'annonce plutôt capricieux sur notre belle région. Préparez-vous à une atmosphère électrique, notamment du côté de Bourg-en-Bresse avec 22°C, où des orages sont attendus, potentiellement accompagnés de foudre. Même scénario pour Vichy, 21°C, et Montluçon, 21°C, qui devraient également connaître des averses orageuses.
 
-Quelques nuages décoreront le ciel par endroits, notamment sur le nord et l'est de la région, mais sans gâcher l'impression de beau temps. Le vent, quant à lui, sera généralement modéré, soufflant autour de 10 à 15 km/h sur l'ensemble du territoire, avec des pointes à 20 km/h du côté de Montélimar. Pas de mistral aujourd'hui, juste une petite brise pour rafraîchir (un peu) l'atmosphère.
+Plus au sud, du côté d'Aurillac, le soleil tente de percer malgré un ciel un peu voilé et une température de 18°C. Les minimales restent douces, avec 23°C à Privas, où des orages sont aussi à prévoir, et 24°C à Montélimar, où le vent se fera sentir avec des rafales pouvant atteindre les 35 km/h.
 
-Attention, la chaleur s'annonce intense, notamment dans les terres où le mercure grimpera très haut cet après-midi. Restez connectés pour les prévisions de l'après-midi !
+Globalement, le vent sera modéré sur l'ensemble de la région, autour de 10 à 25 km/h, sauf sur le sud de la Drôme où il soufflera un peu plus fort. Les températures sont déjà élevées, annonçant une journée chaude, voire très chaude, avec des pointes à 38°C attendues dans l'après-midi. Soyez vigilants et restez à l'écoute pour la suite de nos prévisions !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre bulletin météo de l'après-midi ! Ce mardi après-midi, le soleil sera le maître du jeu sur l'ensemble de notre belle région. Attendez-vous à un ciel radieux et dégagé, sans le moindre nuage pour gâcher la fête.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre bulletin météo de l'après-midi du mercredi 15 juillet 2026 !
 
-Côté températures, ça va grimper, et même très fort ! Nous aurons des maximales caniculaires avec 39°C du côté de Montélimar, 37°C à Privas, 36°C à Bourg-en-Bresse et Moulins, et 34°C pour Aurillac et Saint-Flour. Le vent sera généralement faible, soufflant entre 10 et 20 km/h, sans mistral ni brise côtière notable, ce qui ne fera qu'accentuer cette sensation de chaleur intense. Il n'y aura pas de contraste marqué entre littoral et intérieur des terres, la chaleur sera partout. Soyez vigilants face à ces fortes chaleurs, hydratez-vous bien et restez à l'ombre aux heures les plus chaudes. Très bel après-midi à tous !
+Ce mercredi après-midi, la région sera sous l'influence d'un temps très instable, avec des températures estivales. Les orages seront malheureusement de la partie sur une grande partie de notre territoire. À Aurillac, vous profiterez d'un grand soleil avec 33°C, mais attention, ailleurs, ça va gronder !
+
+À Bourg-en-Bresse, le thermomètre affichera 33°C, mais des orages sont attendus, accompagnés de rafales de vent pouvant atteindre 25 km/h. Même scénario à Vichy et Moulins, avec 34°C et des orages, le vent soufflera modérément autour de 10 à 15 km/h.
+
+Plus au sud, à Privas et Sablières, il fera très chaud avec respectivement 37°C et 36°C, mais là encore, des orages éclateront, apportant de faibles averses. Le vent y sera modéré, autour de 15 km/h.
+
+Un point d'alerte important : à Saint-Flour, préparez-vous à des orages accompagnés de grêle et des rafales de vent à 20 km/h, avec 34°C. Soyez vigilants face aux risques de foudre et aux fortes pluies sous ces cellules orageuses.
+
+Enfin, à Montélimar, la chaleur sera intense avec 38°C, et des orages sont également prévus, avec un vent soutenu à 35 km/h.
+
+Restez prudents et à l'écoute pour les prochaines mises à jour !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (jeudi 16 juillet au samedi 18 juillet)
+Vendredi 17 juillet : la canicule reste bien installée avec des maximales de 35 à 39°C. L’après-midi, des orages éclatent à nouveau, surtout sur les Alpes et le Massif central. Vent modéré, mais rafales possibles sous les orages.
 
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 37°C en journée.
-- vendredi 17 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 18°C, maximales atteignant 37°C en journée.
-- samedi 18 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 14°C, maximales atteignant 35°C en journée.
+Samedi 18 juillet : la chaleur persiste, les températures grimpent encore (36-40°C). Le matin est plus calme et ensoleillé, mais en fin de journée, des orages localement forts se développent, avec un risque de grêle sur les reliefs.
+
+Dimanche 19 juillet : l’instabilité s’accentue. Les orages deviennent plus fréquents et parfois violents sur l’ensemble de la région. Les températures amorcent une légère baisse mais restent très estivales (32-36°C). Vent soutenu sous les averses. Restez vigilants.
 
 
 --------------------------------------------------------------------------------
@@ -542,62 +546,57 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🚨 CANICULE : 36°C ET UN CIEL QUI S'ÉCLAIRCIT ! Ce mardi 14 juillet, la Bourgogne-Franche-Comté bascule dans une chaleur accablante. La matinée reste très nuageuse sur l'ensemble de la région, avec des températures déjà élevées (24°C à Dijon, 25°C à Lons-le-Saunier). Mais l'après-midi, le soleil prend le pouvoir : 36°C à Châtillon-sur-Seine, Dijon et Besançon, 35°C à Pouilly-en-Auxois. Seul Sancey-le-Grand pourrait voir quelques fines gouttes. Le vent d'ouest, jusqu'à 20 km/h, n'apporte aucun répit. La vigilance orange canicule est en vigueur sur 72 départements, dont le nôtre. Hydratez-vous, restez à l'ombre et évitez les efforts aux heures les plus chaudes.
+🌩️ ORAGES EXPLOSIFS ET GRÊLE : L'APRÈS-MIDI TOURNE À L'ORAGE GÉNÉRALISÉ !  
+Ce mercredi, la matinée était encore calme et peu nuageuse sur l'ensemble de la Bourgogne-Franche-Comté. Mais dès l'après-midi, le ciel s'est lourdement assombri. La vigilance orange Canicule est toujours en vigueur sur 72 départements français, et chez nous, la chaleur étouffante (36°C à Châtillon-sur-Seine, 35°C à Dijon, 34°C à Besançon) a cédé la place à des orages violents. De la foudre, des pluies torrentielles et de la grêle ont frappé toutes les villes de la région, des plaines jusqu'aux reliefs (28°C à Pontarlier). Le vent, avec des rafales jusqu'à 30 km/h, a accentué la violence des cellules orageuses. Prudence absolue si vous devez circuler : les conditions sont dangereuses. Restez informés sur Radio Ici Bourgogne-Franche-Comté.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ pour votre bulletin météo du matin ! Ce mardi matin, le ciel se montre plutôt généreux en nuages sur l'ensemble de notre belle région. On observe un ciel couvert de gros nuages, mais pas de pluie à l'horizon pour le moment.
-
-Côté températures, il fait déjà doux, voire chaud, avec des minimales élevées pour la saison. On relève 23°C à Châtillon-sur-Seine, 24°C à Dijon et Besançon, 22°C à Pouilly-en-Auxois, et même 25°C à Lons-le-Saunier. Les zones plus en altitude comme Pontarlier et Morez profitent d'un petit répit avec 20°C et 19°C respectivement, mais la chaleur sera bien présente partout.
-
-Quant au vent, il souffle modérément sur la région. Prévoyez des brises légères à modérées, autour de 10 à 20 km/h, avec des pointes à 25 km/h du côté de Lons-le-Saunier. Pas de quoi perturber vos activités, mais ça peut aider à faire circuler un peu l'air chaud.
-
-Pour l'instant, pas d'alertes orageuses ni de risques de grêle, mais restons vigilants pour la suite de la journée. Je vous retrouve tout à l'heure pour le point météo de l'après-midi. En attendant, passez une excellente matinée sur nos ondes !
+Ce mercredi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 22°C à Châtillon-sur-Seine, 22°C à Besançon, 19°C à Pontarlier, 22°C à Dole, 17°C à Morez. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous et bienvenue sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ pour votre bulletin météo de l'après-midi !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bourgogne-Franche-Comté pour votre bulletin météo de l'après-midi !
 
-Ce mardi après-midi, le soleil sera le roi incontesté sur l'ensemble de notre belle région. Préparez-vous à une ambiance estivale très marquée, avec des températures qui vont grimper, grimper !
+Ce mercredi après-midi, la vigilance est de mise sur l'ensemble de notre belle région. Nous allons malheureusement devoir faire face à des orages, et pas des moindres ! Attendez-vous à de la foudre, de fortes pluies sous les cellules orageuses et même de la grêle. Soyez particulièrement prudents si vous êtes en déplacement.
 
-Du côté des maximales, nous attendons 36°C à Châtillon-sur-Seine et à Dijon, 35°C à Pouilly-en-Auxois, et un bon 36°C également à Besançon et Dole. Les reliefs ne seront pas en reste, avec 31°C à Pontarlier et Morez, et 33°C à Sancey-le-Grand.
+Côté températures, il fera encore bien chaud malgré tout. Nous aurons 36°C à Châtillon-sur-Seine, 35°C à Dijon, 34°C à Pouilly-en-Auxois et Besançon. Du côté de Dole, comptez 34°C également. Les températures seront un peu plus clémentes sur les reliefs, avec 28°C à Pontarlier et 30°C à Morez, mais les orages seront bien présents.
 
-Attention, le vent sera bien présent, avec une brise d'ouest qui soufflera jusqu'à 20 km/h sur Châtillon-sur-Seine, Pouilly-en-Auxois et Pontarlier. Il sera un peu plus modéré, autour de 10 à 15 km/h, sur le reste de la région, notamment à Dijon, Besançon, Dole, Morez et Thoirette. Prudence tout de même, car ce vent chaud accentuera la sensation de forte chaleur.
+Quant au vent, il soufflera de manière assez variable, avec des rafales pouvant atteindre 30 km/h du côté de Sancey-le-Grand, et autour de 15 à 25 km/h sur le reste de la région. Ce vent pourrait d'ailleurs attiser l'intensité des orages par endroits.
 
-Une petite précision pour Sancey-le-Grand : quelques fines gouttes de pluie sont possibles, mais cela ne devrait pas gâcher votre après-midi ensoleillé. Pas d'inquiétude, pas d'orage en vue, juste un petit rafraîchissement très localisé !
-
-Profitez bien de ce bel après-midi ensoleillé, mais n'oubliez pas de vous hydrater et de vous protéger du soleil. À très vite sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ !
+Prudence donc pour cette après-midi, restez à l'écoute de nos bulletins pour toute évolution de la situation !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : La chaleur reste très forte avec des maximales proches de 35°C. Le ciel se voile en cours de journée, et des orages pourraient éclater en fin d'après-midi, notamment sur les reliefs et l'est de la région. Vent modéré.
+Tendance à 3 jours (vendredi 17, samedi 18, dimanche 19 juillet) :
 
-**Vendredi 17 juillet** : Temps encore lourd et orageux. Les températures baissent légèrement (32 à 34°C) mais l'humidité rend l'atmosphère étouffante. Risque d'averses orageuses localement fortes, surtout l'après-midi.
+**Vendredi 17 juillet** : La chaleur reste très forte, avec des températures encore proches de 34 à 36°C dans les plaines. Le ciel sera variable, mais des orages localement forts pourraient éclater en cours d'après-midi, surtout sur le nord de la région (Châtillon, Dijon). Risque de grêle et de fortes pluies. Vent modéré.
 
-**Samedi 18 juillet** : La canicule persiste, avec des maximales de 33 à 35°C. Le ciel alterne entre éclaircies et passages nuageux. Quelques ondées possibles, mais pas de véritable rafraîchissement en vue. Le vent reste faible.
+**Samedi 18 juillet** : La canicule persiste, mais l'atmosphère devient plus stable. Après une matinée souvent ensoleillée, l'après-midi pourrait voir quelques développements nuageux, mais les orages seront moins nombreux et moins violents. Températures toujours élevées : 33 à 35°C. Rafales de vent faibles.
+
+**Dimanche 19 juillet** : La chaleur reste écrasante, avec un soleil généreux dès le matin. Les températures atteindront encore 34 à 36°C. Le risque orageux est quasi nul, on attend une journée très chaude et sèche. Un temps de plage ou de terrasse, mais attention à la canicule, notamment pour les personnes fragiles.
 
 
 --------------------------------------------------------------------------------
@@ -606,58 +605,54 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ 14 JUILLET BRETON : SOLEIL, CHALEUR ET FÊTE NATIONALE !**
-
-Ce mardi, la Bretagne célèbre la Fête Nationale sous un ciel magnifique. La matinée commence avec un soleil voilé par quelques nuages d'altitude, mais l'après-midi, le soleil s'impose franchement sur toute la région. Les températures grimpent fortement : on attend 24°C à Saint-Brieuc, 26°C à Lannion, 30°C à Brest, et jusqu'à 33°C à Quimper et Fougères. Heureusement, une petite brise de mer de 15 à 20 km/h apporte un peu de répit sur le littoral. Aucun risque d'averse ou d'orage aujourd'hui. Profitez bien de cette belle journée, mais n'oubliez pas de vous hydrater et de vous protéger du soleil, surtout dans l'intérieur des terres.
+⛈️ BRETAGNE SOUS LES ORAGES : De la grêle et de la foudre attendues ! Ce mercredi, la Bretagne vit une journée à deux visages. Le matin, le ciel est mitigé, avec nuages et éclaircies, et des températures déjà douces, de 17°C à 21°C. Mais l’après-midi, le temps se dégrade brutalement : un risque orageux généralisé touche toute la région, avec des orages localement forts, accompagnés de grêle et de fortes pluies. Les terres sont particulièrement concernées, tandis que le littoral comme l’Île-de-Sein reste au soleil avec 21°C. Les maximales atteignent 32°C à Fougères et Quimper, mais l’ambiance devient électrique. La vigilance orange canicule concerne 72 départements en France, mais en Bretagne, c’est l’orage qui dicte sa loi. Soyez prudents !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bretagne pour votre bulletin météo du mardi 14 juillet 2026 ! Un temps bien agréable nous attend pour cette matinée de fête nationale.
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI BRETAGNE pour votre bulletin météo de ce mercredi 15 juillet !
 
-Ce mardi matin, le ciel breton se montre plutôt timide, avec un soleil un peu voilé par des nuages d'altitude sur l'ensemble de la région. Pas de quoi gâcher le plaisir, mais attendez-vous à quelques passages nuageux, notamment du côté de Lannion et Morlaix où les températures minimales affichent un doux 18°C et 17°C respectivement.
+Ce mercredi matin, la Bretagne se réveille sous un ciel plutôt mitigé. On a un peu de tout, mais globalement, le soleil joue à cache-cache avec les nuages sur l'ensemble de la région. Les températures minimales sont déjà bien douces, avec 18°C à Lannion et Saint-Brieuc, 17°C à Rostrenen, et même 21°C à Quimper et Fougères.
 
-Les températures sont douces dès le lever du jour, avec 18°C à Brest et Saint-Brieuc, et 17°C à Rostrenen. Le contraste est léger entre le littoral et l'intérieur des terres, mais les brises marines seront bien présentes. Sur le Finistère, notamment à Ouessant et l'Île-de-Sein, le vent soufflera modérément, autour de 20 à 25 km/h, apportant une sensation de fraîcheur bienvenue. Ailleurs, un vent léger à modéré de 15 à 20 km/h est attendu, sans excès.
+Du côté du vent, il est discret sur le littoral, avec une légère brise d'environ 15 km/h du côté de Brest et Quimper. Mais attention, dans les terres, le vent se fait un peu plus sentir, notamment vers Merdrignac où il souffle modérément à 25 km/h. Quelques averses éparses sont possibles par endroits, notamment sur la côte nord, mais rien de bien méchant, juste de quoi rafraîchir un peu l'atmosphère.
 
-Aucun risque d'averses, d'orages ou de grêle à signaler ce matin, le ciel reste sec. Profitez bien de cette matinée avant un après-midi qui s'annonce encore plus ensoleillé !
+Le contraste est marqué entre le littoral, où l'air reste plus frais et humide, et l'intérieur des terres qui connaît déjà une belle douceur. Restez à l'écoute pour la suite des prévisions !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à tous les auditeurs de Radio Ici Bretagne ! C'est votre présentateur météo préféré qui vous parle pour cet après-midi du mardi 14 juillet 2026.
+Bonjour à toutes et à tous, amis auditeurs de RADIO ICI BRETAGNE ! Ce mercredi après-midi, la Bretagne va connaître un temps bien agité, avec un risque orageux généralisé sur une grande partie de la région.
 
-Ce mardi après-midi, la Bretagne va continuer de rôtir sous un soleil généreux, même si quelques petits nuages discrets viendront parfois voiler l'astre roi, sans pour autant gâcher la fête. Les températures grimpent, grimpent ! On attend un très agréable 26 degrés à Lannion, 24 degrés à Saint-Brieuc, et même 30 degrés à Brest ! Quimper et Fougères seront les plus chaudes avec un mercure qui affichera 33 degrés, attention à la chaleur !
+Les températures seront élevées, avec 32°C attendus à Fougères et Quimper, 30°C à Brest, et 28°C à Morlaix et Merdrignac. Mais attention, ces fortes chaleurs s'accompagneront de la menace d'orages. Ces orages pourront être localement forts, avec des risques de foudre, de fortes pluies sous les cellules orageuses, et même de la grêle par endroits. Soyez donc vigilants !
 
-Le vent, lui, sera plutôt modéré, avec une légère brise côtière de 15 à 20 km/h qui soufflera de l'ouest sur la plupart des côtes, apportant un peu de fraîcheur bienvenue. Seule Ouessant connaîtra un vent un peu plus soutenu, autour de 25 km/h. On note un contraste thermique marqué entre le littoral, où l'air est un peu plus respirable, et l'intérieur des terres où la chaleur se fait bien sentir.
-
-Pas d'inquiétude à avoir cet après-midi, aucun risque d'orages ni de grêle à l'horizon. Profitez bien de ce beau temps ensoleillé, mais n'oubliez pas de vous hydrater et de vous protéger du soleil !
+Sur le littoral, les températures seront un peu plus douces, avec 21°C à l'Île-de-Sein, où le soleil brillera généreusement. Le vent sera modéré, avec une brise côtière de 15 à 25 km/h, soufflant principalement d'ouest à nord-ouest. L'intérieur des terres, lui, sera sous l'influence de vents plus faibles, mais l'ambiance restera lourde avant l'arrivée des averses orageuses. Restez prudents et à l'écoute pour les prochaines mises à jour !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance pour les 3 prochains jours :**
+Vendredi 17 juillet : La matinée reste encore perturbée avec des averses orageuses résiduelles sur l’est de la région, surtout vers Fougères et Rennes. L’ouest s’éclaircit progressivement. L’après-midi, le soleil reprend le dessus partout, mais la chaleur reste forte, avec 30 à 32°C attendus. Vent faible.
 
-*   **Jeudi 16 juillet :** Le soleil reste généreux mais la chaleur devient lourde. L'après-midi, le ciel se charge et des orages éclatent sur l'ensemble de la région, notamment en fin de journée. Ces orages pourront être localement forts, accompagnés de grêle et de rafales de vent. Les températures restent très élevées, entre 28 et 33°C avant l'arrivée des orages.
-*   **Vendredi 17 juillet :** Le temps reste instable avec un ciel partagé entre éclaircies et passages nuageux. De nouvelles averses orageuses sont possibles, surtout dans l'après-midi. La chaleur faiblit un peu avec des maximales qui devraient osciller entre 24 et 28°C.
-*   **Samedi 18 juillet :** Le calme revient progressivement. Le soleil reprend le dessus sur la région avec un ciel dégagé. Les températures sont agréables, autour de 25 à 29°C, avec une brise marine rafraîchissante sur les côtes.
+Samedi 18 juillet : Beau temps sec et ensoleillé sur l’ensemble de la Bretagne. Les températures grimpent encore, de 28°C sur la côte nord à 34°C dans l’intérieur. Une brise maritime tempère le littoral. Ambiance estivale, mais attention à la canicule qui s’installe durablement.
+
+Dimanche 19 juillet : Pic de chaleur ! Le soleil règne en maître, pas un nuage. Les maximales atteignent 35°C à Quimper et Fougères, 32°C à Brest. La vigilance canicule reste de mise, surtout pour les personnes fragiles. Rafraîchissez-vous et hydratez-vous régulièrement.
 
 
 --------------------------------------------------------------------------------
@@ -666,51 +661,52 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CHALEUR ACCABLANTE : 37°C ATTENDUS À SAINT-AMAND-MONTROND !  
-Ce mardi 14 juillet, notre région Centre-Val de Loire est placée sous l'emprise d'une canicule nationale : 72 départements sont en vigilance orange. Le ciel reste voilé toute la journée, avec un soleil qui joue à cache-cache mais ne nous épargne pas. Les températures grimpent fortement : 36°C à Bourges, 37°C à Saint-Amand-Montrond, 35°C à Châteaudun et Châteauroux, 34°C à Nogent-le-Rotrou. Le vent, très faible, ne rafraîchit rien. L'atmosphère est lourde et étouffante. Pensez à vous hydrater, à éviter les efforts aux heures les plus chaudes et à protéger les personnes fragiles. La vigilance reste de mise pour les prochains jours.
+**
+🚨 **ORAGES VIOLENTS ET CHALEUR ACCABLANTE : UN MERCREDI À RISQUES !** Ce mercredi, la région Centre-Val de Loire est prise en tenaille entre une chaleur caniculaire et des orages potentiellement destructeurs. Le matin, le soleil est généreux mais les températures minimales sont déjà très élevées, entre 21 et 24°C. L’après-midi, l’ambiance devient lourde et explosive. Des orages accompagnés de grêle éclatent sur un grand axe allant de Chartres à Sancerre, avec des pointes à 37°C à Saint-Amand-Montrond. Seuls Châteauroux et Écueillé restent au sec sous 36°C. La vigilance orange Canicule est en vigueur sur 72 départements, dont le nôtre. Restez prudents, hydratez-vous et suivez l’évolution en temps réel sur RADIO ICI.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI CENTRE-VAL DE LOIRE pour votre bulletin météo du mardi 14 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI CENTRE-VAL DE LOIRE pour votre bulletin météo du matin en ce mercredi 15 juillet 2026 !
 
-Ce mardi matin, on se réveille sous un ciel plutôt couvert sur l'ensemble de notre belle région Centre-Val de Loire. Pas de soleil éclatant pour le moment, mais des nuages bien présents qui nous donnent une ambiance un peu voilée. Les températures minimales sont déjà élevées, annonçant une nouvelle journée chaude. Nous avons 20 degrés à Argent-sur-Sauldre, 25 degrés à Bourges, 24 degrés à Saint-Amand-Montrond, 22 degrés à Châteaudun et 22 degrés à Châteauroux. Le vent, lui, sera globalement modéré, soufflant entre 10 et 15 kilomètres par heure sur l'ensemble du territoire, une légère brise qui ne suffira malheureusement pas à rafraîchir l'atmosphère. Pour l'instant, pas de contraste de températures notable entre le littoral et l'intérieur des terres, puisque nous sommes bien à l'intérieur des terres. Restez à l'écoute pour la suite de nos prévisions !
+Ce mercredi matin, le soleil sera généreux sur l'ensemble de la région, même si quelques nuages d'altitude viendront voiler l'astre solaire par moments. Pas d'inquiétude, le ciel restera lumineux et agréable. Les températures minimales sont déjà bien élevées : comptez 24°C à Bourges, 23°C à Chartres et Dreux, 22°C à Saint-Amand-Montrond et 21°C à Châteauroux. Le vent soufflera modérément, entre 15 et 25 km/h, avec des pointes un peu plus sensibles du côté de Sancerre. Quelques averses isolées sont possibles, notamment sur le sud de la région, mais elles resteront faibles et passagères. Pas de risque orageux ni de foudre à l'horizon pour cette matinée. Une belle journée qui s'annonce, même si la chaleur va monter crescendo !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Centre-Val de Loire pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
+Ce mercredi après-midi, l'ambiance sera plutôt lourde et orageuse sur notre belle région Centre-Val de Loire. Le soleil tentera bien quelques apparitions, notamment du côté de Châteauroux et Écueillé où le ciel restera dégagé avec des maximales de 36°C et 34°C respectivement, sous un vent léger d'ouest à 20 km/h.
 
-Ce mardi après-midi, attendez-vous à un ciel généreusement voilé sur l'ensemble de notre région. Le soleil jouera à cache-cache avec de nombreux nuages, mais il restera bien présent pour nous apporter de la chaleur. Les températures vont continuer de grimper, notamment dans l'intérieur des terres. On attend ainsi 36 degrés à Bourges, 37 degrés à Saint-Amand-Montrond, 35 degrés à Châteaudun, 34 degrés à Nogent-le-Rotrou et 35 degrés à Châteauroux.
-
-Le vent sera plutôt discret, soufflant une légère brise d'ouest à sud-ouest, autour de 10 à 15 km/h, ce qui ne suffira malheureusement pas à rafraîchir l'atmosphère. Pas de risque d'orages ou de fortes pluies à l'horizon pour cette après-midi, le temps restera sec. Prévoyez donc de quoi vous hydrater et de vous protéger du soleil, car même voilé, il reste intense !
+Mais attention, pour la plupart d'entre vous, il faudra composer avec des averses et même des orages ! Prudence du côté de Bourges où quelques averses sont prévues avec 36°C, et surtout à Saint-Amand-Montrond, Sancerre, Argent-sur-Sauldre, Chartres, Châteaudun, Dreux et Nogent-le-Rotrou où des orages accompagnés de grêle sont à craindre. Ces cellules orageuses pourront donner de fortes pluies localement et un risque de foudre. Les températures resteront élevées, jusqu'à 37°C à Saint-Amand-Montrond, et le vent soufflera entre 15 et 25 km/h, renforçant parfois l'impression de lourdeur. Restez vigilants !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : La chaleur reste très forte avec des maximales encore proches des 35°C. Le ciel sera plus nuageux l'après-midi, avec un risque d'orages orageux localisés, notamment sur le sud de la région (Indre, Cher). Vent faible.  
-**Vendredi 17 juillet** : La canicule se maintient. Les températures maximales atteignent encore 33 à 36°C. Le matin sera souvent ensoleillé, mais l'après-midi, des nuages orageux se développeront, surtout sur l'ouest et le centre. Risque d'averses orageuses isolées.  
-**Samedi 18 juillet** : Toujours très chaud, avec des maximales de 32 à 35°C. Le ciel alternera entre passages nuageux et éclaircies. Quelques ondées orageuses possibles en fin de journée. La vigilance orange canicule pourrait être prolongée.
+**
+**Vendredi 17 juillet :** Le temps reste très lourd. La matinée est nuageuse sur l’ensemble de la région. L’après-midi, les orages éclatent à nouveau, avec un risque de grêle et de fortes pluies. Les températures maximales oscillent entre 30°C à Dreux et 34°C à Bourges et Châteauroux. Vent faible à modéré.
+
+**Samedi 18 juillet :** L’accalmie est de courte durée. Le ciel est variable le matin, mais les averses orageuses reviennent rapidement l’après-midi, surtout sur l’est et le sud de la région. Les maximales restent élevées, entre 29°C et 33°C. L’atmosphère reste pesante.
+
+**Dimanche 19 juillet :** La tendance se confirme : chaleur et orages. La journée débute sous le soleil, mais des cellules orageuses se développent en fin d’après-midi, notamment sur le Berry et l’Orléanais. Les températures baissent très légèrement, avec 28 à 32°C. La vigilance Canicule reste de mise.
 
 
 --------------------------------------------------------------------------------
@@ -719,58 +715,60 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ **14 JUILLET : UNE FOURNAISE SUR L'ÎLE DE BEAUTÉ !** Ce mardi 14 juillet, la Corse est en plein cœur d'un épisode caniculaire qui touche 72 départements français. Le soleil règne en maître absolu du matin au soir, sans le moindre nuage pour adoucir l'ardeur. Les minimales sont déjà très douces, entre 21 et 26°C. L'après-midi, le mercure s'envole : on attend 32°C à Bastia et Calvi, mais jusqu'à 38°C à Porto-Vecchio et Corte ! Une légère brise côtière de 15 à 20 km/h ne suffira pas à rafraîchir l'atmosphère. C'est une journée de fête nationale sous le signe de la chaleur intense. Pensez à vous hydrater et à éviter les heures les plus chaudes.
+☀️ CANICULE SUR LA CORSE : UNE JOURNÉE DE PLEIN SOLEIL ET DE CHALEUR ! Ce mercredi, la Corse est sous l'emprise d'un puissant anticyclone. Le soleil règne en maître du matin au soir sur toute l'île, sans le moindre nuage. Les températures grimpent fortement l'après-midi, atteignant 35 à 36°C dans l'intérieur, comme à Corte ou Zévaco. Sur le littoral, la brise marine offre un peu de répit mais il fait tout de même 30 à 32°C à Ajaccio, Bastia ou Calvi. La vigilance orange canicule concerne 72 départements en France métropolitaine ; chez nous, la chaleur est sèche et intense. Pensez à vous hydrater, à éviter les efforts aux heures les plus chaudes et à protéger les personnes fragiles. Un temps estival et stable qui se prolonge.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo du mardi 14 juillet ! Un grand soleil nous attend pour ce matin, un temps idéal pour profiter de notre belle île.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo du mercredi 15 juillet 2026 au matin ! Préparez-vous à une journée estivale typique, sous un soleil généreux qui va nous accompagner dès le lever du jour.
 
-Ce mardi matin, le soleil brille généreusement sur l'ensemble de la Corse. Les températures minimales sont déjà bien douces, avec 23°C à Ajaccio, 26°C à Figari, et 24°C à Bastia. Dans les terres, il fait 22°C à Corte et 21°C à Sartène, tandis que Zévaco affiche 22°C.
+Ce mercredi matin, le ciel corse sera d'un bleu éclatant, sans le moindre nuage pour gâcher le tableau. Les températures minimales sont déjà bien douces, voire chaudes sur le littoral. On relève 22°C à Ajaccio, 24°C à Figari et Bastia, 23°C à Porto-Vecchio et Cervione. Dans l'intérieur des terres, il fait un peu plus frais mais toujours très agréable, avec 21°C à Corte et Zévaco, 20°C à Pietralba et 19°C à Sartène.
 
-Côté vent, une légère brise souffle sur le littoral, autour de 15 km/h du côté d'Ajaccio et Calvi, et jusqu'à 20 km/h vers Porto-Vecchio. Dans l'intérieur des terres, le vent est encore plus discret, aux alentours de 10 km/h. Pas de risque orageux à l'horizon, le ciel est d'un bleu immaculé.
+Côté vent, une légère brise soufflera sur l'ensemble de l'île, avec des pointes autour de 10 à 15 km/h, notamment vers Figari. Rien de bien méchant, juste de quoi rafraîchir un peu l'atmosphère sans pour autant perturber vos activités. Le contraste entre le littoral et l'intérieur des terres se fera sentir, avec des températures déjà plus élevées près de la mer.
 
-Profitez bien de cette magnifique matinée estivale !
+En résumé, un début de journée idéal pour profiter de nos belles plages ou des sentiers de randonnée. Le soleil est roi et la chaleur sera au rendez-vous. Restez à l'écoute pour le bulletin de l'après-midi !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous sur Radio Ici Corse ! C'est votre rendez-vous météo pour cet après-midi du mardi 14 juillet 2026. Et quel après-midi nous attend ! Le soleil sera le maître absolu du ciel corse, un grand soleil jaune éclatant sans le moindre nuage pour l'ensemble de l'île.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo de ce mercredi après-midi, le 15 juillet 2026 ! Préparez-vous à une après-midi radieuse et très chaude sur toute l'île.
 
-Côté températures, ça va chauffer, et même très fort ! Le contraste littoral/intérieur des terres sera bien marqué. Sur le littoral, on attend 32°C à Bastia et Calvi, et 38°C à Porto-Vecchio. Dans les terres, il fera 36°C à Zévaco, 37°C à Sartène et même 38°C à Corte !
+Ce mercredi après-midi, le soleil sera le maître absolu du ciel corse, du nord au sud, de l'est à l'ouest. Pas l'ombre d'un nuage à l'horizon, une journée parfaite pour profiter de nos magnifiques paysages !
 
-Concernant le vent, il sera modéré, soufflant généralement entre 10 et 20 km/h. Une légère brise côtière se fera sentir par endroits, mais elle ne suffira pas à rafraîchir l'atmosphère. Pas de mistral à l'horizon, ni de vent d'ouest notable.
+Côté températures, ça va grimper, surtout dans l'intérieur des terres. Nous attendons des maximales autour de 32 degrés à Ajaccio, 35 degrés à Corte et Sartène. À Zévaco, le thermomètre pourrait même atteindre les 36 degrés, tandis que Figari et Porto-Vecchio flirteront avec les 34 à 35 degrés. Sur le littoral, l'air sera un peu plus respirable grâce à la brise marine, mais attendez-vous tout de même à des valeurs élevées, autour de 30 à 31 degrés à Calvi, Bastia et Cervione.
 
-Bref, un après-midi estival classique en Corse, sous un soleil généreux et des températures très élevées. Pensez à bien vous hydrater et à vous protéger du soleil si vous êtes en extérieur !
+Le vent sera faible et variable, avec une légère brise côtière ne dépassant pas les 10 à 15 km/h, ce qui ne rafraîchira que très légèrement l'atmosphère. Pas de mistral en vue, juste un petit souffle pour accompagner ce grand soleil.
+
+Pensez à bien vous hydrater et à vous protéger du soleil, car il va taper fort cet après-midi ! Très belle après-midi à toutes et à tous sur Radio Ici Corse !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet :** Le soleil reste omniprésent. Les températures maximales restent très élevées, comprises entre 33 et 38°C sur le littoral, et jusqu'à 39°C dans les terres comme à Corte. Vent faible à modéré, toujours pas de rafraîchissement en vue.
+Vendredi 17 juillet : le soleil reste dominant avec des températures encore très élevées, proches de 35°C dans l'intérieur des terres. Quelques nuages pourraient se former l'après-midi sur les reliefs, sans conséquences. Le vent reste faible, brise côtière.
 
-**Vendredi 17 juillet :** Nouvelle journée caniculaire. Le ciel est toujours d'un bleu immaculé. Les températures grimpent encore d'un cran, avec des pointes à 40°C possibles dans l'intérieur. La vigilance orange canicule se poursuit. La nuit ne sera pas plus fraîche, avec des minimales qui peinent à descendre sous les 25°C sur le littoral.
+Samedi 18 juillet : la chaleur s'accentue encore, avec un pic attendu. Toujours du soleil et un vent très léger. Les maximales dépasseront 35°C dans la plupart des secteurs, jusqu'à 37°C possibles dans la plaine orientale. Pensez à bien vous protéger.
 
-**Samedi 18 juillet :** Le pic de chaleur semble se maintenir. Soleil écrasant et températures toujours aussi élevées, entre 34 et 40°C. Aucune dégradation orageuse en vue. La chaleur reste lourde et persistante, de jour comme de nuit.
+Dimanche 19 juillet : le temps reste chaud et ensoleillé le matin, mais l'après-midi un risque d'orages isolés apparaît sur les hauteurs, notamment en Balagne, Castagniccia et dans le sud de l'île. Ces orages pourraient être localement forts. Les températures maximales restent autour de 33 à 36°C. La vigilance canicule se maintient.
 
 
 --------------------------------------------------------------------------------
@@ -779,56 +777,50 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE : 35°C ET PLUS SUR TOUT LE GRAND EST ! Ce mardi 14 juillet, le soleil règne en maître sur notre région. Après une matinée déjà douce avec 20 à 23°C au réveil, les températures grimpent en flèche l’après-midi : 35°C à Charleville-Mézières et Reims, jusqu’à 36°C à Troyes et Vitry-le-François. Le vent reste modéré, mais n’apporte aucun rafraîchissement. Aucun orage à signaler, seulement quelques voiles nuageux en matinée. La vigilance orange canicule est en vigueur sur 72 départements français, dont le nôtre. Pensez à vous hydrater et à limiter vos efforts aux heures les plus chaudes. Une journée de fête nationale sous le signe de la chaleur intense.
+☀️ **PLEIN SOLEIL ET CHALEUR ACCABLANTE SUR LE GRAND EST !**  
+Ce mercredi 15 juillet, le Grand Est bascule en plein cœur d’une canicule historique. 72 départements français sont placés en vigilance orange, et notre région n’est pas épargnée. Dès le matin, le soleil règne sans partage : de Chaumont à Troyes, le ciel est d’un bleu éclatant avec des températures déjà douces, entre 22 et 24°C. Seuls le nord, vers Reims et Charleville-Mézières, voient quelques nuages épars, mais rien qui ne gâche la journée. L’après-midi, la chaleur devient écrasante, dépassant largement les 30°C sur l’ensemble du territoire. La brise, faible, ne suffit pas à rafraîchir l’atmosphère. Pas une goutte de pluie à l’horizon : le temps reste sec et brûlant. Restez hydratés et évitez les heures les plus chaudes.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous et bienvenue sur RADIO ICI GRAND EST pour votre bulletin météo du mardi 14 juillet !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI GRAND EST pour votre bulletin météo du mercredi 15 juillet 2026 !
 
-Ce mardi matin, on se réveille sous un ciel souvent voilé, mais le soleil n'est jamais bien loin pour nous saluer. Les températures minimales sont déjà bien douces : 22°C à Charleville-Mézières et Châlons-en-Champagne, 23°C à Troyes, 20°C à Reims et 21°C à Vitry-le-François.
+Ce mercredi matin, le soleil sera le maître des lieux sur une grande partie de notre région. De Chaumont à Troyes, en passant par Vitry-le-François et Nogent-sur-Seine, le ciel sera d'un bleu éclatant, avec des températures déjà bien douces : 22°C à Chaumont, 23°C à Troyes et 24°C à Nogent-sur-Seine. Le vent soufflera modérément, autour de 15 à 20 km/h, apportant une légère brise bienvenue.
 
-Le vent sera présent, mais généralement modéré, soufflant entre 10 et 20 km/h sur la plupart des secteurs, avec une petite pointe à 40 km/h du côté de Rethel, ce qui pourrait légèrement rafraîchir l'atmosphère localement. Pas de contraste littoral/intérieur des terres aujourd'hui, puisque nous sommes en plein cœur de notre belle région.
-
-Pas d'inquiétude, pas d'orages ni de grêle à l'horizon pour cette matinée. Le temps restera sec, avec juste un petit voile nuageux par endroits qui laissera filtrer les rayons du soleil. Une matinée agréable pour ce 14 juillet, avant une après-midi qui s'annonce très chaude !
+Un peu plus au nord, du côté de Reims et Charleville-Mézières, le soleil tentera de percer à travers quelques nuages épars, mais rien de bien méchant. Les minimales y seront également très agréables, avec 21°C à Reims et 22°C à Charleville-Mézières. Le vent restera léger, autour de 15 km/h. Aucune goutte de pluie à l'horizon pour ce matin, le temps sera sec et ensoleillé pour la plupart d'entre vous !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Grand Est pour votre bulletin météo de l'après-midi !
-
-Ce mardi après-midi, le soleil sera le maître du ciel sur l'ensemble de notre belle région. Attendez-vous à une chaleur intense, avec des températures qui vont grimper très haut. On attend par exemple 35 degrés du côté de Charleville-Mézières et Reims, 36 degrés pour Troyes et Vitry-le-François, et même 35 degrés à Chaumont. Le vent sera généralement faible, soufflant d'ouest à sud-ouest entre 10 et 20 km/h, mais il pourra atteindre les 40 km/h aux abords de Rethel, ce qui ne suffira malheureusement pas à rafraîchir l'atmosphère. Pas de contraste littoral/intérieur des terres aujourd'hui, la chaleur s'installe partout !
-
-Prudence donc, pensez à bien vous hydrater et à éviter les efforts en extérieur aux heures les plus chaudes. On se retrouve ce soir pour le point sur la nuit.
+L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 34°C à Troyes, 32°C à Épernay, 34°C à Vitry-le-François, 34°C à Nogent-sur-Seine, 30°C à Charleville-Mézières. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : Le ciel reste voilé mais toujours très chaud, avec des maximales comprises entre 33 et 36°C. L’atmosphère devient orageuse en soirée, notamment sur l’ouest de la région. Vent faible.
-
-**Vendredi 17 juillet** : Temps plus lourd, avec des nuages menaçants dès le matin. Des orages localement forts éclatent dans l’après-midi, apportant une bouffée d’air plus frais. Températures en baisse : 28 à 32°C.
-
-**Samedi 18 juillet** : Retour d’un temps instable. Alternance d’éclaircies et d’averses orageuses. Les températures restent estivales, autour de 27 à 30°C. La vigilance canicule pourrait être levée, mais la prudence reste de mise face aux orages.
+**Tendance à 3 jours**  
+**Vendredi 17 juillet** : La canicule reste bien installée. Le matin, ciel dégagé et températures déjà élevées, autour de 26°C. L’après-midi, le soleil domine, mais des nuages pourraient se développer localement, avec un risque d’orages isolés en fin de journée. Les maximales atteignent 35 à 37°C.  
+**Samedi 18 juillet** : Toujours très chaud. Le ciel est voilé par moments, mais le soleil reste présent. Pas de précipitations attendues, mais la chaleur est encore plus forte, avec des pointes à 38°C possibles dans l’Aube et la Marne.  
+**Dimanche 19 juillet** : La canicule persiste. Temps sec et ensoleillé du matin au soir. Les températures restent élevées, entre 34 et 36°C en moyenne. Attention, les nuits sont également très chaudes, avec des minimales autour de 20°C.
 
 
 --------------------------------------------------------------------------------
@@ -837,50 +829,46 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ UN 14 JUILLET SURCHAUFFÉ : LE FEU D'ARTIFICE… DANS LE CIEL !** Ce mardi, la fête nationale s’annonce torride en Île-de-France, avec 72 départements placés en vigilance orange canicule par Météo-France. La matinée débute sous un soleil généreux, quelques nuages peu gênants, et des minimales déjà très douces (20 à 22°C). L’après-midi, le ciel devient très nuageux mais le soleil parvient à percer par endroits. Les températures grimpent jusqu’à 34°C à Paris, 35°C à Meaux, et 36°C du côté de Nemours. Le vent reste léger, insuffisant pour rafraîchir l’atmosphère. Aucune pluie en vue. Pensez à vous hydrater régulièrement et à protéger les plus fragiles. Un 14 juillet caniculaire qui appelle à la prudence avant les feux d’artifice du soir.
+☀️ CHALEUR EXPLOSIVE SUR LA RÉGION ! Ce mercredi 15 juillet, l'Île-de-France est cuite sous un soleil de plomb. Placée en vigilance orange canicule – comme 71 autres départements – la région subit une chaleur accablante. Le ciel est voilé de nuages d’altitude, mais cela ne freine pas la hausse du thermomètre : 33°C à Paris et Melun, 35°C à Nemours. Le vent d’ouest-sud-ouest souffle à peine 15-20 km/h, sans aucun effet rafraîchissant. Les nuits seront tropicales, avec des minimales qui peinent à descendre sous 20°C. Il est vital de boire régulièrement, de se protéger du soleil et d’éviter les activités physiques aux heures les plus chaudes. La dégradation orageuse attendue jeudi apportera un peu de répit, mais d’ici là, restez prudents et à l’écoute des consignes des autorités.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Île-de-France pour ce bulletin météo matinal du mardi 14 juillet 2026 !
-
-Ce mardi matin, l'Île-de-France se réveille sous un ciel généreux, avec un soleil bien présent mais quelques petits nuages qui se promènent ici et là. Pas de quoi gâcher le paysage, rassurez-vous ! Les températures minimales sont déjà bien douces : on relève 22°C à Paris et Melun, 21°C à Chelles et Nemours, et même 20°C à Meaux.
-
-Le vent, lui, reste très discret ce matin, soufflant en légère brise autour de 10 à 15 km/h sur l'ensemble de la région. Pas de contraste marqué entre les différentes zones, la chaleur s'installe partout.
-
-Pas de risque d'orage ni de foudre à l'horizon pour cette matinée, le ciel est calme. Nous allons donc profiter d'un début de journée ensoleillé et déjà très chaud, annonciateur d'une journée estivale qui s'annonce torride. Restez bien à l'écoute pour le bulletin de la mi-journée !
+Ce mercredi matin, le réveil se fait dans une ambiance déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 23°C à Chelles, 23°C à Coulommiers, 23°C à La Ferté-Gaucher, 22°C à Nemours, 22°C à Fontainebleau. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Île-de-France pour votre bulletin météo de l'après-midi en ce mardi 14 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Île-de-France pour ce bulletin météo de l'après-midi du mercredi 15 juillet 2026 !
 
-Ce mardi après-midi, l'Île-de-France reste sous un ciel très nuageux, avec de gros nuages blancs qui vont couvrir une grande partie de la région. Mais pas de panique, le soleil n'est jamais très loin et les éclaircies pourront se montrer par endroits. Côté températures, ça grimpe encore ! Attendez-vous à des maximales dignes d'un été bien installé, avec 34°C à Paris et Chelles, 35°C du côté de Meaux, Coulommiers et Fontainebleau, et même jusqu'à 36°C pour Nemours. Le vent, lui, sera léger, soufflant d'ouest à sud-ouest entre 10 et 15 km/h, apportant une petite brise bienvenue mais insuffisante pour rafraîchir l'atmosphère. Pas de pluie à l'horizon, donc profitez de cette chaleur estivale, mais restez bien hydratés !
+Ce mercredi après-midi, l'Île-de-France va continuer de baigner dans une atmosphère très estivale, avec un soleil généreux mais parfois voilé par quelques nuages d'altitude. Les températures vont grimper, grimpent même déjà, pour atteindre des sommets dignes d'un vrai mois de juillet. On attend par exemple 33°C à Paris et Melun, 32°C à Chelles et Coulommiers, et même un très chaud 35°C du côté de Nemours. Le vent, lui, restera plutôt discret, soufflant une légère brise d'ouest à sud-ouest, autour de 15 à 20 km/h, ce qui n'apportera malheureusement pas une grande sensation de fraîcheur. Prudence donc, pensez à bien vous hydrater et à vous protéger du soleil, car la chaleur sera bien présente sur l'ensemble de la région !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance à 3 jours :** La vague de chaleur persiste. Jeudi 16 juillet : ciel encore voilé, températures maximales stables entre 33 et 35°C. Vendredi 17 juillet : chaleur intense, avec un risque d’orages isolés en fin d’après-midi, mais le mercure reste élevé (32-34°C). Samedi 18 juillet : début d’accalmie thermique ? Possible baisse de quelques degrés (30-32°C) mais l’ambiance reste lourde et humide. La vigilance canicule devrait se maintenir. On surveille une perturbation qui pourrait apporter un peu de fraîcheur dimanche.
+**Vendredi 17 juillet** : La chaleur reste très forte, avec des températures voisines de 32-34°C. Le matin est lourd, puis l’instabilité gagne la région en fin de journée : des orages localement violents éclatent, accompagnés de fortes précipitations et de rafales de vent.  
+**Samedi 18 juillet** : Retour d’un temps sec et ensoleillé. Le mercure atteint encore 35°C, et la vigilance orange canicule est maintenue. Attention aux pics de pollution à l’ozone.  
+**Dimanche 19 juillet** : La canicule s’accentue. Le ciel est voilé mais le soleil domine. Les maximales grimpent jusqu’à 37°C localement, notamment dans le sud de la région. Nuits très chaudes, sans aucune fraîcheur. Prudence renforcée pour les personnes fragiles.
 
 
 --------------------------------------------------------------------------------
@@ -889,56 +877,60 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ CANICULE SUR L'OCCITANIE : UN 14 JUILLET DE TOUS LES RECORDS !**
-
-Ce mardi, l'Occitanie est en première ligne de la vague de chaleur qui frappe la France. 72 départements sont placés en vigilance orange canicule, et notre région n'est pas épargnée. Le ciel est d'un bleu immaculé du matin au soir, sans le moindre nuage. Dès le réveil, il fait déjà 20°C à Foix et 24°C à Nîmes. L'après-midi, la chaleur devient accablante : on attend 38°C à Toulouse, 37°C à Nîmes et jusqu'à 39°C à Saint-Affrique. Le vent reste modéré, mais la brise marine est quasi absente sur le littoral. Pas d'orages en vue, mais une vigilance absolue s'impose face à cette canicule intense.
+☀️ CANICULE : L'OCCITANIE CUIT SOUS UN SOLEIL DE PLOMB ! Ce mercredi, l'Occitanie est en première ligne d'un épisode de chaleur intense. Le ciel est d'un bleu éclatant dès le matin, avec des températures déjà estivales : 21°C à Foix, 23°C à Nîmes. L'après-midi, le mercure s'affole : on attend jusqu'à 37°C à Carcassonne et Nîmes, 36°C à Alès et 34°C à Toulouse. Quelques nuages passagers sur l'ouest ne suffiront pas à rafraîchir l'atmosphère. Le vent reste discret, avec une légère brise marine sur le littoral. Pas d'orages à l'horizon, mais une vigilance orange Canicule est en vigueur sur 72 départements français. Prudence, hydratez-vous !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, l'Occitanie se réveille sous un grand soleil éclatant, un ciel sans le moindre nuage pour ce 14 juillet ! Les températures sont déjà bien douces, voire chaudes, avec 20°C à Foix, 23°C à Carcassonne, 15°C à Rodez, 22°C à Alès et déjà 24°C à Nîmes. Sur le littoral, on ressentira une légère brise marine, tandis que dans l'intérieur des terres, un vent modéré soufflera avec des pointes à 25 km/h du côté de Carcassonne. Préparez-vous à une journée estivale, sans risque d'averses ni d'orages à l'horizon. Le soleil sera le maître mot de cette matinée, annonçant une journée très chaude.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Occitanie pour votre bulletin météo du matin en ce mercredi 15 juillet !
+
+Ce matin, l'Occitanie se réveille sous un ciel d'un bleu éclatant, un soleil généreux qui s'installe sur l'ensemble de notre belle région. Pas un nuage à l'horizon, c'est un départ de journée idéal pour tout le monde ! Les températures minimales sont déjà bien douces : on relève 21°C à Foix, 23°C à Carcassonne, 22°C à Laguiole, 18°C à Rodez et 23°C à Nîmes.
+
+Le vent, lui, se montre plutôt discret ce matin. On aura une légère brise de 10 à 15 km/h sur l'intérieur des terres, notamment du côté de Foix, Saint-Gaudens, Toulouse et Auch. En revanche, près du littoral et sur les plaines de l'Aude, le vent soufflera un peu plus fort, atteignant les 20 à 25 km/h, sans pour autant être gênant. Pas de mistral en vue, juste un petit souffle pour rafraîchir l'atmosphère.
+
+Le contraste est marqué entre le littoral et l'intérieur des terres : si les températures sont déjà élevées partout, les zones côtières bénéficieront d'un petit air marin plus perceptible. Préparez-vous à une journée estivale, le soleil sera roi !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Occitanie pour votre bulletin météo de l'après-midi !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Occitanie pour votre bulletin météo de l'après-midi en ce mercredi 15 juillet 2026 !
 
-Ce mardi après-midi, le soleil sera le maître absolu du ciel sur l'ensemble de notre belle région. Préparez-vous à une chaleur intense, car les températures vont grimper très haut. Nous attendons par exemple 38 degrés à Toulouse, 37 degrés à Nîmes, et même un impressionnant 39 degrés à Saint-Affrique !
+Ce mercredi après-midi, l'Occitanie va continuer de baigner sous un soleil généreux, mais attention, quelques nuages viendront parfois jouer les trouble-fêtes, notamment sur l'ouest de la région. Les températures restent très estivales, avec un mercure qui grimpera jusqu'à 37 degrés à Carcassonne et Nîmes, 36 degrés à Saint-Affrique et Alès, et 34 degrés à Toulouse.
 
-Le vent, quant à lui, restera plutôt modéré sur la plupart des secteurs, soufflant autour de 10 à 20 km/h. Seule la zone de Carcassonne connaîtra un vent un peu plus soutenu, atteignant les 25 km/h. Pas de mistral aujourd'hui, ni de brise côtière marquée pour rafraîchir nos littoraux, ce qui accentue le contraste avec l'intérieur des terres où la chaleur sera presque insoutenable.
+Le vent sera présent, mais sans excès. On attend des brises légères, autour de 10 à 15 km/h, sur l'intérieur des terres, notamment du côté de Foix et Toulouse. En revanche, le vent se fera un peu plus sentir sur l'est de la région, avec des rafales pouvant atteindre 25 km/h, notamment du côté de Carcassonne et Laguiole. Pas de mistral à signaler, ni de tramontane forte, ce qui est une bonne nouvelle pour les vacanciers !
 
-Aucune menace d'orages, de fortes pluies ou de grêle à l'horizon, le ciel sera d'un bleu immaculé. Pensez à bien vous hydrater et à vous protéger du soleil si vous devez vous exposer. Très bel après-midi à vous !
+Le contraste de températures entre le littoral et l'intérieur des terres sera bien marqué. Si les côtes bénéficieront de la brise marine pour adoucir un peu l'atmosphère, l'intérieur des terres, lui, connaîtra des chaleurs plus intenses.
+
+Pas d'orages à l'horizon pour cet après-midi, le ciel restera calme et sans risque de foudre ou de grêle. Profitez bien de cette belle journée d'été !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance à 3 jours (jeudi 16, vendredi 17, samedi 18 juillet) :**
+**Vendredi 17 juillet :** La chaleur reste très lourde avec des maximales encore proches de 35°C. Le ciel se voile progressement par l'ouest en fin de journée, annonçant un changement pour le week-end. Vent faible.
 
-*Jeudi 16 juillet* : La chaleur reste très forte, mais l'atmosphère devient plus instable. Le matin, le soleil domine encore. L'après-midi, des orages éclatent sur les reliefs, notamment sur les Pyrénées et le Massif central. Ils pourraient être localement forts, avec de la grêle et des rafales de vent. Les températures maximales restent élevées, entre 34 et 38°C.
+**Samedi 18 juillet :** Dégradation orageuse attendue sur l'ensemble de la région en cours d'après-midi. Les températures baissent légèrement mais restent chaudes, autour de 30 à 32°C avant les orages. Attention aux phénomènes violents possibles (grêle, rafales).
 
-*Vendredi 17 juillet* : L'instabilité gagne du terrain. Le ciel est partagé entre de belles éclaircies et des nuages menaçants. Des orages éclatent sur une grande partie de la région, surtout l'après-midi et en soirée. Ils peuvent être violents, avec de la grêle et des pluies intenses. La chaleur reste lourde, avec des maximales autour de 30 à 35°C.
-
-*Samedi 18 juillet* : Le temps reste perturbé. Les averses orageuses sont encore fréquentes, surtout sur les reliefs et l'est de la région. Le vent d'autan se lève sur Toulouse. Les températures baissent légèrement, mais restent estivales, entre 28 et 33°C. L'air devient plus respirable, mais l'instabilité persiste.
+**Dimanche 19 juillet :** Retour d'un temps plus calme mais instable. Alternance d'éclaircies et d'averses résiduelles sur les reliefs. La fraîcheur relative s'installe avec des maximales qui peinent à dépasser les 28°C sur les plaines. Vent d'autan sensible.
 
 
 --------------------------------------------------------------------------------
@@ -947,53 +939,51 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**
-🔥 **CHALEUR CANICULAIRE : UN 14 JUILLET HISTORIQUE SUR LES PAYS DE LA LOIRE !** Ce mardi, on se réveille sous un soleil radieux, avec des températures déjà élevées : 23°C à Nantes, 22°C à Angers. L'après-midi, le thermomètre s'emballe, atteignant jusqu'à 36°C à Châteaubriant. Heureusement, un contraste avec le littoral où il fait 31°C à Saint-Nazaire. Un voile nuageux temporaire peut assombrir le ciel par endroits, mais sans menace. Attention, la vigilance orange canicule concerne désormais 72 départements français, dont notre région. C'est une journée de fête nationale, mais on vous conseille de bien vous hydrater et de chercher la fraîcheur, car la chaleur reste intense et durable.
+🚨 ORAGES ET CHALEUR : UN MERCREDI À DOUBLE FACE EN PAYS DE LA LOIRE ! Ce mercredi, la région vit un contraste saisissant entre un littoral relativement épargné et un intérieur des terres agité. La vigilance orange canicule reste en vigueur sur 72 départements, et chez nous, les températures grimpent jusqu'à 35°C à Nantes. Mais attention : alors que le soleil brille sur la côte vendéenne, les orages éclatent dès le matin autour de Nantes, Blain ou Cholet, avec des risques de grêle et de fortes pluies l'après-midi sur Angers, Saumur, Ernée et Javron-les-Chapelles. Le vent d'ouest souffle jusqu'à 30 km/h, apportant une brise rafraîchissante sur le littoral, mais insuffisante pour faire baisser la lourdeur. Prudence en extérieur, les orages peuvent être violents localement. Restez connectés pour les prochaines infos.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, on se réveille sous un grand soleil radieux sur l'ensemble de notre belle région des Pays de la Loire ! Le ciel est dégagé, sans le moindre nuage pour gâcher cette journée de fête nationale. Les températures minimales sont déjà bien élevées : 23°C à Nantes, 22°C à Angers et Saumur, 21°C à Ernée et Javron-les-Chapelles, et même 20°C à Cholet.
+Ce mercredi matin, le ciel des Pays de la Loire nous réserve une ambiance contrastée. Sur l'intérieur des terres, du côté d'Ernée avec 20°C, ou encore à Javron-les-Chapelles et Châteaubriant où le thermomètre affiche 21°C, le soleil joue à cache-cache avec les nuages. On a un temps plutôt nuageux mais sans précipitation.
 
-Le vent souffle modérément, avec une brise de 15 km/h sur Nantes et Saint-Nazaire, 20 km/h à Blain, et même 25 km/h du côté d'Ernée. Attention, la chaleur va monter très vite ! On observe déjà un contraste marqué entre le littoral, avec 22°C à Saint-Nazaire, et l'intérieur des terres, où il fait déjà 23°C à Nantes. Préparez-vous à une journée très estivale !
+En revanche, l'ouest de la région et le littoral sont sous le coup d'un risque orageux ! Prudence si vous êtes du côté de Blain, Nantes (24°C), Saint-Nazaire (23°C) ou Cholet (21°C), car des éclairs pourraient zébrer le ciel en cette matinée. Le vent sera bien présent, soufflant modérément avec des pointes à 25 km/h sur Nantes et Blain, et même jusqu'à 30 km/h sur Saint-Nazaire. Cette brise marine, bien que rafraîchissante, ne suffira pas à faire baisser les températures qui restent élevées, même en bord de mer.
+
+La prudence est donc de mise si vous vous déplacez dans ces zones. Restez à l'écoute pour les prochaines mises à jour !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Pays de la Loire pour votre bulletin météo de l'après-midi !
+Ce mercredi après-midi, la région des Pays de la Loire va connaître une ambiance contrastée ! Le soleil jouera à cache-cache avec des averses et des orages, surtout à l'intérieur des terres. Prudence donc !
 
-Ce mardi après-midi, le soleil sera généreux sur l'ensemble de notre belle région, mais par endroits, il jouera à cache-cache avec quelques nuages. Le temps sera donc globalement ensoleillé, mais avec un léger voile nuageux qui pourra parfois masquer un peu l'astre solaire.
+Sur le littoral, notamment du côté de Saint-Nazaire, attendez-vous à quelques averses avec 32°C. Le vent sera sensible, une brise côtière soufflant jusqu'à 30 km/h, apportant un peu de fraîcheur relative. Plus au sud, vers les Sables-d'Olonne, le soleil sera généreux et les températures grimperont jusqu'à 34°C.
 
-Côté températures, ça va chauffer ! Attendez-vous à des valeurs estivales, voire caniculaires par endroits. On prévoit par exemple 35°C à Nantes et Angers, 34°C à Cholet, et même jusqu'à 36°C du côté de Châteaubriant ! Le contraste est marqué avec le littoral, où la brise marine apportera un peu de fraîcheur : comptez 31°C à Saint-Nazaire, avec un vent d'ouest modéré soufflant autour de 15 km/h. Dans les terres, le vent sera plus faible, entre 10 et 20 km/h, mais il pourra atteindre les 25 km/h du côté d'Ernée. Pas d'alerte orageuse à l'horizon pour cet après-midi, c'est une bonne nouvelle !
+En revanche, dans les terres, l'atmosphère sera plus instable. À Nantes, le soleil dominera avec un beau 35°C, mais restez vigilants, le vent d'ouest soufflera à 25 km/h. À Blain, Châteaubriant, Angers, Saumur, Ernée et Javron-les-Chapelles, les orages seront au rendez-vous, avec des risques de foudre, de fortes pluies et même de grêle. Les températures y atteindront les 33 à 35°C, rendant l'air lourd. Soyez prudents si vous êtes en extérieur !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (jeudi 16 juillet au samedi 18 juillet)
-
-- jeudi 16 juillet : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 21°C, maximales atteignant 36°C en journée.
-- vendredi 17 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 18°C, maximales atteignant 27°C en journée.
-- samedi 18 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 16°C, maximales atteignant 29°C en journée.
+**Tendance à 3 jours (vendredi 17, samedi 18, dimanche 19 juillet 2026) :**  
+La canicule ne faiblit pas, le dôme de chaleur reste bien installé sur la région. Pour **vendredi**, le ciel oscillera entre nuages et éclaircies, avec des averses orageuses surtout l'après-midi sur l'intérieur (Angers, Le Mans, Laval). Les températures resteront élevées, de 33°C à 36°C. **Samedi**, la chaleur sera encore plus intense, avec des pointes à 37°C possibles dans les terres. Les orages seront moins nombreux mais resteront localisés, notamment en soirée. **Dimanche**, une dégradation orageuse plus marquée pourrait balayer la région en fin de journée, apportant une fraîcheur relative mais de fortes précipitations. Les maximales baisseront légèrement, autour de 30°C à 34°C. Le risque de grêle et de rafales reste présent à chaque épisode orageux. À surveiller de près.
 
 
 --------------------------------------------------------------------------------
@@ -1002,58 +992,54 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ 14 JUILLET EN FLAMMES : SOLEIL ET CHALEUR ÉTINCELANTE SUR TOUTE LA RÉGION !**
-
-Ce mardi, la Provence-Alpes-Côte d'Azur célèbre la fête nationale sous un soleil radieux et une chaleur estivale. Le ciel est d'un bleu immaculé du littoral aux sommets. Les températures grimpent fortement : 30°C à Nice et Cannes grâce à une brise marine légère, mais 35°C à Digne-les-Bains et Forcalquier, et jusqu'à 36°C à Puget-Théniers. Le vent reste modéré dans l'intérieur, sans mistral. La vigilance orange canicule concerne 72 départements en France, et notre région est en plein dedans. Profitez de cette fête nationale, mais hydratez-vous et protégez-vous du soleil.
+🚨 **ALERTE CANICULE : 72 DÉPARTEMENTS EN ORANGE, LA RÉGION S’EMBRASE !** Ce mercredi, le soleil est écrasant sur la Provence-Alpes-Côte d’Azur. La vigilance orange canicule est déclenchée sur une grande partie du pays, et notre région n’est pas épargnée. La matinée est radieuse, avec des températures déjà élevées : 26°C à Cannes, 25°C à Nice. L’après-midi, le mercure flambe dans les terres : on attend jusqu’à 37°C à Puget-Théniers et 36°C à Digne-les-Bains. Seul le littoral respire un peu grâce à la brise marine, avec 29 à 30°C. Attention toutefois aux Alpes : des orages de grêle éclatent localement sur Briançon et Vallouise. Un contraste marqué entre la fournaise des plaines et les caprices des sommets.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo du matin en ce joyeux mardi 14 juillet !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo du mercredi 15 juillet !
 
-Ce mardi matin, la Provence-Alpes-Côte d'Azur se réveille sous un ciel d'un bleu éclatant ! Le soleil est le maître des lieux sur l'ensemble de notre belle région. Les températures sont déjà douces, voire chaudes, avec 15°C à Barcelonnette et Briançon, 18°C à Digne-les-Bains et Forcalquier, et déjà 25°C à Cannes.
+Ce mercredi matin, le soleil est roi sur l'ensemble de notre belle région ! Attendez-vous à un ciel d'un bleu éclatant dès le lever du jour, avec des températures déjà bien douces. Dans les terres, les minimales sont agréables, avec par exemple 17°C à Barcelonnette, 21°C à Digne-les-Bains et Forcalquier. Plus au sud, sur le littoral, il fait déjà plus chaud avec 26°C à Cannes et 25°C à Nice.
 
-Le vent se montre discret sur le littoral, avec une légère brise marine de 10 à 15 km/h à Nice et Cannes, très agréable. En revanche, dans l'intérieur des terres, il est un peu plus présent, soufflant modérément autour de 20 à 25 km/h, notamment du côté de Gap. Pas de mistral en vue, juste un petit souffle pour rafraîchir l'atmosphère.
+Côté vent, une légère brise souffle timidement, ne dépassant pas les 20 km/h, ce qui rendra l'atmosphère très agréable. Seules quelques discrètes averses pourraient se manifester très localement sur les reliefs, mais rien de bien méchant, juste de quoi rafraîchir un peu l'air.
 
-Attendez-vous à une journée estivale par excellence, avec des maximales qui vont grimper, surtout loin des côtes. Profitez bien de ce soleil généreux pour ce jour de fête nationale !
+En résumé, une matinée estivale typique nous attend, parfaite pour profiter des premiers rayons du soleil !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR ! Quel bonheur de vous retrouver pour ce bulletin météo de l'après-midi du mardi 14 juillet 2026.
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo de l'après-midi en ce mercredi 15 juillet 2026 !
 
-Ce mardi après-midi, le soleil sera le maître absolu de notre belle région ! Attendez-vous à un ciel d'un bleu immaculé, sans le moindre nuage pour venir gâcher la fête. Les températures vont continuer de grimper, avec un contraste marqué entre le littoral et l'intérieur des terres.
+Ce mercredi après-midi, le soleil sera généreux sur l'ensemble de la région, mais attention, quelques surprises nous attendent ! Dans les Alpes, notamment du côté de Briançon et Vallouise, on surveille de près des averses orageuses qui pourraient être accompagnées de grêle. Prudence donc si vous êtes dans ces secteurs, car des risques de foudre et de fortes pluies sous ces cellules sont à prévoir !
 
-Sur nos côtes, la brise marine se fera sentir, légère mais agréable, autour de 10 à 15 km/h, offrant un répit bienvenu. À Cannes et Nice, nous aurons des maximales de 30°C. Mais dès que l'on s'éloigne du bord de mer, ça chauffe ! Dans l'arrière-pays, le vent restera modéré, autour de 15 à 25 km/h, sans mistral aujourd'hui. Les maximales atteindront 35°C à Digne-les-Bains et Forcalquier, et même 36°C à Puget-Théniers. Plus haut en altitude, à Gap, on attend 34°C, et 31°C à Barcelonnette.
-
-Profitez bien de ce magnifique après-midi ensoleillé, mais n'oubliez pas de vous hydrater et de vous protéger du soleil. Très bel après-midi à tous !
+Ailleurs, le ciel sera plus clément. Du côté des températures, le contraste est marqué entre le littoral et l'intérieur des terres. Sur la Côte d'Azur, à Nice et Cannes, on respire un peu avec des maximales autour de 29 à 30 degrés, grâce à une légère brise marine. Mais dès que l'on s'éloigne des côtes, la chaleur monte d'un cran ! On attend jusqu'à 36 degrés à Digne-les-Bains, 35 à Forcalquier et même 37 degrés à Puget-Théniers. Le vent restera modéré, autour de 20 à 30 km/h, sans mistral significatif. Profitez bien de cette belle après-midi, mais restez vigilants là où les orages menacent !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mercredi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce mercredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mercredi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
 
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 14 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 15 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Jeudi 16 juillet** : Le soleil reste généreux sur l'ensemble de la région. Les températures sont encore très élevées, avec des maximales comprises entre 30°C sur le littoral et 36°C dans l'arrière-pays. La brise marine sera votre meilleure alliée sur la côte. Ciel voilé en altitude en fin de journée.
+**Vendredi 17 juillet** : Le soleil reste dominant mais la chaleur s’atténue légèrement sur le littoral. Dans l’intérieur, les températures restent élevées, autour de 33 à 35°C. L’après-midi, des nuages menaçants pourraient donner quelques averses orageuses sur les reliefs des Alpes-de-Haute-Provence et des Hautes-Alpes. Vent faible.
 
-**Vendredi 17 juillet** : La chaleur s'accentue encore. Le ciel est toujours dégagé le matin, mais des nuages d'altitude pourraient faire leur apparition l'après-midi. Les maximales atteignent 37°C dans l'intérieur des terres. Le mistral reste absent, mais un vent de sud-ouest modéré se lève en fin de journée.
+**Samedi 18 juillet** : Ciel voilé le matin, puis nette dégradation en cours de journée. Un risque d’orages généralisés, parfois forts, concerne toute la région, des Alpes jusqu’au littoral. Les températures baissent un peu, avec 28 à 32°C en plaine. Attention aux rafales de vent sous les orages.
 
-**Samedi 18 juillet** : Le temps reste estival et très chaud. Le soleil domine largement, avec un risque d'orages isolés sur les reliefs en fin d'après-midi. Les températures restent élevées, entre 29°C sur la côte et 35°C dans l'arrière-pays. La vigilance canicule se poursuit.
+**Dimanche 19 juillet** : Temps plus calme et plus respirable. Le soleil reprend ses droits, mais la fraîcheur matinale sera plus marquée. Les maximales redescendent autour de 26 à 30°C sur la Côte d’Azur, et 30 à 33°C dans les terres. Une belle journée pour profiter sans suffoquer.
 
