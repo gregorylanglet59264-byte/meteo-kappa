@@ -106,24 +106,74 @@ def send_email(body_text, subject, recipients_str, cartes_dir):
     
     boundary = uuid.uuid4().hex
     
-    # Attacher les cartes de vigilance si elles existent
+    # Attacher les cartes de vigilance si elles existent (avec superposition du logo pour le mail uniquement)
     vigilance_attachments = []
     vig_files = [
         ("carte_vigilance_france_pictos.jpg", "vigilance_france.jpg"),
         ("carte_vigilance_hdf.jpg", "vigilance_hauts_de_france.jpg")
     ]
     
+    # Rechercher le logo Météo Climat Pro
+    scripts_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root = os.path.abspath(os.path.join(scripts_dir, "..", ".."))
+    logo_path = None
+    logo_names = ["logo meteo climat pro 3.png", "logo.png"]
+    for name in logo_names:
+        p_script = os.path.join(scripts_dir, "..", "A_CONSERVER_ABSOLUMENT", name)
+        p1 = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT", name)
+        p2 = os.path.join(cartes_dir, name)
+        p3 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes", name)
+        p4 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT", name)
+        p5 = os.path.join(repo_root, "meteo_cnews_2", name)
+        for p_check in [p_script, p1, p2, p3, p4, p5]:
+            if os.path.exists(p_check):
+                logo_path = p_check
+                break
+        if logo_path:
+            break
+    
     for filename, attachment_name in vig_files:
         path = os.path.join(cartes_dir, filename)
         if os.path.exists(path):
             try:
-                with open(path, "rb") as f:
-                    img_data = f.read()
+                from PIL import Image
+                import io
+                
+                # Charger la carte de vigilance
+                img = Image.open(path)
+                
+                # Si le logo est disponible, le superposer
+                if logo_path and os.path.exists(logo_path):
+                    print(f"  -> Superposition du logo sur la pièce jointe {filename} : {logo_path}")
+                    logo_img = Image.open(logo_path).convert("RGBA")
+                    v_width, v_height = img.size
+                    if v_width < v_height: # portrait
+                        target_w = 240
+                    else: # landscape
+                        target_w = 280
+                    aspect = logo_img.height / logo_img.width
+                    target_h = int(target_w * aspect)
+                    logo_resized = logo_img.resize((target_w, target_h), Image.Resampling.LANCZOS)
+                    
+                    if v_width < v_height:
+                        logo_x = v_width - target_w - 40
+                        logo_y = 40
+                    else:
+                        logo_x = v_width - target_w - 50
+                        logo_y = 45
+                    img = img.convert("RGBA")
+                    img.paste(logo_resized, (logo_x, logo_y), logo_resized)
+                
+                # Convertir en JPEG dans un buffer
+                buf = io.BytesIO()
+                img.convert("RGB").save(buf, format="JPEG", quality=95)
+                img_data = buf.getvalue()
+                
                 img_b64 = base64.b64encode(img_data).decode("ascii")
                 vigilance_attachments.append((attachment_name, img_b64))
                 print(f"  -> Ajout de la vigilance en pièce jointe : {filename}")
             except Exception as e:
-                print(f"  -> Impossible de lire la vigilance {filename} : {e}")
+                print(f"  -> Impossible de traiter la vigilance {filename} : {e}")
         else:
             print(f"  -> Vigilance {filename} introuvable à {path}")
 
@@ -325,6 +375,7 @@ def main():
                 "- N'utilise pas de formatage markdown (pas de **).\n"
                 "- Reste factuel, précis et professionnel.\n"
                 "- Chaque résumé doit faire strictement un maximum de 4 lignes de texte.\n"
+                "- Commencer obligatoirement chaque résumé par une formule d'accroche temporelle comme 'Pour la journée de [Jour]', 'Le temps de ce [Jour]', ou 'La journée de [Jour]' (par exemple : 'Pour la journée de mardi...', 'Le temps de ce mardi...', 'La journée de mardi...').\n"
                 "- Retourne uniquement un JSON brut avec la structure suivante (sans bloc de code ```json) :\n"
                 "{\n"
                 "  \"france\": \"Résumé pour la France (maximum 4 lignes, 60-80 mots)\",\n"
@@ -393,8 +444,9 @@ def main():
         recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
         print("[MODE TEST ACTIVE] Envoi restreint à Grégory uniquement.")
     else:
-        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
-        print("[MODE PRODUCTION] Envoi à Grégory et Patrick.")
+        # ponytail: temporairement restreint à Grégory pour la phase de test
+        recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
+        print("[MODE PRODUCTION - TEMPORAIREMENT TEST] Envoi restreint à Grégory uniquement.")
         
     send_email(email_body, subject, recipients, cartes_dir)
 
