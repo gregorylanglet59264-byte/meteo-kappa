@@ -165,20 +165,23 @@ def create_transition_frames(day_str, sub_str, width, height, logo_path, output_
                 period_x = (t_width - period_w) // 2
                 draw.text((period_x, 809 - (period_h // 2)), sub_str, fill=(255, 215, 0, 255), font=font_period)
                 
+            # Prére-dimensionnement des calques à la taille finale cible (LANCZOS unique hors de la boucle)
+            bg_img_resized = bg_img.resize((width, height), Image.Resampling.LANCZOS)
+            text_layer_resized = text_layer.resize((width, height), Image.Resampling.LANCZOS)
+            
             # Generate 72 frames (zoom factor 1.0 to 1.04, 4% zoom is very clean)
             for f in range(72):
                 scale_factor = 1.0 + 0.04 * (f / 71)
                 
-                new_w = int(t_width * scale_factor)
-                new_h = int(t_height * scale_factor)
-                scaled_text = text_layer.resize((new_w, new_h), Image.Resampling.LANCZOS)
+                new_w = int(width * scale_factor)
+                new_h = int(height * scale_factor)
+                scaled_text = text_layer_resized.resize((new_w, new_h), Image.Resampling.BILINEAR)
                 
-                left = (new_w - t_width) // 2
-                top = (new_h - t_height) // 2
-                cropped_text = scaled_text.crop((left, top, left + t_width, top + t_height))
+                left = (new_w - width) // 2
+                top = (new_h - height) // 2
+                cropped_text = scaled_text.crop((left, top, left + width, top + height))
                 
-                frame_img = Image.alpha_composite(bg_img, cropped_text)
-                frame_img = frame_img.resize((width, height), Image.Resampling.LANCZOS)
+                frame_img = Image.alpha_composite(bg_img_resized, cropped_text)
                 
                 frame_path = os.path.join(output_dir, f"{prefix}_frame_{f:03d}.jpg")
                 frame_img.convert("RGB").save(frame_path, "JPEG", quality=95)
