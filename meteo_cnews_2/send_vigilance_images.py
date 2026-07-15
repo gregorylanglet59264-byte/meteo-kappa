@@ -163,22 +163,21 @@ def main():
             print(f"Erreur lors de l'attachement de {filename} : {e}")
 
     # Envoi de l'e-mail
-    print("📧 Connexion au serveur SMTP et envoi de l'e-mail...")
+    print("📧 Connexion au serveur SMTP et envoi de l'e-mail...", flush=True)
     try:
-        # Si c'est Gmail, on utilise smtp.gmail.com, sinon SFR
-        server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"])
+        server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"], timeout=30)
         server.starttls()
         server.login(smtp_cfg["email"], smtp_cfg["password"])
         server.sendmail(smtp_cfg["email"], RECIPIENTS, msg.as_string())
         server.quit()
-        print("✅ E-mail envoyé avec succès à Patrick et Grégoire !")
+        print("✅ E-mail envoyé avec succès à Patrick et Grégoire !", flush=True)
     except Exception as e:
-        print(f"❌ Échec de l'envoi de l'e-mail : {e}")
+        print(f"❌ Échec de l'envoi de l'e-mail : {e}", flush=True)
     finally:
         # Nettoyage du dossier temporaire
         try:
             shutil.rmtree(temp_dir)
-            print("Dossier temporaire nettoyé.")
+            print("Dossier temporaire nettoyé.", flush=True)
         except Exception:
             pass
 
