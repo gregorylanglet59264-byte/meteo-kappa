@@ -165,12 +165,16 @@ def main():
     # Envoi de l'e-mail
     print("📧 Connexion au serveur SMTP et envoi de l'e-mail...", flush=True)
     try:
-        server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"], timeout=30)
-        server.starttls()
+        if smtp_cfg["smtp_port"] == 465:
+            server = smtplib.SMTP_SSL(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"], timeout=30)
+        else:
+            server = smtplib.SMTP(smtp_cfg["smtp_server"], smtp_cfg["smtp_port"], timeout=30)
+            server.starttls()
+            
         server.login(smtp_cfg["email"], smtp_cfg["password"])
         server.sendmail(smtp_cfg["email"], RECIPIENTS, msg.as_string())
         server.quit()
-        print("✅ E-mail envoyé avec succès à Patrick et Grégoire !", flush=True)
+        print("✅ E-mail envoyé avec succès !", flush=True)
     except Exception as e:
         print(f"❌ Échec de l'envoi de l'e-mail : {e}", flush=True)
     finally:
