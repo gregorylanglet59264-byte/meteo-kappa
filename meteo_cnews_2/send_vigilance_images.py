@@ -27,8 +27,8 @@ sys.path.insert(0, PROJECT_DIR)
 
 from generate_video_bulletin import capture_and_compose_vigilance
 
-# Liste des destinataires
-RECIPIENTS = ["gregory.langlet@sfr.fr", "patrick.marliere@wanadoo.fr"]
+# Liste des destinataires (restreint à Grégoire pour le moment)
+RECIPIENTS = ["gregory.langlet@sfr.fr"]
 
 # Zones à générer
 ZONES = {
