@@ -251,7 +251,7 @@ ZONE_LABELS = {
 }
 
 
-def capture_and_compose_vigilance(zone, orientation, output_path):
+def capture_and_compose_vigilance(zone, orientation, output_path, period=1):
     zone_to_region = {
         "france_pictos": None,
         "hdf": "HDF",
@@ -269,7 +269,7 @@ def capture_and_compose_vigilance(zone, orientation, output_path):
         "paca": "PAC"
     }
     region_id = zone_to_region.get(zone)
-    url = f"https://minisite-douai.vercel.app/vigilance?period=1"
+    url = f"https://minisite-douai.vercel.app/vigilance?period={period}"
     if region_id:
         url += f"&region={region_id}"
         
