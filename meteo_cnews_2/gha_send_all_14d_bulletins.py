@@ -153,15 +153,14 @@ def main():
         if os.path.exists(zip_path):
             os.remove(zip_path)
             
+        # Trouver toutes les vidéos mp4 dans le dossier cartes_dir
+        video_files = [f for f in os.listdir(cartes_dir) if f.endswith(".mp4") and f.startswith("bulletin_")]
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
-            for v_file in video_files_to_zip:
+            for v_file in video_files:
                 v_path = os.path.join(cartes_dir, v_file)
-                if os.path.exists(v_path):
-                    zipf.write(v_path, arcname=v_file)
-                    print(f"  -> Ajouté au ZIP : {v_file}")
-                else:
-                    print(f"  -> ⚠️ Fichier manquant : {v_file}")
-        print("Archive ZIP créée avec succès.")
+                zipf.write(v_path, arcname=v_file)
+                print(f"  -> Ajouté au ZIP : {v_file}")
+        print(f"Archive ZIP créée avec succès contenant {len(video_files)} vidéos.")
     except Exception as e:
         print(f"Erreur lors de la compression ZIP : {e}")
         sys.exit(1)
