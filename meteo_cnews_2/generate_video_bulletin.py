@@ -1169,7 +1169,7 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
     # 1. Recadrer et forcer le framerate et la base de temps du jingle, avec fondu d'entrée + nom région
     region_label = "BULLETIN NATIONAL" if zone == "france_pictos" else ZONE_LABELS.get(zone)
     if region_label:
-        region_label_escaped = region_label.replace("'", "\\'")
+        region_label_escaped = region_label.replace("'", "'\\''")
         # Calibrage dynamique de la taille de police pour éviter le dépassement de l'écran
         if width > height:
             # Landscape
