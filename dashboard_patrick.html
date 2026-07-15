@@ -262,6 +262,25 @@
         </button>
       </div>
 
+      <!-- ENVOI VIGILANCE CARTES (E-MAIL) -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🛡️ Vigilance Cartes (Mail)</div>
+          <div class="wf-desc">Génère et envoie la carte nationale et les 13 cartes régionales de vigilance par mail en pièces jointes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~3 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail final automatique</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__vigilance_email">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'vigilance_email.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
       <!-- VEILLE INTEMPERIES & CYCLONES -->
       <div class="wf-card">
         <div class="wf-info">
@@ -370,6 +389,7 @@
       { repo: 'meteo-kappa',          file: 'meteo_kappa_analyse.yml', id: 'meteo-kappa__meteo_kappa_analyse' },
       { repo: 'meteo-kappa',          file: 'meteo_kappa_envoi.yml',   id: 'meteo-kappa__meteo_kappa_envoi' },
       { repo: 'meteo-kappa',          file: 'meteo_cnews_patrick.yml', id: 'meteo-kappa__meteo_cnews_patrick' },
+      { repo: 'meteo-kappa',          file: 'vigilance_email.yml',     id: 'meteo-kappa__vigilance_email' },
       { repo: 'veille-automation',    file: 'vigilance_quotidienne.yml',id: 'veille-automation__vigilance_quotidienne' },
       { repo: 'veille-automation',    file: 'veille_intemperies.yml',  id: 'veille-automation__veille_intemperies' },
       { repo: 'veille-automation',    file: 'meteo_france_bulletins.yml',id: 'veille-automation__meteo_france_bulletins' },
