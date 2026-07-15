@@ -6,11 +6,10 @@ on:
   #   - cron: '45 15 * * *'
   workflow_dispatch:
     inputs:
-      test_mode:
-        description: "Mode test"
-        required: true
-        type: boolean
-        default: true
+      triggered_by:
+        description: "Qui déclenche ? (gregory = Gregory seulement, patrick = Patrick + Gregory en copie)"
+        required: false
+        default: "gregory"
 
 permissions:
   contents: write
@@ -40,7 +39,7 @@ jobs:
 
       - name: Enregistrer le mode de test
         run: |
-          echo "${{ github.event.inputs.test_mode || 'false' }}" > cnews/test_mode.txt
+          echo "${{ github.event.inputs.triggered_by == 'patrick' && 'false' || 'true' }}" > cnews/test_mode.txt
 
       - name: Lancer la génération des cartes et de la structure du programme
         env:

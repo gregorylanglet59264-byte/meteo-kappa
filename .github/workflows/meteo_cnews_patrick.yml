@@ -3,11 +3,10 @@ name: Météo CNews Patrick Automatique
 on:
   workflow_dispatch:
     inputs:
-      test_mode:
-        description: "Mode test (envoyer uniquement à Grégory, pas à Patrick)"
-        required: true
-        type: boolean
-        default: true
+      triggered_by:
+        description: "Qui déclenche ? (gregory = Gregory seulement, patrick = Patrick + Gregory en copie)"
+        required: false
+        default: "gregory"
 
 permissions:
   contents: write
@@ -46,7 +45,7 @@ jobs:
           CHROME_PATH: "/usr/bin/google-chrome"
           GMAIL_EMAIL: "langlet.gregory@gmail.com"
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          TEST_MODE: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.test_mode == 'true') && 'true' || 'false' }}
+          TEST_MODE: ${{ github.event.inputs.triggered_by == 'patrick' && 'false' || 'true' }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
           python cnews/scripts/send_cnews_email.py
