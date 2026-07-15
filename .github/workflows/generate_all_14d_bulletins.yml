@@ -15,6 +15,11 @@ permissions:
 jobs:
   generate-bulletins:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    name: Génération Groupe ${{ matrix.group }}
 
     steps:
       - name: Récupérer le code du dépôt
@@ -35,34 +40,61 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          # S'assurer que les bibliothèques requises par le sous-dossier sont là
           if [ -f meteo_cnews_2/requirements.txt ]; then pip install -r meteo_cnews_2/requirements.txt; fi
 
       - name: Installer Playwright Chromium (pour les captures de cartes)
         run: |
           playwright install chromium
 
-      - name: Lancer la génération des 32 bulletins
+      - name: Lancer la génération du groupe
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          cd meteo_cnews_2
+          python gha_send_all_14d_bulletins.py --group ${{ matrix.group }}
+
+      - name: Uploader les vidéos générées en tant qu'artéfact
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos-group-${{ matrix.group }}
+          path: meteo_cnews_2/cartes_alertes/*.mp4
+          retention-days: 1
+
+  collate-and-send:
+    needs: generate-bulletins
+    runs-on: ubuntu-latest
+    name: Compilation et Envoi du Pack
+
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Télécharger toutes les vidéos générées par les jobs parallèles
+        uses: actions/download-artifact@v4
+        with:
+          path: meteo_cnews_2/cartes_alertes
+          pattern: videos-group-*
+          merge-multiple: true
+
+      - name: Lancer la compilation ZIP et l'envoi de l'e-mail
         env:
           PYTHONUNBUFFERED: "1"
           GMAIL_EMAIL: "langlet.gregory@gmail.com"
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TEST_MODE: ${{ (github.event_name == 'workflow_dispatch' && github.event.inputs.test_mode == 'true') && 'true' || 'false' }}
-        run: |
-          cd meteo_cnews_2
-          python gha_send_all_14d_bulletins.py
-
-      - name: Publier le ZIP sur GitHub Releases (lien stable)
-        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ZIP_PATH="cartes_alertes/bulletins_complets_14j.zip"
-          TAG="bulletins-14j-latest"
-          # Supprimer le release existant s'il existe
-          gh release delete "$TAG" --yes 2>/dev/null || true
-          # Créer un nouveau release avec le ZIP
-          gh release create "$TAG" "$ZIP_PATH" \
-            --title "Pack 32 Bulletins Vidéo - 14 Jours" \
-            --notes "Dernière mise à jour automatique du $(date '+%d/%m/%Y à %Hh%M'). Contient 32 vidéos : 28 régionales standards à 14 jours, et 4 bulletins de Patrick à 5 jours." \
-            --latest
-          echo "ZIP de bulletins publié sur GitHub Releases avec succès."
+          cd meteo_cnews_2
+          ls -l cartes_alertes/ || echo "Dossier vide"
+          python gha_send_all_14d_bulletins.py --collate
