@@ -1181,8 +1181,15 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
             font_size = min(100, int(max_width / (len(region_label) * 0.6)))
             text_y = 80
             
+        font_path = get_font_path(prefer_bold=True)
+        if font_path:
+            font_path_escaped = font_path.replace("\\", "/").replace(":", "\\:")
+            font_param = f"fontfile='{font_path_escaped}'"
+        else:
+            font_param = "font='Arial'"
+
         drawtext = (
-            f"drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':"
+            f"drawtext={font_param}:"
             f"text='{region_label}':"
             f"fontsize={font_size}:"
             f"fontcolor=white:"
