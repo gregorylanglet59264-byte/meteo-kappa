@@ -1,7 +1,12 @@
 name: Envoi Cartes de Vigilance - Email Automatique
 
 on:
-  workflow_dispatch: # Lancement manuel uniquement depuis le dashboard ou GitHub
+  workflow_dispatch:
+    inputs:
+      triggered_by:
+        description: "Qui déclenche ? (gregory = Gregory seulement, patrick = Patrick + Gregory en copie)"
+        required: false
+        default: "gregory"
 
 permissions:
   contents: read
@@ -31,5 +36,6 @@ jobs:
           PYTHONUTF8: "1"
           PYTHONIOENCODING: "utf-8"
           TRIGGER_ACTOR: ${{ github.actor }}
+          TRIGGERED_BY: ${{ github.event.inputs.triggered_by }}
         run: |
           python "meteo_cnews_2/send_vigilance_images.py"
