@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: videos-group-${{ matrix.group }}
-          path: meteo_cnews_2/cartes_alertes/*.mp4
+          path: cartes_alertes/*.mp4
           retention-days: 1
 
   collate-and-send:
@@ -83,7 +83,7 @@ jobs:
       - name: Télécharger toutes les vidéos générées par les jobs parallèles
         uses: actions/download-artifact@v4
         with:
-          path: meteo_cnews_2/cartes_alertes
+          path: cartes_alertes
           pattern: videos-group-*
           merge-multiple: true
 
@@ -96,5 +96,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd meteo_cnews_2
-          ls -l cartes_alertes/ || echo "Dossier vide"
+          ls -l ../cartes_alertes/ || echo "Dossier vide"
           python gha_send_all_14d_bulletins.py --collate
