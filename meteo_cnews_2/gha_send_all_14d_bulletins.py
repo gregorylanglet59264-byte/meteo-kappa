@@ -170,6 +170,24 @@ def main():
             print(f"Erreur lors de la compression ZIP : {e}")
             sys.exit(1)
             
+        # Publication sur GitHub Releases
+        if os.environ.get("GITHUB_ACTIONS"):
+            print("\n--- Publication sur GitHub Releases ---")
+            try:
+                tag = "bulletins-14j-latest"
+                # Supprimer le release existant
+                subprocess.run(["gh", "release", "delete", tag, "--yes"], check=False)
+                # Créer un nouveau release avec le ZIP
+                subprocess.run([
+                    "gh", "release", "create", tag, zip_path,
+                    "--title", "Pack 32 Bulletins Vidéo - 14 Jours",
+                    "--notes", f"Dernière mise à jour automatique du {get_french_date_string(datetime.date.today())}. Contient 32 vidéos : 28 régionales standards à 14 jours, et 4 bulletins de Patrick à 5 jours.",
+                    "--latest"
+                ], check=True)
+                print("ZIP de bulletins publié sur GitHub Releases avec succès.")
+            except Exception as e:
+                print(f"Erreur lors de la publication sur GitHub Releases : {e}")
+            
         download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/releases/download/bulletins-14j-latest/{zip_name}"
         tomorrow = datetime.date.today() + datetime.timedelta(days=1)
         
