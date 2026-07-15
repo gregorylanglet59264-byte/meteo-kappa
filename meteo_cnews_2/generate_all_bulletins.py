@@ -155,7 +155,7 @@ def main():
     args = parser.parse_args()
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    cartes_dir = os.path.abspath(os.path.join(script_dir, "cartes_alertes"))
+    cartes_dir = os.path.abspath(os.path.join(script_dir, "..", "cartes_alertes"))
     if not os.path.exists(cartes_dir):
         cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
         
