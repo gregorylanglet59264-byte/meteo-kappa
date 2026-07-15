@@ -45,30 +45,6 @@ def safe_rmtree(path):
 def log(msg):
     print(f"[VIDEO-GEN] {msg}")
 
-def get_font_path(prefer_bold=False):
-    paths = []
-    if prefer_bold:
-        paths = [
-            r"C:\Windows\Fonts\ARIALNB.TTF",
-            r"C:\Windows\Fonts\arialbd.ttf",
-            r"C:\Windows\Fonts\arial.ttf",
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-            "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-            "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf",
-        ]
-    else:
-        paths = [
-            r"C:\Windows\Fonts\arial.ttf",
-            r"C:\Windows\Fonts\arialbd.ttf",
-            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-            "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-            "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
-        ]
-    for p in paths:
-        if os.path.exists(p):
-            return p
-    return None
-
 def get_video_duration(path):
     cmd = ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "default=noprint_wrappers=1:nokey=1", path]
     res = subprocess.run(cmd, capture_output=True, text=True, check=True)
@@ -86,13 +62,7 @@ def draw_gradient(width, height):
 
 def create_transition_frames(day_str, sub_str, width, height, logo_path, output_dir, prefix):
     # Check if we can use the custom templates
-    if logo_path:
-        cartes_dir = os.path.dirname(logo_path)
-    else:
-        script_dir = os.path.dirname(os.path.abspath(__file__))
-        cartes_dir = os.path.abspath(os.path.join(script_dir, "..", "cartes_alertes"))
-        if not os.path.exists(cartes_dir):
-            cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
+    cartes_dir = os.path.dirname(logo_path) if logo_path else r"C:\Users\grego\Desktop\cartes_alertes"
     template_name = "AVANT PREVI 008.png" if width > height else "AVANT PREVI 007.png"
     template_path = os.path.join(cartes_dir, template_name)
     
@@ -120,9 +90,7 @@ def create_transition_frames(day_str, sub_str, width, height, logo_path, output_
             # Create text layer
             text_layer = Image.new("RGBA", (t_width, t_height), (0, 0, 0, 0))
             draw = ImageDraw.Draw(text_layer)
-            font_path_bold = get_font_path(prefer_bold=True)
-            if not font_path_bold:
-                raise FileNotFoundError("Aucune police TTF supportée n'a été trouvée sur le système pour dessiner les transitions.")
+            font_path_bold = r"C:\Windows\Fonts\ARIALNB.TTF"
             
             if width > height:
                 # Landscape (1448 x 1086 template)
@@ -202,9 +170,7 @@ def create_transition_frames(day_str, sub_str, width, height, logo_path, output_
             img.paste(logo, (logo_x, logo_y), logo)
             logo_y += target_h + (70 if width > height else 90)
             
-        font_path_bold = get_font_path(prefer_bold=True)
-        if not font_path_bold:
-            raise FileNotFoundError("Aucune police TTF supportée n'a été trouvée sur le système pour dessiner les textes.")
+        font_path_bold = r"C:\Windows\Fonts\arialbd.ttf"
         day_size = 75 if width > height else 65
         sub_size = 85 if width > height else 90
         
@@ -767,15 +733,14 @@ def capture_and_compose_vigilance(zone, orientation, output_path):
                 template_names = ["VIGILANCE PAYSAGE.png", "AVANT PREVI 009.png", "AVANT METEO 009.png"]
                 
             cartes_dir = os.path.dirname(output_path)
-            script_dir = os.path.dirname(os.path.abspath(__file__))
+            template_path = None
             for name in template_names:
-                p_script = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT", name)
                 p1 = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT", name)
                 p2 = os.path.join(cartes_dir, name)
                 p3 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes", name)
                 p4 = os.path.join(r"C:\Users\grego\Desktop\cartes_alertes\A_CONSERVER_ABSOLUMENT", name)
                 p5 = os.path.join(r"C:\Users\grego\Documents\METEO_CLIMAT\meteo cnews 2", name)
-                for p_check in [p_script, p1, p2, p3, p4, p5]:
+                for p_check in [p1, p2, p3, p4, p5]:
                     if os.path.exists(p_check):
                         template_path = p_check
                         break
@@ -884,42 +849,34 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
         log("Option --skip-maps active : utilisation des cartes existantes sans régénération.")
     
     # Répertoires
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    project_root = os.path.abspath(os.path.join(script_dir, ".."))
-    cartes_dir = os.path.join(project_root, "cartes_alertes")
-    if not os.path.exists(cartes_dir):
-        cartes_dir = os.path.expanduser(r"~\Desktop\cartes_alertes")
-        
+    cartes_dir = r"C:\Users\grego\Desktop\cartes_alertes"
+    if not os.path.exists(r"C:\Users\grego"):
+        project_dir = os.path.dirname(os.path.abspath(__file__))
+        cartes_dir = os.path.join(project_dir, "Desktop", "cartes_alertes")
     temp_dir = os.path.join(cartes_dir, f"temp_transitions_period_{os.getpid()}")
     if os.path.exists(temp_dir):
         safe_rmtree(temp_dir)
     os.makedirs(temp_dir)
     
-    target_date = datetime.date.today() + datetime.timedelta(days=1)
-    date_suffix = target_date.strftime("%Y_%m_%d")
-
     # Paramètres de format
     if orientation == "portrait":
         jingle_name = "jingle_tiktok.mp4"
         suffix = "_portrait"
         width, height = 1080, 1920  # TikTok standard (cartes portrait: 1593x2880 → downscale propre)
         if patrick:
-            out_filename = f"bulletin_{zone}_patrick_portrait_{date_suffix}.mp4"
+            out_filename = f"bulletin_{zone}_patrick_portrait.mp4"
         else:
-            out_filename = f"bulletin_{zone}_portrait_{date_suffix}.mp4"
+            out_filename = f"bulletin_{zone}_portrait.mp4"
     else:
         jingle_name = "jingle_facebook.mp4"
         suffix = ""
         width, height = 1920, 1080  # Full HD 1920x1080 (broadcast + réseaux sociaux)
         if patrick:
-            out_filename = f"bulletin_{zone}_patrick_landscape_{date_suffix}.mp4"
+            out_filename = f"bulletin_{zone}_patrick_landscape.mp4"
         else:
-            out_filename = f"bulletin_{zone}_landscape_{date_suffix}.mp4"
+            out_filename = f"bulletin_{zone}_landscape.mp4"
         
-    assets_dir = os.path.join(script_dir, "A_CONSERVER_ABSOLUMENT")
-    if not os.path.exists(assets_dir):
-        assets_dir = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT")
-        
+    assets_dir = os.path.join(cartes_dir, "A_CONSERVER_ABSOLUMENT")
     jingle_path = os.path.join(assets_dir, jingle_name)
     music_path = os.path.join(assets_dir, "musique de fond.mp3")
     logo_path = os.path.join(assets_dir, "logo meteo climat pro 3.png")
@@ -1214,8 +1171,8 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
         "-map", "[v]",
         "-map", "[a]",
         "-c:v", "libx264",
-        "-preset", "medium",
-        "-crf", "24",
+        "-preset", "fast",
+        "-crf", "18",
         "-pix_fmt", "yuv420p",
         "-r", "24",
         "-shortest",
