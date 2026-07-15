@@ -1,10 +1,7 @@
 name: Envoi Cartes de Vigilance - Email Automatique
 
 on:
-  schedule:
-    # Deux fois par jour à 5h30 et 15h00 UTC (soit 7h30 et 17h00 en France)
-    - cron: '30 5,15 * * *'
-  workflow_dispatch: # Permet de lancer manuellement depuis GitHub
+  workflow_dispatch: # Lancement manuel uniquement depuis le dashboard ou GitHub
 
 permissions:
   contents: read
@@ -33,5 +30,6 @@ jobs:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           PYTHONUTF8: "1"
           PYTHONIOENCODING: "utf-8"
+          TRIGGER_ACTOR: ${{ github.actor }}
         run: |
           python "meteo_cnews_2/send_vigilance_images.py"

@@ -27,8 +27,14 @@ sys.path.insert(0, PROJECT_DIR)
 
 from generate_video_bulletin import capture_and_compose_vigilance
 
-# Liste des destinataires (restreint à Grégoire pour le moment)
-RECIPIENTS = ["gregory.langlet@sfr.fr"]
+# Détection dynamique du destinataire (Grégoire ou Patrick) selon qui clique sur le dashboard
+TRIGGER_ACTOR = os.environ.get("TRIGGER_ACTOR", "").lower()
+if "monsieurmeteo" in TRIGGER_ACTOR:
+    RECIPIENTS = ["patrick.marliere@wanadoo.fr"]
+    print(f"Déclenché par Patrick ({TRIGGER_ACTOR}) -> Envoi à patrick.marliere@wanadoo.fr", flush=True)
+else:
+    RECIPIENTS = ["gregory.langlet@sfr.fr"]
+    print(f"Déclenché par Grégoire (ou en local) -> Envoi à gregory.langlet@sfr.fr", flush=True)
 
 # Zones à générer
 ZONES = {
