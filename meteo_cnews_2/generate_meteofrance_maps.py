@@ -85,6 +85,8 @@ FALLBACK_CITIES = [
 
 def get_zone_cities(zone_key):
     """Dynamically parses index.html to extract the cities list for a given zone."""
+    if zone_key == "grandest":
+        zone_key = "grand-est"
     index_path = os.path.join(PROJECT_DIR, "index.html")
     if not os.path.exists(index_path):
         return None
@@ -537,6 +539,8 @@ def main():
     args = parser.parse_args()
 
     zone_key = args.zone
+    if zone_key == "grandest":
+        zone_key = "grand-est"
     days_to_capture = args.days
     start_tomorrow = args.start_tomorrow
     orientation = args.orientation
@@ -796,7 +800,7 @@ def main():
             "--disable-sync",
             "--no-first-run",
             "--disable-extensions",
-            f"--user-data-dir={chrome_profile_dir}",
+            f"--user-data-dir={chrome_profile_dir}_{current_render}",
             target_url
         ]
         
@@ -854,7 +858,7 @@ def main():
         "--disable-sync",
         "--no-first-run",
         "--disable-extensions",
-        f"--user-data-dir={chrome_profile_dir}",
+        f"--user-data-dir={chrome_profile_dir}_eph",
         target_url
     ]
     
@@ -909,12 +913,14 @@ def main():
     except Exception as e:
         print(f"   -> Error calling capture_and_compose_forets: {e}")
 
-    # Cleanup unique chrome profile
-    if os.path.exists(chrome_profile_dir):
-        try:
-            shutil.rmtree(chrome_profile_dir)
-        except Exception:
-            pass
+    # Cleanup unique chrome profiles
+    import glob
+    for d in glob.glob(f"{chrome_profile_dir}*"):
+        if os.path.exists(d):
+            try:
+                shutil.rmtree(d)
+            except Exception:
+                pass
 
     print("\nSuccess! All weather map images, ephemeris card, and CSV reports have been generated.")
     print(f"You can find them in: {DEST_DIR}")

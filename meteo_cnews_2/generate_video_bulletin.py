@@ -239,8 +239,8 @@ ZONE_LABELS = {
     "normandie":     "NORMANDIE",
     "ile-de-france": "ILE-DE-FRANCE",
     "idf":           "ILE-DE-FRANCE",
-    "grand-est":     "GRAND EST",
-    "grandest":      "GRAND EST",
+    "grand-est":     "GRAND-EST",
+    "grandest":      "GRAND-EST",
     "ara":           "AUVERGNE-RHONE-ALPES",
     "naq":           "NOUVELLE-AQUITAINE",
     "occitanie":     "OCCITANIE",
@@ -329,10 +329,22 @@ def capture_and_compose_vigilance(zone, orientation, output_path, period=1):
                 let regionName = 'MÉTÉOROLOGIQUE';
                 if (regionId) {
                     let r = String(regionId).toUpperCase();
-                    if (r === 'HDF' || r === '32') regionName = 'HAUTS-DE-FRANCE';
-                    else if (r === 'NORMANDIE' || r === 'NOR' || r === '28') regionName = 'NORMANDIE';
-                    else if (r === 'NAQ' || r === '75') regionName = 'NOUVELLE-AQUITAINE';
-                    else regionName = r;
+                    const regionNames = {
+                        'HDF': 'HAUTS-DE-FRANCE', '32': 'HAUTS-DE-FRANCE',
+                        'NOR': 'NORMANDIE', '28': 'NORMANDIE',
+                        'NAQ': 'NOUVELLE-AQUITAINE', '75': 'NOUVELLE-AQUITAINE',
+                        'GES': 'GRAND-EST', '44': 'GRAND-EST',
+                        'ARA': 'AUVERGNE-RHÔNE-ALPES', '84': 'AUVERGNE-RHÔNE-ALPES',
+                        'BFC': 'BOURGOGNE-FRANCHE-COMTÉ', '27': 'BOURGOGNE-FRANCHE-COMTÉ',
+                        'BRE': 'BRETAGNE', '53': 'BRETAGNE',
+                        'CVL': 'CENTRE-VAL DE LOIRE', '24': 'CENTRE-VAL DE LOIRE',
+                        'COR': 'CORSE', '94': 'CORSE',
+                        'IDF': 'ÎLE-DE-FRANCE', '11': 'ÎLE-DE-FRANCE',
+                        'OCC': 'OCCITANIE', '76': 'OCCITANIE',
+                        'PDL': 'PAYS DE LA LOIRE', '52': 'PAYS DE LA LOIRE',
+                        'PAC': "PROVENCE-ALPES-CÔTE D'AZUR", '93': "PROVENCE-ALPES-CÔTE D'AZUR"
+                    };
+                    regionName = regionNames[r] || r;
                 }
                 let dateSub = "VENDREDI 10 JUILLET 2026";
                 // ponytail: extract date from lines[0] because dateTitle is not defined in the page scope
@@ -885,8 +897,28 @@ def capture_and_compose_forets(zone, orientation, output_path):
 
     if success and os.path.exists(temp_png):
         try:
-            shutil.copyfile(temp_png, output_path)
-            log(f"Carte Risque Feux de Forêt régionale ({zone}) sauvegardée sans déformation : {output_path}")
+            from PIL import Image
+            with Image.open(temp_png) as img:
+                target_w = 1080 if orientation == "portrait" else 1920
+                target_h = 1920 if orientation == "portrait" else 1080
+                
+                # Fond sombre harmonieux (#0f172a)
+                bg = Image.new("RGB", (target_w, target_h), (15, 23, 42))
+                
+                img_w, img_h = img.size
+                ratio = min(target_w / img_w, target_h / img_h)
+                new_w = int(img_w * ratio)
+                new_h = int(img_h * ratio)
+                
+                img_resized = img.resize((new_w, new_h), Image.Resampling.LANCZOS)
+                
+                offset_x = (target_w - new_w) // 2
+                offset_y = (target_h - new_h) // 2
+                bg.paste(img_resized, (offset_x, offset_y))
+                
+                bg.save(output_path, "JPEG", quality=95)
+                
+            log(f"Carte Risque Feux de Forêt régionale ({zone}) redimensionnée et centrée au format {target_w}x{target_h} : {output_path}")
 
             if os.path.exists(temp_png):
                 os.remove(temp_png)
@@ -899,6 +931,8 @@ def capture_and_compose_forets(zone, orientation, output_path):
 
 
 def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=False, patrick=False):
+    if zone == "grandest":
+        zone = "grand-est"
     if patrick:
         temp_highlight = True
     log(f"Démarrage de la génération vidéo pour la zone '{zone}' (jours: {days}, format: {orientation}, patrick: {patrick})")
@@ -1170,16 +1204,16 @@ def generate_video(zone, days, orientation, temp_highlight=False, skip_maps=Fals
     region_label = "BULLETIN NATIONAL" if zone == "france_pictos" else ZONE_LABELS.get(zone)
     if region_label:
         region_label_escaped = region_label.replace("'", "'\\''")
-        # Calibrage dynamique de la taille de police pour éviter le dépassement de l'écran
+        # Calibrage dynamique de la taille de police pour éviter le dépassement de l'écran (longs noms)
         if width > height:
             # Landscape
-            max_width = width * 0.8
-            font_size = min(85, int(max_width / (len(region_label) * 0.6)))
+            max_width = width * 0.75
+            font_size = min(75, int(max_width / (len(region_label) * 0.65)))
             text_y = 130
         else:
             # Portrait (TikTok)
-            max_width = width * 0.85
-            font_size = min(100, int(max_width / (len(region_label) * 0.6)))
+            max_width = width * 0.8
+            font_size = min(70, int(max_width / (len(region_label) * 0.65)))
             text_y = 80
             
         font_path = get_font_path(prefer_bold=True)
