@@ -10,28 +10,24 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️⛈️ CONTRASTE MÉTÉO : ORAGES À L’OUEST, SOLEIL AILLEURS !  
-Ce vendredi, 72 départements sont en vigilance orange canicule, avec une chaleur persistante qui s’installe sur la France. La matinée est nuageuse sur la majeure partie du territoire, avec quelques pluies faibles du côté de Laon et Poitiers. Les températures sont déjà douces, entre 17 et 20°C. L’après-midi, le grand soleil fait son retour sur les trois quarts du pays, de Lille à Paris, en passant par Nantes et Tours, où les maximales atteignent 30 à 31°C. Mais attention : de Brest à Poitiers en passant par Laon, des orages parfois forts éclatent, avec risque de grêle et de fortes pluies. Sur le pourtour méditerranéen, le soleil domine sous un mistral modéré. Une journée à deux visages, entre canicule et orages.
+🔥 **CANICULE ET ORAGES : UNE JOURNÉE SOUS HAUTE TENSION !**  
+Ce vendredi, la France vit sous une double menace : la canicule, avec 72 départements placés en vigilance orange, et des orages parfois violents. Ce matin, le ciel est capricieux sur une large moitié nord : nuages et bruine à Lille, Rouen, Caen, Brest ou Rennes, et même quelques pluies faibles à Poitiers. Mais l’après-midi, le contraste s’accentue. Sur la façade atlantique, le soleil s’impose et les températures flambent, jusqu’à 32°C à Nantes et 35°C dans l’intérieur méditerranéen. En revanche, un axe orageux très actif se développe du Centre-Ouest aux frontières de l’Est, avec un risque de grêle et de fortes pluies, notamment à Poitiers et en Île-de-France. Le mistral souffle fort en vallée du Rhône. Une journée estivale mais à surveiller de près !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous et bienvenue sur Europe 1 pour votre bulletin météo ! Ce vendredi matin, le temps s'annonce plutôt mitigé sur l'ensemble du territoire.
+Bonjour à toutes et à tous, et bienvenue sur Europe 1 pour votre bulletin météo de ce vendredi 17 juillet au matin !
 
-En effet, le soleil se fait discret sur la majeure partie de la France, souvent voilé par des nuages qui laissent parfois échapper quelques gouttes. Du côté des températures, elles sont déjà douces : 17 degrés à Lille, 18 à Rouen et Caen, 19 à Nantes, et on atteint les 20 degrés à Paris.
+Ce vendredi matin, le ciel se montrera plutôt capricieux sur une bonne partie de l'Hexagone. Du côté de Lille, on se réveille avec 16°C et un ciel nuageux, tout comme à Rouen où le thermomètre affiche 17°C. Même ambiance à Caen et Brest, avec respectivement 18°C et 17°C sous un ciel voilé. À Rennes, il fait 17°C et le soleil joue à cache-cache avec les nuages.
 
-Attention, quelques averses sont à prévoir localement, notamment du côté de Laon et de Poitiers où de petites pluies faibles pourraient vous surprendre. Le vent, lui, souffle modérément, autour de 15 à 20 km/h sur la façade atlantique et le nord du pays, une petite brise agréable qui ne devrait pas vous gêner.
+Plus au sud, à Nantes, on relève 19°C, et le ciel est également nuageux. À Paris, 20°C et des nuages matinaux. Les vents seront généralement faibles à modérés, autour de 15 à 20 km/h sur ces régions, apportant une légère brise marine sur le littoral.
 
-En revanche, sur le littoral méditerranéen, le soleil est bien présent et les températures sont déjà très estivales, avec un contraste marqué par rapport à l'intérieur des terres où les nuages sont un peu plus tenaces. Pas de risque orageux ni de foudre à signaler pour ce matin, mais restez à l'écoute pour les prochaines prévisions !
+Attention, à Poitiers, le réveil sera humide avec 20°C et de faibles pluies. Le contraste est net entre l'intérieur des terres et les côtes où le temps est plus clément.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Europe 1 pour votre bulletin météo de ce vendredi 17 juillet 2026 !
+Ce vendredi après-midi, l'ambiance sera estivale sur une grande partie du pays, mais attention, l'instabilité sera bien présente par endroits ! Sur la façade atlantique, de la Bretagne aux Pays de la Loire, le soleil brillera généreusement, notamment à Nantes où l'on attend un beau 32°C. Le vent d'ouest y soufflera modérément, autour de 20 km/h, apportant une légère brise côtière bienvenue.
 
-Ce vendredi après-midi, la France se découpe en deux ambiances bien distinctes. Sur une grande partie ouest, le soleil sera le maître mot ! De la Bretagne aux Pays de la Loire, en passant par l'Île-de-France et le Centre, le ciel sera largement dégagé. On attend de belles maximales, avec 28°C à Brest, 30°C à Paris, et même 31°C à Nantes et Tours. Le vent sera généralement faible, autour de 10 à 20 km/h, avec une légère brise côtière sur le littoral atlantique qui tempérera un peu les températures.
+En revanche, prudence sur le Centre-Ouest ! Du côté de Poitiers, les orages s'annoncent costauds avec un risque de grêle et de fortes pluies sous les cellules les plus actives. Les températures y atteindront tout de même 29°C avant l'arrivée des averses. Plus à l'est, un axe orageux s'étirera de la Normandie jusqu'aux frontières de l'Est, en passant par l'Île-de-France. À Paris, malgré un ciel qui se couvrira, le mercure grimpera jusqu'à 30°C, mais des orages pourront éclater en fin de journée, avec des risques de foudre et de fortes averses. Le vent sera faible, ne dépassant pas les 15 km/h.
 
-En revanche, prudence sur une large bande centrale et est du pays ! Des orages éclateront, parfois forts, avec des risques de foudre et de fortes pluies sous les cellules les plus actives. Localement, de la grêle pourra même accompagner ces phénomènes. C'est le cas notamment du côté de Laon, où les averses orageuses sont attendues avec 27°C, et de Poitiers, où les orages pourront être plus intenses avec 29°C. Dans le Nord, Lille profitera d'un beau soleil et de 27°C, mais attention aux orages qui pourraient remonter vers l'est des Hauts-de-France.
-
-Sur le pourtour méditerranéen, le soleil dominera largement, avec des températures élevées. Le mistral soufflera modérément, apportant une légère sensation de fraîcheur par endroits.
-
-Restez vigilants si vous êtes dans les zones à risque d'orages et n'hésitez pas à vous abriter. Très bel après-midi à tous sur Europe 1 !
+Dans le Nord, à Lille par exemple, le soleil restera généreux avec 27°C, et un vent léger. Plus au sud, le pourtour méditerranéen profitera d'un soleil éclatant et de températures très élevées, atteignant localement 35°C dans l'intérieur des terres, tandis que sur le littoral, la brise marine adoucira l'atmosphère, avec un ressenti plus agréable autour de 30°C. Le mistral soufflera fort en vallée du Rhône, soyez vigilants !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
@@ -81,11 +77,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Dimanche 19 juillet : Le soleil brille sur l’ensemble du pays, le ciel reste dégagé du matin au soir. Les températures sont encore très élevées, avec des maximales de 30 à 35°C, voire plus dans le Sud. Quelques nuages élevés sans conséquence. Canicule toujours présente.  
+**Dimanche 19 juillet** : La chaleur reste très forte sur la quasi-totalité du pays, avec des maximales souvent comprises entre 32 et 38°C. Le soleil domine largement, mais quelques orages pourraient éclater l’après-midi sur les reliefs et le nord-est. Vent faible à modéré. Vigilance canicule toujours en vigueur.
 
-Lundi 20 juillet : La chaleur s’accentue, le soleil est voilé par moments. Le mistral et la tramontane se renforcent en Méditerranée. Pas de précipitations attendues, mais une vigilance renforcée pour les fortes chaleurs.  
+**Lundi 20 juillet** : Nouvelle journée caniculaire. Le ciel est voilé par endroits, mais le mercure ne faiblit pas : 30 à 35°C en moyenne, localement 37°C dans le Sud-Ouest. L’air reste très sec, avec un risque d’orages isolé sur les massifs. Nuits très chaudes, difficile de trouver le sommeil.
 
-Mardi 21 juillet : Toujours du soleil et de la chaleur, avec des pointes à 36°C dans l’intérieur. L’après-midi, des orages pourraient éclater sur les reliefs des Alpes et des Pyrénées, mais sans gravité. La tendance reste à la persistance de la canicule.
+**Mardi 21 juillet** : La tendance se confirme. Un temps stable et très chaud persiste, avec un soleil généreux du matin au soir. Les températures oscillent entre 33 et 39°C dans les terres, un peu plus fraîches sur le littoral atlantique. Quelques nuages élevés en journée, mais pas de pluie significative en vue. La vigilance orange canicule est maintenue pour la plupart des départements.
 
 
 --------------------------------------------------------------------------------
@@ -94,18 +90,23 @@ Mardi 21 juillet : Toujours du soleil et de la chaleur, avec des pointes à 36°
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**
-☀️ **SOLEIL TOTAL : UNE JOURNÉE D'ÉTÉ PARFAITE SUR LE NORD !** Ce vendredi, le soleil règne en maître absolu de Dunkerque à Valenciennes, avec un ciel d'un bleu immaculé. Les minimales sont déjà très douces (17 à 19°C). L'après-midi, on attend 27°C à Lille, 28°C à Douai, jusqu'à 29°C à Valenciennes, tandis que le littoral reste plus frais avec 22°C à Dunkerque grâce à la brise marine. Le vent d'ouest modéré (15-20 km/h) apporte une légère respiration. Attention : 72 départements français sont en vigilance orange Canicule, mais notre région reste pour l'instant en marge de l'alerte la plus sévère. Profitez de ce grand beau temps !
+☀️ ORAGES MATIN, SOLEIL APRÈS-MIDI : UNE JOURNÉE À DOUBLE VISAGE ! Ce vendredi, le Nord est en vigilance orange canicule, avec une chaleur qui s'installe durablement. La matinée est très contrastée : le littoral profite d'un ciel dégagé et d'une brise marine rafraîchissante (18°C à Dunkerque), tandis que l'intérieur des terres, notamment de Valenciennes à Maubeuge, subit des orages localement forts avec risque de grêle. L'après-midi, le soleil reprend ses droits partout, offrant un ciel plein de lumière. Les températures grimpent : 22°C à Dunkerque, 27°C à Lille, jusqu'à 29°C à Valenciennes. Une belle fin de journée en perspective, mais la vigilance canicule reste de mise.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio ICI NORD pour votre bulletin météo du matin en ce vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous et bienvenue sur RADIO - ICI NORD pour votre bulletin météo du vendredi 17 juillet 2026 !
 
-Ce matin, le soleil est le roi incontesté sur l'ensemble de notre région, et c'est une excellente nouvelle pour bien démarrer le week-end ! Les températures minimales sont déjà très douces. On relève 19°C à Valenciennes et Maubeuge, 18°C à St-Hilaire-sur-Helpe et Troisvilles, et 17°C à Lille. Sur le littoral, comme à Dunkerque, il fait également 19°C, mais les maximales seront un peu moins élevées que dans l'intérieur des terres, grâce à la brise marine.
+Ce vendredi matin, le temps se montre plutôt contrasté sur notre belle région. Le littoral et l'ouest profitent d'un début de journée agréable, avec un ciel peu nuageux et de belles éclaircies. À Dunkerque, on relève déjà 18°C, tandis qu'à Watten et Steenvoorde, il fait 15°C et 16°C respectivement. La brise marine souffle légèrement, apportant une fraîcheur bienvenue.
 
-Le vent, justement, sera modéré, soufflant aux alentours de 15 à 20 km/h sur l'ensemble de la région, apportant une légère fraîcheur bienvenue. Pas un nuage à l'horizon, le ciel est d'un bleu immaculé partout. Profitez bien de ce beau début de journée !
+Cependant, en s'enfonçant vers l'intérieur des terres, la situation est bien différente. De Lille, où il fait 16°C, jusqu'à Douai avec 18°C, le soleil joue à cache-cache avec quelques nuages. Mais attention, du côté de Valenciennes, Maubeuge, Troisvilles et St-Hilaire-sur-Helpe, le ciel est plus menaçant avec un risque d'orages ! Des éclairs pourraient zébrer le ciel, et des averses parfois accompagnées de grêle sont à prévoir. Les températures minimales y sont douces, autour de 17 à 18°C. Le vent est modéré, soufflant aux alentours de 20 km/h sur l'ensemble de la région.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, c'est un véritable festival de soleil qui nous attend sur l'ensemble de notre belle région ! Attendez-vous à un ciel radieux, sans le moindre nuage pour gâcher le tableau. Les températures seront très agréables, avec une belle douceur estivale. Nous aurons par exemple 28°C à St-Hilaire-sur-Helpe et Douai, 29°C à Valenciennes, 27°C à Lille et Roubaix. Le contraste sera marqué entre le littoral et l'intérieur des terres : si Dunkerque affichera un très doux 22°C, on montera facilement au-delà des 25°C dès que l'on s'éloigne un peu du bord de mer. Le vent sera quant à lui modéré, soufflant généralement de l'ouest à environ 15 à 20 km/h, apportant une légère brise bienvenue pour adoucir l'atmosphère. Profitez bien de ce bel après-midi ensoleillé !
+Bonjour à toutes et à tous, et bienvenue sur RADIO - ICI NORD pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
+
+Ce vendredi après-midi, le soleil sera le maître mot sur l'ensemble de notre région, avec un ciel dégagé et un grand soleil éclatant partout. Les températures vont continuer de grimper pour atteindre des valeurs estivales très agréables. Attendez-vous à 28°C à St-Hilaire-sur-Helpe et Maubeuge, 29°C à Valenciennes, 27°C à Lille et Roubaix, et 24°C du côté de Watten.
+
+Côté vent, une brise légère soufflera de l'ouest, autour de 15 à 20 km/h, apportant une petite touche de fraîcheur, notamment près du littoral. D'ailleurs, le contraste sera bien marqué entre les terres intérieures où la chaleur sera plus présente, et le bord de mer où l'air sera plus doux. Par exemple, à Dunkerque, on ne dépassera pas les 22°C, grâce à cette brise côtière.
+
+Profitez bien de cette belle après-midi ensoleillée !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
@@ -155,11 +156,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil reste généreux mais la chaleur gagne encore un cran. Les températures grimpent : 30 à 32°C dans l'intérieur des terres, 24°C sur le littoral. Vent faible. Nuit très douce.
+**Dimanche 19 juillet** : Le soleil domine largement, avec un ciel pratiquement sans nuages. La chaleur s'accentue encore : maximales de 30 à 33°C sur l'intérieur, 24 à 26°C sur le littoral. Vent faible, brise marine l'après-midi. Nuits très douces, autour de 18-20°C. Canicule toujours présente.
 
-**Lundi 20 juillet** : Toujours du beau temps sec et ensoleillé. Pic de chaleur attendu avec 33 à 35°C possibles dans l'Avesnois et le Cambrésis. Côté littoral, 26°C. Attention aux fortes chaleurs en journée.
+**Lundi 20 juillet** : Toujours du grand soleil et une chaleur accablante. Les températures atteignent 32 à 35°C dans les terres, 26-28°C au bord de mer. Pas de rafraîchissement notable en vue. Le vent reste très léger. Attention aux coups de chaud, hydratez-vous bien.
 
-**Mardi 21 juillet** : Le soleil persiste mais les nuages pourraient faire leur apparition en fin de journée. Chaleur toujours présente : 32°C dans les terres, 25°C à la mer. Risque d'orage isolé en soirée.
+**Mardi 21 juillet** : Le pic de chaleur se maintient, avec des maximales de 33 à 36°C en intérieur. En fin de journée, quelques nuages pourraient se développer localement, annonçant un risque d'orages isolés en soirée. La vigilance canicule reste en vigueur. Prudence pour les personnes fragiles.
 
 
 --------------------------------------------------------------------------------
@@ -168,24 +169,27 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ UN VENDREDI MITIGÉ : SOLEIL LE MATIN, AVERSES L'APRÈS-MIDI !  
-Ce vendredi, la matinée est radieuse sur l'ensemble de la Charente-Maritime et de la Charente, avec un généreux soleil et des températures déjà douces, autour de 20°C. Mais l'après-midi, le temps se dégrade nettement dans l'intérieur des terres : d'Angoulême à Cognac en passant par Jarnac, des averses passagères et même quelques orages isolés éclatent, avec un risque de foudre et de fortes pluies. Sur le littoral, de La Rochelle à Chassiron, le ciel reste plus nuageux mais les températures plafonnent à 27°C, agréables grâce à la brise marine. Sur le plan national, 72 départements sont placés en vigilance orange canicule, une chaleur persistante qui va s'accentuer dans les prochains jours. Restez prudents et hydratés !
+🚨 CANICULE ET ORAGES VIOLENTS À L'INTÉRIEUR ! Ce vendredi, la chaleur s'intensifie avec 72 départements en vigilance orange canicule. Sur notre région, la matinée est ensoleillée et déjà chaude : 20°C à La Rochelle, 21°C à Angoulême. Mais l'après-midi, le littoral reste nuageux et frais (27°C à La Rochelle, 24°C à Chassiron) tandis que l'intérieur est frappé par des orages de grêle à Blanzac, Montbron et Angoulême, avec 30 à 31°C. Pas de répit avant samedi, où le soleil reviendra partout.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio ICI LA ROCHELLE pour votre bulletin météo du vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo du vendredi 17 juillet 2026 ! Quel plaisir de vous retrouver pour ce début de journée qui s'annonce plutôt clément.
 
-Ce vendredi matin, la journée commence sous le signe de la douceur et d'un ciel partagé. Sur le littoral, de La Rochelle à Chassiron, le soleil brille généreusement, déjà 20°C au réveil. Le vent est modéré, soufflant à 20 à 25 km/h, apportant une agréable brise marine.
+Ce vendredi matin, le soleil sera généreux sur une grande partie de notre région. Du côté de La Rochelle, on se réveille avec 20°C et un vent modéré de 20 km/h. À Chassiron, même constat, le soleil est bien présent et il fait 21°C, avec une brise un peu plus marquée à 25 km/h. Plus à l'intérieur des terres, vers Angoulême, le mercure affiche déjà 21°C, sous un ciel ensoleillé, et un vent léger de 15 km/h.
 
-En s'éloignant des côtes, vers l'intérieur des terres, les températures sont similaires avec 20°C à Gond-Pontouvre, Jarnac ou Angoulême. Le soleil est un peu plus voilé par des nuages d'altitude, mais l'impression générale reste très agréable. Le vent y est un peu plus calme, autour de 15 à 20 km/h. Pas de risque d'averses ni d'orages à signaler pour cette matinée.
+Quelques nuages viendront parfois voiler le soleil, notamment vers l'est de la Charente, mais rien de bien méchant. On notera tout de même quelques averses isolées dans le sud-ouest de la région, avec 21°C au lever du jour. Le contraste est bien là : le littoral profite d'une brise marine rafraîchissante, tandis que l'intérieur des terres commence déjà à monter en température. Pas de risque orageux ni de foudre à l'horizon pour cette matinée.
 
-Préparez-vous à une belle journée, même si la chaleur va monter d'un cran cet après-midi ! On se retrouve tout à l'heure pour les prévisions de l'après-midi. Excellente matinée à tous !
+Passez une excellente journée en notre compagnie sur Radio Ici La Rochelle !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur RADIO - ICI LA ROCHELLE pour votre bulletin météo de l'après-midi !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici La Rochelle pour votre bulletin météo de l'après-midi !
 
-Ce vendredi après-midi, le temps sera mitigé sur notre région. Près du littoral, à La Rochelle et Chassiron, le soleil jouera à cache-cache avec quelques nuages, mais les températures resteront très agréables, autour de 24 à 27 degrés. Le vent, une brise côtière, soufflera entre 20 et 25 km/h, apportant une sensation de fraîcheur bienvenue.
+Ce vendredi après-midi, le soleil jouera à cache-cache avec quelques nuages sur notre belle région. Préparez-vous à des températures agréables, mais attention, le temps ne sera pas le même partout !
 
-En revanche, dans les terres, l'ambiance sera un peu plus instable. Du côté d'Angoulême, Cognac, Jarnac ou encore Montbron, attendez-vous à des averses passagères. Le soleil tentera de percer, mais les nuages seront bien présents. Les températures monteront jusqu'à 31 degrés à Angoulême et La Couronne, avec un vent modéré de 15 à 20 km/h. Soyez vigilants si vous êtes dans l'intérieur des terres, car quelques orages isolés ne sont pas à exclure, avec un risque de foudre et de fortes pluies sous les cellules les plus actives. Restez à l'écoute pour les prochaines mises à jour !
+Sur le littoral, notamment à La Rochelle et Chassiron, nous aurons un ciel nuageux, avec des maximales autour de 27°C à La Rochelle et 24°C à Chassiron. Le vent sera bien présent, avec une brise côtière de 20 à 25 km/h, apportant une sensation de fraîcheur.
+
+En revanche, à l'intérieur des terres, la situation est plus délicate. Du côté de Blanzac-Porcheresse, Montbron et Angoulême, le ciel sera également nuageux, mais attention, des orages accompagnés de grêle sont attendus ! Soyez vigilants, car ces orages pourraient s'accompagner de fortes pluies et de risques de foudre. Les températures y seront plus élevées, atteignant les 30°C à Blanzac-Porcheresse et Montbron, et même 31°C à Angoulême, avec un vent plus faible, autour de 15 à 20 km/h.
+
+Restez à l'écoute et soyez prudents, surtout si vous êtes dans les zones à risque d'orages !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (vendredi 17 juillet 2026)
@@ -234,11 +238,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Soleil radieux du matin au soir sur tout le département. Les températures grimpent : 30 à 33°C dans les terres, 26 à 28°C sur le littoral avec une légère brise. Nuit très chaude, minima autour de 20°C.
+Dimanche 19 juillet : Le soleil domine de nouveau, la chaleur reste accablante. Températures maximales entre 30 et 34°C sur l'ensemble de la région, avec une brise côtière modérée. Attention à la canicule persistante.
 
-**Lundi 20 juillet** : Nouvelle journée caniculaire. Ciel bleu, pas un nuage. Il fera encore plus chaud : 33 à 36°C à l'intérieur, 29°C à La Rochelle. Vent très faible. Attention aux coups de chaleur, surtout pour les personnes fragiles.
+Lundi 20 juillet : Toujours sous l'emprise de la masse d'air chaud. Ciel dégagé le matin, quelques nuages passagers l'après-midi. Pas de baisse significative, mercure encore entre 29 et 33°C. Pensez à vous hydrater.
 
-**Mardi 21 juillet** : La chaleur reste écrasante. Toujours du soleil généreux, avec des pointes à 35-37°C dans les terres. Le littoral respire un peu mieux avec 28-30°C et une brise modérée. Une vigilance renforcée est nécessaire, la canicule ne faiblit pas.
+Mardi 21 juillet : La tendance caniculaire se maintient. Soleil généreux du matin au soir, températures stables autour de 30-35°C. Vent faible. Les nuits restent très douces, avec des minimales proches de 20°C.
 
 
 --------------------------------------------------------------------------------
@@ -247,104 +251,27 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ SOLEIL GAGNANT APRÈS UNE MATINÉE MITIGÉE ! Ce vendredi, le temps joue les contrastes. Dans la matinée, le littoral reste sous les nuages avec une brise rafraîchissante (16 à 18°C), tandis que l’intérieur des terres doit composer avec un risque d’orages, notamment à Racquinghem, Robecq et Cauchy-à-la-Tour (15°C). Mais dès l’après-midi, le soleil prend le pouvoir partout ! Le ciel se dégage totalement, les températures grimpent : 22°C sur les plages, jusqu’à 26°C dans l’intérieur. La vigilance orange canicule reste active sur 72 départements, dont le nôtre. Pas une goutte de pluie ni nuage menaçant cet après-midi : une très belle journée estivale en perspective, malgré le contraste thermique entre la côte et l’arrière-pays.
+**☀️ LE CIEL SE DÉCHAÎNE PUIS S'APAISE : UNE JOURNÉE À DEUX VISAGES !**
+
+Ce vendredi, notre région vit une météo à deux temps. La matinée est mitigée : le soleil joue à cache-cache avec les nuages, et quelques averses orageuses, accompagnées de grêle et de foudre, menacent l'est du territoire. Heureusement, l'après-midi marque un retour en force du grand soleil, qui règne en maître sur un ciel d'un bleu éclatant. Les températures grimpent fortement, avec 22°C sur le littoral et jusqu'à 26°C dans les terres. À l'échelle nationale, 72 départements sont placés en vigilance orange Canicule, une chaleur persistante qui s'installe pour plusieurs jours. Profitez de la brise côtière pour vous rafraîchir, car la chaleur va s'accentuer.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio 6 pour votre bulletin météo de ce vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur RADIO 6 pour ce bulletin météo du vendredi 17 juillet 2026 !
 
-Ce vendredi matin, le temps s'annonce mitigé sur notre belle région. Le soleil jouera à cache-cache avec les nuages sur le littoral, de Leffrinckoucke à Groffliers, où les températures minimales s'échelonneront entre 16°C et 18°C. Attendez-vous à une brise marine agréable, soufflant autour de 20 km/h, parfaite pour une balade matinale.
+Ce vendredi matin, le temps s'annonce plutôt mitigé sur l'ensemble de notre région. Le soleil jouera à cache-cache avec les nuages, mais il devrait tout de même percer par moments pour nous offrir de belles éclaircies. Les températures minimales sont agréables, avec 18°C à Leffrinckoucke, 17°C à Gravelines et Marck, et 15°C à Robecq et Cauchy-à-la-Tour.
 
-En revanche, soyez vigilants si vous êtes plus à l'intérieur des terres ! Du côté de Racquinghem, Robecq et Cauchy-à-la-Tour, le ciel sera plus menaçant avec un risque d'orages. La foudre pourrait bien zébrer le ciel par endroits, alors prudence ! Les températures y seront un peu plus fraîches au lever du jour, autour de 15°C, et le vent y sera modéré, aux alentours de 15 à 20 km/h. Un contraste de températures bien marqué entre le bord de mer et l'intérieur, donc !
+Le vent soufflera modérément, autour de 20 km/h sur le littoral et l'intérieur des terres, apportant une légère brise rafraîchissante. Attention, quelques zones pourraient connaître des averses, notamment vers l'est de la région où des orages accompagnés de grêle sont à prévoir, avec un risque de foudre. Soyez vigilants si vous vous trouvez dans ces secteurs.
 
-🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le soleil sera le grand gagnant sur l'ensemble de notre région ! Préparez-vous à une belle après-midi estivale, avec un ciel dégagé et un soleil généreux. Les températures vont continuer de grimper, avec des maximales qui atteindront 22°C à Leffrinckoucke et Offekerque, 25°C à Lefaux et Groffliers, et même un agréable 26°C à Racquinghem, Robecq et Cauchy-à-la-Tour.
+Près des côtes, les températures maximales atteindront les 22°C, tandis que dans l'intérieur des terres, elles grimperont jusqu'à 26°C. Un contraste agréable qui invite à profiter de cette journée estivale, malgré quelques caprices du ciel.
 
-Attention, le contraste est bien marqué entre le littoral et l'intérieur des terres : si la brise côtière, soufflant à environ 20 km/h, apporte une douceur rafraîchissante sur nos plages, l'intérieur des terres ressentira davantage la chaleur du soleil. Le vent restera modéré, autour de 15 à 20 km/h, venant principalement de l'ouest, ce qui est parfait pour profiter de l'extérieur sans être gêné. Pas une goutte de pluie à l'horizon, ni le moindre nuage menaçant. Une après-midi idéale en perspective !
-
-🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
-
-🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce vendredi.
-🌡️ Température sous abri : 21°C (ambiance plus respirable qu’à l’intérieur)
-🌊 Température de l’eau : 17 à 18°C
-
-🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 20 à 21°C
-🌊 Température de l’eau : 17 à 18°C
-
-🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
-
-📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
-
-☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
-🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
-⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
-
-🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
-
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
-
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
-
-Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
-
-Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
-🏔️ Météo montagne
-
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
-
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
-
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
-
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
-
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
-
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
-
-📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-🔮 Tendance pour les trois prochains jours (dimanche 19, lundi 20 et mardi 21 juillet) :
-
-- **Dimanche 19 juillet** : La chaleur s’accentue encore. Soleil généreux du matin au soir, avec des températures maximales qui atteindront 28 à 30°C à l’intérieur, et 25°C sur le littoral grâce à la brise. Attention, la vigilance canicule se poursuit. Pensez à vous hydrater et à protéger les personnes fragiles.
-
-- **Lundi 20 juillet** : Pic de chaleur attendu ! Le soleil reste maître du ciel, et les maximales pourraient flirter avec les 33°C dans les terres, voire 35°C localement. L’air devient très lourd, avec un risque d’orages en fin de journée ou dans la nuit, surtout au sud de la région. Rafales et pluies fortes possibles sous les cellules.
-
-- **Mardi 21 juillet** : Légère baisse des températures, mais la chaleur reste pesante. Le matin encore ensoleillé, l’après-midi des nuages menaçants pourraient donner des averses orageuses éparses, surtout sur l’intérieur. Les maximales redescendront autour de 28°C sur le littoral, 30°C ailleurs. Toujours une vigilance de mise.
-
-
---------------------------------------------------------------------------------
-📻 CLIENT / STATION : MONA FM
-🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
---------------------------------------------------------------------------------
-
-☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**
-**☀️ CANICULE : UN VENDREDI SURCHAUFFÉ DANS LE NORD !**
-Ce vendredi, la vigilance orange canicule s'étend sur 72 départements, et notre région n'est pas épargnée. La matinée débute sous un ciel variable, avec des nuages et une menace orageuse du côté de Maubeuge où la prudence est de mise. Mais dès l'après-midi, le soleil prend le pouvoir et s'impose partout ! Les températures grimpent en flèche : on atteint 28 à 29°C dans les terres comme à Valenciennes et St-Hilaire-sur-Helpe, tandis que le littoral reste plus respirable avec 22°C à Dunkerque. Le vent, léger à modéré, ne suffira pas à rafraîchir l'atmosphère. Une journée estivale à vivre avec précaution, surtout pour les plus fragiles.
-
-🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo du vendredi 17 juillet 2026 ! Ce matin, le ciel nous offre un mélange de soleil et de nuages sur la majeure partie de la région.
-
-Les températures sont douces pour ce début de journée. On relève 19°C à Valenciennes et Maubeuge, 18°C à St-Hilaire-sur-Helpe et Troisvilles, et 17°C à Lille. Près du littoral, à Dunkerque, il fait également 19°C, tandis que les terres intérieures comme Steenvoorde affichent 15°C.
-
-Le vent sera présent, mais sans excès. Attendez-vous à une brise légère à modérée, soufflant autour de 15 à 20 km/h sur l'ensemble du territoire, ce qui contribuera à chasser les quelques nuages.
-
-Cependant, un point de vigilance s'impose : attention aux risques d'orages du côté de Maubeuge où des éclairs pourraient zébrer le ciel. Soyez prudents si vous vous trouvez dans ce secteur ! Pour le reste, le soleil devrait progressivement s'imposer.
-
-Passez une excellente matinée avec MONA FM !
+Restez connectés sur RADIO 6 pour le bulletin de la mi-journée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo de l'après-midi ! Ce vendredi après-midi, le soleil sera le roi incontesté sur l'ensemble de notre région. Attendez-vous à un ciel radieux, sans le moindre nuage pour gâcher votre plaisir.
+Bonjour à toutes et à tous, et bienvenue sur Radio 6 pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
 
-Côté températures, ça grimpe ! Nous aurons 28°C à St-Hilaire-sur-Helpe, 29°C à Valenciennes, 28°C à Maubeuge et Douai, et 27°C à Lille et Roubaix. Près des côtes, les températures seront un peu plus douces avec 24°C à Watten et 22°C à Dunkerque.
+Ce vendredi après-midi, le soleil sera le roi incontesté sur l'ensemble de notre belle région ! Attendez-vous à un ciel d'un bleu éclatant, sans le moindre nuage pour venir gâcher la fête. Les températures vont continuer de grimper pour atteindre des valeurs très estivales. Prévoyez 22°C à Leffrinckoucke et Gravelines, 25°C à Groffliers et Remilly-Wirquin, et même un très agréable 26°C à Lefaux, Robecq et Cauchy-à-la-Tour.
 
-Le vent soufflera faiblement à modérément, aux alentours de 15 à 20 km/h, avec une légère brise côtière qui apportera un peu de fraîcheur sur le littoral. Pas de risque d'orages, de fortes pluies ou de grêle à l'horizon, juste un temps estival parfait pour profiter de ce vendredi !
+Attention, le contraste est bien là entre le littoral et l'intérieur des terres : si la brise côtière, un vent d'ouest modéré soufflant autour de 20 km/h, viendra rafraîchir nos plages, les terres intérieures connaîtront une chaleur plus marquée, avec un vent un peu plus faible, autour de 15 km/h. Pas d'alerte orage ou grêle à l'horizon, juste un grand soleil pour profiter pleinement de ce début de week-end !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
@@ -394,10 +321,98 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**
-**Dimanche 19 juillet :** Le soleil reste dominant, mais l'air chaud s'épaissit. Les températures atteignent 30 à 32°C dans l'intérieur des terres. Le littoral conserve une petite brise agréable. Nuits déjà très douces, autour de 18-20°C.
-**Lundi 20 juillet :** Pic de chaleur attendu. Le ciel est dégagé du matin au soir. Les maximales flirtent avec les 33-35°C dans le Hainaut et le Cambrésis. Rafales de vent quasi nulles. Attention aux coups de chaud en journée.
-**Mardi 21 juillet :** L'air devient plus lourd. Le soleil voilé laisse place à des nuages d'altitude. Les températures restent très élevées, entre 30 et 33°C. Un risque d'orage isolé pourrait pointer en fin de journée, surtout vers le sud-est de la région. À suivre.
+**Dimanche 19 juillet :** Le soleil reste généreux sur l'ensemble de la région. Les températures matinales seront déjà douces, autour de 18°C. L'après-midi, la chaleur devient plus pesante, avec des maximales comprises entre 25°C sur la côte et 30°C dans l'intérieur des terres. Le vent d'ouest faiblit, offrant moins de répit.
+
+**Lundi 20 juillet :** La tendance caniculaire se confirme. Le ciel est dégagé du matin au soir. Il fera très chaud dès le réveil, avec des minimales qui peinent à descendre sous les 20°C. L'après-midi, le mercure flirte avec les 33°C à l'intérieur des terres. La vigilance est de mise, surtout pour les personnes fragiles.
+
+**Mardi 21 juillet :** Le pic de chaleur est attendu. Le soleil est écrasant et la chaleur devient accablante. Les températures maximales pourraient atteindre 35°C dans les secteurs les plus abrités du vent. Quelques nuages pourraient pointer le bout de leur nez en fin de journée, annonçant peut-être une dégradation orageuse pour la suite.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : MONA FM
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+**🚨 ORAGES ET GRÊLE DANS L'INTÉRIEUR : UNE JOURNÉE À DOUBLE FACE !**
+
+Ce vendredi, la météo joue les montagnes russes sur notre région. Le littoral profite d’un grand soleil et d’une brise marine rafraîchissante, avec 22°C à Dunkerque. Mais attention, l’intérieur des terres est sous haute tension ! Des orages éclatent, notamment sur Valenciennes, Maubeuge et Douai, avec un risque de grêle et de foudre. Le mercure grimpe jusqu’à 29°C à Valenciennes avant l’arrivée des cellules orageuses. Un contraste saisissant entre la douceur du bord de mer et la violence des averses dans les terres. Restez prudents si vous êtes dans le sud-est de la région.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Bonjour à toutes et à tous et bienvenue sur MONA FM pour votre bulletin météo du vendredi 17 juillet 2026 !
+
+Ce vendredi matin, le temps s'annonce plutôt contrasté sur notre région. On débute avec un ciel bien dégagé et un soleil généreux sur le littoral, notamment du côté de Dunkerque où il fait déjà 18°C, et à Watten avec 15°C. Une petite brise marine souffle, autour de 15 à 20 km/h, rendant l'air agréable.
+
+En revanche, l'intérieur des terres est sous la menace d'un risque orageux. Préparez-vous à des averses et même quelques grêlons ! C'est le cas à Valenciennes où le thermomètre affiche 18°C, à Maubeuge avec 18°C également, et à Douai où il fait 18°C. Le vent y sera modéré, aux alentours de 20 km/h. Attention, des éclairs sont possibles, la foudre pourrait bien se manifester !
+
+Ailleurs, comme à Lille où il fait 16°C, ou à Steenvoorde avec 16°C, le soleil joue à cache-cache avec quelques nuages, mais le temps reste sec. Les températures minimales sont douces, comprises entre 15°C et 18°C sur l'ensemble de la région.
+
+Restez connectés sur MONA FM pour les prévisions de l'après-midi !
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Bonjour à toutes et à tous, et bienvenue sur MONA FM pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
+
+Ce vendredi après-midi, le temps s'annonce mitigé sur notre belle région. Préparez-vous à une ambiance estivale, mais avec quelques surprises. Les températures maximales vont grimper jusqu'à 29°C à Valenciennes, 28°C à St-Hilaire-sur-Helpe et Maubeuge, et 27°C à Lille et Douai.
+
+Pour nos amis du littoral, notamment à Dunkerque et Watten, le mercure affichera un agréable 22°C à 24°C, avec une brise marine rafraîchissante soufflant autour de 15 à 20 km/h. Plus on s'éloigne des côtes, plus le vent se fera sentir, atteignant les 20 km/h dans les terres, un vent d'ouest qui apportera un peu de fraîcheur.
+
+Attention cependant, une alerte importante pour le sud-est de la région ! Des orages sont attendus du côté de Valenciennes et Troisvilles. Ces cellules orageuses pourraient être accompagnées de fortes pluies et, soyez vigilants, de grêle ! Risque de foudre également, donc prudence si vous êtes dans ces secteurs. Ailleurs, le soleil jouera à cache-cache avec quelques nuages, offrant un ciel peu nuageux à nuageux, mais sans précipitations.
+
+Profitez bien de cet après-midi, et restez à l'écoute de MONA FM pour les prochaines mises à jour !
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
+
+🌴 Dunkerque / Malo-les-Bains
+☀️ Belle journée estivale et lumineuse ce vendredi.
+🌡️ Température sous abri : 22°C (ambiance plus respirable qu’à l’intérieur)
+🌊 Température de l’eau : 17 à 18°C
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 21 à 22°C
+🌊 Température de l’eau : 17 à 18°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 17 juillet 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
+⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+
+Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+
+Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
+
+Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
+🏔️ Météo montagne
+
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+**Tendance pour les 3 prochains jours :**
+
+*   **Dimanche 19 juillet :** Le soleil reprend ses droits sur l'ensemble de la région. Une belle journée estivale s'annonce, avec des températures maximales comprises entre 26°C et 30°C. La chaleur sera bien présente, mais sans les orages de la veille.
+*   **Lundi 20 juillet :** Le temps reste chaud et ensoleillé. Le mercure continue de grimper, flirtant avec les 30°C dans les terres. La vigilance canicule reste de mise, pensez à vous hydrater et à protéger les plus fragiles.
+*   **Mardi 21 juillet :** Nouvelle journée très chaude. Le ciel est dégagé du matin au soir. Les températures maximales atteignent 31°C à Lille et dans le Valenciennois. La brise marine se fait discrète, la chaleur sera donc plus lourde sur le littoral également.
 
 
 --------------------------------------------------------------------------------
@@ -406,39 +421,36 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ NORMANDIE PARTAGÉE : SOLEIL ET AVERSES AU PROGRAMME ! Ce vendredi, la Normandie vit une journée à deux visages. Le matin, un soleil généreux avec quelques nuages épars domine toute la région, avec des températures douces autour de 17-18°C. L'après-midi, le contraste s'accentue : le Calvados, l'Orne et l'Eure profitent d'un grand soleil et de 25 à 28°C, tandis que la Seine-Maritime et la Manche voient le ciel se couvrir avec des averses éparses et même des cellules orageuses isolées, notamment près du littoral. Le vent reste modéré. Pas de vigilance particulière pour la Normandie, mais 72 départements français sont en alerte orange canicule. Restez prudents si vous circulez entre ces deux zones.
+☀️ CANICULE : LA NORMANDIE S'EMBRASE SOUS UN SOLEIL DE PLOMB !
+Ce vendredi, la Normandie est placée en vigilance orange canicule, avec une chaleur qui monte d'un cran. La matinée débute sous un ciel partagé entre nuages et éclaircies, notamment sur Rouen, Caen ou Le Havre, tandis que Cherbourg profite déjà du soleil. L'après-midi, le soleil s'impose largement sur la plupart des villes, de Caen à Alençon, avec des maximales de 25 à 28 degrés. Seul bémol : du côté de Lisieux, quelques averses sont attendues. Le vent reste modéré, avec une brise côtière rafraîchissante. Une journée globalement belle et très chaude, mais n'oubliez pas de vous hydrater et de vous protéger.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous et bienvenue sur RADIO ICI NORMANDIE pour votre bulletin météo du vendredi 17 juillet 2026 !
+Ce vendredi matin, la Normandie se réveille sous un ciel partagé entre soleil et quelques passages nuageux, mais rien de bien méchant. Les températures sont déjà douces, avec 17°C à Rouen, 19°C à Caen, 18°C au Havre, 17°C à Cherbourg et 18°C à Évreux.
 
-Ce vendredi matin, la Normandie se réveille sous un ciel plutôt clément, avec un soleil généreux qui joue à cache-cache avec quelques nuages épars sur l'ensemble de la région. Les températures minimales sont douces, avec 18°C à Rouen, 18°C à Caen, 18°C au Havre, 17°C à Cherbourg et 18°C à Lisieux.
+Sur le littoral, notamment du côté de Dieppe et Le Havre, le soleil jouera à cache-cache avec des nuages, mais l'ambiance restera agréable. Le vent sera généralement une brise légère à modérée, soufflant autour de 10 à 15 km/h sur les côtes, un peu plus sensible dans les terres, notamment vers Alençon et Lisieux où il pourra atteindre 25 km/h.
 
-Le vent sera léger à modéré, soufflant entre 10 et 25 km/h, sans excès. Pas de coup de vent en vue, juste une petite brise marine sur nos côtes et un vent un peu plus soutenu dans l'intérieur des terres, notamment vers Alençon.
-
-Pas de risque d'averses significatives pour l'instant, et encore moins d'orages ou de foudre à l'horizon. La journée s'annonce donc agréable, avec un contraste de températures qui va se dessiner au fil des heures. Les maximales seront plus fraîches sur le littoral, autour de 20-23°C, tandis que l'intérieur des terres pourra atteindre les 27-28°C.
-
-Restez connectés pour le point complet de la mi-journée !
+À l'intérieur des terres, comme à Alençon ou Lisieux, on retrouvera également ce mélange de soleil voilé et de nuages. Les températures minimales y sont un peu plus élevées, annonçant une belle journée. Pas de risque d'averses ni d'orages à l'horizon pour cette matinée, le temps sera sec et plaisant. Profitez bien de ce début de journée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Normandie pour votre bulletin météo de l'après-midi !
 
-Ce vendredi après-midi, la Normandie sera partagée entre de belles éclaircies et quelques averses. Le soleil dominera largement sur le Calvados, l'Orne et l'Eure, avec de très belles températures. Comptez 25°C à Caen, 28°C à Alençon et 28°C également à Évreux. Le vent sera modéré, soufflant de l'ouest à 15 km/h sur Caen et jusqu'à 25 km/h sur Alençon.
+Ce vendredi après-midi, la Normandie nous offre un tableau contrasté. Le soleil sera généreux sur la majeure partie de la région, avec de belles éclaircies qui s'imposeront de Cherbourg à Alençon, où nous attendons de belles maximales de 25 à 28 degrés. Le vent soufflera modérément, autour de 10 à 15 km/h, avec une légère brise côtière qui rafraîchira l'air le long du littoral.
 
-En revanche, sur la Seine-Maritime et la Manche, le ciel sera plus nuageux avec des averses éparses, notamment près du littoral. Soyez vigilants, car quelques cellules orageuses isolées pourraient éclater, apportant localement de la foudre et de fortes pluies. Les températures y seront plus fraîches, avec 23°C au Havre, 20°C à Dieppe et 24°C à Cherbourg. La brise côtière sera bien présente, avec un vent d'ouest-nord-ouest soufflant entre 10 et 15 km/h.
+Cependant, soyez vigilants du côté de Lisieux, où quelques averses sont possibles, avec une maximale de 27 degrés. Plus à l'est, vers Rouen, le ciel sera un peu plus nuageux mais les températures resteront agréables, autour de 27 degrés. Le vent sera un peu plus soutenu sur le sud de la région, notamment vers Alençon, avec des rafales pouvant atteindre 25 km/h.
 
-Prudence donc, surtout si vous êtes dans l'est de la région ! On se retrouve ce soir pour un nouveau point météo. Belle après-midi à tous !
+En résumé, un bel après-midi ensoleillé pour la plupart, mais gardez un œil sur le ciel si vous êtes du côté de Lisieux. Profitez bien de ce vendredi !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (vendredi 17 juillet 2026)
 
 🌴 Le Havre / Deauville / Cabourg
 ☀️ Temps très agréable et ensoleillé ce vendredi, avec une ambiance estivale douce et lumineuse.
-🌡️ Température sur les plages : 21 à 24°C
+🌡️ Température sur les plages : 22 à 25°C
 🌊 Température de l’eau : 18 à 19°C
 
 🌴 Dieppe / Fécamp / Cherbourg
 ☀️ Belle luminosité dès le matin ce vendredi après dissipation des grisailles côtières, brise de nord-est sensible.
-🌡️ Température maximale sous abri : 20 à 22°C
+🌡️ Température maximale sous abri : 21 à 23°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -475,11 +487,10 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Dimanche 19 juillet : Le soleil règne en maître sur toute la Normandie. Les températures grimpent encore : de 20°C le matin à 30°C l'après-midi dans l'intérieur, 25°C sur les côtes. Vent faible. Ambiance estivale.
-
-Lundi 20 juillet : Toujours du beau temps avec un ciel voilé en fin de journée. Les maximales atteignent 32°C à l'intérieur, 27°C sur le littoral. Risque d'orages isolés en soirée sur l'est de la région. Rafales possibles.
-
-Mardi 21 juillet : Le temps reste chaud et lourd. Des orages pourraient éclater l'après-midi, surtout sur la Seine-Maritime et l'Eure. Températures stables, 30-33°C. Attention à la canicule, la vigilance orange pourrait être étendue à la Normandie.
+Tendance pour les trois prochains jours :
+- Dimanche 19 juillet : Le soleil reste roi sur toute la région. Les températures grimpent encore, avec des maximales comprises entre 30 et 33 degrés à l'intérieur des terres. Le littoral sera un peu plus respirable grâce à la brise. Toujours vigilance canicule.
+- Lundi 20 juillet : Nouvelle journée très chaude et ensoleillée. Le ciel est dégagé du matin au soir. Les températures atteignent 30 à 34 degrés, voire localement 35. La chaleur devient pesante, surtout l'après-midi. Pensez à vous rafraîchir régulièrement.
+- Mardi 21 juillet : La canicule se maintient. Le temps reste sec et lumineux, avec un soleil écrasant. Les maximales sont stables, autour de 31 à 34 degrés. Un peu de vent d'est pourra apporter un léger répit sur les côtes. La vigilance orange sera probablement prolongée.
 
 
 --------------------------------------------------------------------------------
@@ -488,25 +499,19 @@ Mardi 21 juillet : Le temps reste chaud et lourd. Des orages pourraient éclater
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**☀️ CHALEUR CANICULAIRE ET ORAGES VIOLENTS : UNE JOURNÉE À DOUBLE FACE !**
-
-Ce vendredi, notre région vit une véritable météo contrastée. La vigilance orange Canicule est en vigueur dans 72 départements, et nous sommes en première ligne. La matinée est radieuse avec un grand soleil et des températures déjà élevées, de 19 à 21°C au réveil. Mais l’après-midi, attention au basculement ! Alors que le sud de la région (Sablières, Montélimar) cuit sous 34°C, une dégradation orageuse éclate sur l’Allier, l’Ain et l’Auvergne. De Montluçon à Bourg-en-Bresse, attendez-vous à de la foudre, des rafales de vent jusqu’à 40 km/h et de fortes averses. Un vrai coup de chaud avant l’orage.
+☀️🌩️ CANICULE ET ORAGES VIOLENTS : UNE JOURNÉE COUP DE CHAUD ET COUP DE TONNERRE ! Ce vendredi, notre région vit une météo à deux visages. La matinée est rayonnante partout avec un soleil généreux et des températures déjà très douces, voire chaudes, de 19 à 21°C au lever du jour. Mais attention, l'après-midi bascule ! Si le sud (Montélimar, Dieulefit) conserve un ciel peu nuageux et 35°C, une dégradation orageuse éclate sur l'intérieur des terres : Bourg-en-Bresse, Vichy, Montluçon, Moulins, Privas, Aurillac, Saint-Flour sont concernés par des orages accompagnés de grêle et de fortes pluies. Le vent de mistral atteint 30 km/h dans la vallée du Rhône. La vigilance orange canicule s'étend sur 72 départements, et la chaleur reste écrasante. Soyez prudents sous les orages !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre bulletin météo du matin ! Ce vendredi 17 juillet 2026, la journée s'annonce globalement ensoleillée sur notre belle région.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre bulletin météo du vendredi 17 juillet 2026 !
 
-Dès le lever du jour, le soleil domine largement le ciel. Les températures minimales sont déjà douces, avec 19°C à Montluçon, 20°C à Privas, et même 21°C à Moulins et Vichy. Seul le sud-ouest de l'Auvergne, du côté d'Aurillac, verra quelques nuages jouer à cache-cache avec le soleil, mais rien de bien méchant.
+Ce vendredi matin, le soleil est le grand vainqueur sur l'ensemble de notre belle région ! Dès le lever du jour, les rayons dorés illuminent nos paysages, du nord au sud. Les températures minimales sont déjà très douces, voire chaudes pour la saison. On relève par exemple 19°C à Bourg-en-Bresse, 20°C à Vichy et Moulins, 20°C également à Privas, et même 21°C à Montélimar. Seul le sud-ouest de l'Auvergne-Rhône-Alpes connaît un ciel un peu plus voilé, mais cela ne gâche en rien l'impression de beau temps généralisé.
 
-Côté vent, une légère brise souffle sur la plupart des secteurs, autour de 10 à 20 km/h. Attention tout de même à Montluçon où le vent se fera un peu plus sentir, atteignant les 40 km/h. Les températures maximales de l'après-midi grimperont jusqu'à 34°C à Sablières et Montélimar, tandis que les zones intérieures comme Aurillac resteront plus "fraîches" avec 28°C. Pas d'orages ni de foudre à l'horizon pour ce matin, le ciel est dégagé !
-
-Profitez bien de cette belle journée !
+Côté vent, une légère brise souffle sur la plupart des départements, aux alentours de 15 km/h. Attention cependant du côté de la vallée du Rhône, où le vent se fait un peu plus sentir, autour de 30 km/h, notamment vers Privas et Montélimar. Pas de mistral en vue pour l'instant, mais une ambiance estivale bien présente ! Préparez-vous à une journée très ensoleillée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Auvergne-Rhône-Alpes pour votre point météo de l'après-midi !
+Ce vendredi après-midi, l'Auvergne-Rhône-Alpes se partage entre soleil généreux et ciel plus capricieux. Le vent souffle modérément, avec des pointes à 30 km/h pour le Mistral dans le sud de la région, notamment vers Privas et Montélimar. Les températures grimpent, atteignant 35°C à Montélimar, 34°C à Sablières et 33°C à Dieulefit, où le soleil domine.
 
-Ce vendredi après-midi, l'ambiance sera contrastée sur notre belle région. Attendez-vous à une chaleur bien présente, notamment dans le sud. Du côté de Sablières, le soleil brillera généreusement avec un solide 34°C, et un petit vent léger à 10 km/h. Même scénario à Dieulefit et Montélimar, où le soleil domine et les températures atteindront les 33°C et 34°C, avec des brises légères à modérées, autour de 10 à 25 km/h.
-
-Mais attention, le ciel va se montrer plus capricieux ailleurs ! Sur une large partie de la région, de l'Allier jusqu'à l'Ain, des orages vont éclater. À Montluçon et Moulins, les maximales avoisineront les 31-32°C, mais le ciel sera menaçant, avec des risques de foudre et de fortes averses sous les cellules orageuses. Le vent soufflera modérément, jusqu'à 40 km/h par endroits. Soyez vigilants sur les routes ! Même chose pour Bourg-en-Bresse, Vichy, Privas et Aurillac, où les orages seront également de la partie, avec des températures entre 28 et 31°C. Le vent y sera plus calme, autour de 20-30 km/h. Prudence donc, et à très vite pour un nouveau point météo !
+Cependant, attention ! Des orages accompagnés de grêle et de fortes pluies sont à prévoir sur une grande partie de l'intérieur des terres. Soyez vigilants du côté de Bourg-en-Bresse avec 31°C, Vichy et Montluçon où le thermomètre affichera 29°C et 32°C respectivement. Des cellules orageuses sont aussi attendues du côté de Moulins avec 30°C, Privas avec 32°C et Aurillac avec 28°C. Soyez prudents, car des risques de foudre et de grêle sont bien présents sous ces averses orageuses.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -533,11 +538,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Tendance pour les 3 prochains jours :**
+Tendance pour les trois prochains jours, du dimanche 19 au mardi 21 juillet 2026 :
 
-*   **Dimanche 19 juillet :** Le soleil reprend ses droits sur l'ensemble de la région après le passage orageux. Les températures restent très chaudes, avec des maximales comprises entre 30 et 33°C. Un vent d'autan sensible pourra se lever sur le sud de la région. Belle journée estivale.
-*   **Lundi 20 juillet :** La chaleur s'accentue encore. Le ciel est voilé par moments, mais le soleil domine toujours. Les maximales grimpent jusqu'à 35°C dans la vallée du Rhône. La vigilance reste de mise pour les personnes fragiles. Nuit très douce.
-*   **Mardi 21 juillet :** Nouvelle journée caniculaire. Le temps reste sec et très ensoleillé. Les températures maximales atteignent 36°C à Montélimar et 34°C à Lyon. Une attention particulière est recommandée pour les activités en extérieur et l'hydratation.
+**Dimanche 19 juillet :** Soleil généreux du matin au soir sur toute la région. Les températures grimpent encore, avec des maximales de 34°C à 37°C selon les secteurs. La vigilance canicule se poursuit. Quelques nuages élevés en fin de journée, mais aucun orage attendu. Vent faible.
+
+**Lundi 20 juillet :** Chaleur toujours aussi intense. Ciel voilé par moments, mais le soleil reste dominant. Les thermomètres affichent 35°C à 38°C. Risque d’orages isolés possibles en fin d’après-midi sur les reliefs, sans gravité. Nuit très chaude, avec des minimales souvent supérieures à 20°C.
+
+**Mardi 21 juillet :** Nouvelle journée caniculaire. Le soleil est au rendez-vous, avec un ciel parfois un peu laiteux. Températures maximales entre 36°C et 39°C, localement 40°C dans la vallée du Rhône. Pas de vent notable. La vigilance orange canicule est maintenue. Hydratez-vous et restez à l’ombre aux heures les plus chaudes.
 
 
 --------------------------------------------------------------------------------
@@ -546,26 +553,25 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-⛈️ **ORAGES ET NEIGE : UNE JOURNÉE À DOUBLE FACE !**  
-Ce vendredi 17 juillet, la Bourgogne-Franche-Comté vit un véritable choc météo. Le réveil est frais et arrosé : averses sur Dijon, Dole, Besançon, et même de la neige sur les hauteurs du Jura (Pontarlier, Morez) avec des températures entre 17 et 20°C. L’après-midi, attention, une dégradation orageuse généralisée frappe toute la région. Orages, foudre, fortes pluies et grêle possible. Les maximales atteignent 30°C à Châtillon-sur-Seine mais restent fraîches en altitude (23°C à Pontarlier). Le vent modéré accentue l’instabilité. Restez prudents sur les routes et suivez les alertes locales.
+🚨 NEIGE EN JUILLET ET ORAGES VIOLENTS : LA RÉGION EN ALERTE ! Ce vendredi, notre région vit une journée météo particulièrement contrastée. Au réveil, des averses et même de la neige sont tombées sur les hauteurs de l’Est, avec des températures fraîches (16 à 19°C). L’après-midi, les orages ont éclaté partout, avec des risques de grêle et de foudre. Les maximales ont tout de même atteint 30°C, rendant l’atmosphère lourde. La vigilance canicule est active sur 72 départements, mais ici c’est l’instabilité qui domine. Soyez prudents, surtout en montagne où la neige est tombée en plein été !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ pour votre bulletin météo du matin ! Ce vendredi 17 juillet, le réveil est un peu frais et bien arrosé sur notre belle région.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bourgogne-Franche-Comté pour votre bulletin météo du matin ! Ce vendredi 17 juillet, le réveil est un peu frais et bien arrosé sur une grande partie de notre belle région.
 
-Les minimales sont douces pour la saison, avec 20°C à Châtillon-sur-Seine et 19°C à Dijon et Dole. Ailleurs, on descend à 18°C à Besançon et Lons-le-Saunier, et 17°C à Pouilly-en-Auxois, Pontarlier et Morez.
+Dès les premières heures, les températures sont douces mais sans excès. On relève 19°C à Châtillon-sur-Seine et à Dijon, où un vent modéré souffle à 30 km/h, apportant des averses. Même constat à Dole, avec 19°C et un vent de 20 km/h. Plus au sud, Lons-le-Saunier affiche 19°C, mais attention, le vent est assez soutenu, atteignant les 30 km/h, et la pluie est bien présente.
 
-Ce matin, attendez-vous à un ciel bien chargé sur la majeure partie de la Bourgogne-Franche-Comté. Des averses sont au programme, notamment sur Dijon, Dole, et Lons-le-Saunier. Le vent sera modéré, soufflant jusqu'à 35 km/h du côté de Lons-le-Saunier, et atteindra 30 km/h sur Châtillon-sur-Seine. Soyez vigilants sur les routes !
+Plus à l'est, l'ambiance est plus hivernale que printanière ! À Besançon, les averses se transforment en flocons, avec 18°C et un vent modéré de 20 km/h. Même scénario à Pontarlier et Morez, où la neige tombe avec des températures de 17°C et 16°C respectivement. Le vent y est plus faible, autour de 10 à 15 km/h.
 
-En revanche, sur les hauteurs du Jura, préparez-vous à une surprise hivernale : de la neige est attendue du côté de Pontarlier, Sancey-le-Grand et Morez. Une ambiance bien fraîche en altitude, avec un vent léger de 10 à 20 km/h.
-
-Restez connectés pour la suite de la journée !
+Préparez vos parapluies, voire vos bonnets pour les hauteurs, car cette matinée s'annonce bien humide et fraîche !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ pour votre bulletin météo de l'après-midi !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI BOURGOGNE-FRANCHE-COMTÉ pour votre bulletin météo de l'après-midi du vendredi 17 juillet 2026 !
 
-Ce vendredi après-midi, la prudence est de mise sur l'ensemble de notre belle région. Nous allons malheureusement être sous l'influence d'une dégradation orageuse généralisée. Attendez-vous à des orages sur la quasi-totalité des départements, avec un risque de foudre non négligeable et de fortes pluies sous les cellules les plus actives. Localement, des chutes de grêle sont même possibles, alors soyez vigilants si vous êtes sur la route ou en extérieur.
+Ce vendredi après-midi, la prudence est de mise sur l'ensemble de la région, car les orages seront généralisés ! Attendez-vous à des risques de foudre, de fortes pluies sous les cellules orageuses et même de la grêle par endroits. Soyez vigilants !
 
-Les températures maximales afficheront 30°C à Châtillon-sur-Seine, 26°C à Dijon et Pouilly-en-Auxois, 27°C à Besançon et Dole, et 23°C à Pontarlier et Morez. Les vents seront généralement modérés, soufflant entre 10 et 35 km/h, principalement de secteur ouest à sud-ouest, ce qui pourra accentuer la sensation d'instabilité. Soyez donc très attentifs aux évolutions du ciel et aux alertes locales. Restez connectés pour de nouvelles informations !
+Les températures maximales afficheront 30°C à Châtillon-sur-Seine, 29°C à Dijon et Dole, 25°C à Pontarlier et Morez, et 26°C à Pouilly-en-Auxois. Le vent soufflera modérément, avec des rafales pouvant atteindre 30 km/h sur Dijon et Lons-le-Saunier, et autour de 15 à 20 km/h ailleurs. Un vent d'ouest à sud-ouest qui apportera cette instabilité.
+
+Malgré ces averses et orages, l'ambiance restera lourde avec des températures élevées. Pensez à adapter votre conduite et à vous abriter en cas de fortes intempéries. Restez connectés pour les prochaines mises à jour !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -592,11 +598,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil revient en force après une matinée encore nuageuse sur les reliefs. Les températures grimpent : 28 à 32°C en plaine, 24°C sur le Jura. Vent faible. Risque d’orages isolés en fin d’après-midi sur l’Yonne et la Nièvre.
+Dimanche 19 juillet : Le soleil reprend le dessus avec un ciel bleu et des températures en hausse, atteignant 32°C l’après-midi. La nuit sera chaude, avec des minimales autour de 20°C.
 
-**Lundi 20 juillet** : Chaleur accablante avec un ciel voilé. Maximales de 30 à 34°C, jusqu’à 36°C localement en Bourgogne. Vent de sud modéré. Attention à la canicule : hydratez-vous, évitez les sorties aux heures chaudes. Quelques nuages élevés sans précipitations.
+Lundi 20 juillet : La canicule s’accentue. Grand soleil toute la journée, maximales de 34 à 36°C. Attention aux fortes chaleurs, notamment pour les personnes fragiles. Pensez à vous hydrater et à limiter les efforts.
 
-**Mardi 21 juillet** : Toujours très chaud, mais l’air devient plus instable. Matinée ensoleillée, puis développement d’orages parfois forts en soirée, surtout sur la Franche-Comté. Températures stables : 30-34°C. Vigilance orange canicule maintenue.
+Mardi 21 juillet : Toujours très chaud, avec des températures autour de 33°C. Des nuages pourraient faire leur apparition en cours de journée, avec un risque d’orages isolés en fin d’après-midi. La vigilance canicule reste de mise.
 
 
 --------------------------------------------------------------------------------
@@ -605,27 +611,27 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ BRETAGNE SOUS LE SOLEIL : UN VENDREDI ESTIVAL AVANT UN WEEK-END CANICULAIRE ! Ce vendredi, la Bretagne profite d’une belle journée ensoleillée, avec un ciel radieux sur la quasi-totalité de la région. Seuls quelques nuages matinaux sur Lannion, Ouessant et l’Île-de-Sein se dissipent rapidement. L’après-midi, le soleil règne partout, à l’exception de Fougères où quelques averses éparses sont possibles. Les températures grimpent jusqu’à 28°C à Brest et Quimper, 27°C à Morlaix, tandis que le littoral reste plus frais avec 22°C à l’Île-de-Sein grâce à une brise marine. Vent modéré, 20-25 km/h sur les côtes. La vigilance orange canicule concerne 72 départements français, mais la Bretagne reste en marge avec une chaleur supportable. Profitez bien de ce bel été !
+☀️ BRETAGNE SOUS LE SOLEIL, MAIS LA CHALEUR MONTE ! Ce vendredi 17 juillet 2026, la Bretagne profite d’une belle journée estivale, avec un ciel bien dégagé dès le matin, seulement quelques voiles nuageux sur les îles. Les températures sont très agréables, de 15 à 18 °C au réveil. L’après-midi, le soleil domine largement, avec des maximales qui atteignent 27 à 29 °C sur le littoral et jusqu’à 28 °C dans les terres, à l’exception de Fougères où quelques averses passagères sont attendues. Le vent reste léger, une petite brise marine apporte un peu de fraîcheur sur les côtes, notamment à Ouessant et à l’Île-de-Sein. La vigilance orange canicule concerne 72 départements en France, et la Bretagne n’est pas épargnée par cette chaleur persistante. Pensez à vous hydrater et à protéger les plus fragiles !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bretagne pour votre bulletin météo du vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bretagne pour votre bulletin météo de ce vendredi 17 juillet 2026 !
 
-Ce vendredi matin, la Bretagne se réveille sous un ciel majoritairement ensoleillé, avec de belles éclaircies qui s'annoncent pour la journée. Les températures sont déjà douces : 15 degrés à Lannion, 16 degrés à Merdrignac, 14 degrés à Rostrenen, 15 degrés à Saint-Brieuc, 18 degrés à Brest et 17 degrés à Quimper.
+Ce vendredi matin, la Bretagne se réveille sous un ciel majoritairement ensoleillé, avec quelques voiles nuageux par-ci par-là, mais rien qui ne gâche le plaisir. Les températures sont agréables dès le lever du jour, avec 15°C à Lannion, 16°C à Merdrignac, 13°C à Rostrenen, 15°C à Saint-Brieuc et 18°C à Quimper.
 
-Le soleil est bien présent sur une grande partie de la région, notamment sur le Finistère et l'Ille-et-Vilaine. Quelques nuages passagers pourront voiler le soleil par endroits, notamment du côté de Lannion, Ouessant et l'Île-de-Sein, mais rien de bien méchant, ils se dissiperont rapidement.
+Le vent sera léger, une petite brise de 10 à 15 km/h soufflera sur l'ensemble de la région, un peu plus perceptible sur le littoral, notamment du côté de l'Île-de-Sein et Ouessant où il atteindra les 20 km/h.
 
-Côté vent, on aura une brise légère à modérée, avec des pointes autour de 10 à 20 km/h sur l'intérieur des terres, et un peu plus soutenue sur le littoral, jusqu'à 25 km/h notamment vers l'Île-de-Sein. Les températures maximales seront très agréables, avec une belle différence entre le littoral et l'intérieur : on attend jusqu'à 28 degrés à Brest, Quimper et Fougères, tandis que l'Île-de-Sein restera plus fraîche avec 22 degrés.
+On note un contraste de températures qui se dessine déjà entre l'intérieur des terres et le littoral. Si les minimales sont douces partout, les maximales de l'après-midi, que nous détaillerons tout à l'heure, promettent d'être plus élevées dans les terres.
 
-Profitez bien de cette belle journée !
+Pour l'instant, profitez de ce début de journée radieux ! Pas d'orages ni de grêle à l'horizon, juste un beau soleil qui se lève sur notre belle Bretagne.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bretagne pour le point météo de votre après-midi !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Bretagne pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
 
-Ce vendredi après-midi, la Bretagne va littéralement être baignée de soleil ! Attendez-vous à un ciel radieux sur l'ensemble de la région, avec un grand soleil éclatant qui s'imposera partout. Seul le secteur de Fougères pourrait connaître quelques averses éparses, mais rien de bien méchant.
+Ce vendredi après-midi, la Bretagne continue de profiter d'un temps estival et généreux. Le soleil sera omniprésent sur la majeure partie de la région, avec un ciel dégagé et des températures très agréables. On attend par exemple 27°C à Lannion, 28°C à Brest, et même 29°C à Quimper ! Les températures seront également très douces dans les terres, avec 24°C à Merdrignac et Rostrenen.
 
-Côté températures, il va faire chaud ! On attend jusqu'à 28°C à Brest et Quimper, 27°C à Morlaix, 26°C à Lannion et même 24°C à Saint-Brieuc et Merdrignac. Le contraste est bien là : les températures seront plus douces sur le littoral, comme à l'Île-de-Sein avec 22°C, grâce à une agréable brise marine venant de l'ouest, soufflant autour de 20 à 25 km/h. Dans les terres, le vent sera plus léger, autour de 15 km/h, et les températures grimperont encore un peu plus.
+Cependant, un petit bémol est à signaler du côté de Fougères, où quelques averses pourraient faire leur apparition, accompagnées d'un ciel un peu plus nuageux et d'une température de 28°C.
 
-Profitez bien de ce bel après-midi estival ! À tout à l'heure pour le prochain bulletin météo sur Radio Ici Bretagne !
+Côté vent, une légère brise marine soufflera sur les côtes, notamment à l'Île-de-Sein et Ouessant avec 20 km/h, apportant une sensation de fraîcheur bien appréciable. Dans l'intérieur des terres, le vent restera modéré, autour de 10 à 15 km/h. Profitez bien de ce bel après-midi !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -652,11 +658,7 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil continue de dominer largement. Ciel bleu du matin au soir sur toute la Bretagne. Températures encore élevées : 26 à 29°C dans l’intérieur, 22 à 25°C sur le littoral. Vent faible à modéré, toujours de secteur ouest. Nuit douce.
-
-**Lundi 20 juillet** : La chaleur s’accentue. Soleil généreux, quelques nuages inoffensifs l’après-midi. Maximales : 28 à 31°C dans les terres, 24 à 27°C près des côtes. Attention aux coups de chaud en journée. Brise marine agréable sur le littoral.
-
-**Mardi 21 juillet** : Encore du beau temps, mais l’air devient plus lourd. Ciel voilé par moments, surtout en fin de journée. Températures stables : 27 à 30°C à l’intérieur, 23 à 26°C sur les côtes. Risque d’orages isolés en soirée sur l’est de la région (Fougères, Rennes). À suivre.
+La tendance pour les trois prochains jours s’annonce résolument estivale, avec le maintien d’un temps sec et ensoleillé sur l’ensemble de la Bretagne. Dimanche 19 juillet, le soleil brillera sans partage dès le matin. Les températures seront encore élevées, avec des maximales comprises entre 26 et 30 °C, un peu plus fraîches près des côtes grâce à la brise. Le vent restera faible à modéré. Lundi 20 juillet, la chaleur se renforce : ciel bleu toute la journée, pas une goutte de pluie en vue. Les maximales grimperont jusqu’à 31 °C dans les terres, tandis que le littoral restera plus respirable avec 25 à 27 °C. Mardi 21 juillet, la situation évolue peu : le soleil domine toujours, mais quelques nuages pourraient s’inviter en fin de journée, sans risque d’averses significatives. Les températures resteront très chaudes, de 27 à 32 °C. Cette vague de chaleur persiste sur l’ensemble du pays, alors continuez à vous protéger et à éviter les efforts pendant les heures les plus chaudes.
 
 
 --------------------------------------------------------------------------------
@@ -665,25 +667,21 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-⚠️ ORAGES VIOLENTS APRÈS UNE MATINÉE CANICULAIRE ! Ce vendredi, le Centre-Val de Loire vit une journée à deux visages. Le matin, un soleil éclatant domine, avec des températures déjà élevées (19 à 24°C) et un vent modéré. Mais l’après-midi, le ciel se déchaîne : des orages accompagnés de grêle, de fortes pluies et de coups de foudre traversent toute la région, de Bourges à Chartres. Les températures restent lourdes, entre 30 et 32°C, et le vent peut atteindre 30 km/h sous les cellules. Par ailleurs, 72 départements français sont en vigilance orange canicule, et notre région est concernée : la chaleur persistera dans les prochains jours. Soyez prudents, surtout sur les routes, et restez à l’écoute des consignes de sécurité.
+☀️ UN VENDREDI CONTRASTÉ ENTRE SOLEIL ET AVERSES ! Ce vendredi, le Centre-Val de Loire se réveille sous un ciel partagé. Les minimales sont déjà douces, de 18 à 21°C. La matinée est mitigée : quelques averses localisées notamment vers Châteauroux et Écueillé, tandis que le nord (Chartres, Dreux) voit le soleil percer. L’après-midi, le nord profite d’un grand soleil avec 29 à 30°C, mais le sud et l’est (Bourges, Sancerre) subissent des pluies faibles, voire fortes à Châteauroux et Écueillé avec des rafales jusqu’à 35 km/h. La vigilance orange Canicule concerne 72 départements en France, et notre région est en alerte chaleur persistante. Restez prudents !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI CENTRE-VAL DE LOIRE pour votre bulletin météo du vendredi 17 juillet !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI CENTRE-VAL DE LOIRE pour votre bulletin météo du matin ! Ce vendredi 17 juillet, le ciel nous offre un début de journée assez contrasté et quelques surprises.
 
-Ce vendredi matin, le soleil est le maître incontesté de notre belle région. Le ciel est dégagé, promettant une journée radieuse. Les températures sont déjà douces, voire chaudes, avec 24°C à Bourges, 21°C à Argent-sur-Sauldre et Châteauroux, 22°C à Saint-Amand-Montrond, et 19°C à Chartres et Dreux.
+Sur l'ensemble de notre région, les températures minimales sont déjà bien douces, avec 18°C à Argent-sur-Sauldre et Sancerre, 19°C à Chartres, Dreux et Nogent-le-Rotrou, et même 21°C à Bourges.
 
-Le vent souffle modérément sur l'ensemble de la région, avec des pointes à 30 km/h du côté de Saint-Amand-Montrond, et autour de 15 à 20 km/h ailleurs. Pas de brise marine pour nous rafraîchir, mais un vent qui reste agréable.
-
-Pas de nuages à l'horizon, pas de pluie en vue pour l'instant, et encore moins de risque orageux ou de foudre. C'est un matin parfait pour profiter de l'extérieur.
-
-Je vous souhaite une excellente journée !
+Côté ciel, la matinée s'annonce plutôt mitigée. Si le soleil tente de percer par endroits, notamment vers Châteaudun et Dreux, il devra faire face à des passages nuageux plus denses. Attendez-vous à quelques averses localisées, surtout du côté de Châteauroux et Écueillé où les précipitations ont été plus marquées cette nuit. Le vent, lui, sera plutôt modéré, soufflant entre 15 et 20 km/h sur la plupart des villes, mais il pourra atteindre les 30 km/h vers Sancerre et même 35 km/h du côté d'Écueillé, apportant une brise rafraîchissante. Pas d'orages à l'horizon pour l'instant, mais restons vigilants pour la suite de la journée. La sensation de fraîcheur sera plus marquée là où la pluie s'est invitée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous ! Bienvenue sur Radio Ici Centre-Val de Loire pour votre bulletin météo de l'après-midi.
+Ce vendredi après-midi, le Centre-Val de Loire va connaître un temps partagé entre soleil et averses, avec des températures estivales. Dans le nord de la région, du côté de Chartres, Châteaudun et Dreux, le soleil dominera largement avec des maximales agréables, autour de 29 à 30 degrés. Le vent sera faible, soufflant d'ouest à environ 15 km/h, rendant l'atmosphère très agréable.
 
-Ce vendredi après-midi, la prudence est de mise sur l'ensemble de la région ! Attendez-vous à un ciel très chargé, avec de nombreux nuages qui vont déverser des averses. Mais attention, ces averses seront accompagnées d'orages, et le risque de grêle est bien présent ! Soyez vigilants, car des coups de foudre sont possibles, ainsi que de fortes pluies sous les cellules orageuses les plus actives.
+En revanche, la prudence est de mise sur la partie sud et est de notre belle région ! Des averses éparses sont attendues, notamment vers Argent-sur-Sauldre, Bourges et Saint-Amand-Montrond, où le thermomètre affichera tout de même un confortable 30 à 31 degrés. Le vent y sera un peu plus présent, autour de 15 à 20 km/h.
 
-Côté températures, il fera encore chaud, mais l'ambiance sera lourde. On attend 32°C à Bourges, 31°C à Saint-Amand-Montrond et Châteaudun, 30°C à Sancerre, Chartres et Écueillé. Le vent soufflera modérément, avec des rafales autour de 20 km/h, et même jusqu'à 30 km/h du côté de Saint-Amand-Montrond. Ces vents pourront accentuer la sensation d'inconfort sous les orages. Restez à l'écoute et soyez prudents sur les routes !
+Mais attention, du côté de Sancerre, Châteauroux et Écueillé, on s'attend à des pluies plus soutenues. À Écueillé, les précipitations pourraient même être fortes, et le vent soufflera jusqu'à 35 km/h. Soyez vigilants sur ces secteurs ! Pas d'orages en vue, mais restez à l'écoute pour les prochaines prévisions.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -710,11 +708,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil revient en force après les orages de vendredi. Matinée claire et douce, après-midi chaude avec des maximales de 30 à 33°C. Quelques nuages pourraient se développer en fin de journée, mais sans risque d’orage. Vent faible.
+**Dimanche 19 juillet** : Le soleil reprend ses droits sur toute la région. Les températures grimpent : maximales de 32 à 34°C, avec un ressenti lourd. Vent faible. Nuits déjà chaudes, autour de 20°C. Attention aux coups de chaleur.
 
-**Lundi 20 juillet** : La canicule s’installe durablement. Ciel voilé, températures en hausse : de 34 à 36°C l’après-midi. Nuits tropicales (20-22°C). Rafales de vent modérées. Vigilance orange maintenue.
+**Lundi 20 juillet** : La canicule s’accentue. Ciel dégagé du matin au soir. Températures maximales comprises entre 34 et 36°C, localement 37°C dans le sud de la région (Bourges, Châteauroux). Rafales de vent d’est modéré. Très forte chaleur en journée.
 
-**Mardi 21 juillet** : Pic de chaleur attendu. Soleil généreux, thermomètres entre 35 et 38°C. L’air devient très lourd, avec un risque d’orages isolés en soirée. Il est impératif de s’hydrater et de protéger les personnes fragiles.
+**Mardi 21 juillet** : Pic de chaleur attendu. Soleil écrasant, pas une goutte de pluie. Thermomètre entre 35 et 38°C, voire plus dans les zones urbaines. Nuits tropicales avec des minimales autour de 21 à 23°C. Risque sanitaire élevé. Il est impératif de s’hydrater et de limiter les activités en extérieur aux heures les plus chaudes.
 
 
 --------------------------------------------------------------------------------
@@ -723,26 +721,22 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE EN CORSE : CHALEUR ÉCRASANTE SUR L’ÎLE DE BEAUTÉ !  
-Ce vendredi 17 juillet 2026, la Corse est écrasée sous un soleil de plomb. 72 départements français sont placés en vigilance orange canicule, et notre île n’y échappe pas. Le ciel est d’un bleu immaculé du matin au soir, sans un seul nuage. Les températures minimales sont déjà élevées : 25°C à Ajaccio, 27°C à Figari. En après-midi, le mercure explose : jusqu’à 37°C à Porto-Vecchio, 36°C dans l’intérieur à Zévaco et Corte, et 35°C à Figari. Seule la côte Ouest respire un peu avec 31°C à Calvi. Le vent reste léger, entre 10 et 15 km/h, insuffisant pour rafraîchir l’atmosphère. Une journée à haut risque sanitaire : hydratez-vous, évitez les sorties aux heures les plus chaudes et protégez les plus fragiles.
+**
+☀️ CANICULE : LA CORSE BRILLE SOUS UN SOLEIL DE PLOMB ! Ce vendredi, la Corse est en première ligne de la vague de chaleur qui frappe 72 départements français. Dès ce matin, le ciel est d’un bleu pur et le soleil règne sans partage de Bastia à Figari. Les températures sont déjà très élevées au réveil, avec 27°C à Corte ou Bastia. L’après-midi, le thermomètre flirte avec les 36°C dans l’intérieur des terres, comme à Zévaco et Corte. Sur le littoral, on respire un peu mieux avec 31°C à Calvi et 32°C à Ajaccio. Une légère brise de 10 à 15 km/h apporte un peu de répit. Pas un nuage, pas un risque d’orage : le soleil est seul maître à bord. Restez bien hydratés et évitez les heures les plus chaudes.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo du vendredi 17 juillet !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo du vendredi 17 juillet 2026 ! Ce matin, la Corse se réveille sous un soleil généreux et un ciel d'un bleu éclatant, une véritable invitation à profiter de cette belle journée d'été.
 
-Ce vendredi matin, le soleil est le maître incontesté de notre belle île. Préparez-vous à une journée radieuse, car aucun nuage ne viendra perturber ce ciel azur. Les températures minimales sont déjà bien douces : nous avons 25°C à Ajaccio, 27°C à Figari, 26°C à Bastia, et même 21°C dans les terres, du côté de Zévaco et Pietralba.
+Les températures minimales sont déjà très douces. On relève 25°C à Ajaccio, 27°C à Figari, 24°C à Porto-Vecchio, 22°C à Sartène et 27°C à Bastia. Même dans l'intérieur des terres, comme à Zévaco où il fait 22°C ou à Corte avec 27°C, la chaleur est déjà bien présente.
 
-Le vent, quant à lui, sera léger à modéré sur l'ensemble de la Corse. Comptez une petite brise de 10 km/h sur Ajaccio et Sartène, et jusqu'à 15 km/h sur Figari, Porto-Vecchio, Calvi et Corte. Pas de quoi s'inquiéter, donc, juste de quoi rafraîchir un peu l'atmosphère.
+Côté vent, une légère brise souffle sur l'ensemble de l'île, avec des pointes à 10 km/h sur le littoral, par exemple à Calvi ou Cervione, et jusqu'à 15 km/h dans le sud, notamment à Figari et Porto-Vecchio. Ce vent modéré sera bien agréable pour rafraîchir un peu l'atmosphère. Pas un nuage à l'horizon, le soleil règne en maître et il n'y a absolument aucun risque d'orage ou de foudre.
 
-Les maximales, elles, s'annoncent estivales, voire caniculaires par endroits. On attend 32°C à Ajaccio, 35°C à Figari et Sartène. Dans l'intérieur des terres, à Zévaco et Corte, le mercure grimpera jusqu'à 36°C, tandis que Porto-Vecchio pourrait atteindre les 37°C ! Sur le littoral, les températures seront un peu plus clémentes, avec 31°C à Calvi et Cervione, et 33°C à Bastia.
+Préparez-vous à une journée chaude, surtout dans l'intérieur des terres où les maximales atteindront les 35°C à Figari et Sartène, ou 36°C à Corte et Zévaco. Sur le littoral, les températures seront un peu plus clémentes, avec 32°C à Ajaccio et Bastia, et 31°C à Calvi et Cervione.
 
-En résumé, une matinée et une journée sous le signe du grand soleil et de la chaleur. Profitez bien de ce magnifique vendredi en Corse !
+Restez bien hydratés et profitez de ce magnifique vendredi !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Corse pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 ! Préparez-vous à un après-midi sous le signe du grand soleil sur l'ensemble de l'île. Pas l'ombre d'un nuage à l'horizon, un ciel d'un bleu immaculé nous attend !
-
-Côté températures, ça va chauffer ! Les maximales vont grimper, atteignant 32 degrés à Ajaccio, 35 à Figari et Sartène, et même 37 degrés du côté de Porto-Vecchio ! Dans l'intérieur des terres, les valeurs seront également très élevées, avec 36 degrés à Zévaco et Corte, et 34 degrés à Pietralba. Le contraste est bien marqué entre le littoral et l'intérieur, où la chaleur sera plus intense.
-
-Quant au vent, il restera léger à modéré. On attend une petite brise côtière de 10 à 15 km/h sur la plupart des secteurs, notamment sur Ajaccio, Bastia et Cervione. Un vent d'ouest soufflera plus distinctement sur Calvi, Figari et Corte, mais sans excès. Bref, un après-midi idéal pour profiter du soleil, mais n'oubliez pas de vous hydrater et de vous protéger ! Très bel après-midi à tous sur Radio Ici Corse !
+L'après-midi, le temps est marqué par un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 32°C à Bastia, 31°C à Calvi, 33°C à Pietralba, 36°C à Zévaco, 36°C à Corte. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.
@@ -771,11 +765,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil reste maître du ciel. La chaleur persiste avec des maximales encore très élevées : 35°C à Figari et Sartène, 33°C à Bastia et Ajaccio, jusqu’à 36°C dans les terres. Vent faible à modéré. Nuits chaudes (minimales autour de 24-26°C). La vigilance orange canicule devrait être maintenue.
+**Dimanche 19 juillet** : Le soleil reste omniprésent sur l’ensemble de l’île. Les températures maximales restent très élevées, entre 32 et 36°C. Vent faible à modéré, toujours de secteur sud. Nuit très chaude, avec des minimales qui peinent à descendre sous les 24°C sur le littoral.
 
-**Lundi 20 juillet** : Nouvelle journée estivale sans ombre de nuage. Les températures grimpent à nouveau : 37°C possibles localement dans l’intérieur (Corte, Zévaco), 34°C sur le littoral. Vent d’ouest un peu plus marqué l’après-midi, mais sans effet rafraîchissant notable. Toujours pas de répit.
+**Lundi 20 juillet** : La chaleur s’intensifie encore. Même ciel dégagé, même absence de nuages. Les maximales grimpent localement jusqu’à 37°C dans l’intérieur (Corte, Zévaco). La brise marine reste légère. Attention aux coups de chaleur en journée.
 
-**Mardi 21 juillet** : La masse d’air chaud reste bloquée sur la Corse. Soleil éclatant du matin au soir. Températures stables, avec des pointes à 36-37°C dans le Sud et l’intérieur. Le vent pourrait se renforcer légèrement en fin de journée sur le Cap Corse et la Balagne. La canicule s’installe durablement – prudence maximale.
+**Mardi 21 juillet** : Pas de changement majeur. Le dôme de chaleur reste bien installé. Soleil écrasant du matin au soir. Températures stables, entre 31 et 36°C sur le littoral, jusqu’à 37°C dans les terres. Vent quasi nul. Nuits tropicales.
 
 
 --------------------------------------------------------------------------------
@@ -784,29 +778,21 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**❄️☀️ NEIGE EN JUILLET PUIS ORAGES VIOLENTS : UNE JOURNÉE DE FOLIE !**
-
-Ce vendredi, le Grand Est vit une journée météo complètement déjantée. La matinée a réservé une énorme surprise : un manteau blanc s’est invité sur Châlons, Reims, Épernay et Chaumont. Oui, de la neige en juillet, un phénomène rarissime ! Pendant ce temps, l’ouest de la région, de Troyes à Nogent, profitait déjà d’un grand soleil et d’une douceur matinale. Mais attention, l’après-midi bascule en mode alerte. L’instabilité gagne tout le territoire avec des orages localement forts. La foudre et les averses intenses sont à craindre. Les maximales grimpent entre 28 et 32°C, mais l’ambiance devient très lourde. Une journée à ne pas mettre le nez dehors sans parapluie et sans vigilance.
+🚨 ORAGES VIOLENTS ET CHALEUR ÉTOUFFANTE : UNE JOURNÉE À DOUBLE VISAGE ! Ce vendredi 17 juillet, le Grand Est bascule dans une météo agitée sous fond de canicule généralisée. En effet, 72 départements français sont placés en vigilance orange pour la chaleur persistante, et notre région n’est pas épargnée. La matinée démarre sous un ciel capricieux : nuages et averses éparses arrosent les Ardennes et la Champagne, avec des températures déjà douces (18 à 20°C). Mais l’après-midi, le temps se déchaîne : de nombreux orages éclatent sur l’ensemble du territoire, de Charleville-Mézières à Troyes, accompagnés de fortes pluies et d’un risque de foudre. Le vent peut se renforcer localement sous les cellules. Malgré cette instabilité, la chaleur reste écrasante avec 28 à 31°C. Soyez prudents et suivez les consignes de vigilance.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI GRAND EST pour votre bulletin météo du vendredi 17 juillet 2026 ! Ce matin, on se lève avec un temps contrasté sur notre belle région.
+Bonjour à toutes et à tous et bienvenue sur Radio Ici Grand Est pour votre bulletin météo du vendredi 17 juillet 2026 !
 
-Côté températures, il fait déjà bien doux, voire chaud par endroits. On relève 23°C à Troyes, 22°C à Châlons-en-Champagne, 21°C du côté d'Épernay et de Nogent-sur-Seine, et 20°C à Reims et Vitry-le-François. Les minimales sont agréables, mais attention, le mercure va vite grimper !
+Ce vendredi matin, le temps s'annonce plutôt capricieux sur notre belle région. Nous aurons un mélange de nuages et de quelques averses éparses, notamment sur les Ardennes, avec 18°C à Charleville-Mézières et 19°C à Rethel. Le vent soufflera modérément, entre 15 et 20 km/h, apportant une sensation de fraîcheur. Plus au sud, vers Troyes et Nogent-sur-Seine, les températures seront plus douces, autour de 20°C, mais attention aux averses qui pourraient être un peu plus marquées par moments.
 
-Pour ce qui est du ciel, on a un mélange de soleil et de nuages. Sur l'ouest de la région, notamment vers Nogent-sur-Seine et Troyes, le soleil est généreux et nous offre un beau ciel dégagé. Mais plus on se dirige vers l'est, plus les nuages sont présents. Des averses sont attendues du côté de Charleville-Mézières, Rethel et Vitry-le-Croisé.
-
-Et surprise, une partie de la région se réveille sous un manteau blanc ! Oui, vous avez bien entendu, des flocons de neige sont signalés ce matin sur Châlons-en-Champagne, Épernay, Reims, Vitry-le-François et Chaumont. Un phénomène assez rare pour un mois de juillet, qui risque de surprendre les lève-tôt !
-
-Le vent, lui, souffle modérément. Il atteindra les 25 km/h sur Nogent-sur-Seine et Chaumont, et autour de 15 à 20 km/h ailleurs. Restez à l'écoute pour l'évolution de la situation !
+Sur la Champagne, de Châlons-en-Champagne à Reims, on attend également 20°C, avec un ciel un peu plus dégagé par endroits, mais toujours ce risque de petites pluies. Le vent sera aussi présent, autour de 20 km/h. Dans le sud de la région, du côté de Chaumont, on aura 19°C avec des averses et un vent plus léger, autour de 15 km/h. Soyez vigilants, car localement, notamment vers Vitry-le-Croisé, le vent pourrait souffler plus fort, atteignant les 45 km/h. Prévoyez donc un petit parapluie et une veste légère pour cette matinée !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Grand Est pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet !
+Bonjour à toutes et à tous et bienvenue sur Radio Ici Grand Est pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
 
-Ce vendredi après-midi, la prudence est de mise sur l'ensemble de notre région, car des orages sont au programme, et ils pourront être localement forts ! Soyez vigilants aux risques de foudre et aux fortes averses qui pourront se déclencher sous ces cellules orageuses. Les températures maximales seront bien estivales, mais l'ambiance sera lourde. On attend par exemple 28 degrés à Charleville-Mézières, 31 degrés à Troyes et Châlons-en-Champagne, et même 32 degrés à Nogent-sur-Seine.
+Ce vendredi après-midi, l'ambiance sera malheureusement très agitée sur l'ensemble de notre région. Attendez-vous à de nombreux orages qui éclateront un peu partout. Soyez très vigilants, car ces orages pourront être accompagnés de fortes pluies sous les cellules les plus actives, et il y aura un risque de foudre non négligeable. Le vent soufflera modérément, avec une dominante d'ouest, atteignant environ 15 à 20 km/h sur la plupart des secteurs, mais il pourra se renforcer localement sous les orages.
 
-Le vent, quant à lui, soufflera de manière modérée, principalement de secteur ouest à sud-ouest, avec des rafales pouvant atteindre les 20 à 25 km/h par endroits, notamment vers Nogent-sur-Seine et Chaumont, ce qui pourrait accentuer la sensation d'instabilité. Pas de brise côtière aujourd'hui, nous sommes bien dans les terres, et le contraste de températures sera peu marqué, l'ensemble de la région étant sous l'influence de cette masse d'air chaude et instable.
-
-Restez bien à l'écoute et soyez prudents si vous devez vous déplacer cet après-midi !
+Côté températures, il fera chaud, malgré cette instabilité. Nous aurons par exemple 31°C à Nogent-sur-Seine et Troyes, 30°C à Reims, et 28°C à Charleville-Mézières et Rethel. Les valeurs resteront élevées, même si les averses rafraîchiront temporairement l'atmosphère. Pas de contraste marqué entre le littoral et l'intérieur des terres aujourd'hui, puisque nous sommes en pleine région. Restez bien informés et à l'écoute !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -833,11 +819,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet :** Le soleil continue de régner en maître. La chaleur s’installe durablement avec des maximales comprises entre 30 et 34°C. Ciel bleu et ambiance estivale sur toute la région. Une journée idéale pour les activités en extérieur, mais attention à la forte chaleur.
+**Dimanche 19 juillet** : Le soleil reprend ses droits sur tout le Grand Est. Matinée lumineuse et déjà chaude, avec 18 à 22°C. L’après-midi, chaleur franche : 30 à 33°C attendus, localement 34°C sur la Champagne. Vent faible. Nuit douce, idéale pour les sorties tardives.
 
-**Lundi 20 juillet :** La vigilance orange Canicule se renforce. Le mercure continue de grimper avec des pointes à 36°C possibles localement. Le ciel reste dégagé, pas une goutte de pluie en vue. Il faudra redoubler de prudence, surtout pour les personnes fragiles.
+**Lundi 20 juillet** : La canicule s’intensifie. Ciel voilé le matin, puis franchement ensoleillé. Températures en hausse : 22°C au lever du jour, 33 à 36°C l’après-midi. Pointes à 37°C possibles en plaine. Attention aux coups de chaleur, hydratez-vous régulièrement.
 
-**Mardi 21 juillet :** Le pic de chaleur est attendu. Les températures pourraient atteindre 37 à 38°C dans l’après-midi. L’atmosphère devient très lourde avec un risque d’orages en fin de journée qui pourraient marquer la fin de cet épisode caniculaire. À suivre de près.
+**Mardi 21 juillet** : Toujours très chaud, mais un risque d’orages isolés en fin de journée sur l’est de la région (Vosges, Alsace). Matinée encore ensoleillée avec 20 à 24°C. Après-midi caniculaire : 33 à 35°C, puis développement de nuages menaçants. Vent d’ouest faible. À surveiller.
 
 
 --------------------------------------------------------------------------------
@@ -846,25 +832,21 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-Ce vendredi, la situation générale sur l'ensemble de la zone RADIO ICI ÎLE-DE-FRANCE est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+🚨 **ORAGES VIOLENTS ET GRÊLE : L’ÎLE-DE-FRANCE EN ALERTE !** Ce vendredi, l’Île-de-France vit une journée à deux visages. La matinée, bien que variable avec quelques averses et même un phénomène rare de neige localisée dans le centre-est, reste calme. Mais l’après-midi bascule dans l’orage généralisé ! Des cellules très actives traversent toute la région, accompagnées de grêle et de fortes pluies. Les températures maximales atteignent 28°C à Fontainebleau, mais l’ambiance reste lourde et électrique. 72 départements français sont par ailleurs placés en vigilance orange Canicule. Restez prudents et à l’abri jusqu’en soirée.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI ÎLE-DE-FRANCE pour votre bulletin météo du vendredi 17 juillet au matin !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI ÎLE-DE-FRANCE pour votre bulletin météo du vendredi 17 juillet 2026 !
 
-Ce vendredi matin, l'Île-de-France se réveille sous un ciel partagé entre soleil et nuages, avec des températures déjà bien douces. On relève 19 degrés à Meaux et Nangis, 20 degrés à Paris, Chelles, Fontainebleau et Melun, et même 21 degrés à Montereau-Fault-Yonne.
+Ce vendredi matin, l'Île-de-France se réveille sous un ciel variable, avec une alternance entre éclaircies généreuses et quelques passages nuageux qui pourraient apporter de faibles averses par endroits. Les températures minimales sont déjà douces, voire chaudes pour la saison. Nous avons 20°C à Paris et Melun, 19°C à Chelles, Coulommiers et Fontainebleau, et même 18°C à Nangis.
 
-Le soleil tente de percer par endroits, mais les nuages sont bien présents et pourraient même laisser échapper quelques averses éparses, notamment du côté de Coulommiers, La Ferté-Gaucher et Meaux. Pas de quoi sortir le parapluie pour un déluge, mais juste de quoi rafraîchir un peu l'atmosphère. Le vent sera léger, avec une brise de 15 à 25 km/h sur l'ensemble de la région, ce qui est très agréable. Pas de contraste littoral/intérieur des terres à signaler, les températures sont homogènes. Pas d'orages ni de foudre en vue pour ce matin.
+Le vent sera généralement léger à modéré, soufflant entre 15 et 20 km/h, sans direction dominante marquée. Attention, quelques averses sont possibles, notamment sur le nord-est de la région, mais rien de bien méchant. Il faudra cependant noter un phénomène très localisé et surprenant : des flocons de neige ont été observés très tôt ce matin dans le centre-est de la région ! Un événement rare pour un mois de juillet, mais sans impact majeur sur les températures qui restent élevées.
 
-Restez connectés pour la suite de la journée !
+Pas de risque orageux ni de foudre à signaler pour cette matinée. Profitez de ce début de journée estival !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI ÎLE-DE-FRANCE pour votre bulletin météo de l'après-midi ! Ce vendredi après-midi, le ciel francilien va nous réserver quelques surprises.
+Ce vendredi après-midi, l'ambiance sera électrique sur toute l'Île-de-France ! Préparez-vous à une dégradation orageuse généralisée. En effet, de nombreux orages sont attendus, et attention, ils pourront être accompagnés de grêle par endroits. Soyez donc très vigilants, car ces cellules orageuses pourront générer de fortes pluies en peu de temps et bien sûr, des risques de foudre sont à prendre au sérieux.
 
-Attendez-vous à un temps instable sur l'ensemble de la région. En effet, des averses orageuses sont attendues un peu partout. Soyez particulièrement vigilants, car ces orages pourront être accompagnés de grêle et de fortes rafales de vent. Les risques de foudre seront également bien présents, alors prudence si vous êtes en extérieur !
-
-Les températures maximales atteindront les 30°C à Paris et Chelles, 31°C à Fontainebleau et Nangis, et même 32°C à Nemours. Le vent soufflera modérément, avec des pointes à 25 km/h du côté de La Ferté-Gaucher, et autour de 15 à 20 km/h ailleurs. Pas de contraste littoral/intérieur des terres aujourd'hui, toute l'Île-de-France est concernée par cette ambiance orageuse.
-
-Restez connectés pour les prochaines mises à jour et surtout, soyez prudents cet après-midi !
+Côté températures, on reste dans une ambiance estivale malgré tout, avec des maximales qui atteindront 27°C à Paris et Chelles, 28°C à Fontainebleau et Montereau-Fault-Yonne, et 26°C du côté de Coulommiers et La Ferté-Gaucher. Le vent soufflera modérément, avec des rafales pouvant atteindre 25 km/h, notamment vers Nangis, accentuant cette sensation d'air lourd avant l'arrivée des averses. Pas de contraste littoral/intérieur aujourd'hui, c'est la même atmosphère orageuse pour tout le monde ! Restez bien au sec et à l'abri !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -891,11 +873,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (dimanche 19 juillet au mardi 21 juillet)
+**Dimanche 19 juillet** : Le soleil reprend ses droits dès le matin. Une journée estivale et calme avec des températures comprises entre 22°C et 30°C. Vent faible. Attention, la chaleur reste forte, pensez à vous hydrater.
 
-- dimanche 19 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 12°C, maximales atteignant 25°C en journée.
-- lundi 20 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 11°C, maximales atteignant 25°C en journée.
-- mardi 21 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 13°C, maximales atteignant 27°C en journée.
+**Lundi 20 juillet** : Ciel voilé en début de journée, puis le soleil domine à nouveau. Les températures grimpent encore, avec des maximales proches de 32°C sur Paris et l’ouest de la région. Nuit douce, vigilance canicule maintenue.
+
+**Mardi 21 juillet** : Nouvelle journée très chaude et ensoleillée. Les températures atteignent 33°C à l’ombre dans l’après-midi. L’air devient pesant, mais aucun orage n’est prévu pour le moment. Rafales de vent faibles. Restez au frais.
 
 
 --------------------------------------------------------------------------------
@@ -904,27 +886,23 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE : UNE JOURNÉE DE PLEIN SOLEIL ET DE CHALEUR ACCABLANTE SUR L'OCCITANIE ! Ce vendredi 17 juillet, la région est sous l'emprise d'une masse d'air brûlante. Si la matinée débutait avec quelques nuages et averses éparses sur le nord de l'Aveyron, le soleil a vite repris ses droits. L'après-midi, le ciel est totalement dégagé sur tous nos départements. Les températures s'envolent : on attend jusqu'à 38°C à Alès et 36°C à Nîmes. Le littoral respire un peu grâce à la brise marine avec 32°C à Béziers, mais la vigilance est de mise. 72 départements français sont en vigilance orange canicule. Hydratation, ombre et air conditionné sont vos meilleurs alliés.
+☀️🔥 CANICULE : L'OCCITANIE SOUS UNE CHALEUR ACCABLANTE ! Ce vendredi 17 juillet 2026, 72 départements sont en vigilance orange canicule, et notre région n’est pas épargnée. La matinée est partagée entre un soleil généreux sur l’ouest et le sud, et quelques nuages avec de faibles averses sur les Cévennes, le Massif central et le nord de l’Aveyron (Laguiole, Rodez). Les températures minimales sont déjà très douces, de 18°C à Laguiole à 25°C sur le littoral. L’après-midi, le soleil devient roi partout, la chaleur s’intensifie : on attend 38°C à Alès, 37°C à Nîmes, 33°C à Carcassonne, 31°C à Toulouse. Seul le nord de l’Aveyron conserve quelques nuages avec de très rares averses. La brise d’ouest, de 10 à 20 km/h, apporte un peu de répit, mais restez prudents : hydratez-vous et évitez les heures les plus chaudes.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI OCCITANIE pour votre bulletin météo du vendredi 17 juillet au matin !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Occitanie pour votre bulletin météo du jour ! Ce vendredi matin, le 17 juillet 2026, l'Occitanie se réveille sous un ciel partagé, mais globalement agréable.
 
-Ce vendredi matin, l'Occitanie se réveille sous un ciel partagé. Le soleil est bien présent et généreux sur une grande partie de la région, notamment vers Foix où il fait déjà 22 degrés, Carcassonne avec 25 degrés, ou encore Nîmes et Alès qui affichent 24 degrés. Le vent est modéré, soufflant entre 15 et 20 km/h, apportant une légère brise bienvenue.
+Les températures minimales sont déjà douces, voire chaudes. On relève 20°C à Foix, 24°C à Carcassonne où le vent souffle modérément à 25 km/h, 18°C à Laguiole avec une petite brise de 20 km/h, et 23°C à Toulouse avec un vent léger de 15 km/h. Sur le littoral, on démarre la journée avec 24°C à Nîmes, sous une brise de 20 km/h, et 25°C vers la Méditerranée, tandis que l'intérieur des terres, comme à Alès, affiche déjà 24°C.
 
-Cependant, quelques nuages viennent voiler le soleil par endroits. Du côté de Laguiole, on observe un ciel un peu plus nuageux avec 18 degrés, et même quelques averses sont possibles du côté de Rodez et Saint-Affrique, où le thermomètre indique respectivement 19 et 22 degrés. Ces averses sont légères, rien de bien méchant.
+Le soleil brille généreusement sur une grande partie de la région, notamment sur l'ouest et le sud. Cependant, quelques nuages voilent le soleil par endroits, notamment sur les reliefs et le nord-est. Des averses sont même attendues sur les Cévennes et le Massif central, notamment du côté de Laguiole et Rodez, où quelques gouttes pourraient tomber. Pas d'inquiétude, il ne s'agit que de pluies faibles et passagères. Le risque d'orages est écarté pour cette matinée.
 
-Les températures minimales sont douces, voire chaudes, avec un contraste marqué entre l'intérieur des terres et le littoral. Sur le littoral, les températures sont plus élevées, avec une ambiance déjà estivale dès le lever du jour.
-
-Profitez bien de cette matinée !
+Préparez-vous à une journée estivale, mais restez attentifs aux évolutions pour cet après-midi ! Je vous retrouve tout à l'heure pour la suite des prévisions.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, l'Occitanie baigne dans une ambiance estivale des plus agréables ! Le soleil sera le maître des lieux sur l'ensemble de nos départements, avec un ciel dégagé et lumineux. Les températures vont continuer de monter, atteignant des sommets par endroits.
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Occitanie pour votre bulletin météo de l'après-midi !
 
-Du côté des vents, attendez-vous à une légère brise d'ouest, soufflant autour de 15 à 20 km/h, sans être gênante. Elle apportera un petit souffle d'air bienvenu, notamment sur le littoral.
+Ce vendredi après-midi, le soleil sera le roi incontesté sur la majeure partie de notre belle région. Attendez-vous à une chaleur estivale bien présente, avec des températures qui grimpent ! À Alès, par exemple, on atteindra les 38 degrés, tandis qu'à Nîmes, le mercure affichera 37 degrés. Carcassonne et Saint-Affrique profiteront également d'un soleil généreux avec 33 degrés. Plus à l'ouest, Toulouse bénéficiera de 31 degrés et Foix de 29 degrés.
 
-Justement, parlons de ces températures ! Le contraste sera bien marqué entre l'intérieur des terres et nos côtes. À Alès, la chaleur sera intense avec 38°C, tout comme à Nîmes où l'on attend 36°C. Plus à l'ouest, Toulouse et Foix profiteront d'un beau 30°C. Sur le littoral, les brises marines tempéreront un peu l'atmosphère, mais il fera tout de même très chaud, avec par exemple 32°C du côté de Béziers.
-
-Pas un nuage à l'horizon, pas le moindre risque d'averses ou d'orages. C'est un après-midi parfait pour profiter de l'extérieur, mais n'oubliez pas de vous hydrater et de vous protéger du soleil !
+Côté vent, une légère brise d'ouest soufflera sur l'intérieur des terres, autour de 10 à 20 km/h, rendant l'atmosphère un peu plus supportable. Sur le littoral, le vent marin sera discret, ne dépassant pas les 20 km/h. La bonne nouvelle, c'est que le contraste entre le littoral et l'intérieur des terres sera moins marqué que d'habitude, avec des températures élevées un peu partout. Seules quelques averses isolées et faibles sont attendues sur le nord de l'Aveyron, notamment du côté de Rodez et Laguiole.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -951,11 +929,13 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : Le soleil reste roi sur l'Occitanie. Pas un nuage à l'horizon, mais la chaleur devient pesante. Les maximales seront comprises entre 34 et 38°C, avec des pointes à 39°C possibles dans le Gard et l'Hérault. Le vent de nord-ouest, faible, n'apporte aucun rafraîchissement. En soirée, le ciel reste clair. Nuits tropicales attendues, avec des minimales ne descendant pas sous les 22°C.
+Tendance pour les trois prochains jours, du dimanche 19 au mardi 21 juillet :
 
-**Lundi 20 juillet** : Nouvelle journée caniculaire. Le soleil brille toujours, mais l'air devient très sec. Les températures grimpent encore : on prévoit 37 à 40°C dans l'intérieur des terres, et 33 à 36°C sur la côte. Le mistral se lève légèrement en fin d'après-midi, sans réel effet rafraîchissant. Attention aux risques d'incendie, la végétation est très sèche.
+**Dimanche 19 juillet** : le soleil continue de briller généreusement sur toute l’Occitanie. La chaleur reste très forte, avec des maximales comprises entre 30 et 38°C, les valeurs les plus élevées étant attendues sur le Gard et l’Hérault. Quelques nuages pourraient se développer l’après-midi sur les reliefs, mais sans conséquence. Vent faible, mer calme. Vigilance canicule maintenue.
 
-**Mardi 21 juillet** : La canicule se renforce. Les températures atteignent un pic : jusqu'à 41°C localement dans les plaines du Languedoc. Un risque d'orages secs en fin de journée pourrait se manifester sur les reliefs, mais sans précipitations significatives. La vigilance orange canicule est maintenue. Il est impératif de suivre les consignes des autorités.
+**Lundi 20 juillet** : la canicule persiste. Le ciel est clair à peu nuageux le matin, puis des nuages plus nombreux se forment l’après-midi sur les Pyrénées et le Massif central, avec un risque d’orages isolés en fin de journée, notamment en Aveyron et dans le Lot. Les températures restent très élevées, entre 29 et 37°C. La chaleur devient pesante, surtout en plaine.
+
+**Mardi 21 juillet** : la situation se dégrade légèrement. Le temps est plus nuageux sur l’ensemble de la région, avec un risque d’averses ou d’orages localement forts, surtout sur les reliefs et le nord de la région. Les températures baissent un peu, mais restent chaudes : de 27 à 35°C. La vigilance canicule pourrait être levée sur certains départements, mais la prudence reste de mise.
 
 
 --------------------------------------------------------------------------------
@@ -964,24 +944,21 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE PERSISTANTE : UN VENDREDI ÉTINCELLANT SUR LES PAYS DE LA LOIRE !  
-Ce vendredi 17 juillet, la région est en plein cœur d’un épisode caniculaire. Le soleil règne en maître absolu dès le matin, avec des températures déjà douces. L’après-midi, le mercure flirte avec les 31°C à Nantes, Angers et Saumur, tandis qu’une légère brise d’ouest apporte un peu de répit sur le littoral. Pas un nuage à l’horizon, pas d’orage en vue. La vigilance orange canicule est en vigueur sur 72 départements, dont le nôtre. Il est impératif de bien s’hydrater et de se protéger du soleil. Profitez de cette belle journée, mais avec prudence !
+☀️ CANICULE INTENSE : LA RÉGION BRÛLE SOUS UN SOLEIL DE PLOMB ! Ce vendredi 17 juillet, la Loire-Atlantique, la Vendée, la Sarthe et la Mayenne sont en première ligne d’une vague de chaleur exceptionnelle. Le ciel est d’un bleu azur pratiquement partout, seul un léger voile nuageux effleure l’extrême nord-est vers Laval en début de matinée, mais sans conséquence. Les températures grimpent vite : 32°C à Nantes et Saumur, 30°C à Angers et Blain, 28°C sur le littoral saint-nazairien où une petite brise d’ouest à 25 km/h apporte un soupçon de fraîcheur. Ailleurs, le vent est faible. Pas une goutte de pluie à l’horizon. Rappel : 72 départements sont en vigilance orange Canicule, dont notre région. Hydratez-vous et évitez les efforts aux heures les plus chaudes.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
 Bonjour à toutes et à tous, et bienvenue sur Radio Ici Pays de la Loire pour votre bulletin météo du vendredi 17 juillet 2026 !
 
-Ce vendredi matin, la région se réveille sous un ciel généreusement ensoleillé. Le soleil est déjà bien présent sur l'ensemble de nos départements, nous promettant une belle journée estivale. Les températures minimales sont douces, avec 19°C à Nantes, 20°C à Angers et Cholet, et 18°C à Saint-Nazaire et Ernée. On notera un léger contraste avec l'intérieur des terres qui affiche des valeurs similaires.
+Ce vendredi matin, le soleil sera le roi sur l'ensemble de notre belle région ! Attendez-vous à un ciel dégagé et lumineux, idéal pour démarrer la journée. Seul un petit voile nuageux pourra temporairement masquer le soleil dans l'extrême nord-est de la région, du côté de Laval, mais rien de bien méchant.
 
-Côté vent, une légère brise souffle sur la région, avec des vents modérés autour de 15 à 20 km/h, notamment sur le littoral et le nord de la Mayenne. Pas de quoi perturber vos activités en extérieur ! Les conditions sont idéales pour profiter d'un bon café en terrasse ou pour une balade matinale.
+Côté températures, elles sont déjà très douces. Nous relevons 19°C à Nantes et Saint-Nazaire, 18°C à Blain, 17°C à Châteaubriant et 20°C à Angers et Saumur. Le vent soufflera en légère brise, entre 10 et 20 km/h, un peu plus sensible sur le littoral avec 25 km/h à Saint-Nazaire, ce qui apportera une légère fraîcheur bienvenue.
 
-La journée s'annonce donc radieuse, sans le moindre risque d'averses ou d'orage à l'horizon. Restez connectés pour le point complet de l'après-midi !
+Profitez bien de ce début de journée ensoleillé ! Je vous retrouve tout à l'heure pour les prévisions de l'après-midi.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PAYS DE LA LOIRE pour votre bulletin météo de ce vendredi après-midi !
+Bonjour à toutes et à tous, et bienvenue sur Radio Ici Pays de la Loire pour votre bulletin météo de l'après-midi ! Ce vendredi après-midi, la région va continuer de profiter d'un temps estival et très agréable. Le soleil sera généreux et dominera largement le ciel sur l'ensemble de nos départements.
 
-Ce vendredi après-midi, le soleil sera le maître du jeu sur l'ensemble de notre belle région des Pays de la Loire. Attendez-vous à un ciel radieux, sans le moindre nuage pour gâcher votre plaisir. Les températures vont continuer de grimper, pour notre plus grand bonheur !
-
-À Nantes, le thermomètre affichera un très agréable 31 degrés. On montera également à 31 degrés du côté d'Angers et de Saumur. Châteaubriant et Ernée profiteront de 28 à 29 degrés, tandis que Saint-Nazaire bénéficiera d'un doux 29 degrés. Le vent, lui, sera discret, soufflant une légère brise d'ouest entre 15 et 20 km/h, apportant une touche de fraîcheur bienvenue, surtout sur le littoral. Pas de contraste flagrant entre la côte et l'intérieur des terres, les températures seront élevées partout. Profitez bien de ce magnifique après-midi ensoleillé !
+Côté températures, attendez-vous à une chaleur bien présente, surtout dans les terres. On relèvera 32°C à Nantes, 30°C à Blain, 30°C à Angers, 31°C à Saumur et 28°C à Châteaubriant. Sur le littoral, l'air sera un peu plus respirable grâce à une brise marine venant de l'ouest, soufflant autour de 25 km/h du côté de Saint-Nazaire où le mercure affichera 28°C. Ailleurs, les vents seront faibles à modérés, autour de 10 à 20 km/h. Pas une goutte de pluie à l'horizon, le ciel restera parfaitement dégagé. Profitez bien de cette belle après-midi !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -1008,9 +985,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Dimanche 19 juillet : le soleil reste omniprésent. Les températures maximales atteignent encore 30 à 33°C, avec un pic de chaleur en début d’après-midi. Vent faible, quelques brises côtières.  
-Lundi 20 juillet : la chaleur s’accentue encore, avec des pointes à 34°C possibles dans l’intérieur des terres (Mayenne, Maine-et-Loire). Toujours aucun orage en vue, ciel dégagé.  
-Mardi 21 juillet : le temps reste stable et très chaud, mais un léger changement pourrait s’amorcer en fin de journée avec l’arrivée d’un front nuageux par l’ouest, apportant un risque d’averses orageuses en soirée. Les températures restent élevées, entre 28 et 32°C.
+Dimanche 19 juillet : le soleil reste omniprésent et la chaleur s’accentue encore. Attendez-vous à des maximales comprises entre 33 et 36°C dans l’intérieur des terres, et autour de 30°C sur la côte. La brise marine sera plus timide, donc la sensation de lourdeur augmentera. Nuit également très chaude, avec des minimales peinant à descendre sous 20°C.
+
+Lundi 20 juillet : le temps estival se maintient, toujours aucun nuage menaçant. Les températures pourraient atteindre des pics locaux, jusqu’à 37°C dans le sud de la région (Saumur, Cholet). Sur le littoral, 29 à 31°C. Vent quasi nul. Vigilance orange Canicule toujours en vigueur.
+
+Mardi 21 juillet : le pic de chaleur semble se stabiliser, mais l’ambiance reste caniculaire. Le ciel reste dégagé, le soleil impitoyable. Maximales encore très élevées : 34 à 37°C dans les terres, 28-30°C sur la côte. Une légère dégradation pourrait pointer en fin de journée par l’ouest, mais à confirmer. En attendant, on continue de se protéger de la chaleur.
 
 
 --------------------------------------------------------------------------------
@@ -1019,30 +998,26 @@ Mardi 21 juillet : le temps reste stable et très chaud, mais un léger changeme
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ CANICULE INSTALLÉE : JOURNÉE DE PLEIN SOLEIL ET CHALEUR ÉCRASANTE SUR LA RÉGION !  
-Ce vendredi 17 juillet, le soleil règne en maître sur l’ensemble de la Provence-Alpes-Côte d’Azur. Avec 72 départements en vigilance orange canicule, notre région est pleinement concernée. Les températures grimpent fortement : de 30°C sur le littoral niçois à 35°C dans l’intérieur des terres, comme à Digne-les-Bains ou Forcalquier. En montagne, il fait déjà très chaud avec 29 à 30°C à Briançon et Barcelonnette. Un vent léger d’ouest ne rafraîchit que très peu l’atmosphère. Pensez à vous hydrater régulièrement et à éviter les efforts physiques aux heures les plus chaudes. Profitez de la plage ou de l’ombre des arbres, mais restez vigilants : cette chaleur intense se prolonge sur le week‑end.
+☀️ CANICULE : UNE JOURNÉE DE PLEIN SOLEIL ET DE CHALEUR ÉTINCELLANTE SUR LA RÉGION !  
+Ce vendredi, la Provence-Alpes-Côte d’Azur est sous un ciel d’un bleu parfait, sans aucun nuage, du littoral aux montagnes. Les températures montent en flèche : 35°C à Digne, 36°C à Puget‑Théniers, 31°C à Cannes, 29°C à Nice. En altitude, 30°C à Briançon et Barcelonnette. La brise marine atténue un peu la chaleur sur la côte, mais dans l’intérieur, le vent modéré de 20 à 30 km/h ne rafraîchit pas l’atmosphère. La vigilance orange canicule est en vigueur dans 72 départements, dont le nôtre. Hydratez‑vous abondamment et protégez‑vous du soleil.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Bonjour à toutes et à tous, et bienvenue sur Radio Ici Provence-Alpes-Côte d'Azur pour ce bulletin météo du vendredi 17 juillet 2026 !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo du vendredi 17 juillet !
 
-Ce vendredi matin, c'est un ciel d'un bleu éclatant qui nous attend sur l'ensemble de notre belle région. Le soleil est généreux partout, de la côte jusqu'aux sommets, et ça, c'est une excellente nouvelle pour bien commencer ce week-end !
-
-Les températures minimales sont déjà bien douces : on relève 15°C à Barcelonnette et Vallouise, 19°C à Gap et Puget-Théniers, et déjà 25°C à Nice et Cannes. Le contraste est net entre le littoral où la chaleur est déjà bien présente, et l'intérieur des terres où la fraîcheur de la nuit s'estompe rapidement.
-
-Côté vent, une légère brise souffle, avec des rafales modérées autour de 20 à 25 km/h dans les terres, notamment du côté de Digne-les-Bains, Forcalquier et Briançon. Sur le littoral, le vent reste discret, autour de 10 à 15 km/h. Pas de mistral à l'horizon, juste un petit souffle pour rafraîchir l'atmosphère.
-
-Profitez bien de ce magnifique début de journée ensoleillé !
+Ce vendredi matin, c'est un ciel d'un bleu éclatant qui nous attend sur l'ensemble de la région. Le soleil est roi et brille sans partage du littoral jusqu'aux plus hautes montagnes. Les températures sont déjà très douces, voire chaudes, avec 18 degrés à Barcelonnette, 20 degrés à Digne-les-Bains et Forcalquier, et déjà 25 degrés à Nice. Sur le littoral, on ressentira une légère brise marine, très agréable, tandis que dans l'intérieur des terres, le vent soufflera modérément, atteignant par endroits les 20 à 30 km/h, notamment du côté de Barcelonnette ou Puget-Théniers. Pas l'ombre d'un nuage à l'horizon, ni le moindre risque d'averses ou d'orages. C'est donc une matinée parfaite pour profiter de nos belles régions !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo de l'après-midi !
+Bonjour à toutes et à tous, et bienvenue sur RADIO ICI PROVENCE-ALPES-CÔTE D'AZUR pour votre bulletin météo de l'après-midi en ce vendredi 17 juillet 2026 !
 
-Ce vendredi après-midi, le soleil sera le maître des lieux sur l'ensemble de notre belle région. Préparez-vous à une chaleur estivale bien installée, avec un ciel d'un bleu éclatant partout.
+Ce vendredi après-midi, la Provence-Alpes-Côte d'Azur continue de rimer avec grand soleil ! Un ciel azur, sans l'ombre d'un nuage, dominera l'ensemble de la région. Les températures seront estivales, voire très chaudes par endroits.
 
-Les températures vont grimper, et le contraste entre le littoral et l'intérieur des terres sera bien marqué. Sur nos côtes, à Cannes et Nice, on attend de belles pointes à 31 et 30 degrés, avec une petite brise marine qui soufflera doucement, autour de 10 à 15 km/h, pour rendre l'ambiance plus agréable.
+Dans l'intérieur des terres, on attend des maximales autour de 35°C à Digne-les-Bains et Forcalquier, et même 36°C du côté de Puget-Théniers. Le vent sera léger à modéré, soufflant entre 20 et 25 km/h, sans direction dominante marquée, ce qui ne rafraîchira pas l'atmosphère.
 
-En revanche, dans l'intérieur des terres, ça va chauffer ! À Digne-les-Bains et Forcalquier, le mercure atteindra les 35 degrés, et même 35 degrés à Puget-Théniers. Le vent, lui, sera modéré, soufflant entre 20 et 25 km/h, sans mistral aujourd'hui, mais plutôt un vent d'ouest léger. Du côté des Alpes, à Barcelonnette et Briançon, il fera également très beau avec 30 et 29 degrés, et un vent discret de 25 km/h.
+Sur le littoral, l'ambiance sera également très ensoleillée. Les températures seront un peu plus douces grâce à la brise marine, mais resteront très agréables. Comptez 31°C à Cannes et 29°C à Nice. Le vent sera faible, autour de 10 à 15 km/h, une petite brise qui apportera un peu de fraîcheur.
 
-Profitez bien de ce bel après-midi ensoleillé !
+En montagne, le soleil sera aussi au rendez-vous. À Briançon et Barcelonnette, les thermomètres afficheront 30°C, tandis que Gap atteindra les 33°C. Le vent y sera modéré, autour de 20 km/h.
+
+En résumé, un après-midi idéal pour profiter du soleil, mais n'oubliez pas de vous hydrater et de vous protéger ! Très belle fin de journée à tous !
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
@@ -1069,7 +1044,9 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 17 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**Dimanche 19 juillet** : le soleil reste omniprésent. Les maximales atteignent 31°C sur la Côte d’Azur et jusqu’à 36°C dans l’arrière‑pays. Un mistral modéré se lève en fin de journée, apportant un léger répit.  
-**Lundi 20 juillet** : ciel toujours d’un bleu pur. Les températures se maintiennent, autour de 32°C au bord de mer et 35°C dans les terres. Le mistral se renforce (rafales jusqu’à 40 km/h), ce qui rend l’air plus respirable.  
-**Mardi 21 juillet** : la canicule persiste avec un temps sec et ensoleillé. Les maximales pourraient même gagner un petit degré supplémentaire. Attention aux risques d’incendie : redoublez de prudence.
+**Dimanche 19 juillet** : Grand soleil persistant. Températures encore très élevées, jusqu’à 37°C dans l’intérieur. Brise marine sur le littoral. Vent faible à modéré. Nuit tropicale, minimales autour de 20-22°C.
+
+**Lundi 20 juillet** : Toujours un ciel dégagé et une chaleur accablante. Maximales de 35 à 38°C en plaine, 30°C en montagne. Risque d’orage sec en fin de journée sur les reliefs, mais sans précipitations significatives.
+
+**Mardi 21 juillet** : Légère baisse des températures, mais elles restent très chaudes : 33-35°C. Le soleil domine encore, avec quelques voiles nuageux élevés l’après‑midi. Vent de nord‑ouest modéré, apportant un peu d’air plus sec.
 
