@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Grégory</title>
+  <title>Dashboard Grégory (Contrôle)</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     body {
       font-family: 'Outfit', sans-serif;
       background: radial-gradient(circle at top right, #091a3a 0%, #030a16 100%);
@@ -23,347 +18,85 @@
       flex-direction: column;
       align-items: center;
     }
-    .container {
-      width: 100%;
-      max-width: 550px;
-      margin: 0 auto;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 32px;
-      margin-top: 10px;
-    }
+    .container { width: 100%; max-width: 580px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 32px; margin-top: 10px; }
     .logo-container {
       display: inline-block;
       padding: 8px 16px;
-      background: rgba(255, 255, 255, 0.04);
+      background: rgba(255,255,255,0.04);
       border-radius: 14px;
-      border: 1px solid rgba(0, 150, 255, 0.18);
+      border: 1px solid rgba(0,150,255,0.18);
       margin-bottom: 14px;
       backdrop-filter: blur(5px);
     }
     .logo-text {
-      font-weight: 900;
-      font-size: 16px;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      font-weight: 900; font-size: 16px; letter-spacing: 1.2px;
+      text-transform: uppercase; display: flex; align-items: center; gap: 8px;
     }
-    .logo-text span {
-      color: #ff5a24;
-    }
+    .logo-text span { color: #ff5a24; }
     h1 {
-      font-size: 34px;
-      font-weight: 800;
-      letter-spacing: -0.8px;
-      margin-bottom: 10px;
+      font-size: 34px; font-weight: 800; letter-spacing: -0.8px; margin-bottom: 10px;
       background: linear-gradient(135deg, #ffffff 30%, #90bfff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
-    .subtitle {
-      color: rgba(255, 255, 255, 0.55);
-      font-size: 14px;
-      line-height: 1.4;
-    }
+    .subtitle { color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.4; }
 
-    /* ── CONFIGURATION TOKEN ── */
+    /* ── TOKEN ── */
     .config-card {
-      background: rgba(8, 22, 48, 0.45);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(0, 150, 255, 0.22);
-      border-radius: 24px;
-      padding: 24px;
-      margin-bottom: 30px;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      background: rgba(8,22,48,0.45); backdrop-filter: blur(20px);
+      border: 1px solid rgba(0,150,255,0.22); border-radius: 24px;
+      padding: 24px; margin-bottom: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.6);
     }
-    .config-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 18px;
-    }
+    .config-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
     .config-title {
-      font-size: 16px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+      font-size: 16px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.8px; display: flex; align-items: center; gap: 10px;
     }
-    .config-title i {
-      color: #ffcc00;
-    }
+    .config-title i { color: #ffcc00; }
     .status-badge {
-      font-size: 12px;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      font-size: 12px; font-weight: 700; padding: 5px 12px;
+      border-radius: 10px; display: flex; align-items: center; gap: 6px;
     }
-    .status-badge.missing {
-      background: rgba(255, 90, 36, 0.12);
-      color: #ff5a24;
-      border: 1px solid rgba(255, 90, 36, 0.25);
-    }
-    .status-badge.ready {
-      background: rgba(0, 234, 255, 0.12);
-      color: #00eaff;
-      border: 1px solid rgba(0, 234, 255, 0.25);
-    }
-    .input-group {
-      display: flex;
-      gap: 12px;
-    }
+    .status-badge.missing { background: rgba(255,90,36,0.12); color: #ff5a24; border: 1px solid rgba(255,90,36,0.25); }
+    .status-badge.ready  { background: rgba(0,234,255,0.12); color: #00eaff;  border: 1px solid rgba(0,234,255,0.25); }
+    .input-group { display: flex; gap: 12px; }
     input[type="password"], input[type="text"] {
-      flex-grow: 1;
-      background: rgba(4, 11, 24, 0.7);
-      border: 1px solid rgba(0, 150, 255, 0.15);
-      border-radius: 16px;
-      padding: 14px 18px;
-      color: #fff;
-      font-family: inherit;
-      font-size: 15px;
-      height: 52px;
+      flex-grow: 1; background: rgba(4,11,24,0.7);
+      border: 1px solid rgba(0,150,255,0.15); border-radius: 16px;
+      padding: 14px 18px; color: #fff; font-family: inherit; font-size: 15px; height: 52px;
       transition: all 0.3s ease;
     }
-    input:focus {
-      outline: none;
-      border-color: #00eaff;
-      box-shadow: 0 0 15px rgba(0, 234, 255, 0.15);
-    }
+    input:focus { outline: none; border-color: #00eaff; box-shadow: 0 0 15px rgba(0,234,255,0.15); }
     .btn {
-      cursor: pointer;
-      border: none;
-      font-family: inherit;
-      font-weight: 700;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      height: 52px;
-      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer; border: none; font-family: inherit; font-weight: 700;
+      border-radius: 16px; display: flex; align-items: center; justify-content: center;
+      gap: 8px; height: 52px; transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
     }
-    .btn:active {
-      transform: scale(0.96);
-    }
+    .btn:active { transform: scale(0.96); }
     .btn-primary {
       background: linear-gradient(135deg, #0088cc 0%, #00ffd2 100%);
-      color: #030a16;
-      padding: 0 24px;
-      box-shadow: 0 6px 20px rgba(0, 234, 255, 0.2);
+      color: #030a16; padding: 0 24px; box-shadow: 0 6px 20px rgba(0, 234, 255, 0.2);
     }
     .btn-secondary {
-      background: rgba(255, 255, 255, 0.05);
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      width: 52px;
-      flex-shrink: 0;
+      background: rgba(255,255,255,0.05); color: #fff;
+      border: 1px solid rgba(255,255,255,0.08); width: 52px; flex-shrink: 0;
     }
 
-    /* ── CARD DES WORKFLOWS ── */
-    .section-title {
-      font-size: 17px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-      padding-left: 5px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: rgba(255, 255, 255, 0.85);
-    }
-    .section-title span {
-      background: #ff5a24;
-      width: 4px;
-      height: 18px;
-      border-radius: 2px;
-      display: inline-block;
-    }
-    .workflows-list {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      margin-bottom: 40px;
-    }
-    .wf-card {
-      background: rgba(8, 22, 48, 0.35);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      border: 1px solid rgba(0, 150, 255, 0.15);
-      border-radius: 22px;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-    .wf-card:hover {
-      border-color: rgba(0, 234, 255, 0.35);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(0, 150, 255, 0.08);
-    }
-    .wf-info {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .wf-repo-badge {
-      font-size: 9px;
-      font-weight: 700;
-      color: rgba(255, 255, 255, 0.4);
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .wf-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin-bottom: 6px;
-      color: #fff;
-    }
-    .wf-desc {
-      font-size: 13px;
-      color: rgba(255,255,255,0.6);
-      line-height: 1.4;
-    }
-    .btn-trigger {
-      width: 110px;
-      height: 48px;
-      background: linear-gradient(135deg, rgba(255, 90, 36, 0.08) 0%, rgba(255, 90, 36, 0.18) 100%);
-      border: 1.5px solid rgba(255, 90, 36, 0.4);
-      color: #ff5a24;
-      font-size: 14px;
-      border-radius: 14px;
-      flex-shrink: 0;
-      box-shadow: 0 0 10px rgba(255, 90, 36, 0.03);
-    }
-    .btn-trigger:hover {
-      background: linear-gradient(135deg, #ff5a24 0%, #ff7e47 100%);
-      color: #030a16;
-      border-color: #ff5a24;
-      box-shadow: 0 4px 15px rgba(255, 90, 36, 0.3);
-    }
-    .btn-trigger.loading {
-      pointer-events: none;
-      background: rgba(255,255,255,0.03);
-      border-color: rgba(255,255,255,0.1);
-      color: rgba(255,255,255,0.25);
-    }
-    
-    /* ── SPINNER ── */
-    .spinner {
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      100% { transform: rotate(360deg); }
-    }
-
-    /* ── TOAST NOTIFICATIONS ── */
-    #toast-container {
-      position: fixed;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: calc(100% - 32px);
-      max-width: 380px;
-    }
-    .toast {
-      background: rgba(6, 17, 38, 0.96);
-      backdrop-filter: blur(12px);
-      border-radius: 16px;
-      padding: 14px 20px;
+    /* ── SWITCH TOGGLE ── */
+    .switch-container {
       display: flex;
       align-items: center;
       gap: 12px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-      transform: translateY(100px);
-      opacity: 0;
-      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      cursor: pointer;
+      user-select: none;
     }
-    .toast.show {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    .toast-success {
-      border: 1px solid rgba(0, 255, 210, 0.4);
-    }
-    .toast-success i {
-      color: #00ffd2;
-    }
-    .toast-error {
-      border: 1px solid rgba(255, 90, 36, 0.4);
-    }
-    .toast-error i {
-      color: #ff5a24;
-    }
-    .toast-msg {
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    /* ── RESPONSIVE MOBILE ── */
-    @media (max-width: 480px) {
-      body {
-        padding: 16px 12px;
-      }
-      h1 {
-        font-size: 28px;
-      }
-      .config-card {
-        padding: 16px;
-        border-radius: 20px;
-      }
-      .input-group {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .btn-primary {
-        width: 100%;
-      }
-      .btn-secondary {
-        width: 100%;
-      }
-      .wf-card {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 18px 16px;
-        border-radius: 20px;
-        gap: 16px;
-      }
-      .btn-trigger {
-        width: 100%;
-      }
-      #toast-container {
-        bottom: 16px;
-      }
-    }
-    
-    /* ── TOGGLE SWITCH STYLE ── */
     .switch {
       position: relative;
       display: inline-block;
-      width: 44px;
-      height: 22px;
+      width: 46px;
+      height: 24px;
     }
-    .switch input { 
+    .switch input {
       opacity: 0;
       width: 0;
       height: 0;
@@ -371,40 +104,157 @@
     .slider {
       position: absolute;
       cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 90, 36, 0.15);
+      border: 1.5px solid rgba(255, 90, 36, 0.4);
       transition: .3s;
-      border-radius: 22px;
+      border-radius: 24px;
     }
     .slider:before {
       position: absolute;
       content: "";
       height: 14px;
       width: 14px;
-      left: 3px;
-      bottom: 3px;
-      background-color: rgba(255,255,255,0.7);
+      left: 4px;
+      bottom: 3.5px;
+      background-color: #ff5a24;
       transition: .3s;
       border-radius: 50%;
     }
     input:checked + .slider {
       background-color: rgba(0, 234, 255, 0.15);
-      border-color: #00eaff;
+      border-color: rgba(0, 234, 255, 0.4);
     }
     input:checked + .slider:before {
       transform: translateX(22px);
       background-color: #00eaff;
     }
+
+    /* ── REFRESH BUTTON ── */
+    .refresh-btn {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px; padding: 8px 16px; cursor: pointer;
+      font-family: inherit; font-size: 13px; font-weight: 600;
+      color: rgba(255,255,255,0.6); margin-bottom: 16px;
+      transition: all 0.2s ease;
+    }
+    .refresh-btn:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    .refresh-btn i { font-size: 12px; }
+    .refresh-btn.spinning i { animation: spin 1s linear infinite; }
+
+    /* ── CARDS WORKFLOWS ── */
+    .section-title {
+      font-size: 17px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: 1px; margin-bottom: 20px; padding-left: 5px;
+      display: flex; align-items: center; gap: 10px; color: rgba(255, 255, 255, 0.85);
+    }
+    .section-title span { background: #00ffd2; width: 4px; height: 18px; border-radius: 2px; display: inline-block; }
+    .workflows-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+    .wf-card {
+      background: rgba(8,22,48,0.35); backdrop-filter: blur(15px);
+      border: 1px solid rgba(0,150,255,0.15); border-radius: 22px;
+      padding: 20px; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px;
+      transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .wf-card:hover { border-color: rgba(0,234,255,0.35); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,150,255,0.08); }
+    .wf-info { flex-grow: 1; display: flex; flex-direction: column; }
+    .wf-repo-badge {
+      font-size: 9px; font-weight: 700; color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .wf-title { font-size: 18px; font-weight: 700; margin-bottom: 4px; color: #fff; }
+    .wf-desc { font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.4; margin-bottom: 10px; }
+
+    /* ── DERNIER RUN ── */
+    .wf-last-run {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.45);
+    }
+    .run-dot {
+      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+    }
+    .dot-success  { background: #00e676; box-shadow: 0 0 6px rgba(0,230,118,0.5); }
+    .dot-failure  { background: #ff5252; box-shadow: 0 0 6px rgba(255,82,82,0.5); }
+    .dot-running  { background: #ffcc00; box-shadow: 0 0 6px rgba(255,204,0,0.5); animation: pulse 1.2s ease-in-out infinite; }
+    .dot-unknown  { background: rgba(255,255,255,0.2); }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
+
+    /* ── BOUTON TRIGGER ── */
+    .btn-trigger {
+      width: 110px; height: 48px;
+      background: linear-gradient(135deg, rgba(0,136,204,0.08) 0%, rgba(0,255,210,0.18) 100%);
+      border: 1.5px solid rgba(0,255,210,0.4); color: #00ffd2;
+      font-size: 14px; border-radius: 14px; flex-shrink: 0;
+      box-shadow: 0 0 10px rgba(0,255,210,0.03);
+    }
+    .btn-trigger:hover { background: linear-gradient(135deg, #0088cc 0%, #00ffd2 100%); color: #030a16; border-color: #00ffd2; box-shadow: 0 4px 15px rgba(0,255,210,0.3); }
+    .btn-trigger.loading { pointer-events: none; background: rgba(255,255,255,0.03); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.25); }
+    .btn-trigger.btn-warn { border-color: rgba(255,204,0,0.6); color: #ffcc00; background: rgba(255,204,0,0.08); }
+
+    /* ── SPINNER ── */
+    .spinner { animation: spin 1s linear infinite; }
+    @keyframes spin { 100% { transform: rotate(360deg); } }
+
+    /* ── TOASTS ── */
+    #toast-container {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      z-index: 9999; display: flex; flex-direction: column; gap: 10px;
+      width: calc(100% - 32px); max-width: 380px;
+    }
+    .toast {
+      background: rgba(6,17,38,0.96); backdrop-filter: blur(12px);
+      border-radius: 16px; padding: 14px 20px; display: flex; align-items: center;
+      gap: 12px; box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+      transform: translateY(100px); opacity: 0;
+      transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+    .toast-success { border: 1px solid rgba(0,255,210,0.4); }
+    .toast-success i { color: #00ffd2; }
+    .toast-error   { border: 1px solid rgba(255,90,36,0.4); }
+    .toast-error i { color: #ff5a24; }
+    .toast-warn    { border: 1px solid rgba(255,204,0,0.4); }
+    .toast-warn i  { color: #ffcc00; }
+    .toast-msg { font-size: 14px; font-weight: 600; }
+
+    @media (max-width: 480px) {
+      body { padding: 16px 12px; }
+      h1 { font-size: 28px; }
+      .config-card { padding: 16px; border-radius: 20px; }
+      .input-group { flex-direction: column; gap: 10px; }
+      .btn-primary, .btn-secondary { width: 100%; }
+      .wf-card { flex-direction: column; align-items: stretch; padding: 18px 16px; border-radius: 20px; gap: 16px; }
+      .btn-trigger { width: 100%; }
+      #toast-container { bottom: 16px; }
+    }
   </style>
 </head>
 <body>
+  <!-- ECRAN DE CONNEXION -->
+  <div id="login-screen" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: radial-gradient(circle at top right, #091a3a 0%, #030a16 100%); display: flex; align-items: center; justify-content: center; z-index: 10000; padding: 20px;">
+    <div style="width: 100%; max-width: 400px; background: rgba(8, 22, 48, 0.45); backdrop-filter: blur(20px); border: 1px solid rgba(0, 150, 255, 0.22); border-radius: 24px; padding: 32px; box-shadow: 0 12px 40px rgba(0,0,0,0.6); text-align: center;">
+      <div style="display: inline-block; padding: 8px 16px; background: rgba(255, 255, 255, 0.04); border-radius: 14px; border: 1px solid rgba(0, 150, 255, 0.18); margin-bottom: 20px;">
+        <div style="font-weight: 900; font-size: 16px; letter-spacing: 1.2px; text-transform: uppercase; display: flex; align-items: center; gap: 8px; color: #fff;">
+          <i class="fa-solid fa-cloud-sun-rain"></i> Météo-climat <span style="color: #00ffd2;">pro</span>
+        </div>
+      </div>
+      <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 24px; background: linear-gradient(135deg, #ffffff 30%, #90bfff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Accès Sécurisé</h2>
+      <form onsubmit="handleLogin(event)" style="display: flex; flex-direction: column; gap: 16px;">
+        <input type="text" id="username-input" placeholder="Identifiant" required style="width: 100%; background: rgba(4, 11, 24, 0.7); border: 1px solid rgba(0, 150, 255, 0.15); border-radius: 16px; padding: 14px 18px; color: #fff; font-family: inherit; font-size: 15px; height: 52px; outline: none; transition: all 0.3s ease;">
+        <input type="password" id="password-input" placeholder="Mot de passe" required style="width: 100%; background: rgba(4, 11, 24, 0.7); border: 1px solid rgba(0, 150, 255, 0.15); border-radius: 16px; padding: 14px 18px; color: #fff; font-family: inherit; font-size: 15px; height: 52px; outline: none; transition: all 0.3s ease;">
+        <button type="submit" class="btn btn-primary" style="width: 100%; height: 52px; font-weight: 700; border-radius: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; border: none; cursor: pointer; background: linear-gradient(135deg, #0088cc 0%, #00ffd2 100%); color: #030a16; box-shadow: 0 6px 20px rgba(0, 234, 255, 0.2); transition: all 0.2s ease;">
+          <i class="fa-solid fa-lock-open"></i> Se connecter
+        </button>
+      </form>
+      <div id="login-error" style="color: #ff5a24; font-size: 13.5px; font-weight: 600; margin-top: 14px; display: none;">Identifiant ou mot de passe incorrect.</div>
+    </div>
+  </div>
 
-  <div class="container">
-    
+  <div class="container" id="main-content" style="display: none;">
     <header>
       <div class="logo-container">
         <div class="logo-text"><i class="fa-solid fa-cloud-sun-rain"></i> Météo-climat <span>pro</span></div>
@@ -413,7 +263,6 @@
       <div class="subtitle">Lancez vos automatisations en direct en cas de retard GitHub</div>
     </header>
 
-    <!-- CONFIGURATION DU TOKEN GITHUB -->
     <div class="config-card">
       <div class="config-header">
         <div class="config-title"><i class="fa-solid fa-key"></i> Clé d'accès GitHub</div>
@@ -423,38 +272,50 @@
       </div>
       <div class="input-group">
         <input type="password" id="pat-input" placeholder="Collez votre Personal Access Token (PAT) ici">
-        <button id="toggle-pwd-btn" class="btn btn-secondary" onclick="togglePasswordVisibility()">
+        <button class="btn btn-secondary" onclick="togglePasswordVisibility()">
           <i id="toggle-icon" class="fa-solid fa-eye"></i>
         </button>
         <button class="btn btn-primary" onclick="saveToken()"><i class="fa-solid fa-floppy-disk"></i> Enregistrer</button>
       </div>
-      <!-- Mode de lancement (Test / Production) -->
-      <div style="margin-top: 18px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, 0.08); display: flex; align-items: center; justify-content: space-between;">
-        <div class="config-title" style="margin-bottom: 0;"><i class="fa-solid fa-paper-plane"></i> Mode d'envoi des e-mails</div>
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <span id="mode-label" style="font-size: 13.5px; font-weight: 700; color: #ff5a24;">MODE TEST (Grégory seul)</span>
-          <label class="switch" style="position: relative; display: inline-block; width: 44px; height: 22px;">
-            <input type="checkbox" id="mode-checkbox" onchange="toggleLaunchMode()" style="opacity: 0; width: 0; height: 0;">
+    </div>
+
+    <!-- SELECTION DU MODE D'ENVOI -->
+    <div class="config-card" style="margin-top: -10px;">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span style="font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:0.5px; display:flex; align-items:center; gap:8px;">
+          <i class="fa-solid fa-paper-plane" style="color:#00ffd2;"></i> Mode d'envoi des mails
+        </span>
+        <label class="switch-container">
+          <span id="mode-label" style="font-size:13px; font-weight:700; color:#00ffd2; transition: color 0.3s;">🚀 Production (Patrick + Grégory)</span>
+          <span class="switch">
+            <input type="checkbox" id="test-mode-checkbox" checked onchange="updateModeLabel()">
             <span class="slider"></span>
-          </label>
-        </div>
+          </span>
+        </label>
       </div>
     </div>
 
-    <!-- LISTE DES AUTOMATISATIONS -->
-    <div class="section-title"><span></span>Automatisations disponibles</div>
-    
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <div class="section-title" style="margin-bottom:0;"><span></span>Automatisations</div>
+      <button class="refresh-btn" id="refresh-btn" onclick="loadAllStatuses()">
+        <i class="fa-solid fa-rotate-right"></i> Actualiser
+      </button>
+    </div>
+
     <div class="workflows-list">
-      
-      <!-- OBSERVATIONS CNEWS -->
+
+      <!-- EDITION DES CARTES -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
-          <div class="wf-title">🌦️ Observations CNews</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Génère 140 cartes HD d'observations climatologiques réelles du jour (France et 13 régions).<br>
-            • <b>Usage :</b> Fournit aux présentateurs TV les cartes d'observations prêtes pour l'antenne.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-title">🌦️ Edition des cartes par régions/national</div>
+          <div class="wf-desc">Collecte automatiquement les 140 cartes d'observations météo du jour sur Météociel (températures, vent, précipitations, ensoleillement) pour toutes les stations françaises, et les regroupe dans une archive ZIP. L'e-mail avec le lien de téléchargement est envoyé en moins de 7 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~6 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~7 min</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__daily_cnews_obs">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'daily_cnews_obs.yml')">
@@ -462,15 +323,30 @@
         </button>
       </div>
 
-      <!-- BULLETINS RADIO IA -->
+      <!-- BULLETINS RADIOS -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
-          <div class="wf-title">🎙️ Météo Kappa (Radio)</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Analyse les prévisions par l'IA Gemini et génère les bulletins vocaux (TTS) pour les radios.<br>
-            • <b>Usage :</b> Rédige et prépare les bulletins radio quotidiens pour Europe 1 et les radios locales.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-title">🎙️ bulletins radios</div>
+          <div class="wf-desc">Génère les cartes météo HD pour les 16 régions françaises, les soumet à l'analyse de Gemini Flash pour rédiger des bulletins radio professionnels, puis envoie automatiquement les résultats par e-mail. La chaîne complète (cartes → analyse IA → envoi) s'enchaîne en 3 étapes automatiques en ~5 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée totale : ~5 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail final automatique</span>
+          </div>
+          <div style="margin-top: 10px; padding: 10px 14px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); border-radius: 6px; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px;">
+            <div style="font-weight: 700; color: rgba(255,255,255,0.6); margin-bottom: 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;">Progression de la chaîne :</div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 4px;">
+              <span style="color: rgba(255,255,255,0.85);"><i class="fa-regular fa-image" style="margin-right: 6px; color: #90caf9;"></i> 1. Cartes & Données</span>
+              <span id="run-meteo-kappa__meteo_kappa" style="font-size: 11.5px; font-weight: 500;"><span class="run-dot dot-unknown"></span> Chargement…</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.03); padding-bottom: 4px;">
+              <span style="color: rgba(255,255,255,0.85);"><i class="fa-solid fa-brain" style="margin-right: 6px; color: #a5d6a7;"></i> 2. Analyse Gemini Flash</span>
+              <span id="run-meteo-kappa__meteo_kappa_analyse" style="font-size: 11.5px; font-weight: 500;"><span class="run-dot dot-unknown"></span> Chargement…</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 2px;">
+              <span style="color: rgba(255,255,255,0.85);"><i class="fa-regular fa-paper-plane" style="margin-right: 6px; color: #ffab91;"></i> 3. Envoi Bulletins</span>
+              <span id="run-meteo-kappa__meteo_kappa_envoi" style="font-size: 11.5px; font-weight: 500;"><span class="run-dot dot-unknown"></span> Chargement…</span>
+            </div>
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'meteo_kappa.yml')">
@@ -478,15 +354,18 @@
         </button>
       </div>
 
-      <!-- VIDÉOS PATRICK CNEWS -->
+      <!-- BULLETINS VIDÉO -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
-          <div class="wf-title">🎬 Vidéos Patrick CNews</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Génère automatiquement les diaporamas météo animés au format MP4 pour la télévision.<br>
-            • <b>Usage :</b> Fournit les vidéos d'arrière-plan avec le design personnalisé de Patrick pour CNews.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-title">🎬 Bulletins vidéo</div>
+          <div class="wf-desc">Génère les diaporamas météo animés au format MP4, prêts à diffuser sur CNews, à partir des données et cartes les plus récentes de Météo-France. Les vidéos sont produites automatiquement par l'IA et envoyées par e-mail en moins de 13 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~12 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~13 min</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__meteo_cnews_patrick">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'meteo_cnews_patrick.yml')">
@@ -494,47 +373,56 @@
         </button>
       </div>
 
-      <!-- VEILLE QUOTIDIENNE UNIFIÉE -->
+      <!-- CARTES DE VIGILANCE MF -->
       <div class="wf-card">
         <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">📰 Veille Quotidienne</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Collecte et synthétise les actualités générales de la presse, de l'IA et de la météo mondiale.<br>
-            • <b>Usage :</b> Permet à Grégory de faire sa veille générale en recevant un rapport HTML complet.<br>
-            • <b>Envoi :</b> Reçu par Grégory uniquement (Toujours).
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🗺️ Cartes de Vigilance Météo-France</div>
+          <div class="wf-desc">Génère automatiquement les cartes de vigilance HD de Météo-France (niveaux rouge, orange, jaune) avec logo en surimpression, prêtes à diffuser sur antenne. Les cartes sont envoyées par e-mail en moins de 3 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~2 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~3 min</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__vigilance_email">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_quotidienne.yml')">
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'vigilance_email.yml')">
           <i class="fa-solid fa-play"></i> Lancer
         </button>
       </div>
 
-      <!-- ANALYSES & TENDANCES INFOCLIMAT -->
-      <div class="wf-card">
+      <!-- TEST RENDU VIGILANCE -->
+      <div class="wf-card" style="border: 1px dashed rgba(255, 90, 36, 0.35);">
         <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">📊 Analyses & Tendances</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Scrape les dernières discussions techniques des prévisionnistes du forum Infoclimat.<br>
-            • <b>Usage :</b> Compile le consensus des modèles météo pour anticiper le temps à J+10/J+14.<br>
-            • <b>Envoi :</b> Reçu par Grégory uniquement (Toujours).
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title">🧪 Test Rendu Vigilance</div>
+          <div class="wf-desc">Génère uniquement les cartes de vigilance France (formats Paysage et Portrait) pour tester visuellement le rendu graphique de Météo-France sans lancer tout le rendu vidéo.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~1 min</span>
+            <span><i class="fa-solid fa-file-image" style="color:#ffcc00; margin-right:4px;"></i> Fichiers cartes uniquement</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__test_vigilance_only">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'infoclimat_evolution.yml')">
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'meteo-kappa', 'test_vigilance_only.yml')">
           <i class="fa-solid fa-play"></i> Lancer
         </button>
       </div>
 
-      <!-- VIGILANCE MF -->
+      <!-- BRIEFING METEO-FRANCE -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">🚨 Vigilance Météo-France</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Télécharge la carte de vigilance et les commentaires officiels sur le site de Météo-France.<br>
-            • <b>Usage :</b> Alerte immédiatement en cas de phénomènes critiques (orages, canicule, neige, etc.).<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-title">🚨 Briefing meteo-france</div>
+          <div class="wf-desc">Collecte automatiquement le bulletin officiel de vigilance de Météo-France (niveaux rouge, orange, jaune par département), génère une carte de synthèse premium et envoie l'alerte complète par e-mail. S'exécute automatiquement 2 fois par jour à 6h30 et 16h30, et peut être lancé manuellement à tout moment en moins de 2 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~1 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~2 min</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__vigilance_quotidienne">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'vigilance_quotidienne.yml')">
@@ -542,79 +430,18 @@
         </button>
       </div>
 
-      <!-- BILAN RÉGIONAL HAUTS-DE-FRANCE -->
+      <!-- BULLETINS ÉCRITS POUR LES RADIOS -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">🌾 Bilan Régional Hauts-de-France</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Calcule les moyennes de température, pluie et anomalies pour toutes les stations des Hauts-de-France.<br>
-            • <b>Usage :</b> Fournit les rapports de statistiques climatologiques pour la presse et le suivi agricole.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-title">🌊 Bulletin écrits pour les radios</div>
+          <div class="wf-desc">Télécharge les données XML officielles de Météo-France pour les 93 départements, génère des bulletins premium pour la France, les Hauts-de-France, le Nord-Pas-de-Calais et la Nouvelle-Aquitaine, rédigés par Gemini 3.5 Flash avec prévisions J+2 à J+7. L'archive ZIP contenant les fichiers HTML et Markdown est envoyée par e-mail en moins de 8 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~7 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~8 min</span>
           </div>
-        </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'bilan_journalier.yml')">
-          <i class="fa-solid fa-play"></i> Lancer
-        </button>
-      </div>
-
-      <!-- VEILLE SPÉCIFIQUE INTEMPÉRIES & CYCLONES -->
-      <div class="wf-card">
-        <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">⛈️ Veille Intempéries &amp; Cyclones</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Scanne Google News et Twitter pour détecter les phénomènes violents récents (<24h) dans le monde.<br>
-            • <b>Usage :</b> Génère une synthèse technique et des fiches sur les orages, grêle, tempêtes et cyclones mondiaux.<br>
-            • <b>Envoi :</b> Reçu par Grégory &amp; Patrick (Toujours).
-          </div>
-        </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_intemperies.yml')">
-          <i class="fa-solid fa-play"></i> Lancer
-        </button>
-      </div>
-
-      <!-- BILAN NATIONAL FRANCE -->
-      <div class="wf-card">
-        <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> bilan-national-france</div>
-          <div class="wf-title">🇫🇷 Bilan National France</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Calcule le bilan climatologique quotidien national (températures, pluie, ensoleillement, anomalies).<br>
-            • <b>Usage :</b> Permet de suivre le climat national et de préparer des synthèses pour les médias nationaux.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
-          </div>
-        </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'bilan-national-france', 'bilan_national.yml')">
-          <i class="fa-solid fa-play"></i> Lancer
-        </button>
-      </div>
-
-      <!-- BILAN RÉGIONAL NOUVELLE-AQUITAINE -->
-      <div class="wf-card">
-        <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">🌾 Bilan Régional Nouvelle-Aquitaine</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Calcule les moyennes de température, pluie et anomalies pour toutes les stations de Nouvelle-Aquitaine.<br>
-            • <b>Usage :</b> Suivi climatique, agricole et des records pour la région Nouvelle-Aquitaine.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
-          </div>
-        </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'bilan_journalier_naq.yml')">
-          <i class="fa-solid fa-play"></i> Lancer
-        </button>
-      </div>
-
-      <!-- MÉTÉO FRANCE BULLETINS PREMIUM -->
-      <div class="wf-card">
-        <div class="wf-info">
-          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">🌤️ Bulletins Météo France Premium</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Appelle l'API de Météo-France et utilise l'IA pour rédiger des bulletins météo (Terrestre, Plage, Marine).<br>
-            • <b>Usage :</b> Génère des bulletins complets haut de gamme rédigés pour des clients professionnels.<br>
-            • <b>Envoi :</b> Reçu par Grégory (Mode Test) ou Grégory &amp; Patrick (Mode Production).
+          <div class="wf-last-run" id="run-veille-automation__meteo_france_bulletins">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'meteo_france_bulletins.yml')">
@@ -622,15 +449,153 @@
         </button>
       </div>
 
-      <!-- TWITTER MONSIEUR MÉTÉO -->
+      <!-- BILAN OBSERVATION HAUTS-DE-FRANCE -->
       <div class="wf-card">
         <div class="wf-info">
           <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
-          <div class="wf-title">🐦 Twitter Monsieur Météo</div>
-          <div class="wf-desc">
-            • <b>Action :</b> Génère les cartes de vigilance graphiques, rédige les débriefings et publie sur le compte Twitter officiel.<br>
-            • <b>Usage :</b> Permet d'animer automatiquement le compte Twitter @MeteoMonsieur et envoie une copie par e-mail.<br>
-            • <b>Envoi :</b> Reçu par Grégory uniquement (Toujours).
+          <div class="wf-title">🌾 Bilan observation Hauts-de-France</div>
+          <div class="wf-desc">Collecte les observations météo du jour sur Météociel pour tous les postes des Hauts-de-France, calcule les moyennes régionales et les anomalies par rapport aux normales climatologiques de saison. Le bilan complet avec graphiques et commentaires est envoyé par e-mail à Patrick Marlière en moins de 45 secondes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~25 sec</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~45 sec</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__bilan_journalier">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'bilan_journalier.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- BILAN OBSERVATION NATIONAL -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> bilan-national-france</div>
+          <div class="wf-title">🇫🇷 Bilan observation national</div>
+          <div class="wf-desc">Collecte les observations météo du jour pour l'ensemble des stations françaises, calcule les statistiques climatiques nationales (températures, précipitations, ensoleillement) et les anomalies par rapport aux normales de saison. Le bilan national complet est envoyé par e-mail en moins de 40 secondes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~20 sec</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~40 sec</span>
+          </div>
+          <div class="wf-last-run" id="run-bilan-national-france__bilan_national">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'bilan-national-france', 'bilan_national.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- VEILLE ACTU MÉTÉO -->
+      <div class="wf-card">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">🌪️ Veille Cyclones &amp; Intempéries Mondiale</div>
+          <div class="wf-desc">Surveille en temps réel l'activité cyclonique mondiale (ouragans, typhons, tempêtes tropicales) et les intempéries majeures (inondations, canicules, tornades) à partir de Google News et des comptes Twitter spécialisés. Une synthèse fact-checkée et géolocalisée est envoyée par e-mail en moins de 3 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~2 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~3 min</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__veille_intemperies">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_intemperies.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- ── AUTOMATISATIONS SUPPLÉMENTAIRES (GREGORY SEUL) ── -->
+
+      <!-- VEILLE QUOTIDIENNE -->
+      <div class="wf-card" style="border: 1px solid rgba(0, 136, 204, 0.35);">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">📰 Veille Complète (Actu, IA, Météo)</div>
+          <div class="wf-desc">Lance simultanément 4 veilles spécialisées (actualité mondiale, intelligence artificielle, météorologie et intempéries) en pilotant plusieurs sous-agents de recherche en parallèle. Une synthèse HTML complète, fact-checkée et hiérarchisée est envoyée par e-mail en moins de 3 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~2 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~3 min</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__veille_quotidienne">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_quotidienne.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- INFOCLIMAT -->
+      <div class="wf-card" style="border: 1px solid rgba(0, 136, 204, 0.35);">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">📊 Analyses &amp; Tendances Infoclimat</div>
+          <div class="wf-desc">Scrape en temps réel les discussions des experts du forum Infoclimat pour en extraire les tendances météorologiques majeures, les événements remarquables et les analyses synoptiques en cours. Un rapport de synthèse structuré est envoyé par e-mail en moins de 3 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~2 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~3 min</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__infoclimat_evolution">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'infoclimat_evolution.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- PACK 32 BULLETINS -->
+      <div class="wf-card" style="border: 1px solid rgba(0, 255, 210, 0.3); background: rgba(0, 255, 210, 0.02);">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> meteo-kappa</div>
+          <div class="wf-title" style="color: #00ffd2;">🎬 Pack Complet 32 Bulletins CNews (14J)</div>
+          <div class="wf-desc">Génère en une seule opération les 28 bulletins météo régionaux à 14 jours en double format (Paysage 16/9 pour CNews et vertical TikTok), ainsi que les 4 bulletins personnalisés de Patrick à 5 jours. Le pack complet est compressé dans une archive ZIP disponible sur GitHub Releases et envoyé par e-mail en ~20 minutes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~20 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail + ZIP sur Releases</span>
+          </div>
+          <div class="wf-last-run" id="run-meteo-kappa__generate_all_14d_bulletins">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" style="background: linear-gradient(135deg, #00c6ff 0%, #00ffd2 100%); color: #030a16; font-weight: bold;" onclick="triggerWf(this, 'meteo-kappa', 'generate_all_14d_bulletins.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- BILAN NOUVELLE AQUITAINE -->
+      <div class="wf-card" style="border: 1px solid rgba(0, 136, 204, 0.35);">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">🌾 Bilan observation Nouvelle-Aquitaine</div>
+          <div class="wf-desc">Génère le bilan climatologique régional complet et anomalies pour la région Nouvelle-Aquitaine à partir des données Météociel du jour. L'e-mail complet est envoyé en moins de 45 secondes.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~25 sec</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~45 sec</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__bilan_journalier_naq">
+            <span class="run-dot dot-unknown"></span> Chargement…
+          </div>
+        </div>
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'bilan_journalier_naq.yml')">
+          <i class="fa-solid fa-play"></i> Lancer
+        </button>
+      </div>
+
+      <!-- TWITTER MONSIEUR METEO -->
+      <div class="wf-card" style="border: 1px solid rgba(0, 136, 204, 0.35);">
+        <div class="wf-info">
+          <div class="wf-repo-badge"><i class="fa-brands fa-github"></i> veille-automation</div>
+          <div class="wf-title">🐦 Suivi Twitter Monsieur Météo</div>
+          <div class="wf-desc">Surveille et compile les tweets récents importants sur le climat et la météo française pour mise à jour de vos analyses de vigilance et infographies. Le débriefing structuré est envoyé par e-mail en 1 minute.</div>
+          <div style="font-size: 11.5px; font-weight: 600; color: rgba(255,255,255,0.4); display: flex; gap: 12px; margin-bottom: 8px;">
+            <span><i class="fa-solid fa-stopwatch" style="color:#00c6ff; margin-right:4px;"></i> Durée : ~1 min</span>
+            <span><i class="fa-solid fa-envelope" style="color:#66bb6a; margin-right:4px;"></i> Mail sous ~2 min</span>
+          </div>
+          <div class="wf-last-run" id="run-veille-automation__twitter_monsieur_meteo">
+            <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
         <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'twitter_monsieur_meteo.yml')">
@@ -639,166 +604,257 @@
       </div>
 
     </div>
-
   </div>
 
-  <!-- CONTAINER DE TOASTS -->
   <div id="toast-container"></div>
 
   <script>
-    // Vérification initiale du token enregistré
-    document.addEventListener("DOMContentLoaded", () => {
-      updateTokenStatus();
-    });
+    const OWNER = 'gregorylanglet59264-byte';
+    const WORKFLOWS = [
+      { repo: 'meteo-kappa',          file: 'daily_cnews_obs.yml',    id: 'meteo-kappa__daily_cnews_obs' },
+      { repo: 'meteo-kappa',          file: 'meteo_kappa.yml',        id: 'meteo-kappa__meteo_kappa' },
+      { repo: 'meteo-kappa',          file: 'meteo_kappa_analyse.yml',id: 'meteo-kappa__meteo_kappa_analyse' },
+      { repo: 'meteo-kappa',          file: 'meteo_kappa_envoi.yml',  id: 'meteo-kappa__meteo_kappa_envoi' },
+      { repo: 'meteo-kappa',          file: 'meteo_cnews_patrick.yml',id: 'meteo-kappa__meteo_cnews_patrick' },
+      { repo: 'meteo-kappa',          file: 'vigilance_email.yml',    id: 'meteo-kappa__vigilance_email' },
+      { repo: 'veille-automation',    file: 'vigilance_quotidienne.yml',id:'veille-automation__vigilance_quotidienne' },
+      { repo: 'veille-automation',    file: 'meteo_france_bulletins.yml',id:'veille-automation__meteo_france_bulletins' },
+      { repo: 'veille-automation',    file: 'bilan_journalier.yml',   id: 'veille-automation__bilan_journalier' },
+      { repo: 'veille-automation',    file: 'veille_intemperies.yml', id: 'veille-automation__veille_intemperies' },
+      { repo: 'bilan-national-france',file: 'bilan_national.yml',     id: 'bilan-national-france__bilan_national' },
+      
+      // workflows supplémentaires Gregory
+      { repo: 'veille-automation',    file: 'veille_quotidienne.yml', id: 'veille-automation__veille_quotidienne' },
+      { repo: 'veille-automation',    file: 'infoclimat_evolution.yml',id:'veille-automation__infoclimat_evolution' },
+      { repo: 'meteo-kappa',          file: 'generate_all_14d_bulletins.yml', id: 'meteo-kappa__generate_all_14d_bulletins' },
+      { repo: 'meteo-kappa',          file: 'test_vigilance_only.yml', id: 'meteo-kappa__test_vigilance_only' },
+      { repo: 'veille-automation',    file: 'bilan_journalier_naq.yml',id:'veille-automation__bilan_journalier_naq' },
+      { repo: 'veille-automation',    file: 'twitter_monsieur_meteo.yml',id:'veille-automation__twitter_monsieur_meteo' }
+    ];
 
-    function toggleLaunchMode() {
-      const checkbox = document.getElementById('mode-checkbox');
-      const label = document.getElementById('mode-label');
-      if (checkbox.checked) {
-        label.style.color = "#00eaff";
-        label.innerText = "MODE PRODUCTION (Avec Patrick)";
-      } else {
-        label.style.color = "#ff5a24";
-        label.innerText = "MODE TEST (Grégory seul)";
+    function getToken() {
+      const input = document.getElementById('pat-input');
+      const val = input.value.trim();
+      if (val) { localStorage.setItem('github_pat', val); return val; }
+      return localStorage.getItem('github_pat') || '';
+    }
+
+    function checkAuth() {
+      if (sessionStorage.getItem('mto_authenticated') === 'true') {
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
       }
     }
+
+    function handleLogin(e) {
+      e.preventDefault();
+      const user = document.getElementById('username-input').value.trim();
+      const pass = document.getElementById('password-input').value;
+      if (user === 'mto' && pass === 'mto59') {
+        sessionStorage.setItem('mto_authenticated', 'true');
+        document.getElementById('login-screen').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+        if (getToken()) loadAllStatuses();
+      } else {
+        const err = document.getElementById('login-error');
+        err.style.display = 'block';
+        setTimeout(() => { err.style.display = 'none'; }, 3000);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      checkAuth();
+      updateTokenStatus();
+      updateModeLabel();
+      if (sessionStorage.getItem('mto_authenticated') === 'true' && getToken()) loadAllStatuses();
+    });
 
     function updateTokenStatus() {
       const token = localStorage.getItem('github_pat');
       const badge = document.getElementById('status-badge');
       const input = document.getElementById('pat-input');
-      
       if (token) {
-        badge.className = "status-badge ready";
+        badge.className = 'status-badge ready';
         badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> Prêt';
         input.value = token;
       } else {
-        badge.className = "status-badge missing";
+        badge.className = 'status-badge missing';
         badge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Non configuré';
-        input.value = "";
+        input.value = '';
       }
     }
 
     function saveToken() {
-      const input = document.getElementById('pat-input');
-      const token = input.value.trim();
-      
+      const token = document.getElementById('pat-input').value.trim();
       if (token) {
         localStorage.setItem('github_pat', token);
-        showToast("Clé d'accès GitHub enregistrée avec succès !", "success");
+        showToast("Clé d'accès GitHub enregistrée !", 'success');
+        updateTokenStatus();
+        loadAllStatuses();
       } else {
         localStorage.removeItem('github_pat');
-        showToast("Clé d'accès supprimée.", "error");
+        showToast('Clé d\'accès supprimée.', 'error');
+        updateTokenStatus();
       }
-      updateTokenStatus();
     }
 
     function togglePasswordVisibility() {
       const input = document.getElementById('pat-input');
       const icon = document.getElementById('toggle-icon');
-      if (input.type === "password") {
-        input.type = "text";
-        icon.className = "fa-solid fa-eye-slash";
+      if (input.type === 'password') { input.type = 'text'; icon.className = 'fa-solid fa-eye-slash'; }
+      else { input.type = 'password'; icon.className = 'fa-solid fa-eye'; }
+    }
+
+    function updateModeLabel() {
+      const checkbox = document.getElementById('test-mode-checkbox');
+      const label = document.getElementById('mode-label');
+      if (checkbox.checked) {
+        label.innerHTML = '🚀 Production (Patrick + Grégory)';
+        label.style.color = '#00ffd2';
       } else {
-        input.type = "password";
-        icon.className = "fa-solid fa-eye";
+        label.innerHTML = '🧪 Test (Grégory uniquement)';
+        label.style.color = '#ff5a24';
       }
     }
 
-    async function triggerWf(btn, repo, workflowFile) {
-      // Lire la cle directement depuis le champ de saisie en priorite (au cas ou l'utilisateur a colle sans enregistrer)
-      const input = document.getElementById('pat-input');
-      let token = input.value.trim();
-      
-      if (!token) {
-        token = localStorage.getItem('github_pat');
-      } else {
-        // Enregistrer automatiquement si present pour simplifier l'utilisation
-        localStorage.setItem('github_pat', token);
-        updateTokenStatus();
+    function timeAgo(dateStr) {
+      const diff = Math.floor((Date.now() - new Date(dateStr)) / 1000);
+      if (diff < 60) return 'à l\'instant';
+      if (diff < 3600) return `il y a ${Math.floor(diff/60)}min`;
+      if (diff < 86400) {
+        const h = Math.floor(diff/3600), m = Math.floor((diff%3600)/60);
+        return `il y a ${h}h${m > 0 ? m : ''}`;
       }
-      
-      if (!token) {
-        showToast("Veuillez d'abord configurer votre clé d'accès !", "error");
-        return;
-      }
+      return `il y a ${Math.floor(diff/86400)}j`;
+    }
 
-      // Modifier le bouton en état de chargement
+    function formatTime(dateStr) {
+      if (!dateStr) return '';
+      const d = new Date(dateStr);
+      return d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    async function loadAllStatuses() {
+      const token = getToken();
+      if (!token) return;
+      const btn = document.getElementById('refresh-btn');
+      if (btn) btn.classList.add('spinning');
+      await Promise.all(WORKFLOWS.map(wf => fetchRunStatus(wf, token)));
+      if (btn) btn.classList.remove('spinning');
+    }
+
+    async function fetchRunStatus(wf, token) {
+      const el = document.getElementById('run-' + wf.id);
+      if (!el) return;
+      try {
+        const r = await fetch(
+          `https://api.github.com/repos/${OWNER}/${wf.repo}/actions/workflows/${wf.file}/runs?per_page=1`,
+          { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } }
+        );
+        if (!r.ok) { el.innerHTML = '<span class="run-dot dot-unknown"></span> Erreur API'; return; }
+        const data = await r.json();
+        const run = data.workflow_runs && data.workflow_runs[0];
+        if (!run) { el.innerHTML = '<span class="run-dot dot-unknown"></span> Aucun run trouvé'; return; }
+
+        let dotClass, label;
+        if (run.status === 'in_progress' || run.status === 'queued') {
+          dotClass = 'dot-running'; label = `En cours… · démarré à ${formatTime(run.created_at)}`;
+        } else if (run.conclusion === 'success') {
+          dotClass = 'dot-success'; label = `Succès · ${timeAgo(run.updated_at)} (${formatTime(run.updated_at)})`;
+        } else if (run.conclusion === 'failure') {
+          dotClass = 'dot-failure'; label = `Échec · ${timeAgo(run.updated_at)} (${formatTime(run.updated_at)})`;
+        } else if (run.conclusion === 'cancelled') {
+          dotClass = 'dot-unknown'; label = `Annulé · ${timeAgo(run.updated_at)}`;
+        } else {
+          dotClass = 'dot-unknown'; label = `${run.conclusion || run.status} · ${timeAgo(run.updated_at)}`;
+        }
+        el.innerHTML = `<span class="run-dot ${dotClass}"></span> ${label}`;
+      } catch(e) {
+        el.innerHTML = '<span class="run-dot dot-unknown"></span> Impossible de charger';
+      }
+    }
+
+    async function isRunInProgress(repo, workflowFile, token) {
+      try {
+        const r = await fetch(
+          `https://api.github.com/repos/${OWNER}/${repo}/actions/workflows/${workflowFile}/runs?status=in_progress&per_page=1`,
+          { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json' } }
+        );
+        const data = await r.json();
+        return data.workflow_runs && data.workflow_runs.length > 0;
+      } catch(e) { return false; }
+    }
+
+    async function triggerWf(btn, repo, workflowFile) {
+      const token = getToken();
+      if (!token) { showToast("Veuillez d'abord configurer votre clé d'accès !", 'error'); return; }
+
       const originalHTML = btn.innerHTML;
-      btn.className = "btn btn-trigger loading";
-      btn.innerHTML = '<i class="fa-solid fa-circle-notch spinner"></i> Envoi...';
+      btn.className = 'btn btn-trigger loading';
+      btn.innerHTML = '<i class="fa-solid fa-circle-notch spinner"></i> Vérif…';
+
+      // Déterminer la valeur du mode d'envoi
+      const isProd = document.getElementById('test-mode-checkbox').checked;
+      const targetUser = isProd ? "patrick" : "gregory";
+
+      // Vérifier si un run est déjà en cours
+      const running = await isRunInProgress(repo, workflowFile, token);
+      if (running) {
+        btn.className = 'btn btn-trigger';
+        btn.innerHTML = originalHTML;
+        showToast('⚠️ Un run est déjà en cours — le nouveau sera mis en attente.', 'warn');
+        const confirmed = window.confirm('Un run est déjà en cours sur GitHub.\n\nLancer quand même ? Il sera mis en file d\'attente.');
+        if (!confirmed) return;
+        btn.className = 'btn btn-trigger loading';
+        btn.innerHTML = '<i class="fa-solid fa-circle-notch spinner"></i> Envoi…';
+      } else {
+        btn.innerHTML = '<i class="fa-solid fa-circle-notch spinner"></i> Envoi…';
+      }
 
       try {
-        const isProduction = document.getElementById('mode-checkbox').checked;
         const reqBody = { ref: 'main' };
-        if (workflowFile === 'veille_quotidienne.yml' || 
-            workflowFile === 'veille_intemperies.yml' || 
-            workflowFile === 'daily_cnews_obs.yml' || 
-            workflowFile === 'test_vigilance_only.yml') {
-          // Aucun input
-        } else if (workflowFile === 'twitter_monsieur_meteo.yml') {
+        if (workflowFile === 'twitter_monsieur_meteo.yml') {
           reqBody.inputs = { mode: 'all' };
+        } else if (workflowFile === 'daily_cnews_obs.yml' || workflowFile === 'test_vigilance_only.yml') {
+          // pas d'input
         } else {
-          reqBody.inputs = { test_mode: isProduction ? "false" : "true" };
+          reqBody.inputs = { triggered_by: targetUser };
         }
 
-        const response = await fetch(`https://api.github.com/repos/gregorylanglet59264-byte/${repo}/actions/workflows/${workflowFile}/dispatches`, {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github+json',
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(reqBody)
-        });
-
+        const response = await fetch(
+          `https://api.github.com/repos/${OWNER}/${repo}/actions/workflows/${workflowFile}/dispatches`,
+          {
+            method: 'POST',
+            headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+            body: JSON.stringify(reqBody)
+          }
+        );
         if (response.status === 204) {
-          showToast(`Lancement de ${workflowFile.replace('.yml', '')} envoyé !`, "success");
+          const modeLabel = isProd ? "Patrick + Grégory" : "Grégory uniquement";
+          showToast(`✅ Lancement envoyé — Mode : ${modeLabel} !`, 'success');
+          setTimeout(() => { const wf = WORKFLOWS.find(w => w.repo===repo && w.file===workflowFile); if(wf) fetchRunStatus(wf, token); }, 5000);
         } else {
           let errText = response.statusText;
-          try {
-            const err = await response.json();
-            if (err && err.message) errText = err.message;
-          } catch(e) {}
-          showToast(`Erreur GitHub (${response.status}) : ${errText}`, "error");
+          try { const err = await response.json(); if (err && err.message) errText = err.message; } catch(e) {}
+          showToast(`Erreur GitHub (${response.status}) : ${errText}`, 'error');
         }
       } catch (e) {
-        showToast(`Erreur de connexion : ${e.message}`, "error");
+        showToast(`Erreur de connexion : ${e.message}`, 'error');
       } finally {
-        // Restaurer le bouton
-        btn.className = "btn btn-trigger";
+        btn.className = 'btn btn-trigger';
         btn.innerHTML = originalHTML;
       }
     }
 
-    function showToast(message, type = "success") {
+    function showToast(message, type = 'success') {
       const container = document.getElementById('toast-container');
       const toast = document.createElement('div');
       toast.className = `toast toast-${type}`;
-      
-      const icon = type === "success" 
-        ? '<i class="fa-solid fa-circle-check fa-lg"></i>' 
-        : '<i class="fa-solid fa-triangle-exclamation fa-lg"></i>';
-        
-      toast.innerHTML = `
-        ${icon}
-        <div class="toast-msg">${message}</div>
-      `;
-      
+      const icons = { success: 'fa-circle-check', error: 'fa-triangle-exclamation', warn: 'fa-triangle-exclamation' };
+      toast.innerHTML = `<i class="fa-solid ${icons[type] || 'fa-circle-check'} fa-lg"></i><div class="toast-msg">${message}</div>`;
       container.appendChild(toast);
-      
-      // Animation d'entrée
-      setTimeout(() => {
-        toast.classList.add('show');
-      }, 50);
-      
-      // Animation de sortie
-      setTimeout(() => {
-        toast.classList.remove('show');
-        setTimeout(() => {
-          toast.remove();
-        }, 400);
-      }, 4000);
+      setTimeout(() => toast.classList.add('show'), 50);
+      setTimeout(() => { toast.classList.remove('show'); setTimeout(() => toast.remove(), 400); }, 5000);
     }
   </script>
 </body>
