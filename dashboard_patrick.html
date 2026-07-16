@@ -537,14 +537,13 @@
       // Déterminer les inputs selon le fichier de workflow
       let reqBody = { ref: 'main' };
       if (workflowFile === 'veille_quotidienne.yml' || 
-          workflowFile === 'veille_intemperies.yml' || 
           workflowFile === 'daily_cnews_obs.yml' || 
           workflowFile === 'test_vigilance_only.yml') {
         // Aucun input
       } else if (workflowFile === 'twitter_monsieur_meteo.yml') {
         reqBody.inputs = { mode: 'all' };
       } else {
-        reqBody.inputs = inputs || { test_mode: 'false' };
+        reqBody.inputs = inputs || { test_mode: 'false', triggered_by: 'patrick' };
       }
 
       try {
