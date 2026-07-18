@@ -481,27 +481,14 @@ def capture_and_compose_vigilance(zone, orientation, output_path, period=1):
                      let mapStyle = document.createElement('style');
                      mapStyle.innerHTML = `
                          svg.fb-svg-map path {
-                             stroke: transparent !important;
+                             stroke: #1e293b !important;
+                             stroke-width: 1.5px !important;
                          }
                          svg.fb-svg-map path[fill="#34d399"],
                          svg.fb-svg-map path[fill="#10b981"],
                          svg.fb-svg-map path[fill="#22c55e"],
                          svg.fb-svg-map path[fill="#34c759"] {
                              fill: #22c55e !important;
-                             stroke: #1e293b !important;
-                             stroke-width: 1.2px !important;
-                         }
-                         svg.fb-svg-map path[fill*="ff9"], 
-                         svg.fb-svg-map path[fill*="ffa"], 
-                         svg.fb-svg-map path[fill*="f97"],
-                         svg.fb-svg-map path[fill*="fbc"],
-                         svg.fb-svg-map path[fill*="ffc"],
-                         svg.fb-svg-map path[fill*="eab"],
-                         svg.fb-svg-map path[fill*="f59"],
-                         svg.fb-svg-map path[fill*="ef4"],
-                         svg.fb-svg-map path[fill*="d32"] {
-                             stroke: rgba(0, 0, 0, 0.25) !important;
-                             stroke-width: 1.5px !important;
                          }
                      `;
                      document.head.appendChild(mapStyle);
