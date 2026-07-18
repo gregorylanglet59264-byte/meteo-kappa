@@ -295,7 +295,7 @@
             <span class="run-dot dot-unknown"></span> Chargement…
           </div>
         </div>
-        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_intemperies.yml', {})">
+        <button class="btn btn-trigger" onclick="triggerWf(this, 'veille-automation', 'veille_intemperies.yml')">
           <i class="fa-solid fa-play"></i> Lancer
         </button>
       </div>
@@ -536,14 +536,18 @@
 
       // Déterminer les inputs selon le fichier de workflow
       let reqBody = { ref: 'main' };
-      if (workflowFile === 'veille_quotidienne.yml' || 
-          workflowFile === 'daily_cnews_obs.yml' || 
+      if (workflowFile === 'daily_cnews_obs.yml' || 
           workflowFile === 'test_vigilance_only.yml') {
         // Aucun input
+      } else if (workflowFile === 'veille_quotidienne.yml') {
+        reqBody.inputs = { type: 'all' };
       } else if (workflowFile === 'twitter_monsieur_meteo.yml') {
         reqBody.inputs = { mode: 'all' };
+      } else if (workflowFile === 'generate_all_14d_bulletins.yml' ||
+                 workflowFile === 'meteo_kappa_envoi.yml') {
+        reqBody.inputs = { test_mode: 'false' };
       } else {
-        reqBody.inputs = inputs || { test_mode: 'false', triggered_by: 'patrick' };
+        reqBody.inputs = { triggered_by: 'patrick' };
       }
 
       try {
