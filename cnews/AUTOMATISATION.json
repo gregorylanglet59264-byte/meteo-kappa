@@ -334,165 +334,124 @@
       "brandColor": "#1e3a8a",
       "cities": [
         {
-          "name": "St-Hilaire-sur-Helpe",
-          "dept": "59",
-          "lat": 50.1167,
-          "lon": 3.9167,
-          "selected": true
+          "name": "Lille",
+          "dept": "Nord (59)",
+          "lat": 50.63297,
+          "lon": 3.05858
         },
         {
           "name": "Valenciennes",
-          "dept": "59",
-          "lat": 50.35,
-          "lon": 3.5167,
-          "selected": true
-        },
-        {
-          "name": "Troisvilles",
-          "dept": "59",
-          "lat": 50.1,
-          "lon": 3.46,
-          "selected": true
-        },
-        {
-          "name": "Maubeuge",
-          "dept": "59",
-          "lat": 50.2833,
-          "lon": 3.9667,
-          "selected": true
+          "dept": "Nord (59)",
+          "lat": 50.357,
+          "lon": 3.523
         },
         {
           "name": "Douai",
-          "dept": "59",
-          "lat": 50.3667,
-          "lon": 3.0833,
-          "selected": true
-        },
-        {
-          "name": "Lille",
-          "dept": "59",
-          "lat": 50.6292,
-          "lon": 3.0573,
-          "selected": true
-        },
-        {
-          "name": "Roubaix",
-          "dept": "59",
-          "lat": 50.6942,
-          "lon": 3.1746,
-          "selected": true
-        },
-        {
-          "name": "Steenvoorde",
-          "dept": "59",
-          "lat": 50.8,
-          "lon": 2.5833,
-          "selected": true
-        },
-        {
-          "name": "Watten",
-          "dept": "59",
-          "lat": 50.8333,
-          "lon": 2.2167,
-          "selected": true
+          "dept": "Nord (59)",
+          "lat": 50.371,
+          "lon": 3.08
         },
         {
           "name": "Dunkerque",
-          "dept": "59",
-          "lat": 51.0343,
-          "lon": 2.3768,
-          "selected": true
+          "dept": "Nord (59)",
+          "lat": 51.034,
+          "lon": 2.377
         },
         {
-          "name": "Saulty",
-          "dept": "62",
-          "lat": 50.21,
-          "lon": 2.53,
-          "selected": true
+          "name": "Maubeuge",
+          "dept": "Nord (59)",
+          "lat": 50.278,
+          "lon": 3.973
+        },
+        {
+          "name": "Cambrai",
+          "dept": "Nord (59)",
+          "lat": 50.176,
+          "lon": 3.235
+        },
+        {
+          "name": "Roubaix",
+          "dept": "Nord (59)",
+          "lat": 50.69,
+          "lon": 3.181
+        },
+        {
+          "name": "Steenvoorde",
+          "dept": "Nord (59)",
+          "lat": 50.809,
+          "lon": 2.583
+        },
+        {
+          "name": "St-Hilaire-sur-Helpe",
+          "dept": "Nord (59)",
+          "lat": 50.133,
+          "lon": 3.901
+        },
+        {
+          "name": "Avesnes-sur-Helpe",
+          "dept": "Nord (59)",
+          "lat": 50.123,
+          "lon": 3.931
         },
         {
           "name": "Arras",
-          "dept": "62",
-          "lat": 50.2833,
-          "lon": 2.7833,
-          "selected": true
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.292,
+          "lon": 2.78
         },
         {
-          "name": "Fiefs",
-          "dept": "62",
-          "lat": 50.5,
-          "lon": 2.33,
-          "selected": true
+          "name": "Boulogne-sur-Mer",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.726,
+          "lon": 1.614
         },
         {
-          "name": "Humières",
-          "dept": "62",
-          "lat": 50.3833,
-          "lon": 2.18,
-          "selected": true
+          "name": "Calais",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.951,
+          "lon": 1.859
         },
         {
-          "name": "Cambrai / Epinoy",
-          "dept": "62",
-          "lat": 50.23,
-          "lon": 3.15,
-          "selected": true
+          "name": "Lens",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.432,
+          "lon": 2.833
         },
         {
-          "name": "Radinghem",
-          "dept": "62",
-          "lat": 50.55,
-          "lon": 2.1167,
-          "selected": true
+          "name": "Béthune",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.53,
+          "lon": 2.64
         },
         {
-          "name": "Attin",
-          "dept": "62",
-          "lat": 50.4833,
-          "lon": 1.75,
-          "selected": true
-        },
-        {
-          "name": "Nielles-lès-Bléquin",
-          "dept": "62",
-          "lat": 50.67,
-          "lon": 2.02,
-          "selected": true
-        },
-        {
-          "name": "Bainghen",
-          "dept": "62",
-          "lat": 50.75,
-          "lon": 1.9,
-          "selected": true
-        },
-        {
-          "name": "Boulogne",
-          "dept": "62",
-          "lat": 50.7263,
-          "lon": 1.6147,
-          "selected": true
-        },
-        {
-          "name": "Calais / Marck",
-          "dept": "62",
-          "lat": 50.95,
-          "lon": 1.85,
-          "selected": true
-        },
-        {
-          "name": "Cap Gris-Nez",
-          "dept": "62",
-          "lat": 50.8667,
-          "lon": 1.5833,
-          "selected": true
+          "name": "Saint-Omer",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.749,
+          "lon": 2.258
         },
         {
           "name": "Le Touquet",
-          "dept": "62",
-          "lat": 50.5167,
-          "lon": 1.5833,
-          "selected": true
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.521,
+          "lon": 1.591
+        },
+        {
+          "name": "Berck",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.408,
+          "lon": 1.565
+        },
+        {
+          "name": "Montreuil-sur-Mer",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.464,
+          "lon": 1.763
+        },
+        {
+          "name": "Hesdin",
+          "dept": "Pas-de-Calais (62)",
+          "lat": 50.374,
+          "lon": 2.037
         }
       ],
       "options": {
