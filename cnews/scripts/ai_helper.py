@@ -799,6 +799,19 @@ Instructions :
     }
     result["forecastTextRaw"] = result["forecastRaw"]
 
+    # Filtre automatique (censure) anti-hallucination "canicule"
+    # ponytail: simple remplacement insensible à la casse pour respecter les consignes officielles Météo-France
+    for k in result.keys():
+        if result[k] and isinstance(result[k], str):
+            # Remplacement avec respect des majuscules/minuscules de base
+            text = result[k]
+            text = text.replace("caniculaires", "très chauds").replace("Caniculaires", "Très chauds")
+            text = text.replace("caniculaire", "très chaud").replace("Caniculaire", "Très chaud")
+            text = text.replace("canicules", "fortes chaleurs").replace("Canicules", "Fortes chaleurs")
+            text = text.replace("canicule", "forte chaleur").replace("Canicule", "Forte chaleur")
+            result[k] = text
+
+
     # Merge with local fallback for any missing field or invalid date mention
     wd1_target = f"Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin"
     for k, v in result.items():
