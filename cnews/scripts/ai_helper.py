@@ -649,9 +649,12 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     # Appel 1 : Matinée Jour 1 (Carte 1)
     summaryMorning = ""
     if img_m1:
-        prompt_m1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour la MATINÉE du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
-Règles de style :
-- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
+        prompt_m1 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour la MATINÉE du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide, élégant et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "C'est votre présentateur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
 - Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
 - Intègre obligatoirement des indications précises sur le VENT (brise, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
 - ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
@@ -664,7 +667,7 @@ Données réelles pour ce matin :
 
 Instructions :
 1. Remplis la balise <reconnaissance_matin> avec la liste des villes visibles sur la carte et leur picto. Ex: "Lille = soleil, Douai = ORAGE ⚠️"
-2. Remplis la balise <texte_matin> avec ton commentaire parlé de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
+2. Remplis la balise <texte_matin> avec ton commentaire journalistique de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
 """
         try:
             print(f"[{client_name}] Calling Gemini Flash for J1 Morning map...")
@@ -683,9 +686,12 @@ Instructions :
     # Appel 2 : Après-midi Jour 1 (Carte 2)
     summaryAfternoon = ""
     if img_a1:
-        prompt_a1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
-Règles de style :
-- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
+        prompt_a1 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour l'APRÈS-MIDI du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide, élégant et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "C'est votre présentateur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
 - Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
 - Intègre obligatoirement des indications précises sur le VENT (mistral, brise côtière, vent d'ouest, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
 - ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
@@ -717,9 +723,11 @@ Instructions :
     # Appel 3 : Matinée Jour 2 (Carte 3)
     summaryMorning2 = ""
     if img_m2:
-        prompt_m2 = f"""Tu es un présentateur météo radio. Rédige le commentaire parlé pour la MATINÉE du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
-Règles :
-- Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
+        prompt_m2 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour la MATINÉE du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
 - 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
 - ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 
@@ -749,9 +757,11 @@ Instructions :
     # Appel 4 : Après-midi Jour 2 (Carte 4)
     summaryAfternoon2 = ""
     if img_a2:
-        prompt_a2 = f"""Tu es un présentateur météo radio. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
-Règles :
-- Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
+        prompt_a2 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour l'APRÈS-MIDI du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
 - 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
 - ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 - Si orage visible, mentionne-le expressément.
@@ -781,8 +791,7 @@ Instructions :
 
     # Appel 5 : Synthèse (todaySummary & forecastRaw)
     recon_final = "\n\n".join(recon_lines)
-    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin "{client_name}".
-Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visuel', 'image').
+    prompt_syn = f"""Tu es un journaliste météo senior de presse écrite. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin d'information "{client_name}".
 
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
 Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
@@ -807,20 +816,23 @@ DONNÉES MÉTÉO RÉELLES DES JOURS DE TENDANCE (J3, J4, J5) :
 BILAN DE LA RECONNAISSANCE DES CARTES :
 {recon_final}
 
-Instructions OBLIGATOIRES (Ne sois pas fainéant, sois exhaustif) :
-1. Remplis la balise <todaySummary> (120-150 mots) en commençant obligatoirement par un titre court, percutant et accrocheur/putaclic en MAJUSCULES (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1} (synoptique, vigilance...). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
+Instructions OBLIGATOIRES (Style journalistique strict & complet) :
+- ⛔ INTERDICTION ABSOLUE des formules de politesse orales ("Bonjour à tous", "Bienvenue sur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle pas au lecteur à la 2ème personne (pas de "vous"). Rédige à la 3ème personne.
+
+1. Remplis la balise <todaySummary> (120-150 mots) en commençant par un titre journalistique incisif en MAJUSCULES, puis "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". Synthèse factuelle de la situation synoptique et des vigilances.
 
 2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 5 ({date_j3}, {date_j4}, {date_j5}). 
-   ATTENTION RÈGLE STRICTE ET COMPLÈTE : Tu dois rédiger au moins 5 lignes de texte complètes et détaillées (environ 60 à 80 mots) pour chaque jour séparément. Il est formellement interdit de regrouper deux jours ou d'écrire "temps comparable" ou "de même pour". Chaque paragraphe doit longuement décrire l'évolution du ciel, du vent et des températures.
-   ⚠️ CONSIGNE RAFALES : Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées pour une journée de tendance ci-dessus, tu DOIS OBLIGATOIREMENT et EXPRESSÉMENT citer les rafales de vent fort dans le commentaire de ce jour-là.
-   Format exact obligatoire :
+   ATTENTION RÈGLE STRICTE : Rédige au moins 5 lignes de texte complètes et détaillées (environ 60 à 80 mots) pour chaque jour séparément. Interdit de regrouper deux jours ou d'utiliser "temps comparable".
+   ⚠️ CONSIGNE RAFALES : Si des rafales de 40 km/h ou plus (gust) sont indiquées pour une journée de tendance, cite-les obligatoirement.
+   Format exact :
    ▶ {date_j3} : [Commentaire très détaillé de 5 lignes minimum sur le ciel, le vent et les températures]
    ▶ {date_j4} : [Commentaire très détaillé de 5 lignes minimum sur le ciel, le vent et les températures]
    ▶ {date_j5} : [Commentaire très détaillé de 5 lignes minimum sur le ciel, le vent et les températures]
 
-3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (environ 4 à 8 mots) résumant le phénomène météo le plus marquant de la journée (court-terme), suivi d'une courte phrase de lancement parlée, chaleureuse et fluide, pour introduire les prévisions (ex: "☀️ CHALEUR ACCABLANTE : Sortez les bouteilles d'eau, voici vos prévisions pour ce vendredi :").
+3. Remplis la balise <summaryLancement> avec un titre de presse en MAJUSCULES (4 à 8 mots) résumant l'événement du jour, suivi d'un chapeau journalistique synthétique et factuel (ex: "☀️ SOLEIL GÉNÉREUX SUR LA RÉGION : Un ciel largement dégagé s'impose sur l'ensemble du territoire pour ce {FRENCH_WEEKDAYS[d1.weekday()]}.").
 
-4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (environ 4 à 8 mots) résumant le phénomène météo le plus marquant de la période de tendance, suivi d'une courte phrase de lancement parlée pour introduire la tendance (ex: "📉 RETOUR DE LA FRAÎCHEUR : Voyons maintenant ce qui nous attend pour la suite des prochains jours :").
+4. Remplis la balise <forecastLancement> avec un titre de presse en MAJUSCULES (4 à 8 mots) résumant la tendance, suivi d'un chapeau journalistique synthétique (ex: "📉 EVOLUTION DE LA TENDANCE : Aperçu des conditions météorologiques attendues pour la suite de la semaine.").
 """
     try:
         print(f"[{client_name}] Calling Gemini Flash for final synthesis...")
@@ -848,17 +860,33 @@ Instructions OBLIGATOIRES (Ne sois pas fainéant, sois exhaustif) :
     }
     result["forecastTextRaw"] = result["forecastRaw"]
 
-    # Filtre automatique (censure) anti-hallucination "canicule"
-    # ponytail: simple remplacement insensible à la casse pour respecter les consignes officielles Météo-France
+    # Filtre automatique (censure) anti-hallucination "canicule" et anti-salutations orales radiophoniques
+    import re
+    salut_patterns = [
+        r"Bonjour à toutes et à tous[^\n,!.]*[,!.]?\s*",
+        r"Bonjour à tous[^\n,!.]*[,!.]?\s*",
+        r"Bonjour fidèles auditeurs[^\n,!.]*[,!.]?\s*",
+        r"Bonjour à tous les auditeurs[^\n,!.]*[,!.]?\s*",
+        r"Bienvenue sur [^\n,!.]*[,!.]?\s*",
+        r"pour votre bulletin météo[^\n,!.]*[,!.]?\s*",
+        r"C'est votre présentateur météo[^\n,!.]*[,!.]?\s*",
+        r"Profitez bien de [^\n,!.]*[,!.]?\s*",
+        r"À très vite sur [^\n,!.]*[,!.]?\s*",
+        r"Voici vos prévisions[^\n,!.]*[,!.]?\s*",
+        r"Voyons maintenant ce qui nous attend[^\n,!.]*[,!.]?\s*",
+    ]
     for k in result.keys():
         if result[k] and isinstance(result[k], str):
-            # Remplacement avec respect des majuscules/minuscules de base
             text = result[k]
+            # Censure des termes caniculaires
             text = text.replace("caniculaires", "très chauds").replace("Caniculaires", "Très chauds")
             text = text.replace("caniculaire", "très chaud").replace("Caniculaire", "Très chaud")
             text = text.replace("canicules", "fortes chaleurs").replace("Canicules", "Fortes chaleurs")
             text = text.replace("canicule", "forte chaleur").replace("Canicule", "Forte chaleur")
-            result[k] = text
+            # Purge des salutations et fioritures radiophoniques
+            for pat in salut_patterns:
+                text = re.sub(pat, "", text, flags=re.IGNORECASE)
+            result[k] = text.strip()
 
 
     # Merge with local fallback for any missing field or invalid date mention
