@@ -363,7 +363,7 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
         f"{get_trend_line(date_j5, j5_struct)}"
     )
 
-    vig_warning = "Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.\n\n" if avg_max_j1 >= 32 else ""
+    vig_warning = "Forte Chaleur : Épisode de chaleur marqué sur la région. Pensez à bien vous hydrater.\n\n" if avg_max_j1 >= 32 else ""
     records_raw = (
         f"{vig_warning}Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce {wd1}. Sécheresse de surface qui s'accentue.\n\n"
         f"Vent : Généralement faible à modéré ce {wd1}, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.\n\n"
@@ -505,7 +505,7 @@ def fetch_vigilance_and_national_context(day_offset=1):
                 return out[:2800]
     except Exception:
         pass
-    return "72 départements en vigilance orange Canicule sur la France. Chaleur persistante et forte sur les prochains jours (J+2 à J+7)."
+    return "Vigilance verte ou jaune sur la majorité du territoire national. Chaleur de saison sur la moitié nord et plus marquée sur les régions du sud."
 
 
 def get_client_region_prefix(client_name):
