@@ -20,20 +20,6 @@ jobs:
         group:
           - france_pictos
           - hdf
-          - normandie
-          - idf
-          - grandest
-          - ara
-          - naq
-          - occitanie
-          - paca
-          - bfc
-          - bretagne
-          - pdl
-          - cvl
-          - corse
-          - cnews
-          - france
       fail-fast: false  # Ne pas tout arrêter si une seule région échoue temporairement
 
     steps:
