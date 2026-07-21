@@ -571,13 +571,7 @@
         "summaryMapAfternoonUrl2": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J2_apresmidi.jpg",
         "ephemeris": "📅 ÉPHÉMÉRIDE DU VENDREDI 10 JUILLET\n☀️ SOLEIL : Lever 05:46 • Coucher 21:55 • Zénith 13:50\n⏱️ JOUR : Durée 16h09 (Perte de 2 min)\n🌙 LUNE : Lever 01:33 • Coucher 18:26\n😇 SAINT DU JOUR : Ulrich\n💬 DICTON : \"Pluie du dix juillet, mouille sept fois, du moissonneur le bonnet.\"",
         "surveillanceTitle": "🧭 TENDANCE GÉNÉRALE",
-        "surveillanceItems": [
-          {
-            "id": "1778159754958",
-            "type": "text",
-            "content": "Le temps reste très estival sur le Nord et le Pas-de-Calais avec un soleil largement dominant et une chaleur toujours marquée dans l’intérieur. Le littoral garde des températures plus sages, sous l’effet d’un vent de nord-est sensible."
-          }
-        ],
+        "surveillanceItems": [],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
         "videoSource": "url",
         "videoUrl": "",
@@ -823,18 +817,7 @@
         "summaryMapAfternoonUrl2": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_naq_J2_apresmidi.jpg",
         "ephemeris": "📅 ÉPHÉMÉRIDE DU VENDREDI 10 JUILLET\n☀️ SOLEIL : Lever 06:23 • Coucher 21:58 • Zénith 14:10\n⏱️ JOUR : Durée 15h34 (Perte de 2 min)\n🌙 LUNE : Lever 02:10 • Coucher 18:27\n😇 SAINT DU JOUR : Ulrich\n💬 DICTON : \"Pluie du dix juillet, mouille sept fois, du moissonneur le bonnet.\"",
         "surveillanceTitle": "",
-        "surveillanceItems": [
-          {
-            "id": "1778160078822",
-            "type": "text",
-            "content": "Le temps reste pleinement estival sur la Charente et la Charente-Maritime avec un soleil omniprésent et une chaleur toujours remarquable. Les nuits demeurent lourdes et les températures restent très élevées, surtout dans l’intérieur."
-          },
-          {
-            "id": "1778160215089",
-            "type": "text",
-            "content": ""
-          }
-        ],
+        "surveillanceItems": [],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
         "videoSource": "url",
         "videoUrl": "",

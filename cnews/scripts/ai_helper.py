@@ -292,27 +292,38 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
     has_storm_j1 = any(s['code'] >= 90 for s in j1_struct)
 
     if has_storm_j1:
-        synop = "déstabilisation d'une masse d'air surchauffée et lourde sous l'effet d'une hausse de l'instabilité diurne"
-        ambiance_matin = "déjà lourde et étouffante au lever du jour à la faveur d'une nuit tropicale, avec des cumulus bourgeonnant rapidement"
-        ambiance_aprem = "un ciel chaotique devenant menaçant avec le déclenchement d'averses orageuses localement fortes et accompagnées de rafales de vent"
-    elif avg_max_j1 >= 32:
-        synop = "poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante"
-        ambiance_matin = "déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité"
-        ambiance_aprem = "un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude"
+        synop = "déstabilisation d'une masse d'air sous l'effet d'une hausse de l'instabilité diurne"
+        ambiance_matin = "déjà lourde au lever du jour, avec des cumulus bourgeonnant rapidement"
+        ambiance_aprem = "un ciel chaotique devenant menaçant avec le déclenchement d'averses orageuses localement fortes"
+    elif avg_max_j1 >= 30:
+        synop = "poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude"
+        ambiance_matin = "très douce au lever du jour sous un soleil prédominant"
+        ambiance_aprem = "un ensoleillement généreux sous une chaleur estivale bien marquée"
+    elif avg_max_j1 >= 24:
+        synop = "installation d'un marais barométrique estival assurant un temps sec et lumineux"
+        ambiance_matin = "douce et agréable au lever du jour"
+        ambiance_aprem = "un soleil généreux avec des températures de saison sans excès de chaleur"
     elif has_rain_j1:
-        synop = "circulation d'un flux océanique d'ouest perturbé et humide sous influence d'une dépression circulant sur les îles Britanniques"
-        ambiance_matin = "grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies faibles à modérées"
-        ambiance_aprem = "un ciel dominé par des passages nuageux denses accompagnés d'averses régulières et d'un renforcement des brises"
+        synop = "circulation d'un flux océanique d'ouest perturbé et humide"
+        ambiance_matin = "grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies"
+        ambiance_aprem = "un ciel dominé par des passages nuageux denses accompagnés d'averses éparses"
     else:
-        synop = "installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique"
-        ambiance_matin = "lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube"
-        ambiance_aprem = "un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude"
+        synop = "influence anticyclonique calme assurant un temps sec et modérément doux"
+        ambiance_matin = "lumineuse et vivifiante après la dissipation des rares brumes matinales"
+        ambiance_aprem = "un ensoleillement agréable avec des températures de saison particulièrement douces"
+
+    if avg_max_j1 >= 28:
+        evolution_temp = "un réchauffement diurne nettement marqué"
+    elif avg_max_j1 >= 23:
+        evolution_temp = "une hausse progressive des températures jusqu'à des valeurs agréables"
+    else:
+        evolution_temp = "des températures très douces et de saison, sans aucun excès"
 
     today_summary = (
         f"Ce {wd1}, la situation générale sur l'ensemble de la zone {client_name} est caractérisée par la {synop}. "
-        f"Cette dynamique aérologique gouverne une ambiance {ambiance_matin.split()[0]} en matinée, avant un réchauffement diurne marqué. "
-        f"En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. "
-        f"Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi."
+        f"Cette dynamique aérologique gouverne une ambiance {ambiance_matin.split()[0]} en matinée, avant {evolution_temp} l'après-midi. "
+        f"En surface, le régime de vent reste modéré et participe à la distribution des masses d'air. "
+        f"L'amplitude thermique restera classique entre la fraîcheur relative de l'aube et les maximales de la journée."
     )
 
     summary_morning = (

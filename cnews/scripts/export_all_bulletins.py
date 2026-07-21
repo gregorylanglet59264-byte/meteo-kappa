@@ -291,6 +291,14 @@ def main():
                     print(f" - Injected AI-generated forecast texts for '{name}'")
                     for key, val in ai_texts.items():
                         form[key] = val
+                    
+                    # Synchroniser surveillanceItems avec todaySummary pour écraser les vieux textes statiques du dictionnaire
+                    if "todaySummary" in ai_texts and ai_texts["todaySummary"]:
+                        items = form.get("surveillanceItems", [])
+                        if not isinstance(items, list) or len(items) == 0:
+                            form["surveillanceItems"] = [{"id": "auto_summary", "type": "text", "content": ai_texts["todaySummary"]}]
+                        else:
+                            form["surveillanceItems"][0]["content"] = ai_texts["todaySummary"]
             
             # Store public raw GitHub URL instead of heavy Base64 to keep JSON size under 100KB
             base_url = "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes"
