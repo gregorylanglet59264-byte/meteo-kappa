@@ -757,7 +757,7 @@ Instructions :
 
     # Appel 5 : Synthèse (todaySummary & forecastRaw)
     recon_final = "\n\n".join(recon_lines)
-    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée, les phrases de lancement et la tendance à 5 jours pour le bulletin "{client_name}".
+    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin "{client_name}".
 Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visuel', 'image').
 
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
@@ -776,14 +776,12 @@ BILAN DE LA RECONNAISSANCE DES CARTES :
 Instructions OBLIGATOIRES (Ne sois pas fainéant, sois exhaustif) :
 1. Remplis la balise <todaySummary> (120-150 mots) en commençant obligatoirement par un titre court, percutant et accrocheur/putaclic en MAJUSCULES (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1} (synoptique, vigilance...). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
 
-2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 7 ({date_j3}, {date_j4}, {date_j5}, {date_j6}, {date_j7}). 
+2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 5 ({date_j3}, {date_j4}, {date_j5}). 
    ATTENTION RÈGLE STRICTE ANTI-FAINÉANTISE : Tu dois rédiger un paragraphe complet et détaillé pour chaque jour séparément. Il est formellement interdit de regrouper deux jours ou d'écrire "temps comparable" ou "de même pour". Chaque ligne doit faire au moins 45 mots et décrire le ciel et l'évolution des températures.
    Format exact obligatoire :
    ▶ {date_j3} : [Commentaire complet sur le ciel + évolution des températures]
    ▶ {date_j4} : [Commentaire complet sur le ciel + évolution des températures]
    ▶ {date_j5} : [Commentaire complet sur le ciel + évolution des températures]
-   ▶ {date_j6} : [Commentaire complet sur le ciel + évolution des températures]
-   ▶ {date_j7} : [Commentaire complet sur le ciel + évolution des températures]
 
 3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (environ 4 à 8 mots) résumant le phénomène météo le plus marquant de la journée (court-terme), suivi d'une courte phrase de lancement parlée, chaleureuse et fluide, pour introduire les prévisions (ex: "☀️ CHALEUR ACCABLANTE : Sortez les bouteilles d'eau, voici vos prévisions pour ce vendredi :").
 
