@@ -100,7 +100,7 @@ def fetch_weather_struct(cities, day_offset):
     url = (
         f"https://api.open-meteo.com/v1/forecast"
         f"?latitude={lats}&longitude={lons}"
-        f"&daily=temperature_2m_max,temperature_2m_min,wind_speed_10m_max,weather_code,precipitation_sum"
+        f"&daily=temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_gusts_10m_max,weather_code,precipitation_sum"
         f"&timezone=Europe/Paris&forecast_days=10"
     )
     results_list = []
@@ -174,12 +174,19 @@ def fetch_weather_struct(cities, day_offset):
                             code = int(d.get("weathercode", [0]*8)[day_offset])
                     wind_raw = float(d["wind_speed_10m_max"][day_offset])
                     wind = int(round(wind_raw / 5.0) * 5)
+                    gust_list = d.get("wind_gusts_10m_max", [])
+                    if gust_list and len(gust_list) > day_offset and gust_list[day_offset] is not None:
+                        gust_raw = float(gust_list[day_offset])
+                    else:
+                        gust_raw = wind_raw * 1.3
+                    gust = int(round(gust_raw / 5.0) * 5)
                     rain = round(d["precipitation_sum"][day_offset], 1)
                     results_list.append({
                         "city": city["name"],
                         "tmin": tmin,
                         "tmax": tmax,
                         "wind": wind,
+                        "gust": gust,
                         "code": code,
                         "rain": rain
                     })
@@ -193,9 +200,10 @@ def fetch_raw_weather(cities, day_offset):
     struct = fetch_weather_struct(cities, day_offset)
     lines = []
     for s in struct:
+        gust_str = f", Rafales {s.get('gust', s['wind'])} km/h" if s.get('gust', 0) >= 40 else ""
         lines.append(
             f"- {s['city']} : Min {s['tmin']}°C, Max {s['tmax']}°C, "
-            f"Vent {s['wind']} km/h, Code météo {s['code']}, Pluie {s['rain']} mm"
+            f"Vent {s['wind']} km/h{gust_str}, Code météo {s['code']}, Pluie {s['rain']} mm"
         )
     return "\n".join(lines)
 
@@ -346,15 +354,17 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
         tmin = min(s['tmin'] for s in struct) if struct else 15
         tmax = max(s['tmax'] for s in struct) if struct else 25
         code = max((s['code'] for s in struct), default=0)
+        max_gust = max((s.get('gust', 0) for s in struct), default=0)
+        gust_info = f" Attention aux rafales de vent atteignant {max_gust} km/h." if max_gust >= 40 else ""
         if code >= 80:
-            desc = "Temps instable avec passages d'averses orageuses et vent sensible"
+            desc = f"Temps instable avec passages d'averses orageuses et vent sensible.{gust_info}"
         elif code >= 50:
-            desc = "Ciel souvent nuageux à couvert avec quelques pluies éparses"
+            desc = f"Ciel souvent nuageux à couvert avec quelques pluies éparses.{gust_info}"
         elif tmax >= 32:
-            desc = "Poursuite de la chaleur caniculaire sous un grand soleil dominant"
+            desc = f"Poursuite de la chaleur sous un grand soleil dominant.{gust_info}"
         else:
-            desc = "Temps calme, sec et largement lumineux avec quelques nuages inoffensifs"
-        return f"- {date_str} : {desc}. Minimales vers {tmin}°C, maximales atteignant {tmax}°C en journée."
+            desc = f"Temps calme, sec et largement lumineux avec quelques nuages inoffensifs.{gust_info}"
+        return f"- {date_str} : {desc} Minimales vers {tmin}°C, maximales atteignant {tmax}°C en journée."
 
     forecast_raw = (
         f"📉 Tendance – 3 jours suivants ({date_j3} au {date_j5})\n\n"
@@ -595,6 +605,9 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     print(f"Fetching weather data for AI generation ({client_name}, offset={day_offset})...")
     j1_data = fetch_raw_weather(cities, day_offset)
     j2_data = fetch_raw_weather(cities, day_offset + 1)
+    j3_data = fetch_raw_weather(cities, day_offset + 2)
+    j4_data = fetch_raw_weather(cities, day_offset + 3)
+    j5_data = fetch_raw_weather(cities, day_offset + 4)
     vig_context = fetch_vigilance_and_national_context(day_offset)
 
     local_fallback = generate_local_fallback_texts(client_name, cities, day_offset)
@@ -770,6 +783,16 @@ PRÉVISIONS DE LA JOURNÉE PAR L'IA :
 Matinée Jour 1 : {summaryMorning}
 Après-midi Jour 1 : {summaryAfternoon}
 
+DONNÉES MÉTÉO RÉELLES DES JOURS DE TENDANCE (J3, J4, J5) :
+- Jour 3 ({date_j3}) :
+{j3_data}
+
+- Jour 4 ({date_j4}) :
+{j4_data}
+
+- Jour 5 ({date_j5}) :
+{j5_data}
+
 BILAN DE LA RECONNAISSANCE DES CARTES :
 {recon_final}
 
@@ -778,6 +801,7 @@ Instructions OBLIGATOIRES (Ne sois pas fainéant, sois exhaustif) :
 
 2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 5 ({date_j3}, {date_j4}, {date_j5}). 
    ATTENTION RÈGLE STRICTE ET COMPLÈTE : Tu dois rédiger au moins 5 lignes de texte complètes et détaillées (environ 60 à 80 mots) pour chaque jour séparément. Il est formellement interdit de regrouper deux jours ou d'écrire "temps comparable" ou "de même pour". Chaque paragraphe doit longuement décrire l'évolution du ciel, du vent et des températures.
+   ⚠️ CONSIGNE RAFALES : Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées pour une journée de tendance ci-dessus, tu DOIS OBLIGATOIREMENT et EXPRESSÉMENT citer les rafales de vent fort dans le commentaire de ce jour-là.
    Format exact obligatoire :
    ▶ {date_j3} : [Commentaire très détaillé de 5 lignes minimum sur le ciel, le vent et les températures]
    ▶ {date_j4} : [Commentaire très détaillé de 5 lignes minimum sur le ciel, le vent et les températures]
