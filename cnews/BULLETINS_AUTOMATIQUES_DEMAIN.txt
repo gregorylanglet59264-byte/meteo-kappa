@@ -10,34 +10,34 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**MERCREDI : UNE MATINÉE NUAGEUSE, UN APRÈS-MIDI RADIEUX**  
-Ce mercredi, la France bascule d’un ciel gris et brumeux le matin vers un soleil éclatant l’après-midi. Les températures minimales, douces pour la saison, oscillent entre 13°C à Laon et 17°C à Nantes. Le vent se montre modéré sur l’Hexagone, avec des rafales notables sur la façade atlantique et le nord-ouest : 40 km/h à Rouen, 45 km/h à Brest et 40 km/h à Rennes. Aucune précipitation n’est attendue. La vigilance reste verte ou jaune sur la majorité du territoire, Météo-France signalant une chaleur de saison sur la moitié nord et plus marquée dans le sud. L’après-midi, le soleil domine largement, avec des maximales de 23°C à Lille à 31°C à Nantes, mais les rafales de vent tempèrent la sensation près du littoral.
+**FRANCE À DEUX VISAGES : NUAGES AU NORD, SOLEIL AU SUD**
+Ce mercredi, la France présente un contraste météorologique marqué entre le nord et le sud du pays. La matinée débute sous un ciel majoritairement nuageux sur l'ensemble de la façade ouest et le nord, avec des rafales de vent atteignant 45 km/h sur le littoral breton. L'après-midi confirme cette division : le soleil domine largement de la Loire-Atlantique jusqu'aux frontières de l'Est, avec des températures atteignant 31°C à Nantes. Au nord, les nuages persistent des Hauts-de-France à la Bretagne, mais sans précipitations, et les températures restent agréables, autour de 24 à 26°C. La vigilance est de mise sur le littoral breton en raison du vent soutenu.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le territoire français s'éveille sous un ciel majoritairement nuageux, avec des températures minimales douces pour la saison. À Lille, le thermomètre affiche 16°C, tandis que Laon et Paris enregistrent respectivement 13°C et 15°C. Les régions de l'Ouest connaissent des valeurs légèrement plus élevées, avec 17°C à Nantes et 15°C à Caen.
+Ce mercredi matin, une atmosphère douce et nuageuse caractérise le début de journée sur une grande partie du territoire. Les températures minimales affichent 16°C à Lille, 14°C à Rouen et Caen, et 17°C à Brest et Nantes.
 
-Le vent se montre modéré sur une grande partie du pays, soufflant autour de 15 km/h. Une vigilance particulière est de mise sur la façade atlantique et le nord-ouest, où les rafales atteignent des intensités notables. À Rouen, les rafales peuvent atteindre 40 km/h. Plus à l'ouest, Brest est concernée par des rafales pouvant aller jusqu'à 45 km/h, et Rennes par des pointes à 40 km/h. Ces vents soutenus pourraient accentuer la sensation de fraîcheur matinale malgré des températures clémentes.
+Le ciel se présente majoritairement nuageux sur l'ensemble de la façade ouest et le nord de la France. Des nuages masquent partiellement le soleil, notamment de la Bretagne aux Hauts-de-France, en passant par la Normandie et l'Île-de-France. Le vent se manifeste avec une certaine vigueur sur le littoral breton, où Brest enregistre des rafales atteignant 45 km/h, tandis que Rennes connaît des rafales de 40 km/h. Sur la Normandie, Rouen est également concernée par des rafales de 40 km/h. Ailleurs, le vent reste modéré, soufflant autour de 15 à 20 km/h.
 
-Le contraste thermique entre le littoral et l'intérieur des terres reste modéré, les températures minimales étant globalement homogènes, avec une légère douceur près des côtes. Aucune précipitation n'est attendue pour cette matinée.
+En s'éloignant des côtes, les températures intérieures sont légèrement plus fraîches, avec 12°C à Laon et 15°C à Paris. Aucune précipitation n'est attendue pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le soleil dominera largement sur une grande partie du pays, annonçant une journée estivale. Les températures maximales atteindront les 23°C à Lille, 24°C à Laon et Caen, 25°C à Rouen, et 26°C à Paris.
+Ce mercredi après-midi, la France sera coupée en deux avec un contraste météorologique marqué entre le nord et le sud du pays. Le soleil dominera largement sur une grande partie du territoire, notamment de la Loire-Atlantique jusqu'aux frontières de l'Est. Nantes affichera 31°C, Poitiers 30°C et Tours 29°C, sous un ciel dégagé.
 
-L'ouest de la France connaîtra un après-midi particulièrement ensoleillé et chaud. À Brest, le thermomètre affichera 29°C, tandis que Rennes atteindra les 30°C. Nantes et Poitiers verront leurs maximales s'élever à 31°C et 30°C respectivement, avec un ciel dégagé. Tours profitera également d'un grand soleil et de 29°C.
+Plus au nord, le temps se montrera plus nuageux. De la Bretagne aux Hauts-de-France, le soleil sera souvent masqué par des nuages, mais sans risque de précipitations. Les températures resteront agréables, avec 24°C à Lille et Caen, 25°C à Rouen et 26°C à Paris.
 
-Cependant, les régions côtières de la Bretagne devront composer avec un vent d'ouest soutenu. À Brest, des rafales de 45 km/h sont attendues, et à Rennes, les rafales pourront atteindre 40 km/h. La Normandie ne sera pas en reste, avec des rafales de 40 km/h prévues à Rouen. Ces vents forts tempéreront légèrement la sensation de chaleur près du littoral, contrastant avec l'intérieur des terres où la chaleur sera plus marquée.
+Le vent sera un élément notable de cet après-midi. Des rafales de 40 km/h sont attendues à Rouen, tandis qu'à Rennes, les rafales pourront atteindre 40 km/h. Sur la pointe bretonne, à Brest, les rafales de vent pourront même culminer à 45 km/h, nécessitant une vigilance particulière le long du littoral.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 22 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
 ☀️ Belle journée estivale et lumineuse ce mercredi.
-🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
+🌡️ Température sous abri : 24°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
 ☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 22 à 23°C
+🌡️ Température maximale : 23 à 24°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -75,11 +75,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 22 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 24 juillet : La journée s’annonce estivale et ensoleillée sur l’ensemble du territoire. Les températures maximales grimpent jusqu’à 32°C à Nantes, 31°C à Rennes et Poitiers, tandis que Lille atteint 26°C et Paris 28°C. Le vent reste modéré à soutenu sur les côtes : à Brest, des rafales de 50 km/h sont attendues, et à Rennes des pointes à 50 km/h également. À Caen, le vent souffle à 20 km/h avec des rafales de 45 km/h. En intérieur, le calme domine, avec des vents de 10 à 15 km/h. Aucune pluie n’est prévue. Le ciel restera dégagé du matin au soir, offrant une belle journée de plein été.
+▶ vendredi 24 juillet : Le soleil s'impose largement sur l'ensemble du territoire pour ce vendredi. Le ciel est dégagé sur toutes les régions, avec des températures qui grimpent nettement. Dans l'ouest, la chaleur devient marquée : Brest atteint 30°C, Rennes 31°C et Nantes 32°C. Le vent se renforce sur les côtes, avec des rafales de 50 km/h attendues à Brest et Rennes, et 45 km/h à Caen. À l'intérieur des terres, le vent reste modéré, avec des pointes à 40 km/h à Poitiers. Les minimales sont douces, de 12°C à Laon à 21°C à Nantes.
 
-▶ samedi 25 juillet : Le soleil persiste sur la quasi-totalité du pays, avec des températures encore en hausse par endroits. À Nantes, le mercure atteint 32°C, et Paris 30°C. Les maximales sont comprises entre 25°C à Brest et 31°C à Tours. Le vent se renforce sur le littoral et l’intérieur : à Lille, des rafales de 45 km/h sont prévues, à Laon 45 km/h, à Tours 50 km/h, et à Nantes 45 km/h. Les rafales atteignent également 40 km/h à Rouen, Caen, Rennes et Poitiers. Malgré ce vent, aucune précipitation n’est à signaler. Le ciel reste bleu et lumineux toute la journée.
+▶ samedi 25 juillet : La chaleur s'accentue encore ce samedi, avec un soleil radieux du nord au sud. Les maximales atteignent 32°C à Nantes, 31°C à Tours et Poitiers, et 30°C à Paris et Rennes. Le vent reste un élément notable, notamment dans l'ouest : des rafales de 45 km/h sont attendues à Rennes et Nantes, et 40 km/h à Rouen, Caen, Lille et Poitiers. Sur le littoral breton, le vent souffle à 40 km/h à Brest. Les températures minimales sont estivales, oscillant entre 14°C à Laon et 21°C à Nantes.
 
-▶ dimanche 26 juillet : La situation se dégrade nettement, surtout sur le nord et l’ouest. Un front pluvieux traverse la région : Lille enregistre 12,3 mm de pluie, Laon 9 mm, Rouen 1,1 mm, Caen 0,8 mm, Brest 1,8 mm, Rennes 1,2 mm et Nantes 1,8 mm. Paris et le Centre restent secs. Les températures baissent sensiblement, avec des maximales de 21°C à Lille, 20°C à Laon, 22°C à Brest, et seulement 23°C à Nantes. Le vent reste fort, avec des rafales de 50 km/h à Rouen, Caen, Brest et Nantes, et 45 km/h à Tours. Ciel très nuageux à couvert sur la moitié nord.
+▶ dimanche 26 juillet : La dégradation s'amorce ce dimanche par le nord-ouest. Le temps reste sec et ensoleillé sur Paris, Tours et Poitiers, mais des précipitations sont attendues ailleurs. Lille enregistre 11,4 mm de pluie, tandis que Laon et Rouen reçoivent respectivement 3,3 mm et 1,1 mm. Le vent se renforce considérablement, avec des rafales atteignant 55 km/h à Brest et Nantes, et 50 km/h à Laon, Rouen, Caen et Rennes. Les températures baissent sensiblement, avec des maximales de 21°C à Laon et Brest, et 27°C à Tours.
 
 
 --------------------------------------------------------------------------------
@@ -88,31 +88,33 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**MERCREDI EN SOLEIL : UNE JOURNÉE DOUCE ET SEREINE SUR LE NORD-PAS-DE-CALAIS**
+**MERCREDI EN SOLEIL, JEUDI SOUS LES NUAGES**
 
-Ce mercredi 22 juillet, la région bénéficie d’une accalmie météorologique totale. Aucune vigilance particulière n’est émise par Météo-France sur le territoire, le bulletin national plaçant le pays en vert ou jaune pour une chaleur de saison. Le Nord-Pas-de-Calais profite d’un ciel dégagé dès le matin, avec des minimales fraîches (10°C à St-Hilaire-sur-Helpe) et des maximales agréables l’après-midi (jusqu’à 24°C à Douai). Le vent reste modéré, autour de 15 km/h, avec des rafales notables à Troisvilles (40 km/h) nécessitant une vigilance locale. Le littoral, à Dunkerque, conserve une brise plus fraîche (20°C). Aucune précipitation n’est attendue.
+Ce mercredi, le Nord de la France bénéficie d'une journée radieuse et stable. Un anticyclone positionné sur le pays garantit un ciel parfaitement dégagé du matin au soir sur l'ensemble des départements. La vigilance météorologique est au vert, aucune perturbation n'est à signaler. Les minimales matinales affichent un contraste marqué entre l'intérieur des terres, avec 10°C à St-Hilaire-sur-Helpe, et le littoral dunkerquois qui conserve 16°C. L'après-midi, les maximales grimpent agréablement entre 21°C sur la côte et 24°C dans les terres lilloises. Le vent reste modéré, oscillant entre 15 et 20 km/h, avec des rafales plus soutenues jusqu'à 40 km/h attendues du côté de Troisvilles.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le Nord-Pas-de-Calais se réveille sous un ciel dégagé et ensoleillé sur l'ensemble de la région. Les températures minimales affichent 10°C à St-Hilaire-sur-Helpe, 11°C à Troisvilles et 12°C à Maubeuge. Les agglomérations de Lille et Roubaix enregistrent 16°C, tandis que Dunkerque, sur le littoral, affiche également 16°C.
+Ce mercredi matin, le Nord se réveille sous un ciel dégagé et un soleil omniprésent sur l'ensemble de la région. Les températures minimales affichent une certaine fraîcheur dans l'intérieur des terres, contrastant avec la douceur du littoral.
 
-Le vent souffle de manière modérée sur la plupart des localités, avec des vitesses avoisinant les 15 km/h à Valenciennes, Douai et Lille. Une attention particulière est requise à Troisvilles, où le vent atteint 20 km/h avec des rafales pouvant atteindre 40 km/h, nécessitant une vigilance accrue. Sur le littoral, à Watten, la brise est plus légère, autour de 10 km/h. Les maximales matinales atteignent 20°C à Dunkerque, contrastant avec les 24°C prévus à Douai.
+Ainsi, St-Hilaire-sur-Helpe enregistre 10°C, tandis que Troisvilles et Maubeuge se situent respectivement à 11°C et 12°C. Plus au nord, Steenvoorde et Watten affichent 13°C et 12°C. Sur le littoral, Dunkerque bénéficie d'une minimale de 16°C, une température similaire à celle de Lille et Roubaix avec 16°C. Valenciennes et Douai connaissent 14°C.
+
+Le vent se montre généralement faible à modéré sur la région, soufflant autour de 15 km/h. Cependant, une attention particulière est requise du côté de Troisvilles, où des rafales de vent atteignant les 40 km/h sont attendues, imposant une vigilance accrue dans ce secteur. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, la région Nord-Pas-de-Calais bénéficie d'un ciel généralement peu nuageux, avec un soleil dominant sur l'ensemble du territoire. Les températures maximales affichent 23°C à Valenciennes et Lille, 24°C à Douai, 22°C à Roubaix et Maubeuge, et 20°C à Dunkerque.
+Ce mercredi après-midi, le Nord de la France bénéficie d'un temps ensoleillé et stable. Les températures affichent des valeurs agréables, avec un mercure atteignant les 24°C à Lille et Douai, 23°C à Roubaix, et 22°C à St-Hilaire-sur-Helpe, Maubeuge et Steenvoorde. Sur le littoral, Dunkerque enregistre une maximale de 21°C, marquant un léger contraste avec l'intérieur des terres.
 
-Le vent souffle modérément sur la plupart des localités, atteignant environ 15 km/h. Une vigilance particulière est de mise à Troisvilles, où les vents sont plus soutenus, avec des rafales pouvant atteindre les 40 km/h. Sur le littoral, notamment à Dunkerque et Watten, les températures restent plus fraîches, avec 20°C et 21°C respectivement, contrastant avec les 22 à 24°C observés dans l'intérieur des terres. Aucune précipitation n'est attendue pour cet après-midi.
+Le vent se maintient dans des intensités modérées. Il souffle généralement entre 15 et 20 km/h sur l'ensemble de la région. Une vigilance particulière est de mise à Troisvilles, où des rafales de vent pourront atteindre les 40 km/h. Aucune précipitation n'est à signaler, le ciel restant dégagé sur l'ensemble des départements.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 22 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
 ☀️ Belle journée estivale et lumineuse ce mercredi.
-🌡️ Température sous abri : 20°C (ambiance plus respirable qu’à l’intérieur)
+🌡️ Température sous abri : 21°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
 ☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 19 à 20°C
+🌡️ Température maximale : 20 à 21°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -150,11 +152,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 22 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 24 juillet : La journée s’annonce radieuse et stable sur l’ensemble de la région. Le ciel restera dégagé avec un soleil généreux du matin au soir. Les températures minimales seront comprises entre 11°C à St-Hilaire-sur-Helpe et 14°C à Steenvoorde et Dunkerque. L’après-midi, la chaleur gagnera du terrain avec des maximales atteignant 26°C à Douai, Lille et Roubaix, tandis que le littoral dunkerquois plafonnera à 24°C. Le vent sera faible, soufflant à 10 km/h sur la majorité des localités, et à 15 km/h sur le littoral. Aucune rafale significative n’est à signaler. Aucune précipitation n’est prévue.
+▶ vendredi 24 juillet : La journée de vendredi s'annonce encore largement ensoleillée sur l'ensemble de la région. Le ciel restera dégagé, sans aucune précipitation à prévoir. Les températures minimales seront comprises entre 11°C à St-Hilaire-sur-Helpe et 14°C à Lille ou Dunkerque. L'après-midi, la douceur sera de mise avec des maximales atteignant 25°C à Valenciennes et Douai, et jusqu'à 26°C à Lille et Watten. Le vent sera faible à modéré, ne dépassant pas 15 km/h sur la majorité du territoire, offrant une sensation de calme très agréable.
 
-▶ samedi 25 juillet : Le soleil dominera encore largement, mais la journée sera marquée par une hausse sensible des températures et un vent plus soutenu. Les minimales oscilleront entre 14°C à St-Hilaire-sur-Helpe et 17°C à Lille et Roubaix. L’après-midi, les maximales grimperont jusqu’à 28°C à Valenciennes et Douai, et 29°C à Roubaix. Le vent se renforcera, atteignant 20 km/h en rafales, avec des pointes de 40 à 45 km/h attendues à Lille, Dunkerque, Valenciennes, Douai et Roubaix. Ces bourrasques nécessiteront une vigilance particulière. Aucune pluie n’est à craindre.
+▶ samedi 25 juillet : La journée de samedi marque une nette progression de la chaleur sur l'ensemble du Nord. Le soleil restera omniprésent, mais l'attention se portera sur le vent. Des rafales atteignant 40 km/h sont attendues à Lille, Roubaix, Steenvoorde et Dunkerque, où elles pourraient même atteindre 45 km/h. Les températures grimperont fortement, avec des minimales déjà douces de 16°C à Lille et Dunkerque. Les maximales seront estivales, oscillant entre 26°C sur le littoral dunkerquois et 29°C à Valenciennes, rendant l'après-midi particulièrement chaude.
 
-▶ dimanche 26 juillet : La dégradation sera nette avec le retour des précipitations et une chute des températures. Le ciel se couvrira progressivement, et des pluies parfois soutenues sont attendues sur l’ensemble de la région, avec des cumuls significatifs : jusqu’à 17,1 mm à St-Hilaire-sur-Helpe et 16,8 mm à Troisvilles. Les températures maximales chuteront, ne dépassant pas 19°C à St-Hilaire-sur-Helpe et 23°C à Douai. Le vent sera modéré à fort, avec des rafales de 40 à 45 km/h sur la majorité des localités, notamment à Valenciennes et Douai. Une journée à surveiller de près.
+▶ dimanche 26 juillet : La dégradation est attendue pour ce dimanche. Le ciel se couvrira progressivement et des précipitations significatives sont à prévoir sur l'ensemble de la région. Les cumuls de pluie seront notables, avec 11.4 mm attendus à Lille et jusqu'à 13.8 mm à Roubaix. Le vent se renforcera sensiblement, avec des rafales atteignant 45 à 50 km/h, notamment à Troisvilles, Valenciennes et Maubeuge. Les températures maximales chuteront brutalement, ne dépassant pas 22°C à Lille et 20°C à St-Hilaire-sur-Helpe, marquant un net rafraîchissement.
 
 
 --------------------------------------------------------------------------------
@@ -163,19 +165,17 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-MERCREDI EN SOLEIL ET CHALEUR : Ce mercredi, la région bénéficie d’un temps stable et ensoleillé. Les températures minimales oscillent entre 15°C à Montbron et 18°C sur le littoral rochelais. En après-midi, le mercure grimpe jusqu’à 32°C à La Rochelle et 33°C à Angoulême. Le vent de secteur nord-est souffle modérément, avec des rafales atteignant 40 à 45 km/h sur le littoral et dans l’intérieur, notamment à Cognac. Aucune précipitation n’est attendue. La vigilance météorologique reste verte sur la région, mais la chaleur est marquée, particulièrement dans les terres où les maximales dépassent les 30°C.
+PLEIN SOLEIL ET CHALEUR ESTIVALE SUR LA RÉGION. Ce mercredi, la région est placée sous l'influence d'un puissant anticyclone, garantissant un temps sec et ensoleillé sur l'ensemble du territoire. La vigilance est globalement verte, mais la chaleur est de saison, plus marquée dans le sud du pays. Les minimales oscillent entre 15°C dans l'intérieur (Montbron, Soyaux) et 20°C sur le littoral (Chassiron). L'après-midi, les maximales grimpent jusqu'à 33°C à Angoulême et Gond-Pontouvre, tandis que La Rochelle atteint 32°C. Le vent se lève, avec une brise côtière modérée de 20 à 25 km/h et des rafales atteignant 40 km/h sur le littoral et dans l'intérieur. À Cognac, les rafales pourraient même atteindre 45 km/h, nécessitant une vigilance particulière pour les activités extérieures sensibles au vent.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le ciel se présente dégagé sur l'ensemble de la région, offrant un ensoleillement généreux. Les températures minimales affichent 18°C à La Rochelle et Chassiron, tandis que l'intérieur des terres, comme à Gond-Pontouvre, Blanzac-Porcheresse et La Couronne, enregistre 16°C. Montbron est la localité la plus fraîche avec 15°C.
+Ce mercredi matin, le département de la Charente-Maritime et une grande partie de la Charente bénéficient d'un ciel dégagé et ensoleillé. Les températures minimales affichent 17°C à La Rochelle et Cognac, 20°C à Chassiron sur l'île d'Oléron, tandis que l'intérieur des terres, comme à Montbron ou Soyaux, enregistre 15°C. Angoulême et Blanzac-Porcheresse débutent la journée avec 16°C.
 
-Le vent est modéré sur la plupart des secteurs, soufflant à environ 20 km/h. Cependant, une vigilance est de mise sur le littoral, notamment à La Rochelle et Chassiron, où des rafales de 40 km/h sont prévues. À Jarnac, les rafales atteignent également 40 km/h, et à Cognac, elles s'élèvent à 45 km/h. Aucune précipitation n'est attendue.
+Le vent se lève progressivement. Sur le littoral, une brise modérée de 20 à 25 km/h est attendue, avec des rafales pouvant atteindre 40 km/h à La Rochelle et Chassiron. Dans l'intérieur des terres, des rafales de 40 km/h sont également prévues à Jarnac et La Couronne. À Cognac, les rafales pourraient même atteindre 45 km/h, nécessitant une vigilance particulière. Les maximales pour la matinée oscillent entre 30°C à Chassiron et 33°C à Gond-Pontouvre et Angoulême.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le département de la Charente-Maritime et l'intérieur des terres connaissent un ensoleillement généreux. Le ciel affiche une clarté remarquable sur l'ensemble de la région, sans la moindre trace de nuage.
+Ce mercredi après-midi, le ciel de la région Nouvelle-Aquitaine s'annonce dégagé et ensoleillé sur l'ensemble des départements. Les températures maximales atteindront des niveaux estivaux, avec 32°C à La Rochelle, 30°C à Chassiron, et un pic à 33°C à Gond-Pontouvre, Blanzac-Porcheresse, La Couronne et Angoulême. Jarnac et Cognac enregistreront 32°C, tandis que Soyaux et Montbron afficheront également 32°C.
 
-Les températures maximales s'établissent à des niveaux élevés, atteignant 32°C à La Rochelle, 30°C à Chassiron, et 33°C à Gond-Pontouvre et Angoulême. À Cognac, le mercure grimpe également jusqu'à 32°C. Le contraste thermique entre le littoral et l'intérieur des terres reste modéré, avec des valeurs légèrement plus fraîches en bord de mer.
-
-Le vent se manifeste par une brise côtière sur le littoral, soufflant à environ 20 km/h à La Rochelle et 25 km/h à Chassiron. Il convient de noter des rafales atteignant 40 km/h sur ces deux localités. Dans l'intérieur des terres, le vent est également présent avec des vitesses similaires. Des rafales de 40 km/h sont prévues à Jarnac et La Couronne, tandis qu'à Cognac, les rafales pourraient atteindre 45 km/h, nécessitant une vigilance particulière. Aucune précipitation n'est à signaler pour cet après-midi.
+Une brise côtière soufflera sur le littoral, avec des vents de 20 km/h à La Rochelle et de 25 km/h à Chassiron. Des rafales de 40 km/h sont attendues sur ces deux localités. Dans l'intérieur des terres, les vents seront généralement modérés, autour de 20 km/h, mais des rafales de 40 km/h sont également prévues à Jarnac et La Couronne. Cognac connaîtra les rafales les plus fortes, atteignant 45 km/h. Ce contraste thermique entre le littoral et l'intérieur des terres reste modéré, avec des valeurs élevées partout.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (mercredi 22 juillet 2026)
@@ -226,11 +226,26 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 22 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 24 juillet : Le soleil reste omniprésent sur l’ensemble de la région. Les températures maximales grimpent fortement, atteignant 34°C à La Rochelle et 36°C dans l’intérieur des terres comme à Gond-Pontouvre ou Angoulême. Le vent, modéré, souffle à 25 km/h sur le littoral avec des rafales de 40 km/h à La Rochelle et Chassiron. Dans les terres, le vent est plus faible, autour de 15 km/h. Aucune précipitation n’est prévue. La nuit sera douce avec des minimales de 17°C dans l’intérieur et 22°C sur la côte.
+▶ vendredi 24 juillet :
+La journée s'annonce radieuse et encore plus chaude.
+Le soleil domine sans partage sur la Charente-Maritime et la Charente.
+Les maximales atteignent des niveaux très élevés, avec 34°C à La Rochelle et jusqu'à 36°C dans l'intérieur, notamment à Angoulême et Gond-Pontouvre.
+Le vent reste modéré, mais des rafales de 40 km/h sont attendues sur le littoral.
+Une vigilance face aux fortes chaleurs est recommandée.
 
-▶ samedi 25 juillet : La journée reste ensoleillée mais le vent se renforce considérablement. Les rafales atteignent 60 km/h sur le littoral (La Rochelle, Chassiron) et 50 à 55 km/h dans l’intérieur, notamment à Jarnac, Cognac et Montbron. Les températures maximales sont en légère baisse, de 31°C à Chassiron à 33°C à La Rochelle, et 32°C dans les terres. Les minimales nocturnes sont encore élevées, entre 19 et 21°C. Le temps reste sec, sans pluie. Il convient de se méfier des rafales de vent, surtout sur les zones côtières.
+▶ samedi 25 juillet :
+Le temps reste sec et ensoleillé, mais la donne change du côté du vent.
+Un fort coup de vent est attendu sur le littoral, avec des rafales qui pourraient atteindre 65 km/h à La Rochelle et Chassiron.
+Dans l'intérieur, les rafales seront également puissantes, de l'ordre de 50 à 55 km/h, notamment à Jarnac, Cognac et Montbron.
+Les températures maximales restent estivales, mais fléchissent légèrement sous l'effet du vent, avec 33°C à La Rochelle et 32°C à Angoulême.
+La prudence est de mise sur les routes et dans les espaces découverts.
 
-▶ dimanche 26 juillet : Changement de temps notable avec une forte baisse des températures. Les maximales ne dépassent pas 23-24°C sur l’ensemble de la région. Le vent reste soutenu, avec des rafales de 60 km/h sur le littoral et 40 km/h dans l’intérieur. De faibles précipitations sont attendues sur la côte (0,3 à 0,6 mm), tandis que l’intérieur reste sec. Le ciel sera variable, avec des éclaircies et passages nuageux. Les minimales chutent à 17-20°C.
+▶ dimanche 26 juillet :
+La dégradation s'amorce par le littoral.
+Le ciel reste variable, mais des précipitations sont attendues sur La Rochelle et l'île d'Oléron, avec jusqu'à 2,7 mm de pluie.
+Dans l'intérieur des terres, le temps reste sec et les températures chutent nettement pour retrouver des valeurs de saison, avec des maximales comprises entre 23 et 24°C.
+Le vent reste sensible, avec des rafales de 40 km/h dans l'intérieur et jusqu'à 60 km/h sur la côte.
+Un contraste marqué entre le littoral perturbé et l'intérieur plus calme.
 
 
 --------------------------------------------------------------------------------
@@ -239,20 +254,17 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**CIEL CONTRASTÉ SUR LE LITTORAL, SOLEIL DOMINANT DANS LES TERRES**  
-Ce mercredi, la région connaît un temps partagé entre un littoral nuageux et un intérieur ensoleillé. En matinée, les zones côtières (Leffrinckoucke, Gravelines, Offekerque, Marck) restent sous un ciel gris avec des minimales comprises entre 15 et 16°C et une brise légère de 15 km/h. À l’intérieur, le soleil brille généreusement dès l’aube, avec des températures fraîches de 12 à 13°C. L’après-midi, le voile nuageux gagne l’ensemble du territoire, mais sans précipitations. Les maximales atteignent 20°C sur le littoral et 22 à 23°C dans les terres. Aucune vigilance particulière n’est en vigueur, la situation étant calme et de saison.
+MERCREDI NUAGEUX MAIS DOUX SUR LE LITTORAL. Ce mercredi, le ciel reste majoritairement nuageux sur l'ensemble du territoire, avec de rares éclaircies. Les températures minimales oscillent entre 11°C et 16°C, avec un net contraste entre le littoral (15 à 16°C) et l'intérieur des terres (11 à 13°C). L'après-midi, le thermomètre grimpe jusqu'à 20°C sur la côte et 23°C dans les terres. Le vent souffle modérément, entre 15 et 20 km/h, sans rafales notables. La vigilance est au vert, aucune pluie ni orage n'est attendu. Une journée calme, bien que voilée.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le temps s'annonce contrasté sur la région. Les zones littorales connaîtront un ciel nuageux, avec des températures minimales de 16°C à Leffrinckoucke et Gravelines, et 15°C à Offekerque et Marck. Une brise légère soufflera à 15 km/h sur ces secteurs côtiers.
+Ce mercredi matin, un ciel majoritairement nuageux caractérise la région, avec des éclaircies sporadiques. Les températures minimales affichent 15°C à Leffrinckoucke, Marck et Offekerque, tandis que Gravelines enregistre 16°C. Plus à l'intérieur des terres, les valeurs sont légèrement inférieures, avec 13°C à Lefaux et Groffliers, et 12°C à Remilly-Wirquin et Robecq. Racquinghem et Cauchy-à-la-Tour se distinguent avec des minimales de 11°C et 12°C respectivement.
 
-En progressant vers l'intérieur des terres, le soleil s'imposera davantage. Lefaux et Groffliers bénéficieront d'un ciel ensoleillé, avec des minimales respectives de 13°C. Le vent y sera modéré, atteignant 20 km/h à Groffliers. Plus au sud, Remilly-Wirquin, Racquinghem et Cauchy-à-la-Tour profiteront également d'un soleil généreux, avec des températures fraîches pour la saison, autour de 12°C. Le vent y sera léger, aux alentours de 15 km/h. Aucune précipitation n'est attendue pour cette matinée, et le risque d'orages est nul sur l'ensemble du territoire.
+Le vent souffle de manière modérée sur l'ensemble du territoire. Il est relevé à environ 15 km/h sur la majeure partie de la région, notamment le long du littoral et dans les zones intérieures comme Leffrinckoucke, Gravelines, Offekerque, Marck, Lefaux, Remilly-Wirquin, Racquinghem, Robecq et Cauchy-à-la-Tour. Seule la localité de Groffliers connaît un vent légèrement plus soutenu, atteignant 20 km/h. Aucune pluie n'est prévue pour cette matinée, le temps reste sec.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le temps s'annonce globalement ensoleillé mais voilé sur l'ensemble de la région. Le soleil sera partiellement masqué par des nuages d'altitude, offrant une luminosité agréable sans être éclatante. Aucune précipitation n'est attendue sur l'ensemble du territoire.
+Ce mercredi après-midi, le temps s'annonce mitigé sur l'ensemble de la région, avec une alternance de soleil et de passages nuageux. Les températures maximales atteindront 20°C à Leffrinckoucke et Gravelines, 22°C à Lefaux et Remilly-Wirquin, et jusqu'à 23°C à Racquinghem, Robecq et Cauchy-à-la-Tour.
 
-Côté températures, les maximales atteindront 20°C à Leffrinckoucke et Gravelines, tandis que l'intérieur des terres connaîtra des valeurs légèrement plus élevées, avec 22°C à Remilly-Wirquin, Racquinghem et Robecq. Les températures les plus douces seront enregistrées à Groffliers, avec 23°C.
-
-Le vent soufflera de manière modérée sur l'ensemble de la région. Une légère brise côtière de 15 km/h sera ressentie le long du littoral, notamment à Leffrinckoucke et Gravelines. Dans les terres, le vent restera également faible, aux alentours de 15 km/h, ne dépassant pas les 20 km/h à Groffliers. Aucune rafale significative n'est prévue.
+Le vent soufflera faiblement, généralement entre 15 et 20 km/h. Une brise côtière sera perceptible sur le littoral, tandis que les zones intérieures des terres connaîtront des vents légers et constants. Aucune rafale significative n'est attendue. Il n'y a pas de risque de pluie ni de phénomène orageux à signaler pour cet après-midi. Le contraste thermique entre le littoral et l'intérieur des terres reste modéré, avec des valeurs légèrement plus élevées dans les terres.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 22 juillet 2026)
@@ -302,11 +314,11 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 22 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 24 juillet : La journée s’annonce radieuse sur l’ensemble du territoire. Le ciel sera parfaitement dégagé dès le matin, avec des minimales fraîches de 12 à 14°C selon les secteurs. L’après-midi, le soleil restera omniprésent, propulsant les maximales entre 24 et 25°C, soit un gain de 2 à 3°C par rapport à mercredi. Le vent, très modéré, soufflera entre 10 et 15 km/h, sans rafales notables. Aucune précipitation n’est attendue. Les conditions seront idéales pour les activités de plein air, avec un indice UV élevé.
+▶ vendredi 24 juillet : Le ciel se dégage totalement pour cette fin de semaine. Un soleil généreux inondera la région du littoral à l'intérieur des terres. Les températures maximales grimperont jusqu'à 25°C à Remilly-Wirquin, Racquinghem et Robecq, tandis que le littoral restera plus tempéré avec 24°C à Leffrinckoucke et Gravelines. Le vent sera faible, oscillant entre 5 et 15 km/h selon les secteurs. Aucune rafale significative n'est à signaler. La journée s'annonce idéale pour les activités extérieures.
 
-▶ samedi 25 juillet : Le soleil demeurera généreux, mais la journée sera marquée par une hausse des températures et un renforcement du vent. Les minimales oscilleront entre 14 et 16°C, tandis que les maximales grimperont jusqu’à 26°C à Leffrinckoucke, 27°C à Racquinghem et 28°C à Robecq. En fin d’après-midi, une brise de 20 km/h se lèvera, avec des rafales atteignant 40 à 45 km/h sur le littoral et dans l’intérieur (Leffrinckoucke, Racquinghem, Robecq, Cauchy-à-la-Tour). Quelques nuages pourraient voiler le soleil, mais aucune pluie n’est prévue, sauf un très faible risque de 0,3 mm à Gravelines.
+▶ samedi 25 juillet : Le soleil reste au rendez-vous mais le vent se renforce nettement sur l'ensemble du territoire. Des rafales atteignant 45 km/h sont attendues à Leffrinckoucke, et jusqu'à 40 km/h à Robecq et Cauchy-à-la-Tour. Les températures maximales seront contrastées : 26°C à Leffrinckoucke et 28°C à Robecq, contre seulement 22°C à Gravelines en raison de la brise côtière. Quelques très faibles précipitations (0.3 mm) sont possibles sur Gravelines, mais le risque reste négligeable.
 
-▶ dimanche 26 juillet : Le temps se dégrade nettement avec l’arrivée d’une perturbation. Le ciel deviendra très nuageux, et des précipitations sont attendues sur la majeure partie du territoire. Les cumuls de pluie seront significatifs : 6,9 mm à Leffrinckoucke, 7,2 mm à Robecq, 7,5 mm à Cauchy-à-la-Tour, et plus de 6 mm à Racquinghem. Les températures maximales baisseront, oscillant entre 21 et 24°C, avec des minimales plus douces (15 à 19°C). Le vent se renforcera fortement : des rafales de 40 à 55 km/h sont prévues, notamment 55 km/h à Offekerque et Marck, 50 km/h à Gravelines et Lefaux, et 40 à 45 km/h sur le reste de la région. La prudence sera de mise, surtout sur les routes et le littoral.
+▶ dimanche 26 juillet : La dégradation s'accentue avec un vent fort et des averses. Les rafales seront très marquées, atteignant 55 km/h à Offekerque, Marck et Remilly-Wirquin, et 50 km/h à Gravelines et Lefaux. Les précipitations seront localement significatives, avec 6.6 mm attendus à Leffrinckoucke et 6.3 mm à Robecq. Les températures maximales plafonneront autour de 22 à 24°C. Une journée perturbée où il faudra composer avec un temps agité et humide.
 
 
 --------------------------------------------------------------------------------
@@ -315,31 +327,31 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-SOLEIL MATINAL, APRÈS-MIDI VOILÉE. Ce mercredi 22 juillet, la région des Hauts-de-France bénéficie d'une matinée lumineuse et ensoleillée sur l'ensemble du territoire. Les minimales sont contrastées, oscillant entre 10°C à St-Hilaire-sur-Helpe et 16°C à Dunkerque. En cours d'après-midi, le ciel se voile progressivement, laissant place à un temps nuageux mais sec, sans précipitations attendues. Les températures maximales restent de saison, comprises entre 20°C sur le littoral dunkerquois et 24°C dans l'intérieur des terres à Douai. Le vent, modéré, pourra atteindre des rafales à 40 km/h à Troisvilles en matinée. Aucune vigilance particulière n'est émise par Météo-France, le territoire étant placé en vigilance verte, synonyme de conditions calmes et stables pour cette journée.
+**MERCREDI SOUS UN VOILE NUAGEUX APRÈS UN SOLEIL RADIEUX**
+
+Ce mercredi, la région connaît une journée contrastée. La matinée est radieuse avec un soleil généreux sur l'ensemble du territoire, de St-Hilaire-sur-Helpe à Dunkerque. Les températures minimales sont douces, oscillant entre 10°C et 16°C. L'après-midi, un voile nuageux s'installe, couvrant le ciel de manière homogène. Les maximales atteignent 21°C sur le littoral et jusqu'à 24°C dans l'intérieur des terres. Le vent reste modéré, avec des rafales notables à Troisvilles (40 km/h). Aucune vigilance particulière n'est émise, le temps restant sec et stable sur l'ensemble des secteurs.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, un temps ensoleillé domine l'ensemble de la région. Les minimales s'établissent à 10°C à St-Hilaire-sur-Helpe et 11°C à Troisvilles, tandis que Maubeuge enregistre 12°C. Sur le littoral, Dunkerque affiche 16°C, une température similaire à celle de Roubaix, qui atteint également 16°C. Lille et Douai bénéficient de 14°C.
+Ce mercredi matin, le ciel se présente dégagé sur l'ensemble de la région, offrant un ensoleillement généralisé. Les températures minimales affichent 10°C à St-Hilaire-sur-Helpe, 11°C à Troisvilles, 12°C à Maubeuge, 14°C à Douai et Valenciennes, et 16°C à Lille et Roubaix.
 
-Le vent se manifeste avec une brise légère à modérée. Il souffle à 15 km/h à St-Hilaire-sur-Helpe, Valenciennes, Maubeuge, Douai, Lille, Roubaix, Steenvoorde et Dunkerque. Une attention particulière est requise à Troisvilles, où le vent atteint 20 km/h avec des rafales pouvant aller jusqu'à 40 km/h. Les températures maximales pour la matinée varient de 20°C à Dunkerque, à 24°C à Douai. Le contraste est notable entre le littoral et l'intérieur des terres, où les températures sont généralement plus élevées.
+Le vent souffle faiblement sur la plupart des localités, avec une vitesse de 15 km/h à St-Hilaire-sur-Helpe, Valenciennes, Douai, Lille, Roubaix, Steenvoorde, Watten et Dunkerque. Une attention particulière est requise pour Troisvilles, où le vent atteint 20 km/h avec des rafales pouvant atteindre 40 km/h. Aucune précipitation n'est attendue pour cette matinée. Les conditions météorologiques sont stables, sans contraste notable entre le littoral et l'intérieur des terres, les températures restant douces et homogènes.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le ciel de la région présentera un aspect nuageux sur l'ensemble du territoire, avec un soleil voilé par des passages nuageux plus ou moins denses. Les températures maximales afficheront une certaine douceur, avec 23°C à Valenciennes, 24°C à Douai, 23°C à Lille et 20°C à Dunkerque.
+Ce mercredi après-midi, le ciel de la région sera majoritairement nuageux avec la présence d'un voile nuageux couvrant le soleil. Les températures maximales afficheront 22°C à St-Hilaire-sur-Helpe et Maubeuge, tandis que Valenciennes, Douai et Lille atteindront 24°C. Sur le littoral, Dunkerque enregistrera 21°C, marquant un contraste de trois degrés avec l'intérieur des terres.
 
-Le vent soufflera de manière modérée sur la plupart des localités. À Troisvilles, une vigilance particulière est de mise en raison de rafales atteignant 40 km/h, tandis que le vent sera de 15 km/h à St-Hilaire-sur-Helpe, Valenciennes, Maubeuge, Douai, Lille, Roubaix, Steenvoorde et Dunkerque. Watten connaîtra un vent plus faible, autour de 10 km/h.
-
-On observe un léger contraste thermique entre le littoral et l'intérieur des terres, les zones côtières comme Dunkerque enregistrant des températures légèrement inférieures à celles des villes plus éloignées de la mer. Aucune précipitation n'est attendue pour cette après-midi.
+Le vent soufflera généralement entre 15 et 20 km/h sur l'ensemble du territoire. Une attention particulière est requise pour la commune de Troisvilles, où des rafales pourront atteindre 40 km/h, nécessitant une vigilance accrue. Aucune précipitation n'est prévue pour cet après-midi, le temps restera sec partout.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mercredi 22 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
 ☀️ Belle journée estivale et lumineuse ce mercredi.
-🌡️ Température sous abri : 20°C (ambiance plus respirable qu’à l’intérieur)
+🌡️ Température sous abri : 21°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
 ☀️ Soleil largement dominant ce mercredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 19 à 20°C
+🌡️ Température maximale : 20 à 21°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -377,9 +389,9 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 22 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 24 juillet : Le soleil s'impose largement sur l'ensemble de la région pour cette journée. Les températures maximales grimpent, atteignant 26°C à Douai, Lille et Roubaix, tandis que le littoral dunkerquois reste plus frais avec 24°C. Le vent est faible à modéré, soufflant entre 10 et 15 km/h, offrant une journée calme et agréable. Les minimales matinales sont fraîches, de 11°C à Maubeuge et St-Hilaire-sur-Helpe à 14°C à Dunkerque. Une belle journée estivale avant le renforcement du vent attendu samedi.
+▶ vendredi 24 juillet : Le ciel reste partagé entre éclaircies et passages nuageux sur l'ensemble de la région. Les températures maximales grimpent, atteignant 26°C à Lille et Watten, tandis que le littoral dunkerquois plafonne à 24°C. Le vent est faible, ne dépassant pas 15 km/h. Aucune précipitation significative n'est attendue, seul Valenciennes pourrait voir une infime trace de pluie (0.3 mm). Les minimales restent douces, entre 11°C et 14°C. Une journée agréable et calme se profile pour l'ensemble du territoire.
 
-▶ samedi 25 juillet : La chaleur s'accentue nettement avec des maximales comprises entre 26°C sur le littoral et 29°C à Roubaix. Le ciel reste généreusement ensoleillé toute la journée. Cependant, le vent se renforce considérablement en cours de journée. Des rafales de 40 à 45 km/h sont attendues sur la majeure partie du territoire, notamment à Lille, Dunkerque, Valenciennes et Douai. Une vigilance s'impose face à ces bourrasques estivales qui agiteront la végétation.
+▶ samedi 25 juillet : Une nette hausse des températures est attendue avec un soleil généreux dominant la région. Les maximales s'envolent, atteignant 29°C à Valenciennes et 28°C dans la métropole lilloise. Le vent se renforce en cours de journée, avec des rafales de 40 km/h à Lille, Roubaix et Steenvoorde, et jusqu'à 45 km/h sur le littoral dunkerquois. Le temps reste sec partout. Les minimales sont estivales, comprises entre 13°C et 17°C. Une journée chaude et venteuse à surveiller.
 
-▶ dimanche 26 juillet : La dégradation est nette et marquée. Un front pluvieux traverse la région, apportant des précipitations parfois abondantes. Les cumuls de pluie sont significatifs, avec jusqu'à 17,1 mm attendus à St-Hilaire-sur-Helpe et 16,8 mm à Troisvilles. Les températures chutent brutalement, ne dépassant pas 19°C à St-Hilaire-sur-Helpe et 21°C à Lille et Maubeuge. Le vent reste soutenu avec des rafales atteignant 40 à 45 km/h. Une journée très perturbée qui contraste fortement avec le début du week-end.
+▶ dimanche 26 juillet : La dégradation est nette avec l'arrivée d'un front pluvieux actif. Des précipitations modérées à fortes sont attendues sur l'ensemble du territoire, avec des cumuls importants : 13.8 mm à Roubaix, 11.4 mm à Lille et 9 mm à Maubeuge. Le vent se lève significativement, avec des rafales atteignant 50 km/h à Troisvilles et 45 km/h dans la plupart des grandes villes. Les températures chutent brutalement, les maximales ne dépassant pas 23°C. Une journée très agitée et pluvieuse en perspective.
 
