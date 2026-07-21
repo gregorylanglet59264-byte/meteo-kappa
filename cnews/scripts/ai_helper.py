@@ -624,6 +624,7 @@ Règles de style :
 - Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
 - Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
 - Intègre obligatoirement des indications précises sur le VENT (brise, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 - Si tu vois un éclair (orage ou grêle), mentionne-le expressément (risque orageux, foudre).
 
 {picto_guide}
@@ -657,6 +658,7 @@ Règles de style :
 - Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, vivant et fluide.
 - Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
 - Intègre obligatoirement des indications précises sur le VENT (mistral, brise côtière, vent d'ouest, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 - ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite (risques de foudre, fortes pluies sous cellules, grêle).
 
 {picto_guide}
@@ -689,6 +691,7 @@ Instructions :
 Règles :
 - Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
 - 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 
 {picto_guide}
 
@@ -720,6 +723,7 @@ Instructions :
 Règles :
 - Parle au GRAND PUBLIC. Sans dire 'carte', 'visuel', etc.
 - 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 - Si orage visible, mentionne-le expressément.
 
 {picto_guide}
