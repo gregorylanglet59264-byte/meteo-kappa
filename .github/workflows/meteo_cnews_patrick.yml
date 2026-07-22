@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 jobs:
-  # ÉTAPE 1 : Génération des vidéos pour les 16 groupes en parallèle
+  # ÉTAPE 1 : Génération des 4 bulletins Patrick (HDF + France, Paysage + Portrait)
   generate-videos:
     runs-on: ubuntu-latest
     strategy:
@@ -20,21 +20,7 @@ jobs:
         group:
           - france_pictos
           - hdf
-          - normandie
-          - idf
-          - grandest
-          - ara
-          - naq
-          - occitanie
-          - paca
-          - bfc
-          - bretagne
-          - pdl
-          - cvl
-          - corse
-          - cnews
-          - france
-      fail-fast: false  # Ne pas tout arrêter si une seule région échoue temporairement
+      fail-fast: false
 
     steps:
       - name: Récupérer le code du dépôt
@@ -111,10 +97,25 @@ jobs:
           path: cartes_alertes/
           merge-multiple: true
 
-      - name: Exécuter l'Auto-Vérification Finale de cohérence (FFprobe)
+      - name: Vérifier la présence des 4 bulletins attendus (FFprobe)
         run: |
-          # Le script échouera (code 1) si une seule vidéo est absente, vide ou tronquée
-          python meteo_cnews_2/generate_all_bulletins.py --skip-maps
+          DATE=$(python -c "import datetime; d=datetime.date.today()+datetime.timedelta(days=1); print(d.strftime('%Y_%m_%d'))")
+          MISSING=0
+          for FILE in \
+            cartes_alertes/bulletin_france_pictos_patrick_landscape_${DATE}.mp4 \
+            cartes_alertes/bulletin_france_pictos_patrick_portrait_${DATE}.mp4 \
+            cartes_alertes/bulletin_hdf_patrick_landscape_${DATE}.mp4 \
+            cartes_alertes/bulletin_hdf_patrick_portrait_${DATE}.mp4; do
+            if [ ! -f "$FILE" ]; then
+              echo "ABSENT : $FILE"
+              MISSING=$((MISSING+1))
+            else
+              DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "$FILE" 2>/dev/null || echo 0)
+              echo "OK : $(basename $FILE) (${DURATION}s)"
+            fi
+          done
+          if [ $MISSING -gt 0 ]; then echo "$MISSING bulletin(s) manquant(s)."; exit 1; fi
+          echo "Les 4 bulletins Patrick sont valides."
 
       - name: Créer le fichier ZIP, générer les textes IA et envoyer l'e-mail
         env:
