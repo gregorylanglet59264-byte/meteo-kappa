@@ -10,75 +10,80 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**VIGILANCE JAUNE AU VENT SUR LE QUART NORD-OUEST : UNE JOURNÉE DE CONTRASTES SOUS LE SOLEIL**
-
-Ce vendredi, la France métropolitaine se réveille sous un ciel partagé. Si le soleil domine largement de la Bretagne aux Alpes, une bande nuageuse s'étire des côtes de la Manche jusqu'aux Hauts-de-France, concernant Lille, Laon, Rouen, Caen et Brest, mais sans précipitations. Le point d'attention majeur réside dans le vent actif sur le quart nord-ouest, avec des rafales atteignant 40 km/h à Caen, Brest, Rennes, Nantes et Poitiers, justifiant une vigilance jaune localisée. Les températures minimales sont douces, oscillant entre 16°C à Paris et 19°C à Nantes. L'après-midi, le soleil s'impose partout, dissipant les nuages matinaux du nord. Les maximales grimpent à 28°C à Paris et jusqu'à 32°C à Nantes et Poitiers, pour une ambiance estivale. Le vent reste soutenu sur les côtes de la Manche et l'ouest, avec des rafales persistantes.
+**LUNDI SOUS LE SIGNE D'UN SOLEIL GÉNÉREUX, CHALEUR ESTIVALE SANS EXCÈS**  
+Ce lundi, la France métropolitaine est placée sous vigilance verte ou jaune, avec une chaleur de saison sur la moitié nord et plus marquée au sud. La matinée s'ouvre sur un ciel majoritairement ensoleillé, malgré quelques nuages résiduels sur un axe Grand Est, Massif Central et Bourgogne, et de rares averses matinales près de Bayonne. Les températures minimales sont douces, oscillant entre 15°C à Caen et 23°C à Nice. L'après-midi confirme l'absence de perturbation : un ensoleillement généralisé domine, avec des maximales estivales de 23°C à Caen, 27°C à Paris et jusqu'à 29°C à Nantes. Les vents restent faibles, inférieurs à 15 km/h, aucun risque d'orage ou de grêle n'est signalé.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le soleil domine largement sur une grande partie du territoire, offrant un ciel dégagé de la Bretagne aux Alpes. Les températures minimales sont douces, avec 18°C à Rennes, 19°C à Nantes et 16°C à Paris.
+Ce lundi matin, la France se réveille sous un ciel majoritairement ensoleillé, annonçant une journée estivale. Les températures minimales affichent 17°C à Lille et Laon, 16°C à Rouen et Paris, et 15°C à Caen et Rennes.
 
-Cependant, une bande nuageuse s'étire des côtes de la Manche jusqu'aux Hauts-de-France. À Lille, Laon, Rouen, Caen et Brest, le ciel est nuageux, mais sans précipitations. Le vent se montre particulièrement actif sur le quart nord-ouest, avec des rafales atteignant 40 km/h à Caen, Brest, Rennes et Nantes, nécessitant une vigilance particulière. Poitiers connaît également des rafales de 40 km/h.
+Une large bande ensoleillée s'étend des côtes bretonnes, avec 16°C à Brest, jusqu'à la région parisienne et le Centre-Val de Loire, où Tours et Poitiers profitent également du soleil dès le lever du jour. Les vents restent faibles sur l'ensemble du territoire, soufflant autour de 10 à 15 km/h, sans rafales notables.
 
-Le contraste thermique est marqué entre le littoral et l'intérieur des terres, où les températures montent rapidement sous l'effet du soleil.
+Quelques nuages sont toutefois visibles sur un axe allant du Grand Est, notamment à Nancy et Strasbourg, jusqu'au Massif Central et la Bourgogne, avec des températures oscillant entre 14°C et 17°C. La façade atlantique, de Nantes (16°C) à Bordeaux (18°C), bénéficie d'un soleil généreux. Seule la pointe sud-ouest, vers Bayonne, connaît des averses matinales.
+
+Dans le Sud-Est, le soleil domine largement, de Montpellier (21°C) à Nice (23°C), avec une brise marine légère sur le littoral. La Corse affiche également un grand soleil, avec des minimales de 22°C à Ajaccio.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, la France métropolitaine sera largement dominée par un temps ensoleillé et chaud. Le soleil brillera généreusement sur la majeure partie du territoire, notamment de la Bretagne à l'Île-de-France et jusqu'à la Nouvelle-Aquitaine. Quelques rares nuages, sans conséquence, pourront voiler très légèrement le ciel sur le nord du pays, notamment autour de Lille, Laon et Rouen.
+Ce lundi après-midi, la France métropolitaine bénéficie d'un ensoleillement généralisé, sans aucune perturbation nuageuse significative. Les températures affichent des valeurs estivales, particulièrement douces.
 
-Les températures maximales afficheront des valeurs estivales, atteignant 28°C à Paris, 31°C à Rennes, 32°C à Nantes et Poitiers, et même 28°C à Brest. Le vent sera particulièrement présent sur le quart nord-ouest. Des rafales de 40 km/h sont attendues sur les côtes de la Manche, notamment à Caen et Brest, ainsi qu'à Rennes et Nantes, et également à Poitiers. Une brise côtière modérée soufflera sur le littoral atlantique, tandis que le vent restera faible dans les terres. Les contrastes de températures entre le littoral et l'intérieur des terres seront peu marqués, les valeurs restant élevées partout.
+Dans le nord, Lille et Laon enregistrent 25°C et 26°C, tandis que Rouen et Caen atteignent respectivement 24°C et 23°C. Le vent, de faible intensité, souffle entre 10 et 15 km/h sur l'ensemble de ces régions.
+
+Plus à l'ouest, Brest profite de 24°C, avec une légère brise de 15 km/h. Rennes et Nantes connaissent des maximales de 28°C et 29°C, accompagnées d'un vent modéré de 15 km/h.
+
+Au centre, Paris affiche 27°C, Tours 28°C et Poitiers 27°C. Le vent y est également faible, autour de 10 à 15 km/h. Le contraste littoral/intérieur des terres est peu marqué, les températures restant élevées partout. Aucune rafale de vent supérieure à 40 km/h n'est à signaler, et aucun risque d'orage ou de grêle n'est prévu pour cet après-midi.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce vendredi.
-🌡️ Température sous abri : 26°C (ambiance plus respirable qu’à l’intérieur)
-🌊 Température de l’eau : 19 à 20°C
+☀️ Belle journée estivale et lumineuse ce lundi.
+🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
+🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 25 à 26°C
-🌊 Température de l’eau : 19 à 20°C
+☀️ Soleil largement dominant ce lundi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 22 à 23°C
+🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce lundi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce lundi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce lundi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce lundi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce lundi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+    Pyrénées : Soleil dominant en matinée de ce lundi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mardi.
 
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce lundi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce lundi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce lundi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 24 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 27 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 26 juillet : Le temps se dégrade nettement sur la moitié nord du pays. Un ciel très nuageux domine de la Bretagne aux Hauts-de-France, avec des averses attendues. À Lille, 6,4 mm de pluie sont prévus, et 2,5 mm à Laon. Le vent se renforce considérablement, avec des rafales atteignant 50 km/h sur l'ensemble des régions du nord-ouest, de Brest à Lille en passant par Caen et Rennes. Les températures maximales baissent, plafonnant à 24°C à Lille et 26°C à Rennes, tandis que le sud reste plus épargné avec un ciel variable. Les minimales restent douces, entre 15°C et 19°C.
+▶ mercredi 29 juillet : La journée s'annonce nettement plus chaude, avec une poussée très chaud sur une grande partie du pays. Le soleil reste omniprésent, sans aucun nuage ni précipitation. Les températures maximales grimpent fortement : 34°C à Lille et Laon, 36°C à Rouen, 37°C à Rennes et Paris, 38°C à Nantes, Tours et Poitiers. Seule la pointe bretonne, avec Brest, plafonne à 27°C, protégée par la brise. Le vent, faible à modéré, souffle entre 10 et 20 km/h, sans rafales notables. La vigilance à la chaleur s'impose sur les régions intérieures.
 
-▶ lundi 27 juillet : Une nette amélioration se profile sur l'ensemble du territoire. Le soleil reprend ses droits, avec un ciel dégagé ou peu nuageux du nord au sud. Les températures remontent sensiblement, atteignant 28°C à Paris et 29°C à Tours. Le vent faiblit nettement, avec des rafales ne dépassant pas 15 km/h, offrant une journée calme et agréable. Quelques nuages résiduels peuvent encore traîner sur le nord-est, mais sans conséquence. Les maximales oscillent entre 24°C à Brest et 29°C à Tours, pour une ambiance estivale retrouvée.
+▶ jeudi 30 juillet : Le mercure amorce une baisse sensible, mais le soleil reste dominant. Le ciel demeure clair sur la quasi-totalité du territoire, à l'exception de très faibles précipitations (0,3 mm à Laon et Tours, 0,6 mm à Poitiers). Les maximales reculent : 31°C à Lille et Paris, 33°C à Laon, 27-29°C sur le littoral normand et breton, 29°C à Rennes et Nantes. Le vent se renforce : des rafales atteignent 45 km/h sur Rennes et Nantes, rendant l'atmosphère plus agitée. Le contraste entre l'ouest venteux et l'est plus calme se dessine.
 
-▶ mardi 28 juillet : La chaleur s'installe durablement sur l'hexagone. Le soleil brille généreusement partout, avec des températures en forte hausse. Les maximales atteignent 31°C à Rouen et Nantes, 32°C à Paris, et même 34°C à Tours et Poitiers. Le vent reste faible à modéré, avec des rafales de 15 km/h au maximum. Les minimales sont douces, entre 13°C à Rouen et 18°C à Paris et Nantes. Une journée très chaud se profile pour le centre et le sud-ouest, nécessitant une hydratation régulière.
+▶ vendredi 31 juillet : Le retrait de la chaleur se confirme avec un temps plus frais et un vent toujours présent. Le soleil continue de briller, sans aucune pluie. Les températures maximales chutent nettement : 29°C à Lille, 26°C à Laon, 24°C à Rouen et Caen, 22°C à Brest, 26°C à Rennes, 29°C à Nantes, 27°C à Paris. Des rafales de 45 km/h sont attendues sur Lille, Brest et Rennes, et 40 km/h sur Nantes. La brise océanique apporte un rafraîchissement bienvenu après la forte chaleur de mercredi.
 
 
 --------------------------------------------------------------------------------
@@ -87,74 +92,74 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**CIEL VOILÉ MAIS DOUCEUR ESTIVALE SUR LE NORD**  
-Ce vendredi, la région Hauts-de-France connaît une journée marquée par un ciel nuageux le matin, avec un soleil voilé qui laisse filtrer quelques rayons. Aucune précipitation ni risque d'orage ne sont signalés. Les minimales oscillent entre 9°C à Saint-Hilaire-sur-Helpe et 18°C à Lille ou Dunkerque. L’après-midi, le voile se dissipe partiellement, laissant place à un soleil généreux, notamment sur l’intérieur des terres où les maximales atteignent 27°C à Lille et Roubaix. Le littoral reste plus frais avec 24°C à Dunkerque, sous une brise marine modérée. Le vent, faible à modéré, ne dépasse pas 15 km/h. La vigilance météorologique est au vert ou au jaune sur l’ensemble du territoire, aucune perturbation majeure n’est à craindre.
+**LUNDI SOUS LE SIGNE DU SOLEIL ET DE LA CHALEUR DE SAISON**  
+Ce lundi 27 juillet, le Nord-Pas-de-Calais bénéficie d’une journée estivale stable et ensoleillée. La vigilance météorologique est au vert sur l’ensemble de la région, aucun phénomène dangereux n’est attendu. Le matin, le ciel est peu nuageux avec des températures minimales comprises entre 15°C à Saint-Hilaire-sur-Helpe et 18°C sur le littoral. L’après-midi, le soleil domine largement, les maximales grimpent jusqu’à 26°C à Douai et Cambrai. Le vent reste modéré sur l’intérieur des terres (15 à 20 km/h), mais des rafales atteignent 50 km/h sur le littoral dunkerquois et 40 km/h à Cambrai, nécessitant une vigilance accrue en bord de mer. Aucune précipitation ni risque d’orage ne sont signalés.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le ciel du Nord se présente sous un aspect nuageux sur l'ensemble de la région. Un soleil voilé est observé, laissant transparaître quelques rayons à travers une couverture nuageuse diffuse. Aucune précipitation n'est signalée, et le risque d'orages est nul pour cette première partie de journée.
+Ce lundi matin, le Nord-Pas-de-Calais se réveille sous un ciel majoritairement ensoleillé, parsemé de quelques nuages discrets. Les températures minimales affichent 17°C à Lille et Douai, 18°C à Valenciennes, Roubaix et Cambrai. La côte, notamment Dunkerque, bénéficie d'un grand soleil avec 18°C. L'intérieur des terres, comme St-Hilaire-sur-Helpe et Avesnes-sur-Helpe, connaît des températures légèrement plus fraîches, autour de 15°C et 16°C.
 
-Les températures minimales affichent 18°C à Lille et Dunkerque, tandis que Roubaix enregistre 17°C. Plus à l'intérieur des terres, Steenvoorde relève 17°C. Les valeurs les plus fraîches sont constatées dans le sud de la région, avec 9°C à St-Hilaire-sur-Helpe et Avesnes-sur-Helpe.
-
-Le vent se montre généralement faible à modéré. Une brise de 15 km/h souffle sur Lille et Dunkerque. Ailleurs, les vents sont plus calmes, avec 5 km/h à Valenciennes, Maubeuge, Cambrai, St-Hilaire-sur-Helpe et Avesnes-sur-Helpe. Douai et Roubaix enregistrent un vent léger de 10 km/h. Aucune rafale significative n'est à signaler.
+Le vent se manifeste avec une intensité variable. Un vent modéré de 15 km/h est relevé à Lille, Valenciennes, Douai, Roubaix et Steenvoorde. À Maubeuge, le vent atteint 20 km/h. Une attention particulière est requise sur le littoral, où Dunkerque enregistre un vent de 25 km/h avec des rafales pouvant atteindre 50 km/h. De même, Cambrai connaît des rafales de 40 km/h, nécessitant une vigilance accrue. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le Nord de la France bénéficie d'un temps généralement ensoleillé, malgré la présence de quelques voiles nuageux qui ne devraient pas altérer l'impression de beau temps. Les températures maximales affichent une nette douceur, voire une chaleur modérée sur l'intérieur des terres.
+Ce lundi après-midi, le Nord de la France bénéficie d'un ensoleillement généreux sur l'ensemble de la région. Le soleil dominera le ciel, offrant des conditions météorologiques estivales très agréables.
 
-À Lille et Roubaix, le mercure atteindra 27°C, tandis que Valenciennes, Douai et Cambrai connaîtront des maximales de 26°C. Plus à l'est, Maubeuge verra 25°C. Les zones côtières, comme Dunkerque, afficheront 24°C, profitant d'une légère brise marine de 15 km/h. Les vents, d'une manière générale, resteront faibles à modérés sur l'ensemble de la région, soufflant entre 5 et 15 km/h, sans rafales notables. Aucune précipitation n'est à signaler pour cette période de l'après-midi.
+Les températures maximales atteindront 26°C à Douai et Cambrai, 25°C à Lille, Valenciennes, Roubaix et Steenvoorde. Les secteurs de Maubeuge et Dunkerque enregistreront 24°C. Plus au sud, St-Hilaire-sur-Helpe affichera 22°C et Avesnes-sur-Helpe 23°C. Une légère différence de température est observée entre l'intérieur des terres, plus chaud, et le littoral, légèrement rafraîchi par la brise marine.
+
+Concernant le vent, une vigilance particulière est de mise sur le littoral. À Dunkerque, le vent soufflera à 25 km/h avec des rafales pouvant atteindre 50 km/h. Plus à l'intérieur, Cambrai connaîtra des vents de 20 km/h avec des rafales à 40 km/h. Dans les autres localités, le vent restera modéré, autour de 15 à 20 km/h. Aucune précipitation n'est attendue, et le risque d'orage ou de grêle est nul.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce vendredi.
-🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
+☀️ Belle journée estivale et lumineuse ce lundi.
+🌡️ Température sous abri : 22°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 22 à 23°C
+☀️ Soleil largement dominant ce lundi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 21 à 22°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce lundi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce lundi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce lundi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce lundi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce lundi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+    Pyrénées : Soleil dominant en matinée de ce lundi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mardi.
 
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce lundi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce lundi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce lundi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 24 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 27 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 26 juillet : La journée s’annonce très agitée avec l’arrivée d’une perturbation active. Le ciel sera couvert dès le matin et des pluies parfois soutenues traverseront la région, avec des cumuls attendus de 2 à 8 mm selon les secteurs. Le vent se renforcera nettement, soufflant en moyenne à 25 km/h, avec des rafales pouvant atteindre 50 à 55 km/h, notamment dans le Douaisis et le Cambrésis. Les températures maximales seront en baisse, comprises entre 22°C dans l’Avesnois et 24°C à Lille. Les minimales resteront douces, entre 14°C à Avesnes-sur-Helpe et 19°C à Dunkerque. Attention à la prudence sur les routes en raison des rafales et des chaussées glissantes.
+▶ mercredi 29 juillet : La journée s’annonce très chaude et ensoleillée sur l’ensemble du Nord-Pas-de-Calais. Le ciel reste dégagé du matin au soir, sans aucun nuage menaçant. Les températures minimales oscillent entre 17°C à Dunkerque et 19°C à Lille, Valenciennes, Maubeuge et Roubaix. L’après-midi, la chaleur devient intense : les maximales atteignent 34°C à Lille, Douai et Roubaix, 33°C à Valenciennes et Cambrai, 32°C à Dunkerque et Maubeuge, et 31°C dans l’Avesnois. Le vent est faible, de 10 à 15 km/h, sans rafales notables. Aucune précipitation n’est attendue. Il s’agit d’une journée très chaud pour la région, avec une vigilance accrue recommandée face aux fortes chaleurs.
 
-▶ lundi 27 juillet : Le temps reste instable mais en nette amélioration. Des passages nuageux alterneront avec des éclaircies, et quelques averses résiduelles sont possibles, notamment sur le littoral et le Hainaut, avec des quantités de pluie faibles, inférieures à 2 mm. Le vent faiblit sensiblement, soufflant entre 15 et 20 km/h, avec des rafales encore possibles jusqu’à 40 km/h sur Dunkerque en début de journée. Les températures maximales remontent légèrement, de 21°C à Dunkerque à 25°C à Valenciennes et Douai. Les minimales sont stables, autour de 16-17°C. Le ciel sera plus dégagé en soirée, annonçant une amélioration durable.
+▶ jeudi 30 juillet : La chaleur persiste mais le ciel reste radieux. Le soleil règne en maître toute la journée. Les minimales sont élevées, comprises entre 21°C à Dunkerque et 24°C à Valenciennes et Maubeuge. L’après-midi, les maximales atteignent 31°C à Lille, Douai, Cambrai, Maubeuge et dans l’Avesnois, 32°C à Valenciennes et Roubaix, mais seulement 26°C à Dunkerque grâce à la brise marine. Le vent se renforce : des rafales de 40 km/h sont attendues à Valenciennes, Saint-Hilaire-sur-Helpe et Avesnes-sur-Helpe, et jusqu’à 45 km/h à Maubeuge. Ces rafales doivent être surveillées, notamment sur les secteurs exposés. Aucune pluie n’est prévue.
 
-▶ mardi 28 juillet : La journée sera radieuse avec un soleil généreux et un ciel peu nuageux sur l’ensemble de la région. Aucune précipitation n’est attendue, le temps est sec et agréable. Le vent devient très faible, de 10 à 15 km/h, sans rafales significatives. Les températures grimpent nettement : les maximales atteignent 28°C à Lille, Valenciennes et Douai, 27°C dans l’intérieur et 26°C sur la côte à Dunkerque. Les minimales sont fraîches le matin, de 13°C à 15°C, mais la journée s’annonce estivale. Les conditions idéales pour les activités de plein air.
+▶ vendredi 31 juillet : Le temps reste sec et ensoleillé mais une légère baisse des températures est observée. Le ciel est largement dégagé le matin comme l’après-midi. Les minimales sont comprises entre 18°C et 19°C sur la majorité des villes. Les maximales atteignent 29°C à Lille, Valenciennes, Douai et Roubaix, 28°C à Maubeuge et Cambrai, 26°C dans l’Avesnois, et seulement 23°C à Dunkerque. Le vent souffle modérément, avec des rafales de 40 à 50 km/h : 45 km/h à Lille, Valenciennes, Douai, Dunkerque, 50 km/h à Roubaix, et 40 km/h à Maubeuge, Cambrai, Steenvoorde. Une faible précipitation de 1,5 mm est possible à Steenvoorde, mais ailleurs le temps reste sec.
 
 
 --------------------------------------------------------------------------------
@@ -163,75 +168,70 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**CHALEUR ET VENT, UNE JOURNÉE ESTIVALE CONTRASTÉE**  
-Ce vendredi, la Charente-Maritime et ses environs bénéficient d'un ciel dégagé et d'un ensoleillement généreux dès le matin. Les températures minimales oscillent entre 16°C dans l'intérieur (Gond-Pontouvre, Jarnac) et 21°C sur la pointe de Chassiron. Le vent souffle en rafales sur le littoral, atteignant 40 km/h à La Rochelle et à Chassiron, tandis qu'à l'intérieur il reste modéré (15-20 km/h). L'après-midi accentue le contraste thermique : 35°C à La Rochelle, 32°C à Chassiron, mais jusqu'à 37°C à Angoulême et La Couronne. Aucune précipitation n'est attendue. La vigilance est nationale verte ou jaune ; le département n'est pas placé en alerte forte chaleur, mais la chaleur est marquée. Une attention particulière est recommandée aux personnes sensibles.
+CIEL CHANGEANT, SOLEIL TRIOMPHANT : Ce lundi, la région bascule progressivement vers un temps estival. La matinée est marquée par un ciel nuageux sur l'ensemble du territoire, de La Rochelle à Angoulême. Les températures minimales sont fraîches dans l'intérieur, avec 16°C à Blanzac ou Angoulême, et plus douces sur le littoral avec 19°C à La Rochelle. Le vent de secteur nord-ouest souffle modérément, atteignant 25 km/h à Chassiron. L'après-midi, le soleil prend définitivement le dessus. Le ciel se dégage totalement, offrant une belle luminosité. Les maximales grimpent jusqu'à 28°C à Cognac et La Couronne, tandis qu'elles plafonnent à 25°C sur les îles et le littoral, rafraîchies par la brise marine. Aucune vigilance particulière n'est émise pour cette journée, la chaleur restant modérée et de saison.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le département de la Charente-Maritime et ses environs se réveillent sous un ciel dégagé, offrant un ensoleillement généreux sur l'ensemble de la région. Les températures minimales affichent 20°C à La Rochelle, 21°C à Chassiron, 16°C à Gond-Pontouvre, 17°C à Blanzac-Porcheresse et 16°C à Jarnac.
+Ce lundi matin, la région se réveille sous un ciel majoritairement nuageux, alternant avec quelques éclaircies. Les températures minimales affichent 19°C à La Rochelle et Chassiron, tandis que l'intérieur des terres connaît des valeurs plus fraîches, avec 16°C à Blanzac-Porcheresse et Jarnac, et 17°C à Montbron, La Couronne, Soyaux, Cognac et Angoulême. Gond-Pontouvre enregistre également 17°C.
 
-Le vent se montre présent, notamment sur le littoral. À La Rochelle, il souffle à 20 km/h avec des rafales atteignant 40 km/h. Des conditions similaires sont observées à Chassiron, où le vent est de 25 km/h avec des rafales de 40 km/h. À Cognac, le vent atteint également 20 km/h avec des rafales de 40 km/h. Il est donc recommandé d'être vigilant face à ces vents forts.
-
-Dans l'intérieur des terres, le vent est plus modéré, autour de 15 à 20 km/h. Les températures maximales pour la matinée s'échelonnent de 32°C sur le littoral à Chassiron, jusqu'à 37°C à La Couronne et Angoulême, marquant un contraste thermique notable entre le bord de mer et l'intérieur.
+Le vent se fera sentir de manière modérée sur le littoral. À La Rochelle, une brise de 20 km/h est attendue, tandis que Chassiron connaîtra un vent de 25 km/h. Dans l'intérieur des terres, le vent sera plus léger, soufflant à environ 15 km/h à Gond-Pontouvre, Blanzac-Porcheresse, La Couronne, Soyaux et Angoulême. Jarnac, Cognac et Montbron bénéficieront d'une légère brise de 10 km/h. Aucune précipitation n'est prévue pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le département de la Charente-Maritime et ses environs connaissent un temps estival et ensoleillé. Le soleil domine largement l'ensemble de la région. Les températures maximales s'annoncent particulièrement élevées, atteignant 35°C à La Rochelle et 32°C à Chassiron. Dans l'intérieur des terres, la chaleur est encore plus marquée, avec 36°C à Gond-Pontouvre, 37°C à La Couronne et jusqu'à 37°C à Angoulême.
+Ce lundi après-midi, la région bénéficie d'un temps estival et ensoleillé sur l'ensemble du territoire. Le soleil prédomine, garantissant un ciel dégagé sans aucune présence nuageuse. Les températures maximales s'échelonnent de 25°C à La Rochelle et Chassiron, à 27°C à Gond-Pontouvre, Soyaux et Angoulême. Les valeurs les plus élevées sont attendues à La Couronne et Cognac, où le mercure atteindra 28°C.
 
-Un contraste thermique notable est observé entre le littoral et l'intérieur des terres, où les valeurs sont nettement supérieures. Le vent souffle modérément, avec des vitesses de l'ordre de 20 à 25 km/h. Des rafales de vent atteignant les 40 km/h sont cependant à prévoir sur La Rochelle et Chassiron, ainsi que sur Cognac, nécessitant une vigilance accrue. Aucune précipitation n'est attendue sur la période.
+Le vent souffle de manière modérée. Sur le littoral, une brise marine est observée, avec des vitesses de 20 km/h à La Rochelle et de 25 km/h à Chassiron. Dans l'intérieur des terres, le vent reste plus faible, généralement autour de 10 à 15 km/h, sans rafales significatives. Aucune précipitation n'est à signaler pour cette période de l'après-midi. L'atmosphère demeure sèche et agréable.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (vendredi 24 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (lundi 27 juillet 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
-☀️ Soleil omniprésent et chaleur estivale marquée sur l'ensemble des plages charentaises ce vendredi.
-🌡️ Température sur le littoral : 35 à 38°C
+☀️ Soleil omniprésent et chaleur estivale marquée sur l'ensemble des plages charentaises ce lundi.
+🌡️ Température sur le littoral : 24 à 27°C
 🌊 Température de l’eau : 21 à 23°C
 
 🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce vendredi, chaleur intense tempérée par une brise thermique l'après-midi.
-🌡️ Température maximale : 37 à 40°C
+☀️ Ensoleillement généreux ce lundi, chaleur intense tempérée par une brise thermique l'après-midi.
+🌡️ Température maximale : 26 à 29°C
 🌊 Température de l’eau : 22 à 24°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (vendredi 24 juillet 2026)
+🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (lundi 27 juillet 2026)
 
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
-☀️ Situation synoptique : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
+☀️ Situation synoptique : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
 🌬️ Vent : Régime de brises thermiques, d'abord d'Est-Nord-Est le matin (10-15 km/h) puis basculant au Nord-Ouest l'après-midi (20-30 km/h).
 🌊 État de la mer : Mer belle à peu agitée dans les pertuis, peu agitée au large. Bonne visibilité sur l'ensemble du bassin charentais.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Forte Chaleur : Épisode de chaleur marqué sur la région. Pensez à bien vous hydrater.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce lundi. Sécheresse de surface qui s'accentue.
 
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+Vent : Généralement faible à modéré ce lundi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
-
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce lundi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce lundi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+    Pyrénées : Soleil dominant en matinée de ce lundi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mardi.
 
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce lundi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce lundi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce lundi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 24 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 27 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 26 juillet : Le ciel reste largement ensoleillé sur l'ensemble de la région, mais une dégradation se profile par l'ouest en fin de journée. Le vent se renforce nettement, avec des rafales atteignant 50 km/h sur le littoral (La Rochelle, Chassiron) et 55 km/h dans l'intérieur (Montbron). Les températures maximales chutent : seulement 22°C sur les côtes (La Rochelle, Chassiron) contre 27°C dans les terres (Angoulême, Cognac). Quelques précipitations légères sont possibles sur la côte (0,9 mm à La Rochelle, 1,6 mm à Chassiron), mais l'essentiel du département reste sec. Le temps devient plus frais et venteux, annonçant un changement de régime.
+▶ mercredi 29 juillet : La journée de mercredi marque un pic de chaleur intense. Le soleil est écrasant dès le matin. Les températures s'envolent, atteignant des valeurs très chauds. Dans l'intérieur des terres, le mercure grimpe jusqu'à 40°C à Gond-Pontouvre, Angoulême ou Montbron. Sur le littoral, la chaleur est un peu moins rude mais reste très élevée, avec 36°C à La Rochelle et 35°C à Chassiron. Le vent d'est-sud-est se renforce, avec des rafales atteignant 40 km/h dans les terres, accentuant la sensation de fournaise. Aucune précipitation n'est à prévoir. Ce pic de chaleur nécessite une vigilance accrue.
 
-▶ lundi 27 juillet : Le soleil domine à nouveau, mais le vent reste soutenu sur le littoral avec des rafales jusqu'à 45 km/h à La Rochelle et 40 km/h à Chassiron. À l'intérieur, le vent faiblit sensiblement (10 à 15 km/h). Les températures maximales sont en hausse : 24°C à La Rochelle, 23°C à Chassiron, mais 30°C dans les terres (Gond-Pontouvre, La Couronne, Angoulême). Les minimales sont de 18-19°C. Aucune précipitation n'est attendue. La journée est plus stable, avec un net réchauffement à l'intérieur des terres tandis que la côte conserve une brise modérée.
+▶ jeudi 30 juillet : La situation évolue radicalement avec l'arrivée d'une perturbation. Le ciel se voile et devient très nuageux. Les températures chutent de manière spectaculaire par rapport à la veille. Sur le littoral, le mercure plafonne à seulement 24°C à La Rochelle et 23°C à Chassiron, sous un vent d'ouest soutenu atteignant 45 km/h en rafales. Dans l'intérieur, les maximales ne dépassent pas 31°C à Gond-Pontouvre. Des précipitations faibles mais généralisées sont attendues, avec jusqu'à 1.5 mm de pluie à Montbron et Soyaux. Le contraste thermique est saisissant.
 
-▶ mardi 28 juillet : Le temps estival reprend de la vigueur avec un ensoleillement total. Le vent faiblit encore : 15 km/h sur la côte, 10 km/h à l'intérieur. Les températures maximales grimpent fortement : 30°C à La Rochelle, 29°C à Chassiron, et jusqu'à 35°C dans les terres (Angoulême, Cognac, La Couronne). Les minimales restent douces (17-20°C). Aucun vent fort n'est à signaler. La chaleur s'intensifie, avec des écarts marqués entre le bord de mer rafraîchi par la brise et les zones continentales où le thermomètre flirte avec les 35°C.
+▶ vendredi 31 juillet : Le temps reste instable et plus frais. Le ciel est très nuageux avec des averses fréquentes. Les cumuls de pluie deviennent plus significatifs, notamment dans l'intérieur des terres. On attend jusqu'à 6.6 mm de précipitations à Gond-Pontouvre et Montbron. Les températures maximales sont en baisse, oscillant entre 25°C et 28°C. Le vent faiblit, soufflant autour de 10 à 15 km/h. Le littoral reste un peu plus épargné par les pluies, avec seulement 0.3 mm à Chassiron. La fraîcheur est de retour après l'épisode très chaud de mercredi.
 
 
 --------------------------------------------------------------------------------
@@ -240,74 +240,74 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**CIEL NUAGEUX LE MATIN, SOLEIL TRIOMPHANT L'APRÈS-MIDI**  
-Ce vendredi 24 juillet, la vigilance météorologique reste verte ou jaune sur l’ensemble du territoire, avec une chaleur de saison plus marquée dans le sud. La matinée se présente sous un ciel nuageux généralisé, le soleil étant partiellement masqué sur toutes les communes de la région. Aucune précipitation n’est enregistrée. Les températures minimales oscillent entre 14°C à Groffliers et 17°C à Leffrinckoucke. Le vent est modéré sur le littoral (15 km/h) et plus léger à l’intérieur (10 km/h). L’après-midi, le temps devient franchement estival : le soleil domine largement, avec seulement de rares nuages discrets. Les maximales atteignent 23°C à Lefaux et 26°C à Offekerque et Marck, tandis que les brises côtières (15 km/h) rafraîchissent agréablement le littoral.
+**LUNDI SOUS LE SIGNE DU SOLEIL ET DU VENT SUR LE LITTORAL**  
+Ce lundi, la vigilance nationale est globalement verte ou jaune, avec une chaleur de saison sur la moitié nord et plus marquée au sud. Sur la région, le temps est largement ensoleillé dès le matin, malgré quelques voiles nuageux d’altitude sans conséquence. Les températures minimales oscillent entre 15°C dans l’intérieur des terres (Remilly-Wirquin) et 18°C sur le littoral (Leffrinckoucke). L’après-midi, le soleil s’impose partout, avec des maximales de 23°C à Leffrinckoucke et Marck, jusqu’à 25°C à Robecq. Le vent d’ouest souffle fort sur la côte : rafales de 50 km/h à Leffrinckoucke, 40 à 45 km/h à Gravelines, Offekerque et Marck. À l’intérieur, le vent est modéré, entre 15 et 20 km/h. Aucune précipitation n’est attendue.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps se caractérise par un ciel nuageux sur l'ensemble de la région, avec un soleil partiellement masqué. Aucune précipitation n'est à signaler. Les températures minimales s'établissent à 17°C à Leffrinckoucke, 15°C à Gravelines, Marck et Offekerque, 14°C à Groffliers et Remilly-Wirquin.
+Ce lundi matin, le temps s'annonce globalement ensoleillé sur l'ensemble de la région, avec des températures douces pour cette fin de juillet. Quelques voiles nuageux d'altitude sont attendus par endroits, sans pour autant altérer l'impression de beau temps.
 
-Le vent souffle de manière modérée sur le littoral, atteignant 15 km/h à Leffrinckoucke, Gravelines, Offekerque, Marck et Lefaux. À l'intérieur des terres, le vent est plus léger, avec des valeurs autour de 10 km/h, notamment à Remilly-Wirquin, Racquinghem, Robecq et Cauchy-à-la-Tour.
+Les températures minimales s'établissent autour de 18°C à Leffrinckoucke et Gravelines, 17°C à Offekerque et Marck, 16°C à Lefaux, et 15°C à Remilly-Wirquin, Racquinghem, Robecq et Cauchy-à-la-Tour. Les maximales atteindront 23°C à Leffrinckoucke et Marck, 24°C à Gravelines, Offekerque et Racquinghem, et 25°C à Robecq. On observe un contraste notable entre le littoral, où les températures sont légèrement plus fraîches, et l'intérieur des terres, plus chaud.
 
-Les températures maximales pour cette matinée varient entre 23°C à Lefaux et Groffliers, et 26°C à Offekerque et Marck. Le contraste est notable entre le littoral, où les températures sont légèrement plus fraîches, et l'intérieur des terres, qui bénéficie de valeurs un peu plus élevées.
+Le vent se montre présent sur le littoral, soufflant à 25 km/h avec des rafales atteignant 50 km/h à Leffrinckoucke, 40 km/h à Gravelines, Offekerque et Marck, et 45 km/h à Groffliers. Une vigilance est de mise face à ces vents forts. Dans les terres, le vent est plus modéré, autour de 15 à 20 km/h.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble de la région. Le soleil dominera largement le ciel, ne laissant apparaître que de rares et discrets passages nuageux, sans conséquence sur l'éclat général de la journée.
+Ce lundi après-midi, un temps ensoleillé domine sur l'ensemble de la région, caractérisé par un ciel dégagé et un soleil généreux. Les températures maximales affichent 23°C à Leffrinckoucke et Marck, 24°C à Gravelines, Offekerque et Cauchy-à-la-Tour, et 25°C à Robecq.
 
-Les températures maximales afficheront une nette différence entre le littoral et l'intérieur des terres. Sur le littoral, Leffrinckoucke et Lefaux connaîtront des maximales de 24°C et 23°C respectivement. Les brises côtières, soufflant autour de 15 km/h, apporteront une sensation de fraîcheur bienvenue. Plus à l'intérieur, les valeurs grimperont davantage. Marck et Offekerque atteindront 26°C, tandis que Racquinghem, Robecq et Cauchy-à-la-Tour bénéficieront de 25°C. Le vent restera modéré sur l'ensemble du territoire, avec des vitesses n'excédant pas 15 km/h, et même 10 km/h dans les terres. Aucune précipitation n'est à prévoir.
+Le vent se manifeste avec une intensité notable, particulièrement sur le littoral. Des rafales atteignant 50 km/h sont prévues à Leffrinckoucke, tandis que Gravelines, Offekerque, Marck, Groffliers et Cauchy-à-la-Tour connaîtront des rafales de 40 à 45 km/h. Ce vent d'ouest, soufflant entre 20 et 25 km/h en moyenne, accentue le contraste thermique entre le littoral et l'intérieur des terres, où les températures sont légèrement plus élevées et le vent moins soutenu. Aucune précipitation n'est à signaler pour cette période de l'après-midi.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce vendredi.
-🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
+☀️ Belle journée estivale et lumineuse ce lundi.
+🌡️ Température sous abri : 21°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 22 à 23°C
+☀️ Soleil largement dominant ce lundi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 20 à 21°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce lundi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce lundi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce lundi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce lundi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce lundi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+    Pyrénées : Soleil dominant en matinée de ce lundi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mardi.
 
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce lundi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce lundi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce lundi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 24 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 27 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 26 juillet : Le ciel se voile progressivement avec l’arrivée d’un front perturbé. Les nuages deviennent plus épais en cours de journée, et des averses éparses sont attendues, notamment sur Leffrinckoucke (2,2 mm) et Racquinghem (3 mm). Le vent se renforce nettement, soufflant de 25 à 30 km/h, avec des rafales atteignant 50 à 55 km/h sur l’ensemble du territoire, ce qui nécessite une attention particulière. Les températures maximales restent modestes, comprises entre 21°C à Lefaux et Groffliers et 24°C à Robecq. Les minimales nocturnes varient de 17°C à 19°C. Une journée agitée, à surveiller.
+▶ mercredi 29 juillet : La journée s’annonce radieuse avec un ciel parfaitement dégagé sur l’ensemble de la région. Le soleil domine sans partage, offrant une luminosité généreuse. Les températures grimpent fortement, particulièrement dans l’intérieur des terres : on attend 32°C à Leffrinckoucke et Cauchy-à-la-Tour, 31°C à Offekerque, 30°C à Marck et Lefaux, et jusqu’à 34°C à Robecq. Le littoral reste plus frais avec 28°C à Gravelines. Le vent est faible, de 10 à 15 km/h, sans rafales notables. Aucune pluie n’est prévue.
 
-▶ lundi 27 juillet : Le temps s’améliore progressivement, mais quelques nuages résiduels persistent en matinée, surtout sur le littoral. Les averses deviennent rares et faibles (moins de 2 mm localement). Le vent reste modéré, de 15 à 25 km/h, avec des rafales pouvant encore atteindre 40 km/h en bord de mer, notamment à Gravelines et Leffrinckoucke. Les maximales grimpent légèrement : de 21°C à Leffrinckoucke à 24°C à Offekerque, Remilly-Wirquin, Robecq et Cauchy-à-la-Tour. Les minimales sont stables, entre 16°C et 18°C. Une journée de transition, plus calme mais encore ventée par moments.
+▶ jeudi 30 juillet : Le soleil brille encore, mais le vent se renforce nettement sur le littoral. Le matin, le ciel est clair ; l’après-midi, quelques nuages d’altitude pourraient apparaître, sans menacer le beau temps. Les températures maximales chutent par rapport à la veille sur la côte : 24°C à Gravelines et Marck, 23°C à Groffliers, 22°C à Lefaux. À l’intérieur, il fait plus chaud : 28°C à Racquinghem, 29°C à Robecq, 27°C à Cauchy-à-la-Tour. Le vent d’ouest souffle à 25 km/h, avec des rafales de 50 km/h à Gravelines, 45 km/h à Offekerque et Marck, 40 km/h à Lefaux et Remilly-Wirquin. Aucune précipitation.
 
-▶ mardi 28 juillet : Le soleil revient en force sur l’ensemble de la région. Le ciel est dégagé du matin au soir, sans aucune précipitation. Le vent faiblit considérablement, ne dépassant pas 15 km/h, et les rafales sont absentes. Les températures connaissent une hausse sensible : les maximales atteignent 26°C à Leffrinckoucke et Offekerque, 27°C à Gravelines, et même 29°C à Lefaux, Groffliers et Robecq. Les minimales nocturnes sont plus fraîches, de 13°C à 16°C. Une belle journée estivale, idéale pour les activités extérieures.
+▶ vendredi 31 juillet : Le temps reste sec et ensoleillé, mais des passages nuageux pourraient s’inviter en fin de journée. Les températures baissent encore sur le littoral : maximales de 21°C à Marck, Lefaux et Groffliers, 23°C à Leffrinckoucke et Gravelines. Dans l’intérieur, il fait plus doux : 25°C à Racquinghem, 26°C à Cauchy-à-la-Tour, 28°C à Robecq. Le vent est modéré, de 15 à 20 km/h, avec des rafales de 40 à 45 km/h à Leffrinckoucke, Racquinghem, Robecq et Cauchy-à-la-Tour. De très faibles précipitations sont possibles localement : 1,2 mm à Racquinghem, 0,3 mm à Robecq et Cauchy-à-la-Tour.
 
 
 --------------------------------------------------------------------------------
@@ -316,74 +316,71 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**SOLEIL ET CHALEUR DE SAISON SUR LES HAUTS-DE-FRANCE**  
-Ce vendredi 24 juillet, la région bénéficie d’un temps agréable sous un ciel variable. Le matin, les nuages dominent, laissant entrevoir un soleil discret. Les températures minimales sont douces, oscillant entre 10°C à Saint-Hilaire-sur-Helpe et 18°C sur le littoral dunkerquois. L’après-midi, le ciel se dégage largement, offrant un ensoleillement généreux sur l’ensemble du territoire. Les maximales atteignent 24°C à Dunkerque et jusqu’à 27°C à Lille. Le vent reste faible à modéré, sans rafales notables, et aucune précipitation n’est signalée. La vigilance météorologique est verte ou jaune sur la majeure partie du pays, avec une chaleur de saison plus marquée dans le sud.
+Ce lundi, la situation générale sur l'ensemble de la zone MONA FM est caractérisée par la installation d'un marais barométrique estival assurant un temps sec et lumineux. Cette dynamique aérologique gouverne une ambiance douce en matinée, avant une hausse progressive des températures jusqu'à des valeurs agréables l'après-midi. En surface, le régime de vent reste modéré et participe à la distribution des masses d'air. L'amplitude thermique restera classique entre la fraîcheur relative de l'aube et les maximales de la journée.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps s'annonce globalement nuageux sur l'ensemble de la région, avec un soleil partiellement masqué par des nuages. Les températures minimales affichent une certaine douceur, notamment sur le littoral.
+Ce lundi matin, la région se réveille sous un ciel majoritairement nuageux, avec des éclaircies timides par endroits. Les températures minimales affichent 16°C à St-Hilaire-sur-Helpe, 18°C à Valenciennes et Roubaix, 17°C à Douai et Lille, et 18°C à Maubeuge.
 
-À Dunkerque, la température minimale s'établit à 18°C, tandis que Lille et Roubaix enregistrent 18°C et 17°C respectivement. Plus à l'intérieur des terres, Valenciennes et Douai affichent une minimale de 16°C. Plus au sud, St-Hilaire-sur-Helpe connaît une matinée plus fraîche avec 10°C.
+Le vent se montre généralement modéré sur l'ensemble du territoire. Il souffle à environ 15 km/h dans les terres, notamment à St-Hilaire-sur-Helpe, Valenciennes, Troisvilles, Douai, Lille, Roubaix, Steenvoorde et Watten. Sur le littoral, à Dunkerque, le vent est plus soutenu, atteignant 25 km/h avec des rafales pouvant atteindre 50 km/h. Une vigilance est donc de mise pour les activités en bord de mer.
 
-Le vent se montre léger à modéré sur l'ensemble du territoire. Une brise de 5 km/h est attendue à St-Hilaire-sur-Helpe, Valenciennes et Maubeuge. Le vent souffle à 10 km/h à Troisvilles, Douai et Watten. Sur le littoral et ses environs, comme à Lille, Roubaix, Steenvoorde et Dunkerque, le vent atteint 15 km/h, sans rafales notables. Aucune précipitation n'est à signaler pour cette matinée.
+Malgré la couverture nuageuse, aucune précipitation n'est attendue pour cette première partie de journée. Les températures maximales pour la matinée varieront de 23°C à St-Hilaire-sur-Helpe à 26°C à Douai, offrant une certaine douceur malgré l'absence d'un franc soleil.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel des Hauts-de-France se caractérise par un ensoleillement généreux sur l'ensemble de la région. Aucune couverture nuageuse significative n'est à signaler, garantissant un temps clair et lumineux.
+Ce lundi après-midi, le soleil dominera largement le ciel de la région, offrant un temps estival sur l'ensemble des départements. Les températures maximales atteindront 25°C à Valenciennes et Lille, 26°C à Douai, et 24°C à Maubeuge et Roubaix. Les valeurs les plus fraîches seront observées à St-Hilaire-sur-Helpe avec 23°C.
 
-Les températures maximales affichent une nette différence entre le littoral et l'intérieur des terres. À Dunkerque, le mercure atteint 24°C, tandis que Lille enregistre 27°C. Plus à l'intérieur, Valenciennes et Douai connaissent des maximales de 26°C. Maubeuge et Roubaix affichent 25°C et 26°C respectivement.
-
-Le vent se maintient faible à modéré sur l'ensemble de la région. Des brises légères soufflent à 5 km/h sur St-Hilaire-sur-Helpe, Valenciennes et Maubeuge. Les secteurs de Troisvilles et Watten enregistrent un vent de 10 km/h. Sur Lille, Roubaix et Steenvoorde, le vent souffle à 15 km/h. Aucune rafale de vent forte n'est prévue pour cet après-midi.
+Le vent soufflera modérément sur l'intérieur des terres, avec des vitesses avoisinant les 15 à 20 km/h. Cependant, une vigilance particulière est requise sur le littoral, notamment à Dunkerque, où le vent de nord-ouest atteindra 25 km/h avec des rafales pouvant atteindre 50 km/h. Aucune précipitation n'est à signaler pour cette période de l'après-midi. La journée se maintiendra sous un ciel dégagé et lumineux.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 🌴 Dunkerque / Malo-les-Bains
-☀️ Belle journée estivale et lumineuse ce vendredi.
-🌡️ Température sous abri : 24°C (ambiance plus respirable qu’à l’intérieur)
+☀️ Belle journée estivale et lumineuse ce lundi.
+🌡️ Température sous abri : 23°C (ambiance plus respirable qu’à l’intérieur)
 🌊 Température de l’eau : 17 à 18°C
 
 🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce vendredi, bercé par de légères brises thermiques de Nord-Est.
-🌡️ Température maximale : 23 à 24°C
+☀️ Soleil largement dominant ce lundi, bercé par de légères brises thermiques de Nord-Est.
+🌡️ Température maximale : 22 à 23°C
 🌊 Température de l’eau : 17 à 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 24 juillet 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (lundi 27 juillet 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce vendredi, faiblissant en soirée.
+🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce lundi, faiblissant en soirée.
 🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.
 ⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce vendredi. Sécheresse de surface qui s'accentue.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce lundi. Sécheresse de surface qui s'accentue.
 
-Vent : Généralement faible à modéré ce vendredi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+Vent : Généralement faible à modéré ce lundi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
 
-Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce vendredi, avec une évolution possible sur les reliefs ce week-end.
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce lundi, avec une évolution possible sur les reliefs ce week-end.
 
 Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
 
 Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce lundi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
+    Pyrénées : Soleil dominant en matinée de ce lundi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mardi.
 
-    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce lundi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce lundi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce lundi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 24 juillet 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du lundi 27 juillet 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 26 juillet : Une dégradation nette est attendue pour ce dimanche, avec un ciel très nuageux et des pluies modérées sur l’ensemble des Hauts-de-France. Les cumuls de précipitations varient de 2,2 mm à Dunkerque à 7,6 mm à Valenciennes. Le vent se renforce, soufflant entre 20 et 30 km/h, avec des rafales atteignant 45 à 55 km/h, notamment sur Douai (55 km/h). Les températures maximales plafonnent entre 22°C à Saint-Hilaire-sur-Helpe et 24°C à Valenciennes, Lille ou Douai. Les minimales restent douces, de 14°C à Saint-Hilaire à 19°C à Dunkerque. Une journée à suivre avec prudence en raison du vent fort et des averses.
+📉 Tendance – 3 jours suivants (mercredi 29 juillet au vendredi 31 juillet)
 
-▶ lundi 27 juillet : Le temps s’améliore progressivement avec un ciel partagé entre éclaircies et passages nuageux. Les précipitations deviennent faibles, ne dépassant pas 1,6 mm à Dunkerque et 1,5 mm à Saint-Hilaire-sur-Helpe ou Roubaix. Le vent faiblit nettement, soufflant à 15 km/h sur la plupart des secteurs, avec des rafales encore possibles jusqu’à 40 km/h sur le littoral dunkerquois. Les températures maximales remontent légèrement, atteignant 24°C à Lille, 25°C à Valenciennes ou Douai, mais restant plus fraîches sur le littoral (21°C à Dunkerque). Les minimales sont stables entre 16 et 17°C. Une journée de transition, encore humide par endroits.
-
-▶ mardi 28 juillet : Le retour d’un temps sec et ensoleillé est confirmé pour ce mardi. Le ciel est dégagé sur l’ensemble de la région, sans aucune précipitation attendue. Le vent devient très faible, de 10 à 15 km/h, sans rafales significatives. Les températures connaissent une hausse marquée : les maximales atteignent 27°C à Saint-Hilaire-sur-Helpe, 28°C à Lille, Valenciennes ou Douai, et 26°C à Dunkerque. Les minimales sont plus fraîches, descendant jusqu’à 13°C à Saint-Hilaire et 14°C dans l’intérieur. Une belle journée estivale en perspective, après un week-end perturbé.
+- mercredi 29 juillet : Poursuite de la chaleur sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 34°C en journée.
+- jeudi 30 juillet : Poursuite de la chaleur sous un grand soleil dominant. Attention aux rafales de vent atteignant 45 km/h. Minimales vers 20°C, maximales atteignant 32°C en journée.
+- vendredi 31 juillet : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Attention aux rafales de vent atteignant 50 km/h. Minimales vers 18°C, maximales atteignant 29°C en journée.
 
