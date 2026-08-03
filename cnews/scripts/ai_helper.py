@@ -794,11 +794,19 @@ Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visue
 CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
 - Met en avant le phénomène météorologique le plus marquant, avec concision, clarté et grand dynamisme.
 
+CONSIGNE DE STRICTE ÉTANCHÉITÉ CHRONOLOGIQUE ET FIDÉLITÉ DES TENDANCES :
+- 🛑 ISOLATION STRICTE DES TENDANCES (J+3 à J+5) : La balise <forecastRaw> concerne EXCLUSIVEMENT et STRICTEMENT les 3 jours ultérieurs ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
+- Interdiction formelle de ré-annoncer ou mélanger les prévisions du jour ({date_j1}) ou du lendemain ({date_j2}) dans la tendance !
+- Chaque jour de la tendance doit comporter son intitulé de date exact (ex: "- {date_j3} : ..."), son phénomène marquant propre et ses températures minimales/maximales réelles.
+
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
 Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
 
 DONNÉES OFFICIELLES VIGILANCE & BULLETIN NATIONAL MÉTÉO-FRANCE :
 {vig_context}
+
+DONNÉES BRUTES TENDANCES PROCHAINS JOURS :
+{local_fallback.get('forecastRaw', '')}
 
 PRÉVISIONS DE LA JOURNÉE PAR L'IA :
 Matinée Jour 1 : {summaryMorning}
@@ -809,7 +817,7 @@ BILAN DE LA RECONNAISSANCE DES CARTES :
 
 Instructions :
 1. Remplis la balise <todaySummary> (100-120 mots, direct et percutant) en commençant obligatoirement par un titre court, percutant et accrocheur en MAJUSCULES résumant l'élément marquant (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1}. Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
-2. Remplis la balise <forecastRaw> avec la tendance détaillée à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
+2. Remplis la balise <forecastRaw> avec la tendance détaillée et étanche à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}) sans répéter le temps du jour.
 3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la journée, suivi d'une courte phrase de lancement parlée, chaleureuse et fluide.
 4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la tendance, suivi d'une courte phrase de lancement parlée.
 5. Remplis la balise <recordsRaw> avec la liste explicite des PHÉNOMÈNES MÉTÉOROLOGIQUES MAJEURS À RETENIR pour le {date_j1} (ex: ⚠️ VIGILANCE CANICULE / ORAGES / RAFALES DE VENT / RISQUE DE FEUX DE FORÊT). Ce texte doit comporter des points clés percutants et être totalement DIFFÉRENT de todaySummary.
