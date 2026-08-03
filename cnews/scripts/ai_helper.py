@@ -21,8 +21,8 @@ def normalize_city(name):
     s = str(name).strip().lower()
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
-OPENROUTER_MODEL = "openai/gpt-5.6-luna"
-OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "openai/gpt-5.6-luna")
+OPENROUTER_MODEL = "deepseek/deepseek-v4-flash-0731"
+OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "deepseek/deepseek-v4-flash-0731")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -654,7 +654,7 @@ Instructions :
 2. Remplis la balise <texte_matin> avec ton commentaire parlé de matinée (100-130 mots MAXIMUM pour un rythme radio ultra-dynamique). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
 """
         try:
-            print(f"[{client_name}] Calling GPT-5.6 Luna (openai/gpt-5.6-luna) for J1 Morning map...")
+            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J1 Morning map...")
             res_m1 = call_openrouter(api_key, prompt_m1, images=[img_m1])
             recon_m1 = extract_xml_tag(res_m1, "reconnaissance_matin")
             summaryMorning = extract_xml_tag(res_m1, "texte_matin")
@@ -689,7 +689,7 @@ Instructions :
 2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (100-130 mots MAXIMUM pour un rythme radio ultra-dynamique). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
 """
         try:
-            print(f"[{client_name}] Calling GPT-5.6 Luna (openai/gpt-5.6-luna) for J1 Afternoon map...")
+            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J1 Afternoon map...")
             res_a1 = call_openrouter(api_key, prompt_a1, images=[img_a1])
             recon_a1 = extract_xml_tag(res_a1, "reconnaissance_apresmidi")
             summaryAfternoon = extract_xml_tag(res_a1, "texte_apresmidi")
@@ -722,7 +722,7 @@ Instructions :
 2. Remplis la balise <texte_matin2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling GPT-5.6 Luna (openai/gpt-5.6-luna) for J2 Morning map...")
+            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J2 Morning map...")
             res_m2 = call_openrouter(api_key, prompt_m2, images=[img_m2])
             recon_m2 = extract_xml_tag(res_m2, "reconnaissance_matin2")
             summaryMorning2 = extract_xml_tag(res_m2, "texte_matin2")
@@ -755,7 +755,7 @@ Instructions :
 2. Remplis la balise <texte_apresmidi2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling GPT-5.6 Luna (openai/gpt-5.6-luna) for J2 Afternoon map...")
+            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J2 Afternoon map...")
             res_a2 = call_openrouter(api_key, prompt_a2, images=[img_a2])
             recon_a2 = extract_xml_tag(res_a2, "reconnaissance_apresmidi2")
             summaryAfternoon2 = extract_xml_tag(res_a2, "texte_apresmidi2")
@@ -794,21 +794,23 @@ Instructions :
 2. Remplis la balise <forecastRaw> avec la tendance détaillée à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
 3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la journée, suivi d'une courte phrase de lancement parlée, chaleureuse et fluide.
 4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la tendance, suivi d'une courte phrase de lancement parlée.
+5. Remplis la balise <recordsRaw> avec la liste explicite des PHÉNOMÈNES MÉTÉOROLOGIQUES MAJEURS À RETENIR pour le {date_j1} (ex: ⚠️ VIGILANCE CANICULE / ORAGES / RAFALES DE VENT / RISQUE DE FEUX DE FORÊT). Ce texte doit comporter des points clés percutants et être totalement DIFFÉRENT de todaySummary.
 """
     try:
-        print(f"[{client_name}] Calling GPT-5.6 Luna (openai/gpt-5.6-luna) for final synthesis...")
-        res_syn = call_openrouter(api_key, prompt_syn)
+        print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for final synthesis...")
         res_syn = call_openrouter(api_key, prompt_syn)
         todaySummary = extract_xml_tag(res_syn, "todaySummary")
         forecastRaw = extract_xml_tag(res_syn, "forecastRaw")
         summaryLancement = extract_xml_tag(res_syn, "summaryLancement")
         forecastLancement = extract_xml_tag(res_syn, "forecastLancement")
+        recordsRaw = extract_xml_tag(res_syn, "recordsRaw")
     except Exception as e:
         print(f"Error calling AI for Synthesis: {e}")
         todaySummary = local_fallback["todaySummary"]
         forecastRaw = local_fallback["forecastRaw"]
         summaryLancement = local_fallback["summaryLancement"]
         forecastLancement = local_fallback["forecastLancement"]
+        recordsRaw = local_fallback["recordsRaw"]
 
     result = {
         "todaySummary": todaySummary,
@@ -819,6 +821,7 @@ Instructions :
         "summaryAfternoon2": summaryAfternoon2,
         "forecastRaw": forecastRaw,
         "forecastLancement": forecastLancement,
+        "recordsRaw": recordsRaw,
     }
     result["forecastTextRaw"] = result["forecastRaw"]
 
@@ -833,8 +836,8 @@ Instructions :
             result[k] = local_fallback[k]
 
     # Attach dynamic phenomena, mountain, beach, and marine texts
-    for extra_key in ["recordsRaw", "mountain", "mountainTitle", "beach", "marine"]:
-        if extra_key in local_fallback:
+    for extra_key in ["mountain", "mountainTitle", "beach", "marine"]:
+        if extra_key in local_fallback and not result.get(extra_key):
             result[extra_key] = local_fallback[extra_key]
 
     # Vérification systématique de l'exactitude et de la cohérence de la météo marine avant publication
