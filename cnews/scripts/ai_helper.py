@@ -644,6 +644,11 @@ CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
 - Intègre impérativement des indications concrètes sur le VENT (brise marine, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / TERRES s'il y a lieu.
 - ⚠️ Si tu vois un éclair (orage ou grêle), mentionne-le obligatoirement et d'emblée.
 
+CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
+- 👁️ Analyse la CARTE IMAGE transmise ci-jointe pour ce créneau MATIN avec la plus haute précision visuelle.
+- 🛑 ISOLATION HERMÉTIQUE DU CRÉNEAU : Décris UNIQUEMENT et STRICTEMENT les pictogrammes du MATIN sur CETTE carte. Ne fais aucune supposition basée sur l'après-midi.
+- 🌡️ DISTINCTION DES TEMPÉRATURES : Pour ce bulletin du MATIN, cite exclusivement les températures MINIMALES réelles.
+
 {picto_guide}
 
 Données réelles pour ce matin :
@@ -679,6 +684,11 @@ CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
 - Intègre obligatoirement des indications précises sur le VENT et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
 - ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite d'emblée.
 
+CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
+- 👁️ Analyse la CARTE IMAGE transmise ci-jointe pour ce créneau APRÈS-MIDI avec la plus haute précision visuelle.
+- 🛑 ISOLATION HERMÉTIQUE DU CRÉNEAU : Décris UNIQUEMENT et STRICTEMENT les pictogrammes de l'APRÈS-MIDI sur CETTE carte. Ne reprends sous AUCUN prétexte les pluies ou orages du matin si la carte d'après-midi montre un retour du soleil !
+- 🌡️ DISTINCTION DES TEMPÉRATURES : Pour ce bulletin de l'APRÈS-MIDI, cite exclusivement les températures MAXIMALES réelles.
+
 {picto_guide}
 
 Données réelles pour cet après-midi :
@@ -712,6 +722,10 @@ CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
 - Sans mots interdits ('carte', 'visuel', 'image').
 - 100-120 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
 
+CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
+- 👁️ Décris STRICTEMENT la carte du MATIN J2 ci-jointe. Ne mélange aucun phénomène d'un autre créneau.
+- 🌡️ Cite uniquement les températures MINIMALES réelles.
+
 {picto_guide}
 
 Données réelles pour ce matin-là :
@@ -744,6 +758,10 @@ CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
 - Approche directe et synthétique : met en avant le phénomène marquant de l'après-midi, va droit à l'essentiel.
 - Sans mots interdits ('carte', 'visuel', 'image').
 - 100-120 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
+
+CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
+- 👁️ Décris STRICTEMENT la carte de l'APRÈS-MIDI J2 ci-jointe. Ne reprends aucun phénomène du matin si l'après-midi est ensoleillé.
+- 🌡️ Cite uniquement les températures MAXIMALES réelles.
 
 {picto_guide}
 
