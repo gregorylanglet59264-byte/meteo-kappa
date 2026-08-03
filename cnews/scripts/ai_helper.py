@@ -385,63 +385,100 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
     coastal_t = int(round(min(s["tmax"] for s in j1_struct))) if j1_struct else 26
     water_t = "19 à 20°C" if coastal_t >= 25 else "17 à 18°C"
 
-    if "NORD" in client_name.upper() or "6" in client_name.upper() or "MONA" in client_name.upper():
+    if any(k in client_name.upper() for k in ["NORD", "6", "MONA", "OPALE"]):
         beach_text = (
             f"🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD ({date_j1})\n\n"
-            f"🌴 Dunkerque / Malo-les-Bains\n"
-            f"☀️ Belle journée estivale et lumineuse ce {wd1}.\n"
-            f"🌡️ Température sous abri : {coastal_t}°C (ambiance plus respirable qu’à l’intérieur)\n"
-            f"🌊 Température de l’eau : {water_t}\n\n"
+            f"🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n"
+            f"☀️ Ensoleillement généreux ce {wd1}, ambiance très agréable pour les baigneurs.\n"
+            f"🌡️ Température de l'air sur le sable : {coastal_t}°C • 🧴 Indice UV : 6 (Modéré à Fort)\n"
+            f"🌊 Température de l'eau : {water_t} • 🏖️ Confort de baignade : Rafraîchissant et tonique\n\n"
             f"🌴 Calais / Boulogne-sur-Mer / Le Touquet\n"
-            f"☀️ Soleil largement dominant ce {wd1}, bercé par de légères brises thermiques de Nord-Est.\n"
-            f"🌡️ Température maximale : {coastal_t - 1} à {coastal_t}°C\n"
-            f"🌊 Température de l’eau : {water_t}"
+            f"☀️ Soleil largement dominant ce {wd1}, bercé par une légère brise thermique de Nord-Est.\n"
+            f"🌡️ Température de l'air : {coastal_t - 1} à {coastal_t}°C • 🌊 Température de l'eau : {water_t}"
         )
         marine_text = (
             f"🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD ({date_j1})\n\n"
             f"📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n"
             f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Vent : Régime de brise marine de Nord-Est modéré (15 à 25 km/h) en journée de ce {wd1}, faiblissant en soirée.\n"
-            f"🌊 État de la mer : Mer belle à peu agitée au large, idéale pour la navigation de plaisance et les activités nautiques.\n"
-            f"⚠️ Houle & Marées : Faible houle d'ouest (0.5 à 1.0 m), excellente visibilité horizontale après dissipation des brumes."
+            f"🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce {wd1}, faiblissant en soirée.\n"
+            f"🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.\n"
+            f"👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes."
         )
-    elif "ROCHELLE" in client_name.upper() or "NAQ" in client_name.upper():
+    elif any(k in client_name.upper() for k in ["ROCHELLE", "CHARENTE", "NAQ"]):
         beach_text = (
-            f"🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS ({date_j1})\n\n"
+            f"🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS & ÎLES ({date_j1})\n\n"
             f"🌴 La Rochelle / Île de Ré / Île d’Oléron\n"
-            f"☀️ Soleil omniprésent et chaleur estivale marquée sur l'ensemble des plages charentaises ce {wd1}.\n"
-            f"🌡️ Température sur le littoral : {coastal_t + 3} à {coastal_t + 6}°C\n"
-            f"🌊 Température de l’eau : 21 à 23°C\n\n"
-            f"🌴 Royan / Côte de Beauté / Rochefort\n"
-            f"☀️ Ensoleillement généreux ce {wd1}, chaleur intense tempérée par une brise thermique l'après-midi.\n"
-            f"🌡️ Température maximale : {coastal_t + 5} à {coastal_t + 8}°C\n"
-            f"🌊 Température de l’eau : 22 à 24°C"
+            f"☀️ Soleil omniprésent et forte chaleur estivale sur l'ensemble du cordon dunaire ce {wd1}.\n"
+            f"🌡️ Température de l'air sur la plage : {coastal_t + 3} à {coastal_t + 5}°C • 🧴 Indice UV : 8 (Très Fort)\n"
+            f"🌊 Température de l'eau : 21 à 23°C • 🏖️ Conditions de baignade : Idéales et très douces\n\n"
+            f"🌴 Royan / Côte de Beauté / Chatelaillon\n"
+            f"☀️ Grand soleil ce {wd1}, chaleur tempérée en bord de mer par la brise thermique l'après-midi.\n"
+            f"🌡️ Température de l'air : {coastal_t + 4} à {coastal_t + 6}°C • 🌊 Température de l'eau : 22 à 24°C"
         )
         marine_text = (
-            f"🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME ({date_j1})\n\n"
-            f"📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche\n\n"
+            f"🌊 MÉTÉO MARINE & BASSIN DE NAVIGATION – CHARENTE-MARITIME ({date_j1})\n\n"
+            f"📍 Zones : La Rochelle • Pertuis Breton & d'Antioche • Rade de Rochefort • Royan\n\n"
             f"☀️ Situation synoptique : {synop.capitalize()}.\n"
-            f"🌬️ Vent : Régime de brises thermiques, d'abord d'Est-Nord-Est le matin (10-15 km/h) puis basculant au Nord-Ouest l'après-midi (20-30 km/h).\n"
-            f"🌊 État de la mer : Mer belle à peu agitée dans les pertuis, peu agitée au large. Bonne visibilité sur l'ensemble du bassin charentais."
+            f"🌬️ Régime des Vents : Brises thermiques d'Est le matin (10 km/h) basculant Nord-Ouest l'après-midi (20 km/h).\n"
+            f"🌊 État de la Mer & Houle : Mer belle dans les pertuis, peu agitée au large du plateau de Rochebonne (creux 0.6m).\n"
+            f"👁️ Visibilité : Parfaite sur tout le plan d'eau."
         )
-    elif "NORMANDIE" in client_name.upper():
+    elif any(k in client_name.upper() for k in ["NORMANDIE", "SEINE", "HAVRE"]):
         beach_text = (
             f"🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE ({date_j1})\n\n"
             f"🌴 Le Havre / Deauville / Cabourg\n"
-            f"☀️ Temps très agréable et ensoleillé ce {wd1}, avec une ambiance estivale douce et lumineuse.\n"
-            f"🌡️ Température sur les plages : {coastal_t + 1} à {coastal_t + 4}°C\n"
-            f"🌊 Température de l’eau : 18 à 19°C\n\n"
+            f"☀️ Belle journée ensoleillée ce {wd1}, ambiance côtière estivale très agréable.\n"
+            f"🌡️ Température de l'air sur la plage : {coastal_t + 1} à {coastal_t + 3}°C • 🧴 Indice UV : 7 (Fort)\n"
+            f"🌊 Température de l'eau : 18 à 19°C • 🏖️ Baignade : Agréable et rafraîchissante\n\n"
             f"🌴 Dieppe / Fécamp / Cherbourg\n"
-            f"☀️ Belle luminosité dès le matin ce {wd1} après dissipation des grisailles côtières, brise de nord-est sensible.\n"
-            f"🌡️ Température maximale sous abri : {coastal_t} à {coastal_t + 2}°C\n"
-            f"🌊 Température de l’eau : 17 à 18°C"
+            f"☀️ Ciel bien dégagé ce {wd1} après dissipation des brumes matinales.\n"
+            f"🌡️ Température de l'air : {coastal_t} à {coastal_t + 2}°C • 🌊 Température de l'eau : 17 à 18°C"
         )
         marine_text = (
-            f"🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND ({date_j1})\n\n"
-            f"📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg\n\n"
+            f"🌊 MÉTÉO MARINE – MANCHE & BASSIN NORMAND ({date_j1})\n\n"
+            f"📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cotentin\n\n"
             f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Vent : Flux de Nord-Est modéré (20 à 30 km/h avec quelques pointes à 35 km/h sur les caps exposés) ce {wd1}.\n"
-            f"🌊 État de la mer : Mer peu agitée à localement agitée au large du Cotentin, belle en Baie de Seine. Visibilité bonne après dissipation des brumes."
+            f"🌬️ Régime des Vents au large : Flux de Nord-Est modéré (20 à 30 km/h avec pointes à 35 km/h sur les caps).\n"
+            f"🌊 État de la Mer & Houle : Mer belle en Baie de Seine, peu agitée au large du Cotentin (creux 0.8m).\n"
+            f"👁️ Visibilité : Bonne après dissipation des brumes côtières."
+        )
+    elif any(k in client_name.upper() for k in ["BRETAGNE", "BREIZH", "ARMOR"]):
+        beach_text = (
+            f"🏖️ MÉTÉO DES PLAGES – LITTORAL BRETON ({date_j1})\n\n"
+            f"🌴 Saint-Malo / Dinard / Côte d'Émeraude\n"
+            f"☀️ Belle luminosité estivale ce {wd1}, ciel largement dégagé sur les grèves.\n"
+            f"🌡️ Température de l'air : {coastal_t} à {coastal_t + 2}°C • 🧴 Indice UV : 7\n"
+            f"🌊 Température de l'eau : 17 à 19°C • 🏖️ Baignade : Tonique et vivifiante\n\n"
+            f"🌴 Carnac / Quiberon / Golfe du Morbihan\n"
+            f"☀️ Soleil généreux ce {wd1}, ambiance très douce sous brise marine.\n"
+            f"🌡️ Température de l'air : {coastal_t + 2} à {coastal_t + 4}°C • 🌊 Température de l'eau : 19 à 20°C"
+        )
+        marine_text = (
+            f"🌊 MÉTÉO MARINE – MANCHE OUEST & ATLANTIQUE BRETON ({date_j1})\n\n"
+            f"📍 Zones : Rade de Brest • Mer d'Iroise • Golfe du Morbihan • Baie de Saint-Malo\n\n"
+            f"☀️ Situation générale : {synop.capitalize()}.\n"
+            f"🌬️ Régime des Vents au large : Vent de Nord-Est 15 à 25 km/h, brises thermiques sensibles l'après-midi.\n"
+            f"🌊 État de la Mer & Houle : Mer peu agitée en Iroise, belle dans les baies abritées (creux 0.5m à 1.0m).\n"
+            f"👁️ Visibilité : Excellente."
+        )
+    elif any(k in client_name.upper() for k in ["PACA", "AZUR", "NICE", "MARSEILLE", "VAR"]):
+        beach_text = (
+            f"🏖️ MÉTÉO DES PLAGES – CÔTE D'AZUR & LITTORAL PROVENÇAL ({date_j1})\n\n"
+            f"🌴 Nice / Cannes / Saint-Tropez / Hyères\n"
+            f"☀️ Grand soleil méditerranéen et forte chaleur sur toutes les calanques et plages ce {wd1}.\n"
+            f"🌡️ Température de l'air : {coastal_t + 4} à {coastal_t + 7}°C • 🧴 Indice UV : 9 (Extrême)\n"
+            f"🌊 Température de l'eau : 24 à 26°C • 🏖️ Baignade : Très chaude et optimale\n\n"
+            f"🌴 Marseille / Cassis / La Ciotat\n"
+            f"☀️ Ensoleillement total ce {wd1}, brise de mer modérée en deuxième partie de journée.\n"
+            f"🌡️ Température de l'air : {coastal_t + 3} à {coastal_t + 6}°C • 🌊 Température de l'eau : 23 à 25°C"
+        )
+        marine_text = (
+            f"🌊 MÉTÉO MARINE – MÉDITERRANÉE & RADE DE MARSEILLE ({date_j1})\n\n"
+            f"📍 Zones : Rade de Marseille • Îles d'Hyères • Baie des Anges • Golfe de Saint-Tropez\n\n"
+            f"☀️ Situation générale : {synop.capitalize()}.\n"
+            f"🌬️ Régime des Vents au large : Régime de brises thermiques basculant Ouest-Sud-Ouest 15-25 km/h l'après-midi.\n"
+            f"🌊 État de la Mer & Houle : Mer belle à peu agitée, pas de houle significative (creux < 0.5m).\n"
+            f"👁️ Visibilité : Excellente sur tout le bassin méditerranéen."
         )
     else:
         beach_text = ""
