@@ -22,7 +22,7 @@ def normalize_city(name):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 OPENROUTER_MODEL = "deepseek/deepseek-v4-flash-0731"
-OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "deepseek/deepseek-v4-flash-0731")
+OPENROUTER_VISION_MODEL = "deepseek/deepseek-v4-flash-0731"
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -849,7 +849,7 @@ Instructions :
         if not v or len(v.strip()) < 20:
             print(f"Warning: Field '{k}' missing or short from AI, filling with local fallback.")
             result[k] = local_fallback[k]
-        elif k in ["summaryMorning", "todaySummary"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:150].lower():
+        elif k in ["summaryMorning", "todaySummary", "summaryAfternoon"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:150].lower():
             print(f"Warning: AI {k} had wrong start ('{v[:30]}...'), replacing with exact local fallback.")
             result[k] = local_fallback[k]
 
