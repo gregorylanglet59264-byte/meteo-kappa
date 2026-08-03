@@ -1,4 +1,4 @@
-name: Météo Kappa - 2. Analyse GPT-5.6 Luna
+name: Météo Kappa - 2. Analyse DeepSeek V4 Flash 0731
 
 on:
   workflow_run:
@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lancer l'analyse des cartes par GPT-5.6 Luna (Vision)
+      - name: Lancer l'analyse des cartes par DeepSeek V4 Flash 0731 (Vision)
         env:
           PYTHONUNBUFFERED: "1"
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
