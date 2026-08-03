@@ -10,85 +10,21 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🚨 CANICULE ÉTENDUE : 72 DÉPARTEMENTS EN VIGILANCE ORANGE !
-
-Ce mercredi, la France retient son souffle sous une chaleur écrasante et persistante. La matinée débute sous des grisailles et quelques brumes humides, notamment dans les vallées, mais le soleil prend rapidement le dessus. L'après-midi, le ciel se charge de nuages denses avec des averses régulières, particulièrement sur les terres, tandis que les côtes respirent grâce à une brise marine rafraîchissante. Les températures maximales oscillent entre 22°C à Brest et 29°C à Paris, avec un ressenti lourd et étouffant. La vigilance orange canicule concerne une grande partie du territoire : hydratez-vous et protégez les plus vulnérables.
+Ce mardi, la situation générale sur l'ensemble de la zone BULLETIN EUROPE1 à 6h est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies faibles à modérées. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Nantes, 17°C à Rouen, 20°C à Laon, 16°C à Caen, 20°C à Tours. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 20°C à Tours, 18°C à Brest, 19°C à Poitiers, 19°C à Lille, 16°C à Caen. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux denses accompagnés d'averses régulières et d'un renforcement des brises. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 25°C à Rouen, 28°C à Tours, 22°C à Brest, 28°C à Poitiers, 29°C à Paris. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+(Début du jingle météo Europe 1, puis fondu)
 
-🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
+**[Ton dynamique, chaleureux, mais avec une pointe d'urgence]**
 
-🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Ensoleillement généreux ce mardi, ambiance très agréable pour les baigneurs.
-🌡️ Température de l'air sur le sable : 22°C • 🧴 Indice UV : 6 (Modéré à Fort)
-🌊 Température de l'eau : 17 à 18°C • 🏖️ Confort de baignade : Rafraîchissant et tonique
+Ce mercredi après-midi, ATTENTION ! Le temps sera lourd et potentiellement dangereux sur une grande moitié Est du pays. Des orages parfois forts vont éclater depuis le Grand Est jusqu'aux Alpes, en passant par la Bourgogne et l'Auvergne. Sous les nuages menaçants, la chaleur sera écrasante : 36 degrés attendus à Strasbourg et Dijon, 37 près de Grenoble.
 
-🌴 Calais / Boulogne-sur-Mer / Le Touquet
-☀️ Soleil largement dominant ce mardi, bercé par une légère brise thermique de Nord-Est.
-🌡️ Température de l'air : 21 à 22°C • 🌊 Température de l'eau : 17 à 18°C
+À l'opposé, du grand soleil et une ambiance estivale pour tout l'Ouest ! Le thermomètre affichera 31 degrés à Paris comme à Brest. Profitez-en !
 
-🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
-
-📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
-
-☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide sous influence d'une dépression circulant sur les îles britanniques.
-🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce mardi, faiblissant en soirée.
-🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.
-👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes.
-
-🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-⚠️ VIGILANCE CANICULE ORANGE : 72 départements concernés
-
-• 🌡️ CHALEUR PERSISTANTE : Températures maximales entre 22°C et 29°C selon les régions
-• 💧 RISQUE DE DÉSHYDRATATION : Pensez à vous hydrater régulièrement
-• 👶 PERSONNES VULNÉRABLES : Personnes âgées et enfants à surveiller particulièrement
-• 🌊 BRISE MARINE : Seul répit sur les côtes face à cette chaleur étouffante
-• ⛈️ AVERSES LOCALISÉES : Quelques ondées orageuses possibles l'après-midi
-🏔️ Météo montagne
-
-    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
-
-    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
-
-    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
-
-    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
-
-    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
-
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 4 août 2026.
-
-📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📈 MONTÉE EN PUISSANCE DE LA CHALEUR : VERS UN PIC CANICULAIRE !
-
-- vendredi 7 août : Grand soleil dominant et chaleur caniculaire qui s'installe durablement. Minimales autour de 11°C au lever du jour, maximales grimpant jusqu'à 32°C l'après-midi. Une journée idéale pour les activités matinales, mais attention aux heures chaudes.
-
-- samedi 8 août : Poursuite de la fournaise avec un ciel parfaitement dégagé. Nuits plus douces avec des minimales à 17°C, et des maximales qui atteignent 33°C. La chaleur devient réellement éprouvante, surtout en ville.
-
-- dimanche 9 août : Toujours ce même scénario de plein soleil et de chaleur accablante. Les minimales restent élevées autour de 18°C, et les maximales plafonnent à 34°C. On approche du pic de cet épisode caniculaire.
-
-
---------------------------------------------------------------------------------
-📻 CLIENT / STATION : RADIO - ICI NORD
-🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
---------------------------------------------------------------------------------
-
-☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-**🌦️ GRISAILLE PUIS AVERSES : UN MERCREDI CONTRASTÉ DANS LE NORD !**
-
-Ce mercredi, le réveil est gris et humide avec des bancs de stratus et quelques pluies faibles, surtout près des vallées. Mais la matinée s'annonce en nette amélioration avec un soleil qui progresse rapidement. L'après-midi, le ciel se charge à nouveau : des passages nuageux denses accompagnés d'averses régulières traversent la région, tandis que la brise marine rafraîchit le littoral. Côté températures, comptez 23°C à Saint-Hilaire-sur-Helpe, 25°C à Douai et jusqu'à 26°C à Dunkerque ou Roubaix. En soirée, le ciel se dégage progressivement, laissant place à une douceur agréable pour les sorties. Un temps changeant, mais sans excès !
-
-🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies faibles à modérées. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 20°C à Maubeuge, 19°C à Dunkerque, 17°C à St-Hilaire-sur-Helpe, 19°C à Lille, 18°C à Steenvoorde. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
-
-🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux denses accompagnés d'averses régulières et d'un renforcement des brises. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 24°C à Avesnes-sur-Helpe, 26°C à Dunkerque, 26°C à Roubaix, 25°C à Douai, 23°C à St-Hilaire-sur-Helpe. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Notez bien le contraste littoral/intérieur : la brise maintiendra un agréable 25 degrés sur les plages de la Manche, alors qu'on suffoquera à 34 degrés dans les terres vers Lille sous quelques averses. Le vent restera faible, mais méfiez-vous des fortes rafales imprévisibles sous les orages.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
@@ -107,18 +43,21 @@ L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide sous influence d'une dépression circulant sur les îles britanniques.
+☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
 🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce mardi, faiblissant en soirée.
 🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.
 👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-⚠️ **PHÉNOMÈNES MARQUANTS DU MERCREDI 5 AOÛT :**
-- 🌧️ **AVERSES RÉGULIÈRES** en après-midi sur l'ensemble de la région.
-- 🌫️ **GRISAILLES MATINALES** avec bancs de stratus et pluies faibles localisées.
-- 🌬️ **BRISE MARINE RAFRAÎCHISSANTE** sur le littoral, modérant les températures.
-- 🌡️ **CONTRASTE THERMIQUE** marqué : 23°C à Saint-Hilaire-sur-Helpe contre 26°C à Dunkerque.
-- ☀️ **ÉCLAIRCIES EN SOIRÉE** après le passage des averses.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+
+Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+
+Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
+
+Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
     Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
@@ -134,13 +73,89 @@ L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 4 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-Voici la tendance pour les trois prochains jours :
+📉 Tendance – 3 jours suivants (jeudi 6 août au samedi 8 août)
 
-- **Vendredi 7 août :** Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 13°C, maximales atteignant 29°C en journée.
+- jeudi 6 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 10°C, maximales atteignant 28°C en journée.
+- vendredi 7 août : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 11°C, maximales atteignant 32°C en journée.
+- samedi 8 août : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 33°C en journée.
 
-- **Samedi 8 août :** Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 32°C en journée.
 
-- **Dimanche 9 août :** Chaleur persistante et forte, ciel dégagé et ensoleillé. Minimales autour de 18°C, maximales proches de 34°C. Vigilance orange canicule toujours en cours sur 72 départements.
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO - ICI NORD
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+Ce mardi, la situation générale sur l'ensemble de la zone RADIO - ICI NORD est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce mercredi matin, le Nord se réveille avec un ciel littéralement coupé en deux !
+
+À l'ouest, c'est un grand soleil généreux qui s'impose d'entrée de jeu. Le réveil est lumineux du côté de Lille, Douai ou encore Cambrai avec une douceur déjà bien présente : 19 degrés partout.
+
+En revanche, plus on file vers l'est, plus l'ambiance est différente avec davantage de nuages, même si de belles éclaircies percent. Comptez 20 degrés à Valenciennes et jusqu'à 21 degrés pour Maubeuge !
+
+Le vent de sud-ouest est modéré, avec des pointes à 25 km/h qui apportent une petite brise tonique sur le littoral vers Dunkerque, où il fait 19 degrés.
+
+Excellente matinée à l'écoute de RADIO - ICI NORD !
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Ce mercredi après-midi, le grand soleil s'impose absolument partout dans le Nord ! C'est une ambiance estivale très agréable qui vous attend, sans l'ombre d'un nuage.
+
+Côté températures, il fera bon avec 27 degrés attendus à Lille, Roubaix et Valenciennes, 26 à Cambrai et Maubeuge. Notez le classique contraste avec le littoral : la brise de mer maintiendra le mercure à 25 degrés sur Dunkerque. Ce vent, parlons-en, il sera sensible partout, soufflant jusqu'à 25 km/h. Il rendra la chaleur de ce bel après-midi d'août tout à fait supportable. Bref, des conditions idéales, profitez-en bien !
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
+
+🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
+☀️ Ensoleillement généreux ce mardi, ambiance très agréable pour les baigneurs.
+🌡️ Température de l'air sur le sable : 24°C • 🧴 Indice UV : 6 (Modéré à Fort)
+🌊 Température de l'eau : 17 à 18°C • 🏖️ Confort de baignade : Rafraîchissant et tonique
+
+🌴 Calais / Boulogne-sur-Mer / Le Touquet
+☀️ Soleil largement dominant ce mardi, bercé par une légère brise thermique de Nord-Est.
+🌡️ Température de l'air : 23 à 24°C • 🌊 Température de l'eau : 17 à 18°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
+🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce mardi, faiblissant en soirée.
+🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.
+👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+
+Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+
+Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
+
+Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
+🏔️ Météo montagne
+
+    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+
+    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.
+
+    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+
+    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.
+
+    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.
+
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 4 août 2026.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+📉 Tendance – 3 jours suivants (jeudi 6 août au samedi 8 août)
+
+- jeudi 6 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 11°C, maximales atteignant 26°C en journée.
+- vendredi 7 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 13°C, maximales atteignant 29°C en journée.
+- samedi 8 août : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 32°C en journée.
 
 
 --------------------------------------------------------------------------------
@@ -152,10 +167,10 @@ Voici la tendance pour les trois prochains jours :
 Ce mardi, la situation générale sur l'ensemble de la zone RADIO - ICI LA ROCHELLE est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Montbron, 19°C à Cognac, 19°C à Jarnac, 20°C à Chassiron, 19°C à La Couronne. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 19°C à Blanzac-Porcheresse, 19°C à Soyaux, 19°C à Cognac, 19°C à La Couronne, 19°C à Montbron. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 28°C à Blanzac-Porcheresse, 29°C à Gond-Pontouvre, 22°C à Chassiron, 29°C à La Couronne, 29°C à Angoulême. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 28°C à Soyaux, 28°C à Blanzac-Porcheresse, 27°C à Montbron, 28°C à Jarnac, 28°C à Cognac. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS & ÎLES (mardi 4 août 2026)
@@ -217,15 +232,20 @@ Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-☀️ UNE FOURNAISE SOUS HAUTE SURVEILLANCE !
-
-Ce mercredi, le soleil règne en maître absolu sur l'ensemble de la région. Dès le matin, les brumes côtières se dissipent rapidement pour laisser place à un ciel lumineux et généreux. L'après-midi, le mercure grimpe jusqu'à 25°C dans les terres, tandis que la brise marine adoucit l'atmosphère sur le littoral. Une chaleur remarquable mais surveillée de près : 72 départements sont placés en vigilance orange canicule. Les maximales oscillent entre 21°C sur les côtes et 25°C dans l'intérieur des terres. Une météo estivale superbe, mais pensez à vous hydrater régulièrement et à protéger les plus vulnérables.
+🚨 VENT ET AVERSES : UN MERCREDI CONTRASTÉ !  
+Ce mercredi, le littoral est balayé par un vent de nord-ouest vigoureux, avec des rafales jusqu'à 35 km/h à Gravelines ou Marck. Le soleil domine largement, mais la fraîcheur se fait sentir : 21°C à Groffliers. Dans l'intérieur, le thermomètre grimpe jusqu'à 25°C à Robecq, mais des averses passagères peuvent éclater. Une vigilance orange canicule est active sur 72 départements, mais notre région reste plus modérée. Les brumes matinales se dissipent vite, laissant place à un ciel lumineux. Passez un excellent après-midi à l'écoute de RADIO 6 !
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Groffliers, 18°C à Lefaux, 18°C à Offekerque, 19°C à Leffrinckoucke, 18°C à Gravelines. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Ce mardi matin, le réveil se fait dans une ambiance lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Marck, 17°C à Cauchy-à-la-Tour, 18°C à Gravelines, 18°C à Groffliers, 18°C à Leffrinckoucke. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 23°C à Remilly-Wirquin, 24°C à Cauchy-à-la-Tour, 25°C à Leffrinckoucke, 23°C à Offekerque, 21°C à Groffliers. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Ce mercredi après-midi, c'est le vent qui se fait remarquer sur notre région ! Il sera l'élément principal de votre météo, avec un ciel assez changeant.
+
+Sur le littoral, le soleil domine largement mais attention, le vent de nord-ouest est bien présent avec des rafales jusqu'à 35 km/h du côté de Gravelines ou Marck. Cette brise maintient une certaine fraîcheur : on ne dépassera pas les 21 degrés à Groffliers.
+
+Plus on s'enfonce dans les terres, plus le thermomètre grimpe, atteignant 24 à Racquinghem et même 25 degrés à Robecq. En contrepartie, le risque d'une petite averse passagère sera un peu plus marqué.
+
+Passez un excellent après-midi à l'écoute de RADIO 6 !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
@@ -250,15 +270,10 @@ L'après-midi, le temps est marqué par un grand soleil généreux et stable, si
 👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-⚠️ VIGILANCE ORANGE CANICULE : 72 départements concernés sur l'hexagone, chaleur persistante et forte sur les prochains jours.
-
-☀️ SOLEIL GÉNÉREUX ET DURABLE : Ciel parfaitement dégagé sur l'ensemble de la région, quelques cirrus décoratifs en altitude.
-
-🌡️ TEMPÉRATURES EN HAUSSE : Maximales atteignant 25°C dans les terres, 21°C sur le littoral grâce à la brise marine rafraîchissante.
-
-💧 RISQUE DE DÉSHYDRATATION : Pensez à vous hydrater régulièrement, protéger enfants et personnes âgées.
-
-🌊 BRISE MARINE BIENVENUE : Les zones côtières profitent d'un air plus frais, idéal pour trouver un peu de réconfort.
+⚠️ **VIGILANCE ORANGE CANICULE** : 72 départements en vigilance orange, chaleur persistante.  
+🌬️ **VENT DE NORD-OUEST** : rafales jusqu'à 35 km/h sur le littoral, fait baisser la température.  
+⛈️ **AVERSES PASSAGÈRES** : possibles dans l'intérieur, notamment à Racquinghem, Robecq, Cauchy-à-la-Tour.  
+🌡️ **TEMPÉRATURES** : 21°C sur la côte, jusqu'à 25°C dans les terres, ressenti variable.
 🏔️ Météo montagne
 
     Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
@@ -274,9 +289,9 @@ L'après-midi, le temps est marqué par un grand soleil généreux et stable, si
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 4 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-- vendredi 7 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 12°C, maximales atteignant 29°C en journée.
-- samedi 8 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 17°C, maximales atteignant 29°C en journée.
-- dimanche 9 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 17°C, maximales atteignant 29°C en journée.
+- **vendredi 7 août** : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 12°C, maximales atteignant 29°C en journée.  
+- **samedi 8 août** : Temps calme, sec et largement lumineux, toujours avec quelques nuages décoratifs. Minimales vers 17°C, maximales atteignant 29°C.  
+- **dimanche 9 août** : Temps calme, sec et ensoleillé, la chaleur se maintient. Minimales vers 17°C, maximales proches de 29°C.
 
 
 --------------------------------------------------------------------------------
@@ -285,14 +300,23 @@ L'après-midi, le temps est marqué par un grand soleil généreux et stable, si
 --------------------------------------------------------------------------------
 
 ☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-🌡️ CANICULE MAIS AVERSES : UN MERCREDI CONTRASTÉ !  
-Ce mercredi, la vigilance orange canicule s'étend sur 72 départements, mais localement, le ciel hésite. La matinée débute sous des grisailles humides et quelques bruines, avant que le soleil ne s’impose progressivement. L’après-midi, des passages nuageux denses déclenchent des averses régulières, surtout près des reliefs, tandis que la brise marine rafraîchit le littoral. Les températures maximales oscillent entre 24 et 26°C, loin des records, mais l’humidité rend l’air pesant. En soirée, le ciel se dégage, offrant une douceur agréable pour les sorties. Restez vigilants face à la chaleur qui persiste.
+Ce mardi, la situation générale sur l'ensemble de la zone MONA FM est caractérisée par la installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique. Cette dynamique aérologique gouverne une ambiance lumineuse en matinée, avant un réchauffement diurne marqué. En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi.
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mardi matin, le réveil se fait dans une ambiance grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies faibles à modérées. La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. Les valeurs au lever du jour s'échelonnent avec 18°C à Steenvoorde, 19°C à Dunkerque, 20°C à Maubeuge, 19°C à Lille, 20°C à Valenciennes. Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions pour les déplacements de la matinée sur l'ensemble de nos secteurs.
+Bonjour à tous ! Ce mercredi matin, la région se réveille avec un ciel véritablement partagé en deux !
+
+D'un côté, un grand et généreux soleil s'impose sur toute la partie ouest. Attendez-vous à un ciel tout bleu du côté de Lille avec 18 degrés au réveil, et sur une bonne partie de la Côte d'Opale. Plus à l'est en revanche, les nuages sont plus présents, notamment sur le Valenciennois et l'Avesnois.
+
+Le vent, lui, reste discret : c'est une petite brise de secteur ouest qui souffle modérément.
+
+Côté températures, la douceur est là : 19 degrés pour Valenciennes et Roubaix. On note un léger contraste avec 17 degrés dans les terres vers St-Hilaire-sur-Helpe, et déjà 21 degrés à Dunkerque !
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux denses accompagnés d'averses régulières et d'un renforcement des brises. Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, avec des maximales atteignant 24°C à St-Hilaire-sur-Helpe, 26°C à Valenciennes, 25°C à Roubaix, 26°C à Dunkerque, 24°C à Watten. Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit.
+Ce mercredi après-midi… ATTENTION, PRUDENCE ! Le temps va nettement se dégrader dans l'intérieur des terres avec le développement d'orages parfois forts !
+
+L'ambiance devient donc lourde et potentiellement dangereuse à l'est d'une ligne Lille - Amiens, avec un risque de fortes averses et de puissantes rafales de vent sous les cellules les plus actives. Côté températures, c'est la fournaise : 32 à 34 degrés !
+
+Ambiance radicalement différente à l'approche du littoral. Là-bas, c'est le grand soleil qui domine et l'air est bien plus respirable grâce à la brise, avec des maximales comprises entre 25 et 29 degrés. Un après-midi à deux visages, soyez vigilants !
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD (mardi 4 août 2026)
@@ -311,18 +335,21 @@ L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide sous influence d'une dépression circulant sur les îles britanniques.
+☀️ Situation générale : Installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique.
 🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce mardi, faiblissant en soirée.
 🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.
 👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-⚠️ VIGILANCE ORANGE CANICULE SUR 72 DÉPARTEMENTS  
-- Chaleur persistante attendue jusqu’à dimanche inclus.  
-- Averses localisées cet après-midi, principalement sur les reliefs.  
-- Températures maximales en hausse dès vendredi, dépassant les 30°C.  
-- Risque de déshydratation pour les personnes fragiles.  
-- Forte humidité ce mercredi, rendant l’air lourd et étouffant.
+Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce mardi. Sécheresse de surface qui s'accentue.
+
+Vent : Généralement faible à modéré ce mardi, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.
+
+Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce mardi, avec une évolution possible sur les reliefs ce week-end.
+
+Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.
+
+Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement.
 🏔️ Météo montagne
 
     Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
@@ -338,7 +365,9 @@ L'après-midi, le temps est marqué par un ciel dominé par des passages nuageux
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 4 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-- vendredi 7 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 13°C, maximales atteignant 29°C en journée.  
-- samedi 8 août : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 32°C en journée.  
-- dimanche 9 août : Chaleur encore plus marquée, ciel totalement dégagé, aucune averse en vue. Minimales vers 19°C, maximales grimpant à 34°C. Attention aux coups de chaud !
+📉 Tendance – 3 jours suivants (jeudi 6 août au samedi 8 août)
+
+- jeudi 6 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 11°C, maximales atteignant 26°C en journée.
+- vendredi 7 août : Temps calme, sec et largement lumineux avec quelques nuages inoffensifs. Minimales vers 13°C, maximales atteignant 29°C en journée.
+- samedi 8 août : Poursuite de la chaleur caniculaire sous un grand soleil dominant. Minimales vers 17°C, maximales atteignant 32°C en journée.
 
