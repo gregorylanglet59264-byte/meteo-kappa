@@ -22,7 +22,9 @@ def normalize_city(name):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 OPENROUTER_MODEL = "deepseek/deepseek-v4-flash-0731"
-OPENROUTER_VISION_MODEL = "deepseek/deepseek-v4-flash-0731"
+# ponytail: deepseek-v4-flash-0731 ne supporte pas la Vision (HTTP 404 sur image_url)
+# On garde Gemini Flash 1.5 pour les cartes HD (Vision) — meilleur rapport qualité/coût Vision sur OpenRouter
+OPENROUTER_VISION_MODEL = "google/gemini-flash-1.5"
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
