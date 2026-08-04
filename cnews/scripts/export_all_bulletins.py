@@ -75,16 +75,23 @@ def update_form_dates_locally(form, day_offset):
     else:
         today = datetime.date.today()
 
+    date_j0 = today
     date_j1 = today + datetime.timedelta(days=day_offset)
     date_j2 = today + datetime.timedelta(days=day_offset + 1)
     
+    day0_str = get_french_date_string(date_j0, include_year=True)
     day1_str = get_french_date_string(date_j1, include_year=True)
     day2_str = get_french_date_string(date_j2, include_year=False)
+    
+    target_forest_offset = day_offset if day_offset > 0 else 1
+    date_forest = today + datetime.timedelta(days=target_forest_offset)
+    forest_date_str = get_french_date_string(date_forest, include_year=True)
     
     form["bulletinDate"] = day1_str
     form["summaryTitle"] = f"Prévisions pour la journée du {day1_str.upper()}"
     form["summaryTitle2"] = f"Prévisions pour la journée du {day2_str.upper()}"
     form["alertTitle"] = f"Vigilance pour ce {day1_str}"
+    form["forestAlertTitle"] = f"🌲 MÉTÉO DES FORÊTS DU {forest_date_str.upper()}"
 
 def save_vision_forecast_report(clients, output_filename, day_offset):
     """Sauvegarde dans un fichier texte structuré l'intégralité des prévisions et commentaires visuels par carte pour chaque client."""
@@ -188,7 +195,6 @@ def main():
         "RADIO 6": "hdf",
         "MONA FM": "hdf",
         "RADIO ICI NORMANDIE": "normandie",
-        "RADIO ICI NORMANDIE ": "normandie",
         "RADIO ICI AUVERGNE-RHÔNE-ALPES": "ara",
         "RADIO ICI BOURGOGNE-FRANCHE-COMTÉ": "bfc",
         "RADIO ICI BRETAGNE": "bretagne",
@@ -291,14 +297,6 @@ def main():
                     print(f" - Injected AI-generated forecast texts for '{name}'")
                     for key, val in ai_texts.items():
                         form[key] = val
-                    
-                    # Synchroniser surveillanceItems avec todaySummary pour écraser les vieux textes statiques du dictionnaire
-                    if "todaySummary" in ai_texts and ai_texts["todaySummary"]:
-                        items = form.get("surveillanceItems", [])
-                        if not isinstance(items, list) or len(items) == 0:
-                            form["surveillanceItems"] = [{"id": "auto_summary", "type": "text", "content": ai_texts["todaySummary"]}]
-                        else:
-                            form["surveillanceItems"][0]["content"] = ai_texts["todaySummary"]
             
             # Store public raw GitHub URL instead of heavy Base64 to keep JSON size under 100KB
             base_url = "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes"
@@ -333,10 +331,11 @@ def main():
                     today_paris = datetime.datetime.now(ZoneInfo("Europe/Paris")).date()
                 else:
                     today_paris = datetime.date.today()
-                date_j1 = today_paris + datetime.timedelta(days=args.day_offset)
-                day1_str = get_french_date_string(date_j1, include_year=True)
+                target_forest_offset = args.day_offset if args.day_offset > 0 else 1
+                date_forest = today_paris + datetime.timedelta(days=target_forest_offset)
+                forest_date_str = get_french_date_string(date_forest, include_year=True)
                 c["form"]["forestAlertImageUrl"] = f"https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/{os.path.basename(forets_path)}"
-                c["form"]["forestAlertTitle"] = f"🌲 MÉTÉO DES FORÊTS DU {day1_str.upper()}"
+                c["form"]["forestAlertTitle"] = f"🌲 MÉTÉO DES FORÊTS DU {forest_date_str.upper()}"
                 c["form"].setdefault("forestAlertSource", "Météo-Climat PRO — minisite-douai.vercel.app")
                 c["form"]["showForestMap"] = True
                 c["display"]["showForestMap"] = True
