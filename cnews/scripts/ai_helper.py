@@ -722,7 +722,7 @@ Règles de style journalistique OBLIGATOIRES :
 - ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
 - ⚠️ MENTION IMPÉRATIVE DU TEMPS SENSIBLE : Tu dois TOUJOURS décrire avec précision l'état du ciel et les précipitations réelles (averses, pluies, éclaircies, soleil dominant, nuages bas, brumes, orages). Si la carte ou les données indiquent des averses ou des pluies, tu dois OBLIGATOIREMENT les citer expressément dans le texte (ex: "des averses se déclenchent", "un passage pluvieux s'invite"). INTERDICTION de passer sous silence des averses ou des pluies !
 - Intègre obligatoirement des indications précises sur le VENT (brise, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
-- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- ⚠️ Si des rafales de vent de 70 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer (risque de vigilance vent fort). En dessous de 70 km/h, mentionne simplement le vent sans dramatiser.
 - Si tu vois un éclair (orage ou grêle), mentionne-le expressément (risque orageux, foudre).
 
 {picto_guide}
@@ -732,7 +732,7 @@ Données réelles pour ce matin :
 
 Instructions :
 1. Remplis la balise <reconnaissance_matin> avec la liste des villes visibles sur la carte et leur picto. Ex: "Lille = soleil, Douai = ORAGE ⚠️"
-2. Remplis la balise <texte_matin> avec ton commentaire journalistique de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
+2. Remplis la balise <texte_matin> avec ton commentaire journalistique de matinée (80-100 mots MAXIMUM). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 3-4 villes avec minimales réelles. Sois concis et percutant.
 """
         try:
             print(f"[{client_name}] Calling Gemini Flash for J1 Morning map...")
@@ -759,7 +759,7 @@ Règles de style journalistique OBLIGATOIRES :
 - ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
 - ⚠️ MENTION IMPÉRATIVE DU TEMPS SENSIBLE : Tu dois TOUJOURS décrire avec précision l'état du ciel et les précipitations réelles (averses, pluies, éclaircies, soleil dominant, nuages bas, brumes, orages). Si la carte ou les données indiquent des averses ou des pluies, tu dois OBLIGATOIREMENT les citer expressément dans le texte (ex: "des averses parfois soutenues sont attendues", "un passage pluvieux s'invite"). INTERDICTION de passer sous silence des averses ou des pluies !
 - Intègre obligatoirement des indications précises sur le VENT (mistral, brise côtière, vent d'ouest, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
-- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- ⚠️ Si des rafales de vent de 70 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer (risque de vigilance vent fort). En dessous de 70 km/h, mentionne simplement le vent sans dramatiser.
 - ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite (risques de foudre, fortes pluies sous cellules, grêle).
 
 {picto_guide}
@@ -769,7 +769,7 @@ Données réelles pour cet après-midi :
 
 Instructions :
 1. Remplis la balise <reconnaissance_apresmidi> avec la liste des villes et leur picto.
-2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
+2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (80-100 mots MAXIMUM). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 3-4 villes avec maximales réelles. Sois concis et percutant.
 """
         try:
             print(f"[{client_name}] Calling Gemini Flash for J1 Afternoon map...")
@@ -793,8 +793,8 @@ Instructions :
 Règles de style journalistique OBLIGATOIRES :
 - Tone : Journalistique, factuel, fluide et descriptif.
 - ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
-- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
-- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- 80-100 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 3-4 villes avec minimales réelles. Sois concis et percutant.
+- ⚠️ Si des rafales de vent de 70 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer (risque de vigilance vent fort). En dessous de 70 km/h, mentionne simplement le vent sans dramatiser.
 
 {picto_guide}
 
@@ -827,8 +827,8 @@ Instructions :
 Règles de style journalistique OBLIGATOIRES :
 - Tone : Journalistique, factuel, fluide et descriptif.
 - ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
-- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
-- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- 80-100 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 3-4 villes avec maximales réelles. Sois concis et percutant.
+- ⚠️ Si des rafales de vent de 70 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer (risque de vigilance vent fort). En dessous de 70 km/h, mentionne simplement le vent sans dramatiser.
 - Si orage visible, mentionne-le expressément.
 
 {picto_guide}
@@ -888,11 +888,11 @@ Instructions OBLIGATOIRES (Style journalistique strict & complet) :
 1. Remplis la balise <todaySummary> (STRICTEMENT 3 à 5 phrases). Rédige UNIQUEMENT L'ESSENTIEL DE LA JOURNÉE À RETENIR pour le grand public (phénomène marquant, températures min/max, vent). ⛔ INTERDICTION FORMELLE de citer des noms de code de clients ou stations radio. Doit commencer par un titre percutant en MAJUSCULES (ex: "🌤️ L'ESSENTIEL DE CE {FRENCH_WEEKDAYS[d1.weekday()].upper()} : ...").
 
 2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 5 ({date_j3}, {date_j4}, {date_j5}). 
-   ATTENTION RÈGLE STRICTE DE LONGUEUR : Pour chaque jour de la tendance, rédige STRICTEMENT entre 3 et 5 phrases complètes (minimum 3 phrases, maximum 5 phrases). Interdit de regrouper deux jours ou d'utiliser "temps comparable".
+   ATTENTION RÈGLE STRICTE DE LONGUEUR : Pour chaque jour de la tendance, rédige STRICTEMENT 2 à 3 phrases courtes et percutantes. Interdit de regrouper deux jours ou d'utiliser "temps comparable".
    Format exact :
-   ▶ {date_j3} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
-   ▶ {date_j4} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
-   ▶ {date_j5} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
+   ▶ {date_j3} : [2 à 3 phrases sur le ciel, le vent et les températures]
+   ▶ {date_j4} : [2 à 3 phrases sur le ciel, le vent et les températures]
+   ▶ {date_j5} : [2 à 3 phrases sur le ciel, le vent et les températures]
 
 3. Remplis la balise <summaryLancement> avec un TITRE DE PRESSE EN MAJUSCULES SUIVI D'UNE PHRASE D'ACCROCHE RÉSUMANT LA PRÉVISION DU JOUR 1 ({FRENCH_WEEKDAYS[d1.weekday()]}) (ex: "☀️ SOLEIL ET CHALEUR ESTIVALE : Un ciel très dégagé s'impose sur la région ce {FRENCH_WEEKDAYS[d1.weekday()]}, avec des températures maximales très douces.").
 
