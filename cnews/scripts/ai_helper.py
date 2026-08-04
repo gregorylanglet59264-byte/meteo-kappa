@@ -238,14 +238,18 @@ def call_openrouter(api_key, prompt, images=None):
         "X-Title": "CNews Bulletin Météo",
     }
     req = urllib.request.Request(OPENROUTER_API_URL, data=payload, headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=60) as resp:
+    with urllib.request.urlopen(req, timeout=90) as resp:
         result = json.loads(resp.read().decode("utf-8"))
         return result["choices"][0]["message"]["content"]
 
 
 def generate_local_fallback_texts(client_name, cities, day_offset):
     """Générateur de secours local et déterministe basé 100% sur Open-Meteo et les dates exactes."""
-    today = datetime.date.today()
+    try:
+        from zoneinfo import ZoneInfo
+        today = datetime.datetime.now(ZoneInfo("Europe/Paris")).date()
+    except Exception:
+        today = datetime.date.today()
     d1 = today + datetime.timedelta(days=day_offset)
     d2 = today + datetime.timedelta(days=day_offset + 1)
     d3 = today + datetime.timedelta(days=day_offset + 2)
@@ -282,8 +286,9 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
 
     # Déterminer la situation synoptique générale depuis les codes météo J1
     avg_max_j1 = sum(s['tmax'] for s in j1_struct) / len(j1_struct) if j1_struct else 25
-    has_rain_j1 = any(s['rain'] > 1.0 or s['code'] >= 50 for s in j1_struct)
-    has_storm_j1 = any(s['code'] >= 90 for s in j1_struct)
+    # ponytail: dual-scale — codes MF 0-12 ou WMO 0-99
+    has_rain_j1 = any(s['rain'] > 1.0 or (s['code'] <= 12 and s['code'] in (6,7,8,9)) or (s['code'] > 12 and s['code'] >= 50) for s in j1_struct)
+    has_storm_j1 = any((s['code'] <= 12 and s['code'] in (10,11)) or (s['code'] > 12 and s['code'] >= 90) for s in j1_struct)
 
     if has_storm_j1:
         synop = "déstabilisation d'une masse d'air surchauffée et lourde sous l'effet d'une hausse de l'instabilité diurne"
@@ -405,12 +410,17 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
     )
 
     vig_line = "⚠️ VIGILANCE CANICULE — 72 départements en orange sur les trois-quarts sud" if avg_max_j1 >= 32 else ""
+    # Bullets conditionnés au temps réel
+    _code1 = max((s['code'] for s in j1_struct), default=0) if j1_struct else 0
+    _has_storm = (_code1 <= 12 and _code1 in (10, 11)) or (_code1 > 12 and _code1 >= 90)
+    _has_rain = (_code1 <= 12 and _code1 in (6, 7, 8)) or (_code1 > 12 and _code1 >= 50)
     records_raw = "\n".join(filter(None, [
         vig_line,
         f"🌡️ CHALEUR MARQUÉE — maximales entre {int(round(min(s['tmax'] for s in j1_struct)))}°C et {int(round(max(s['tmax'] for s in j1_struct)))}°C" if j1_struct else "",
-        f"🌂 PLUIES — rares, limitées aux passages orageux en fin de journée",
-        f"🌬️ VENT — modéré, 15 à 30 km/h, rafales sous les orages",
-        f"⛈️ ORAGES — activité localisée sur les massifs en fin d'après-midi",
+        f"⛈️ ORAGES — risque d'orages localement forts, rafales possibles" if _has_storm else "",
+        f"🌂 PLUIES — passages pluvieux attendus sur plusieurs régions" if (_has_rain and not _has_storm) else "",
+        f"🌬️ VENT — modéré, rafales sous les cellules instables" if _has_storm else (f"🌬️ VENT — faible à modéré, peu sensible" if not _has_rain else ""),
+        f"☀️ ENSOLEILLEMENT — beau temps prédominant, conditions estivales" if (not _has_rain and not _has_storm) else "",
     ]))
 
     mountain_text = (
@@ -589,14 +599,25 @@ def fetch_vigilance_and_national_context(day_offset=1):
 def get_client_region_prefix(client_name):
     """Determine region prefix for map image lookup based on client name."""
     c_clean = client_name.strip().upper()
-    if "EUROPE" in c_clean:
-        return ""
-    elif any(k in c_clean for k in ["NORD", "RADIO 6", "MONA"]):
-        return "hdf_"
-    elif "ROCHELLE" in c_clean:
-        return "naq_"
-    elif "NORMANDIE" in c_clean:
-        return "normandie_"
+    mapping = {
+        "EUROPE": "", "BULLETIN EUROPE": "",
+        "NORD": "hdf_", "RADIO 6": "hdf_", "MONA": "hdf_",
+        "ROCHELLE": "naq_", "NAQ": "naq_",
+        "NORMANDIE": "normandie_",
+        "AUVERGNE": "ara_", "RHONE": "ara_",
+        "BOURGOGNE": "bfc_", "FRANCHE": "bfc_",
+        "BRETAGNE": "bretagne_",
+        "CENTRE": "cvl_",
+        "CORSE": "corse_",
+        "GRAND EST": "grand-est_",
+        "ILE-DE-FRANCE": "ile-de-france_", "PARIS": "ile-de-france_",
+        "OCCITANIE": "occitanie_",
+        "PAYS DE LA LOIRE": "pdl_",
+        "PROVENCE": "paca_", "PACA": "paca_", "AZUR": "paca_",
+    }
+    for key, prefix in mapping.items():
+        if key in c_clean:
+            return prefix
     return ""
 
 
@@ -708,8 +729,6 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
 
     recon_lines = []
 
-    # Appel 1 : Matinée Jour 1 (Carte 1)
-    summaryMorning = ""
     # Appel 1 : Matinée Jour 1 (Carte 1)
     summaryMorning = ""
     if img_m1:
@@ -887,8 +906,11 @@ DONNÉES BRUTES TENDANCES PROCHAINS JOURS :
 {local_fallback.get('forecastRaw', '')}
 
 PRÉVISIONS DE LA JOURNÉE (DONNÉES BRUTES — NE PAS RECOPIER, SYNTHÉTISER UNIQUEMENT) :
-Matinée Jour 1 (résumé) : {summaryMorning[:120] if summaryMorning else 'non disponible'}
-Après-midi Jour 1 (résumé) : {summaryAfternoon[:120] if summaryAfternoon else 'non disponible'}
+Matinée Jour 1 (résumé) : {(summaryMorning[:120].rsplit(' ', 1)[0] + '...') if summaryMorning and len(summaryMorning) > 120 else (summaryMorning or 'non disponible')}
+Après-midi Jour 1 (résumé) : {(summaryAfternoon[:120].rsplit(' ', 1)[0] + '...') if summaryAfternoon and len(summaryAfternoon) > 120 else (summaryAfternoon or 'non disponible')}
+
+CONTEXTE MULTI-SOURCES (INFOCLIMAT / SÉCHET / XML MF) :
+{ms_context}
 
 BILAN DE LA RECONNAISSANCE DES CARTES :
 {recon_final}
