@@ -22,9 +22,9 @@ def normalize_city(name):
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 OPENROUTER_MODEL = "deepseek/deepseek-v4-flash-0731"
-# ponytail: gemini-2.5-pro = seul modele Vision haute fidélité confirmé sur ce repo
-# deepseek-v4-flash-0731 ne supporte pas image_url (HTTP 404)
-OPENROUTER_VISION_MODEL = "google/gemini-2.5-pro"
+# ponytail: gemini-2.5-pro timeout (~60s/carte) -> NoneType crashes
+# gemini-2.5-flash = Vision rapide + fiable sur ce repo
+OPENROUTER_VISION_MODEL = "google/gemini-2.5-flash"
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
