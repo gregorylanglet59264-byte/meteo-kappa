@@ -886,15 +886,15 @@ DONNÉES OFFICIELLES VIGILANCE & BULLETIN NATIONAL MÉTÉO-FRANCE :
 DONNÉES BRUTES TENDANCES PROCHAINS JOURS :
 {local_fallback.get('forecastRaw', '')}
 
-PRÉVISIONS DE LA JOURNÉE PAR L'IA :
-Matinée Jour 1 : {summaryMorning}
-Après-midi Jour 1 : {summaryAfternoon}
+PRÉVISIONS DE LA JOURNÉE (DONNÉES BRUTES — NE PAS RECOPIER, SYNTHÉTISER UNIQUEMENT) :
+Matinée Jour 1 (résumé) : {summaryMorning[:120] if summaryMorning else 'non disponible'}
+Après-midi Jour 1 (résumé) : {summaryAfternoon[:120] if summaryAfternoon else 'non disponible'}
 
 BILAN DE LA RECONNAISSANCE DES CARTES :
 {recon_final}
 
 Instructions :
-1. Remplis la balise <todaySummary> (100-120 mots, direct et percutant) en commençant obligatoirement par un titre court, percutant et accrocheur en MAJUSCULES résumant l'élément marquant (ex: "🚨 MÉTÉO EXPLOSIVE : LE NORD SOUS LA FOUDRE !" ou "☀️ PLEIN SOLEIL ET CHALEUR RECORD SUR LA RÉGION !"). Résume ensuite la journée du {date_j1}. Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...".
+1. Remplis la balise <todaySummary> (80-100 mots MAXIMUM, style micro radio ultra-court) en commençant par un titre accrocheur en MAJUSCULES (ex: "🌤️ SOLEIL ET CHALEUR SUR LA RÉGION !") puis 2-3 phrases percutantes résumant la journée du {date_j1}. Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". JAMAIS de liste, JAMAIS de répétition du titre dans le corps.
 2. Remplis la balise <forecastRaw> avec la tendance détaillée et étanche à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}) sans répéter le temps du jour.
 3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la journée, suivi d'une courte phrase de lancement parlée, chaleureuse et fluide.
 4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la tendance, suivi d'une courte phrase de lancement parlée.
