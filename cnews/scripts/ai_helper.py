@@ -365,14 +365,14 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
         f"{get_trend_line(date_j5, j5_struct)}"
     )
 
-    vig_warning = "Canicule & Vigilance : 72 départements en vigilance orange Canicule sur les trois-quarts sud de la France. Épisode persistant sur plusieurs jours.\n\n" if avg_max_j1 >= 32 else ""
-    records_raw = (
-        f"{vig_warning}Pluies : Rares et uniquement liées aux passages orageux en soirée ou fin d'après-midi de ce {wd1}. Sécheresse de surface qui s'accentue.\n\n"
-        f"Vent : Généralement faible à modéré ce {wd1}, ce qui limite la ventilation de l'air ambiant. Coups de vent localisés possibles sous les cellules instables.\n\n"
-        f"Orages : Activité orageuse localisée sur les massifs des Alpes et des Pyrénées en fin de journée de ce {wd1}, avec une évolution possible sur les reliefs ce week-end.\n\n"
-        f"Neige en montagne : Absente en raison de l'isotherme 0°C perché à des altitudes élevées au-delà de 4200 m.\n\n"
-        f"Brouillards : Quelques grisailles maritimes localisées au lever du jour vers la Manche et les côtes atlantiques, se dissipant rapidement."
-    )
+    vig_line = "⚠️ VIGILANCE CANICULE — 72 départements en orange sur les trois-quarts sud" if avg_max_j1 >= 32 else ""
+    records_raw = "\n".join(filter(None, [
+        vig_line,
+        f"🌡️ CHALEUR MARQUÉE — maximales entre {int(round(min(s['tmax'] for s in j1_struct)))}°C et {int(round(max(s['tmax'] for s in j1_struct)))}°C" if j1_struct else "",
+        f"🌂 PLUIES — rares, limitées aux passages orageux en fin de journée",
+        f"🌬️ VENT — modéré, 15 à 30 km/h, rafales sous les orages",
+        f"⛈️ ORAGES — activité localisée sur les massifs en fin d'après-midi",
+    ]))
 
     mountain_text = (
         f"🏔️ Météo montagne\n\n"
@@ -859,7 +859,12 @@ Instructions :
 2. Remplis la balise <forecastRaw> avec la tendance détaillée et étanche à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}) sans répéter le temps du jour.
 3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la journée, suivi d'une courte phrase de lancement parlée, chaleureuse et fluide.
 4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la tendance, suivi d'une courte phrase de lancement parlée.
-5. Remplis la balise <recordsRaw> avec la liste explicite des PHÉNOMÈNES MÉTÉOROLOGIQUES MAJEURS À RETENIR pour le {date_j1} (ex: ⚠️ VIGILANCE CANICULE / ORAGES / RAFALES DE VENT / RISQUE DE FEUX DE FORÊT). Ce texte doit comporter des points clés percutants et être totalement DIFFÉRENT de todaySummary.
+5. Remplis la balise <recordsRaw> avec UNIQUEMENT une liste de 3 à 5 points clés en bullet points, chacun sur une ligne, format strict : émoji + MOT-CLÉ EN MAJUSCULES + tiret + courte explication (max 10 mots). JAMAIS de texte narratif. Exemple exact :
+⚠️ VIGILANCE CANICULE — 72 départements en orange
+🌡️ CHALEUR RECORD — jusqu'à 38°C dans le Sud-Ouest
+⛈️ ORAGES VIOLENTS — grêle possible sur les Alpes
+🏴 VENT FORT — rafales 80 km/h en soirée sur les côtes
+Ce texte doit être totalement DIFFÉRENT de todaySummary.
 """
     try:
         print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for final synthesis...")
