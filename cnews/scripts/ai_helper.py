@@ -345,18 +345,29 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
     def get_trend_line(date_str, struct):
         if not struct:
             return f"- {date_str} : Temps ensoleillé et agréable, températures de saison avec un vent modéré."
-        tmin = min(s['tmin'] for s in struct) if struct else 15
-        tmax = max(s['tmax'] for s in struct) if struct else 25
+        tmin = int(round(min(s['tmin'] for s in struct)))
+        tmax = int(round(max(s['tmax'] for s in struct)))
         code = max((s['code'] for s in struct), default=0)
-        if code >= 80:
-            desc = "Temps instable avec passages d'averses orageuses et vent sensible"
+        amplitude = tmax - tmin
+        if code >= 95:
+            desc = f"Orages violents localement, avec risque de grêle et rafales. Températures en baisse après les orages"
+        elif code >= 80:
+            desc = f"Passages d'averses orageuses, ciel agité avec des éclaircies entre les grains. Vent sensible"
+        elif code >= 61:
+            desc = f"Ciel couvert à nuageux, pluies régulières sur l'ensemble du pays. Temps maussade"
         elif code >= 50:
-            desc = "Ciel souvent nuageux à couvert avec quelques pluies éparses"
+            desc = f"Ciel souvent voilé à nuageux avec quelques bruines ou pluies faibles éparses"
+        elif tmax >= 35:
+            desc = f"Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
         elif tmax >= 32:
-            desc = "Poursuite de la chaleur caniculaire sous un grand soleil dominant"
+            desc = f"Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
+        elif tmax >= 28:
+            desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
+        elif amplitude >= 14:
+            desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
         else:
-            desc = "Temps calme, sec et largement lumineux avec quelques nuages inoffensifs"
-        return f"- {date_str} : {desc}. Minimales vers {tmin}°C, maximales atteignant {tmax}°C en journée."
+            desc = f"Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
+        return f"- {date_str} : {desc}. Minimales vers {tmin}°C, maximales atteignant {tmax}°C."
 
     forecast_raw = (
         f"📉 Tendance – 3 jours suivants ({date_j3} au {date_j5})\n\n"
