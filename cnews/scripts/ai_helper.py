@@ -349,24 +349,52 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
         tmax = int(round(max(s['tmax'] for s in struct)))
         code = max((s['code'] for s in struct), default=0)
         amplitude = tmax - tmin
-        if code >= 95:
-            desc = f"Orages violents localement, avec risque de grêle et rafales. Températures en baisse après les orages"
-        elif code >= 80:
-            desc = f"Passages d'averses orageuses, ciel agité avec des éclaircies entre les grains. Vent sensible"
-        elif code >= 61:
-            desc = f"Ciel couvert à nuageux, pluies régulières sur l'ensemble du pays. Temps maussade"
-        elif code >= 50:
-            desc = f"Ciel souvent voilé à nuageux avec quelques bruines ou pluies faibles éparses"
-        elif tmax >= 35:
-            desc = f"Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
-        elif tmax >= 32:
-            desc = f"Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
-        elif tmax >= 28:
-            desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
-        elif amplitude >= 14:
-            desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
-        else:
-            desc = f"Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
+        # ponytail: double échelle — codes MF (0-12) ou WMO (0-99) selon la source du CSV
+        # MF: 10=orages, 11=orages+grêle, 8=pluie forte, 7=pluie faible, 6=averses, 9=neige
+        # WMO: 95+=orages, 80+=averses, 61+=pluies, 50+=bruines
+        is_mf_code = code <= 12
+        if is_mf_code:
+            if code == 11:
+                desc = "Orages violents localement, avec risque de grêle et rafales"
+            elif code == 10:
+                desc = "Passages orageux, ciel agité avec des éclaircies entre les grains. Vent sensible"
+            elif code == 8:
+                desc = "Ciel couvert, pluies modérées à fortes sur l'ensemble du pays. Temps maussade"
+            elif code in (6, 7):
+                desc = "Ciel voilé à nuageux avec quelques averses ou pluies faibles éparses"
+            elif code == 9:
+                desc = "Risque de chutes de neige, températures en baisse sensible"
+            elif code == 12:
+                desc = "Brouillards matinaux persistants, visibilité réduite en début de journée"
+            elif tmax >= 35:
+                desc = "Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
+            elif tmax >= 32:
+                desc = "Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
+            elif tmax >= 28:
+                desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
+            elif amplitude >= 14:
+                desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
+            else:
+                desc = "Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
+        else:  # WMO fallback (Open-Meteo)
+            if code >= 95:
+                desc = "Orages violents localement, avec risque de grêle et rafales"
+            elif code >= 80:
+                desc = "Passages d'averses orageuses, ciel agité avec des éclaircies entre les grains"
+            elif code >= 61:
+                desc = "Ciel couvert à nuageux, pluies régulières. Temps maussade"
+            elif code >= 50:
+                desc = "Ciel souvent voilé avec quelques bruines ou pluies faibles éparses"
+            elif tmax >= 35:
+                desc = "Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
+            elif tmax >= 32:
+                desc = "Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
+            elif tmax >= 28:
+                desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
+            elif amplitude >= 14:
+                desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
+            else:
+                desc = "Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
         return f"- {date_str} : {desc}. Minimales vers {tmin}°C, maximales atteignant {tmax}°C."
 
     forecast_raw = (
