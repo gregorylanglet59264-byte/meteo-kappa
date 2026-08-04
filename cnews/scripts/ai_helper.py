@@ -21,10 +21,8 @@ def normalize_city(name):
     s = str(name).strip().lower()
     return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
-OPENROUTER_MODEL = "deepseek/deepseek-v4-flash-0731"
-# ponytail: gemini-2.5-pro timeout (~60s/carte) -> NoneType crashes
-# gemini-2.5-flash = Vision rapide + fiable sur ce repo
-OPENROUTER_VISION_MODEL = "google/gemini-2.5-flash"
+OPENROUTER_MODEL = "deepseek/deepseek-v4-flash"
+OPENROUTER_VISION_MODEL = os.environ.get("OPENROUTER_VISION_MODEL", "google/gemini-2.5-flash")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 
@@ -102,7 +100,7 @@ def fetch_weather_struct(cities, day_offset):
     url = (
         f"https://api.open-meteo.com/v1/forecast"
         f"?latitude={lats}&longitude={lons}"
-        f"&daily=temperature_2m_max,temperature_2m_min,wind_speed_10m_max,weather_code,precipitation_sum"
+        f"&daily=temperature_2m_max,temperature_2m_min,wind_speed_10m_max,wind_gusts_10m_max,weather_code,precipitation_sum"
         f"&timezone=Europe/Paris&forecast_days=10"
     )
     results_list = []
@@ -176,12 +174,19 @@ def fetch_weather_struct(cities, day_offset):
                             code = int(d.get("weathercode", [0]*8)[day_offset])
                     wind_raw = float(d["wind_speed_10m_max"][day_offset])
                     wind = int(round(wind_raw / 5.0) * 5)
+                    gust_list = d.get("wind_gusts_10m_max", [])
+                    if gust_list and len(gust_list) > day_offset and gust_list[day_offset] is not None:
+                        gust_raw = float(gust_list[day_offset])
+                    else:
+                        gust_raw = wind_raw * 1.3
+                    gust = int(round(gust_raw / 5.0) * 5)
                     rain = round(d["precipitation_sum"][day_offset], 1)
                     results_list.append({
                         "city": city["name"],
                         "tmin": tmin,
                         "tmax": tmax,
                         "wind": wind,
+                        "gust": gust,
                         "code": code,
                         "rain": rain
                     })
@@ -195,14 +200,17 @@ def fetch_raw_weather(cities, day_offset):
     struct = fetch_weather_struct(cities, day_offset)
     lines = []
     for s in struct:
+        gust_str = f", Rafales {s.get('gust', s['wind'])} km/h" if s.get('gust', 0) >= 40 else ""
         lines.append(
             f"- {s['city']} : Min {s['tmin']}°C, Max {s['tmax']}°C, "
-            f"Vent {s['wind']} km/h, Code météo {s['code']}, Pluie {s['rain']} mm"
+            f"Vent {s['wind']} km/h{gust_str}, Code météo {s['code']}, Pluie {s['rain']} mm"
         )
     return "\n".join(lines)
 
 
 def extract_xml_tag(text, tag):
+    if not text or not isinstance(text, str):
+        return ""
     # Remove markdown code blocks first to make matching clean
     clean_text = re.sub(r'```[a-zA-Z]*\n', '', text)
     clean_text = clean_text.replace('```', '')
@@ -238,18 +246,14 @@ def call_openrouter(api_key, prompt, images=None):
         "X-Title": "CNews Bulletin Météo",
     }
     req = urllib.request.Request(OPENROUTER_API_URL, data=payload, headers=headers, method="POST")
-    with urllib.request.urlopen(req, timeout=90) as resp:
+    with urllib.request.urlopen(req, timeout=60) as resp:
         result = json.loads(resp.read().decode("utf-8"))
         return result["choices"][0]["message"]["content"]
 
 
 def generate_local_fallback_texts(client_name, cities, day_offset):
     """Générateur de secours local et déterministe basé 100% sur Open-Meteo et les dates exactes."""
-    try:
-        from zoneinfo import ZoneInfo
-        today = datetime.datetime.now(ZoneInfo("Europe/Paris")).date()
-    except Exception:
-        today = datetime.date.today()
+    today = datetime.date.today()
     d1 = today + datetime.timedelta(days=day_offset)
     d2 = today + datetime.timedelta(days=day_offset + 1)
     d3 = today + datetime.timedelta(days=day_offset + 2)
@@ -286,142 +290,159 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
 
     # Déterminer la situation synoptique générale depuis les codes météo J1
     avg_max_j1 = sum(s['tmax'] for s in j1_struct) / len(j1_struct) if j1_struct else 25
-    # ponytail: dual-scale — codes MF 0-12 ou WMO 0-99
-    has_rain_j1 = any(s['rain'] > 1.0 or (s['code'] <= 12 and s['code'] in (6,7,8,9)) or (s['code'] > 12 and s['code'] >= 50) for s in j1_struct)
-    has_storm_j1 = any((s['code'] <= 12 and s['code'] in (10,11)) or (s['code'] > 12 and s['code'] >= 90) for s in j1_struct)
+    has_rain_j1 = any(s['rain'] > 1.0 or s['code'] >= 50 for s in j1_struct)
+    has_storm_j1 = any(s['code'] >= 90 for s in j1_struct)
 
     if has_storm_j1:
-        synop = "déstabilisation d'une masse d'air surchauffée et lourde sous l'effet d'une hausse de l'instabilité diurne"
-        ambiance_matin = "déjà lourde et étouffante au lever du jour à la faveur d'une nuit tropicale, avec des cumulus bourgeonnant rapidement"
-        ambiance_aprem = "un ciel chaotique devenant menaçant avec le déclenchement d'averses orageuses localement fortes et accompagnées de rafales de vent"
-    elif avg_max_j1 >= 32:
-        synop = "poussée d'une puissante dorsale anticyclonique d'altitude advectant une masse d'air subtropicale particulièrement brûlante"
-        ambiance_matin = "déjà étouffante au lever du jour à la faveur d'une nuit tropicale à rayonnement nocturne limité"
-        ambiance_aprem = "un ensoleillement de plomb sous un dôme de chaleur intense, à peine voilé par de rares cirrus de haute altitude"
+        synop = "déstabilisation d'une masse d'air sous l'effet d'une hausse de l'instabilité diurne"
+        ambiance_matin = "déjà lourde au lever du jour, avec des cumulus bourgeonnant rapidement"
+        ambiance_aprem = "un ciel chaotique devenant menaçant avec le déclenchement d'averses orageuses localement fortes"
+    elif avg_max_j1 >= 30:
+        synop = "poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude"
+        ambiance_matin = "très douce au lever du jour sous un soleil prédominant"
+        ambiance_aprem = "un ensoleillement généreux sous une chaleur estivale bien marquée"
+    elif avg_max_j1 >= 24:
+        synop = "installation d'un marais barométrique estival assurant un temps sec et lumineux"
+        ambiance_matin = "douce et agréable au lever du jour"
+        ambiance_aprem = "un soleil généreux avec des températures de saison sans excès de chaleur"
     elif has_rain_j1:
-        synop = "circulation d'un flux océanique d'ouest perturbé et humide sous influence d'une dépression circulant sur les îles Britanniques"
-        ambiance_matin = "grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies faibles à modérées"
-        ambiance_aprem = "un ciel dominé par des passages nuageux denses accompagnés d'averses régulières et d'un renforcement des brises"
+        synop = "circulation d'un flux océanique d'ouest perturbé et humide"
+        ambiance_matin = "grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies"
+        ambiance_aprem = "un ciel dominé par des passages nuageux denses accompagnés d'averses éparses"
     else:
-        synop = "installation d'un solide marais barométrique estival à faible gradient de pression sous influence anticyclonique"
-        ambiance_matin = "lumineuse et vivifiante après la dissipation rapide des rares grisailles maritimes ou brumes de vallée à l'aube"
-        ambiance_aprem = "un grand soleil généreux et stable, simplement agrémenté de quelques cirrus décoratifs à haute altitude"
+        synop = "influence anticyclonique calme assurant un temps sec et modérément doux"
+        ambiance_matin = "lumineuse et vivifiante après la dissipation des rares brumes matinales"
+        ambiance_aprem = "un ensoleillement agréable avec des températures de saison particulièrement douces"
+
+    if avg_max_j1 >= 28:
+        evolution_temp = "un réchauffement diurne nettement marqué"
+    elif avg_max_j1 >= 23:
+        evolution_temp = "une hausse progressive des températures jusqu'à des valeurs agréables"
+    else:
+        evolution_temp = "des températures très douces et de saison, sans aucun excès"
+
+    def get_clean_region_name(cname):
+        c = cname.strip().upper()
+        if "ROCHELLE" in c or "NAQ" in c:
+            return "en Charente-Maritime et sur le littoral"
+        if "NORD" in c or "6" in c or "MONA" in c:
+            return "sur les Hauts-de-France"
+        if "NORMANDIE" in c or "SEINE" in c:
+            return "sur la Normandie"
+        if "BRETAGNE" in c or "BREIZH" in c:
+            return "sur la Bretagne"
+        if "PACA" in c or "AZUR" in c or "PROVENCE" in c:
+            return "sur la Côte d'Azur et la Provence"
+        if "AUVERGNE" in c or "RHONE" in c:
+            return "sur l'Auvergne-Rhône-Alpes"
+        if "BOURGOGNE" in c or "FRANCHE" in c:
+            return "sur la Bourgogne-Franche-Comté"
+        if "GRAND EST" in c or "ALSACE" in c:
+            return "sur le Grand Est"
+        if "ILE-DE-FRANCE" in c or "PARIS" in c:
+            return "sur l'Île-de-France"
+        if "OCCITANIE" in c:
+            return "sur l'Occitanie"
+        if "CORSE" in c:
+            return "sur la Corse"
+        if "PAYS DE LA LOIRE" in c:
+            return "sur les Pays de la Loire"
+        if "CENTRE" in c:
+            return "sur le Centre-Val de Loire"
+        return "sur la région"
+
+    region_label = get_clean_region_name(client_name)
+    min_val_str = f"{int(round(min(s['tmin'] for s in j1_struct)))}°C" if j1_struct else "18°C"
+    max_val_str = f"{int(round(max(s['tmax'] for s in j1_struct)))}°C" if j1_struct else "28°C"
+
+    if has_storm_j1:
+        essential_sky = "Un temps lourd et instable domine avec un risque d'orages localement forts"
+        summary_lancement = f"⚡ TEMPS LOURD ET INSTABLE : Des averses orageuses parfois fortes sont attendues ce {wd1} sur la région, avec des températures évoluant de {min_val_str} le matin jusqu'à {max_val_str} l'après-midi."
+        last_sentence_morning = "L'atmosphère devient rapidement instable avec des nuages menaçants et des averses orageuses."
+    elif has_rain_j1:
+        essential_sky = "Un passage pluvieux et nuageux traverse le secteur au fil de la journée"
+        summary_lancement = f"🌧️ PASSAGE PLUVIEUX ET NUAGEUX : Des précipitations et des averses traversent la région ce {wd1}, avec des températures évoluant de {min_val_str} le matin jusqu'à {max_val_str} l'après-midi."
+        last_sentence_morning = "Des passages nuageux denses et des averses régulières arrosent le secteur au fil de la matinée."
+    elif avg_max_j1 >= 30:
+        essential_sky = "Un grand soleil et une forte chaleur estivale s'imposent"
+        summary_lancement = f"☀️ SOLEIL ET CHALEUR ESTIVALE : Un ciel très ensoleillé s'impose ce {wd1} sur la région, avec des maximales grimpant jusqu'à {max_val_str}."
+        last_sentence_morning = "La matinée se poursuit sous un ensoleillement en progression constante."
+    else:
+        essential_sky = "Un temps calme, lumineux et ensoleillé s'impose"
+        summary_lancement = f"🌤️ TEMPS CALME ET LUMINEUX : Un ciel agréablement dégagé s'impose ce {wd1} sur la région, avec des températures évoluant de {min_val_str} le matin jusqu'à {max_val_str} l'après-midi."
+        last_sentence_morning = "La matinée se poursuit sous un ensoleillement en progression constante."
 
     today_summary = (
-        f"Ce {wd1}, la situation générale sur l'ensemble de la zone {client_name} est caractérisée par la {synop}. "
-        f"Cette dynamique aérologique gouverne une ambiance {ambiance_matin.split()[0]} en matinée, avant un réchauffement diurne marqué. "
-        f"En surface, le régime de vent reste modéré mais participe activement à la distribution des masses d'air, favorisant la mise en place de brises thermiques en journée. "
-        f"Sous l'évolution du rayonnement solaire, l'amplitude thermique restera notable entre la fraîcheur relative de l'aube et les maximales relevées sous abri dans l'après-midi."
+        f"🌤️ L'ESSENTIEL DE CE {wd1.upper()} : {essential_sky} {region_label}. "
+        f"Au lever du jour, les températures minimales affichent {min_val_str}, "
+        f"avant de grimper jusqu'à {max_val_str} sous abri au cours de l'après-midi. "
+        f"Le vent souffle de manière modérée, assurant une agréable ventilation."
     )
 
     summary_morning = (
         f"Ce {wd1} matin, le réveil se fait dans une ambiance {ambiance_matin}. "
-        f"La situation synoptique favorise un ciel globalement calme dès l'aube, bien que quelques grisailles locales "
-        f"ou brumes légères puissent temporairement s'accrocher dans les vallées avant de se dissiper rapidement. "
-        f"Les valeurs au lever du jour s'échelonnent avec {format_min_list(j1_struct)}. "
-        f"Le vent souffle discrètement, maintenant un ressenti souvent doux dès les premières heures du jour. "
-        f"La matinée se poursuit sous un ensoleillement en progression constante, offrant d'excellentes conditions "
-        f"pour les déplacements de la matinée sur l'ensemble de nos secteurs."
+        f"Les températures au lever du jour s'échelonnent avec {format_min_list(j1_struct)}. "
+        f"Le vent souffle discrètement, maintenant un ressenti très doux sur l'ensemble du secteur. "
+        f"{last_sentence_morning}"
     )
 
     summary_afternoon = (
         f"L'après-midi, le temps est marqué par {ambiance_aprem}. "
-        f"Le thermomètre affiche des valeurs très contrastées selon l'exposition au vent ou la présence de nuages, "
-        f"avec des maximales atteignant {format_max_list(j1_struct)}. "
-        f"Quelques cumulus de beau temps peuvent bourgeonner au-dessus des reliefs ou dans les terres, "
-        f"tandis que les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. "
-        f"En soirée, l'atmosphère conserve une grande douceur, idéale pour les sorties et activités de plein air, "
-        f"sous un ciel qui a tendance à se dégager progressivement avant la tombée de la nuit."
+        f"Le thermomètre affiche des maximales atteignant {format_max_list(j1_struct)}. "
+        f"Les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. "
+        f"En soirée, l'atmosphère conserve une grande douceur idéale pour les sorties et activités de plein air."
     )
 
     summary_morning2 = (
         f"Ce {wd2} matin ({date_j2}), la journée débute sous un ciel généralement lumineux et peu nuageux. "
-        f"Après une nuit calme, les températures matinales sont douces et affichent {format_min_list(j2_struct)}. "
-        f"Les vents matinaux restent faibles à modérés, assurant une excellente visibilité sur les axes routiers. "
-        f"La matinée s'annonce agréable et propice aux activités extérieures avant le réchauffement diurne."
+        f"Les températures matinales sont douces et affichent {format_min_list(j2_struct)}. "
+        f"Les vents matinaux restent faibles à modérés, assurant une excellente visibilité. "
+        f"La matinée s'annonce agréable et propice aux activités extérieures."
     )
 
     summary_afternoon2 = (
-        f"L'après-midi du {date_j2}, le soleil continue de s'imposer malgré quelques passages nuageux d'altitude ou bancs de cumulus. "
+        f"L'après-midi du {date_j2}, le soleil s'impose malgré quelques passages nuageux inoffensifs. "
         f"Les températures maximales évoluent vers {format_max_list(j2_struct)}. "
-        f"L'ambiance reste estivale et lumineuse, avec un vent faible qui apporte une légère ventilation dans l'intérieur des terres."
+        f"L'ambiance reste estivale et lumineuse avec un vent faible à modéré."
     )
 
     def get_trend_line(date_str, struct):
         if not struct:
-            return f"- {date_str} : Temps ensoleillé et agréable, températures de saison avec un vent modéré."
-        tmin = int(round(min(s['tmin'] for s in struct)))
-        tmax = int(round(max(s['tmax'] for s in struct)))
+            return f"▶ {date_str} : Temps ensoleillé et agréable. Minimales vers 15°C. Maximales atteignant 25°C. Vent modéré."
+        tmin = min(s['tmin'] for s in struct) if struct else 15
+        tmax = max(s['tmax'] for s in struct) if struct else 25
         code = max((s['code'] for s in struct), default=0)
-        amplitude = tmax - tmin
-        # ponytail: double échelle — codes MF (0-12) ou WMO (0-99) selon la source du CSV
-        # MF: 10=orages, 11=orages+grêle, 8=pluie forte, 7=pluie faible, 6=averses, 9=neige
-        # WMO: 95+=orages, 80+=averses, 61+=pluies, 50+=bruines
-        is_mf_code = code <= 12
-        if is_mf_code:
-            if code == 11:
-                desc = "Orages violents localement, avec risque de grêle et rafales"
-            elif code == 10:
-                desc = "Passages orageux, ciel agité avec des éclaircies entre les grains. Vent sensible"
-            elif code == 8:
-                desc = "Ciel couvert, pluies modérées à fortes sur l'ensemble du pays. Temps maussade"
-            elif code in (6, 7):
-                desc = "Ciel voilé à nuageux avec quelques averses ou pluies faibles éparses"
-            elif code == 9:
-                desc = "Risque de chutes de neige, températures en baisse sensible"
-            elif code == 12:
-                desc = "Brouillards matinaux persistants, visibilité réduite en début de journée"
-            elif tmax >= 35:
-                desc = "Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
-            elif tmax >= 32:
-                desc = "Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
-            elif tmax >= 28:
-                desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
-            elif amplitude >= 14:
-                desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
-            else:
-                desc = "Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
-        else:  # WMO fallback (Open-Meteo)
-            if code >= 95:
-                desc = "Orages violents localement, avec risque de grêle et rafales"
-            elif code >= 80:
-                desc = "Passages d'averses orageuses, ciel agité avec des éclaircies entre les grains"
-            elif code >= 61:
-                desc = "Ciel couvert à nuageux, pluies régulières. Temps maussade"
-            elif code >= 50:
-                desc = "Ciel souvent voilé avec quelques bruines ou pluies faibles éparses"
-            elif tmax >= 35:
-                desc = "Canicule persistante, soleil de plomb et chaleur accablante toute la journée"
-            elif tmax >= 32:
-                desc = "Forte chaleur estivale sous un soleil généreux, au-dessus des normales saisonnières"
-            elif tmax >= 28:
-                desc = f"Belle journée bien ensoleillée et chaude, amplitude thermique de {amplitude}°C entre matin et après-midi"
-            elif amplitude >= 14:
-                desc = f"Matin frais ({tmin}°C), après-midi agréable et lumineux avec un net réchauffement en journée"
-            else:
-                desc = "Temps calme et lumineux avec de belles éclaircies, températures douces et vent faible"
-        return f"- {date_str} : {desc}. Minimales vers {tmin}°C, maximales atteignant {tmax}°C."
+        max_gust = max((s.get('gust', 0) for s in struct), default=0)
+        gust_info = f" Attention aux rafales de vent atteignant {max_gust} km/h." if max_gust >= 40 else " Le vent souffle de manière modérée."
+        if code >= 80:
+            desc = "Temps instable avec des passages d'averses orageuses."
+        elif code >= 50:
+            desc = "Ciel nuageux à couvert avec des pluies éparses."
+        elif tmax >= 32:
+            desc = "Poursuite d'une forte chaleur sous un soleil généreux."
+        else:
+            desc = "Temps calme, sec et largement lumineux."
+        return (
+            f"▶ {date_str} : {desc} "
+            f"Au lever du jour, les températures minimales oscillent autour de {tmin}°C. "
+            f"L'après-midi, le mercure grimpe jusqu'à {tmax}°C sous abri.{gust_info}"
+        )
 
     forecast_raw = (
         f"📉 Tendance – 3 jours suivants ({date_j3} au {date_j5})\n\n"
-        f"{get_trend_line(date_j3, j3_struct)}\n"
-        f"{get_trend_line(date_j4, j4_struct)}\n"
+        f"{get_trend_line(date_j3, j3_struct)}\n\n"
+        f"{get_trend_line(date_j4, j4_struct)}\n\n"
         f"{get_trend_line(date_j5, j5_struct)}"
     )
 
-    vig_line = "⚠️ VIGILANCE CANICULE — 72 départements en orange sur les trois-quarts sud" if avg_max_j1 >= 32 else ""
-    # Bullets conditionnés au temps réel
-    _code1 = max((s['code'] for s in j1_struct), default=0) if j1_struct else 0
-    _has_storm = (_code1 <= 12 and _code1 in (10, 11)) or (_code1 > 12 and _code1 >= 90)
-    _has_rain = (_code1 <= 12 and _code1 in (6, 7, 8)) or (_code1 > 12 and _code1 >= 50)
-    records_raw = "\n".join(filter(None, [
-        vig_line,
-        f"🌡️ CHALEUR MARQUÉE — maximales entre {int(round(min(s['tmax'] for s in j1_struct)))}°C et {int(round(max(s['tmax'] for s in j1_struct)))}°C" if j1_struct else "",
-        f"⛈️ ORAGES — risque d'orages localement forts, rafales possibles" if _has_storm else "",
-        f"🌂 PLUIES — passages pluvieux attendus sur plusieurs régions" if (_has_rain and not _has_storm) else "",
-        f"🌬️ VENT — modéré, rafales sous les cellules instables" if _has_storm else (f"🌬️ VENT — faible à modéré, peu sensible" if not _has_rain else ""),
-        f"☀️ ENSOLEILLEMENT — beau temps prédominant, conditions estivales" if (not _has_rain and not _has_storm) else "",
-    ]))
+    vig_warning = f"⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce {wd1}.\n" if avg_max_j1 >= 32 else ""
+    records_raw = (
+        f"{vig_warning}"
+        f"🌧️ Pluies & Humidité : Temps sec sur la région ce {wd1} avec maintien de la sécheresse de surface.\n"
+        f"🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce {wd1}. Aucun coup de vent à craindre.\n"
+        f"⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce {wd1}.\n"
+        f"🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+    )
 
     mountain_text = (
         f"🏔️ Météo montagne\n\n"
@@ -433,118 +454,95 @@ def generate_local_fallback_texts(client_name, cities, day_offset):
         f"    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du {date_j1}."
     )
 
-    coastal_t = int(round(min(s["tmax"] for s in j1_struct))) if j1_struct else 26
-    water_t = "19 à 20°C" if coastal_t >= 25 else "17 à 18°C"
+    # Météo Plages et Marine dynamiques calculées à partir des données réelles du jour
+    max_wind_j1 = max((s.get('wind', 15) for s in j1_struct), default=15)
+    max_gust_j1 = max((s.get('gust', 20) for s in j1_struct), default=20)
+    coastal_max_t = max((s['tmax'] for s in j1_struct), default=24)
+    coastal_min_t = min((s['tmin'] for s in j1_struct), default=15)
+    
+    if max_wind_j1 >= 25:
+        sea_state_desc = "Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade"
+    elif max_wind_j1 >= 15:
+        sea_state_desc = "Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques"
+    else:
+        sea_state_desc = "Mer belle et calme (vagues < 0.4m), excellente pour la baignade"
 
-    if any(k in client_name.upper() for k in ["NORD", "6", "MONA", "OPALE"]):
+    gust_str = f" avec rafales atteignant {max_gust_j1} km/h" if max_gust_j1 >= 35 else ""
+
+    if "NORD" in client_name.upper() or "HDF" in client_name.upper() or "RADIO 6" in client_name.upper() or "MONA" in client_name.upper():
+        water_t_val = min(19, max(16, round(16.5 + (coastal_max_t - 20) * 0.15)))
         beach_text = (
-            f"🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & MER DU NORD ({date_j1})\n\n"
+            f"🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE ({date_j1})\n\n"
             f"🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n"
-            f"☀️ Ensoleillement généreux ce {wd1}, ambiance très agréable pour les baigneurs.\n"
-            f"🌡️ Température de l'air sur le sable : {coastal_t}°C • 🧴 Indice UV : 6 (Modéré à Fort)\n"
-            f"🌊 Température de l'eau : {water_t} • 🏖️ Confort de baignade : Rafraîchissant et tonique\n\n"
-            f"🌴 Calais / Boulogne-sur-Mer / Le Touquet\n"
-            f"☀️ Soleil largement dominant ce {wd1}, bercé par une légère brise thermique de Nord-Est.\n"
-            f"🌡️ Température de l'air : {coastal_t - 1} à {coastal_t}°C • 🌊 Température de l'eau : {water_t}"
+            f"☀️ {synop.capitalize()} sur la côte. Températures de {coastal_min_t + 2}°C le matin à {coastal_max_t}°C l'après-midi.\n"
+            f"🌊 Température de l’eau : {water_t_val}°C à {water_t_val + 1}°C\n\n"
+            f"🌴 Le Touquet / Berck / Baie de Somme\n"
+            f"☀️ Ambiance agréable sur le littoral ce {wd1}. Maximales atteignant {coastal_max_t + 1}°C sur le sable.\n"
+            f"🌊 Température de l’eau : {water_t_val + 1}°C"
         )
         marine_text = (
             f"🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD ({date_j1})\n\n"
             f"📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n"
             f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Régime des Vents au large : Vent de Nord-Est modéré (15 à 25 km/h) ce {wd1}, faiblissant en soirée.\n"
-            f"🌊 État de la Mer & Houle : Mer belle à peu agitée au large, creux de 0.4m à 0.8m.\n"
-            f"👁️ Visibilité & Marées : Visibilité excellente (> 10 km) après dissipation des brumes."
+            f"🌬️ Vent : Vent de Nord-Est modéré ({max_wind_j1} km/h{gust_str}) ce {wd1}.\n"
+            f"🌊 État de la mer : {sea_state_desc}.\n"
+            f"⚠️ Visibilité : Bonne sur l'ensemble du littoral."
         )
-    elif any(k in client_name.upper() for k in ["ROCHELLE", "CHARENTE", "NAQ"]):
+    elif "ROCHELLE" in client_name.upper() or "NAQ" in client_name.upper():
+        water_t_val = min(24, max(20, round(20.5 + (coastal_max_t - 22) * 0.2)))
         beach_text = (
-            f"🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS & ÎLES ({date_j1})\n\n"
+            f"🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS ({date_j1})\n\n"
             f"🌴 La Rochelle / Île de Ré / Île d’Oléron\n"
-            f"☀️ Soleil omniprésent et forte chaleur estivale sur l'ensemble du cordon dunaire ce {wd1}.\n"
-            f"🌡️ Température de l'air sur la plage : {coastal_t + 3} à {coastal_t + 5}°C • 🧴 Indice UV : 8 (Très Fort)\n"
-            f"🌊 Température de l'eau : 21 à 23°C • 🏖️ Conditions de baignade : Idéales et très douces\n\n"
-            f"🌴 Royan / Côte de Beauté / Chatelaillon\n"
-            f"☀️ Grand soleil ce {wd1}, chaleur tempérée en bord de mer par la brise thermique l'après-midi.\n"
-            f"🌡️ Température de l'air : {coastal_t + 4} à {coastal_t + 6}°C • 🌊 Température de l'eau : 22 à 24°C"
+            f"☀️ {synop.capitalize()} sur l'ensemble des plages charentaises ce {wd1}.\n"
+            f"🌡️ Température sur le littoral : {coastal_min_t + 3}°C à {coastal_max_t}°C\n"
+            f"🌊 Température de l’eau : {water_t_val}°C à {water_t_val + 1}°C\n\n"
+            f"🌴 Royan / Côte de Beauté / Rochefort\n"
+            f"☀️ Ensoleillement généreux ce {wd1}, maximales de {coastal_max_t + 1}°C tempérées par la brise marine.\n"
+            f"🌊 Température de l’eau : {water_t_val + 1}°C"
         )
         marine_text = (
-            f"🌊 MÉTÉO MARINE & BASSIN DE NAVIGATION – CHARENTE-MARITIME ({date_j1})\n\n"
-            f"📍 Zones : La Rochelle • Pertuis Breton & d'Antioche • Rade de Rochefort • Royan\n\n"
+            f"🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME ({date_j1})\n\n"
+            f"📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche\n\n"
             f"☀️ Situation synoptique : {synop.capitalize()}.\n"
-            f"🌬️ Régime des Vents : Brises thermiques d'Est le matin (10 km/h) basculant Nord-Ouest l'après-midi (20 km/h).\n"
-            f"🌊 État de la Mer & Houle : Mer belle dans les pertuis, peu agitée au large du plateau de Rochebonne (creux 0.6m).\n"
-            f"👁️ Visibilité : Parfaite sur tout le plan d'eau."
+            f"🌬️ Vent : Régime de brises thermiques ({max_wind_j1} km/h{gust_str}).\n"
+            f"🌊 État de la mer : {sea_state_desc}."
         )
-    elif any(k in client_name.upper() for k in ["NORMANDIE", "SEINE", "HAVRE"]):
+    elif "NORMANDIE" in client_name.upper() or "NOR" in client_name.upper():
+        water_t_val = min(20, max(17, round(17.0 + (coastal_max_t - 20) * 0.18)))
         beach_text = (
             f"🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE ({date_j1})\n\n"
             f"🌴 Le Havre / Deauville / Cabourg\n"
-            f"☀️ Belle journée ensoleillée ce {wd1}, ambiance côtière estivale très agréable.\n"
-            f"🌡️ Température de l'air sur la plage : {coastal_t + 1} à {coastal_t + 3}°C • 🧴 Indice UV : 7 (Fort)\n"
-            f"🌊 Température de l'eau : 18 à 19°C • 🏖️ Baignade : Agréable et rafraîchissante\n\n"
+            f"☀️ Temps agréable ce {wd1}. Températures sur les plages : {coastal_min_t + 2}°C à {coastal_max_t}°C.\n"
+            f"🌊 Température de l’eau : {water_t_val}°C à {water_t_val + 1}°C\n\n"
             f"🌴 Dieppe / Fécamp / Cherbourg\n"
-            f"☀️ Ciel bien dégagé ce {wd1} après dissipation des brumes matinales.\n"
-            f"🌡️ Température de l'air : {coastal_t} à {coastal_t + 2}°C • 🌊 Température de l'eau : 17 à 18°C"
+            f"☀️ Belle luminosité ce {wd1}, brise littorale rafraîchissante avec maximales de {coastal_max_t}°C.\n"
+            f"🌊 Température de l’eau : {water_t_val}°C"
         )
         marine_text = (
-            f"🌊 MÉTÉO MARINE – MANCHE & BASSIN NORMAND ({date_j1})\n\n"
-            f"📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cotentin\n\n"
+            f"🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND ({date_j1})\n\n"
+            f"📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg\n\n"
             f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Régime des Vents au large : Flux de Nord-Est modéré (20 à 30 km/h avec pointes à 35 km/h sur les caps).\n"
-            f"🌊 État de la Mer & Houle : Mer belle en Baie de Seine, peu agitée au large du Cotentin (creux 0.8m).\n"
-            f"👁️ Visibilité : Bonne après dissipation des brumes côtières."
-        )
-    elif any(k in client_name.upper() for k in ["BRETAGNE", "BREIZH", "ARMOR"]):
-        beach_text = (
-            f"🏖️ MÉTÉO DES PLAGES – LITTORAL BRETON ({date_j1})\n\n"
-            f"🌴 Saint-Malo / Dinard / Côte d'Émeraude\n"
-            f"☀️ Belle luminosité estivale ce {wd1}, ciel largement dégagé sur les grèves.\n"
-            f"🌡️ Température de l'air : {coastal_t} à {coastal_t + 2}°C • 🧴 Indice UV : 7\n"
-            f"🌊 Température de l'eau : 17 à 19°C • 🏖️ Baignade : Tonique et vivifiante\n\n"
-            f"🌴 Carnac / Quiberon / Golfe du Morbihan\n"
-            f"☀️ Soleil généreux ce {wd1}, ambiance très douce sous brise marine.\n"
-            f"🌡️ Température de l'air : {coastal_t + 2} à {coastal_t + 4}°C • 🌊 Température de l'eau : 19 à 20°C"
-        )
-        marine_text = (
-            f"🌊 MÉTÉO MARINE – MANCHE OUEST & ATLANTIQUE BRETON ({date_j1})\n\n"
-            f"📍 Zones : Rade de Brest • Mer d'Iroise • Golfe du Morbihan • Baie de Saint-Malo\n\n"
-            f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Régime des Vents au large : Vent de Nord-Est 15 à 25 km/h, brises thermiques sensibles l'après-midi.\n"
-            f"🌊 État de la Mer & Houle : Mer peu agitée en Iroise, belle dans les baies abritées (creux 0.5m à 1.0m).\n"
-            f"👁️ Visibilité : Excellente."
-        )
-    elif any(k in client_name.upper() for k in ["PACA", "AZUR", "NICE", "MARSEILLE", "VAR"]):
-        beach_text = (
-            f"🏖️ MÉTÉO DES PLAGES – CÔTE D'AZUR & LITTORAL PROVENÇAL ({date_j1})\n\n"
-            f"🌴 Nice / Cannes / Saint-Tropez / Hyères\n"
-            f"☀️ Grand soleil méditerranéen et forte chaleur sur toutes les calanques et plages ce {wd1}.\n"
-            f"🌡️ Température de l'air : {coastal_t + 4} à {coastal_t + 7}°C • 🧴 Indice UV : 9 (Extrême)\n"
-            f"🌊 Température de l'eau : 24 à 26°C • 🏖️ Baignade : Très chaude et optimale\n\n"
-            f"🌴 Marseille / Cassis / La Ciotat\n"
-            f"☀️ Ensoleillement total ce {wd1}, brise de mer modérée en deuxième partie de journée.\n"
-            f"🌡️ Température de l'air : {coastal_t + 3} à {coastal_t + 6}°C • 🌊 Température de l'eau : 23 à 25°C"
-        )
-        marine_text = (
-            f"🌊 MÉTÉO MARINE – MÉDITERRANÉE & RADE DE MARSEILLE ({date_j1})\n\n"
-            f"📍 Zones : Rade de Marseille • Îles d'Hyères • Baie des Anges • Golfe de Saint-Tropez\n\n"
-            f"☀️ Situation générale : {synop.capitalize()}.\n"
-            f"🌬️ Régime des Vents au large : Régime de brises thermiques basculant Ouest-Sud-Ouest 15-25 km/h l'après-midi.\n"
-            f"🌊 État de la Mer & Houle : Mer belle à peu agitée, pas de houle significative (creux < 0.5m).\n"
-            f"👁️ Visibilité : Excellente sur tout le bassin méditerranéen."
+            f"🌬️ Vent : Vent modéré de Nord-Est ({max_wind_j1} km/h{gust_str}) ce {wd1}.\n"
+            f"🌊 État de la mer : {sea_state_desc}."
         )
     else:
         beach_text = ""
         marine_text = ""
 
+    summary_lancement2 = f"🌤️ PREVISIONS DU {wd2.upper()} : Poursuite d'un temps calme et ensoleillé sur la région avec des températures de saison."
+    forecast_lancement = f"📉 EVOLUTION DE LA TENDANCE : Un temps sec et lumineux prédomine pour la suite de la semaine avec une douceur estivale durable."
+
     return {
         "todaySummary": today_summary,
-        "summaryLancement": f"PRÉVISIONS DE VOTRE JOURNÉE : Voici les conditions détaillées pour ce {wd1} :",
+        "summaryLancement": summary_lancement,
+        "summaryLancement2": summary_lancement2,
         "summaryMorning": summary_morning,
         "summaryAfternoon": summary_afternoon,
         "summaryMorning2": summary_morning2,
         "summaryAfternoon2": summary_afternoon2,
         "forecastRaw": forecast_raw,
         "forecastTextRaw": forecast_raw,
-        "forecastLancement": "TENDANCE DES PROCHAINS JOURS : Voyons ce qui nous attend pour la suite de la période :",
+        "forecastLancement": forecast_lancement,
         "recordsRaw": records_raw,
         "mountain": mountain_text,
         "mountainTitle": f"🏔️ MÉTÉO DES MONTAGNES DU {date_j1.upper()}",
@@ -593,31 +591,20 @@ def fetch_vigilance_and_national_context(day_offset=1):
                 return out[:2800]
     except Exception:
         pass
-    return "72 départements en vigilance orange Canicule sur la France. Chaleur persistante et forte sur les prochains jours (J+2 à J+7)."
+    return "Vigilance verte ou jaune sur la majorité du territoire national. Chaleur de saison sur la moitié nord et plus marquée sur les régions du sud."
 
 
 def get_client_region_prefix(client_name):
     """Determine region prefix for map image lookup based on client name."""
     c_clean = client_name.strip().upper()
-    mapping = {
-        "EUROPE": "", "BULLETIN EUROPE": "",
-        "NORD": "hdf_", "RADIO 6": "hdf_", "MONA": "hdf_",
-        "ROCHELLE": "naq_", "NAQ": "naq_",
-        "NORMANDIE": "normandie_",
-        "AUVERGNE": "ara_", "RHONE": "ara_",
-        "BOURGOGNE": "bfc_", "FRANCHE": "bfc_",
-        "BRETAGNE": "bretagne_",
-        "CENTRE": "cvl_",
-        "CORSE": "corse_",
-        "GRAND EST": "grand-est_",
-        "ILE-DE-FRANCE": "ile-de-france_", "PARIS": "ile-de-france_",
-        "OCCITANIE": "occitanie_",
-        "PAYS DE LA LOIRE": "pdl_",
-        "PROVENCE": "paca_", "PACA": "paca_", "AZUR": "paca_",
-    }
-    for key, prefix in mapping.items():
-        if key in c_clean:
-            return prefix
+    if "EUROPE" in c_clean:
+        return ""
+    elif any(k in c_clean for k in ["NORD", "RADIO 6", "MONA"]):
+        return "hdf_"
+    elif "ROCHELLE" in c_clean:
+        return "naq_"
+    elif "NORMANDIE" in c_clean:
+        return "normandie_"
     return ""
 
 
@@ -678,31 +665,26 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     d1 = today + datetime.timedelta(days=day_offset)
     d2 = today + datetime.timedelta(days=day_offset + 1)
     d3 = today + datetime.timedelta(days=day_offset + 2)
+    d4 = today + datetime.timedelta(days=day_offset + 3)
     d5 = today + datetime.timedelta(days=day_offset + 4)
+    d6 = today + datetime.timedelta(days=day_offset + 5)
+    d7 = today + datetime.timedelta(days=day_offset + 6)
 
     date_j1 = french_date(d1, include_year=True)
     date_j2 = french_date(d2, include_year=False)
     date_j3 = french_date(d3, include_year=False)
+    date_j4 = french_date(d4, include_year=False)
     date_j5 = french_date(d5, include_year=False)
+    date_j6 = french_date(d6, include_year=False)
+    date_j7 = french_date(d7, include_year=False)
 
     print(f"Fetching weather data for AI generation ({client_name}, offset={day_offset})...")
     j1_data = fetch_raw_weather(cities, day_offset)
     j2_data = fetch_raw_weather(cities, day_offset + 1)
+    j3_data = fetch_raw_weather(cities, day_offset + 2)
+    j4_data = fetch_raw_weather(cities, day_offset + 3)
+    j5_data = fetch_raw_weather(cities, day_offset + 4)
     vig_context = fetch_vigilance_and_national_context(day_offset)
-
-    # Multi-source enrichment (Infoclimat Token 0 + Météo-France XML Meteotel + Guillaume Séchet)
-    try:
-        from multi_source_enricher import get_enriched_multi_source_payload
-        multi_source_payload = get_enriched_multi_source_payload(client_name)
-        ms_context = (
-            f"\n--- APPORTS MULTI-SOURCES MÉTÉO ---\n"
-            f"1. DISCUSSIONS INFOCLIMAT FORUM (TOKEN 0) :\n{multi_source_payload['infoclimat_forum']}\n\n"
-            f"2. BULLETINS XML MÉTÉO-FRANCE METEOTEL (22SPC) :\n{multi_source_payload['meteofrance_xml']}\n\n"
-            f"3. ALMANACH & HISTORIQUE GUILLAUME SÉCHET :\n{multi_source_payload['sechet_records']}\n"
-        )
-    except Exception as e:
-        print("Notice: Could not load multi_source_enricher payload:", e)
-        ms_context = ""
 
     local_fallback = generate_local_fallback_texts(client_name, cities, day_offset)
 
@@ -732,19 +714,16 @@ def generate_bulletin_texts(client_name, cities, day_offset, images=None):
     # Appel 1 : Matinée Jour 1 (Carte 1)
     summaryMorning = ""
     if img_m1:
-        prompt_m1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour la MATINÉE du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+        prompt_m1 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour la MATINÉE du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
 
-CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
-- Adopte l'approche éditoriale percutante de Radio Ici La Rochelle : va droit à l'essentiel, mets immédiatement en valeur le phénomène météorologique le plus marquant de la matinée (ex: fortes rafales, entrée maritime, fraîcheur marquée, soleil radieux, orages).
-- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, dynamique, vivant et très fluide.
-- Interdit absolu de dire 'carte', 'image', 'visuel', 'icône', etc.
-- Intègre impérativement des indications concrètes sur le VENT (brise marine, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / TERRES s'il y a lieu.
-- ⚠️ Si tu vois un éclair (orage ou grêle), mentionne-le obligatoirement et d'emblée.
-
-CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
-- 👁️ Analyse la CARTE IMAGE transmise ci-jointe pour ce créneau MATIN avec la plus haute précision visuelle.
-- 🛑 ISOLATION HERMÉTIQUE DU CRÉNEAU : Décris UNIQUEMENT et STRICTEMENT les pictogrammes du MATIN sur CETTE carte. Ne fais aucune supposition basée sur l'après-midi.
-- 🌡️ DISTINCTION DES TEMPÉRATURES : Pour ce bulletin du MATIN, cite exclusivement les températures MINIMALES réelles.
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide, élégant et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "C'est votre présentateur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
+- ⚠️ MENTION IMPÉRATIVE DU TEMPS SENSIBLE : Tu dois TOUJOURS décrire avec précision l'état du ciel et les précipitations réelles (averses, pluies, éclaircies, soleil dominant, nuages bas, brumes, orages). Si la carte ou les données indiquent des averses ou des pluies, tu dois OBLIGATOIREMENT les citer expressément dans le texte (ex: "des averses se déclenchent", "un passage pluvieux s'invite"). INTERDICTION de passer sous silence des averses ou des pluies !
+- Intègre obligatoirement des indications précises sur le VENT (brise, vent modéré, mistral, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- Si tu vois un éclair (orage ou grêle), mentionne-le expressément (risque orageux, foudre).
 
 {picto_guide}
 
@@ -753,10 +732,10 @@ Données réelles pour ce matin :
 
 Instructions :
 1. Remplis la balise <reconnaissance_matin> avec la liste des villes visibles sur la carte et leur picto. Ex: "Lille = soleil, Douai = ORAGE ⚠️"
-2. Remplis la balise <texte_matin> avec ton commentaire parlé de matinée (100-130 mots MAXIMUM pour un rythme radio ultra-dynamique). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
+2. Remplis la balise <texte_matin> avec ton commentaire journalistique de matinée (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin..." et citer 5-6 villes avec minimales réelles.
 """
         try:
-            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J1 Morning map...")
+            print(f"[{client_name}] Calling Gemini Flash for J1 Morning map...")
             res_m1 = call_openrouter(api_key, prompt_m1, images=[img_m1])
             recon_m1 = extract_xml_tag(res_m1, "reconnaissance_matin")
             summaryMorning = extract_xml_tag(res_m1, "texte_matin")
@@ -772,19 +751,16 @@ Instructions :
     # Appel 2 : Après-midi Jour 1 (Carte 2)
     summaryAfternoon = ""
     if img_a1:
-        prompt_a1 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
+        prompt_a1 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour l'APRÈS-MIDI du {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]}) pour "{client_name}".
 
-CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
-- Adopte l'approche éditoriale percutante de Radio Ici La Rochelle : va droit à l'essentiel, mets immédiatement en valeur le phénomène météorologique le plus marquant de l'après-midi (ex: chaleur accablante, fortes rafales, développement d'orages, brise côtière).
-- Parle au GRAND PUBLIC au micro d'une radio. Chaleureux, dynamique, vivant et très fluide.
-- Interdit de dire 'carte', 'image', 'visuel', 'icône', etc.
-- Intègre obligatoirement des indications précises sur le VENT et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
-- ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite d'emblée.
-
-CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
-- 👁️ Analyse la CARTE IMAGE transmise ci-jointe pour ce créneau APRÈS-MIDI avec la plus haute précision visuelle.
-- 🛑 ISOLATION HERMÉTIQUE DU CRÉNEAU : Décris UNIQUEMENT et STRICTEMENT les pictogrammes de l'APRÈS-MIDI sur CETTE carte. Ne reprends sous AUCUN prétexte les pluies ou orages du matin si la carte d'après-midi montre un retour du soleil !
-- 🌡️ DISTINCTION DES TEMPÉRATURES : Pour ce bulletin de l'APRÈS-MIDI, cite exclusivement les températures MAXIMALES réelles.
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide, élégant et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "C'est votre présentateur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle jamais au lecteur/auditeur à la 2ème personne (pas de "vous", "vos activités"). Rédige exclusivement à la 3ème personne.
+- ⚠️ MENTION IMPÉRATIVE DU TEMPS SENSIBLE : Tu dois TOUJOURS décrire avec précision l'état du ciel et les précipitations réelles (averses, pluies, éclaircies, soleil dominant, nuages bas, brumes, orages). Si la carte ou les données indiquent des averses ou des pluies, tu dois OBLIGATOIREMENT les citer expressément dans le texte (ex: "des averses parfois soutenues sont attendues", "un passage pluvieux s'invite"). INTERDICTION de passer sous silence des averses ou des pluies !
+- Intègre obligatoirement des indications précises sur le VENT (mistral, brise côtière, vent d'ouest, etc.) et le contraste de températures LITTORAL / INTÉRIEUR DES TERRES s'il y a lieu.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- ⚠️ Si tu vois un éclair (orage ou grêle), alerte obligatoire et explicite (risques de foudre, fortes pluies sous cellules, grêle).
 
 {picto_guide}
 
@@ -793,10 +769,10 @@ Données réelles pour cet après-midi :
 
 Instructions :
 1. Remplis la balise <reconnaissance_apresmidi> avec la liste des villes et leur picto.
-2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (100-130 mots MAXIMUM pour un rythme radio ultra-dynamique). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
+2. Remplis la balise <texte_apresmidi> avec ton commentaire d'après-midi (150-180 mots). Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]} après-midi..." et citer 5-6 villes avec maximales réelles.
 """
         try:
-            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J1 Afternoon map...")
+            print(f"[{client_name}] Calling Gemini Flash for J1 Afternoon map...")
             res_a1 = call_openrouter(api_key, prompt_a1, images=[img_a1])
             recon_a1 = extract_xml_tag(res_a1, "reconnaissance_apresmidi")
             summaryAfternoon = extract_xml_tag(res_a1, "texte_apresmidi")
@@ -812,16 +788,13 @@ Instructions :
     # Appel 3 : Matinée Jour 2 (Carte 3)
     summaryMorning2 = ""
     if img_m2:
-        prompt_m2 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour la MATINÉE du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+        prompt_m2 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour la MATINÉE du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
 
-CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
-- Approche directe et synthétique : met en avant le phénomène marquant de la matinée, va droit à l'essentiel.
-- Sans mots interdits ('carte', 'visuel', 'image').
-- 100-120 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
-
-CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
-- 👁️ Décris STRICTEMENT la carte du MATIN J2 ci-jointe. Ne mélange aucun phénomène d'un autre créneau.
-- 🌡️ Cite uniquement les températures MINIMALES réelles.
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
+- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} matin..." et citer 4-5 villes avec minimales réelles.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
 
 {picto_guide}
 
@@ -833,7 +806,7 @@ Instructions :
 2. Remplis la balise <texte_matin2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J2 Morning map...")
+            print(f"[{client_name}] Calling Gemini Flash for J2 Morning map...")
             res_m2 = call_openrouter(api_key, prompt_m2, images=[img_m2])
             recon_m2 = extract_xml_tag(res_m2, "reconnaissance_matin2")
             summaryMorning2 = extract_xml_tag(res_m2, "texte_matin2")
@@ -849,16 +822,14 @@ Instructions :
     # Appel 4 : Après-midi Jour 2 (Carte 4)
     summaryAfternoon2 = ""
     if img_a2:
-        prompt_a2 = f"""Tu es un présentateur météo radio senior. Rédige le commentaire parlé pour l'APRÈS-MIDI du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
+        prompt_a2 = f"""Tu es un journaliste météo de presse écrite. Rédige l'article d'information météo pour l'APRÈS-MIDI du {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]}) pour "{client_name}".
 
-CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
-- Approche directe et synthétique : met en avant le phénomène marquant de l'après-midi, va droit à l'essentiel.
-- Sans mots interdits ('carte', 'visuel', 'image').
-- 100-120 mots MAXIMUM. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
-
-CONSIGNE DE FIDÉLITÉ ABSOLUE À LA CARTE IMAGE ET ISOLATION TEMPORELLE STRICTE :
-- 👁️ Décris STRICTEMENT la carte de l'APRÈS-MIDI J2 ci-jointe. Ne reprends aucun phénomène du matin si l'après-midi est ensoleillé.
-- 🌡️ Cite uniquement les températures MAXIMALES réelles.
+Règles de style journalistique OBLIGATOIRES :
+- Tone : Journalistique, factuel, fluide et descriptif.
+- ⛔ INTERDICTION ABSOLUE des fioritures et salutations radiophoniques ou orales ("Bonjour à tous", "Bienvenue sur...", "profitez bien", etc.). Rédige à la 3ème personne.
+- 120-150 mots. Doit commencer par "Ce {FRENCH_WEEKDAYS[d2.weekday()]} après-midi..." et citer 4-5 villes avec maximales réelles.
+- ⚠️ Si des rafales de vent de 40 km/h ou plus (gust) sont indiquées dans les données ci-dessous, tu dois obligatoirement et expressément les citer pour alerter sur le vent fort.
+- Si orage visible, mentionne-le expressément.
 
 {picto_guide}
 
@@ -870,7 +841,7 @@ Instructions :
 2. Remplis la balise <texte_apresmidi2> avec ton commentaire.
 """
         try:
-            print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for J2 Afternoon map...")
+            print(f"[{client_name}] Calling Gemini Flash for J2 Afternoon map...")
             res_a2 = call_openrouter(api_key, prompt_a2, images=[img_a2])
             recon_a2 = extract_xml_tag(res_a2, "reconnaissance_apresmidi2")
             summaryAfternoon2 = extract_xml_tag(res_a2, "texte_apresmidi2")
@@ -885,16 +856,7 @@ Instructions :
 
     # Appel 5 : Synthèse (todaySummary & forecastRaw)
     recon_final = "\n\n".join(recon_lines)
-    prompt_syn = f"""Tu es un journaliste et présentateur météo radio/TV senior. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin "{client_name}".
-Le bulletin s'adresse au GRAND PUBLIC (sans mots interdits comme 'carte', 'visuel', 'image').
-
-CONSIGNE ÉDITORIALE (APPROCHE RADIO ICI LA ROCHELLE) :
-- Met en avant le phénomène météorologique le plus marquant, avec concision, clarté et grand dynamisme.
-
-CONSIGNE DE STRICTE ÉTANCHÉITÉ CHRONOLOGIQUE ET FIDÉLITÉ DES TENDANCES :
-- 🛑 ISOLATION STRICTE DES TENDANCES (J+3 à J+5) : La balise <forecastRaw> concerne EXCLUSIVEMENT et STRICTEMENT les 3 jours ultérieurs ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}).
-- Interdiction formelle de ré-annoncer ou mélanger les prévisions du jour ({date_j1}) ou du lendemain ({date_j2}) dans la tendance !
-- Chaque jour de la tendance doit comporter son intitulé de date exact (ex: "- {date_j3} : ..."), son phénomène marquant propre et ses températures minimales/maximales réelles.
+    prompt_syn = f"""Tu es un journaliste météo senior de presse écrite. Rédige le résumé de la journée, les phrases de lancement et la tendance à 3 jours pour le bulletin d'information "{client_name}".
 
 Date cible principale (Jour 1) : {date_j1} ({FRENCH_WEEKDAYS[d1.weekday()]})
 Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
@@ -902,86 +864,135 @@ Date cible Jour 2 : {date_j2} ({FRENCH_WEEKDAYS[d2.weekday()]})
 DONNÉES OFFICIELLES VIGILANCE & BULLETIN NATIONAL MÉTÉO-FRANCE :
 {vig_context}
 
-DONNÉES BRUTES TENDANCES PROCHAINS JOURS :
-{local_fallback.get('forecastRaw', '')}
+PRÉVISIONS DE LA JOURNÉE PAR L'IA :
+Matinée Jour 1 : {summaryMorning}
+Après-midi Jour 1 : {summaryAfternoon}
 
-PRÉVISIONS DE LA JOURNÉE (DONNÉES BRUTES — NE PAS RECOPIER, SYNTHÉTISER UNIQUEMENT) :
-Matinée Jour 1 (résumé) : {(summaryMorning[:120].rsplit(' ', 1)[0] + '...') if summaryMorning and len(summaryMorning) > 120 else (summaryMorning or 'non disponible')}
-Après-midi Jour 1 (résumé) : {(summaryAfternoon[:120].rsplit(' ', 1)[0] + '...') if summaryAfternoon and len(summaryAfternoon) > 120 else (summaryAfternoon or 'non disponible')}
+DONNÉES MÉTÉO RÉELLES DES JOURS DE TENDANCE (J3, J4, J5) :
+- Jour 3 ({date_j3}) :
+{j3_data}
 
-CONTEXTE MULTI-SOURCES (INFOCLIMAT / SÉCHET / XML MF) :
-{ms_context}
+- Jour 4 ({date_j4}) :
+{j4_data}
+
+- Jour 5 ({date_j5}) :
+{j5_data}
 
 BILAN DE LA RECONNAISSANCE DES CARTES :
 {recon_final}
 
-Instructions :
-1. Remplis la balise <todaySummary> (80-100 mots MAXIMUM, style micro radio ultra-court) en commençant par un titre accrocheur en MAJUSCULES (ex: "🌤️ SOLEIL ET CHALEUR SUR LA RÉGION !") puis 2-3 phrases percutantes résumant la journée du {date_j1}. Doit commencer par "Ce {FRENCH_WEEKDAYS[d1.weekday()]}...". JAMAIS de liste, JAMAIS de répétition du titre dans le corps.
-2. Remplis la balise <forecastRaw> avec la tendance détaillée et étanche à 3 jours ({date_j3}, {french_date(today + datetime.timedelta(days=day_offset + 3), False)}, {date_j5}) sans répéter le temps du jour.
-3. Remplis la balise <summaryLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la journée, suivi d'une courte phrase de lancement parlée, chaleureuse et fluide.
-4. Remplis la balise <forecastLancement> avec un titre accrocheur en MAJUSCULES (4 à 8 mots) résumant le phénomène météo le plus marquant de la tendance, suivi d'une courte phrase de lancement parlée.
-5. Remplis la balise <recordsRaw> avec UNIQUEMENT une liste de 3 à 5 points clés en bullet points, chacun sur une ligne, format strict : émoji + MOT-CLÉ EN MAJUSCULES + tiret + courte explication (max 10 mots). JAMAIS de texte narratif. Exemple exact :
-⚠️ VIGILANCE CANICULE — 72 départements en orange
-🌡️ CHALEUR RECORD — jusqu'à 38°C dans le Sud-Ouest
-⛈️ ORAGES VIOLENTS — grêle possible sur les Alpes
-🏴 VENT FORT — rafales 80 km/h en soirée sur les côtes
-Ce texte doit être totalement DIFFÉRENT de todaySummary.
+Instructions OBLIGATOIRES (Style journalistique strict & complet) :
+- ⛔ INTERDICTION ABSOLUE des formules de politesse orales ("Bonjour à tous", "Bienvenue sur...", "voici vos prévisions", "profitez bien", "à très vite", etc.).
+- ⛔ Ne parle pas au lecteur à la 2ème personne (pas de "vous"). Rédige à la 3ème personne.
+
+1. Remplis la balise <todaySummary> (STRICTEMENT 3 à 5 phrases). Rédige UNIQUEMENT L'ESSENTIEL DE LA JOURNÉE À RETENIR pour le grand public (phénomène marquant, températures min/max, vent). ⛔ INTERDICTION FORMELLE de citer des noms de code de clients ou stations radio. Doit commencer par un titre percutant en MAJUSCULES (ex: "🌤️ L'ESSENTIEL DE CE {FRENCH_WEEKDAYS[d1.weekday()].upper()} : ...").
+
+2. Remplis la balise <forecastRaw> avec la TENDANCE SÉPARÉE JOUR PAR JOUR du Jour 3 au Jour 5 ({date_j3}, {date_j4}, {date_j5}). 
+   ATTENTION RÈGLE STRICTE DE LONGUEUR : Pour chaque jour de la tendance, rédige STRICTEMENT entre 3 et 5 phrases complètes (minimum 3 phrases, maximum 5 phrases). Interdit de regrouper deux jours ou d'utiliser "temps comparable".
+   Format exact :
+   ▶ {date_j3} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
+   ▶ {date_j4} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
+   ▶ {date_j5} : [Commentaire concis de 3 à 5 phrases sur le ciel, le vent et les températures]
+
+3. Remplis la balise <summaryLancement> avec un TITRE DE PRESSE EN MAJUSCULES SUIVI D'UNE PHRASE D'ACCROCHE RÉSUMANT LA PRÉVISION DU JOUR 1 ({FRENCH_WEEKDAYS[d1.weekday()]}) (ex: "☀️ SOLEIL ET CHALEUR ESTIVALE : Un ciel très dégagé s'impose sur la région ce {FRENCH_WEEKDAYS[d1.weekday()]}, avec des températures maximales très douces.").
+
+4. Remplis la balise <summaryLancement2> avec un TITRE DE PRESSE EN MAJUSCULES SUIVI D'UNE PHRASE D'ACCROCHE RÉSUMANT LA PRÉVISION DU JOUR 2 ({FRENCH_WEEKDAYS[d2.weekday()]}) (ex: "🌤️ TEMPS CALME ET LUMINEUX : Le soleil reste largement dominant pour ce {FRENCH_WEEKDAYS[d2.weekday()]} avec des températures de saison.").
+
+5. Remplis la balise <forecastLancement> avec un TITRE DE PRESSE EN MAJUSCULES SUIVI D'UNE PHRASE D'ACCROCHE RÉSUMANT LA TENDANCE À 3 JOURS ({date_j3} au {date_j5}) (ex: "📉 EVOLUTION DE LA TENDANCE : Un temps sec et ensoleillé privilégié pour la suite de la semaine sur l'ensemble du territoire.").
 """
     try:
-        print(f"[{client_name}] Calling DeepSeek V4 Flash 0731 (deepseek/deepseek-v4-flash-0731) for final synthesis...")
+        print(f"[{client_name}] Calling Gemini Flash for final synthesis...")
         res_syn = call_openrouter(api_key, prompt_syn)
         todaySummary = extract_xml_tag(res_syn, "todaySummary")
         forecastRaw = extract_xml_tag(res_syn, "forecastRaw")
         summaryLancement = extract_xml_tag(res_syn, "summaryLancement")
+        summaryLancement2 = extract_xml_tag(res_syn, "summaryLancement2")
         forecastLancement = extract_xml_tag(res_syn, "forecastLancement")
-        recordsRaw = extract_xml_tag(res_syn, "recordsRaw")
     except Exception as e:
         print(f"Error calling AI for Synthesis: {e}")
         todaySummary = local_fallback["todaySummary"]
         forecastRaw = local_fallback["forecastRaw"]
         summaryLancement = local_fallback["summaryLancement"]
+        summaryLancement2 = local_fallback["summaryLancement2"]
         forecastLancement = local_fallback["forecastLancement"]
-        recordsRaw = local_fallback["recordsRaw"]
 
     result = {
         "todaySummary": todaySummary,
         "summaryLancement": summaryLancement,
+        "summaryLancement2": summaryLancement2,
         "summaryMorning": summaryMorning,
         "summaryAfternoon": summaryAfternoon,
         "summaryMorning2": summaryMorning2,
         "summaryAfternoon2": summaryAfternoon2,
         "forecastRaw": forecastRaw,
         "forecastLancement": forecastLancement,
-        "recordsRaw": recordsRaw,
+        "recordsRaw": local_fallback["recordsRaw"],
     }
     result["forecastTextRaw"] = result["forecastRaw"]
 
+    # Filtre automatique (censure) anti-hallucination "canicule" et anti-salutations orales radiophoniques
+    import re
+    salut_patterns = [
+        r"Bonjour à toutes et à tous[^\n,!.]*[,!.]?\s*",
+        r"Bonjour à tous[^\n,!.]*[,!.]?\s*",
+        r"Bonjour fidèles auditeurs[^\n,!.]*[,!.]?\s*",
+        r"Bonjour à tous les auditeurs[^\n,!.]*[,!.]?\s*",
+        r"Bienvenue sur [^\n,!.]*[,!.]?\s*",
+        r"pour votre bulletin météo[^\n,!.]*[,!.]?\s*",
+        r"C'est votre présentateur météo[^\n,!.]*[,!.]?\s*",
+        r"Profitez bien de [^\n,!.]*[,!.]?\s*",
+        r"À très vite sur [^\n,!.]*[,!.]?\s*",
+        r"Voici vos prévisions[^\n,!.]*[,!.]?\s*",
+        r"Voyons maintenant ce qui nous attend[^\n,!.]*[,!.]?\s*",
+    ]
+    station_patterns = [
+        r"RADIO\s*-\s*ICI\s+LA\s+ROCHELLE", r"RADIO\s*-\s*ICI\s+NORD",
+        r"RADIO\s*ICI\s+NORMANDIE", r"RADIO\s*ICI\s+BRETAGNE",
+        r"RADIO\s*ICI\s+AUVERGNE-RHÔNE-ALPES", r"RADIO\s*ICI\s+BOURGOGNE-FRANCHE-COMTÉ",
+        r"RADIO\s*ICI\s+CENTRE-VAL\s+DE\s+LOIRE", r"RADIO\s*ICI\s+CORSE",
+        r"RADIO\s*ICI\s+GRAND\s+EST", r"RADIO\s*ICI\s+ÎLE-DE-FRANCE",
+        r"RADIO\s*ICI\s+OCCITANIE", r"RADIO\s*ICI\s+PAYS\s+DE\s+LA\s+LOIRE",
+        r"RADIO\s*ICI\s+PROVENCE-ALPES-CÔTE\s+D'AZUR",
+        r"BULLETIN\s+EUROPE1\s+à\s+6h", r"BULLETIN\s+EUROPE1",
+        r"RADIO\s+6", r"MONA\s+FM",
+    ]
+    for k in result.keys():
+        if result[k] and isinstance(result[k], str):
+            text = result[k]
+            # Purge des noms de stations/clients administratifs
+            for spat in station_patterns:
+                text = re.sub(spat, "la région", text, flags=re.IGNORECASE)
+            text = re.sub(r"sur\s+l'ensemble\s+de\s+la\s+zone\s+la\s+région", "sur la région", text, flags=re.IGNORECASE)
+            text = re.sub(r"sur\s+la\s+zone\s+la\s+région", "sur la région", text, flags=re.IGNORECASE)
+            # Censure des termes caniculaires
+            text = text.replace("caniculaires", "très chauds").replace("Caniculaires", "Très chauds")
+            text = text.replace("caniculaire", "très chaud").replace("Caniculaire", "Très chaud")
+            text = text.replace("canicules", "fortes chaleurs").replace("Canicules", "Fortes chaleurs")
+            text = text.replace("canicule", "forte chaleur").replace("Canicule", "Forte chaleur")
+            # Purge des salutations et fioritures radiophoniques
+            for pat in salut_patterns:
+                text = re.sub(pat, "", text, flags=re.IGNORECASE)
+            result[k] = text.strip()
+
+
     # Merge with local fallback for any missing field or invalid date mention
-    wd1_target = f"Ce {FRENCH_WEEKDAYS[d1.weekday()]} matin"
     for k, v in result.items():
-        if not v or len(v.strip()) < 20:
-            print(f"Warning: Field '{k}' missing or short from AI, filling with local fallback.")
+        word_count = len(v.strip().split()) if v else 0
+        min_words = 5 if k in ["summaryLancement", "summaryLancement2", "forecastLancement"] else 20
+        if not v or word_count < min_words:
+            print(f"Warning: Field '{k}' missing or short ({word_count} words < {min_words}) from AI, filling with local fallback.")
+            result[k] = local_fallback.get(k, "")
+        elif k == "forecastRaw" and word_count < 120:
+            print(f"Warning: Trend (forecastRaw) from AI was too short ({word_count} words < 120). Replacing with local fallback.")
             result[k] = local_fallback[k]
-        elif k in ["summaryMorning", "todaySummary", "summaryAfternoon"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:150].lower():
+        elif k in ["summaryMorning", "todaySummary"] and FRENCH_WEEKDAYS[d1.weekday()] not in v[:150].lower():
             print(f"Warning: AI {k} had wrong start ('{v[:30]}...'), replacing with exact local fallback.")
             result[k] = local_fallback[k]
 
     # Attach dynamic phenomena, mountain, beach, and marine texts
-    for extra_key in ["mountain", "mountainTitle", "beach", "marine"]:
-        if extra_key in local_fallback and not result.get(extra_key):
+    for extra_key in ["recordsRaw", "mountain", "mountainTitle", "beach", "marine"]:
+        if extra_key in local_fallback:
             result[extra_key] = local_fallback[extra_key]
-
-    # Vérification systématique de l'exactitude et de la cohérence de la météo marine avant publication
-    c_upper = client_name.upper()
-    if any(k in c_upper for k in ["ROCHELLE", "NORD", "NORMANDIE", "RADIO 6", "MONA", "PACA", "BRETAGNE", "CORSE", "OCCITANIE", "PAYS DE LA LOIRE"]):
-        for m_key in ["marine", "beach"]:
-            val = result.get(m_key, "")
-            fallback_val = local_fallback.get(m_key, "")
-            if not val or len(val.strip()) < 30:
-                print(f"   [Vérification Météo Marine 🌊] '{m_key}' manquant/court pour '{client_name}', injection du bulletin maritime certifié.")
-                result[m_key] = fallback_val
-            else:
-                print(f"   [Vérification Météo Marine 🌊] '{m_key}' certifié exact et cohérent pour '{client_name}'.")
 
     print(f"✅ Texts generated & verified successfully for '{client_name}'.")
     return result
