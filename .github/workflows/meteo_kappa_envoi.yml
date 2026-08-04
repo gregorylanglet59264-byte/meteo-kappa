@@ -2,7 +2,7 @@ name: Météo Kappa - 3. Envoi Bulletins
 
 on:
   workflow_run:
-    workflows: ["Météo Kappa - 2. Analyse GPT-5.6 Luna"]
+    workflows: ["Météo Kappa - 2. Analyse DeepSeek V4 Flash 0731"]
     types:
       - completed
   workflow_dispatch:
