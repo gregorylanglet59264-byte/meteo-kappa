@@ -234,17 +234,28 @@
         "gustsRaw": "Lille 30\nLaon 30\nRouen 35\nCaen 40\nBrest 35\nRennes 20\nNantes 30\nParis 35\nTours 30\nPoitiers 35\nLa Rochelle 30\nBordeaux 25\nBiarritz 30\nToulouse 25\nPerpignan 35\nMontpellier 40\nMarseille 35\nNice 30\nBastia 30\nAjaccio 20\nMetz 30\nStrasbourg 35\nBesançon 40\nDijon 40\nLyon 40\nGrenoble 30\nLimoges 35\nAurillac 25\nClermont-Ferrand 35\nBourges 35\n",
         "gustsTitle": "RAFALES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "summaryImages": [],
+<<<<<<< HEAD
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "🌬️ Phénomènes marquants et zones les plus exposées",
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_france_tomorrow.png?t=1786056236",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+=======
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "🌬️ Phénomènes marquants et zones les plus exposées",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_france_tomorrow.png?t=1786057666",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
         "summaryMorning": "Ce jeudi matin, le soleil domine largement sur l'ensemble du territoire français. Les températures minimales affichent 14°C à Lille et Nantes, 13°C à Rouen, et 17°C à Paris. Quelques nuages discrets sont observés sur la pointe bretonne, notamment à Caen et Brest, ainsi que dans le sud-ouest, près de Biarritz et Pau, mais sans incidence pluvieuse. Le vent souffle modérément, avec des vitesses autour de 15 à 20 km/h sur la façade atlantique et dans le nord, et des rafales pouvant atteindre 40 km/h à Rouen et Paris. Aucune vigilance particulière n'est signalée.",
         "summaryAfternoon": "Ce jeudi après-midi, un temps largement ensoleillé dominera sur la majeure partie du pays. Le soleil sera généreux de la Bretagne aux Hauts-de-France, en passant par l'Île-de-France et le Centre-Val de Loire. Quelques voiles nuageux d'altitude pourront légèrement masquer l'éclat du soleil sur les côtes bretonnes et normandes, notamment à Caen et Brest.\n\nLes températures afficheront des valeurs estivales, atteignant 27°C à Paris, 29°C à Tours et 28°C à Poitiers. Le vent restera modéré, soufflant généralement entre 10 et 20 km/h. Des rafales de 40 km/h sont prévues sur Paris et Rouen, sans incidence particulière. Le contraste littoral/intérieur des terres sera marqué, avec des températures plus douces en bord de mer.",
         "summaryTitle2": "Prévisions pour la journée du DIMANCHE 9 AOÛT",
         "summaryMorning2": "Ce vendredi matin, le soleil domine l'ensemble du territoire national. Les températures minimales sont douces, avec 15°C à Paris, 14°C à Poitiers et 13°C à Lille. Un vent modéré souffle sur le littoral breton, atteignant 40 km/h en rafales à Brest et Rennes. Partout ailleurs, les conditions restent calmes et ensoleillées, annonçant une belle journée sur l'Hexagone.",
         "summaryAfternoon2": "Ce vendredi après-midi, le soleil dominera largement l'ensemble du territoire. Les températures maximales s'établiront à 26°C à Lille, 28°C à Laon, 25°C à Rouen et 23°C à Caen. Le vent restera faible sur la plupart des régions, avec des rafales atteignant 40 km/h en Bretagne, notamment à Brest et Rennes. Aucun risque d'averses ou d'orages n'est à signaler pour cette journée ensoleillée.",
+<<<<<<< HEAD
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE JEUDI 9 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "Carte du jour",
         "summaryMapTitle2": "Carte du lendemain",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_J1_matin.jpg",
@@ -256,15 +267,25 @@
         "forecastTextRaw": "▶ samedi 8 août : Le soleil continue de régner en maître sur la quasi-totalité du pays. Les maximales connaissent une nette hausse, atteignant 31°C à Paris et 33°C à Tours et Poitiers. Le vent se renforce sur la façade atlantique avec des rafales jusqu'à 45 km/h à Rennes.\n▶ dimanche 9 août : La situation se dégrade en bord de Manche et sur l'ouest. Un temps plus nuageux et humide gagne la Normandie et la Bretagne, apportant de faibles précipitations (moins de 2 mm). En revanche, le sud et l'est restent très ensoleillés et chauds, avec jusqu'à 33°C à Poitiers. Le vent se renforce avec des rafales proches de 55 km/h à Lille.\n▶ lundi 10 août : Le temps redevient sec et largement ensoleillé sur l'ensemble du pays. Les températures restent élevées, comprises entre 28°C à Lille et 33°C à Tours et Poitiers. Le vent s'atténue sensiblement partout, avec un ressenti très agréable.",
         "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
         "minObservationsRaw": "Lille 18\nLaon 17\nRouen 20\nCaen 19\nBrest 16\nRennes 20\nNantes 22\nParis 23\nTours 23\nPoitiers 22\nLa Rochelle 22\nBordeaux 22\nBiarritz 21\nToulouse 24\nPerpignan 28\nMontpellier 25\nMarseille 25\nNice 23\nBastia 22\nAjaccio 21\nMetz 18\nStrasbourg 18\nBesançon 19\nDijon 21\nLyon 23\nGrenoble 21\nLimoges 20\nAurillac 20\nClermont-Ferrand 22\nBourges 23\n",
+<<<<<<< HEAD
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "ephemeris": "📅 ÉPHÉMÉRIDE DU SAMEDI 8 AOÛT\n☀️ SOLEIL : Lever 06:24 • Coucher 21:25 • Zénith 13:54\n⏱️ JOUR : Durée 15h00 (Perte de 4 min)\n🌙 LUNE : Lever 00:03 • Coucher 17:34\n😇 SAINT DU JOUR : Gaétan\n💬 DICTON : \"En août, de l’aube au soir, on n’a qu’une heure pour s’asseoir.\"",
+=======
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE JEUDI 9 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "ephemeris": "📅 ÉPHÉMÉRIDE DU JEUDI 9 JUILLET\n☀️ SOLEIL : Lever 05:46 • Coucher 22:01 • Zénith 13:54\n⏱️ JOUR : Durée 16h14 (Perte de 2 min)\n🌙 LUNE : Lever 01:10 • Coucher 17:05\n😇 SAINT DU JOUR : Amandine\n💬 DICTON : \"Avec Sainte-Procule, arrive la canicule.\"",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "surveillanceTitle": "SURVEILLANCE DES PHÉNOMÈNES IMPORTANTS",
         "surveillanceItems": [
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -274,7 +295,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_france_pictos.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "☀️ JOURNÉE D'ÉTÉ IDÉALE : Le soleil reste dominant ce vendredi, sans aucune perturbation. Les températures sont en légère hausse, de saison."
@@ -531,7 +556,11 @@
       "form": {
         "observationsRaw": "St-Hilaire-sur-Helpe (59) 29\nValenciennes (59) 30\nTroisvilles (59) 30\nMaubeuge (59) 29\nDouai (59) 31\nLille (59) 30\nRoubaix (59) 29\nSteenvoorde (59) 29\nWatten (59) 29\nDunkerque (59) 26\nSaulty (62) 30\nArras (62) 30\nFiefs (62) 29\nHumières (62) 29\nCambrai / Epinoy (62) 30\nRadinghem (62) 29\nAttin (62) 30\nNielles-lès-Bléquin (62) 27\nBainghen (62) 27\nBoulogne (62) 28\nCalais / Marck (62) 28\nCap Gris-Nez (62) 28\nLe Touquet (62) 29\n",
         "alert": "⚠️ Données de vigilance temporairement indisponibles.",
+<<<<<<< HEAD
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786056236",
+=======
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786057667",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "todaySummary": "",
         "summaryLancement": "☀️ **NUAGES MATINAUX, PUIS SOLEIL GLORIEUX : Une matinée variable cède la place à un après-midi radieux ce jeudi, avec des maximales proches des 26°C dans l'intérieur des terres.**",
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
@@ -547,10 +576,17 @@
         "forecastMode": "text",
         "forecastTextRaw": "▶ samedi 8 août : La journée s'annonce très ensoleillée sur l'ensemble de la région, avec un ciel totalement dégagé. Les températures maximales grimpent fortement, atteignant 30°C à Valenciennes et 29°C à Lille et Dunkerque. Le vent reste faible, soufflant entre 10 et 15 km/h, offrant une ambiance estivale agréable.\n▶ dimanche 9 août : Le soleil reste au rendez-vous mais le vent se renforce, avec des rafales qui pourraient atteindre 55 km/h sur le secteur de Lille. Les températures maximales sont élevées, oscillant entre 30°C à St-Hilaire-sur-Helpe et 32°C à Douai, Troisvilles et Dunkerque. Malgré le vent, aucune précipitation n'est prévue.\n▶ lundi 10 août : Le temps sec se maintient avec un ciel toujours ensoleillé. Les températures maximales baissent légèrement pour se situer autour de 28°C dans l'intérieur des terres, avec 24°C attendus à Steenvoorde et 29°C à Dunkerque. Le vent reste modéré, entre 15 et 20 km/h, avec des rafales possibles jusqu'à 40 km/h.",
         "apiCityRaw": "St-Hilaire-sur-Helpe [⛅] (Min 18 / Max 29 Vent 18 km/h (Rafales 34 km/h))\nValenciennes [⛅] (Min 20 / Max 30 Vent 16 km/h (Rafales 34 km/h))\nTroisvilles [⛅] (Min 19 / Max 30 Vent 17 km/h (Rafales 36 km/h))\nMaubeuge [⛅] (Min 18 / Max 29 Vent 17 km/h (Rafales 34 km/h))\nDouai [⛅] (Min 20 / Max 31 Vent 17 km/h (Rafales 36 km/h))\nLille [⛅] (Min 20 / Max 30 Vent 14 km/h (Rafales 32 km/h))\nRoubaix [⛅] (Min 19 / Max 29 Vent 15 km/h (Rafales 34 km/h))\nSteenvoorde [⛅] (Min 20 / Max 29 Vent 17 km/h (Rafales 37 km/h))\nWatten [⛅] (Min 19 / Max 29 Vent 17 km/h (Rafales 38 km/h))\nDunkerque [⛅] (Min 19 / Max 26 Vent 19 km/h (Rafales 40 km/h))\nSaulty [⛅] (Min 19 / Max 30 Vent 18 km/h (Rafales 35 km/h))\nArras [⛅] (Min 20 / Max 30 Vent 18 km/h (Rafales 37 km/h))\nFiefs [⛅] (Min 19 / Max 29 Vent 18 km/h (Rafales 35 km/h))\nHumières [⛅] (Min 19 / Max 29 Vent 18 km/h (Rafales 35 km/h))\nCambrai / Epinoy [⛅] (Min 19 / Max 30 Vent 16 km/h (Rafales 34 km/h))\nRadinghem [⛅] (Min 19 / Max 29 Vent 19 km/h (Rafales 37 km/h))\nAttin [⛅] (Min 20 / Max 30 Vent 18 km/h (Rafales 36 km/h))\nNielles-lès-Bléquin [⛅] (Min 18 / Max 27 Vent 19 km/h (Rafales 38 km/h))\nBainghen [⛅] (Min 18 / Max 27 Vent 19 km/h (Rafales 38 km/h))\nBoulogne [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nCalais / Marck [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nCap Gris-Nez [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nLe Touquet [⛅] (Min 20 / Max 29 Vent 18 km/h (Rafales 36 km/h))\n",
+<<<<<<< HEAD
         "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (samedi 8 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 35 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
         "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 13°C le matin à 26°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 27°C sur le sable.\n🌊 Température de l’eau : 18°C",
         "tides": "Pleine Mer 10h",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+=======
+        "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 6 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 35 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
+        "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 6 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 13°C le matin à 26°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 27°C sur le sable.\n🌊 Température de l’eau : 18°C",
+        "tides": "Pleine Mer 10h",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
         "precipitationRaw": "St-Hilaire-sur-Helpe (59) 0mm\nValenciennes (59) 0mm\nTroisvilles (59) 0mm\nMaubeuge (59) 0mm\nDouai (59) 0mm\nLille (59) 0mm\nRoubaix (59) 0mm\nSteenvoorde (59) 0mm\nWatten (59) 0mm\nDunkerque (59) 0mm\nSaulty (62) 0mm\nArras (62) 0mm\nFiefs (62) 0mm\nHumières (62) 0mm\nCambrai / Epinoy (62) 0mm\nRadinghem (62) 0mm\nAttin (62) 0mm\nNielles-lès-Bléquin (62) 0mm\nBainghen (62) 0mm\nBoulogne (62) 0mm\nCalais / Marck (62) 0mm\nCap Gris-Nez (62) 0mm\nLe Touquet (62) 0mm\n",
         "precipitationTitle": "CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE SAMEDI 8 AOÛT 2026",
@@ -563,6 +599,7 @@
             "title": "VIGILANCE FEUX DE FORETS"
           }
         ],
+<<<<<<< HEAD
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "PHÉNOMÈNES EXCEPTIONNELS",
         "alertTitle": "Vigilance pour ce samedi 8 août 2026",
@@ -570,6 +607,15 @@
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "PHÉNOMÈNES EXCEPTIONNELS",
+        "alertTitle": "Vigilance pour ce samedi 8 août 2026",
+        "minObservationsRaw": "St-Hilaire-sur-Helpe (59) 18\nValenciennes (59) 20\nTroisvilles (59) 19\nMaubeuge (59) 18\nDouai (59) 20\nLille (59) 20\nRoubaix (59) 19\nSteenvoorde (59) 20\nWatten (59) 19\nDunkerque (59) 19\nSaulty (62) 19\nArras (62) 20\nFiefs (62) 19\nHumières (62) 19\nCambrai / Epinoy (62) 19\nRadinghem (62) 19\nAttin (62) 20\nNielles-lès-Bléquin (62) 18\nBainghen (62) 18\nBoulogne (62) 19\nCalais / Marck (62) 19\nCap Gris-Nez (62) 19\nLe Touquet (62) 20\n",
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "FEUX DE FORETS 📋 VIGILANCE HAUTS-DE-FRANCE DU LUNDI 6 JUILLET 🟠 Vigilance ORANGE – MÉTÉO DES FORÊTS : Aisne (02) et Oise (60)  🟡 Vigilance JAUNE – MÉTÉO DES FORÊTS pour 3 départements.",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_matin.jpg",
         "summaryMapAfternoonUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_apresmidi.jpg",
@@ -582,7 +628,11 @@
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -592,7 +642,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_hdf.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "🌤️ **SOLEIL PERSISTANT POUR CE VENDREDI : Le ciel reste totalement dégagé sur toute la région, avec des températures maximales très douces, comprises entre 24 et 26°C.**"
@@ -790,7 +844,11 @@
       "form": {
         "observationsRaw": "La Rochelle 37\nChassiron 28\nGond-Pontouvre 38\nBlanzac-Porcheresse 36\nJarnac 37\nMontbron 37\nLa Couronne 37\nSoyaux 37\nCognac 37\nAngoulême 37\nRouillac 37\nSaint-Michel 37\nLa Rochefoucauld 38\nNersac 37\nConfolens 37\nBarbezieux-Saint-Hilaire 36\nChâteauneuf-sur-Charente 37\n",
         "alert": "⚠️ Données de vigilance temporairement indisponibles.",
+<<<<<<< HEAD
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NAQ_tomorrow.png?t=1786056237",
+=======
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NAQ_tomorrow.png?t=1786057668",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL ÉTINCLANT SUR LA RÉGION : Un ciel totalement dégagé s'impose ce jeudi sur la Charente-Maritime et la Charente, avec des températures maximales atteignant 30°C à La Rochelle comme à Angoulême.",
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
@@ -806,16 +864,24 @@
         "forecastMode": "table",
         "forecastTextRaw": "▶ samedi 8 août : La chaleur s'intensifie nettement avec des maximales atteignant 38°C à Angoulême et 36°C à La Rochelle. Le vent reste modéré, de 10 à 20 km/h, et le ciel demeure dégagé sur l'ensemble du territoire. Seuls quelques rares passages nuageux pourraient apporter de faibles pluies localisées sur l'intérieur.\n\n▶ dimanche 9 août : Le temps se dégrade légèrement avec un ciel qui se voile et des averses possibles, notamment dans l'Angoumois où 1 à 2 mm sont attendus. Les températures baissent, avec des maximales de 28°C à Jarnac et de 31°C à La Rochelle. Le vent se renforce sur le littoral, avec des rafales jusqu'à 45 km/h.\n\n▶ lundi 10 août : Le soleil reprend ses droits et le temps redevient sec et lumineux. Les températures remontent vers les 33°C dans l'intérieur et 34°C sur le littoral rochelais. Le vent s'atténue un peu, soufflant à 20-25 km/h sur les côtes.",
         "apiCityRaw": "La Rochelle [⛅] (Min 25 / Max 37 Vent 12 km/h (Rafales 24 km/h))\nChassiron [⛅] (Min 25 / Max 28 Vent 24 km/h (Rafales 30 km/h))\nGond-Pontouvre [⛅] (Min 24 / Max 38 Vent 13 km/h (Rafales 30 km/h))\nBlanzac-Porcheresse [⛅] (Min 23 / Max 36 Vent 12 km/h (Rafales 20 km/h))\nJarnac [⛅] (Min 25 / Max 37 Vent 15 km/h (Rafales 25 km/h))\nMontbron [⛅] (Min 24 / Max 37 Vent 14 km/h (Rafales 31 km/h))\nLa Couronne [⛅] (Min 24 / Max 37 Vent 12 km/h (Rafales 20 km/h))\nSoyaux [⛅] (Min 23 / Max 37 Vent 13 km/h (Rafales 30 km/h))\nCognac [⛅] (Min 25 / Max 37 Vent 15 km/h (Rafales 25 km/h))\nAngoulême [⛅] (Min 24 / Max 37 Vent 13 km/h (Rafales 30 km/h))\nRouillac [⛅] (Min 24 / Max 37 Vent 13 km/h (Rafales 23 km/h))\nSaint-Michel [⛅] (Min 24 / Max 37 Vent 13 km/h (Rafales 23 km/h))\nLa Rochefoucauld [⛅] (Min 24 / Max 38 Vent 14 km/h (Rafales 31 km/h))\nNersac [⛅] (Min 24 / Max 37 Vent 13 km/h (Rafales 23 km/h))\nConfolens [⛅] (Min 24 / Max 37 Vent 14 km/h (Rafales 30 km/h))\nBarbezieux-Saint-Hilaire [⛅] (Min 24 / Max 36 Vent 11 km/h (Rafales 20 km/h))\nChâteauneuf-sur-Charente [⛅] (Min 24 / Max 37 Vent 12 km/h (Rafales 20 km/h))\n",
+<<<<<<< HEAD
         "marine": "🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (samedi 8 août 2026)\n\n📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche\n\n☀️ Situation synoptique : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Régime de brises thermiques (35 km/h avec rafales atteignant 45 km/h).\n🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.",
         "beach": "🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (samedi 8 août 2026)\n\n🌴 La Rochelle / Île de Ré / Île d’Oléron\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur l'ensemble des plages charentaises ce jeudi.\n🌡️ Température sur le littoral : 16°C à 30°C\n🌊 Température de l’eau : 22°C à 23°C\n\n🌴 Royan / Côte de Beauté / Rochefort\n☀️ Ensoleillement généreux ce jeudi, maximales de 31°C tempérées par la brise marine.\n🌊 Température de l’eau : 23°C",
         "tides": "Pleine Mer 10h",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+=======
+        "marine": "🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (jeudi 6 août 2026)\n\n📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche\n\n☀️ Situation synoptique : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Régime de brises thermiques (35 km/h avec rafales atteignant 45 km/h).\n🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.",
+        "beach": "🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (jeudi 6 août 2026)\n\n🌴 La Rochelle / Île de Ré / Île d’Oléron\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur l'ensemble des plages charentaises ce jeudi.\n🌡️ Température sur le littoral : 16°C à 30°C\n🌊 Température de l’eau : 22°C à 23°C\n\n🌴 Royan / Côte de Beauté / Rochefort\n☀️ Ensoleillement généreux ce jeudi, maximales de 31°C tempérées par la brise marine.\n🌊 Température de l’eau : 23°C",
+        "tides": "Pleine Mer 10h",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
         "precipitationRaw": "La Rochelle 0mm\nChassiron 0mm\nGond-Pontouvre 0mm\nBlanzac-Porcheresse 0mm\nJarnac 0mm\nMontbron 0mm\nLa Couronne 0mm\nSoyaux 0mm\nCognac 0mm\nAngoulême 0mm\nRouillac 0mm\nSaint-Michel 0mm\nLa Rochefoucauld 0mm\nNersac 0mm\nConfolens 0mm\nBarbezieux-Saint-Hilaire 0mm\nChâteauneuf-sur-Charente 0mm\n",
         "precipitationTitle": "CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE SAMEDI 8 AOÛT 2026",
         "gustsRaw": "La Rochelle 25\nChassiron 30\nGond-Pontouvre 30\nBlanzac-Porcheresse 20\nJarnac 25\nMontbron 30\nLa Couronne 20\nSoyaux 30\nCognac 25\nAngoulême 30\nRouillac 25\nSaint-Michel 25\nLa Rochefoucauld 30\nNersac 25\nConfolens 30\nBarbezieux-Saint-Hilaire 20\nChâteauneuf-sur-Charente 20\n",
         "gustsTitle": "RAFALES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "summaryImages": [],
+<<<<<<< HEAD
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "Phénomènes marquants et zones les plus exposées",
         "alertTitle": "Vigilance pour ce samedi 8 août 2026",
@@ -823,6 +889,15 @@
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "Phénomènes marquants et zones les plus exposées",
+        "alertTitle": "Vigilance pour ce samedi 8 août 2026",
+        "minObservationsRaw": "La Rochelle 25\nChassiron 25\nGond-Pontouvre 24\nBlanzac-Porcheresse 23\nJarnac 25\nMontbron 24\nLa Couronne 24\nSoyaux 23\nCognac 25\nAngoulême 24\nRouillac 24\nSaint-Michel 24\nLa Rochefoucauld 24\nNersac 24\nConfolens 24\nBarbezieux-Saint-Hilaire 24\nChâteauneuf-sur-Charente 24\n",
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_naq_J1_matin.jpg",
         "summaryMapAfternoonUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_naq_J1_apresmidi.jpg",
@@ -835,7 +910,11 @@
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -845,7 +924,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_naq.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "🌤️ JOURNÉE CALME ET LUMINEUSE : Le soleil reste largement dominant pour ce vendredi, offrant un temps sec et agréable, avec des températures estivales et un vent modéré sur le littoral."
@@ -1019,7 +1102,11 @@
       "form": {
         "observationsRaw": "Leffrinckoucke 26\nGravelines 24\nOffekerque 28\nMarck 28\nLefaux 29\nGroffliers 29\nRemilly-Wirquin 28\nRacquinghem 28\nRobecq 31\nCauchy-à-la-Tour 30\nBoulogne Sur Mer 13\nLe Touquet-Paris-Plage 29\nAbbeville 31\n",
         "alert": "⚠️ Données de vigilance temporairement indisponibles.",
+<<<<<<< HEAD
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786056237",
+=======
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786057669",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL ET CHALEUR ESTIVALE : Un ciel très dégagé s’impose sur la région ce jeudi, avec des températures maximales très douces, atteignant 24°C sur le littoral, après une matinée plus nuageuse à l’intérieur des terres.",
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
@@ -1035,16 +1122,24 @@
         "forecastMode": "table",
         "forecastTextRaw": "▶ samedi 8 août : Le soleil règne en maître sur toute la région, avec un ciel totalement dégagé. Les températures grimpent fortement, de 13°C le matin à 29°C l’après-midi à Leffrinckoucke. Le vent est faible, de 10 à 15 km/h, et aucune pluie n’est attendue.\n\n▶ dimanche 9 août : La journée s’annonce très chaude, avec des maximales atteignant 32°C à Leffrinckoucke, mais le littoral reste plus frais (23°C à Gravelines). Le vent se renforce, avec des rafales de 40 à 50 km/h, et quelques averses localisées sont possibles, notamment sur le secteur de Lefaux et de Gravelines (jusqu’à 1,8 mm).\n\n▶ lundi 10 août : Retour d’un temps sec et ensoleillé sur l’ensemble de la région, avec un vent modéré de 15 à 25 km/h. Les températures maximales baissent légèrement, oscillant entre 22°C sur le littoral (Lefaux) et 29°C à Leffrinckoucke. Aucune précipitation à signaler.",
         "apiCityRaw": "Leffrinckoucke [⛅] (Min 19 / Max 26 Vent 19 km/h (Rafales 40 km/h))\nGravelines [⛅] (Min 20 / Max 24 Vent 22 km/h (Rafales 47 km/h))\nOffekerque [⛅] (Min 19 / Max 28 Vent 19 km/h (Rafales 38 km/h))\nMarck [⛅] (Min 19 / Max 28 Vent 19 km/h (Rafales 38 km/h))\nLefaux [⛅] (Min 20 / Max 29 Vent 18 km/h (Rafales 36 km/h))\nGroffliers [⛅] (Min 20 / Max 29 Vent 18 km/h (Rafales 36 km/h))\nRemilly-Wirquin [⛅] (Min 19 / Max 28 Vent 17 km/h (Rafales 38 km/h))\nRacquinghem [⛅] (Min 19 / Max 28 Vent 17 km/h (Rafales 38 km/h))\nRobecq [⛅] (Min 21 / Max 31 Vent 17 km/h (Rafales 37 km/h))\nCauchy-à-la-Tour [⛅] (Min 20 / Max 30 Vent 17 km/h (Rafales 37 km/h))\nBoulogne Sur Mer [🌧️] (Min 9 / Max 13 Vent 17 km/h (Rafales 34 km/h))\nLe Touquet-Paris-Plage [⛅] (Min 20 / Max 29 Vent 18 km/h (Rafales 36 km/h))\nAbbeville [⛅] (Min 21 / Max 31 Vent 17 km/h (Rafales 34 km/h))\n",
+<<<<<<< HEAD
         "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (samedi 8 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.\n🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 40 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
         "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 15°C le matin à 24°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 25°C sur le sable.\n🌊 Température de l’eau : 18°C",
         "tides": "",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+=======
+        "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 6 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.\n🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 40 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
+        "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 6 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 15°C le matin à 24°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 25°C sur le sable.\n🌊 Température de l’eau : 18°C",
+        "tides": "",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
         "precipitationRaw": "Leffrinckoucke 0mm\nGravelines 0mm\nOffekerque 0mm\nMarck 0mm\nLefaux 0mm\nGroffliers 0mm\nRemilly-Wirquin 0mm\nRacquinghem 0mm\nRobecq 0mm\nCauchy-à-la-Tour 0mm\nBoulogne Sur Mer 0mm\nLe Touquet-Paris-Plage 0mm\nAbbeville 0mm\n",
         "precipitationTitle": "CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE SAMEDI 8 AOÛT 2026",
         "gustsRaw": "Leffrinckoucke 40\nGravelines 45\nOffekerque 40\nMarck 40\nLefaux 35\nGroffliers 35\nRemilly-Wirquin 40\nRacquinghem 40\nRobecq 35\nCauchy-à-la-Tour 35\nBoulogne Sur Mer 35\nLe Touquet-Paris-Plage 35\nAbbeville 35\n",
         "gustsTitle": "RAFALES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "summaryImages": [],
+<<<<<<< HEAD
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "Phénomènes marquants et zones les plus exposées",
         "alertTitle": "Vigilance pour ce samedi 8 août 2026",
@@ -1052,6 +1147,15 @@
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "Phénomènes marquants et zones les plus exposées",
+        "alertTitle": "Vigilance pour ce samedi 8 août 2026",
+        "minObservationsRaw": "Leffrinckoucke 19\nGravelines 20\nOffekerque 19\nMarck 19\nLefaux 20\nGroffliers 20\nRemilly-Wirquin 19\nRacquinghem 19\nRobecq 21\nCauchy-à-la-Tour 20\nBoulogne Sur Mer 9\nLe Touquet-Paris-Plage 20\nAbbeville 21\n",
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "Carte des températures maximales",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_matin.jpg",
         "summaryMapAfternoonUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_apresmidi.jpg",
@@ -1064,7 +1168,11 @@
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -1074,7 +1182,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_hdf.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "🌤️ TEMPS CALME ET LUMINEUX : Le soleil reste largement dominant pour ce vendredi, avec des températures de saison et un vent modéré, offrant une journée stable et agréable sur l’ensemble du territoire."
@@ -1331,7 +1443,11 @@
       "form": {
         "observationsRaw": "St-Hilaire-sur-Helpe (59) 29\nValenciennes (59) 30\nTroisvilles (59) 30\nMaubeuge (59) 29\nDouai (59) 31\nLille (59) 30\nRoubaix (59) 29\nSteenvoorde (59) 29\nWatten (59) 29\nDunkerque (59) 26\nSaulty (62) 30\nArras (62) 30\nFiefs (62) 29\nHumières (62) 29\nCambrai / Epinoy (62) 30\nRadinghem (62) 29\nAttin (62) 30\nNielles-lès-Bléquin (62) 27\nBainghen (62) 27\nBoulogne (62) 28\nCalais / Marck (62) 28\nCap Gris-Nez (62) 28\nLe Touquet (62) 29\n",
         "alert": "⚠️ Données de vigilance temporairement indisponibles.",
+<<<<<<< HEAD
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786056238",
+=======
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1786057670",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL DOMINANT APRÈS UNE MATINÉE NUAGEUSE : Ce jeudi, les nuages matinaux s’effacent rapidement pour laisser place à un après-midi radieux sur l’ensemble du territoire, avec des températures maximales comprises entre 24 et 26°C.",
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
@@ -1347,16 +1463,24 @@
         "forecastMode": "table",
         "forecastTextRaw": "▶ samedi 8 août : Le soleil domine largement avec des températures en hausse, de 27 à 30°C selon les secteurs. Le vent reste faible, autour de 10 à 15 km/h, sans rafales notables. Une journée estivale et sèche à prévoir.\n▶ dimanche 9 août : Temps toujours ensoleillé mais le vent se renforce, atteignant 20 à 25 km/h avec des rafales possibles jusqu’à 55 km/h près de Lille. Les maximales grimpent entre 27 et 32°C, rendant l’atmosphère très chaude. Attention aux coups de vent en fin de journée.\n▶ lundi 10 août : Le soleil persiste mais les températures fléchissent légèrement, avec des maximales de 24 à 29°C. Le vent retombe à 15 km/h en moyenne, avec quelques rafales jusqu’à 40 km/h sur le littoral. Une journée calme et lumineuse.",
         "apiCityRaw": "St-Hilaire-sur-Helpe [⛅] (Min 18 / Max 29 Vent 18 km/h (Rafales 34 km/h))\nValenciennes [⛅] (Min 20 / Max 30 Vent 16 km/h (Rafales 34 km/h))\nTroisvilles [⛅] (Min 19 / Max 30 Vent 17 km/h (Rafales 36 km/h))\nMaubeuge [⛅] (Min 18 / Max 29 Vent 17 km/h (Rafales 34 km/h))\nDouai [⛅] (Min 20 / Max 31 Vent 17 km/h (Rafales 36 km/h))\nLille [⛅] (Min 20 / Max 30 Vent 14 km/h (Rafales 32 km/h))\nRoubaix [⛅] (Min 19 / Max 29 Vent 15 km/h (Rafales 34 km/h))\nSteenvoorde [⛅] (Min 20 / Max 29 Vent 17 km/h (Rafales 37 km/h))\nWatten [⛅] (Min 19 / Max 29 Vent 17 km/h (Rafales 38 km/h))\nDunkerque [⛅] (Min 19 / Max 26 Vent 19 km/h (Rafales 40 km/h))\nSaulty [⛅] (Min 19 / Max 30 Vent 18 km/h (Rafales 35 km/h))\nArras [⛅] (Min 20 / Max 30 Vent 18 km/h (Rafales 37 km/h))\nFiefs [⛅] (Min 19 / Max 29 Vent 18 km/h (Rafales 35 km/h))\nHumières [⛅] (Min 19 / Max 29 Vent 18 km/h (Rafales 35 km/h))\nCambrai / Epinoy [⛅] (Min 19 / Max 30 Vent 16 km/h (Rafales 34 km/h))\nRadinghem [⛅] (Min 19 / Max 29 Vent 19 km/h (Rafales 37 km/h))\nAttin [⛅] (Min 20 / Max 30 Vent 18 km/h (Rafales 36 km/h))\nNielles-lès-Bléquin [⛅] (Min 18 / Max 27 Vent 19 km/h (Rafales 38 km/h))\nBainghen [⛅] (Min 18 / Max 27 Vent 19 km/h (Rafales 38 km/h))\nBoulogne [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nCalais / Marck [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nCap Gris-Nez [⛅] (Min 19 / Max 28 Vent 20 km/h (Rafales 41 km/h))\nLe Touquet [⛅] (Min 20 / Max 29 Vent 18 km/h (Rafales 36 km/h))\n",
+<<<<<<< HEAD
         "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (samedi 8 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 35 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
         "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 13°C le matin à 26°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 27°C sur le sable.\n🌊 Température de l’eau : 18°C",
         "tides": "",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+=======
+        "marine": "🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 6 août 2026)\n\n📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet\n\n☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.\n🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 35 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.\n⚠️ Visibilité : Bonne sur l'ensemble du littoral.",
+        "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 6 août 2026)\n\n🌴 Dunkerque / Malo-les-Bains / Bray-Dunes\n☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 13°C le matin à 26°C l'après-midi.\n🌊 Température de l’eau : 17°C à 18°C\n\n🌴 Le Touquet / Berck / Baie de Somme\n☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 27°C sur le sable.\n🌊 Température de l’eau : 18°C",
+        "tides": "",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
         "precipitationRaw": "St-Hilaire-sur-Helpe (59) 0mm\nValenciennes (59) 0mm\nTroisvilles (59) 0mm\nMaubeuge (59) 0mm\nDouai (59) 0mm\nLille (59) 0mm\nRoubaix (59) 0mm\nSteenvoorde (59) 0mm\nWatten (59) 0mm\nDunkerque (59) 0mm\nSaulty (62) 0mm\nArras (62) 0mm\nFiefs (62) 0mm\nHumières (62) 0mm\nCambrai / Epinoy (62) 0mm\nRadinghem (62) 0mm\nAttin (62) 0mm\nNielles-lès-Bléquin (62) 0mm\nBainghen (62) 0mm\nBoulogne (62) 0mm\nCalais / Marck (62) 0mm\nCap Gris-Nez (62) 0mm\nLe Touquet (62) 0mm\n",
         "precipitationTitle": "CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE SAMEDI 8 AOÛT 2026",
         "gustsRaw": "St-Hilaire-sur-Helpe (59) 35\nValenciennes (59) 35\nTroisvilles (59) 35\nMaubeuge (59) 35\nDouai (59) 35\nLille (59) 30\nRoubaix (59) 35\nSteenvoorde (59) 35\nWatten (59) 40\nDunkerque (59) 40\nSaulty (62) 35\nArras (62) 35\nFiefs (62) 35\nHumières (62) 35\nCambrai / Epinoy (62) 35\nRadinghem (62) 35\nAttin (62) 35\nNielles-lès-Bléquin (62) 40\nBainghen (62) 40\nBoulogne (62) 40\nCalais / Marck (62) 40\nCap Gris-Nez (62) 40\nLe Touquet (62) 35\n",
         "gustsTitle": "RAFALES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "summaryImages": [],
+<<<<<<< HEAD
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "Phénomènes marquants et zones les plus exposées",
         "alertTitle": "Vigilance pour ce samedi 8 août 2026",
@@ -1364,6 +1488,15 @@
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "Phénomènes marquants et zones les plus exposées",
+        "alertTitle": "Vigilance pour ce samedi 8 août 2026",
+        "minObservationsRaw": "St-Hilaire-sur-Helpe (59) 18\nValenciennes (59) 20\nTroisvilles (59) 19\nMaubeuge (59) 18\nDouai (59) 20\nLille (59) 20\nRoubaix (59) 19\nSteenvoorde (59) 20\nWatten (59) 19\nDunkerque (59) 19\nSaulty (62) 19\nArras (62) 20\nFiefs (62) 19\nHumières (62) 19\nCambrai / Epinoy (62) 19\nRadinghem (62) 19\nAttin (62) 20\nNielles-lès-Bléquin (62) 18\nBainghen (62) 18\nBoulogne (62) 19\nCalais / Marck (62) 19\nCap Gris-Nez (62) 19\nLe Touquet (62) 20\n",
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "Carte des températures maximales",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_matin.jpg",
         "summaryMapAfternoonUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_hdf_J1_apresmidi.jpg",
@@ -1376,7 +1509,11 @@
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -1386,7 +1523,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_hdf.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "🌤️ VENDREDI EN SOLEIL CONTINU : Le ciel reste parfaitement dégagé toute la journée, offrant un temps calme et lumineux. Les températures, de saison, atteignent 25 à 27°C, avec un vent modéré."
@@ -1521,7 +1662,11 @@
       "form": {
         "observationsRaw": "Rouen 33\nCaen 27\nLe Havre 32\nCherbourg 27\nEvreux 34\nAlençon 35\nDieppe 31\nLisieux 33\n",
         "alert": "⚠️ Données de vigilance temporairement indisponibles.",
+<<<<<<< HEAD
         "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NOR_tomorrow.png?t=1786056238",
+=======
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NOR_tomorrow.png?t=1786057671",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL TRIOMPHANT L'APRÈS-MIDI : Après une matinée nuageuse, le ciel se dégage largement ce jeudi sur la Normandie, offrant un bel après-midi ensoleillé avec des températures maximales comprises entre 21 et 24°C, sous un vent modéré.",
         "summaryTitle": "Prévisions pour la journée du SAMEDI 8 AOÛT 2026",
@@ -1537,6 +1682,7 @@
         "forecastMode": "table",
         "forecastTextRaw": "▶ samedi 8 août : Le soleil domine largement sur toute la région, avec un ciel dégagé ou peu nuageux. Les températures s'envolent : de 28°C au Havre à 31°C à Rouen, Évreux et Alençon. Le vent reste faible, autour de 10 à 15 km/h, offrant une journée estivale et calme.\n\n▶ dimanche 9 août : Le temps se dégrade légèrement avec l'arrivée de nuages et de quelques averses éparses, notamment sur l'est de la région (Lisieux, Évreux) où les cumuls pourraient atteindre 3 à 4 mm. Le vent se renforce, avec des rafales de 40 à 50 km/h sur le littoral. Les maximales restent élevées, entre 25°C au Havre et 31°C à Évreux.\n\n▶ lundi 10 août : Le retour d'un temps sec et ensoleillé est attendu, avec un ciel clair sur l'ensemble du territoire. Les températures baissent légèrement, de 23°C au Havre à 29°C à Évreux. Le vent s’apaise, soufflant entre 10 et 15 km/h, pour une journée agréable.",
         "apiCityRaw": "Rouen [⛅] (Min 22 / Max 33 Vent 14 km/h (Rafales 30 km/h))\nCaen [⛅] (Min 22 / Max 27 Vent 24 km/h (Rafales 45 km/h))\nLe Havre [⛅] (Min 22 / Max 32 Vent 21 km/h (Rafales 46 km/h))\nCherbourg [☀️] (Min 21 / Max 27 Vent 23 km/h (Rafales 42 km/h))\nEvreux [⛅] (Min 22 / Max 34 Vent 16 km/h (Rafales 35 km/h))\nAlençon [⛅] (Min 22 / Max 35 Vent 17 km/h (Rafales 31 km/h))\nDieppe [⛅] (Min 21 / Max 31 Vent 17 km/h (Rafales 34 km/h))\nLisieux [⛅] (Min 21 / Max 33 Vent 19 km/h (Rafales 33 km/h))\n",
+<<<<<<< HEAD
         "marine": "🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (samedi 8 août 2026)\n\n📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg\n\n☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.\n🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 40 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.",
         "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (samedi 8 août 2026)\n\n🌴 Le Havre / Deauville / Cabourg\n☀️ Temps agréable ce jeudi. Températures sur les plages : 13°C à 24°C.\n🌊 Température de l’eau : 18°C à 19°C\n\n🌴 Dieppe / Fécamp / Cherbourg\n☀️ Belle luminosité ce jeudi, brise littorale rafraîchissante avec maximales de 24°C.\n🌊 Température de l’eau : 18°C",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.\n\n    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
@@ -1553,19 +1699,45 @@
         "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
         "bulletinDate": "samedi 8 août 2026",
         "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE SAMEDI 8 AOÛT 2026",
+=======
+        "marine": "🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (jeudi 6 août 2026)\n\n📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg\n\n☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.\n🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 40 km/h) ce jeudi.\n🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.",
+        "beach": "🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (jeudi 6 août 2026)\n\n🌴 Le Havre / Deauville / Cabourg\n☀️ Temps agréable ce jeudi. Températures sur les plages : 13°C à 24°C.\n🌊 Température de l’eau : 18°C à 19°C\n\n🌴 Dieppe / Fécamp / Cherbourg\n☀️ Belle luminosité ce jeudi, brise littorale rafraîchissante avec maximales de 24°C.\n🌊 Température de l’eau : 18°C",
+        "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.\n\n    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 6 août 2026.",
+        "mountainTitle": "🏔️ MÉTÉO DES MONTAGNES DU JEUDI 6 AOÛT 2026",
+        "precipitationRaw": "Rouen 0mm\nCaen 0mm\nLe Havre 0mm\nCherbourg 0mm\nEvreux 0mm\nAlençon 0mm\nDieppe 0mm\nLisieux 0mm\n",
+        "precipitationTitle": "CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE VENDREDI 10 JUILLET 2026",
+        "gustsRaw": "Rouen 30\nCaen 45\nLe Havre 45\nCherbourg 40\nEvreux 35\nAlençon 30\nDieppe 35\nLisieux 35\n",
+        "gustsTitle": "RAFALES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "summaryImages": [],
+        "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
+        "recordsTitle": "🧭 TENDANCE GÉNÉRALE",
+        "alertTitle": "Vigilance pour ce samedi 8 août 2026",
+        "minObservationsRaw": "Rouen 22\nCaen 22\nLe Havre 22\nCherbourg 21\nEvreux 22\nAlençon 22\nDieppe 21\nLisieux 21\n",
+        "minObservationsTitle": "TEMPÉRATURES MINIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+        "bulletinDate": "samedi 8 août 2026",
+        "observationsTitle": "TEMPÉRATURES MAXIMALES PRÉVUES POUR CE VENDREDI 10 JUILLET 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "summaryMapTitle1": "Carte des températures maximales",
         "summaryMapMorningUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_normandie_J1_matin.jpg",
         "summaryMapAfternoonUrl1": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_normandie_J1_apresmidi.jpg",
         "summaryMapTitle2": "",
         "summaryMapMorningUrl2": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_normandie_J2_matin.jpg",
         "summaryMapAfternoonUrl2": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_normandie_J2_apresmidi.jpg",
+<<<<<<< HEAD
         "ephemeris": "📅 ÉPHÉMÉRIDE DU SAMEDI 8 AOÛT\n☀️ SOLEIL : Lever 06:24 • Coucher 21:25 • Zénith 13:54\n⏱️ JOUR : Durée 15h00 (Perte de 4 min)\n🌙 LUNE : Lever 00:03 • Coucher 17:34\n😇 SAINT DU JOUR : Gaétan\n💬 DICTON : \"En août, de l’aube au soir, on n’a qu’une heure pour s’asseoir.\"",
+=======
+        "ephemeris": "📅 ÉPHÉMÉRIDE DU VENDREDI 10 JUILLET\n☀️ SOLEIL : Lever 06:00 • Coucher 22:03 • Zénith 14:01\n⏱️ JOUR : Durée 16h02 (Perte de 2 min)\n🌙 LUNE : Lever 01:47 • Coucher 18:34\n😇 SAINT DU JOUR : Ulrich\n💬 DICTON : \"Pluie du dix juillet, mouille sept fois, du moissonneur le bonnet.\"",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "surveillanceTitle": "🧭 TENDANCE GÉNÉRALE",
         "surveillanceItems": [
           {
             "id": "auto_records",
             "type": "text",
+<<<<<<< HEAD
             "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+=======
+            "content": "🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement."
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
           }
         ],
         "videoModuleTitle": "MÉTÉO EN VIDÉO",
@@ -1575,7 +1747,11 @@
         "videoThumbnailUrl": "",
         "alertSource": "Météo-France — vigilance.meteofrance.fr",
         "forestAlertImageUrl": "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes/carte_forets_normandie.jpg",
+<<<<<<< HEAD
         "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU JEUDI 6 AOÛT 2026",
+=======
+        "forestAlertTitle": "🌲 MÉTÉO DES FORÊTS DU SAMEDI 8 AOÛT 2026",
+>>>>>>> 36658044954f23f93dff86e44b9629b404f0c753
         "forestAlertSource": "Météo-Climat PRO — minisite-douai.vercel.app",
         "showForestMap": true,
         "summaryLancement2": "🌤️ VENDREDI SOUS LE SIGNE DU BEAU TEMPS : Le soleil règne en maître dès le matin sur toute la région, pour une journée lumineuse et stable, avec des températures estivales et un vent faible à modéré."

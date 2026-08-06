@@ -1,4 +1,4 @@
-name: Météo Kappa - 2. Analyse Gemini Flash
+name: Météo Kappa - 2. Analyse DeepSeek V4 Flash 0731
 
 on:
   workflow_run:
@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 jobs:
-  run-analyse-gemini:
+  run-analyse-gpt-luna:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
@@ -36,7 +36,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Lancer l'analyse des cartes par Gemini Flash (Vision)
+      - name: Lancer l'analyse des cartes par DeepSeek V4 Flash 0731 (Vision)
         env:
           PYTHONUNBUFFERED: "1"
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
