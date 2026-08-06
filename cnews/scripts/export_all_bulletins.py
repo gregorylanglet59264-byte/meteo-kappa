@@ -78,13 +78,27 @@ def update_form_dates_locally(form, day_offset):
     date_j1 = today + datetime.timedelta(days=day_offset)
     date_j2 = today + datetime.timedelta(days=day_offset + 1)
     
+    import re
     day1_str = get_french_date_string(date_j1, include_year=True)
     day2_str = get_french_date_string(date_j2, include_year=False)
+    day1_no_year = get_french_date_string(date_j1, include_year=False)
+    wd1 = FRENCH_WEEKDAYS[date_j1.weekday()]
+    wd2 = FRENCH_WEEKDAYS[date_j2.weekday()]
     
     form["bulletinDate"] = day1_str
     form["summaryTitle"] = f"Prévisions pour la journée du {day1_str.upper()}"
     form["summaryTitle2"] = f"Prévisions pour la journée du {day2_str.upper()}"
     form["alertTitle"] = f"Vigilance pour ce {day1_str}"
+    form["precipitationTitle"] = f"CUMULS DE PRÉCIPITATIONS PRÉVUS POUR CE {day1_str.upper()}"
+    form["gustsTitle"] = f"RAFALES MAXIMALES PRÉVUES POUR CE {day1_str.upper()}"
+    form["observationsTitle"] = f"TEMPÉRATURES MAXIMALES PRÉVUES POUR CE {day1_str.upper()}"
+    form["minObservationsTitle"] = f"TEMPÉRATURES MINIMALES PRÉVUES POUR CE {day1_str.upper()}"
+    form["ephemeris"] = f"📅 ÉPHÉMÉRIDE DU {day1_no_year.upper()}\n☀️ SOLEIL : Lever 06:24 • Coucher 21:25 • Zénith 13:54\n⏱️ JOUR : Durée 15h00 (Perte de 4 min)\n🌙 LUNE : Lever 00:03 • Coucher 17:34\n😇 SAINT DU JOUR : Gaétan\n💬 DICTON : \"En août, de l’aube au soir, on n’a qu’une heure pour s’asseoir.\""
+    
+    if "beach" in form and isinstance(form["beach"], str) and form["beach"]:
+        form["beach"] = re.sub(r'\(.*?\)', f'({day1_str})', form["beach"], count=1)
+    if "marine" in form and isinstance(form["marine"], str) and form["marine"]:
+        form["marine"] = re.sub(r'\(.*?\)', f'({day1_str})', form["marine"], count=1)
 
 def save_vision_forecast_report(clients, output_filename, day_offset):
     """Sauvegarde dans un fichier texte structuré l'intégralité des prévisions et commentaires visuels par carte pour chaque client."""
@@ -396,6 +410,12 @@ def main():
         import shutil
         shutil.copy(temp_json_path, output_filename)
         shutil.copy(temp_json_path, os.path.join(project_root, "AUTOMATISATION.json"))
+        desktop_json = os.path.expanduser(r"~\Desktop\AUTOMATISATION.json")
+        try:
+            shutil.copy(temp_json_path, desktop_json)
+            print(f"📋 Copie du fichier JSON sur le Bureau : {desktop_json}")
+        except Exception as e:
+            print(f"Warning: Could not copy JSON to desktop: {e}")
         print(f"\n🎉 SUCCESS! Fully updated JSON saved directly as: {output_filename} and {os.path.join(project_root, 'AUTOMATISATION.json')}")
         save_vision_forecast_report(clients, output_filename, args.day_offset)
         if os.path.exists(temp_json_path):
