@@ -95,6 +95,13 @@ def update_form_dates_locally(form, day_offset):
     form["minObservationsTitle"] = f"TEMPÉRATURES MINIMALES PRÉVUES POUR CE {day1_str.upper()}"
     form["ephemeris"] = f"📅 ÉPHÉMÉRIDE DU {day1_no_year.upper()}\n☀️ SOLEIL : Lever 06:24 • Coucher 21:25 • Zénith 13:54\n⏱️ JOUR : Durée 15h00 (Perte de 4 min)\n🌙 LUNE : Lever 00:03 • Coucher 17:34\n😇 SAINT DU JOUR : Gaétan\n💬 DICTON : \"En août, de l’aube au soir, on n’a qu’une heure pour s’asseoir.\""
     
+    weekdays_pattern = r'\bce (lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)\b'
+    if "recordsRaw" in form and isinstance(form["recordsRaw"], str) and form["recordsRaw"]:
+        form["recordsRaw"] = re.sub(weekdays_pattern, f'ce {wd1}', form["recordsRaw"], flags=re.IGNORECASE)
+        form["surveillanceItems"] = [{"id": "auto_records", "type": "text", "content": form["recordsRaw"]}]
+    if "mountain" in form and isinstance(form["mountain"], str) and form["mountain"]:
+        form["mountain"] = re.sub(weekdays_pattern, f'ce {wd1}', form["mountain"], flags=re.IGNORECASE)
+    
     if "beach" in form and isinstance(form["beach"], str) and form["beach"]:
         form["beach"] = re.sub(r'\(.*?\)', f'({day1_str})', form["beach"], count=1)
     if "marine" in form and isinstance(form["marine"], str) and form["marine"]:
@@ -306,24 +313,28 @@ def main():
                     for key, val in ai_texts.items():
                         form[key] = val
                     
-                    # Synchroniser surveillanceItems avec todaySummary pour écraser les vieux textes statiques du dictionnaire
-                    if "todaySummary" in ai_texts and ai_texts["todaySummary"]:
-                        items = form.get("surveillanceItems", [])
-                        if not isinstance(items, list) or len(items) == 0:
-                            form["surveillanceItems"] = [{"id": "auto_summary", "type": "text", "content": ai_texts["todaySummary"]}]
-                        else:
-                            form["surveillanceItems"][0]["content"] = ai_texts["todaySummary"]
+                    # Synchroniser surveillanceItems avec recordsRaw (bloc 4 lignes phénomènes) pour éviter de dupliquer todaySummary
+                    if "recordsRaw" in ai_texts and ai_texts["recordsRaw"]:
+                        form["recordsRaw"] = ai_texts["recordsRaw"]
+                        form["surveillanceItems"] = [{"id": "auto_records", "type": "text", "content": ai_texts["recordsRaw"]}]
             
-            # Store public raw GitHub URL instead of heavy Base64 to keep JSON size under 100KB
+            # Inject maps: base64 local si les fichiers existent sur le Bureau (mode PC autonome),
+            # sinon URL GitHub raw (mode GitHub Actions cloud).
+            # ponytail: base64 alourdit le JSON (~1MB/carte) mais garantit l'autonomie totale hors GitHub.
             base_url = "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes"
-            if img_m1:
-                c["form"]["summaryMapMorningUrl1"] = f"{base_url}/{os.path.basename(map_morning_1)}"
-            if img_a1:
-                c["form"]["summaryMapAfternoonUrl1"] = f"{base_url}/{os.path.basename(map_afternoon_1)}"
-            if img_m2:
-                c["form"]["summaryMapMorningUrl2"] = f"{base_url}/{os.path.basename(map_morning_2)}"
-            if img_a2:
-                c["form"]["summaryMapAfternoonUrl2"] = f"{base_url}/{os.path.basename(map_afternoon_2)}"
+            for field, path, b64 in [
+                ("summaryMapMorningUrl1",   map_morning_1,   img_m1),
+                ("summaryMapAfternoonUrl1", map_afternoon_1, img_a1),
+                ("summaryMapMorningUrl2",   map_morning_2,   img_m2),
+                ("summaryMapAfternoonUrl2", map_afternoon_2, img_a2),
+            ]:
+                if b64:
+                    if os.path.exists(path):
+                        # Mode local PC : on encode en base64 directement depuis le fichier local
+                        c["form"][field] = b64
+                    else:
+                        # Mode GitHub Actions : on utilise l'URL GitHub raw
+                        c["form"][field] = f"{base_url}/{os.path.basename(path)}"
 
             # Inject forest fire risk map (regional map if available, fallback to national)
             zone_key = region if (region and region.strip()) else "france_pictos"

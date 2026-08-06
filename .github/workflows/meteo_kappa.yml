@@ -36,6 +36,7 @@ jobs:
 
       - name: Enregistrer le mode de test
         run: |
+          echo "${{ github.event.inputs.triggered_by }}" > cnews/triggered_by.txt
           echo "${{ github.event.inputs.triggered_by == 'patrick' && 'false' || 'true' }}" > cnews/test_mode.txt
 
       - name: Lancer la génération des cartes et de la structure du programme
@@ -50,7 +51,7 @@ jobs:
           git config --global user.name "Gregory LANGLET"
           git config --global user.email "langlet.gregory@gmail.com"
           # Forcer l'ajout des cartes .jpg générées bien qu'elles soient dans le dossier ignoré cartes_alertes/
-          git add cnews/AUTOMATISATION.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.txt cnews/test_mode.txt
+          git add cnews/AUTOMATISATION.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.json cnews/BULLETINS_AUTOMATIQUES_DEMAIN.txt cnews/test_mode.txt cnews/triggered_by.txt
           git add -f cartes_alertes/*.jpg || echo "Aucune carte jpg à ajouter"
           git commit -m "Mise à jour automatique des cartes et données Kappa [GHA]" || echo "Aucune modification à commiter"
           git pull --rebase -X ours origin main || git push origin main --force

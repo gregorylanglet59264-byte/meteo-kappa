@@ -31,7 +31,10 @@ from generate_video_bulletin import capture_and_compose_vigilance
 TRIGGERED_BY = os.environ.get("TRIGGERED_BY", "").lower()
 TRIGGER_ACTOR = os.environ.get("TRIGGER_ACTOR", "").lower()
 
-if TRIGGERED_BY == "patrick" or "monsieurmeteo" in TRIGGER_ACTOR:
+if TRIGGERED_BY == "cron":
+    RECIPIENTS = ["gregory.langlet59264@gmail.com"]
+    print(f"Déclenché par Cron -> Envoi à gregory.langlet59264@gmail.com uniquement", flush=True)
+elif TRIGGERED_BY == "patrick" or "monsieurmeteo" in TRIGGER_ACTOR:
     RECIPIENTS = ["patrick.marliere@wanadoo.fr", "gregory.langlet@sfr.fr", "langlet.gregory@gmail.com"]
     print(f"Déclenché par Patrick (actor: {TRIGGER_ACTOR}) -> Envoi à Patrick et Grégoire", flush=True)
 else:

@@ -204,10 +204,14 @@ def main():
     print("\n=== ÉTAPE 3 : Envoi de l'e-mail ===")
     subject = f"bulletin vidéo du {get_french_date_string(tomorrow)}"
     
-    # Gestion du mode test : si argument "test_mode" ou variable d'env GHA active
+    # Gestion du mode test / cron / production
+    triggered_by = os.environ.get("TRIGGERED_BY", "").lower()
     test_mode = args.test_mode or os.environ.get("TEST_MODE", "false").lower() in ["true", "1", "yes"]
         
-    if test_mode:
+    if triggered_by == "cron":
+        recipients = "gregory.langlet59264@gmail.com"
+        print("[MODE CRON] Envoi automatique à gregory.langlet59264@gmail.com uniquement.")
+    elif test_mode and triggered_by != "patrick":
         recipients = "gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
         print("[MODE TEST] Envoi restreint à Grégory uniquement.")
     else:
