@@ -8551,19 +8551,18 @@
                         while (!geoJsonLoaded && !isFrance && (Date.now() - startTime) < 8000) {
                             await new Promise(r => setTimeout(r, 100));
                         }
-                        // Pause de stabilisation supplémentaire
-                        await new Promise(r => setTimeout(r, 800));
-                        
                         try {
                             if (map) {
                                 map.invalidateSize();
                                 fitMapToZone();
                             }
-                            await new Promise(r => setTimeout(r, 300));
+                            // Pause de 8000 MS APRES le repositionnement fitMapToZone pour charger 100% des tuiles ArcGIS
+                            await new Promise(r => setTimeout(r, 8000));
+
                             const captureArea = document.getElementById('capture-area');
                             const imgs = captureArea.querySelectorAll('img');
                             await Promise.all(Array.from(imgs).map(img => {
-                                return img.complete ? Promise.resolve() : new Promise(r => { img.onload = r; img.onerror = r; });
+                                return (img.complete && img.naturalHeight !== 0) ? Promise.resolve() : new Promise(r => { img.onload = r; img.onerror = r; setTimeout(r, 3000); });
                             }));
                             
                             const canvas = await html2canvas(captureArea, { scale: 1.5, useCORS: true });

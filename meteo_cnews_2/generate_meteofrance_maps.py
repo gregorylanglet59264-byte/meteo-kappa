@@ -758,8 +758,7 @@ def main():
     else:
         periods = {
             'morning': 'matin',
-            'afternoon': 'apresmidi',
-            'evening': 'soiree'
+            'afternoon': 'apresmidi'
         }
         renders = []
         for day in range(days_to_capture):
