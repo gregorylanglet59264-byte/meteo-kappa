@@ -219,8 +219,8 @@ def main():
     if not os.path.exists(maps_dir):
         maps_dir = r"C:\Users\grego\Desktop\cartes_alertes"
         
-    offset1 = args.day_offset
-    offset2 = args.day_offset + 1
+    offset1 = args.day_offset + 1
+    offset2 = args.day_offset + 2
     
     # 2. Load the original JSON and update ALL maps for ALL clients
     temp_json_path = "AUTOMATISATION_TEMP_EXPORT.json"
@@ -307,16 +307,14 @@ def main():
                         form["recordsRaw"] = ai_texts["recordsRaw"]
                         form["surveillanceItems"] = [{"id": "auto_records", "type": "text", "content": ai_texts["recordsRaw"]}]
             
-            # Store public raw GitHub URL instead of heavy Base64 to keep JSON size under 100KB
-            base_url = "https://raw.githubusercontent.com/gregorylanglet59264-byte/meteo-kappa/main/cartes_alertes"
-            if img_m1:
-                c["form"]["summaryMapMorningUrl1"] = f"{base_url}/{os.path.basename(map_morning_1)}"
-            if img_a1:
-                c["form"]["summaryMapAfternoonUrl1"] = f"{base_url}/{os.path.basename(map_afternoon_1)}"
-            if img_m2:
-                c["form"]["summaryMapMorningUrl2"] = f"{base_url}/{os.path.basename(map_morning_2)}"
-            if img_a2:
-                c["form"]["summaryMapAfternoonUrl2"] = f"{base_url}/{os.path.basename(map_afternoon_2)}"
+            for field, path, b64 in [
+                ("summaryMapMorningUrl1",   map_morning_1,   img_m1),
+                ("summaryMapAfternoonUrl1", map_afternoon_1, img_a1),
+                ("summaryMapMorningUrl2",   map_morning_2,   img_m2),
+                ("summaryMapAfternoonUrl2", map_afternoon_2, img_a2),
+            ]:
+                if b64:
+                    c["form"][field] = b64
 
             # Inject forest fire risk map (regional map if available, fallback to national)
             zone_key = region if (region and region.strip()) else "france_pictos"
@@ -401,8 +399,16 @@ def main():
         if not server_running and sync_playwright is not None:
             print(f"\n⚠️ Local dev server at {args.url} is offline. Saving JSON directly without Playwright UI sync.")
         import shutil
+        desktop_dir = os.path.expanduser("~/Desktop")
         shutil.copy(temp_json_path, output_filename)
         shutil.copy(temp_json_path, os.path.join(project_root, "AUTOMATISATION.json"))
+        if os.path.exists(desktop_dir):
+            try:
+                shutil.copy(temp_json_path, os.path.join(desktop_dir, "AUTOMATISATION.json"))
+                shutil.copy(temp_json_path, os.path.join(desktop_dir, os.path.basename(output_filename)))
+                print(f"📋 Copie des JSON sur le Bureau effectuée : {os.path.join(desktop_dir, 'AUTOMATISATION.json')}")
+            except Exception as e:
+                print(f"Warning: Failed to copy JSON to Desktop: {e}")
         print(f"\n🎉 SUCCESS! Fully updated JSON saved directly as: {output_filename} and {os.path.join(project_root, 'AUTOMATISATION.json')}")
         save_vision_forecast_report(clients, output_filename, args.day_offset)
         if os.path.exists(temp_json_path):
