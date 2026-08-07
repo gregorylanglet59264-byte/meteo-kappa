@@ -1,7 +1,7 @@
 ================================================================================
 📡 RAPPORT EXHAUSTIF DES PRÉVISIONS VISUELLES (MODE VISIO EN PLATEAU)
 DATE CIBLE : SAMEDI 8 AOÛT 2026
-FICHIER SOURCE : C:\Users\grego\Documents\METEO_CLIMAT\meteo-kappa\cnews\BULLETINS_AUTOMATIQUES_DEMAIN.json
+FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOMATIQUES_DEMAIN.json
 ================================================================================
 
 --------------------------------------------------------------------------------
