@@ -13,12 +13,10 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, le soleil domine largement sur une grande partie du territoire, notamment de l'Île-de-France au Grand Est. Paris se réveille sous un ciel dégagé avec 17°C, tandis que Tours et Poitiers profitent également d'un franc soleil et de températures douces, respectivement 11°C et 15°C.
-
-Cependant, un voile nuageux plus dense s'invite sur le quart nord-ouest. De la Bretagne à la Normandie, en passant par les Pays de la Loire, le ciel est très nuageux. Des villes comme Brest, Caen, Rouen, Rennes et Nantes connaissent un temps couvert, avec des minimales de 15°C à Brest et 13°C à Caen. Le vent y souffle modérément, atteignant 15 km/h avec des rafales jusqu'à 40 km/h sur Caen. Aucune précipitation significative n'est à signaler pour cette matinée, à l'exception de Poitiers où de très faibles pluies (0.1 mm) sont relevées.
+Ce samedi matin, le soleil domine largement sur une grande partie du territoire, notamment de la Normandie à l'Île-de-France et jusqu'au Centre-Val de Loire. Les minimales s'établissent à 17°C à Paris, 11°C à Tours et 15°C à Poitiers. Quelques nuages bas sont présents sur la Bretagne et les Pays de la Loire, avec 13°C à Rennes et 14°C à Nantes. Le vent reste faible sur l'ensemble du pays, soufflant généralement entre 10 et 15 km/h. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, le soleil dominera largement sur une grande partie du territoire, notamment de la Normandie à l'Île-de-France et jusqu'au Centre-Val de Loire. Les températures seront élevées, atteignant 31°C à Paris et 34°C à Tours. Un voile nuageux plus dense est cependant attendu sur le quart nord-ouest, avec un ciel très nuageux de la Bretagne aux Pays de la Loire, et des maximales autour de 28°C à Caen. Des averses isolées sont possibles dans le sud-ouest, notamment près de Poitiers où une faible pluie est prévue. Le vent restera modéré, ne dépassant pas les 15 km/h avec des rafales maximales de 40 km/h sur les côtes normandes.
+Ce samedi après-midi, le soleil dominera largement sur la majeure partie de la France, notamment de Lille (29°C) à Poitiers (34°C) en passant par Paris (31°C). Le vent restera faible avec des brises n'excédant pas les 15 km/h. Une couverture nuageuse plus importante est cependant attendue sur le quart nord-ouest du pays. De Rouen (29°C) à Brest (28°C), en passant par Caen (28°C) et Rennes (33°C), le ciel sera très nuageux, mais sans précipitations. Les températures resteront élevées, marquant un contraste avec le littoral où la brise marine tempérera légèrement l'atmosphère.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.
@@ -40,13 +38,9 @@ Ce samedi après-midi, le soleil dominera largement sur une grande partie du ter
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (lundi 10 août au mercredi 12 août)
-
-▶ lundi 10 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 33°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
-
-▶ mardi 11 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 15°C. L'après-midi, le mercure grimpe jusqu'à 36°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
-
-▶ mercredi 12 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 37°C sous abri. Le vent souffle de manière modérée.
+▶ lundi 10 août : Grand soleil généralisé sur l'ensemble du territoire, de Lille à Poitiers. Les températures maximales sont chaudes, atteignant 33°C à Tours et Poitiers. Le vent reste faible, sauf sur la pointe bretonne et le Calvados où des rafales à 40 km/h sont attendues.
+▶ mardi 11 août : Ambiance encore plus chaude sur la moitié sud du pays, avec des maximales qui frôlent les 36°C à Tours et Poitiers. Le ciel reste dégagé partout. Le vent de sud-ouest se renforce en direction de Nantes et Caen, avec des rafales possibles jusqu'à 45 km/h.
+▶ mercredi 12 août : Pic de chaleur pour cette fin de tendance, avec 37°C attendus à Poitiers et 36°C à Rennes, Nantes et Tours. Soleil écrasant sur la quasi-totalité du pays. Quelques rafales de vent à signaler près de l'estuaire de la Loire.
 
 
 --------------------------------------------------------------------------------
@@ -58,10 +52,10 @@ Ce samedi après-midi, le soleil dominera largement sur une grande partie du ter
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, le ciel se présente dégagé sur l'ensemble de la région, offrant un soleil dominant. Les températures minimales affichent 11°C à Valenciennes et Troisvilles, tandis que Lille et Roubaix enregistrent 14°C. Un léger vent souffle, atteignant 20 km/h à Dunkerque, avec des rafales ne dépassant pas les 40 km/h sur le littoral. Aucune précipitation n'est à signaler. Les conditions météorologiques sont stables et ensoleillées pour ce début de journée.
+Ce samedi matin, le Nord-Pas-de-Calais se réveille sous un ciel dégagé et un soleil dominant. Les températures minimales affichent 11°C à Valenciennes et Troisvilles, 12°C à St-Hilaire-sur-Helpe et 13°C à Maubeuge. Le vent souffle faiblement sur l'ensemble de la région, avec des brises légères de 10 à 15 km/h. Seul le littoral de Dunkerque connaît un vent modéré de 20 km/h, avec des rafales pouvant atteindre 40 km/h. Aucune précipitation n'est à signaler.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, le ciel se maintiendra dégagé sur l'ensemble de la région, offrant un ensoleillement généreux. Aucune précipitation n'est attendue. Les températures maximales atteindront 29°C à Lille et Roubaix, 28°C à Dunkerque et Maubeuge, et 25°C à Steenvoorde. Le vent soufflera faiblement, avec des vitesses variant de 10 à 20 km/h. Des rafales de 40 km/h sont prévues sur le littoral dunkerquois, tandis que l'intérieur des terres connaîtra des brises légères.
+Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble de la région. Le soleil dominera largement le ciel, sans la moindre perturbation nuageuse. Les températures maximales atteindront 29°C à Lille et Douai, 28°C à Valenciennes et Maubeuge, et 25°C à Steenvoorde. Le vent soufflera faiblement, généralement entre 10 et 15 km/h, avec des rafales pouvant atteindre 40 km/h sur le littoral dunkerquois. Aucune précipitation n'est attendue.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)
@@ -82,133 +76,6 @@ Ce samedi après-midi, le ciel se maintiendra dégagé sur l'ensemble de la rég
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
 🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 40 km/h) ce samedi.
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
-⚠️ Visibilité : Bonne sur l'ensemble du littoral.
-
-🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.
-🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
-🏔️ Météo montagne
-
-    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
-
-    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce dimanche.
-
-    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
-
-    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.
-
-    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.
-
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
-
-📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (lundi 10 août au mercredi 12 août)
-
-▶ lundi 10 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 30°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
-
-▶ mardi 11 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 15°C. L'après-midi, le mercure grimpe jusqu'à 29°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
-
-▶ mercredi 12 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 32°C sous abri. Le vent souffle de manière modérée.
-
-
---------------------------------------------------------------------------------
-📻 CLIENT / STATION : RADIO - ICI LA ROCHELLE
-🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
---------------------------------------------------------------------------------
-
-☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-
-
-🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, le ciel se présente dégagé sur l'ensemble de la région, avec un soleil dominant qui s'impose dès les premières heures. Les températures minimales affichent 17°C à La Rochelle, 20°C à Angoulême et La Couronne, et 15°C à Montbron. Le vent souffle modérément sur le littoral, atteignant 20 km/h à Chassiron et 15 km/h à La Rochelle. À l'intérieur des terres, une légère brise de 5 à 10 km/h est observée, notamment à Gond-Pontouvre et Soyaux. Aucune précipitation n'est à signaler pour cette matinée.
-
-🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, le département connaîtra un temps estival et ensoleillé. Le soleil dominera largement le ciel sur l'ensemble de la région, sans aucune précipitation à signaler. Les températures maximales atteindront des niveaux élevés, notamment à La Rochelle et Angoulême avec 37°C, tandis que Cognac affichera 36°C. Le vent soufflera faiblement, avec une brise côtière de 20 km/h à Chassiron, et des vents légers de 5 à 15 km/h dans les terres. Le contraste thermique restera marqué entre le littoral et l'intérieur des terres.
-
-🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (samedi 8 août 2026)
-
-🌴 La Rochelle / Île de Ré / Île d’Oléron
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur l'ensemble des plages charentaises ce samedi.
-🌡️ Température sur le littoral : 18°C à 37°C
-🌊 Température de l’eau : 24°C à 25°C
-
-🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce samedi, maximales de 38°C tempérées par la brise marine.
-🌊 Température de l’eau : 25°C
-
-🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (samedi 8 août 2026)
-
-📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
-
-☀️ Situation synoptique : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Régime de brises thermiques (20 km/h avec rafales atteignant 35 km/h).
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
-
-🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce samedi.
-🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.
-🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
-🏔️ Météo montagne
-
-    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
-
-    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce dimanche.
-
-    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
-
-    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.
-
-    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.
-
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
-
-📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ lundi 10 août : Le ciel reste majoritairement ensoleillé malgré quelques passages nuageux. Les températures maximales oscillent entre 30°C et 36°C, avec 36°C à La Rochelle et 34°C à Angoulême. Le vent souffle de 10 à 20 km/h, et de faibles précipitations (moins de 2,5 mm) sont possibles localement, notamment à Gond-Pontouvre et La Couronne.
-
-▶ mardi 11 août : La chaleur s'accentue nettement. Les maximales atteignent 38°C à La Rochelle et 36°C à Angoulême, avec un vent toujours modéré sur le littoral (20 km/h) et plus faible dans les terres. Le ciel est dégagé, sans pluie significative, mais des averses isolées restent possibles en secteur intérieur.
-
-▶ mercredi 12 août : Pic de chaleur attendu avec 39°C à La Rochelle et 37°C à Angoulême. Le soleil est omniprésent, le vent reste modéré (15 à 20 km/h) et aucune précipitation n'est prévue. Les températures minimales ne descendent pas sous les 19°C, rendant les nuits très douces.
-
-
---------------------------------------------------------------------------------
-📻 CLIENT / STATION : RADIO 6
-🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
---------------------------------------------------------------------------------
-
-☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-
-
-🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, le soleil domine largement l'ensemble de la région. Le ciel se présente dégagé, sans nuage, offrant un début de journée lumineux. Les températures minimales affichent 13°C à Leffrinckoucke et 15°C à Robecq, tandis que l'intérieur des terres, comme à Racquinghem, enregistre 9°C. Le vent souffle modérément sur le littoral, atteignant 25 km/h à Leffrinckoucke avec des rafales pouvant atteindre 40 km/h, et 20 km/h à Gravelines. À l'intérieur des terres, le vent est plus faible, autour de 10 à 15 km/h. Aucune précipitation n'est à signaler.
-
-🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble de la région. Le ciel restera dégagé, offrant un soleil dominant sans nuages. Les températures maximales atteindront 28°C à Leffrinckoucke et Racquinghem, 26°C à Gravelines et Marck, et 27°C à Offekerque, Lefaux, Groffliers, Remilly-Wirquin et Cauchy-à-la-Tour. Un léger vent de nord-ouest soufflera sur le littoral, atteignant 25 km/h à Leffrinckoucke et Marck, avec des rafales ne dépassant pas les 40 km/h. Dans l'intérieur des terres, le vent sera plus faible, autour de 10 à 15 km/h. Aucune précipitation n'est à signaler.
-
-🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)
-
-🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 11°C le matin à 28°C l'après-midi.
-🌊 Température de l’eau : 18°C à 19°C
-
-🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce samedi. Maximales atteignant 29°C sur le sable.
-🌊 Température de l’eau : 19°C
-
-🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (samedi 8 août 2026)
-
-📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
-
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 40 km/h) ce samedi.
-🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -235,9 +102,132 @@ Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble d
 
 ▶ lundi 10 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 29°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
 
-▶ mardi 11 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 28°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
+▶ mardi 11 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 29°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
 
-▶ mercredi 12 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 34°C sous abri. Le vent souffle de manière modérée.
+▶ mercredi 12 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 32°C sous abri. Le vent souffle de manière modérée.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO - ICI LA ROCHELLE
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce samedi matin, le soleil domine largement l'ensemble de la région, offrant un ciel dégagé et lumineux. Les températures minimales affichent 17°C à La Rochelle et Blanzac-Porcheresse, tandis que Montbron enregistre 15°C. Sur le littoral, Chassiron débute la journée avec 21°C. Le vent souffle modérément, atteignant 20 km/h à Chassiron et 15 km/h à La Rochelle et Cognac, sans aucune précipitation à signaler. Les températures intérieures sont déjà élevées, avec 20°C à Angoulême et La Couronne, annonçant une journée très chaude.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Ce samedi après-midi, un soleil généreux dominera l'ensemble de la région, sans le moindre nuage pour altérer le ciel. Les températures maximales atteindront des niveaux très élevés, avec 37°C enregistrés à La Rochelle, Angoulême et La Couronne. Le vent, de faible intensité, soufflera autour de 10 à 15 km/h sur l'intérieur des terres, tandis qu'une légère brise côtière de 20 km/h tempérera légèrement l'atmosphère à Chassiron, où le mercure affichera 29°C. Aucune précipitation n'est attendue.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (samedi 8 août 2026)
+
+🌴 La Rochelle / Île de Ré / Île d’Oléron
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur l'ensemble des plages charentaises ce samedi.
+🌡️ Température sur le littoral : 18°C à 37°C
+🌊 Température de l’eau : 24°C à 25°C
+
+🌴 Royan / Côte de Beauté / Rochefort
+☀️ Ensoleillement généreux ce samedi, maximales de 38°C tempérées par la brise marine.
+🌊 Température de l’eau : 25°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (samedi 8 août 2026)
+
+📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
+
+☀️ Situation synoptique : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
+🌬️ Vent : Régime de brises thermiques (20 km/h).
+🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce samedi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.
+🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
+🏔️ Météo montagne
+
+    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+
+    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce dimanche.
+
+    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+
+    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.
+
+    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.
+
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+▶ lundi 10 août : Le soleil se maintient mais l'atmosphère devient plus instable. Des averses éparses, parfois orageuses, sont attendues sur l'ensemble des terres avec des cumuls de pluie pouvant atteindre 2.5 mm localement comme à Gond-Pontouvre. Le vent reste faible, et les températures maximales restent très élevées, avec jusqu'à 36°C à La Rochelle.
+
+▶ mardi 11 août : Le temps redevient sec et le ciel se dégage totalement, offrant une nouvelle journée radieuse. La chaleur se renforce encore, avec des pics à 38°C sur le littoral rochelais et 36°C dans l'agglomération d'Angoulême. Le vent, modéré sur le littoral, atteint 20 km/h, apportant une légère fraîcheur côtière à Chassiron (31°C).
+
+▶ mercredi 12 août : Le pic de cette vague de chaleur est atteint. Le soleil est éclatant et aucune précipitation n'est à signaler. Les températures grimpent jusqu'à 39°C à La Rochelle et 37°C à La Couronne et Angoulême. Le vent est très faible sur l'intérieur, accentuant la sensation de lourdeur.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : RADIO 6
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce samedi matin, le soleil domine largement sur l'ensemble de la région, offrant un ciel dégagé et lumineux. Aucune précipitation n'est à signaler. Les températures minimales s'établissent à 10°C à Racquinghem et Groffliers, 12°C à Remilly-Wirquin et 13°C à Leffrinckoucke. Le vent souffle modérément sur le littoral, atteignant 25 km/h à Leffrinckoucke et Offekerque, avec des rafales pouvant atteindre 45 km/h à Leffrinckoucke. Dans l'intérieur des terres, le vent est plus faible, autour de 10 à 15 km/h.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+Ce samedi après-midi, le soleil dominera largement sur l'ensemble de la région. Aucun nuage ne viendra perturber cet ensoleillement généreux. Les températures maximales atteindront 28°C à Leffrinckoucke et Cauchy-à-la-Tour, 27°C à Gravelines et Offekerque, et 25°C à Robecq. Le vent soufflera modérément, avec des vitesses de 25 km/h à Leffrinckoucke et Offekerque, et des rafales pouvant atteindre 45 km/h sur le littoral à Leffrinckoucke. Dans l'intérieur des terres, les vents seront plus faibles, autour de 10 à 15 km/h. Aucune précipitation n'est à prévoir.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)
+
+🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
+☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 12°C le matin à 28°C l'après-midi.
+🌊 Température de l’eau : 18°C à 19°C
+
+🌴 Le Touquet / Berck / Baie de Somme
+☀️ Ambiance agréable sur le littoral ce samedi. Maximales atteignant 29°C sur le sable.
+🌊 Température de l’eau : 19°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (samedi 8 août 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce samedi.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
+⚠️ Visibilité : Bonne sur l'ensemble du littoral.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+🌧️ Pluies & Humidité : Temps sec sur la région ce samedi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce samedi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce samedi.
+🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
+🏔️ Météo montagne
+
+    Alpes : Chaleur marquée en vallée ce samedi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+
+    Pyrénées : Soleil dominant en matinée de ce samedi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce dimanche.
+
+    Massif central : Ambiance lourde et estivale ce samedi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+
+    Vosges : Temps très chaud et généreusement ensoleillé ce samedi. Quelques nuages de beau temps l'après-midi sans intempérie.
+
+    Jura : Chaleur estivale et soleil dominant ce samedi, avant quelques passages nuageux inoffensifs en soirée.
+
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+▶ lundi 10 août : Le soleil continue de régner sans partage sur la région. Les températures grimpent encore, avec des maximales comprises entre 23°C à Gravelines et 29°C à Leffrinckoucke. Le vent reste modéré, atteignant 40 km/h en rafales sur le littoral.
+▶ mardi 11 août : L'ambiance estivale se maintient avec un ciel toujours dégagé. Les températures maximales oscillent entre 24°C sur Gravelines et 28°C à Leffrinckoucke ou Lefaux. Le vent se renforce sur le littoral avec des rafales pouvant atteindre 50 km/h à Gravelines.
+▶ mercredi 12 août : La chaleur s'accentue nettement avec des maximales qui flambent jusqu'à 34°C à Lefaux et 33°C à Gravelines. Le soleil reste omniprésent et le vent faiblit, rendant la chaleur plus lourde sur l'ensemble du territoire.
 
 
 --------------------------------------------------------------------------------
@@ -249,10 +239,10 @@ Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble d
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, le soleil domine l'ensemble de la région, offrant un ciel dégagé. Les températures minimales affichent 11°C à Valenciennes et Troisvilles, tandis que Lille et Roubaix enregistrent 14°C. Sur le littoral, Dunkerque bénéficie également d'un grand soleil avec une température de 13°C et un vent modéré de 20 km/h, avec des rafales pouvant atteindre 40 km/h. Dans l'intérieur des terres, les brises restent faibles, généralement autour de 10 à 15 km/h. Aucune précipitation n'est à signaler pour cette première partie de journée.
+Ce samedi matin, l'ensemble de la région bénéficie d'un ciel dégagé et ensoleillé. Les températures minimales s'établissent à 11°C à Valenciennes et Troisvilles, 12°C à St-Hilaire-sur-Helpe et 13°C à Maubeuge. Le vent souffle faiblement, avec une brise de 10 km/h à St-Hilaire-sur-Helpe et Steenvoorde. Sur le littoral, à Dunkerque, le vent atteint 20 km/h avec des rafales maximales de 40 km/h, sans impact notable sur les conditions météorologiques. Aucune précipitation n'est à signaler, garantissant un début de journée lumineux et sec sur l'ensemble du territoire.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble de la région. Le soleil dominant brillera généreusement du littoral à l'intérieur des terres, sans le moindre nuage pour perturber cette belle journée. Les températures maximales atteindront 29°C à Lille et Roubaix, 28°C à Dunkerque et Maubeuge, et 27°C à St-Hilaire-sur-Helpe et Troisvilles. Le vent, de secteur ouest à nord-ouest, soufflera faiblement, autour de 10 à 15 km/h sur la plupart des localités. Seule Dunkerque verra des vents un peu plus soutenus, atteignant 20 km/h avec des rafales pouvant aller jusqu'à 40 km/h, apportant une légère brise côtière. Aucune précipitation n'est à signaler pour cet après-midi.
+Ce samedi après-midi, le soleil dominera largement l'ensemble de la région, offrant un ciel dégagé et lumineux. Aucune précipitation n'est à prévoir. Les températures maximales atteindront 29°C à Lille et Roubaix, 28°C à Valenciennes et Maubeuge, et 25°C à Steenvoorde. Le vent soufflera faiblement, autour de 10 à 15 km/h sur la plupart des localités, avec une brise côtière plus marquée à Dunkerque, où les rafales pourront atteindre 40 km/h.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (samedi 8 août 2026)
@@ -295,9 +285,11 @@ Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble d
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ lundi 10 août : Le soleil continue de dominer largement le ciel de la région. Les températures maximales atteignent 27 à 30°C, avec des minimales plus douces entre 16 et 19°C. Le vent d’ouest souffle à 20 km/h, avec des rafales jusqu’à 45 km/h près de Maubeuge.
-▶ mardi 11 août : Temps toujours ensoleillé et sec. Les maximales restent élevées, de 25 à 29°C, tandis que les minimales baissent légèrement (15 à 17°C). Le vent faiblit un peu, autour de 15 km/h, mais des rafales à 50 km/h sont possibles à Dunkerque.
-▶ mercredi 12 août : La chaleur s’accentue avec des maximales qui grimpent jusqu’à 31-32°C à Lille et Roubaix, et 30°C ailleurs. Le soleil brille sans partage, le vent est faible (10 à 15 km/h). Aucune pluie en vue.
+▶ lundi 10 août : Le soleil poursuit son règne avec un ciel parfaitement dégagé. Les températures maximales se maintiennent entre 27°C et 29°C sur la plupart des villes, avec des minimales plus douces autour de 16°C à 19°C. Le vent reste modéré, avec des rafales possibles jusqu'à 40 km/h près du littoral.
+
+▶ mardi 11 août : La chaleur s'intensifie légèrement avec des maximales atteignant 29°C à Lille et Roubaix. Les minimales restent agréables, oscillant entre 14°C et 17°C selon les localités. Le vent devient plus régulier, avec des rafales jusqu'à 45 km/h attendues à Dunkerque, mais sans perturber la stabilité du ciel.
+
+▶ mercredi 12 août : Une hausse notable des températures est attendue, avec des maximales grimpant jusqu'à 32°C à Lille et Roubaix. Le thermomètre affichera 31°C dans la majorité des villes de l'intérieur. Le vent reste faible et le ciel demeure totalement dégagé, confirmant une journée estivale remarquable.
 
 
 --------------------------------------------------------------------------------
@@ -309,10 +301,10 @@ Ce samedi après-midi, un temps estival et ensoleillé s'impose sur l'ensemble d
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce samedi matin, la Normandie se réveille sous un ciel majoritairement couvert. Des nuages bas dominent largement l'ensemble de la région, masquant le soleil sur la plupart des localités. Quelques éclaircies parviennent toutefois à percer, notamment du côté de Dieppe et Evreux, où le soleil s'impose. Les températures minimales s'établissent à 9°C à Rouen et Dieppe, tandis que Caen enregistre 13°C et Cherbourg 14°C. Le vent souffle modérément, atteignant 15 km/h sur le littoral, avec des rafales pouvant atteindre 40 km/h aux abords de Caen. Aucune précipitation n'est à signaler pour cette matinée.
+Ce samedi matin, la Normandie se réveille sous un ciel partagé. Les régions littorales et une grande partie de l'intérieur des terres observent un ciel très nuageux. C'est le cas notamment à Cherbourg, Caen, Le Havre, Rouen, Lisieux et Alençon, où les températures minimales s'établissent autour de 9°C à Rouen et Lisieux, et 13°C à Caen et Alençon. Le vent y souffle modérément, entre 10 et 15 km/h. En revanche, le soleil domine pleinement à Dieppe et Evreux, où les minimales affichent respectivement 9°C et 11°C, avec une brise légère ne dépassant pas les 15 km/h. Aucune précipitation n'est attendue sur l'ensemble de la région en cette première partie de journée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce samedi après-midi, la Normandie connaîtra un temps majoritairement nuageux, avec des éclaircies qui peineront à s'imposer sur une grande partie de la région. Les températures resteront élevées, atteignant 31°C à Rouen et 30°C à Evreux, Alençon et Lisieux. Le littoral affichera des valeurs légèrement plus tempérées, avec 25°C au Havre et 28°C à Caen. Le vent soufflera faiblement à modérément, avec des vitesses de 10 à 15 km/h sur l'ensemble du territoire. Des rafales de 40 km/h sont prévues à Caen. Aucune précipitation n'est attendue pour cet après-midi.
+Ce samedi après-midi, la Normandie connaîtra un temps majoritairement ensoleillé, mais quelques nuages viendront voiler le ciel par endroits. Le soleil dominera largement sur l'Eure, notamment à Évreux où le mercure atteindra 30°C, et sur le littoral de Seine-Maritime, avec 29°C à Dieppe. Ailleurs, la présence de nuages ne gâchera pas l'impression de beau temps. Les températures maximales s'élèveront à 31°C à Rouen, 30°C à Cherbourg et Lisieux, et 28°C à Caen. Le vent restera faible à modéré, soufflant entre 5 et 15 km/h, sans rafales notables.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (samedi 8 août 2026)
@@ -331,7 +323,7 @@ Ce samedi après-midi, la Normandie connaîtra un temps majoritairement nuageux,
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent modéré de Nord-Est (15 km/h avec rafales atteignant 40 km/h) ce samedi.
+🌬️ Vent : Vent modéré de Nord-Est (15 km/h avec rafales atteignant 35 km/h) ce samedi.
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -354,9 +346,7 @@ Ce samedi après-midi, la Normandie connaîtra un temps majoritairement nuageux,
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du samedi 8 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ lundi 10 août : Le soleil s’installe durablement sur l’ensemble de la Normandie, avec un ciel dégagé du matin au soir. Les températures restent élevées, oscillant entre 22°C au Havre et 31°C à Evreux. Le vent est faible à modéré, atteignant 20 km/h à Caen et Alençon.
-
-▶ mardi 11 août : La chaleur s’intensifie nettement, avec des maximales comprises entre 28°C à Caen et 32°C à Cherbourg, Evreux, Alençon ou Dieppe. Le ciel reste lumineux et sans précipitation. Le vent se renforce sur les côtes, avec des rafales pouvant atteindre 45 km/h à Caen et Cherbourg.
-
-▶ mercredi 12 août : Le pic de chaleur est atteint, avec de fortes chaleurs attendues partout : 34°C à Cherbourg, Evreux, Alençon et Dieppe, 33°C à Rouen. Le temps reste sec et très ensoleillé. Le vent est calme sur les terres, mais des rafales jusqu’à 40 km/h subsistent sur le Cotentin.
+▶ lundi 10 août : Le soleil reste le maître absolu du ciel normand. Les températures sont estivales avec des maximales comprises entre 22°C au Havre et 31°C à Évreux. Le vent se renforce légèrement sur les côtes, atteignant 40 km/h en rafales à Caen.
+▶ mardi 11 août : La chaleur gagne encore du terrain. Le mercure grimpe jusqu'à 33°C à Lisieux et 32°C à Cherbourg, Évreux, Alençon et Dieppe. Le vent reste modéré, mais des rafales jusqu'à 45 km/h sont attendues à Caen, Cherbourg et Alençon.
+▶ mercredi 12 août : Le pic de chaleur est atteint avec des maximales qui frôlent les 34°C à Cherbourg, Évreux, Alençon et Dieppe. Le vent faiblit nettement sur l'ensemble de la région, offrant une sensation de lourdeur. Les nuits deviennent plus douces, avec des minimales proches de 20°C à Caen.
 
