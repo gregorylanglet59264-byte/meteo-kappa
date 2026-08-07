@@ -42,22 +42,19 @@ jobs:
           GMAIL_EMAIL: "langlet.gregory@gmail.com"
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
         run: |
-          # Lire le mode de déclenchement propagé par l'étape 1
-          TRIGGERED_BY="gregory"
-          if [ -f cnews/triggered_by.txt ]; then
-            TRIGGERED_BY=$(cat cnews/triggered_by.txt | tr -d '\r\n[:space:]')
+          # Lire le mode de test depuis le fichier propagé par l'étape 1
+          IS_TEST="false"
+          if [ -f cnews/test_mode.txt ]; then
+            IS_TEST=$(cat cnews/test_mode.txt | tr -d '\r\n[:space:]')
           fi
-          echo "Triggered by détecté : $TRIGGERED_BY"
+          echo "Mode de test détecté : $IS_TEST"
           
-          if [ "$TRIGGERED_BY" = "cron" ]; then
-            export RECIPIENT_EMAILS="gregory.langlet59264@gmail.com"
-            echo "Envoi automatique Cron à gregory.langlet59264@gmail.com uniquement."
-          elif [ "$TRIGGERED_BY" = "patrick" ]; then
-            export RECIPIENT_EMAILS="gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
-            echo "Envoi à Grégory et Patrick (mode production)."
-          else
+          if [ "$IS_TEST" = "true" ]; then
             export RECIPIENT_EMAILS="gregory.langlet@sfr.fr, langlet.gregory@gmail.com"
             echo "Envoi restreint à Grégory uniquement (mode test)."
+          else
+            export RECIPIENT_EMAILS="gregory.langlet@sfr.fr, langlet.gregory@gmail.com, patrick.marliere@wanadoo.fr"
+            echo "Envoi à Grégory et Patrick (mode production)."
           fi
           
           python cnews/scripts/send_kappa_email.py --skip-generation
