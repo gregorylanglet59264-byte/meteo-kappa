@@ -13,12 +13,13 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, le temps s'annonce majoritairement ensoleillé sur l'ensemble du territoire. Les minimales affichent 16°C à Lille, 17°C à Rouen et Caen, et 18°C à Brest et Rennes. Quelques nuages bas sont toutefois observés sur la pointe bretonne. Un passage pluvieux s'invite sur le Centre-Ouest du pays, notamment à Nantes (2.8 mm) et Tours (1.5 mm), avec des averses également signalées à Poitiers (0.4 mm). Le vent reste généralement faible à modéré, oscillant autour de 15 km/h, mais des rafales de 60 km/h sont relevées à Laon.
+Ce dimanche matin, la France se réveille sous des conditions météorologiques contrastées. Les températures minimales affichent 15°C à Lille, 17°C à Rouen et 21°C à Paris. Un ciel majoritairement nuageux recouvre une large bande nord du pays, de la Bretagne aux frontières de l'Est, avec des averses locales notamment sur Paris et Laon. Des passages pluvieux sont également observés sur Tours et Poitiers. Le vent souffle modérément, atteignant localement des rafales de 55 km/h sur Laon et Nantes. Le soleil domine en revanche sur la façade atlantique et le sud-ouest, offrant des éclaircies généreuses.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le soleil dominera largement sur une grande partie du territoire, notamment de la Bretagne aux Hauts-de-France. Les températures atteindront des valeurs estivales, avec 33°C à Lille et 35°C à Laon. Cependant, une dégradation orageuse est attendue sur le Centre-Ouest. Des averses parfois soutenues et des pluies faibles sont prévues à Nantes (2.8 mm), Paris (0.2 mm) et Tours (1.5 mm). À Poitiers, le ciel sera nuageux avec de faibles précipitations. Le vent soufflera modérément, atteignant 60 km/h en rafales à Laon.
+Ce dimanche après-midi, le soleil dominera largement sur une grande partie du pays, notamment de la Bretagne aux Hauts-de-France, avec des maximales atteignant 32°C à Caen et 33°C à Nantes. Un vent modéré soufflera sur ces régions, avec des rafales pouvant atteindre 55 km/h sur les Pays de la Loire. Quelques nuages parsèmeront le ciel parisien où la température montera jusqu'à 35°C. Des pluies faibles sont attendues localement, notamment près de Laon avec 2.6 mm et 0.5 mm sur Paris. Des orages isolés pourront éclater sur le Sud-Ouest, avec des risques de fortes pluies.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce dimanche.
 🌧️ Pluies & Humidité : Temps sec sur la région ce dimanche avec maintien de la sécheresse de surface.
 🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce dimanche. Aucun coup de vent à craindre.
 ⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce dimanche.
@@ -38,9 +39,11 @@ Ce dimanche après-midi, le soleil dominera largement sur une grande partie du t
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 9 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 11 août : Le soleil règne en maître absolu sur tout le pays. Les températures grimpent fortement, avec 35°C attendus à Rennes et Nantes, et 36°C à Poitiers et Tours. Le vent reste faible, offrant une journée calme et très estivale.
-▶ mercredi 12 août : La chaleur s'intensifie encore d'un cran, avec des maximales atteignant 36°C à Rennes et Nantes, et jusqu'à 37°C à Poitiers. Le ciel reste totalement dégagé sur l'ensemble des régions. Les nuits deviennent plus lourdes, avec des minimales qui peinent à descendre sous les 20°C.
-▶ jeudi 13 août : L'ambiance très chaud se confirme, notamment dans le sud-ouest où Poitiers frôle les 39°C. Le soleil est omniprésent du nord au sud. Les maximales sont partout très élevées, avec 34°C à Lille et 36°C à Paris.
+▶ **mardi 11 août :** Un ciel radieux et sans nuages s’impose sur tout le pays, de Lille à Poitiers. Les températures grimpent fortement avec des maximales atteignant 35°C à Nantes et Tours. Le vent reste modéré, jusqu’à 40 km/h en rafales sur les côtes normandes.
+
+▶ **mercredi 12 août :** La chaleur s’intensifie encore avec un soleil omniprésent. Les thermomètres flirteront avec les 37°C à Tours, Poitiers et Rennes, tandis que le nord reste plus respirable avec 26°C à Rouen. Le vent est faible à modéré sur la moitié nord.
+
+▶ **jeudi 13 août :** La canopée de soleil persiste partout, accentuant la sécheresse. Les maximales atteignent 37°C dans le Val de Loire et le Poitou, et 35°C à Paris et Lille. Des pointes de vent à 40 km/h sont attendues à Caen, mais sans précipitations.
 
 
 --------------------------------------------------------------------------------
@@ -52,16 +55,16 @@ Ce dimanche après-midi, le soleil dominera largement sur une grande partie du t
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la région Nord se réveille sous un ciel dégagé et un soleil dominant. Les températures minimales affichent 14°C à St-Hilaire-sur-Helpe et Valenciennes, tandis que Lille et Roubaix enregistrent 16°C. Un léger vent souffle à environ 15 km/h sur l'ensemble du territoire, notamment à Douai et Maubeuge. Aucune précipitation n'est à signaler, garantissant un début de journée lumineux et agréable. Les maximales atteindront 33°C à Lille et Roubaix, confirmant une nette différence entre le littoral et l'intérieur des terres.
+Ce dimanche matin, le Nord-Pas-de-Calais se réveille sous un ciel majoritairement dégagé, annonçant une journée estivale. Le soleil domine largement sur l'ensemble de la région, avec quelques nuages discrets. Les températures minimales s'établissent entre 13°C à Valenciennes et 17°C à Douai. Le vent souffle modérément, avec des rafales atteignant 60 km/h à Troisvilles, et jusqu'à 50 km/h à Douai et Roubaix. Quelques rares averses sont signalées localement, notamment à Valenciennes, mais elles restent isolées. Le littoral bénéficie également d'un ensoleillement généreux, avec des températures douces dès le lever du jour.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-L'après-midi, le temps est marqué par un ensoleillement généreux sous une chaleur estivale bien marquée. Le thermomètre affiche des maximales atteignant 29°C à Watten, 33°C à Lille, 27°C à Steenvoorde, 33°C à Roubaix, 32°C à Valenciennes. Les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur idéale pour les sorties et activités de plein air.
+Ce dimanche après-midi, le ciel du Nord reste largement ensoleillé, avec des températures estivales. Quelques rares passages nuageux sans conséquence sont observés, notamment à Saint-Hilaire-sur-Helpe et Valenciennes, où le soleil domine malgré tout. Les maximales atteignent 33°C à Valenciennes et Dunkerque, 32°C à Lille et Douai, et 30°C à Troisvilles. Le vent souffle modérément, avec des rafales pouvant atteindre 60 km/h à Troisvilles et 50 km/h à Douai et Roubaix, sans risque de vigilance vent fort. Aucune précipitation n'est à signaler sur l'ensemble de la région.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 9 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 16°C le matin à 33°C l'après-midi.
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 33°C l'après-midi.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -74,8 +77,8 @@ L'après-midi, le temps est marqué par un ensoleillement généreux sous une ch
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Vent de Nord-Est modéré (15 km/h avec rafales atteignant 35 km/h) ce dimanche.
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 60 km/h) ce dimanche.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -98,11 +101,11 @@ L'après-midi, le temps est marqué par un ensoleillement généreux sous une ch
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 9 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 11 août : Le soleil reste omniprésent sur l'ensemble du territoire, avec un ciel bleu toute la journée. Les températures maximales atteignent 28°C à Valenciennes et 29°C à Lille, tandis que le vent se renforce sur le littoral dunkerquois avec des rafales jusqu'à 50 km/h. Aucune pluie n'est attendue, le temps reste sec et agréable.
+▶ mardi 11 août : Le soleil s'impose à nouveau sur l'ensemble de la région avec un ciel parfaitement dégagé. Les températures baissent légèrement, oscillant entre 13°C et 15°C le matin et 23°C à 27°C l'après-midi. Le vent reste faible à modéré, avec des rafales possibles jusqu'à 50 km/h sur le littoral dunkerquois.
 
-▶ mercredi 12 août : La chaleur gagne encore du terrain, avec des maximales qui montent jusqu'à 32°C à Lille et Roubaix. Le vent faiblit sur l'ensemble de la région, revenant à 15 km/h, et le ciel reste parfaitement dégagé. Les minimales nocturnes sont douces, comprises entre 15°C et 17°C.
+▶ mercredi 12 août : La chaleur fait son retour de manière plus marquée avec un ciel toujours aussi radieux. Les minimales remontent entre 15°C et 17°C, tandis que les maximales grimpent significativement pour atteindre 28°C à 32°C. Le vent devient faible sur l'ensemble du territoire, offrant une sensation de chaleur plus prononcée.
 
-▶ jeudi 13 août : La journée s'annonce la plus chaude de la semaine, avec des pointes à 34°C à Valenciennes, Douai, Lille et Roubaix. Le vent devient très faible, de 10 à 15 km/h, et le soleil règne sans partage du matin au soir. Les nuits restent très douces, les minimales ne descendant pas sous les 17°C.
+▶ jeudi 13 août : La journée s'annonce la plus chaude de la semaine avec un soleil généreux et omniprésent. Les températures s'échelonnent de 17°C à 19°C au réveil pour culminer entre 30°C et 35°C l'après-midi, avec des pointes possibles à Lille et Roubaix. Le vent reste très faible, renforçant l'impression de lourdeur en fin de journée.
 
 
 --------------------------------------------------------------------------------
@@ -114,10 +117,10 @@ L'après-midi, le temps est marqué par un ensoleillement généreux sous une ch
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, l'ouest de la région connaît un temps instable. Des averses se déclenchent sur La Rochelle (21°C), Angoulême (22°C), La Couronne (22°C), Gond-Pontouvre (22°C) et Soyaux (22°C), accompagnées d'un vent modéré soufflant à 25 km/h sur le littoral rochelais, avec des rafales atteignant 50 km/h. À Chassiron, malgré un vent plus soutenu de 35 km/h et des rafales à 60 km/h, le soleil domine avec 19°C. L'intérieur des terres, de Blanzac-Porcheresse (22°C) à Cognac (21°C) en passant par Jarnac (20°C) et Montbron (20°C), bénéficie d'un soleil généreux et d'un vent plus faible, autour de 15 à 20 km/h. Les températures maximales de la matinée afficheront des valeurs élevées, atteignant 36°C à La Rochelle et Montbron.
+Ce dimanche matin, la Charente-Maritime et les départements voisins connaissent une atmosphère contrastée. Les températures minimales affichent 22°C à La Rochelle et 19°C à Chassiron, tandis que l'intérieur des terres, comme à Gond-Pontouvre, enregistre 21°C. Le littoral rochelais est balayé par un vent de 25 km/h, avec des rafales atteignant 65 km/h, et des averses sont signalées sur La Rochelle (4.1 mm). À Chassiron, une brise plus soutenue souffle à 40 km/h, avec des rafales de 65 km/h et de faibles averses (0.3 mm). Des passages pluvieux sont également observés sur Blanzac-Porcheresse, Jarnac et Cognac, avec des cumuls modestes. Le ciel reste peu nuageux sur Angoulême et Soyaux.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, un temps mitigé s'installe sur la région. Des averses sont attendues sur le littoral rochelais, avec 0.3 mm de pluie et une température maximale de 36°C. Le vent y soufflera à 25 km/h, avec des rafales atteignant 50 km/h. À Chassiron, le soleil dominera, et les températures seront plus clémentes avec 26°C, mais le vent y sera plus soutenu, 35 km/h avec des rafales à 60 km/h. À l'intérieur des terres, les averses seront également présentes par intermittence, notamment à Angoulême et La Couronne, où le mercure atteindra 35°C. Les secteurs de Blanzac-Porcheresse, Jarnac et Cognac bénéficieront d'un soleil plus généreux, avec des maximales autour de 33 à 35°C.
+Ce dimanche après-midi, le soleil dominera largement le ciel sur l'ensemble de la région. Les températures maximales atteindront des valeurs élevées, avec 36°C à La Rochelle, 35°C à Angoulême et 32°C à Cognac. Une brise côtière soufflera avec des rafales pouvant atteindre 65 km/h sur le littoral, notamment à Chassiron. Quelques averses faibles sont localement possibles dans l'intérieur des terres, comme à Blanzac-Porcheresse et Jarnac, sans impact significatif sur l'ensoleillement général.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (dimanche 9 août 2026)
@@ -137,7 +140,7 @@ Ce dimanche après-midi, un temps mitigé s'installe sur la région. Des averses
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
 ☀️ Situation synoptique : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Régime de brises thermiques (35 km/h avec rafales atteignant 60 km/h).
+🌬️ Vent : Régime de brises thermiques (40 km/h avec rafales atteignant 65 km/h).
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -161,9 +164,9 @@ Ce dimanche après-midi, un temps mitigé s'installe sur la région. Des averses
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 9 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 11 août : Le soleil reste omniprésent sur toute la région, avec un vent faible à modéré (10-25 km/h). Les températures grimpent fortement : de 34 à 38°C sur l’intérieur, jusqu’à 38°C à La Rochelle, tandis que Chassiron plafonne à 29°C grâce à la brise.
-▶ mercredi 12 août : Nouvelle journée très chaud avec un ciel totalement dégagé et un vent très faible (5-15 km/h). Les maximales atteignent 37 à 39°C sur les terres, et 30°C seulement sur l’île de Ré. La nuit reste très douce avec des minimales voisines de 20-23°C.
-▶ jeudi 13 août : Le soleil persiste, mais le vent de sud-est se renforce (15-20 km/h). Les températures baissent légèrement sur le littoral (31°C à La Rochelle), tandis que l’intérieur flirte encore avec les 38-39°C. Aucune précipitation attendue.
+▶ mardi 11 août : Soleil radieux et implacable sur l’ensemble de la région. Le vent reste modéré, avec des rafales de 40 km/h sur le littoral, et les températures maximales grimpent jusqu’à 37°C à La Rochelle et 36°C à Angoulême.
+▶ mercredi 12 août : La chaleur s’accentue encore d’un cran, avec un ciel parfaitement dégagé et l’absence de précipitations. Le thermomètre s’envole, atteignant 39°C à La Rochelle et 38°C à Angoulême, tandis qu’une brise de secteur ouest apporte un léger répit sur la côte.
+▶ jeudi 13 août : Le pic de chaleur est atteint avec des maximales très chauds, jusqu’à 40°C à La Rochelle et 39°C à Cognac. Le vent faiblit et le soleil règne en maître absolu, sans aucune perturbation à l’horizon, offrant une journée de plein été.
 
 
 --------------------------------------------------------------------------------
@@ -175,16 +178,18 @@ Ce dimanche après-midi, un temps mitigé s'installe sur la région. Des averses
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, un soleil radieux s'impose sur l'ensemble de la région, promettant une journée estivale. Les températures minimales affichent 15°C à Leffrinckoucke et Gravelines, 17°C à Marck et Robecq, et 13°C à Racquinghem. Le vent souffle modérément, atteignant 20 km/h par endroits, comme à Gravelines, Lefaux, Groffliers, Remilly-Wirquin et Racquinghem, où des rafales de 45 km/h sont enregistrées. Aucune précipitation n'est à signaler. Les températures maximales atteindront 33°C sur le littoral à Leffrinckoucke et 32°C à Gravelines, tandis qu'à l'intérieur des terres, elles culmineront à 31°C à Offekerque et Remilly-Wirquin.
+Ce dimanche matin, le ciel se montre majoritairement dégagé sur l'intérieur des terres, avec un soleil dominant. Les températures minimales y sont fraîches, atteignant 12°C à Racquinghem et 13°C à Remilly-Wirquin. Le vent y souffle modérément, autour de 20 km/h, avec des rafales pouvant atteindre 40 km/h à Robecq et Cauchy-à-la-Tour.
+
+Sur le littoral, la situation est plus contrastée. Si Gravelines, Offekerque et Marck bénéficient d'un franc soleil avec des minimales de 15°C à 17°C, Leffrinckoucke connaît un ciel nuageux et Groffliers se réveille sous un couvert nuageux. Une brise marine de 15 à 20 km/h est présente sur les côtes.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, un soleil éclatant dominera l'ensemble de la région, promettant un temps estival sans nuages. Les températures maximales atteindront 33°C à Leffrinckoucke, 32°C à Gravelines et 31°C à Offekerque et Remilly-Wirquin. Le vent soufflera faiblement, avec des vitesses comprises entre 15 et 20 km/h sur l'ensemble du territoire. Des rafales de 45 km/h sont toutefois attendues du côté de Racquinghem. Aucune précipitation n'est à prévoir, et le contraste thermique entre le littoral et l'intérieur des terres restera modéré.
+Ce dimanche après-midi, le soleil domine largement sur l'ensemble de la région, offrant un ciel dégagé pour la plupart des localités. Les températures maximales atteignent 33°C à Leffrinckoucke et 32°C à Gravelines et Offekerque. Des conditions très ensoleillées sont observées à Marck, Lefaux, Remilly-Wirquin, Racquinghem, Robecq et Cauchy-à-la-Tour. Seule la zone de Groffliers connaît un ciel couvert. Le vent souffle modérément, autour de 15 à 20 km/h sur l'ensemble du territoire, avec des rafales n'excédant pas 40 km/h à Robecq et Cauchy-à-la-Tour.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 9 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 33°C l'après-midi.
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 14°C le matin à 33°C l'après-midi.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -197,7 +202,7 @@ Ce dimanche après-midi, un soleil éclatant dominera l'ensemble de la région, 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 45 km/h) ce dimanche.
+🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 40 km/h) ce dimanche.
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
@@ -223,11 +228,11 @@ Ce dimanche après-midi, un soleil éclatant dominera l'ensemble de la région, 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
 📉 Tendance – 3 jours suivants (mardi 11 août au jeudi 13 août)
 
-▶ mardi 11 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 13°C. L'après-midi, le mercure grimpe jusqu'à 28°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
+▶ mardi 11 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 12°C. L'après-midi, le mercure grimpe jusqu'à 27°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
 
 ▶ mercredi 12 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 13°C. L'après-midi, le mercure grimpe jusqu'à 33°C sous abri. Le vent souffle de manière modérée.
 
-▶ jeudi 13 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 17°C. L'après-midi, le mercure grimpe jusqu'à 34°C sous abri. Le vent souffle de manière modérée.
+▶ jeudi 13 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 17°C. L'après-midi, le mercure grimpe jusqu'à 36°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -239,16 +244,16 @@ Ce dimanche après-midi, un soleil éclatant dominera l'ensemble de la région, 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, le soleil domine largement sur l'ensemble de la région. Le ciel apparaît dégagé, offrant un début de journée lumineux. Les températures minimales sont douces, s'établissant à 14°C à St-Hilaire-sur-Helpe et Valenciennes, 15°C à Dunkerque, et 16°C à Lille et Roubaix. Le vent souffle faiblement, autour de 15 km/h, avec des rafales atteignant 40 km/h localement, notamment à Douai et Lille, sans incidence particulière. Aucune précipitation n'est à signaler.
+Ce dimanche matin, le ciel se montre généreux sur la région, offrant un soleil dominant sur la majeure partie du territoire. Les températures minimales affichent 13°C à Valenciennes, 14°C à Troisvilles et 15°C à Lille. Quelques passages nuageux sans conséquence sont observés, notamment à St-Hilaire-sur-Helpe et Dunkerque, où le soleil reste bien présent. Un léger voile nuageux s'invite également sur le littoral. Le vent souffle modérément, atteignant 20 km/h à Valenciennes et Maubeuge, avec des rafales pouvant atteindre 60 km/h à Troisvilles. Aucune précipitation significative n'est à signaler, à l'exception de très faibles pluies résiduelles à Valenciennes.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, un temps estival et ensoleillé s'impose sur l'ensemble de la région. Le ciel restera dégagé, offrant un soleil dominant sans aucune perturbation nuageuse. Les températures maximales atteindront des niveaux élevés, avec 33°C à Lille et Roubaix, 32°C à Valenciennes, et 33°C également à Dunkerque. Le vent soufflera faiblement, généralement entre 10 et 15 km/h, avec des rafales pouvant atteindre 40 km/h à Douai, Lille et Dunkerque, sans risque de vigilance particulière. La chaleur sera notable, particulièrement dans l'intérieur des terres, tandis que les zones côtières bénéficieront également de cet ensoleillement généreux.
+Ce dimanche après-midi, le temps s'annonce majoritairement ensoleillé sur la région, avec des températures estivales. Le soleil dominera largement le ciel de Lille, Douai et Roubaix où les maximales atteindront 32°C. Quelques nuages épars pourront néanmoins être observés, notamment à Valenciennes et Dunkerque, où le mercure affichera 33°C. Le vent soufflera modérément, avec des rafales pouvant atteindre 60 km/h à Troisvilles, et 50 km/h à Douai et Roubaix. Aucune précipitation significative n'est attendue, à l'exception de très faibles pluies isolées à Valenciennes.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 9 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 16°C le matin à 33°C l'après-midi.
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 33°C l'après-midi.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -261,8 +266,8 @@ Ce dimanche après-midi, un temps estival et ensoleillé s'impose sur l'ensemble
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Vent de Nord-Est modéré (15 km/h avec rafales atteignant 40 km/h) ce dimanche.
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 60 km/h) ce dimanche.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -285,10 +290,9 @@ Ce dimanche après-midi, un temps estival et ensoleillé s'impose sur l'ensemble
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 9 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-**
-▶ mardi 11 août : Le soleil reste maître du ciel avec un temps sec et calme. Les maximales fléchissent légèrement, oscillant entre 25°C sur le littoral et 29°C dans l'intérieur. Le vent se renforce sur Dunkerque avec des rafales à 50 km/h, mais reste modéré ailleurs.
-▶ mercredi 12 août : La chaleur repart à la hausse avec un ciel toujours aussi dégagé. Les températures grimpent jusqu'à 32°C à Lille et Roubaix, et 31°C dans la plupart des villes. Le vent est faible, autour de 15 km/h, maintenant une sensation très estivale.
-▶ jeudi 13 août : Nouvelle progression des températures qui atteignent des sommets : 34°C sont attendus à Lille, Valenciennes et Douai. Le vent tombe à 10 km/h, rendant l'atmosphère lourde en journée. Toujours aucun nuage ni précipitation à l'horizon.
+▶ mardi 11 août : Le soleil poursuit son règne avec un ciel très dégagé sur l'ensemble de la région. Les températures restent stables, avec des maximales comprises entre 25°C et 27°C. Le vent est faible à modéré, ne dépassant pas 20 km/h.
+▶ mercredi 12 août : La chaleur s'accentue nettement avec des maximales qui atteignent 32°C à Lille et Roubaix. Le ciel reste radieux et sans nuages, offrant une journée pleinement estivale. Le vent est toujours modéré, avec des pointes jusqu'à 15 km/h.
+▶ jeudi 13 août : Le pic de chaleur est atteint avec des températures maximales qui grimpent jusqu'à 35°C à Lille et Roubaix. Le soleil est omniprésent et le vent devient très faible, souvent inférieur à 15 km/h. Les nuits restent douces, avec des minimales autour de 17°C à 19°C.
 
 
 --------------------------------------------------------------------------------
@@ -300,10 +304,10 @@ Ce dimanche après-midi, un temps estival et ensoleillé s'impose sur l'ensemble
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la Normandie se réveille sous un ciel majoritairement nuageux. Des nuages couvrants dominent sur l'ensemble de la région, particulièrement sur le Calvados et l'Orne, où le ciel apparaît très nuageux. Le littoral de la Seine-Maritime connaît un ciel plus nuageux avec quelques éclaircies. Les températures minimales affichent 12°C à Rouen, 17°C à Caen, et 14°C à Lisieux. Le vent souffle faiblement, entre 15 et 20 km/h, avec des rafales atteignant 40 km/h localement à Evreux, Dieppe et Lisieux. Aucune précipitation n'est attendue.
+Ce dimanche matin, la Normandie se réveille sous un ciel majoritairement dégagé. Les minimales affichent 12°C à Rouen, 16°C à Caen et 15°C à Dieppe. Le soleil domine largement sur l'ensemble de la région, notamment à Cherbourg, Caen, Le Havre, Evreux, Alençon, Dieppe et Lisieux. Quelques rares nuages se manifestent localement, comme à Rouen. Le vent souffle modérément, avec des vitesses avoisinant les 20 km/h et des rafales pouvant atteindre 45 km/h à Evreux, 40 km/h à Rouen et Dieppe. Aucune précipitation n'est à signaler.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, la Normandie bénéficie d'un ensoleillement généreux sur l'ensemble de la région. Le ciel est dégagé, sans nuages, offrant des conditions météorologiques estivales. Les températures maximales atteignent 34°C à Évreux, 33°C à Dieppe et 32°C à Rouen et Lisieux. Le vent souffle faiblement, entre 15 et 20 km/h, avec des rafales n'excédant pas 40 km/h localement, notamment à Évreux, Dieppe et Lisieux. Aucune précipitation n'est à signaler pour cette après-midi.
+Ce dimanche après-midi, la Normandie bénéficie d'un ensoleillement généreux sur l'ensemble de la région. Le ciel sera dégagé, avec seulement quelques rares nuages épars, notamment près de Rouen où le ciel sera peu nuageux. Les températures maximales atteindront des valeurs élevées, avec 34°C à Rouen et Lisieux, 32°C à Caen et Alençon, et 28°C à Cherbourg. Un vent faible à modéré, soufflant entre 15 et 20 km/h, est attendu sur la plupart des secteurs, avec des rafales pouvant atteindre 40 à 45 km/h localement, notamment à Evreux et Dieppe. Aucune précipitation n'est à signaler.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (dimanche 9 août 2026)
@@ -322,10 +326,11 @@ Ce dimanche après-midi, la Normandie bénéficie d'un ensoleillement généreux
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 40 km/h) ce dimanche.
+🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 45 km/h) ce dimanche.
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce dimanche.
 🌧️ Pluies & Humidité : Temps sec sur la région ce dimanche avec maintien de la sécheresse de surface.
 🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce dimanche. Aucun coup de vent à craindre.
 ⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce dimanche.
@@ -345,9 +350,9 @@ Ce dimanche après-midi, la Normandie bénéficie d'un ensoleillement généreux
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 9 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 11 août : Le soleil règne en maître toute la journée sur la région. Les maximales oscillent entre 28°C à Caen et 33°C à Lisieux, avec un vent modéré de 20 à 25 km/h. Aucune goutte de pluie à signaler.
+▶ mardi 11 août : Le temps reste sec et bien ensoleillé sur toute la Normandie. Les températures maximales s'échelonnent entre 24°C au Havre et 31°C à Rouen, Évreux et Lisieux. Un vent modéré souffle, avec des rafales jusqu'à 45 km/h sur le littoral de Caen et Cherbourg.
 
-▶ mercredi 12 août : La chaleur s’accentue encore, avec des pointes à 34°C à Cherbourg, Évreux, Alençon et Dieppe. Le littoral reste plus respirable (30°C au Havre, 30°C à Caen). Le vent faiblit, offrant une journée calme et lumineuse.
+▶ mercredi 12 août : La chaleur s'accentue nettement, notamment dans l'intérieur des terres, où les maximales atteignent 34°C à Évreux, Alençon, Dieppe, et même 35°C à Lisieux. Ciel toujours dégagé, vent faible à modéré dépassant 40 km/h par rafales sur les côtes de la Manche.
 
-▶ jeudi 13 août : Fort contraste thermique entre l’intérieur et les côtes : jusqu’à 37°C attendus à Évreux et 36°C à Alençon, mais seulement 25°C à Rouen et 27°C au Havre. Le vent d’Est se renforce ponctuellement, avec des rafales jusqu’à 45 km/h.
+▶ jeudi 13 août : Le pic de chaleur se prolonge, avec des températures proches des 35°C à Évreux et Dieppe, et 34°C à Rouen et Lisieux. Le soleil règne en maître, le vent reste modéré, avec des rafales jusqu'à 40 km/h sur le Cotentin et le Calvados.
 
