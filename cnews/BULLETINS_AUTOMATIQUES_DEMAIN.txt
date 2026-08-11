@@ -13,10 +13,10 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le territoire français se réveille sous un ciel dégagé et un soleil dominant. Les températures minimales sont déjà élevées, atteignant 22°C à Rennes et Nantes, 20°C à Paris et Tours, et 19°C à Caen. Le vent se manifeste par une brise légère à modérée sur l'ensemble du pays. Des rafales de 40 km/h sont observées autour de Caen, et jusqu'à 50 km/h aux abords de Nantes. Aucune précipitation n'est signalée, annonçant une journée estivale.
+Ce mercredi matin, le soleil domine largement l'ensemble du territoire français. Aucune averse ni pluie n'est à signaler, le ciel est dégagé sur la quasi-totalité des régions. Les températures minimales affichent 15°C à Lille et Laon, 17°C à Rouen, et 23°C à Rennes et Nantes. Le vent souffle faiblement, avec des brises ne dépassant pas les 20 km/h, notamment sur l'ouest du pays. Les contrastes de températures entre le littoral et l'intérieur des terres restent peu marqués, avec des valeurs élevées dès le lever du jour.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, la France reste sous l'emprise d'une chaleur intense et d'un soleil généreux. Le ciel sera dégagé sur la quasi-totalité du territoire, offrant un ensoleillement maximal. Les températures atteindront des sommets, avec 38°C à Rennes et Nantes, 37°C à Poitiers et Tours, et 36°C à Paris et Laon. Le vent soufflera modérément, avec des pointes à 50 km/h sur Nantes et 40 km/h sur Caen, sans risque de vigilance particulière. L'absence de précipitations est notable, et aucune averse ni orage n'est à signaler. Le contraste littoral/intérieur des terres reste marqué par des valeurs élevées partout.
+Ce mercredi après-midi, la France sera sous l'emprise d'un soleil dominant, sans nuage, annonçant une chaleur intense sur l'ensemble du territoire. Les températures maximales atteindront 39°C à Rennes et Tours, 38°C à Nantes et Poitiers, et 36°C à Paris. Le vent restera faible à modéré, soufflant entre 10 et 20 km/h, sans rafales notables. Aucune précipitation n'est attendue. Le contraste thermique entre le littoral et l'intérieur des terres s'estompe, la chaleur s'installant partout.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 ⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce mercredi.
@@ -39,13 +39,9 @@ Ce mercredi après-midi, la France reste sous l'emprise d'une chaleur intense et
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (vendredi 14 août au dimanche 16 août)
-
-▶ vendredi 14 août : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 38°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
-
-▶ samedi 15 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 17°C. L'après-midi, le mercure grimpe jusqu'à 30°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
-
-▶ dimanche 16 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 30°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
+▶ vendredi 14 août : Le soleil reste dominant sur la quasi-totalité du pays, mais la chaleur se renforce encore, avec 38°C attendus à Paris, Laon et Tours. Le vent se lève sur les côtes de l'Ouest, avec des rafales pouvant atteindre 40 à 45 km/h entre Brest et Nantes, apportant un peu de répit sur le littoral.
+▶ samedi 15 août : La dégradation orageuse se confirme par le nord-est et le Centre-Val de Loire. De fortes averses sont attendues de Lille à Tours et Poitiers, avec des cumuls de pluie significatifs, jusqu'à 13 mm à Poitiers. Les températures chutent nettement, ne dépassant pas 29°C à Paris, tandis que le vent reste modéré.
+▶ dimanche 16 août : Le temps reste instable sur un grand quart nord-est, de Laon à Tours, avec des averses résiduelles. Les températures continuent de baisser pour retrouver des niveaux de saison, avec des maximales de 22°C à Rouen et 27°C à Paris. Le vent faiblit sur l'ensemble du territoire.
 
 
 --------------------------------------------------------------------------------
@@ -57,20 +53,20 @@ Ce mercredi après-midi, la France reste sous l'emprise d'une chaleur intense et
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, la région Nord se réveille sous un ciel dégagé et un soleil dominant, annonçant une journée estivale. Les températures minimales s'établissent entre 13°C à Watten et 17°C à Steenvoorde, avec 16°C relevés à Lille et Maubeuge. Le vent souffle faiblement, autour de 15 à 20 km/h, notamment sur le littoral de Dunkerque où des rafales atteignent 40 km/h. Aucune précipitation n'est à signaler, confirmant un début de journée sec et ensoleillé sur l'ensemble du territoire.
+Ce mercredi matin, la région Nord-Pas-de-Calais se réveille sous un ciel dégagé et un soleil dominant. Les températures minimales affichent 17°C à St-Hilaire-sur-Helpe, 14°C à Valenciennes et 15°C à Lille. Un léger vent souffle sur l'ensemble du territoire, avec des brises de 15 km/h dans l'intérieur des terres et jusqu'à 20 km/h sur le littoral, notamment à Dunkerque et Watten, où des rafales de 40 km/h sont enregistrées. Aucune précipitation n'est à prévoir pour cette matinée estivale.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le Nord de la France bénéficie d'un ensoleillement généreux et quasi-total. Le ciel reste dégagé sur l'ensemble de la région, sans aucune précipitation à signaler. Les températures maximales atteignent des niveaux élevés, avec 35°C enregistrés à Maubeuge et Douai, tandis que Lille et Valenciennes profitent de 33°C. Le vent demeure faible, soufflant autour de 15 km/h sur la plupart des localités, bien que Dunkerque et Roubaix connaissent des vents de 20 km/h, avec des rafales pouvant atteindre 40 km/h sur le littoral, notamment à Watten et Dunkerque.
+Ce mercredi après-midi, la région Nord connaît un temps estival et ensoleillé. Un soleil dominant brille sur l'ensemble des départements, sans la moindre précipitation à signaler. Les températures maximales atteignent des niveaux élevés, avec 34°C à Valenciennes, Maubeuge et Lille. Le vent souffle faiblement, autour de 15 km/h en moyenne, avec des rafales pouvant atteindre 40 km/h sur le littoral, notamment à Watten et Dunkerque. Malgré la brise côtière, les températures restent chaudes près de la mer, avec 34°C à Dunkerque, contrastant peu avec l'intérieur des terres.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (mercredi 12 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 35°C l'après-midi.
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 34°C l'après-midi.
 🌊 Température de l’eau : 19°C à 20°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce mercredi. Maximales atteignant 36°C sur le sable.
+☀️ Ambiance agréable sur le littoral ce mercredi. Maximales atteignant 35°C sur le sable.
 🌊 Température de l’eau : 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -104,11 +100,9 @@ Ce mercredi après-midi, le Nord de la France bénéficie d'un ensoleillement g�
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 14 août : Le soleil reste généreux sur l’ensemble du Nord. Les températures grimpent encore, avec des maximales comprises entre 32°C à Lille et 36°C à Douai et St-Hilaire-sur-Helpe. Le vent est modéré, autour de 15 km/h, sans risque de précipitation.
-
-▶ samedi 15 août : Le ciel se voile et des averses localisées touchent plusieurs secteurs, notamment Lille et Valenciennes, avec des cumuls de 1 à 3 mm. Les températures baissent nettement, avec des maximales de 24 à 30°C. Le vent se renforce en rafales, pouvant atteindre 55 à 65 km/h sur certaines zones comme Maubeuge.
-
-▶ dimanche 16 août : Retour d’un temps calme et ensoleillé sur toute la région. Les températures restent douces, de 24°C à Steenvoorde à 29°C à Douai. Le vent souffle modérément, autour de 15 à 20 km/h, avec des pointes à 40 km/h sur le littoral.
+▶ vendredi 14 août : Le soleil domine encore largement, avec un pic de chaleur attendu : 37°C à Valenciennes et Dunkerque, 36°C à Lille. Le vent reste modéré, de 10 à 15 km/h, avec des rafales à 40 km/h sur le littoral. La journée est sèche, malgré quelques traces de pluie insignifiantes sur Douai et Lille.
+▶ samedi 15 août : Une dégradation notable se produit. Le ciel devient plus nuageux et des pluies parfois abondantes arrosent la région, notamment à Lille et Roubaix avec 11 à 13 mm. Les températures chutent entre 24 et 29°C, et le vent se renforce avec des rafales jusqu'à 55 km/h sur le littoral.
+▶ dimanche 16 août : Le temps reste instable mais s'améliore. Les précipitations sont plus faibles, de 0,3 à 3,6 mm, et le soleil fait des apparitions. Les maximales sont en baisse, de 22 à 26°C, avec un vent modéré de 10 à 15 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -120,17 +114,17 @@ Ce mercredi après-midi, le Nord de la France bénéficie d'un ensoleillement g�
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le temps s'annonce radieux sur l'ensemble de la région. Un soleil dominant illuminera le ciel dès les premières heures, sans aucune présence nuageuse ni précipitations. Les températures minimales affichent 21°C à La Rochelle et Chassiron, tandis que l'intérieur des terres, comme à Gond-Pontouvre et Angoulême, enregistre 23°C. Le vent soufflera modérément, avec des vitesses atteignant 20 km/h sur le littoral et jusqu'à 15 km/h dans les terres, notamment à Gond-Pontouvre et Montbron.
+Ce mercredi matin, un soleil dominant s'impose sur l'ensemble de la région, offrant un ciel clair et dégagé. Les températures minimales s'établissent à 22°C à La Rochelle, 21°C à Chassiron et 23°C à Angoulême. Le vent souffle faiblement, avec des valeurs autour de 20 km/h sur le littoral rochelais et charentais, et une légère brise de 10 à 15 km/h dans l'intérieur des terres, notamment à Blanzac-Porcheresse et Cognac. Aucune précipitation n'est à signaler.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, un soleil éclatant dominera l'ensemble de la région, sans aucun nuage à l'horizon. Les températures resteront très élevées, atteignant 38°C à La Rochelle et Blanzac-Porcheresse. Dans l'intérieur des terres, les maximales seront encore plus importantes, avec 39°C relevés à Gond-Pontouvre, La Couronne, Soyaux, Cognac et Angoulême. Le vent soufflera faiblement à modérément, entre 10 et 20 km/h, avec une brise côtière perceptible. Aucune précipitation n'est attendue sur l'ensemble du territoire.
+Ce mercredi après-midi, le département de la Charente-Maritime et l'intérieur des terres connaîtront un temps estival et ensoleillé. Le soleil dominera largement le ciel sur l'ensemble de la région, sans aucune précipitation à signaler. Les températures resteront très élevées, atteignant 38°C à La Rochelle et Cognac, et jusqu'à 39°C à Angoulême et La Couronne. Sur le littoral, à Chassiron, les maximales seront légèrement plus clémentes avec 31°C, sous une légère brise de 20 km/h. Les vents resteront faibles, soufflant entre 10 et 20 km/h sur l'ensemble du territoire.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (mercredi 12 août 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
 ☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur l'ensemble des plages charentaises ce mercredi.
-🌡️ Température sur le littoral : 21°C à 39°C
+🌡️ Température sur le littoral : 20°C à 39°C
 🌊 Température de l’eau : 24°C à 25°C
 
 🌴 Royan / Côte de Beauté / Rochefort
@@ -167,9 +161,9 @@ Ce mercredi après-midi, un soleil éclatant dominera l'ensemble de la région, 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 14 août : Le soleil persiste et les températures restent très élevées, avec 39 °C attendus à La Rochelle et 38 °C dans l’intérieur. Le vent, modéré, atteint 20 km/h sur le littoral. Aucune pluie n’est prévue, mais l’air reste lourd.
-▶ samedi 15 août : La journée bascule avec l’arrivée d’orages parfois violents. Les précipitations sont localement abondantes, jusqu’à 14 mm à Soyaux, accompagnées de rafales de vent atteignant 50 km/h. Les températures chutent nettement, avec des maximales de 25 à 31 °C selon les secteurs.
-▶ dimanche 16 août : Le temps redevient calme et plus frais. Le soleil domine à nouveau, mais les maximales plafonnent entre 25 et 30 °C sur le littoral et 26 à 29 °C dans les terres. Le vent faiblit à 15 km/h, et les précipitations restent négligeables.
+▶ vendredi 14 août : Le soleil reste généreux sur la région, mais la chaleur s’intensifie encore. Les températures maximales atteignent 39°C à La Rochelle et jusqu’à 37°C dans l’intérieur. Le vent se renforce sur le littoral avec des rafales pouvant atteindre 45 km/h, apportant un peu de répit.
+▶ samedi 15 août : Une dégradation s’amorce avec l’arrivée d’un temps plus instable. Des averses éparses traversent le département, notamment sur l’intérieur où les cumuls peuvent atteindre 10 mm. Les températures chutent nettement : de 25 à 31°C selon les secteurs. Le vent souffle en rafales jusqu’à 55 km/h sur la côte.
+▶ dimanche 16 août : Le temps reste perturbé avec des passages nuageux porteurs d’averses résiduelles, surtout dans l’est du territoire. Les maximales continuent de baisser, oscillant entre 25 et 30°C. Le vent faiblit légèrement mais conserve des rafales à 50 km/h sur le littoral.
 
 
 --------------------------------------------------------------------------------
@@ -181,82 +175,20 @@ Ce mercredi après-midi, un soleil éclatant dominera l'ensemble de la région, 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le ciel se montre généreusement ensoleillé sur l'ensemble de la région. Aucune perturbation nuageuse n'est à signaler, garantissant un début de journée lumineux. Les températures minimales affichent 13°C à Gravelines et Offekerque, 12°C à Racquinghem, et 17°C à Robecq. Le vent souffle modérément, atteignant 25 km/h à Marck et 20 km/h sur le littoral, notamment à Leffrinckoucke et Gravelines, avec des rafales ne dépassant pas les 40 km/h. L'intérieur des terres connaît une brise plus légère, autour de 10 à 15 km/h.
+Ce mercredi matin, le ciel se présente dégagé sur l'ensemble de la région, sous un soleil dominant. Les températures minimales affichent 13°C à Gravelines et Cauchy-à-la-Tour, 15°C à Leffrinckoucke et 16°C à Marck. Le vent souffle modérément, atteignant 20 km/h sur le littoral, notamment à Leffrinckoucke et Gravelines, avec des rafales ne dépassant pas les 40 km/h. Dans l'intérieur des terres, une brise légère de 10 à 15 km/h prévaut, sans phénomène particulier à signaler. Aucune précipitation n'est attendue pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, un soleil généreux dominera l'ensemble de la région, sans nuage pour altérer le ciel. Les températures afficheront des valeurs estivales, atteignant 33°C à Leffrinckoucke et 34°C à Racquinghem et Cauchy-à-la-Tour. Le vent soufflera faiblement, avec des pointes à 40 km/h sur le littoral à Leffrinckoucke, et une brise légère de 10 à 25 km/h dans les terres. Aucune précipitation n'est à prévoir. Le contraste thermique entre le littoral et l'intérieur des terres sera notable, avec des valeurs plus élevées à l'intérieur.
+Ce mercredi après-midi, le soleil dominera largement l'ensemble de la région, offrant un ciel dégagé et lumineux. Les températures maximales atteindront des niveaux élevés, avec 34°C à Leffrinckoucke, 32°C à Lefaux et 33°C à Remilly-Wirquin. Le vent soufflera modérément, avec des vitesses de 20 km/h sur le littoral, notamment à Gravelines et Marck, et des rafales pouvant atteindre 40 km/h à Leffrinckoucke. Dans l'intérieur des terres, le vent sera plus faible, autour de 10 à 15 km/h. Aucune précipitation n'est attendue.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (mercredi 12 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 14°C le matin à 34°C l'après-midi.
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 34°C l'après-midi.
 🌊 Température de l’eau : 19°C à 20°C
 
 🌴 Le Touquet / Berck / Baie de Somme
 ☀️ Ambiance agréable sur le littoral ce mercredi. Maximales atteignant 35°C sur le sable.
-🌊 Température de l’eau : 20°C
-
-🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 12 août 2026)
-
-📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
-
-☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 40 km/h) ce mercredi.
-🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
-⚠️ Visibilité : Bonne sur l'ensemble du littoral.
-
-🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce mercredi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce mercredi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce mercredi.
-🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
-🏔️ Météo montagne
-
-    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
-
-    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
-
-    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
-
-    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
-
-    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
-
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
-
-📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 14 août : Le soleil reste omniprésent avec des températures encore très élevées, atteignant 35°C à Leffrinckoucke. Le vent est faible, autour de 15 km/h, avec des maximales plus contrastées entre le littoral (26°C à Gravelines) et l'intérieur (34°C à Remilly-Wirquin). Aucune pluie n'est attendue.
-
-▶ samedi 15 août : La chaleur commence à rétrograder avec un ciel qui se voile légèrement par endroits. Les températures maximales baissent sensiblement, oscillant entre 24°C sur le littoral et 30°C à Leffrinckoucke. Quelques rafales de vent atteignent 40 km/h, avec de très faibles précipitations localisées possibles (0,6 mm à Robecq, 0,9 mm à Cauchy-à-la-Tour).
-
-▶ dimanche 16 août : Le temps redevient sec et stable avec un généreux soleil sur l'ensemble de la région. Les températures poursuivent leur baisse pour revenir à des valeurs de saison, avec des maximales comprises entre 23°C à Offekerque et 28°C à Racquinghem. Le vent reste modéré, avec des rafales pouvant atteindre 40 km/h sur les zones côtières.
-
-
---------------------------------------------------------------------------------
-📻 CLIENT / STATION : MONA FM
-🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
---------------------------------------------------------------------------------
-
-☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
-
-
-🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, le ciel se montre généreux en soleil sur l'ensemble de la région. Un grand soleil éclatant domine les paysages, de St-Hilaire-sur-Helpe (16°C) à Maubeuge (16°C), en passant par Lille (16°C) et Dunkerque (15°C). Aucune trace de nuages ni de précipitations n'est à signaler. Le vent souffle en légère brise, avec des vitesses de 15 à 20 km/h, et des rafales n'excédant pas 40 km/h sur le littoral, notamment à Watten et Dunkerque. Les températures minimales sont douces, oscillant entre 13°C à Watten et 17°C à Steenvoorde.
-
-🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, le soleil dominera largement l'ensemble de la région, offrant un ciel dégagé et sans nuage. Les températures s'annoncent particulièrement élevées, avec des maximales atteignant 35°C à Douai et Maubeuge, et 33°C à Lille et Valenciennes. Le vent soufflera faiblement, autour de 15 à 20 km/h sur l'ensemble du territoire, avec des rafales pouvant atteindre 40 km/h sur le littoral, notamment à Dunkerque et Watten. Aucune précipitation n'est à prévoir.
-
-🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (mercredi 12 août 2026)
-
-🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 35°C l'après-midi.
-🌊 Température de l’eau : 19°C à 20°C
-
-🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce mercredi. Maximales atteignant 36°C sur le sable.
 🌊 Température de l’eau : 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -290,11 +222,74 @@ Ce mercredi après-midi, le soleil dominera largement l'ensemble de la région, 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 14 août : Le pic de chaleur se confirme avec un ciel toujours radieux et sans nuage. Les maximales s'envolent jusqu'à 36°C à St-Hilaire-sur-Helpe et Douai, tandis que le vent reste faible à 15 km/h. Aucune goutte de pluie n'est attendue sur l'ensemble des secteurs.
+▶ vendredi 14 août : La chaleur s’accentue encore sur le secteur, atteignant un pic très chaud avec 37°C prévu à Leffrinckoucke. Le vent reste modéré à 15 km/h, avec un ciel toujours dégagé et sec. L'écart thermique est marqué entre le littoral (25°C à Gravelines) et l'intérieur des terres.
 
-▶ samedi 15 août : La dégradation s'amorce avec un ciel qui se voile et des averses éparses, notamment sur Valenciennes et Lille. Les températures chutent nettement, avec des maximales ne dépassant pas 30°C, et le vent se renforce avec des rafales atteignant 55 km/h par endroits.
+▶ samedi 15 août : Une dégradation orageuse menace sérieusement l'après-midi et la soirée. Les cumuls de pluie pourraient atteindre 6 mm à Leffrinckoucke et 5,4 mm à Racquinghem, accompagnés de rafales de vent jusqu'à 55 km/h. Le mercure redescend nettement, plafonnant à 29°C sur la côte.
 
-▶ dimanche 16 août : Le retour d'un temps calme et sec est au programme, avec un ciel qui redevient dégagé sur la majorité de la région. Les températures restent de saison, oscillant entre 16°C le matin et 29°C l'après-midi à Douai, sous un vent modéré.
+▶ dimanche 16 août : Le temps redevient plus calme et partagé entre éclaircies et nuages résiduels. Les températures retrouvent un niveau de saison, avec des maximales comprises entre 23°C et 26°C. Le vent faiblit et devient modéré, avec quelques rares averses résiduelles locales.
+
+
+--------------------------------------------------------------------------------
+📻 CLIENT / STATION : MONA FM
+🗺️ ZONE CARTE MÉTÉO-FRANCE : france_pictos (National) (Cartes Matin & Après-midi)
+--------------------------------------------------------------------------------
+
+☀️ [1/6] RÉSUMÉ SYNOPTIQUE DU JOUR (todaySummary) :
+
+
+🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
+Ce mercredi matin, un ciel dégagé et ensoleillé domine l'ensemble de la région. Les températures minimales s'établissent à 13°C à Watten, 14°C à Valenciennes et 15°C à Lille, tandis que St-Hilaire-sur-Helpe affiche 17°C. Le vent souffle légèrement du nord-est, avec des vitesses avoisinant les 15 km/h sur l'intérieur des terres. Sur le littoral, notamment à Dunkerque et Watten, le vent se renforce légèrement pour atteindre 20 km/h, avec des rafales pouvant atteindre 40 km/h, sans risque de vigilance particulière. Aucune précipitation n'est à signaler.
+
+🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
+L'après-midi, le temps est marqué par un ensoleillement généreux sous une chaleur estivale bien marquée. Le thermomètre affiche des maximales atteignant 34°C à Lille, 33°C à St-Hilaire-sur-Helpe, 34°C à Roubaix, 33°C à Troisvilles, 33°C à Watten. Les zones littorales profitent d'une brise marine rafraîchissante qui modère les ardeurs du mercure. En soirée, l'atmosphère conserve une grande douceur idéale pour les sorties et activités de plein air.
+
+🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (mercredi 12 août 2026)
+
+🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
+☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur la côte. Températures de 15°C le matin à 34°C l'après-midi.
+🌊 Température de l’eau : 19°C à 20°C
+
+🌴 Le Touquet / Berck / Baie de Somme
+☀️ Ambiance agréable sur le littoral ce mercredi. Maximales atteignant 35°C sur le sable.
+🌊 Température de l’eau : 20°C
+
+🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (mercredi 12 août 2026)
+
+📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
+
+☀️ Situation générale : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
+🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 40 km/h) ce mercredi.
+🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+⚠️ Visibilité : Bonne sur l'ensemble du littoral.
+
+🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
+⚠️ Forte Chaleur : Épisode de chaleur marqué sur la région ce mercredi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce mercredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce mercredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce mercredi.
+🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
+🏔️ Météo montagne
+
+    Alpes : Chaleur marquée en vallée ce mercredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+
+    Pyrénées : Soleil dominant en matinée de ce mercredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce jeudi.
+
+    Massif central : Ambiance lourde et estivale ce mercredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+
+    Vosges : Temps très chaud et généreusement ensoleillé ce mercredi. Quelques nuages de beau temps l'après-midi sans intempérie.
+
+    Jura : Chaleur estivale et soleil dominant ce mercredi, avant quelques passages nuageux inoffensifs en soirée.
+
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
+
+📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
+▶ vendredi 14 août : Le soleil reste généreux avec un ciel dégagé sur l'ensemble du territoire. Les températures grimpent fortement, atteignant 35 à 37°C dans l'intérieur des terres, et jusqu'à 37°C à Dunkerque. Le vent, de secteur nord-est, reste modéré, soufflant à 10-15 km/h, avec des rafales possibles de 40 km/h à Roubaix.
+
+▶ samedi 15 août : Le temps se dégrade nettement avec l'arrivée d'une perturbation. Le ciel devient très nuageux et des averses, parfois orageuses, traversent la région, apportant des cumuls de pluie localement conséquents, notamment 11,1 mm à Lille et 13,5 mm à Roubaix. Le vent se renforce, avec des rafales de 45 à 55 km/h attendues, et les températures maximales baissent sensiblement, ne dépassant pas 24 à 29°C.
+
+▶ dimanche 16 août : Le temps reste instable avec un ciel variable et des averses résiduelles faibles à modérées. Les précipitations sont moins abondantes, mais quelques secteurs comme Watten (3,6 mm) et Dunkerque (1,8 mm) restent concernés. Les températures continuent de baisser, avec des maximales comprises entre 22°C et 26°C, et un vent de nord-ouest plus calme (10 à 15 km/h).
 
 
 --------------------------------------------------------------------------------
@@ -306,20 +301,20 @@ Ce mercredi après-midi, le soleil dominera largement l'ensemble de la région, 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce mercredi matin, la Normandie se réveille sous un ciel dégagé et un soleil dominant sur l'ensemble de la région. Les minimales s'établissent à 13°C à Rouen, 15°C à Dieppe et Lisieux, tandis que Cherbourg affiche 20°C. Le vent souffle modérément, avec des vitesses avoisinant les 15 km/h sur le littoral, notamment à Caen et Le Havre où des rafales de 40 km/h sont observées. Ailleurs, les vents restent faibles, autour de 10 km/h. Aucune précipitation n'est à signaler.
+Ce mercredi matin, la Normandie se réveille sous un soleil éclatant. Le ciel est dégagé sur l'ensemble de la région, offrant une matinée lumineuse. Les températures minimales sont déjà élevées, avec 19°C à Caen et Alençon, 18°C au Havre, et 15°C à Lisieux et Dieppe. Le vent souffle faiblement, autour de 15 km/h sur la plupart des villes, avec des rafales atteignant 40 km/h au Havre. L'intérieur des terres et le littoral profitent d'un temps calme et ensoleillé, sans aucune précipitation à signaler.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce mercredi après-midi, la Normandie est sous l'influence d'un soleil dominant sur l'ensemble de la région. Aucune précipitation n'est attendue. Les températures maximales atteignent des niveaux élevés, notamment à Cherbourg avec 36°C, Alençon et Lisieux avec 36°C également, et Rouen où le mercure grimpe à 35°C. Un vent faible à modéré souffle sur la région, avec des vitesses de 10 à 15 km/h. Des rafales de 40 km/h sont enregistrées à Caen et au Havre, sans risque de vigilance particulière.
+Ce mercredi après-midi, la Normandie est sous un ciel radieux, dominé par un soleil éclatant sur l'ensemble de la région. Aucune précipitation n'est à signaler. Les températures maximales atteignent des niveaux très élevés, avec 37°C à Rouen et Lisieux, 36°C à Evreux et Alençon, et 35°C à Cherbourg. Le vent souffle faiblement, autour de 15 km/h, avec des rafales n'excédant pas 40 km/h au Havre, ce qui ne représente aucun risque particulier. Le contraste thermique est notable entre le littoral et l'intérieur des terres, le bord de mer affichant des valeurs légèrement inférieures.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (mercredi 12 août 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps agréable ce mercredi. Températures sur les plages : 15°C à 36°C.
+☀️ Temps agréable ce mercredi. Températures sur les plages : 14°C à 37°C.
 🌊 Température de l’eau : 20°C à 21°C
 
 🌴 Dieppe / Fécamp / Cherbourg
-☀️ Belle luminosité ce mercredi, brise littorale rafraîchissante avec maximales de 36°C.
+☀️ Belle luminosité ce mercredi, brise littorale rafraîchissante avec maximales de 37°C.
 🌊 Température de l’eau : 20°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -352,9 +347,9 @@ Ce mercredi après-midi, la Normandie est sous l'influence d'un soleil dominant 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mercredi 12 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ vendredi 14 août : Le soleil reste généreux sur l’ensemble de la région, mais quelques nuages pourraient faire leur apparition en fin de journée. Les températures maximales atteignent encore 33°C à Rouen et 36°C à Évreux, tandis que le littoral respire avec 22°C à Cherbourg. Le vent souffle modérément, avec des rafales jusqu’à 40 km/h sur les côtes.
+▶ vendredi 14 août : Le soleil reste généreux mais la chaleur faiblit légèrement. Les maximales oscillent entre 22°C à Cherbourg et 37°C à Evreux, avec un vent modéré de 20 km/h. Quelques rares averses pourraient effleurer le sud de la région sans perturber la journée.
 
-▶ samedi 15 août : Le ciel se voile davantage, avec un risque d’averses éparses, notamment sur l’est et le sud de la Normandie. Les maximales baissent sensiblement : 28°C à Rouen, 25°C à Caen, et 23°C au Havre. Le vent se renforce, atteignant 25 km/h à Lisieux, avec des rafales toujours proches de 40 km/h.
+▶ samedi 15 août : La dégradation se confirme avec un ciel qui se voile et des risques d'averses éparses, notamment sur l'est et le sud de la Normandie. Les températures baissent nettement, avec des maximales comprises entre 24°C sur les côtes et 29°C à Evreux. Le vent reste modéré.
 
-▶ dimanche 16 août : Le temps redevient sec et bien ensoleillé sur la majeure partie du territoire, sauf près de Cherbourg où quelques précipitations sont encore possibles. Les températures restent agréables, avec 27°C à Rouen et Dieppe, 25°C à Caen. Le vent faiblit, redevenant calme à modéré.
+▶ dimanche 16 août : Le temps redevient sec et lumineux sur la majorité des terres, mais le ciel reste mitigé sur le littoral avec des passages nuageux. Les températures sont de saison, avec des maximales autour de 26°C dans l'intérieur et 23°C au Havre.
 
