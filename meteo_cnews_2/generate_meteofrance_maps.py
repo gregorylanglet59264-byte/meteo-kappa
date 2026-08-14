@@ -196,16 +196,23 @@ def map_mf_icon(icon):
         'p7': 6,    # Variable avec Averses -> P9 Averses
         'p8': 7,    # Couvert, Bruines ou Pluies -> P10 Pluie faible
         'p9': 8,    # Couvert, Pluies Modérées/fortes -> P11 Pluie forte
-        'p10': 9,   # Couvert, Neige Faible -> P12 Neige
-        'p11': 9,   # Variable, Averses de Neige -> P12 Neige
-        'p12': 9,   # Neige Modérée ou Forte -> P12 Neige
-        'p12bis': 6, # Rares averses -> Averses
-        'p13': 6,   # Pluies éparses -> Averses
-        'p14': 6,   # Pluie -> Averses (Corrected to map to Averses/P9 based on user request)
+        'p10': 7,   # Couvert, Bruine / Pluie faible -> P10 Pluie faible
+        'p11': 6,   # Variable, Averses -> P9 Averses
+        'p12': 7,   # Pluie faible -> P10 Pluie faible (Correction bug picto neige en été)
+        'p12bis': 6, # Averses faibles -> P9 Averses
+        'p13': 6,   # Pluies éparses -> P9 Averses
+        'p14': 7,   # Pluie -> P10 Pluie faible
+        'p14bis': 6, # Averses -> P9 Averses
         'p15': 12,  # Brumes ou Brouillards -> brouillards
         'p16': 12,  # Brouillards Givrants -> brouillards
         'p16bis': 10, # Averses orageuses -> Orages (Corrected from 12 to 10)
         'p17': 12,  # Verglas -> brouillards
+        'p18': 9,   # Neige faible -> P12 Neige
+        'p19': 9,   # Neige modérée -> P12 Neige
+        'p20': 9,   # Neige forte -> P12 Neige
+        'p21': 9,   # Averses de neige -> P12 Neige
+        'p22': 9,   # Pluie et neige mêlées -> P12 Neige
+        'p23': 9,   # Averses de neige mêlée -> P12 Neige
         'p26': 10,  # Orages -> orages
         'p27': 10,  # Orages -> orages
         'p28': 10,  # Orages -> orages
@@ -815,7 +822,7 @@ def main():
                 pass
         threading.Thread(target=log_chrome, args=(proc,), daemon=True).start()
         
-        success = save_done_event.wait(timeout=25)
+        success = save_done_event.wait(timeout=45)
         proc.terminate()
         try:
             proc.wait(timeout=2)
@@ -863,7 +870,7 @@ def main():
     
     creationflags = 0x08000000 if os.name == 'nt' else 0
     proc = subprocess.Popen(args, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=creationflags)
-    success = save_done_event.wait(timeout=25)
+    success = save_done_event.wait(timeout=45)
     proc.terminate()
     try:
         proc.wait(timeout=2)
