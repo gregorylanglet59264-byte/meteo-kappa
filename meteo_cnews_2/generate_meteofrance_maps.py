@@ -198,7 +198,7 @@ def map_mf_icon(icon):
         'p9': 8,    # Couvert, Pluies Modérées/fortes -> P11 Pluie forte
         'p10': 7,   # Couvert, Bruine / Pluie faible -> P10 Pluie faible
         'p11': 6,   # Variable, Averses -> P9 Averses
-        'p12': 7,   # Pluie faible -> P10 Pluie faible (Correction bug picto neige en été)
+        'p12': 6,   # Averses -> P9 Averses
         'p12bis': 6, # Averses faibles -> P9 Averses
         'p13': 6,   # Pluies éparses -> P9 Averses
         'p14': 7,   # Pluie -> P10 Pluie faible
