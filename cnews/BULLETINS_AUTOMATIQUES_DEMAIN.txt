@@ -13,10 +13,10 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, une perturbation active traverse le pays, apportant un temps instable sur une grande partie du territoire. Des averses se déclenchent de la Bretagne aux Hauts-de-France, notamment à Lille où 12.8 mm de pluie sont attendus, et à Rennes avec 4.0 mm. Les températures minimales affichent 13°C à Lille et Rouen, et 17°C à Paris. Le vent souffle modérément, avec des rafales atteignant 45 km/h à Laon et 40 km/h sur la façade ouest. Le contraste est marqué avec le sud-ouest et le sud-est qui bénéficient d'un ciel plus dégagé, notamment à Tours et Poitiers où le soleil domine, et des températures plus douces.
+Ce vendredi matin, le temps se montre mitigé sur une grande partie du territoire. Des averses sont observées sur le nord-ouest, notamment à Lille et Rouen où les températures minimales s'établissent autour de 13°C. Des pluies plus marquées sont attendues sur Caen. Plus à l'est, Paris et Laon profitent d'un ciel peu nuageux, avec des minimales de 16°C et 13°C respectivement. Le vent souffle modérément, atteignant des rafales de 45 km/h sur Rennes et Paris. Le littoral breton, autour de Brest, connaît également un ciel peu nuageux avec une brise de 20 km/h.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, une atmosphère instable caractérise le nord-ouest de la France. Des orages sont attendus sur un large quart nord-ouest, avec des risques de foudre et de fortes pluies. Lille et Rouen enregistrent des maximales de 20°C, accompagnées d'averses parfois soutenues et de cumuls importants. Plus à l'est, Laon et Paris bénéficient d'un ciel voilé avec des températures atteignant respectivement 25°C et 24°C, sous un vent modéré. En Bretagne, Brest connaît un temps similaire avec 24°C. Le vent souffle généralement entre 15 et 20 km/h, avec des rafales n'excédant pas 45 km/h.
+Ce vendredi après-midi, le ciel de la France métropolitaine se partagera entre éclaircies et passages nuageux parfois porteurs d'averses. Des averses sont ainsi attendues sur une grande partie du quart nord-ouest, notamment à Lille (20°C), Rouen (21°C) et Rennes (20°C), où le vent soufflera modérément avec des rafales atteignant 45 km/h sur la capitale bretonne. Plus à l'est et au sud, le soleil dominera davantage, comme à Laon (25°C) et Paris (23°C), malgré quelques voiles nuageux. Les températures maximales afficheront 25°C à Poitiers et 25°C à Tours.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
@@ -38,11 +38,9 @@ Ce vendredi après-midi, une atmosphère instable caractérise le nord-ouest de 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : Un grand soleil domine sur l'ensemble du pays, avec un ciel parfaitement dégagé du nord au sud. Les températures sont agréables, avec des maximales de 22°C à Lille et jusqu'à 29°C à Tours. Le vent reste modéré, avec des rafales ne dépassant pas 45 km/h sur la façade ouest.
-
-▶ lundi 24 août : Le temps se dégrade par l'ouest avec l'arrivée de nuages et de quelques pluies faibles, notamment sur Rennes et Nantes où 6,9 mm et 4,2 mm sont attendus. Le soleil résiste encore sur Paris et Laon avec 26°C, mais le vent se renforce avec des rafales jusqu'à 55 km/h en Bretagne. Le ciel devient très nuageux sur Poitiers et Tours.
-
-▶ mardi 25 août : Une nouvelle perturbation active traverse le pays, apportant des pluies soutenues sur Paris (13,5 mm) et Laon (9,9 mm). Les températures restent stables, entre 22°C et 26°C, mais le vent se lève fortement sur la façade atlantique avec des rafales atteignant 55 km/h à Brest. Le ciel est partagé entre averses et éclaircies.
+▶ dimanche 23 août : Un grand soleil s’impose sur la quasi-totalité du territoire, avec un ciel clair de Lille à Poitiers. Les températures maximales grimpent jusqu’à 28°C à Tours et 29°C à Poitiers, tandis que le vent reste modéré, avec des rafales de 40 à 45 km/h sur les côtes bretonnes et tourangelles.
+▶ lundi 24 août : Le temps se dégrade par l’ouest avec l’arrivée de nuages porteurs de pluies faibles, notamment sur Rennes, Nantes et Tours. Les maximales restent élevées, de 22°C à Rouen à 29°C à Tours et Poitiers, sous un vent parfois soutenu atteignant 50 km/h en rafales près de Rennes.
+▶ mardi 25 août : Une perturbation active traverse le pays, apportant des pluies parfois abondantes, surtout sur Brest (31,5 mm) et Laon (10,5 mm). Les rafales de vent deviennent fortes, jusqu’à 80 km/h à Rennes et 70 km/h à Nantes, avec des températures maximales comprises entre 22°C et 27°C.
 
 
 --------------------------------------------------------------------------------
@@ -54,10 +52,10 @@ Ce vendredi après-midi, une atmosphère instable caractérise le nord-ouest de 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, la région se réveille sous un ciel partagé entre éclaircies et passages pluvieux. Des pluies faibles sont observées sur une grande partie du territoire, notamment à Lille (13°C), Roubaix (13°C) et Steenvoorde (16°C), où les précipitations atteignent respectivement 12.8 mm, 2.2 mm et 15.2 mm. Valenciennes (11°C) et Dunkerque (12°C) connaissent également des pluies faibles. Le vent souffle modérément, avec des rafales atteignant 45 km/h à Valenciennes, Watten et Dunkerque. Quelques zones, comme Troisvilles (12°C) et Maubeuge (13°C), bénéficient d'un ciel ensoleillé.
+Ce vendredi matin, la région se réveille sous un ciel mitigé, alternant entre éclaircies et passages pluvieux. Des pluies faibles sont observées sur une large partie du territoire, notamment à Valenciennes (11°C), Lille (13°C), Roubaix (13°C) et Steenvoorde (14°C). Des averses plus marquées touchent Dunkerque, où le vent souffle à 25 km/h avec des rafales atteignant 45 km/h. À St-Hilaire-sur-Helpe, le ciel est peu nuageux avec une minimale de 11°C. L'intérieur des terres, comme à Troisvilles (13°C), Maubeuge (13°C) et Douai (13°C), bénéficie d'un soleil dominant malgré un vent modéré.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel de la région Nord se partage entre éclaircies et passages pluvieux. Des pluies faibles sont attendues sur une grande partie du littoral, notamment à Dunkerque, où le vent soufflera à 20 km/h avec des rafales pouvant atteindre 45 km/h. L'intérieur des terres, comme à Lille et Roubaix, connaîtra également des pluies faibles. Les températures maximales atteindront 20°C à Lille et St-Hilaire-sur-Helpe, tandis que Maubeuge et Troisvilles bénéficieront d'un soleil dominant avec 18°C.
+Ce vendredi après-midi, le ciel du Nord reste très perturbé. Des averses parfois soutenues sont attendues sur l'ensemble de la région, accompagnées de passages orageux notamment sur Troisvilles, Maubeuge, Douai et Watten, où des risques de foudre et de fortes pluies sous cellules sont à prévoir. Les températures maximales atteindront 20°C à Valenciennes et Lille, et 18°C à Watten. Le vent soufflera modérément, avec des rafales pouvant atteindre 45 km/h sur Troisvilles et Dunkerque, accentuant la sensation de fraîcheur.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 21 août 2026)
@@ -76,8 +74,8 @@ Ce vendredi après-midi, le ciel de la région Nord se partage entre éclaircies
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
-🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 45 km/h) ce vendredi.
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce vendredi.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -100,11 +98,13 @@ Ce vendredi après-midi, le ciel de la région Nord se partage entre éclaircies
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : Une belle journée ensoleillée s’annonce sur l’ensemble du Nord. Les températures sont douces, de 8 à 14°C le matin, jusqu’à 22°C l’après-midi. Le vent reste faible, de 10 à 15 km/h, offrant un temps calme et agréable.
+📉 Tendance – 3 jours suivants (dimanche 23 août au mardi 25 août)
 
-▶ lundi 24 août : Le ciel se voile avec un temps plus nuageux, surtout sur le littoral et la métropole lilloise. Les températures grimpent jusqu’à 24°C, mais le vent se renforce avec des rafales atteignant 40 à 45 km/h. Aucune pluie n’est attendue, mais l’ambiance devient plus venteuse.
+▶ dimanche 23 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 9°C. L'après-midi, le mercure grimpe jusqu'à 22°C sous abri. Le vent souffle de manière modérée.
 
-▶ mardi 25 août : Le temps se dégrade nettement avec l’arrivée de pluies modérées à fortes sur l’ensemble de la région. Les cumuls atteignent 5 à 10 mm, notamment sur le secteur de Watten et Roubaix. Les températures restent douces (23 à 26°C), mais le vent souffle en rafales jusqu’à 50 km/h, rendant la journée agitée.
+▶ lundi 24 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 11°C. L'après-midi, le mercure grimpe jusqu'à 25°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
+
+▶ mardi 25 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 27°C sous abri. Attention aux rafales de vent atteignant 55 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -116,22 +116,22 @@ Ce vendredi après-midi, le ciel de la région Nord se partage entre éclaircies
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le ciel se partage entre éclaircies et nuages sur la région. Les températures minimales affichent 16°C à La Rochelle, où le ciel est nuageux, et 19°C à Chassiron, sous un soleil dominant. Plus à l'intérieur des terres, Gond-Pontouvre enregistre 17°C avec des passages nuageux. Des averses faibles sont attendues localement, notamment sur le littoral rochelais, où 0.5 mm de pluie sont prévus. Le vent souffle modérément, atteignant 20 à 25 km/h, avec des rafales pouvant atteindre 40 km/h sur La Rochelle et Cognac.
+Ce vendredi matin, le réveil se fait dans une ambiance douce et agréable au lever du jour. Les températures au lever du jour s'échelonnent avec 16°C à Jarnac, 18°C à Gond-Pontouvre, 18°C à Soyaux, 16°C à Blanzac-Porcheresse, 16°C à La Rochelle. Le vent souffle discrètement, maintenant un ressenti très doux sur l'ensemble du secteur. La matinée se poursuit sous un ensoleillement en progression constante.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel de la Charente-Maritime et de la Charente présente un contraste marqué. Des averses sont attendues sur le littoral rochelais, avec un cumul de 0.5 mm et des températures atteignant 27°C. Le vent soufflera à 20 km/h, avec des rafales de 40 km/h. Plus à l'intérieur des terres, comme à Chassiron ou Blanzac-Porcheresse, le soleil dominera avec des maximales de 21°C et 25°C respectivement. À Angoulême, le ciel sera nuageux, la température montera jusqu'à 25°C, et le vent atteindra 20 km/h avec des rafales de 40 km/h.
+Ce vendredi après-midi, le ciel se montrera partagé sur la région. Des éclaircies domineront sur le littoral et le sud de l'intérieur des terres, notamment à Chassiron avec 21°C, Blanzac-Porcheresse et Jarnac, où le soleil sera bien présent. En revanche, un temps plus nuageux est attendu sur un axe allant de La Rochelle à Angoulême, en passant par La Couronne et Soyaux, avec des températures atteignant 26°C. Le vent soufflera modérément, avec des pointes à 40 km/h par endroits, notamment à La Rochelle et Cognac, sans toutefois nécessiter une vigilance particulière. Aucune précipitation n'est prévue pour cet après-midi.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (vendredi 21 août 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
 ☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur l'ensemble des plages charentaises ce vendredi.
-🌡️ Température sur le littoral : 17°C à 27°C
-🌊 Température de l’eau : 22°C à 23°C
+🌡️ Température sur le littoral : 19°C à 26°C
+🌊 Température de l’eau : 21°C à 22°C
 
 🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce vendredi, maximales de 28°C tempérées par la brise marine.
-🌊 Température de l’eau : 23°C
+☀️ Ensoleillement généreux ce vendredi, maximales de 27°C tempérées par la brise marine.
+🌊 Température de l’eau : 22°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
 🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (vendredi 21 août 2026)
@@ -162,9 +162,11 @@ Ce vendredi après-midi, le ciel de la Charente-Maritime et de la Charente prés
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : Une journée estivale s'annonce avec un ciel largement ensoleillé sur l'ensemble de la région. Les températures grimpent fortement, atteignant 30°C sur le littoral et jusqu'à 33°C dans les terres. Le vent se renforce sur la côte, avec des rafales de 50 km/h attendues à La Rochelle.
-▶ lundi 24 août : Le temps se dégrade nettement avec l'arrivée d'un épisode pluvieux. Des averses parfois soutenues traversent la région, avec des cumuls pouvant atteindre 9 mm à Chassiron. Les températures baissent, plafonnant à 27°C à La Rochelle, tandis que le vent reste soutenu avec des rafales jusqu'à 50 km/h.
-▶ mardi 25 août : Le ciel reste très nuageux avec des averses résiduelles, notamment sur le littoral. Les températures se stabilisent autour de 27°C à La Rochelle et dans l'intérieur. Le vent faiblit légèrement mais conserve un régime de rafales jusqu'à 55 km/h sur la côte rochelaise.
+▶ dimanche 23 août : Une journée très chaude et ensoleillée sur l’ensemble de la région. Les maximales atteignent 33°C à La Rochelle et à Angoulême, 32°C dans l’intérieur. Le vent de sud-ouest se renforce sur le littoral, avec des rafales jusqu’à 45 km/h à Chassiron. Aucune précipitation à signaler.
+
+▶ lundi 24 août : Le temps se dégrade nettement. Des averses traversent la région, particulièrement sur le littoral (7,7 mm à Chassiron, 4,3 mm à La Rochelle) et jusqu’à l’intérieur (2 à 3 mm). Les températures baissent, avec des maximales de 27 à 29°C sur la côte et 32°C dans le sud-est. Le vent devient fort, avec des rafales à 55-65 km/h à Chassiron.
+
+▶ mardi 25 août : Le vent reste soutenu, avec des rafales atteignant 70 km/h à La Rochelle et Chassiron. Quelques averses résiduelles sont possibles (1,5 mm à La Rochelle, 1,2 mm à Chassiron), mais l’intérieur reste plus sec (0 mm). Les températures baissent encore : 24°C sur l’île de Ré, 27 à 29°C dans les terres.
 
 
 --------------------------------------------------------------------------------
@@ -176,10 +178,10 @@ Ce vendredi après-midi, le ciel de la Charente-Maritime et de la Charente prés
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps s'annonce instable sur une grande partie de la région. Des averses sont attendues, notamment à Leffrinckoucke où 20.8 mm de pluie ont déjà été relevés, et à Groffliers avec 23.4 mm. Les températures minimales s'établissent autour de 12°C à Leffrinckoucke et Remilly-Wirquin, et atteignent 16°C à Marck et Robecq. Le vent souffle modérément sur le littoral, avec des rafales pouvant atteindre 50 km/h à Gravelines, Offekerque et Marck, tandis qu'à l'intérieur des terres, il reste plus faible, aux alentours de 15 km/h. Le ciel est majoritairement nuageux, avec quelques éclaircies ponctuelles.
+Ce vendredi matin, le temps se montre instable sur une grande partie de la région. Des averses sont observées dès le lever du jour, notamment sur le littoral et l'intérieur des terres, comme à Leffrinckoucke où le mercure affiche 12°C, ou encore à Gravelines avec 16°C. Des pluies plus marquées sont relevées à Racquinghem (12°C) et Cauchy-à-la-Tour (13°C), où le ciel reste nuageux. Le vent souffle modérément, avec des rafales atteignant 40 km/h par endroits, notamment à Leffrinckoucke, Gravelines et Marck. Les températures maximales de la matinée ne dépassent pas les 20°C sur le littoral, contrastant avec des valeurs plus fraîches dans l'intérieur des terres.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le temps s'annonce particulièrement instable sur la région. Des orages accompagnés de grêle sont attendus sur une large partie du territoire, notamment à Leffrinckoucke (19°C), Marck (20°C) et Groffliers (19°C), où des averses parfois soutenues sont prévues, avec des cumuls de pluie significatifs. Le vent soufflera de manière modérée à forte, avec des rafales pouvant atteindre 50 km/h à Gravelines et Offekerque, où le soleil dominera malgré tout. Les températures maximales varieront entre 18°C à Remilly-Wirquin et 20°C à Marck, offrant un contraste marqué entre le littoral et l'intérieur des terres.
+Ce vendredi après-midi, la région est placée sous l'influence d'une perturbation instable, caractérisée par un ciel couvert et des précipitations. Des averses sont généralisées, parfois sous forme de pluies faibles, comme à Leffrinckoucke avec 16.9 mm ou Marck avec 0.2 mm. Cependant, plusieurs localités sont concernées par des épisodes orageux, notamment à Gravelines, Offekerque, Lefaux, Racquinghem et Cauchy-à-la-Tour. Ces orages s'accompagnent de risques de foudre et de fortes pluies sous les cellules. Les températures maximales atteignent 20°C à Leffrinckoucke et Gravelines, tandis que l'intérieur des terres, comme à Racquinghem et Cauchy-à-la-Tour, enregistre 17°C. Le vent souffle entre 15 et 25 km/h, avec des rafales pouvant atteindre 40 km/h sur l'ensemble du territoire.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 21 août 2026)
@@ -198,7 +200,7 @@ Ce vendredi après-midi, le temps s'annonce particulièrement instable sur la r�
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
-🌬️ Vent : Vent de Nord-Est modéré (35 km/h avec rafales atteignant 50 km/h) ce vendredi.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 40 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
@@ -222,9 +224,9 @@ Ce vendredi après-midi, le temps s'annonce particulièrement instable sur la r�
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : UNE ACCALMIE BIENVENUE. Le ciel se dégage largement sur l'ensemble du territoire, offrant une journée ensoleillée et calme. Les températures remontent sensiblement, avec des maximales comprises entre 20°C et 22°C, pour des minimales fraîches de 9°C à 12°C. Le vent faiblit nettement, ne dépassant pas 15 km/h.
-▶ lundi 24 août : LE SOLEIL RESTE MAÎTRE, MAIS LE VENT SE LÈVE. La journée s'annonce très belle avec un ciel majoritairement clair et des températures en hausse, atteignant 24°C à Lefaux. Le vent d'est se renforce en cours de journée, avec des rafales pouvant atteindre 45 km/h sur le littoral, notamment à Gravelines et Marck. Aucune précipitation n'est à signaler.
-▶ mardi 25 août : RETOUR DE L'INSTABILITÉ ET FORTES AVERSES. Le temps se dégrade nettement avec l'arrivée d'un nouveau front pluvieux. Des averses parfois soutenues sont attendues, avec des cumuls importants localement, comme 15,6 mm prévus à Cauchy-à-la-Tour et 6 mm à Leffrinckoucke. Les températures maximales restent douces, entre 22°C et 26°C, mais le vent d'ouest souffle en rafales jusqu'à 40 km/h.
+▶ dimanche 23 août : Le temps redevient sec et ensoleillé sur l'ensemble de la région. Les températures minimales oscillent entre 8°C et 14°C, les maximales grimpent jusqu'à 22°C sur le littoral. Le vent reste faible, de 10 à 15 km/h.
+▶ lundi 24 août : La journée s'annonce radieuse avec un ciel dégagé et un net regain de chaleur. Les maximales atteignent 25°C à Leffrinckoucke, pour des minimales comprises entre 10°C et 13°C. Le vent se renforce avec des rafales proches de 45 km/h en bord de mer.
+▶ mardi 25 août : Le temps se dégrade avec l'arrivée d'humidité et des averses parfois orageuses. Les températures restent élevées, de 24°C à 27°C, mais les précipitations sont localement abondantes, notamment dans l'intérieur des terres. Le vent souffle en rafales jusqu'à 55 km/h, accentuant l'instabilité.
 
 
 --------------------------------------------------------------------------------
@@ -236,10 +238,10 @@ Ce vendredi après-midi, le temps s'annonce particulièrement instable sur la r�
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps se montre mitigé sur la région, avec des minimales s'établissant à 11°C à St-Hilaire-sur-Helpe et Valenciennes, et 13°C à Lille. Un ciel peu nuageux est observé du côté de St-Hilaire-sur-Helpe, tandis que le soleil domine à Troisvilles, Maubeuge, Douai et Watten. Cependant, un passage pluvieux s'invite sur plusieurs localités. Des pluies faibles sont ainsi signalées à Valenciennes, Lille, Roubaix, Steenvoorde et Dunkerque. Le vent souffle modérément, avec des rafales atteignant 40 km/h à Valenciennes et 45 km/h sur le littoral de Watten et Dunkerque.
+Ce vendredi matin, le réveil se fait dans une ambiance grise et humide, caractérisée par des bancs de stratus bas et des passages de pluies. Les températures au lever du jour s'échelonnent avec 12°C à Dunkerque, 13°C à Douai, 13°C à Lille, 14°C à Steenvoorde, 11°C à Valenciennes. Le vent souffle discrètement, maintenant un ressenti très doux sur l'ensemble du secteur. Des passages nuageux denses et des averses régulières arrosent le secteur au fil de la matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel de la région sera contrasté. Tandis que le soleil dominera sur Troisvilles et Maubeuge avec des maximales de 18°C, un temps plus instable est attendu sur la façade ouest. Des pluies faibles sont prévues sur Valenciennes (19°C), Lille (20°C) et Dunkerque (19°C). Ces précipitations seront accompagnées d'un vent modéré, soufflant autour de 15 à 20 km/h, avec des rafales atteignant 45 km/h sur Watten et Dunkerque. Les températures maximales afficheront 20°C à St-Hilaire-sur-Helpe.
+Ce vendredi après-midi, le temps s'annonce particulièrement instable sur l'ensemble de la région. Des averses sont attendues sur de nombreuses localités, notamment à Valenciennes (20°C), Lille (20°C) et Dunkerque (20°C), où des pluies parfois soutenues sont prévues. Le vent soufflera modérément, avec des rafales atteignant 45 km/h à Troisvilles (19°C) et Dunkerque. Un risque d'orages est également présent sur plusieurs secteurs, notamment à Troisvilles, Maubeuge, Douai et Watten, où des phénomènes électriques sont à craindre. Les températures maximales varieront entre 18°C à Watten et 20°C dans l'intérieur des terres comme à St-Hilaire-sur-Helpe.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 21 août 2026)
@@ -258,8 +260,8 @@ Ce vendredi après-midi, le ciel de la région sera contrasté. Tandis que le so
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
-🌬️ Vent : Vent de Nord-Est modéré (20 km/h avec rafales atteignant 45 km/h) ce vendredi.
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce vendredi.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -282,11 +284,11 @@ Ce vendredi après-midi, le ciel de la région sera contrasté. Tandis que le so
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : Le soleil s’impose largement sur l’ensemble des localités, avec un ciel clair et aucun risque de pluie. Les températures grimpent entre 19°C et 22°C, pour des minimales de 8°C à 14°C, sous un vent faible de 10 à 15 km/h.
+▶ dimanche 23 août : Le soleil reprend ses droits sur la région pour une journée calme et lumineuse. Les températures restent de saison, avec des minimales fraîches autour de 9 à 13°C et des maximales comprises entre 19 et 22°C. Le vent est faible, n'excédant pas 15 km/h.
 
-▶ lundi 24 août : La journée reste sèche mais le vent se renforce, avec des rafales atteignant 40 km/h sur la plupart des villes. Le ciel est peu nuageux, et les maximales progressent jusqu’à 24°C à St-Hilaire-sur-Helpe et Troisvilles, tandis que les minimales varient de 11°C à 14°C.
+▶ lundi 24 août : La douceur s'installe nettement avec une hausse des températures maximales, qui atteignent 25°C à St-Hilaire-sur-Helpe et Dunkerque. Le ciel est généreusement ensoleillé sur l'ensemble du territoire. Le vent se lève en cours de journée, avec des rafales attendues jusqu'à 40 km/h.
 
-▶ mardi 25 août : Une dégradation pluvieuse s’annonce, avec des cumuls de 5 à 9 mm attendus sur l’ouest (Lille, Roubaix, Dunkerque) et des averses éparses ailleurs. Les températures restent douces (23°C à 26°C), mais le vent se lève avec des rafales jusqu’à 50 km/h à St-Hilaire-sur-Helpe.
+▶ mardi 25 août : Le temps se dégrade fortement avec l'arrivée d'un front pluvieux actif. Des pluies parfois abondantes sont attendues, avec des cumuls pouvant atteindre 16 mm à St-Hilaire-sur-Helpe. Le vent se renforce dangereusement, avec des rafales de 50 à 55 km/h, notamment dans l'intérieur des terres.
 
 
 --------------------------------------------------------------------------------
@@ -298,22 +300,20 @@ Ce vendredi après-midi, le ciel de la région sera contrasté. Tandis que le so
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, la Normandie se réveille sous un ciel mitigé, alternant entre éclaircies et passages nuageux porteurs d'averses. Des pluies faibles à modérées sont observées sur une grande partie de la région.
-
-Les températures minimales s'établissent à 11°C à Rouen et Évreux, 12°C à Lisieux et Alençon, et 13°C à Caen et Cherbourg, tandis que Le Havre affiche 15°C. Les averses sont particulièrement présentes sur le littoral, notamment au Havre (12.3 mm) et à Dieppe (8.1 mm), ainsi qu'à Rouen (6.6 mm). Le vent souffle modérément, atteignant 15 à 20 km/h avec des rafales pouvant aller jusqu'à 50 km/h à Évreux, sans risque de vigilance vent fort.
+Ce vendredi matin, la Normandie se réveille sous un ciel nuageux avec des averses généralisées. Les températures minimales affichent 11°C à Rouen, 13°C à Caen et 14°C au Havre. Le vent est modéré sur l'ensemble de la région, soufflant à 20 km/h au Havre et à Dieppe, avec des rafales atteignant 50 km/h à Évreux. Des précipitations notables sont enregistrées, notamment à Dieppe avec 33.9 mm et à Caen avec 13.4 mm. L'intérieur des terres, comme Alençon et Évreux, connaît également des averses avec des cumuls respectifs de 0.6 mm et 9.5 mm.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, la Normandie est sous l'influence d'une atmosphère instable. Des orages éclatent sur l'ensemble de la région, accompagnés de pluies parfois soutenues et de risques de foudre. Les températures maximales atteignent 20°C à Rouen et Le Havre, 19°C à Caen et Cherbourg, et 21°C à Evreux et Dieppe. Le vent souffle de manière modérée, avec des pointes à 40 km/h sur le littoral et jusqu'à 50 km/h dans l'Eure, notamment vers Evreux. La prudence est de mise face à ces conditions météorologiques.
+Ce vendredi après-midi, la Normandie est sous l'influence d'un temps instable. Des orages sont attendus sur l'ensemble de la région, accompagnés de pluies parfois soutenues. Les risques de foudre et de fortes précipitations sous les cellules orageuses sont présents. Les températures maximales atteignent 22°C à Évreux et 21°C à Rouen et Dieppe. Le vent souffle modérément, avec des rafales pouvant atteindre 50 km/h à Évreux. Sur le littoral, comme à Caen et Le Havre, les rafales sont de l'ordre de 40 km/h, maintenant des températures plus fraîches, autour de 19°C.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (vendredi 21 août 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps agréable ce vendredi. Températures sur les plages : 13°C à 21°C.
+☀️ Temps agréable ce vendredi. Températures sur les plages : 13°C à 22°C.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Dieppe / Fécamp / Cherbourg
-☀️ Belle luminosité ce vendredi, brise littorale rafraîchissante avec maximales de 21°C.
+☀️ Belle luminosité ce vendredi, brise littorale rafraîchissante avec maximales de 22°C.
 🌊 Température de l’eau : 17°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -345,9 +345,7 @@ Ce vendredi après-midi, la Normandie est sous l'influence d'une atmosphère ins
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 21 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 23 août : Un temps sec et lumineux s'impose sur l'ensemble de la région. Le soleil domine largement avec des températures maximales en hausse, comprises entre 22°C et 24°C. Le vent reste modéré, avec des rafales jusqu'à 40 km/h sur le littoral et dans le Cotentin.
-
-▶ lundi 24 août : La journée débute sous un ciel voilé avec un risque de faibles précipitations éparses, notamment sur le littoral et le Calvados. Les températures restent stables, oscillant entre 22°C et 24°C. Le vent se renforce sensiblement, avec des pointes à 55 km/h attendues près de Cherbourg.
-
-▶ mardi 25 août : Le temps se dégrade avec un ciel très nuageux et des averses qui concernent l'ensemble de la région, plus marquées sur le Calvados et la Seine-Maritime. Les températures maximales restent douces, de 23°C à 25°C. Le vent faiblit mais l'humidité est de retour.
+▶ dimanche 23 août : Le soleil reprend ses droits sur l'ensemble de la région pour une journée lumineuse et sèche. Les températures grimpent jusqu'à 23°C à Caen et 24°C à Évreux, sous un vent modéré de 20 à 25 km/h sur les côtes.
+▶ lundi 24 août : Le ciel se voile légèrement avec un risque de faibles pluies éparses, notamment sur le Cotentin et le Calvados. Les maximales atteignent 25°C à Rouen et 26°C à Évreux, mais le vent reste sensible avec des rafales jusqu'à 50 km/h à Cherbourg.
+▶ mardi 25 août : Le temps redevient plus instable avec des averses et un ciel très nuageux sur l'ensemble du territoire. Les températures restent douces, de 25°C à Caen à 27°C à Évreux, mais les précipitations sont attendues, avec jusqu'à 5,8 mm à Alençon.
 
