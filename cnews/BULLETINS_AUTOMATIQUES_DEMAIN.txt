@@ -13,36 +13,38 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la France se réveille sous un ciel majoritairement couvert et des précipitations. Des averses sont observées sur le Nord, notamment à Lille où le vent souffle à 20 km/h avec des rafales atteignant 40 km/h, et 14.2 mm de pluie sont déjà relevés. Un passage pluvieux s'invite également sur Rouen, sous un ciel couvert, avec 26.3 mm de pluie et une température de 18°C. Plus au sud, Nantes connaît un ciel nuageux avec 22.4 mm de pluie et des températures douces à 16°C. Le vent reste modéré sur l'ensemble du territoire, sans rafales supérieures à 70 km/h.
+Ce vendredi matin, le temps s'annonce perturbé sur une grande partie du pays. Des pluies faibles sont attendues dès le lever du jour, notamment sur Lille où le thermomètre affiche 16°C, ainsi qu'à Laon avec 16°C et Paris où il fait 18°C. Le vent souffle modérément, avec des rafales atteignant 45 km/h sur Paris et 50 km/h sur Laon et Rennes.
+
+Plus à l'ouest, la Bretagne et les Pays de la Loire connaissent un ciel plus clément, avec des éclaircies et un soleil voilé sur Nantes (15°C) et Poitiers (14°C), tandis que Caen bénéficie d'un ciel peu nuageux avec 15°C. Cependant, des averses sont signalées localement, notamment sur Brest où le vent atteint 20 km/h. Les températures minimales restent douces sur l'ensemble du territoire.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, l'Hexagone sera sous l'influence d'une instabilité généralisée, caractérisée par de nombreux orages. Des averses parfois soutenues, accompagnées de risques de foudre et de fortes pluies sous les cellules orageuses, sont attendues sur une grande partie du territoire. Les températures maximales atteindront 29°C à Lille, 24°C à Rouen et Caen, et 27°C à Paris. Le vent soufflera modérément, avec des rafales pouvant atteindre 50 km/h à Laon et 45 km/h à Rennes, sans toutefois nécessiter de vigilance particulière. Le contraste thermique restera peu marqué entre le littoral et l'intérieur des terres, les orages dominant le tableau météorologique.
+Ce vendredi après-midi, le temps s'annonce contrasté sur le territoire. Les régions du nord et du nord-est seront sous l'influence d'une instabilité marquée. Des orages éclateront sur Lille (21°C) et Laon (24°C), avec des pluies parfois soutenues. Des averses sont également attendues sur Paris (23°C), accompagnées de rafales pouvant atteindre 45 km/h. Plus à l'ouest, la Normandie connaîtra des pluies faibles à modérées, notamment à Rouen (22°C) où les précipitations seront significatives. Le vent soufflera modérément, avec des rafales jusqu'à 50 km/h sur Rennes (23°C). Le reste du pays bénéficiera d'un ciel plus clément, avec des éclaircies et un soleil voilé, notamment sur la façade atlantique et le Centre-Val de Loire, où les températures atteindront 24°C à Tours.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Le ciel reste très nuageux avec des averses fréquentes, notamment sur les régions du nord-ouest. Le vent se renforce sur les côtes : rafales pouvant atteindre 85 km/h à Caen, 70 km/h à Rouen et Tours. Les températures maximales oscillent entre 21°C et 26°C, les minimales entre 14°C et 17°C.
+▶ dimanche 30 août : Le ciel reste très nuageux sur la moitié nord avec des pluies faibles à modérées, notamment sur Lille (5,6 mm) et Nantes (9,2 mm). Le vent souffle en rafales jusqu’à 50 km/h sur les côtes bretonnes et normandes. Les températures maximales atteignent 26°C à Laon et 28°C à Tours, mais ne dépassent pas 21°C à Rennes.
 
-▶ dimanche 30 août : L'activité pluvieuse faiblit mais des averses éparses persistent, surtout au nord et à l'ouest. Le vent reste modéré, avec des pointes à 60 km/h sur la façade atlantique. Les températures sont stables, de 16°C à 26°C, sous un ciel souvent nuageux.
+▶ lundi 31 août : La perturbation persiste avec un ciel très nuageux et des averses éparses sur l’ensemble du pays, sauf sur Rouen, Caen et Paris où les précipitations restent faibles. Les rafales de vent sont encore soutenues, jusqu’à 55 km/h dans le nord. Les maximales baissent légèrement, de 22°C à Lille à 24°C à Laon et Tours.
 
-▶ lundi 31 août : Le temps s'améliore nettement avec un ciel partagé entre nuages et éclaircies, et peu de pluie, sauf sur le nord et la Bretagne où quelques gouttes sont possibles. Le vent faiblit, les rafales ne dépassent pas 60 km/h à Lille. Les maximales atteignent 21°C à 24°C, les minimales 15°C à 17°C.
+▶ mardi 1 septembre : L’amélioration se confirme avec un ciel variable mais peu de pluie, seulement 0,9 mm à Brest. Le vent faiblit nettement, avec des rafales ne dépassant pas 40 km/h. Les températures restent stables, entre 21°C et 24°C, et le soleil fait son retour sur Tours et Poitiers.
 
 
 --------------------------------------------------------------------------------
@@ -54,59 +56,59 @@ Ce jeudi après-midi, l'Hexagone sera sous l'influence d'une instabilité géné
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, le Nord se réveille sous des conditions météorologiques contrastées. Des averses sont observées sur le littoral, notamment à Dunkerque où le vent souffle à 20 km/h avec des rafales atteignant 45 km/h, et à St-Hilaire-sur-Helpe où les précipitations atteignent 7.9 mm. Les températures minimales y sont de 18°C.
-
-Dans l'intérieur des terres, le soleil domine largement. Valenciennes et Lille bénéficient d'un ciel dégagé avec des minimales de 17°C et 18°C respectivement. Le vent y est modéré, autour de 20 km/h, avec des rafales ne dépassant pas les 50 km/h à Valenciennes. Douai enregistre également un ciel ensoleillé avec 18°C, et un vent de 15 km/h.
+Ce vendredi matin, le Nord-Pas-de-Calais est sous l'influence d'un temps instable. Des averses sont observées sur une grande partie de la région, notamment à Lille, Roubaix et St-Hilaire-sur-Helpe où les températures minimales oscillent autour de 16°C. Des passages pluvieux plus marqués, accompagnés d'orages et de risques de foudre, touchent les secteurs de Douai, Maubeuge, Troisvilles et Watten. Les minimales y sont légèrement plus fraîches, atteignant 15°C par endroits. Un vent modéré souffle sur l'ensemble de la région, avec des rafales pouvant atteindre 65 km/h sur le littoral dunkerquois, et jusqu'à 60 km/h à Watten, nécessitant une vigilance particulière.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, la région est placée sous le signe d'une forte instabilité. Des orages éclatent sur l'ensemble du territoire, accompagnés de pluies parfois soutenues. Des risques de foudre sont à prévoir sous ces cellules orageuses. Les températures maximales atteignent 30°C à Valenciennes et Troisvilles, tandis que Lille enregistre 29°C. Le vent souffle modérément, avec des rafales pouvant atteindre 60 km/h à Troisvilles.
+Ce vendredi après-midi, le ciel demeure majoritairement couvert sur l'ensemble de la région, avec des pluies faibles à modérées. Les précipitations sont particulièrement soutenues à Maubeuge et Watten, où 15.7 mm et 15.9 mm sont respectivement attendus. Les températures maximales atteignent 21°C à Lille et Valenciennes, tandis que l'intérieur des terres, comme à Troisvilles, enregistre 19°C. Le vent souffle entre 20 et 30 km/h, avec des rafales pouvant atteindre 65 km/h sur le littoral dunkerquois, nécessitant une vigilance particulière.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 27 août 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 28 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 18°C le matin à 30°C l'après-midi.
-🌊 Température de l’eau : 18°C à 19°C
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 17°C le matin à 21°C l'après-midi.
+🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 31°C sur le sable.
-🌊 Température de l’eau : 19°C
+☀️ Ambiance agréable sur le littoral ce vendredi. Maximales atteignant 22°C sur le sable.
+🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 27 août 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 28 août 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent de Nord-Est modéré (30 km/h avec rafales atteignant 60 km/h) ce jeudi.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
+🌬️ Vent : Vent de Nord-Est modéré (30 km/h avec rafales atteignant 65 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Un ciel variable domine, avec des averses éparses et parfois modérées (jusqu’à 6,8 mm à Dunkerque). Les températures baissent : maximales de 20 °C à 23 °C, minimales de 15 °C à 17 °C. Le vent souffle à 25 km/h, avec des rafales jusqu’à 55 km/h sur le littoral.
+📉 Tendance – 3 jours suivants (dimanche 30 août au mardi 1 septembre)
 
-▶ dimanche 30 août : Le temps reste instable, surtout sur le nord et l’est de la région, où des pluies faibles à modérées persistent (3 mm à Lille, 6,2 mm à St-Hilaire). Les maximales oscillent entre 21 °C et 24 °C, les minimales entre 16 °C et 17 °C. Le vent faiblit légèrement, rafales de 40 à 45 km/h.
+▶ dimanche 30 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 24°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
 
-▶ lundi 31 août : Une dégradation plus marquée s’annonce avec un vent fort : rafales de 60 à 70 km/h sur le littoral, 65 km/h dans l’intérieur. Des pluies fréquentes arrosent la région (6,9 mm à Dunkerque, 5,1 mm à Watten). Les températures restent stables, maximales de 21 °C à 23 °C, minimales de 15 °C à 16 °C.
+▶ lundi 31 août : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 23°C sous abri. Attention aux rafales de vent atteignant 65 km/h.
+
+▶ mardi 1 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 13°C. L'après-midi, le mercure grimpe jusqu'à 22°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -118,55 +120,57 @@ Ce jeudi après-midi, la région est placée sous le signe d'une forte instabili
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, le temps se montre instable sur la région. Des averses se déclenchent notamment sur La Rochelle, où la minimale atteint 18°C, ainsi qu'à Gond-Pontouvre et Angoulême, qui enregistrent 20°C. Des risques orageux sont également présents sur le littoral rochelais, avec un vent soufflant à 20 km/h. Dans l'intérieur des terres, le soleil domine davantage, notamment à Blanzac-Porcheresse et Jarnac, où les températures minimales s'établissent à 18°C. Le vent reste généralement modéré, autour de 15 km/h, avec des rafales pouvant atteindre 40 km/h sur Angoulême.
+Ce vendredi matin, le temps se montre contrasté sur la région. Des averses sont attendues sur le littoral rochelais, avec 2.7 mm de pluie à La Rochelle où le mercure affiche 16°C. Le vent y souffle modérément à 30 km/h, avec des rafales atteignant 55 km/h. À Chassiron, malgré 1.6 mm de pluie, le soleil domine et la température est de 18°C, sous un vent de 40 km/h avec des rafales à 60 km/h. Dans l'intérieur des terres, comme à Angoulême (17°C) et La Couronne (17°C), des averses passagères sont également présentes, tandis que Jarnac (17°C) et Cognac (17°C) bénéficient d'un soleil dominant, avec des vents plus faibles, autour de 20 à 25 km/h.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, le ciel se montrera variable sur la région. Des averses sont attendues, notamment sur La Rochelle où 4.1 mm de pluie sont prévus, et à Montbron où des orages sont à craindre avec 2.8 mm de précipitations. Des éclaircies seront néanmoins présentes, notamment à Chassiron et Jarnac, sous un soleil dominant. Les températures maximales atteindront 27°C à La Rochelle, 29°C à Gond-Pontouvre et Angoulême. Le vent soufflera modérément, autour de 20 km/h sur la côte rochelaise, avec des rafales pouvant atteindre 40 km/h sur Angoulême.
+Ce vendredi après-midi, le ciel présente un contraste marqué entre le littoral et l'intérieur des terres. Des averses sont attendues sur La Rochelle, où le thermomètre atteindra 26°C, ainsi qu'à Gond-Pontouvre et Angoulême, avec des maximales de 27°C. Ces averses s'accompagneront d'un vent soufflant jusqu'à 30 km/h à La Rochelle, avec des rafales pouvant atteindre 55 km/h. En revanche, un soleil dominant est prévu sur Chassiron, Blanzac-Porcheresse et Jarnac, où les températures s'élèveront respectivement à 22°C, 23°C et 24°C. Le vent y sera modéré, avec des rafales ne dépassant pas les 60 km/h sur le littoral de Chassiron.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (jeudi 27 août 2026)
+🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (vendredi 28 août 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur l'ensemble des plages charentaises ce jeudi.
-🌡️ Température sur le littoral : 21°C à 29°C
+☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur l'ensemble des plages charentaises ce vendredi.
+🌡️ Température sur le littoral : 19°C à 27°C
 🌊 Température de l’eau : 22°C à 23°C
 
 🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce jeudi, maximales de 30°C tempérées par la brise marine.
+☀️ Ensoleillement généreux ce vendredi, maximales de 28°C tempérées par la brise marine.
 🌊 Température de l’eau : 23°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (jeudi 27 août 2026)
+🌊 MÉTÉO LITTORALE & MARINE – CHARENTE-MARITIME (vendredi 28 août 2026)
 
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
 ☀️ Situation synoptique : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brises thermiques (25 km/h avec rafales atteignant 40 km/h).
+🌬️ Vent : Régime de brises thermiques (40 km/h avec rafales atteignant 60 km/h).
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Le ciel se montre changeant sur l'ensemble de la région. Des averses éparses sont à prévoir, notamment sur Gond-Pontouvre et Soyaux, avec 1.6 mm de pluie. Le vent se renforce nettement, avec des rafales jusqu'à 50 km/h sur la côte rochelaise, pour un mercure oscillant entre 15°C et 29°C dans l'intérieur.
-▶ dimanche 30 août : Une dégradation pluvieuse s'installe sur la région. Les précipitations sont abondantes, avec jusqu'à 6.6 mm attendus à Montbron, et des cumuls généralisés entre 3 et 5 mm. Les maximales restent douces, atteignant 30°C à La Rochelle et Angoulême, sous un vent toujours présent avec des rafales à 55 km/h.
-▶ lundi 31 août : Le temps s'améliore mais reste mitigé. Le ciel est variable, parfois très nuageux sur La Rochelle et les secteurs d'Angoulême, mais sans pluie significative. Le vent faiblit sensiblement, avec des pointes à 45 km/h sur le littoral, pour des températures maximales en baisse, autour de 26°C dans les terres.
+▶ dimanche 30 août : Une journée très humide s’annonce avec des pluies modérées touchant l’ensemble des stations, notamment la Charente où les cumuls atteignent 5 à 6 mm. Les températures maximales grimpent jusqu’à 32°C à l’intérieur (Angoulême, Gond-Pontouvre) mais restent fraîches sur le littoral avec 23°C à Chassiron. Le vent souffle entre 15 et 25 km/h, plus fort près des côtes.
+
+▶ lundi 31 août : Le ciel reste variable, avec un passage nuageux plus marqué sur le littoral. La Rochelle et Chassiron subissent un vent de secteur ouest atteignant 30 km/h, avec des rafales jusqu’à 50 km/h. Les précipitations deviennent très faibles (moins de 1 mm) et les maximales se stabilisent autour de 26°C, sauf sur la côte où elles plafonnent à 22°C.
+
+▶ mardi 1 septembre : Le temps s’améliore nettement avec un ciel souvent couvert le matin puis se dégageant l’après-midi, surtout dans l’intérieur. Les températures maximales baissent encore, oscillant entre 21°C à Chassiron et 26°C à Jarnac. Le vent faiblit, avec des rafales de 40 km/h encore possibles sur La Rochelle mais sans pluie significative.
 
 
 --------------------------------------------------------------------------------
@@ -178,55 +182,57 @@ Ce jeudi après-midi, le ciel se montrera variable sur la région. Des averses s
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, le temps s'annonce particulièrement instable sur l'ensemble de la région. Des averses sont généralisées, notamment sur le littoral où Leffrinckoucke enregistre 18°C sous un ciel nuageux. Plus à l'intérieur des terres, des pluies plus marquées sont attendues, comme à Racquinghem avec 16°C et 28.3 mm de précipitations, ou Remilly-Wirquin où le mercure affiche 17°C et 17.8 mm. Le vent soufflera modérément, autour de 20 à 25 km/h, avec des rafales pouvant atteindre 45 km/h localement, notamment à Leffrinckoucke et Racquinghem. Les températures minimales varient de 16°C à 19°C.
+Ce vendredi matin, le temps s'annonce particulièrement instable sur l'ensemble de la région. Des orages accompagnés de pluies s'abattent dès le lever du jour, notamment à Leffrinckoucke (16°C), Marck (16°C), et Robecq (17°C). Les précipitations sont parfois intenses, avec 13.0 mm enregistrés à Leffrinckoucke et 41.8 mm à Groffliers. Le vent souffle modérément, atteignant 40 km/h à Gravelines et Offekerque, avec des rafales pouvant aller jusqu'à 70 km/h à Cauchy-à-la-Tour. Les températures minimales varient de 13°C à Racquinghem à 17°C sur le littoral.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, l'ensemble de la région est concernée par un risque orageux généralisé. Des averses parfois soutenues, accompagnées de coups de tonnerre et de risques de foudre, sont attendues sur l'ensemble des départements. Les cumuls de pluie pourraient atteindre 28.3 mm à Racquinghem et 17.8 mm à Remilly-Wirquin. Le vent soufflera modérément, autour de 20 à 25 km/h, avec des rafales pouvant atteindre 45 km/h localement, notamment à Leffrinckoucke et Racquinghem. Les températures maximales restent élevées, avec 29°C à Leffrinckoucke, 26°C à Marck et 24°C à Offekerque.
+Ce vendredi après-midi, le temps s'annonce particulièrement instable sur la région. Des averses parfois soutenues sont attendues, notamment sur Leffrinckoucke où 13 mm de pluie sont déjà relevés, et Groffliers avec 41.8 mm. Des orages éclateront localement, notamment sur Gravelines, Offekerque et Cauchy-à-la-Tour, présentant des risques de foudre et de fortes pluies sous les cellules les plus actives. Les températures maximales atteindront 21°C à Leffrinckoucke et Marck, tandis que l'intérieur des terres, comme à Cauchy-à-la-Tour, verra les thermomètres afficher 19°C. Le vent soufflera modérément, avec des rafales pouvant atteindre 70 km/h à Cauchy-à-la-Tour, justifiant une vigilance.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 27 août 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 28 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 18°C le matin à 29°C l'après-midi.
-🌊 Température de l’eau : 18°C à 19°C
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 15°C le matin à 21°C l'après-midi.
+🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 30°C sur le sable.
-🌊 Température de l’eau : 19°C
+☀️ Ambiance agréable sur le littoral ce vendredi. Maximales atteignant 22°C sur le sable.
+🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 27 août 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 28 août 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce jeudi.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
+🌬️ Vent : Vent de Nord-Est modéré (40 km/h avec rafales atteignant 70 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Le temps reste très instable avec un ciel chargé et des averses fréquentes sur l'ensemble du territoire. Les températures sont en baisse, ne dépassant pas 23°C, tandis que le vent se renforce nettement avec des rafales pouvant atteindre 85 km/h sur les secteurs exposés.
-▶ dimanche 30 août : Une légère amélioration se profile avec des averses moins nombreuses et plus faibles. Les maximales remontent jusqu'à 24°C sous un ciel variable, mais le vent reste soutenu avec des rafales jusqu'à 65 km/h.
-▶ lundi 31 août : Le temps redevient agité avec le retour d'un ciel très nuageux et de nouvelles averses parfois marquées. Les températures restent stables, comprises entre 19°C et 23°C, et le vent se renforce à nouveau avec des rafales pouvant atteindre 70 km/h.
+▶ dimanche 30 août : Le ciel reste mitigé avec un risque d’averses résiduelles, surtout près des côtes. Les rafales de vent soufflent encore jusqu’à 65 km/h, notamment sur Gravelines et Lefaux. Les températures maximales grimpent entre 20°C et 24°C, plus douces au littoral.
+
+▶ lundi 31 août : Nouvelle journée agitée sous un ciel nuageux à très nuageux. Des averses parfois soutenues touchent l’intérieur des terres, avec jusqu’à 10 mm à Cauchy-à-la-Tour. Le vent reste fort avec des rafales de 65 km/h en bord de mer. Les maximales atteignent 20°C à 23°C.
+
+▶ mardi 1 septembre : L’amélioration se dessine nettement. Le vent faiblit, les rafales ne dépassent pas 45 km/h. Le temps devient plus calme avec un ciel partagé entre éclaircies et passages nuageux, mais peu de pluie. Les températures maximales sont stables, de 19°C à 22°C selon les secteurs.
 
 
 --------------------------------------------------------------------------------
@@ -238,55 +244,55 @@ Ce jeudi après-midi, l'ensemble de la région est concernée par un risque orag
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la région connaît un temps contrasté. Des averses sont observées sur le littoral, notamment à Dunkerque où il fait 18°C, et se prolongent vers l'intérieur des terres, comme à St-Hilaire-sur-Helpe avec 18°C. Ces précipitations sont accompagnées d'un vent modéré, atteignant 20 km/h. En revanche, le sud-est de la région, de Valenciennes (17°C) à Maubeuge (18°C), bénéficie d'un ciel dégagé et d'un ensoleillement dominant. Les rafales de vent pourront atteindre 60 km/h à Troisvilles, sans toutefois nécessiter une vigilance particulière.
+Ce vendredi matin, le temps se caractérise par une dégradation généralisée sur la région, avec des conditions orageuses prédominantes. Des orages accompagnés de grêle se déclenchent sur plusieurs localités, notamment à Lille, Roubaix, Steenvoorde et Dunkerque, où les minimales affichent respectivement 16°C, 16°C, 17°C et 16°C. Le vent souffle modérément, avec des rafales atteignant 70 km/h à Steenvoorde, justifiant une vigilance particulière. Ailleurs, comme à Troisvilles (16°C) et Maubeuge (17°C), des orages sont également signalés, mais sans grêle. Les précipitations sont généralisées, avec des cumuls significatifs, et les températures minimales s'échelonnent de 14°C à Watten à 17°C à Steenvoorde et Maubeuge.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, l'ensemble de la région est placé sous la menace d'un temps instable. Des orages sont attendus sur la quasi-totalité des localités, apportant des risques de foudre et de fortes pluies. Des averses parfois soutenues sont à prévoir, avec des cumuls significatifs, notamment à Troisvilles (18.7 mm) et Douai (17.0 mm). Le vent soufflera modérément, avec des rafales pouvant atteindre 60 km/h à Troisvilles. Les températures maximales atteindront 30°C à Valenciennes, 29°C à Lille et Dunkerque, tandis que Steenvoorde et Watten afficheront 25°C.
+Ce vendredi après-midi, le temps demeure perturbé sur l'ensemble de la région. Un ciel couvert domine largement, avec des passages de pluies faibles à modérées. Les précipitations sont particulièrement présentes sur le littoral, notamment à Dunkerque où 10.7 mm sont attendus, et dans l'intérieur des terres comme à Valenciennes avec 12.5 mm. Les températures maximales atteignent 21°C à Lille et Douai, et 20°C à Maubeuge et Watten. Le vent souffle de manière soutenue, avec des rafales atteignant 70 km/h à Steenvoorde, nécessitant une vigilance particulière.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 27 août 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 28 août 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 18°C le matin à 30°C l'après-midi.
-🌊 Température de l’eau : 18°C à 19°C
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 16°C le matin à 21°C l'après-midi.
+🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 31°C sur le sable.
-🌊 Température de l’eau : 19°C
+☀️ Ambiance agréable sur le littoral ce vendredi. Maximales atteignant 22°C sur le sable.
+🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (jeudi 27 août 2026)
+🌊 MÉTÉO MARINE – CÔTE D’OPALE & MER DU NORD (vendredi 28 août 2026)
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent de Nord-Est modéré (30 km/h avec rafales atteignant 60 km/h) ce jeudi.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
+🌬️ Vent : Vent de Nord-Est modéré (35 km/h avec rafales atteignant 70 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Le ciel reste mitigé avec des passages nuageux et un risque d'averses éparses, surtout en matinée. Les maximales plafonnent entre 20 et 23°C, avec un vent modéré de 25 km/h et des rafales jusqu'à 55 km/h sur le littoral. Les précipitations restent faibles à modérées, avec des cumuls atteignant 6,8 mm à Dunkerque.
-▶ dimanche 30 août : La matinée s'annonce encore humide avec des averses possibles, mais une amélioration progressive en seconde partie de journée. Les températures oscillent entre 21 et 24°C, sous un vent plus calme de 20 km/h. Les cumuls de pluie sont plus modérés, de 1,5 mm à Douai à 6,2 mm à Saint-Hilaire-sur-Helpe.
-▶ lundi 31 août : Le temps se dégrade à nouveau avec un ciel très nuageux et des averses récurrentes, surtout sur les secteurs nord et littoral. Les maximales restent stables entre 21 et 23°C, mais le vent se renforce nettement avec des rafales de 60 à 70 km/h attendues à Dunkerque.
+▶ dimanche 30 août : Le ciel reste partagé entre éclaircies et passages nuageux porteurs de pluies faibles, notamment sur Lille et Dunkerque où 5 à 6 mm sont attendus. Les températures s'échelonnent de 14°C à 24°C, avec un vent modéré de 20 à 25 km/h et des rafales jusqu'à 50 km/h sur le littoral.
+▶ lundi 31 août : La dégradation s'accentue avec des pluies plus soutenues et un vent qui se renforce, avec des rafales atteignant 65 km/h à Valenciennes et Maubeuge. Les cumuls de précipitations varient de 3 à 8 mm selon les secteurs, et les maximales ne dépassent pas 23°C, pour des minimales autour de 14-16°C.
+▶ mardi 1 septembre : Nette amélioration avec un temps sec sur la majeure partie de la région, seules quelques gouttes résiduelles possibles à Watten. Le vent faiblit nettement (15-20 km/h, rafales 40-45 km/h) et les températures restent douces, de 13°C le matin à 22°C l'après-midi.
 
 
 --------------------------------------------------------------------------------
@@ -298,54 +304,52 @@ Ce jeudi après-midi, l'ensemble de la région est placé sous la menace d'un te
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la Normandie se réveille sous un ciel partagé. Des averses se déclenchent sur le Calvados et l'Eure, notamment à Caen (18°C) et Évreux (17°C), où des passages pluvieux sont observés. Ailleurs, le ciel est nuageux avec des éclaircies, comme à Rouen (17°C) et Le Havre (18°C). Le vent souffle faiblement à modérément, atteignant 50 km/h en rafales sur le littoral du Havre et à Évreux, sans risque de vigilance. Les températures minimales s'établissent entre 15°C à Dieppe et 18°C sur le littoral.
+Ce vendredi matin, la Normandie se réveille sous un ciel souvent perturbé. Des averses sont observées sur une grande partie de la région, particulièrement intenses et orageuses sur le littoral et l'intérieur des terres. Des orages zèbrent le ciel de Cherbourg où la minimale est de 15°C, ainsi qu'au Havre avec 16°C et un vent modéré atteignant 25 km/h, avec des rafales jusqu'à 55 km/h. Rouen et Évreux connaissent également des averses orageuses, avec des températures respectives de 15°C et 14°C. Le vent souffle généralement entre 15 et 30 km/h sur l'ensemble de la région, avec des rafales pouvant atteindre 60 km/h sur le Cotentin.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, la Normandie est sous l'influence d'une instabilité marquée. Des averses orageuses sont généralisées sur l'ensemble de la région, avec un risque de foudre et de fortes pluies sous les cellules les plus actives. Les températures maximales atteignent 27°C à Rouen et Évreux, tandis que Le Havre et Cherbourg enregistrent 25°C et 24°C respectivement. Le vent souffle modérément, avec des rafales pouvant atteindre 50 km/h au Havre et à Évreux.
+Ce vendredi après-midi, la Normandie connaît un temps mitigé. Des averses sont attendues sur une grande partie de la région, notamment à Rouen (22°C), au Havre (21°C) et à Évreux (23°C), où des passages pluvieux sont prévus. Le vent soufflera modérément, avec des rafales atteignant 55 km/h sur le littoral du Havre, et jusqu'à 60 km/h à Cherbourg. L'intérieur des terres, comme à Caen (23°C) et Alençon (23°C), bénéficiera d'un ciel plus clément, peu nuageux, avec des températures agréables. Le contraste entre le littoral et l'intérieur reste marqué, les zones côtières étant plus exposées aux averses et au vent.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
-🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (jeudi 27 août 2026)
+🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (vendredi 28 août 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps agréable ce jeudi. Températures sur les plages : 17°C à 27°C.
+☀️ Temps agréable ce vendredi. Températures sur les plages : 15°C à 23°C.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Dieppe / Fécamp / Cherbourg
-☀️ Belle luminosité ce jeudi, brise littorale rafraîchissante avec maximales de 27°C.
+☀️ Belle luminosité ce vendredi, brise littorale rafraîchissante avec maximales de 23°C.
 🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
-🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (jeudi 27 août 2026)
+🌊 MÉTÉO MARINE – MANCHE & LITTORAL NORMAND (vendredi 28 août 2026)
 
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
-☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 50 km/h) ce jeudi.
-🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
+🌬️ Vent : Vent modéré de Nord-Est (30 km/h avec rafales atteignant 60 km/h) ce vendredi.
+🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
-🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
-🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce jeudi. Aucun coup de vent à craindre.
-⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce jeudi.
+🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
+🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce vendredi. Aucun coup de vent à craindre.
+⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce vendredi.
 🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.
 🏔️ Météo montagne
 
-    Alpes : Chaleur marquée en vallée ce jeudi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
+    Alpes : Chaleur marquée en vallée ce vendredi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.
 
-    Pyrénées : Soleil dominant en matinée de ce jeudi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce vendredi.
+    Pyrénées : Soleil dominant en matinée de ce vendredi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce samedi.
 
-    Massif central : Ambiance lourde et estivale ce jeudi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
+    Massif central : Ambiance lourde et estivale ce vendredi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.
 
-    Vosges : Temps très chaud et généreusement ensoleillé ce jeudi. Quelques nuages de beau temps l'après-midi sans intempérie.
+    Vosges : Temps très chaud et généreusement ensoleillé ce vendredi. Quelques nuages de beau temps l'après-midi sans intempérie.
 
-    Jura : Chaleur estivale et soleil dominant ce jeudi, avant quelques passages nuageux inoffensifs en soirée.
+    Jura : Chaleur estivale et soleil dominant ce vendredi, avant quelques passages nuageux inoffensifs en soirée.
 
-    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 27 août 2026.
+    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 28 août 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 29 août : Le vent se renforce fortement sur l’ensemble de la Normandie. Des rafales atteignent 115 km/h à Cherbourg et 85 km/h à Caen. Des pluies modérées arrosent la région, avec des cumuls de 4 à 10 mm selon les secteurs. Les températures maximales plafonnent entre 21 et 23°C.
-
-▶ dimanche 30 août : Le vent faiblit mais reste soutenu, notamment sur le Cotentin où les rafales atteignent encore 75 km/h. Les précipitations deviennent plus faibles, souvent inférieures à 2 mm. Le ciel demeure nuageux à couvert, avec quelques éclaircies éparses. Les maximales oscillent entre 20 et 23°C.
-
-▶ lundi 31 août : Le temps s’améliore nettement. Les pluies deviennent rares, voire nulles sur l’intérieur des terres. Le vent est modéré, avec des rafales de 40 à 60 km/h. Les minimales baissent légèrement (13 à 15°C), tandis que les maximales restent douces, de 21 à 23°C.
+▶ dimanche 30 août : Le ciel reste très nuageux avec des averses éparses, notamment sur le littoral où le vent soufflera fort avec des rafales jusqu'à 65 km/h à Cherbourg. Les températures maximales seront comprises entre 22°C et 24°C, avec un ressenti plus frais sur les côtes.
+▶ lundi 31 août : Le temps devient plus calme avec un ciel variable et de belles éclaircies l'après-midi. Les températures restent stables, oscillant entre 21°C et 24°C, avec un vent encore sensible sur les côtes de la Manche.
+▶ mardi 1 septembre : Une belle journée s'annonce avec un ciel majoritairement dégagé et un vent faible. Les maximales sont de saison, comprises entre 21°C et 23°C, avec des minimales plus fraîches au lever du jour.
 
