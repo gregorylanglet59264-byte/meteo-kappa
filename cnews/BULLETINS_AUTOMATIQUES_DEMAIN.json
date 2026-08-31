@@ -236,7 +236,7 @@
         "summaryImages": [],
         "recordsRaw": "🌧️ Pluies & Humidité : Temps sec sur la région ce mardi avec maintien de la sécheresse de surface.\n🌬️ Vent & Rafales : Vent faible à modéré (15 à 25 km/h) ce mardi. Aucun coup de vent à craindre.\n⚡ Risque Orageux : Ambiance calme et stable sur l'ensemble du secteur ce mardi.\n🌫️ Brouillards & Visibilité : Quelques rares grisailles matinales au lever du jour, se dissipant rapidement.",
         "recordsTitle": "🌬️ Phénomènes marquants et zones les plus exposées",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_france_tomorrow.png?t=1788188189",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_france_tomorrow.png?t=1788195836",
         "mountain": "🏔️ Météo montagne\n\n    Alpes : Chaleur marquée en vallée ce mardi et risque d'orages isolés en fin de journée, particulièrement sur les Alpes du Sud l'après-midi.\n\n    Pyrénées : Soleil dominant en matinée de ce mardi, avant des cumulus bourgeonnants et un risque d'averses orageuses sur les crêtes dans l'après-midi et ce mercredi.\n\n    Massif central : Ambiance lourde et estivale ce mardi. Instabilité en fin d'après-midi avec un risque d'ondées localisées sur les sommets.\n\n    Vosges : Temps très chaud et généreusement ensoleillé ce mardi. Quelques nuages de beau temps l'après-midi sans intempérie.\n\n    Jura : Chaleur estivale et soleil dominant ce mardi, avant quelques passages nuageux inoffensifs en soirée.\n\n    Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du mardi 1 septembre 2026.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
         "summaryMorning": "Ce mardi matin, le ciel français présente une dualité notable. Sur la moitié nord-ouest, le soleil domine largement, notamment de la Bretagne aux Pays de la Loire, avec des minimales de 13°C à Rennes et 15°C à Brest. Un vent léger de 10 à 15 km/h souffle sur ces régions. Quelques nuages parsèment le ciel du Nord-Pas-de-Calais et de la Normandie, comme à Lille où le mercure indique 14°C, mais sans précipitations significatives.\n\nEn revanche, un voile nuageux plus dense s'installe sur le Centre-Val de Loire et la Nouvelle-Aquitaine, avec un ciel couvert à Tours (11°C) et Poitiers (11°C). Le vent y est faible, autour de 5 à 10 km/h. Les températures restent douces sur l'ensemble du territoire pour cette matinée du 1er septembre.",
@@ -531,7 +531,7 @@
       "form": {
         "observationsRaw": "St-Hilaire-sur-Helpe (59) 29\nValenciennes (59) 30\nTroisvilles (59) 30\nMaubeuge (59) 29\nDouai (59) 31\nLille (59) 30\nRoubaix (59) 29\nSteenvoorde (59) 29\nWatten (59) 29\nDunkerque (59) 26\nSaulty (62) 30\nArras (62) 30\nFiefs (62) 29\nHumières (62) 29\nCambrai / Epinoy (62) 30\nRadinghem (62) 29\nAttin (62) 30\nNielles-lès-Bléquin (62) 27\nBainghen (62) 27\nBoulogne (62) 28\nCalais / Marck (62) 28\nCap Gris-Nez (62) 28\nLe Touquet (62) 29\n",
         "alert": "🟢 Aucune vigilance orange ou rouge en cours sur le pays.",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788188322",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788195838",
         "todaySummary": "",
         "summaryLancement": "☀️ UN MARDI PARTAGÉ ENTRE SOLEIL ET NUAGES : Ce mardi, le Nord connaît un temps contrasté avec de belles éclaircies dans l’est et l’intérieur, tandis que l’ouest et le littoral restent sous un ciel nuageux émaillé de faibles pluies. Les températures maximales atteignent 23°C à Lille, 20°C à Dunkerque, sous un vent modéré.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
@@ -790,7 +790,7 @@
       "form": {
         "observationsRaw": "La Rochelle 37\nChassiron 28\nGond-Pontouvre 38\nBlanzac-Porcheresse 36\nJarnac 37\nMontbron 37\nLa Couronne 37\nSoyaux 37\nCognac 37\nAngoulême 37\nRouillac 37\nSaint-Michel 37\nLa Rochefoucauld 38\nNersac 37\nConfolens 37\nBarbezieux-Saint-Hilaire 36\nChâteauneuf-sur-Charente 37\n",
         "alert": "🟢 Aucune vigilance orange ou rouge en cours sur le pays.",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NAQ_tomorrow.png?t=1788188354",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NAQ_tomorrow.png?t=1788195839",
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL ET CHALEUR ESTIVALE : Un ciel très dégagé s'impose sur la région ce mardi, avec des températures maximales très douces atteignant 29°C dans l'intérieur des terres, tandis que la brise océanique maintient 21°C à Chassiron.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
@@ -1019,7 +1019,7 @@
       "form": {
         "observationsRaw": "Leffrinckoucke 26\nGravelines 24\nOffekerque 28\nMarck 28\nLefaux 29\nGroffliers 29\nRemilly-Wirquin 28\nRacquinghem 28\nRobecq 31\nCauchy-à-la-Tour 30\nBoulogne Sur Mer 13\nLe Touquet-Paris-Plage 29\nAbbeville 31\n",
         "alert": "🟢 Aucune vigilance orange ou rouge en cours sur le pays.",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788188386",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788195840",
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL ET TEMPÉRATURES DOUCES : Ce mardi, le soleil s’impose largement sur l’ensemble de la région, avec des maximales atteignant 21°C sur le littoral, et seulement une poche d’averses isolée du côté de Cauchy-à-la-Tour.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
@@ -1331,7 +1331,7 @@
       "form": {
         "observationsRaw": "St-Hilaire-sur-Helpe (59) 29\nValenciennes (59) 30\nTroisvilles (59) 30\nMaubeuge (59) 29\nDouai (59) 31\nLille (59) 30\nRoubaix (59) 29\nSteenvoorde (59) 29\nWatten (59) 29\nDunkerque (59) 26\nSaulty (62) 30\nArras (62) 30\nFiefs (62) 29\nHumières (62) 29\nCambrai / Epinoy (62) 30\nRadinghem (62) 29\nAttin (62) 30\nNielles-lès-Bléquin (62) 27\nBainghen (62) 27\nBoulogne (62) 28\nCalais / Marck (62) 28\nCap Gris-Nez (62) 28\nLe Touquet (62) 29\n",
         "alert": "🟢 Aucune vigilance orange ou rouge en cours sur le pays.",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788188539",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_HDF_tomorrow.png?t=1788195840",
         "todaySummary": "",
         "summaryLancement": "☀️ NET REVERS DE MÉDAILLE : Après une matinée pluvieuse et grise sur l'ensemble du Nord, le soleil reprend ses droits cet après-midi pour offrir une fin de journée lumineuse et douce, avec des maximales atteignant 23°C.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
@@ -1521,7 +1521,7 @@
       "form": {
         "observationsRaw": "Rouen 33\nCaen 27\nLe Havre 32\nCherbourg 27\nEvreux 34\nAlençon 35\nDieppe 31\nLisieux 33\n",
         "alert": "🟢 Aucune vigilance orange ou rouge en cours sur le pays.",
-        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NOR_tomorrow.png?t=1788188700",
+        "alertImageUrl": "https://ubdevaemtwbzxksjlhjg.supabase.co/storage/v1/object/public/vigilance-captures/vigilance_region_NOR_tomorrow.png?t=1788195841",
         "todaySummary": "",
         "summaryLancement": "☀️ SOLEIL ET DOUCEUR ESTIVALE : Un ciel très dégagé s'impose sur la région ce mardi, avec des températures maximales très douces, comprises entre 20 et 23°C, et un vent faible de secteur ouest.",
         "summaryTitle": "Prévisions pour la journée du MARDI 1 SEPTEMBRE 2026",
