@@ -13,10 +13,12 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la France se réveille sous un ciel partagé. Des averses sont attendues sur les Hauts-de-France, notamment à Lille où le vent soufflera modérément à 20 km/h. Plus à l'ouest, la Bretagne et la Normandie connaîtront un ciel couvert avec des températures douces, 18°C à Brest et 16°C à Rouen. Un passage pluvieux est également signalé du côté de Laon, où les minimales atteignent 12°C. Le Bassin parisien reste sous une couverture nuageuse dense. En revanche, le soleil domine largement du Val de Loire jusqu'au Sud-Ouest, avec 12°C à Tours et 13°C à Poitiers.
+Ce jeudi matin, la France se réveille sous un ciel partagé. Une perturbation atlantique apporte des averses sur le quart nord-ouest du pays, notamment de la Bretagne aux Hauts-de-France. À Lille, des averses se déclenchent avec une température de 17°C et un vent modéré de 25 km/h, avec des rafales atteignant 45 km/h. Des averses sont également observées à Rouen et Caen, où le vent souffle à 15 km/h avec des rafales de 40 km/h pour Caen.
+
+Plus à l'est et au sud, le soleil domine largement. Poitiers enregistre un franc soleil avec 12°C, tandis que Paris et Tours profitent d'un ciel peu nuageux avec respectivement 18°C et 15°C. Les températures minimales varient de 12°C à Laon à 18°C à Brest. Le vent reste généralement faible à modéré sur l'ensemble du territoire.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, la France métropolitaine se divise en deux ambiances météorologiques distinctes. Le nord-ouest et le nord-est connaissent un ciel plus nuageux, avec des averses localisées sur les Hauts-de-France, notamment à Lille où le vent soufflera à 20 km/h avec des rafales à 45 km/h. Laon et Paris verront un ciel très nuageux, avec des températures atteignant respectivement 30°C et 28°C. Des pluies faibles sont également attendues à Laon. En revanche, un soleil généreux dominera le sud et le centre du pays, avec des maximales remarquables pour la saison. Tours et Poitiers bénéficieront d'un temps pleinement ensoleillé, avec des températures grimpant jusqu'à 30°C pour Tours et 29°C pour Poitiers. Le vent restera généralement modéré sur l'ensemble du territoire.
+Ce jeudi après-midi, le ciel français se partagera entre éclaircies et passages nuageux. Des averses sont attendues sur le nord du pays, notamment à Lille et Laon, où les précipitations atteindront respectivement 1.0 mm et 1.2 mm. Le vent y soufflera modérément, avec 25 km/h à Lille et des rafales pouvant atteindre 45 km/h. Plus à l'ouest, de Rouen à Brest, le temps restera peu nuageux avec des températures maximales de 22°C à Rouen et 27°C à Brest. Le vent y sera plus faible, autour de 15 km/h. Plus au sud, un soleil dominant s'imposera, notamment à Poitiers où le mercure affichera 29°C.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
@@ -38,11 +40,11 @@ Ce jeudi après-midi, la France métropolitaine se divise en deux ambiances mét
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 5 septembre : Le soleil s’impose sur l’ensemble du pays, avec des températures très élevées : 34°C attendus à Poitiers, 30°C à Tours. Quelques nuages résiduels sur la Normandie mais aucun risque de pluie. Vent modéré, de 10 à 20 km/h.
+▶ samedi 5 septembre : Un temps calme et globalement lumineux s'installe sur la plupart des régions. Le soleil domine largement de Paris à la Bretagne, avec des températures estivales, jusqu'à 31°C à Poitiers et 30°C à Tours. Seuls quelques nuages résiduels pourraient traîner sur le Nord et les côtes normandes, mais sans pluie significative.
 
-▶ dimanche 6 septembre : La chaleur se maintient, mais le ciel devient plus variable. Des nuages et quelques averses éparses touchent la Bretagne et les Pays de la Loire, notamment à Rennes (0,9 mm). Le vent se renforce avec des rafales jusqu’à 45 km/h sur la façade atlantique.
+▶ dimanche 6 septembre : La chaleur s'accentue nettement sur la moitié sud, où le mercure flirte avec les 34°C à Poitiers et 32°C à Tours. Le vent se renforce l'après-midi sur les côtes de la Manche, avec des rafales jusqu'à 45 km/h à Caen, tandis qu'un risque d'averses isolées apparaît sur l'ouest de la Bretagne et la région nantaise.
 
-▶ lundi 7 septembre : Le temps se dégrade nettement par le nord-ouest. Pluies attendues sur les Hauts-de-France, la Normandie et la Bretagne, avec des cumuls significatifs (3,3 mm à Lille). Les températures baissent : 24°C à Lille, 22°C à Rouen. Vent toujours soutenu, rafales à 45 km/h.
+▶ lundi 7 septembre : Une dégradation nuageuse gagne par l'ouest, apportant des averses et un vent soutenu sur une large moitié nord. Les rafales atteignent 40 à 45 km/h de Lille à Tours. Le sud reste plus préservé, avec un ciel partagé entre nuages et éclaircies, mais les températures maximales restent élevées, entre 25°C à Lille et 29°C à Poitiers.
 
 
 --------------------------------------------------------------------------------
@@ -54,20 +56,20 @@ Ce jeudi après-midi, la France métropolitaine se divise en deux ambiances mét
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, le ciel du Nord présente un visage mitigé. Des averses sont attendues sur une grande partie du territoire, notamment à Dunkerque où la minimale est de 15°C, à Lille avec 17°C et à Roubaix où le mercure affiche 17°C. Ces averses s'accompagnent d'un vent modéré, soufflant entre 20 et 25 km/h, avec des rafales pouvant atteindre 45 km/h sur le littoral et l'ouest de la région. L'intérieur des terres, comme à Douai avec 18°C et Maubeuge avec 16°C, bénéficie d'un soleil dominant, offrant un contraste thermique notable.
+Ce jeudi matin, le ciel de la région Nord présente un aspect mitigé. Des averses sont observées sur plusieurs localités, notamment à Lille (1.0 mm) et Roubaix (0.8 mm), où les températures minimales atteignent 17°C. Dunkerque, avec 16°C, enregistre également 0.6 mm de pluie. Le vent souffle modérément, avec des rafales pouvant atteindre 50 km/h sur Roubaix et Dunkerque. Plus à l'intérieur des terres, comme à Troisvilles (17°C) et Maubeuge (17°C), le soleil domine, malgré de faibles précipitations résiduelles. St-Hilaire-sur-Helpe bénéficie d'un temps nuageux mais sec, avec une température minimale de 14°C.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, le Nord-Pas-de-Calais connaît une alternance entre éclaircies généreuses et passages nuageux. Le soleil dominera largement sur Douai et Maubeuge, où le thermomètre atteindra 21°C. Des conditions similaires sont prévues à Watten. Plus à l'ouest et au nord, des nuages plus nombreux s'inviteront, notamment à Lille et Roubaix, où le mercure affichera 23°C, ainsi qu'à Dunkerque avec 25°C. Quelques faibles averses isolées ne sont pas exclues localement, notamment sur Steenvoorde. Le vent soufflera du secteur ouest, avec des rafales pouvant atteindre 45 km/h sur le littoral et les Flandres.
+Ce jeudi après-midi, le ciel du Nord sera partagé entre éclaircies et passages nuageux. Des averses sont attendues localement, notamment sur Troisvilles et Maubeuge où de faibles pluies sont signalées, ainsi qu'à Douai et Watten. Le vent soufflera modérément, avec des rafales atteignant 50 km/h sur Roubaix et Dunkerque, et jusqu'à 45 km/h sur Lille. Les températures maximales afficheront 23°C à Valenciennes, 22°C à Lille et Roubaix, et 23°C à Dunkerque, avec un contraste peu marqué entre le littoral et l'intérieur des terres.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 3 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 15°C le matin à 25°C l'après-midi.
+☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 16°C le matin à 24°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 26°C sur le sable.
+☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 25°C sur le sable.
 🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -76,7 +78,7 @@ Ce jeudi après-midi, le Nord-Pas-de-Calais connaît une alternance entre éclai
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
-🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce jeudi.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 50 km/h) ce jeudi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
@@ -100,9 +102,13 @@ Ce jeudi après-midi, le Nord-Pas-de-Calais connaît une alternance entre éclai
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 5 septembre : Le soleil s'impose sur l'ensemble de la région dès le matin. Les températures sont très agréables, oscillant de 13°C à Valenciennes à 24°C sur le littoral dunkerquois. Le vent reste modéré, dépassant les 40 km/h en rafales sur les hauteurs de l'Avesnois et les Flandres.
-▶ dimanche 6 septembre : La douceur est encore plus marquée. Le ciel est largement dégagé, les maximales grimpent jusqu'à 27°C à Lille, Valenciennes et Dunkerque. L'ambiance estivale est au rendez-vous, le vent est faible, une journée idéale pour les activités de plein air.
-▶ lundi 7 septembre : Le temps se dégrade nettement en cours de journée. Une perturbation apporte des pluies modérées et des rafales de vent qui pourront atteindre 55 km/h à Dunkerque. Les températures baissent légèrement, mais restent douces avec des maximales autour de 24°C à Valenciennes et Lille.
+📉 Tendance – 3 jours suivants (samedi 5 septembre au lundi 7 septembre)
+
+▶ samedi 5 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 13°C. L'après-midi, le mercure grimpe jusqu'à 24°C sous abri. Le vent souffle de manière modérée.
+
+▶ dimanche 6 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 11°C. L'après-midi, le mercure grimpe jusqu'à 27°C sous abri. Le vent souffle de manière modérée.
+
+▶ lundi 7 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 26°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -114,10 +120,10 @@ Ce jeudi après-midi, le Nord-Pas-de-Calais connaît une alternance entre éclai
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la Charente-Maritime et la Charente se réveillent sous un ciel majoritairement ensoleillé. Quelques nuages épars sont observés sur le littoral rochelais, où la température minimale atteint 14°C. À Chassiron, le soleil domine avec 19°C. Dans l'intérieur des terres, les conditions sont similaires avec un grand soleil. Les minimales affichent 13°C à Blanzac-Porcheresse et Jarnac, tandis que Montbron enregistre 10°C. Le vent souffle faiblement, autour de 15 km/h sur le littoral et jusqu'à 5 km/h dans les terres. Aucune précipitation n'est à signaler.
+Ce jeudi matin, la région se réveille sous un ciel majoritairement dégagé, annonçant une journée estivale. Le soleil domine largement sur l'ensemble du territoire, notamment à Angoulême avec 16°C et à Montbron où la température minimale atteint 10°C. Quelques nuages discrets sont observés du côté de La Rochelle, où la température est de 13°C, et Jarnac, affichant également 12°C. Le vent reste faible, soufflant autour de 5 à 15 km/h, sans aucune précipitation à signaler. Les températures minimales varient de 10°C dans l'intérieur des terres à 19°C sur le littoral à Chassiron, offrant un contraste notable entre les zones.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, la région bénéficie d'un temps largement ensoleillé. Le soleil domine l'ensemble du territoire, sans aucune perturbation nuageuse significative. Les températures maximales atteignent des valeurs estivales, avec 32°C à La Rochelle, 33°C à Gond-Pontouvre et Soyaux, et 28°C à Chassiron. Le vent reste faible à modéré, soufflant à environ 15 km/h à La Rochelle et 20 km/h à Chassiron, tandis qu'il se maintient autour de 5 à 10 km/h dans l'intérieur des terres, sans rafales notables. Aucune précipitation n'est à signaler.
+Ce jeudi après-midi, le département bénéficie d'un ensoleillement généreux et dominant. Le ciel se montre dégagé sur l'ensemble du territoire, sans aucune perturbation nuageuse ou pluvieuse à signaler. Les températures maximales atteignent 31°C à La Rochelle, 33°C à Gond-Pontouvre et 28°C à Blanzac-Porcheresse. Une légère brise souffle sur la côte, avec un vent de 15 km/h à La Rochelle et Chassiron, tandis que l'intérieur des terres connaît un vent faible, ne dépassant pas les 5 à 10 km/h. Aucune rafale de vent forte n'est attendue.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (jeudi 3 septembre 2026)
@@ -137,7 +143,7 @@ Ce jeudi après-midi, la région bénéficie d'un temps largement ensoleillé. L
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
 ☀️ Situation synoptique : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Régime de brises thermiques (20 km/h).
+🌬️ Vent : Régime de brises thermiques (15 km/h).
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -160,13 +166,9 @@ Ce jeudi après-midi, la région bénéficie d'un temps largement ensoleillé. L
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (samedi 5 septembre au lundi 7 septembre)
-
-▶ samedi 5 septembre : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 16°C. L'après-midi, le mercure grimpe jusqu'à 36°C sous abri. Le vent souffle de manière modérée.
-
-▶ dimanche 6 septembre : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 19°C. L'après-midi, le mercure grimpe jusqu'à 37°C sous abri. Attention aux rafales de vent atteignant 55 km/h.
-
-▶ lundi 7 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 18°C. L'après-midi, le mercure grimpe jusqu'à 30°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
+▶ samedi 5 septembre : La chaleur s'accentue nettement avec un ciel toujours radieux. Les maximales grimpent jusqu'à 37°C dans l'intérieur des terres, tandis qu'une brise modérée de 20 km/h tempère l'ambiance sur le littoral.
+▶ dimanche 6 septembre : Le temps se dégrade légèrement avec l'arrivée de nuages et un vent qui se renforce, avec des rafales pouvant atteindre 45 km/h. Les températures restent très élevées, jusqu'à 39°C dans les terres, mais quelques averses isolées sont possibles, notamment sur le nord du département.
+▶ lundi 7 septembre : Le ciel reste variable et le vent toujours soutenu avec des rafales jusqu'à 50 km/h. La chaleur baisse d'un cran avec des maximales qui plafonnent autour de 31°C sur le littoral et 30°C dans les terres, sous un risque d'averses résiduelles.
 
 
 --------------------------------------------------------------------------------
@@ -178,20 +180,22 @@ Ce jeudi après-midi, la région bénéficie d'un temps largement ensoleillé. L
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, le temps se montre mitigé sur la région. Des averses sont observées sur Leffrinckoucke, où la minimale est de 15°C. Des pluies faibles s'invitent également du côté de Marck, avec 18°C, ainsi qu'à Groffliers et Remilly-Wirquin. Le vent souffle modérément, atteignant 35 km/h à Offekerque et Groffliers, avec des rafales pouvant aller jusqu'à 60 km/h sur le littoral. Les températures minimales varient de 15°C à Leffrinckoucke à 19°C à Lefaux. L'intérieur des terres, comme à Cauchy-à-la-Tour (18°C), connaît un ciel plus dégagé, avec un soleil dominant.
+Ce jeudi matin, le ciel présente des nuances variées sur la région. Les températures minimales s'établissent à 16°C à Leffrinckoucke, 19°C à Gravelines et Offekerque, et 18°C à Marck. Sur le littoral, le soleil domine à Gravelines et Offekerque, tandis que Leffrinckoucke et Marck connaissent un ciel peu nuageux. Le vent est modéré, soufflant à 25 km/h avec des rafales atteignant 50 km/h à Leffrinckoucke, et jusqu'à 35 km/h avec des rafales de 60 km/h à Gravelines et Offekerque.
+
+Dans l'intérieur des terres, des averses se déclenchent localement, notamment à Robecq où un passage pluvieux est observé. Des pluies faibles sont également signalées à Racquinghem et Cauchy-à-la-Tour. Les températures y sont légèrement plus fraîches, avec 17°C à Racquinghem et Cauchy-à-la-Tour. Le vent y est également modéré, avec des rafales autour de 50 km/h.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, le temps se montre contrasté sur la région. Le littoral, notamment à Gravelines et Offekerque, bénéficie d'un soleil dominant avec des températures atteignant 23°C. À Leffrinckoucke, le ciel est plus nuageux, avec des averses faibles et un maximum de 25°C. Plus à l'intérieur des terres, des pluies faibles sont observées à Marck et Groffliers, où les températures plafonnent à 22°C et 21°C respectivement. Le vent souffle modérément, avec des rafales pouvant atteindre 60 km/h sur le littoral, notamment à Gravelines et Offekerque, et 55 km/h dans les terres, comme à Remilly-Wirquin.
+Ce jeudi après-midi, le ciel présente un contraste marqué entre le littoral et l'intérieur des terres. Sur la côte, un soleil dominant est attendu, notamment à Gravelines et Offekerque où les températures atteindront 23°C. Une brise côtière soufflera avec des rafales pouvant atteindre 60 km/h. En revanche, l'intérieur des terres connaîtra un temps plus nuageux. Des pluies faibles sont prévues à Racquinghem (21°C) et Cauchy-à-la-Tour (21°C), accompagnées d'un vent modéré de 25 km/h.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 3 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 17°C le matin à 25°C l'après-midi.
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 18°C le matin à 23°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 26°C sur le sable.
+☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 24°C sur le sable.
 🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -199,7 +203,7 @@ Ce jeudi après-midi, le temps se montre contrasté sur la région. Le littoral,
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
 🌬️ Vent : Vent de Nord-Est modéré (35 km/h avec rafales atteignant 60 km/h) ce jeudi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
@@ -224,13 +228,11 @@ Ce jeudi après-midi, le temps se montre contrasté sur la région. Le littoral,
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (samedi 5 septembre au lundi 7 septembre)
+▶ samedi 5 septembre : Temps sec et ensoleillé sur l’ensemble du territoire. Les températures maximales grimpent jusqu’à 24°C à Leffrinckoucke et 21°C à Offekerque. Vent faible, de 15 à 20 km/h, sans rafales notables.
 
-▶ samedi 5 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 12°C. L'après-midi, le mercure grimpe jusqu'à 24°C sous abri. Le vent souffle de manière modérée.
+▶ dimanche 6 septembre : La douceur s’accentue avec des maximales atteignant 27°C sur la plupart des localités, de Leffrinckoucke à Marck. Le ciel reste dégagé et le vent modéré, autour de 15 à 20 km/h. Aucune précipitation à signaler.
 
-▶ dimanche 6 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 11°C. L'après-midi, le mercure grimpe jusqu'à 28°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
-
-▶ lundi 7 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 15°C. L'après-midi, le mercure grimpe jusqu'à 24°C sous abri. Attention aux rafales de vent atteignant 55 km/h.
+▶ lundi 7 septembre : Le temps se dégrade légèrement avec un vent plus soutenu, rafales jusqu’à 50 km/h sur le littoral. Des pluies faibles à modérées sont attendues localement, notamment à Cauchy-à-la-Tour (4,5 mm) et Robecq (3,6 mm). Les températures maximales restent douces, entre 21°C et 25°C.
 
 
 --------------------------------------------------------------------------------
@@ -242,20 +244,20 @@ Ce jeudi après-midi, le temps se montre contrasté sur la région. Le littoral,
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la région connaît une atmosphère mitigée. Les températures minimales s'établissent à 13°C à St-Hilaire-sur-Helpe, 16°C à Valenciennes et 17°C à Lille. Le vent souffle modérément, avec des rafales atteignant 45 km/h sur le littoral, notamment à Roubaix et Dunkerque. Des averses éparses sont observées, notamment à Steenvoorde, où les précipitations atteignent 0.2 mm. L'intérieur des terres, comme à Troisvilles, Maubeuge et Douai, bénéficie d'un ciel ensoleillé, tandis que le littoral, de Dunkerque à Roubaix, présente un ciel peu nuageux avec quelques éclaircies.
+Ce jeudi matin, le ciel présente un aspect mitigé sur la région. Des averses éparses sont observées, notamment à Troisvilles avec 0.2 mm de pluie et une minimale de 17°C, ainsi qu'à Maubeuge où le thermomètre affiche également 17°C avec 0.1 mm de pluie. Douai et Watten connaissent aussi quelques précipitations. Ailleurs, les éclaircies dominent, comme à St-Hilaire-sur-Helpe (14°C) ou Valenciennes (16°C) où le soleil perce derrière de rares nuages. Le vent souffle modérément sur l'ensemble du territoire, avec des rafales atteignant 50 km/h sur Roubaix et Dunkerque, et 45 km/h à Maubeuge, Douai, Steenvoorde et Watten. Les températures minimales varient de 14°C à St-Hilaire-sur-Helpe à 18°C à Douai et Steenvoorde.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, le ciel de la région présentera un aspect variable. Des éclaircies généreuses alterneront avec des passages nuageux sur l'ensemble du territoire. Quelques averses isolées sont attendues, notamment sur St-Hilaire-sur-Helpe, Valenciennes, Roubaix et Dunkerque, où de faibles précipitations sont possibles. Le vent soufflera modérément, avec des vitesses avoisinant les 20 à 25 km/h. Des rafales de 40 à 45 km/h pourront être observées localement, notamment sur Lille, Roubaix et Dunkerque. Les températures maximales atteindront 25°C à Dunkerque, 24°C à Valenciennes et 23°C à Lille.
+Ce jeudi après-midi, le ciel de la région sera partagé entre éclaircies et passages nuageux. Des averses sont attendues sur plusieurs localités. Ainsi, Troisvilles, Maubeuge, Douai et Watten connaîtront des averses de faible intensité. Ailleurs, le soleil se montrera plus généreux, notamment à St-Hilaire-sur-Helpe et Valenciennes, où le ciel sera peu nuageux. Les températures maximales atteindront 24°C à St-Hilaire-sur-Helpe, 23°C à Valenciennes et Dunkerque, et 22°C à Lille. Le vent soufflera généralement de l'ouest, atteignant 20 à 25 km/h, avec des rafales pouvant atteindre 50 km/h sur Roubaix et Dunkerque.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (jeudi 3 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 15°C le matin à 25°C l'après-midi.
+☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 16°C le matin à 24°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
-☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 26°C sur le sable.
+☀️ Ambiance agréable sur le littoral ce jeudi. Maximales atteignant 25°C sur le sable.
 🌊 Température de l’eau : 18°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -264,7 +266,7 @@ Ce jeudi après-midi, le ciel de la région présentera un aspect variable. Des 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
-🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 45 km/h) ce jeudi.
+🌬️ Vent : Vent de Nord-Est modéré (25 km/h avec rafales atteignant 50 km/h) ce jeudi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
@@ -288,11 +290,9 @@ Ce jeudi après-midi, le ciel de la région présentera un aspect variable. Des 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 5 septembre : Le ciel reste partagé entre éclaircies et passages nuageux, avec de faibles risques d’averses localisées, notamment sur le sud de la région. Le vent souffle modérément, avec des rafales atteignant 40 km/h sur le littoral. Les températures maximales s’échelonnent de 21°C à 24°C, pour des minimales comprises entre 13°C et 17°C.
-
-▶ dimanche 6 septembre : La journée s’annonce plus lumineuse et stable, avec un soleil dominant sur l’ensemble du territoire. Le vent faiblit et les rafales ne dépassent pas 20 km/h. Les températures grimpent nettement : les maximales atteignent 26°C à Lille et 27°C à Valenciennes, tandis que les minimales restent fraîches, de 12°C à 14°C.
-
-▶ lundi 7 septembre : Le temps se dégrade nettement avec l’arrivée d’un front pluvieux. Le ciel devient très nuageux et des précipitations modérées toucheront la majorité des villes, notamment Lille et Roubaix (3 mm attendus). Le vent se renforce, avec des rafales pouvant atteindre 55 km/h sur le littoral dunkerquois. Les températures maximales redescendent entre 22°C et 25°C.
+▶ samedi 5 septembre : Le ciel se dégage totalement sur l’ensemble de la région, avec un soleil généreux et quelques nuages épars. Le vent modéré de secteur ouest ne dépasse pas 15 km/h. Les températures oscillent entre 13°C le matin et 24°C l’après-midi à Valenciennes et Dunkerque.
+▶ dimanche 6 septembre : La chaleur s’accentue sous un ciel toujours très ensoleillé. Les maximales grimpent jusqu’à 27°C à Saint-Hilaire-sur-Helpe, Troisvilles et Dunkerque. Seule Valenciennes pourrait voir une très faible ondée (0,3 mm). Le vent reste léger, autour de 10 à 15 km/h.
+▶ lundi 7 septembre : Le temps se dégrade avec l’arrivée d’un front : le vent se renforce, atteignant 20 km/h avec des rafales jusqu’à 40 km/h. Des averses éparses arrosent la région, plus marquées sur le sud (Maubeuge 4,2 mm, Saint-Hilaire-sur-Helpe 3,3 mm). Les températures restent douces, de 16-18°C le matin à 23-26°C l’après-midi.
 
 
 --------------------------------------------------------------------------------
@@ -304,18 +304,16 @@ Ce jeudi après-midi, le ciel de la région présentera un aspect variable. Des 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce jeudi matin, la Normandie se réveille sous un ciel majoritairement peu nuageux, offrant de belles éclaircies sur une grande partie de la région. Les températures minimales s'établissent à 13°C à Rouen, 14°C à Dieppe et Lisieux, et 17°C à Cherbourg et Caen. Le vent souffle modérément, avec des rafales atteignant 45 km/h au Havre et Cherbourg, et jusqu'à 50 km/h à Dieppe. Seule la côte nord-est connaît quelques averses isolées, tandis que le reste du territoire bénéficie d'un temps sec.
+Ce jeudi matin, la Normandie se réveille sous un ciel partagé. Des averses sont observées sur le littoral, notamment à Cherbourg et au Havre où les températures minimales atteignent 17°C et 18°C. Le vent y souffle modérément, avec des rafales pouvant atteindre 45 km/h. À l'intérieur des terres, le temps est plus clément. Rouen et Caen bénéficient d'un ciel peu nuageux, avec des minimales respectives de 15°C et 17°C. Le vent y est plus faible, autour de 15 km/h. Les températures restent douces sur l'ensemble de la région.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce jeudi après-midi, la Normandie bénéficie d'un temps généralement ensoleillé. Le soleil domine largement sur l'ensemble de la région, malgré la présence de quelques nuages passagers. Seul le secteur du Havre connaît une couverture nuageuse plus importante, avec un ciel très nuageux. Aucune précipitation n'est à signaler.
-
-Les températures maximales atteignent 26°C à Lisieux et Évreux, 25°C à Rouen et Caen, et 23°C au Havre. Le vent souffle modérément, avec des rafales pouvant atteindre 50 km/h sur Dieppe et 45 km/h au Havre et Cherbourg, orienté principalement de l'ouest.
+Ce jeudi après-midi, la Normandie bénéficie d'un temps généralement ensoleillé. Le ciel est peu nuageux sur une grande partie de la région, avec des températures maximales atteignant 26°C à Lisieux et Évreux, et 25°C à Caen et Alençon. Le contraste est marqué sur le littoral, notamment au Havre, où le ciel est très nuageux, mais sans précipitations. Le vent souffle modérément, atteignant 20 km/h avec des rafales de 45 km/h sur le littoral, notamment au Havre, à Cherbourg et à Dieppe.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (jeudi 3 septembre 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps agréable ce jeudi. Températures sur les plages : 15°C à 26°C.
+☀️ Temps agréable ce jeudi. Températures sur les plages : 16°C à 26°C.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Dieppe / Fécamp / Cherbourg
@@ -328,8 +326,8 @@ Les températures maximales atteignent 26°C à Lisieux et Évreux, 25°C à Rou
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent modéré de Nord-Est (25 km/h avec rafales atteignant 50 km/h) ce jeudi.
-🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
+🌬️ Vent : Vent modéré de Nord-Est (20 km/h avec rafales atteignant 45 km/h) ce jeudi.
+🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce jeudi avec maintien de la sécheresse de surface.
@@ -351,7 +349,9 @@ Les températures maximales atteignent 26°C à Lisieux et Évreux, 25°C à Rou
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du jeudi 3 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ samedi 5 septembre : Un ciel variable domine, alternant nuages et éclaircies sur la région. Les températures restent agréables, de 13°C à 26°C, avec un vent faible à modéré. Quelques gouttes possibles au Havre, mais le temps reste sec ailleurs.
-▶ dimanche 6 septembre : La journée s'annonce plus chaude et ensoleillée, avec un ciel dégagé sur l'ensemble du territoire. Les maximales grimpent jusqu'à 29°C dans l'intérieur, tandis que le vent se renforce légèrement en rafales atteignant 45 km/h sur les côtes.
-▶ lundi 7 septembre : Le temps se dégrade avec un ciel très nuageux à couvert sur toute la Normandie. Les températures baissent, comprises entre 16°C et 25°C, et le vent d'ouest souffle en rafales jusqu'à 45 km/h. Quelques averses isolées sont possibles, notamment à Dieppe.
+▶ samedi 5 septembre : Le ciel normand sera partagé entre éclaircies et nuages, avec un risque de très faibles précipitations (0,1 mm) sur Rouen, Caen, Le Havre et Lisieux. Les températures maximales seront agréables, de 22°C à Caen à 26°C à Lisieux, tandis que le vent restera faible, entre 5 et 15 km/h. Les minimales matinales seront fraîches, autour de 13°C à l'intérieur des terres.
+
+▶ dimanche 6 septembre : Une nette hausse des températures est attendue, avec des maximales atteignant 29°C à Rouen et 30°C à Cherbourg, Alençon et Lisieux. Le ciel deviendra plus nuageux sur la moitié ouest de la région (Caen, Le Havre, Cherbourg, Alençon, Lisieux), avec des rafales de vent pouvant souffler jusqu'à 50 km/h. De faibles pluies (0,3 à 1,2 mm) sont possibles, notamment sur Évreux et Rouen.
+
+▶ lundi 7 septembre : Le temps se dégrade avec un ciel très nuageux à couvert sur l'ensemble de la Normandie, et un vent soutenu de 20 à 25 km/h, avec des rafales atteignant 40 à 45 km/h. Les températures maximales baissent nettement, comprises entre 22°C au Havre et 26°C à Évreux et Dieppe. Aucune précipitation significative n'est attendue, mais le ciel restera lourd.
 
