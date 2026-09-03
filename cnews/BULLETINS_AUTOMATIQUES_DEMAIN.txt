@@ -13,10 +13,10 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le ciel français présente un contraste marqué. Une grande partie du pays bénéficie d'un soleil dominant, notamment de la Bretagne aux Pays de la Loire, en passant par l'Île-de-France et le Centre-Val de Loire. Paris enregistre ainsi 20°C, Tours 13°C et Poitiers 15°C. Cependant, des nuages plus nombreux s'invitent sur le quart nord-ouest. Des averses sont attendues sur les Hauts-de-France, avec 0.5 mm de pluie à Lille (18°C) où le vent souffle à 25 km/h avec des rafales atteignant 55 km/h, et 0.2 mm à Laon (16°C). Des averses sont également signalées en Bretagne, à Brest (20°C).
+Ce vendredi matin, le temps se montre contrasté sur le territoire. Une perturbation apporte des averses sur une large partie nord-ouest et nord-est du pays. Des pluies faibles sont attendues sur Lille, où le vent soufflera à 25 km/h avec des rafales atteignant 55 km/h. Laon connaîtra également des averses, tandis que Rouen et Caen seront sous un ciel nuageux avec quelques averses possibles. Les températures minimales sont douces, avec 18°C à Lille, 17°C à Rouen et 20°C à Paris. Plus au sud, le soleil domine largement, notamment à Brest, Paris, Tours et Poitiers, où le ciel est dégagé. Les vents restent modérés sur l'ensemble du territoire.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel français se partage entre éclaircies et passages nuageux. Des averses parfois soutenues sont attendues sur le nord du pays, notamment à Lille où le vent atteindra 25 km/h avec des rafales à 55 km/h, et à Laon. Plus à l'ouest, Rouen et Caen connaîtront un ciel nuageux, sans précipitations. Le soleil dominera largement sur un grand quart sud-ouest, de Brest à Poitiers, où les températures maximales s'élèveront à 29°C à Brest et 31°C à Poitiers. Paris profitera également d'un après-midi ensoleillé avec 29°C.
+Ce vendredi après-midi, le temps sensible se divise entre un ciel généreusement ensoleillé sur une large partie sud et centre du pays, et des conditions plus instables au nord. Des averses parfois soutenues sont attendues sur les Hauts-de-France, notamment à Lille où le mercure atteindra 23°C. Des rafales de vent pourront y atteindre 55 km/h. Plus à l'ouest, la Bretagne et les Pays de la Loire profitent d'un soleil dominant, avec 29°C à Brest et 28°C à Nantes. Le centre et le sud-ouest connaissent une forte chaleur, avec 31°C à Tours et Poitiers, sous un ciel dégagé.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce vendredi avec maintien de la sécheresse de surface.
@@ -38,13 +38,9 @@ Ce vendredi après-midi, le ciel français se partage entre éclaircies et passa
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-📉 Tendance – 3 jours suivants (dimanche 6 septembre au mardi 8 septembre)
-
-▶ dimanche 6 septembre : Poursuite d'une forte chaleur sous un soleil généreux. Au lever du jour, les températures minimales oscillent autour de 10°C. L'après-midi, le mercure grimpe jusqu'à 36°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
-
-▶ lundi 7 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 15°C. L'après-midi, le mercure grimpe jusqu'à 30°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
-
-▶ mardi 8 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 26°C sous abri. Attention aux rafales de vent atteignant 60 km/h.
+▶ dimanche 6 septembre : Le soleil reprend ses droits sur l'ensemble du territoire. Le ciel est dégagé du Nord au Sud, avec une chaleur qui s'accentue nettement. Les maximales grimpent fortement, atteignant 36°C à Poitiers et 34°C à Tours, tandis que Lille respire avec 26°C. Le vent reste modéré, sauf sur la pointe bretonne où les rafales atteignent 45 km/h.
+▶ lundi 7 septembre : La dégradation s'amorce par l'Ouest. Le ciel se voile et devient très nuageux sur la Normandie et les Pays de la Loire, avec quelques faibles pluies possibles de Rouen à Rennes. Ailleurs, la chaleur persiste, avec 30°C à Tours et Poitiers, et 29°C à Paris et Laon. Le vent d'ouest se renforce en bord de Manche, avec des rafales à 50 km/h sur Lille.
+▶ mardi 8 septembre : Le temps se dégrade franchement sur une large moitié nord. Des pluies parfois soutenues sont attendues, notamment en Bretagne avec 11 mm à Brest et un vent fort avec des rafales à 60 km/h. Les températures chutent nettement, avec des maximales qui peinent à dépasser 20°C à Lille, Rouen ou Rennes. Le Sud reste plus épargné mais sous un ciel variable.
 
 
 --------------------------------------------------------------------------------
@@ -56,16 +52,18 @@ Ce vendredi après-midi, le ciel français se partage entre éclaircies et passa
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le Nord-Pas-de-Calais se réveille sous un ciel nuageux, marqué par la présence d'averses généralisées sur l'ensemble de la région. Des pluies faibles sont observées, avec 0.5 mm relevés à Lille et St-Hilaire-sur-Helpe, et jusqu'à 0.9 mm à Valenciennes. Les températures minimales affichent 17°C à St-Hilaire-sur-Helpe et Maubeuge, et 18°C à Lille et Valenciennes. Le vent souffle modérément, avec des vitesses atteignant 35 km/h sur le littoral, notamment à Dunkerque et Steenvoorde, où des rafales de 60 à 65 km/h sont enregistrées. L'intérieur des terres connaît également un vent soutenu, avec des rafales autour de 50 à 55 km/h.
+Ce vendredi matin, le ciel du Nord est majoritairement nuageux, avec des éclaircies timides par endroits. Des averses sont observées sur plusieurs localités, notamment à Valenciennes où 1.6 mm de pluie sont relevés, et à Steenvoorde avec 0.4 mm. Ailleurs, les précipitations restent faibles, comme à St-Hilaire-sur-Helpe (0.6 mm) et Dunkerque (0.2 mm).
+
+Les températures minimales affichent 17°C à St-Hilaire-sur-Helpe et Maubeuge, et 18°C à Lille et Valenciennes. Le vent souffle modérément sur l'ensemble de la région, avec des vitesses avoisinant les 25 à 35 km/h. Des rafales atteignent 65 km/h sur le littoral, notamment à Watten et Dunkerque, nécessitant une vigilance particulière.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le ciel de la région Nord se présente sous un aspect mitigé, alternant entre nuages et éclaircies, avec des passages pluvieux localisés. Des pluies faibles sont attendues notamment sur Valenciennes et Steenvoorde. Sur l'ensemble du territoire, le vent soufflera de manière modérée, avec des rafales pouvant atteindre 65 km/h sur le littoral, notamment à Dunkerque. Les températures maximales afficheront 26°C à Dunkerque, 25°C à Valenciennes et 23°C à Maubeuge. L'intérieur des terres, comme à Douai ou Roubaix, connaîtra également des pluies faibles et un ciel peu nuageux, avec des maximales avoisinant les 23°C.
+Ce vendredi après-midi, le ciel se partage entre éclaircies et passages nuageux sur la région. Des averses sont attendues localement, notamment sur Valenciennes et Steenvoorde où le ciel se montrera couvert. Ailleurs, les éclaircies dominent, comme à Maubeuge et Douai. Les températures maximales atteindront 25°C à Valenciennes et 26°C à Dunkerque, tandis que Lille et Roubaix enregistreront 23°C. Le vent soufflera de 25 à 35 km/h, avec des rafales pouvant atteindre 65 km/h sur Watten et Dunkerque, nécessitant une vigilance particulière le long du littoral.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 4 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 19°C le matin à 26°C l'après-midi.
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 19°C le matin à 26°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -77,7 +75,7 @@ Ce vendredi après-midi, le ciel de la région Nord se présente sous un aspect 
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
 🌬️ Vent : Vent de Nord-Est modéré (35 km/h avec rafales atteignant 65 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
@@ -102,11 +100,11 @@ Ce vendredi après-midi, le ciel de la région Nord se présente sous un aspect 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 6 septembre : Le soleil s’impose largement sur l’ensemble du territoire. Les températures maximales grimpent entre 24 et 27 °C, avec un vent faible de 10 à 15 km/h. Aucune pluie n’est attendue, hormis quelques gouttes insignifiantes à Watten (0,9 mm).
+▶ dimanche 6 septembre : Le soleil domine largement sur l’ensemble du Nord. Les températures grimpent jusqu’à 27°C à Valenciennes et Dunkerque, avec des minimales fraîches autour de 11°C. Le vent reste faible, de 10 à 15 km/h, offrant une journée calme et lumineuse.
 
-▶ lundi 7 septembre : La journée reste très ensoleillée et la chaleur s’accentue, avec des maximales atteignant 28 °C à Saint-Hilaire-sur-Helpe. Le vent se renforce sur le littoral, avec des rafales possibles jusqu’à 55 km/h à Dunkerque. Quelques averses isolées pourraient toucher Maubeuge (4,8 mm), mais l’essentiel du ciel demeure sec.
+▶ lundi 7 septembre : Le temps reste sec et ensoleillé dans la majorité des secteurs, mais des averses localisées sont possibles, notamment sur Maubeuge et Roubaix. Les maximales atteignent 28°C à Saint-Hilaire-sur-Helpe, mais le vent se renforce avec des rafales jusqu’à 55 km/h sur le littoral dunkerquois.
 
-▶ mardi 8 septembre : Le temps se dégrade nettement : un ciel très nuageux apporte des pluies modérées, notamment sur le littoral (9,6 mm à Dunkerque) et dans la métropole lilloise (6 mm). Les températures chutent, avec des maximales ne dépassant pas 21 °C. Le vent reste soutenu, avec des rafales de 40 à 45 km/h.
+▶ mardi 8 septembre : Une dégradation pluvieuse touche la région. Les précipitations sont modérées à fortes, avec jusqu’à 9,6 mm attendus à Dunkerque et 6 mm à Lille. Les températures baissent nettement, plafonnant entre 18°C et 21°C. Le vent souffle en rafales jusqu’à 45 km/h sur la côte.
 
 
 --------------------------------------------------------------------------------
@@ -118,17 +116,17 @@ Ce vendredi après-midi, le ciel de la région Nord se présente sous un aspect 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps s'annonce radieux sur l'ensemble de la région, avec un soleil dominant qui s'impose dès les premières heures. Aucune précipitation n'est à signaler. Les températures minimales affichent 15°C à La Rochelle et Blanzac-Porcheresse, 12°C à Jarnac, et 17°C à Angoulême. Le vent se montre généralement faible à modéré sur l'intérieur des terres, soufflant autour de 10 à 15 km/h. Sur le littoral, notamment à Chassiron, une brise plus soutenue est attendue, atteignant 30 km/h avec des rafales pouvant aller jusqu'à 40 km/h.
+Ce vendredi matin, le temps se présente sous un aspect radieux sur l'ensemble de la région. Un soleil dominant illumine le ciel, sans la moindre trace de nuages. Les températures minimales affichent 15°C à La Rochelle et Blanzac-Porcheresse, 17°C à Angoulême et Soyaux, tandis que Montbron enregistre 13°C. Le vent souffle modérément, avec une brise de 20 km/h à La Rochelle, et atteint 30 km/h à Chassiron, avec des rafales pouvant atteindre 40 km/h. Les zones intérieures, comme Gond-Pontouvre ou La Couronne, connaissent des vents plus faibles, autour de 15 km/h. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, un soleil éclatant dominera l'ensemble de la région, offrant un ciel sans nuage. Les températures s'annoncent particulièrement élevées, avec un contraste marqué entre le littoral et l'intérieur des terres. La Rochelle atteindra 34°C, tandis que Chassiron bénéficiera d'une brise côtière avec 22°C. Dans les terres, la chaleur sera intense, avec 38°C attendus à Gond-Pontouvre, Angoulême et Soyaux. Le vent soufflera faiblement, autour de 20 km/h sur le littoral et 10 à 15 km/h à l'intérieur des terres. Aucune précipitation n'est à prévoir.
+Ce vendredi après-midi, la région bénéficie d'un temps largement ensoleillé, avec un ciel dégagé sur l'ensemble des départements. Les températures maximales affichent des valeurs estivales, voire très chauds par endroits. Angoulême, Soyaux et La Couronne atteignent les 38°C, tandis que La Rochelle profite de 34°C. Le vent reste modéré, soufflant à environ 20 km/h sur La Rochelle et 30 km/h à Chassiron, avec des rafales ne dépassant pas les 40 km/h sur le littoral. Aucune précipitation n'est à signaler.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (vendredi 4 septembre 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
 ☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur l'ensemble des plages charentaises ce vendredi.
-🌡️ Température sur le littoral : 15°C à 38°C
+🌡️ Température sur le littoral : 16°C à 38°C
 🌊 Température de l’eau : 24°C à 25°C
 
 🌴 Royan / Côte de Beauté / Rochefort
@@ -165,9 +163,11 @@ Ce vendredi après-midi, un soleil éclatant dominera l'ensemble de la région, 
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 6 septembre : 🔥 Le pic de chaleur s'intensifie encore, avec des températures maximales pouvant atteindre 40°C dans les terres, de l'Angoumois à la Charente. Le soleil reste omniprésent sur l'ensemble du département, sans une once de nuage. Le vent, faible à modéré, ne parviendra pas à adoucir cette atmosphère très chaud, surtout sur les secteurs continentaux les plus exposés.
-▶ lundi 7 septembre : ⛈️ Une dégradation s'amorce par l'ouest avec l'arrivée de nuages et de quelques averses orageuses, principalement sur les zones côtières. Les maximales chutent nettement, perdant jusqu'à 10°C, pour osciller entre 28°C et 32°C à l'intérieur des terres. Le vent se renforce en bord de mer, avec des rafales pouvant atteindre 50 km/h sur la pointe, annonçant un changement de temps.
-▶ mardi 8 septembre : 🌦️ Le temps devient instable et plus frais, avec des averses parfois marquées et orageuses sur l'ensemble de la région. Les températures poursuivent leur baisse, les maximales ne dépassant plus 21°C à 27°C selon les secteurs, un vrai coup de frais après cette séquence estivale. Vent toujours présent, avec des rafales proches de 40 km/h sur le littoral, et des cumuls de pluie possibles localement notables.
+▶ dimanche 6 septembre : La chaleur s’intensifie encore avec un soleil omniprésent. Les maximales grimpent jusqu’à 40°C à Angoulême et Gond-Pontouvre, tandis que le littoral reste plus respirable avec 35°C à Chassiron. Le vent se renforce légèrement, avec des rafales atteignant 45 km/h sur les côtes.
+
+▶ lundi 7 septembre : Le temps bascule avec l’arrivée d’un ciel variable et de faibles précipitations éparses, notamment sur La Rochelle et le secteur de Cognac. Les températures chutent nettement : on attend 29°C à Angoulême et seulement 24°C à Chassiron. Le vent reste modéré, avec des pointes à 40 km/h sur le littoral.
+
+▶ mardi 8 septembre : La fraîcheur s’installe durablement avec un ciel partagé entre éclaircies et passages nuageux. Les maximales plafonnent à 26°C dans l’intérieur et 21°C à Chassiron. Des averses localisées sont possibles, notamment sur Jarnac et Cognac, accompagnées de rafales de vent jusqu’à 45 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -179,16 +179,16 @@ Ce vendredi après-midi, un soleil éclatant dominera l'ensemble de la région, 
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps se caractérise par une alternance de passages nuageux et d'éclaircies sur l'ensemble de la région. Des averses sont attendues localement, notamment à Groffliers où le thermomètre affiche 18°C, à Robecq avec 19°C et à Remilly-Wirquin avec 17°C. Le vent souffle de manière soutenue, atteignant des rafales de 75 km/h à Gravelines et Offekerque, et 70 km/h à Marck et Groffliers, justifiant une vigilance particulière. Les températures minimales s'échelonnent de 17°C à Racquinghem et Cauchy-à-la-Tour à 19°C à Marck, avec une moyenne de 18°C sur le littoral à Leffrinckoucke.
+Ce vendredi matin, le temps se caractérise par une instabilité généralisée sur la région. Des averses sont attendues sur la quasi-totalité du territoire, notamment à Gravelines (17°C), Offekerque (17°C) et Groffliers (18°C). Le vent souffle modérément, avec des rafales atteignant 70 km/h à Gravelines, Offekerque et Groffliers, nécessitant une vigilance particulière. Les températures minimales varient de 16°C à Cauchy-à-la-Tour à 19°C à Robecq. Le littoral connaît des températures légèrement plus douces que l'intérieur des terres, mais l'ensemble de la région est concerné par ce régime d'averses.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le temps se montrera contrasté sur la région. Des averses sont attendues sur le littoral, notamment à Leffrinckoucke où le mercure atteindra 26°C, et à Marck avec 22°C. Ces précipitations seront accompagnées de vents soutenus, avec des rafales pouvant atteindre 75 km/h à Gravelines et Offekerque, où le soleil dominera malgré tout et les températures oscilleront autour de 22°C. Plus à l'intérieur des terres, le ciel sera plus couvert à Groffliers et Robecq, affichant respectivement 21°C et 22°C, avec des rafales de 70 km/h. Un contraste thermique est notable entre le littoral et l'intérieur des terres.
+Ce vendredi après-midi, le temps se caractérise par une alternance de passages nuageux et d'éclaircies sur la région. Des averses sont attendues localement, notamment à Leffrinckoucke et Marck, où le ciel sera partiellement ensoleillé mais avec des précipitations. Plus à l'intérieur, comme à Racquinghem et Cauchy-à-la-Tour, le soleil domine malgré quelques nuages. Les températures maximales atteignent 26°C à Leffrinckoucke, 22°C à Gravelines et Offekerque, et 21°C à Remilly-Wirquin. Le vent souffle de manière soutenue, avec des rafales atteignant 70 km/h à Gravelines, Offekerque et Groffliers, nécessitant une vigilance particulière.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 4 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 19°C le matin à 26°C l'après-midi.
+☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 18°C le matin à 26°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -201,7 +201,7 @@ Ce vendredi après-midi, le temps se montrera contrasté sur la région. Des ave
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
 ☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
-🌬️ Vent : Vent de Nord-Est modéré (45 km/h avec rafales atteignant 75 km/h) ce vendredi.
+🌬️ Vent : Vent de Nord-Est modéré (40 km/h avec rafales atteignant 70 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
 
@@ -225,11 +225,11 @@ Ce vendredi après-midi, le temps se montrera contrasté sur la région. Des ave
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 6 septembre : Le soleil domine largement sur l'ensemble de la région, avec des températures maximales très douces de 24 à 27°C. Le vent reste modéré, de 10 à 20 km/h, et quelques faibles précipitations localisées (0,3 à 0,6 mm) ne gâchent pas la journée.
+▶ dimanche 6 septembre : Le soleil domine largement sur l'ensemble de la région, avec un ciel dégagé ou peu nuageux. Les températures maximales atteignent 27°C à Leffrinckoucke, pour des minimales fraîches de 9°C à Remilly-Wirquin. Le vent reste modéré, de 10 à 15 km/h, et quelques faibles précipitations résiduelles sont possibles localement.
 
-▶ lundi 7 septembre : Le temps reste sec et ensoleillé, mais le vent se renforce nettement avec des rafales atteignant 50 à 55 km/h sur le littoral. Les maximales sont comprises entre 21 et 26°C, et les minimales remontent entre 15 et 18°C.
+▶ lundi 7 septembre : Temps sec et ensoleillé, mais le vent se renforce nettement avec des rafales atteignant 55 km/h sur le littoral. Les maximales sont comprises entre 21°C et 26°C, les minimales entre 15°C et 19°C. Aucune pluie n'est attendue, mais la journée sera venteuse.
 
-▶ mardi 8 septembre : Une dégradation s'amorce avec un vent fort (rafales jusqu'à 60 km/h) et des averses parfois soutenues, notamment sur le nord du littoral (jusqu'à 9,6 mm à Leffrinckoucke). Les températures baissent, avec des maximales ne dépassant pas 18 à 21°C.
+▶ mardi 8 septembre : Dégradation sensible avec l'arrivée de pluies parfois modérées, notamment sur le nord du territoire (jusqu'à 9,6 mm à Leffrinckoucke). Le vent reste soutenu, avec des rafales jusqu'à 55 km/h. Les températures baissent, ne dépassant pas 21°C, avec des minimales autour de 14-17°C.
 
 
 --------------------------------------------------------------------------------
@@ -241,18 +241,16 @@ Ce vendredi après-midi, le temps se montrera contrasté sur la région. Des ave
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, le temps se montre mitigé sur la région. Un ciel nuageux domine sur une grande partie du territoire, notamment à Lille et Roubaix où le soleil reste voilé. Des averses sont observées localement, comme à Valenciennes et Steenvoorde, accompagnées de précipitations faibles. Les températures minimales affichent 17°C à St-Hilaire-sur-Helpe et Maubeuge, tandis que Dunkerque, sur le littoral, enregistre 18°C. Le vent souffle modérément, avec des rafales atteignant 65 km/h à Dunkerque, et 60 km/h à Steenvoorde et Watten.
+Ce vendredi matin, le temps s'annonce mitigé sur la région avec des températures minimales comprises entre 17°C et 19°C. Des averses sont attendues sur plusieurs localités, notamment à St-Hilaire-sur-Helpe où le mercure affichera 17°C, à Lille avec 18°C et à Dunkerque où il fera 18°C. Le vent soufflera modérément, avec des rafales pouvant atteindre 65 km/h sur le littoral, notamment à Watten et Dunkerque. L'intérieur des terres, comme à Valenciennes (18°C) et Steenvoorde (19°C), connaîtra un ciel couvert.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, le temps s'annonce mitigé sur la région. Un voile nuageux est attendu sur Valenciennes et Steenvoorde, avec des températures atteignant respectivement 25°C et 22°C. Des éclaircies dominent sur une grande partie du territoire, notamment à Troisvilles, Maubeuge et Douai, où le soleil sera bien présent.
-
-Cependant, des averses sont à prévoir localement, notamment à St-Hilaire-sur-Helpe, Lille et Roubaix, avec des maximales de 24°C, 23°C et 23°C. Le vent soufflera modérément, avec des rafales pouvant atteindre 65 km/h sur Dunkerque, où la température culminera à 26°C. Le littoral connaîtra des conditions plus venteuses que l'intérieur des terres.
+Ce vendredi après-midi, le ciel se montrera variable sur la région, alternant entre éclaircies et passages nuageux. Des averses éparses sont attendues, notamment sur Valenciennes où les précipitations atteindront 1.6 mm, et Roubaix avec 1.5 mm. Les températures maximales s'établiront autour de 24°C à St-Hilaire-sur-Helpe et Troisvilles, et 26°C à Dunkerque. Le vent soufflera généralement entre 25 et 35 km/h, avec des rafales pouvant atteindre 65 km/h sur Watten et Dunkerque, nécessitant une vigilance particulière sur le littoral.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (vendredi 4 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Influence anticyclonique calme assurant un temps sec et modérément doux sur la côte. Températures de 19°C le matin à 26°C l'après-midi.
+☀️ Circulation d'un flux océanique d'ouest perturbé et humide sur la côte. Températures de 19°C le matin à 26°C l'après-midi.
 🌊 Température de l’eau : 17°C à 18°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -264,7 +262,7 @@ Cependant, des averses sont à prévoir localement, notamment à St-Hilaire-sur-
 
 📍 Zones : Dunkerque • Calais • Boulogne-sur-Mer • Le Touquet
 
-☀️ Situation générale : Influence anticyclonique calme assurant un temps sec et modérément doux.
+☀️ Situation générale : Circulation d'un flux océanique d'ouest perturbé et humide.
 🌬️ Vent : Vent de Nord-Est modéré (35 km/h avec rafales atteignant 65 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 ⚠️ Visibilité : Bonne sur l'ensemble du littoral.
@@ -289,11 +287,11 @@ Cependant, des averses sont à prévoir localement, notamment à St-Hilaire-sur-
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 6 septembre : Un grand soleil s’impose sur toute la région dès le matin. Les températures grimpent jusqu’à 27°C à Valenciennes et Dunkerque, avec un vent faible de 10 à 15 km/h. Aucune précipitation à signaler, sauf quelques gouttes négligeables sur Troisvilles et Watten.
+▶ dimanche 6 septembre : Le soleil fait son grand retour sur l'ensemble de la région. Les températures sont agréables, avec des minimales fraîches autour de 11°C et des maximales comprises entre 24°C et 27°C. Le vent reste modéré, de 10 à 15 km/h, pour une journée calme et lumineuse.
 
-▶ lundi 7 septembre : Le temps reste sec et ensoleillé, mais le vent se renforce avec des rafales atteignant 50 à 55 km/h sur le littoral et l’intérieur. Les maximales sont encore élevées, de 25°C à Maubeuge à 28°C à St-Hilaire-sur-Helpe. Quelques averses isolées pourraient concerner Maubeuge (4,8 mm) et Roubaix.
+▶ lundi 7 septembre : Le temps reste sec mais le vent se renforce sensiblement, avec des rafales pouvant atteindre 50 à 55 km/h sur le littoral. Les températures grimpent encore, avec des maximales de 23°C à 28°C selon les secteurs. Quelques averses isolées sont possibles, notamment sur Maubeuge.
 
-▶ mardi 8 septembre : Dégradation notable avec un ciel très nuageux et des pluies parfois soutenues, notamment sur le littoral : jusqu’à 9,6 mm à Dunkerque et 6,9 mm à Steenvoorde. Les températures chutent, ne dépassant pas 21°C en journée, et le vent reste modéré avec des rafales jusqu’à 45 km/h.
+▶ mardi 8 septembre : La dégradation s'amorce avec un ciel devenant très nuageux et des précipitations plus marquées, notamment sur le littoral et l'agglomération lilloise. Les cumuls de pluie pourront atteindre 6 à 9 mm à Dunkerque et Lille. Les températures baissent nettement, avec des maximales ne dépassant pas 18°C à 21°C.
 
 
 --------------------------------------------------------------------------------
@@ -305,10 +303,10 @@ Cependant, des averses sont à prévoir localement, notamment à St-Hilaire-sur-
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce vendredi matin, la Normandie se réveille sous un ciel partagé entre nuages et éclaircies. Le soleil tente de percer la couverture nuageuse sur l'ensemble de la région. Les températures minimales affichent 16°C à Rouen et Evreux, 17°C à Caen, et 18°C à Cherbourg et Alençon. Le vent souffle modérément, atteignant 25 km/h sur le littoral, notamment au Havre et à Cherbourg, avec des rafales pouvant aller jusqu'à 60 km/h à Dieppe. Aucune précipitation n'est attendue pour cette première partie de journée.
+Ce vendredi matin, la Normandie se réveille sous un ciel partagé entre éclaircies et passages nuageux sur l'ensemble de la région. Aucune précipitation n'est à signaler. Les températures minimales s'échelonnent de 15°C à Lisieux à 19°C au Havre et Cherbourg. Le vent souffle modérément, avec des rafales pouvant atteindre 55 km/h sur le littoral dieppois, tandis qu'elles sont de l'ordre de 40 km/h dans l'intérieur des terres, comme à Evreux. Les brises marines sont plus marquées sur les côtes, atteignant 25 km/h au Havre et Cherbourg.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce vendredi après-midi, la Normandie connaît un temps globalement nuageux, avec des éclaircies tentant de percer par intermittence. Quelques averses sont attendues localement, notamment sur le littoral nord-ouest, avec un risque de pluies faibles. Les températures maximales atteignent 25°C à Rouen et Dieppe, 24°C à Caen et Lisieux. Le vent souffle modérément, avec des rafales pouvant atteindre 60 km/h sur Dieppe et 55 km/h à Cherbourg, orienté majoritairement de l'ouest. Les températures restent douces, avec un contraste léger entre le littoral et l'intérieur des terres.
+Ce vendredi après-midi, la Normandie connaîtra un ciel partagé entre éclaircies et passages nuageux. Les conditions resteront globalement sèches sur l'ensemble de la région. Les températures maximales atteindront 25°C à Rouen et Dieppe, 24°C à Caen et Alençon, et 23°C au Havre et Cherbourg. Le vent soufflera modérément, avec des vitesses de 20 à 25 km/h, et des rafales pouvant atteindre 55 km/h sur le littoral dieppois, ainsi que 50 km/h au Havre et à Cherbourg.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (vendredi 4 septembre 2026)
@@ -327,7 +325,7 @@ Ce vendredi après-midi, la Normandie connaît un temps globalement nuageux, ave
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent modéré de Nord-Est (25 km/h avec rafales atteignant 60 km/h) ce vendredi.
+🌬️ Vent : Vent modéré de Nord-Est (25 km/h avec rafales atteignant 55 km/h) ce vendredi.
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -350,9 +348,9 @@ Ce vendredi après-midi, la Normandie connaît un temps globalement nuageux, ave
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du vendredi 4 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ dimanche 6 septembre : Le soleil s’impose largement sur la Normandie, avec un ciel dégagé du matin au soir. Les températures grimpent fortement : de 9°C à Rouen à 31°C à Lisieux en maximales. Le vent reste faible, de 15 à 20 km/h, offrant une journée estivale et calme.
+▶ dimanche 6 septembre : Le soleil s'impose largement sur toute la région, avec un ciel dégagé du matin au soir. Les températures grimpent fortement, de 9°C à Rouen à 31°C à Lisieux en passant par 30°C à Dieppe et Alençon. Le vent reste faible, de 15 à 20 km/h.
 
-▶ lundi 7 septembre : Le temps devient plus nuageux, surtout près des côtes, avec un ciel variable. Les maximales baissent sensiblement, entre 22°C au Havre et 26°C à Dieppe, et le vent se renforce avec des rafales jusqu’à 50 km/h en fin de journée. Quelques gouttes possibles sur l’est de la région.
+▶ lundi 7 septembre : Le temps devient plus variable, avec un ciel alternant nuages et éclaircies. Quelques faibles pluies sont possibles localement, notamment à Rouen et Lisieux (0,3 mm). Les maximales baissent, comprises entre 22°C au Havre et 26°C à Evreux et Dieppe, avec des rafales de vent atteignant 40 km/h sur les côtes.
 
-▶ mardi 8 septembre : La dégradation se confirme avec un ciel très nuageux et des averses éparses, notamment sur le Calvados et la Manche. Les températures maximales peinent à dépasser 21°C, et le vent devient plus fort, avec des rafales atteignant 60 km/h sur Cherbourg. Le temps reste agité et plus frais.
+▶ mardi 8 septembre : La dégradation se confirme avec un ciel très nuageux et des précipitations plus fréquentes, surtout sur le littoral (1,8 mm au Havre). Les températures maximales chutent entre 20°C et 22°C, et le vent se renforce avec des rafales de 40 à 55 km/h, notamment à Cherbourg et Dieppe.
 
