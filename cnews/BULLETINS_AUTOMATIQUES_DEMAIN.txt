@@ -13,10 +13,12 @@ FICHIER SOURCE : /home/runner/work/meteo-kappa/meteo-kappa/cnews/BULLETINS_AUTOM
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la France se réveille sous un ciel majoritairement clément, mais quelques nuances se dessinent. Le soleil dominera largement sur la Bretagne intérieure, comme à Rennes où la minimale atteint 15°C. Un voile nuageux plus dense est observé sur la pointe bretonne et l'Île-de-France, avec un ciel couvert à Brest (16°C) et Paris (16°C). Ailleurs, de belles éclaircies alterneront avec des passages nuageux, notamment de Lille (10°C) à Poitiers (17°C). Le vent soufflera modérément sur la façade atlantique, atteignant 20 km/h avec des rafales jusqu'à 40 km/h sur Brest et Nantes, où quelques faibles pluies sont possibles.
+Ce dimanche matin, la France se réveille sous un ciel partagé. Une couverture nuageuse prédomine sur le nord-ouest et le Bassin parisien, avec des conditions très nuageuses de Lille (11°C) à Paris (16°C), en passant par Brest (16°C). Le vent y est faible à modéré, atteignant 20 km/h sur les côtes bretonnes et ligériennes, avec des rafales jusqu'à 40 km/h.
+
+Plus au sud, des éclaircies généreuses s'imposent. De la Normandie aux Pays de la Loire, le soleil est peu nuageux, notamment à Rouen (13°C) et Nantes (15°C). Un soleil dominant est même observé à Rennes (15°C). Les températures minimales sont douces, atteignant 17°C à Poitiers, annonçant une journée estivale.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le soleil dominera largement sur la Bretagne, notamment à Rennes où le ciel sera dégagé. Ailleurs, le temps se montrera plus mitigé. Des passages nuageux, parfois denses, couvriront le ciel de Brest et Paris, tandis que des éclaircies généreuses persisteront de la Normandie aux Pays de la Loire. Quelques averses isolées sont possibles sur Nantes. Le vent soufflera faiblement, avec des rafales atteignant 40 km/h sur les côtes bretonnes et atlantiques. Les températures resteront estivales, avec 33°C à Poitiers et 32°C à Nantes.
+Ce dimanche après-midi, le soleil dominera largement sur une grande partie du pays, notamment sur l'ouest et le sud-ouest, avec des températures estivales. Rennes profitera d'un soleil éclatant avec 27°C. Des nuages plus nombreux couvriront le ciel du nord au nord-est, de Lille (26°C) à Paris (29°C), sans toutefois apporter de précipitations. La Bretagne, de Brest à Nantes, verra également un ciel peu nuageux à très nuageux, avec des maximales atteignant 29°C à Brest et 32°C à Nantes. Le vent soufflera modérément sur les côtes bretonnes, avec des rafales pouvant atteindre 40 km/h.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
 🌧️ Pluies & Humidité : Temps sec sur la région ce dimanche avec maintien de la sécheresse de surface.
@@ -38,11 +40,11 @@ Ce dimanche après-midi, le soleil dominera largement sur la Bretagne, notamment
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Des averses parfois soutenues arrosent l’ouest et le nord du pays, avec des cumuls notables : 31,8 mm à Tours, 10,8 mm à Rennes, 10,7 mm à Brest. Les températures maximales restent modestes, de 19°C à Lille à 25°C à Poitiers. Le vent est modéré, avec des rafales atteignant 45 km/h sur le littoral nord.
+▶ mardi 8 septembre : Une dégradation pluvieuse touche une large moitié ouest, de la Bretagne au Poitou, avec des cumuls notables (jusqu'à 16 mm à Poitiers). Le vent se lève, avec des rafales jusqu'à 45 km/h dans le Nord. Les maximales chutent nettement, ne dépassant pas 22°C à Paris et 24°C à Tours.
 
-▶ mercredi 9 septembre : Le temps devient très nuageux sur la quasi-totalité des régions, mais les précipitations sont faibles, voire nulles. Les maximales sont de saison, entre 20°C et 22°C. Le vent se renforce sur le nord, avec des rafales jusqu’à 55 km/h à Lille et 50 km/h à Laon.
+▶ mercredi 9 septembre : Le temps s’assèche et les précipitations deviennent rares sur l’ensemble du territoire. Le ciel reste variable, souvent nuageux au nord et plus dégagé au sud. Les températures baissent encore, avec des maximales de 19 à 22°C, et un vent modéré de 15 à 20 km/h.
 
-▶ jeudi 10 septembre : Le ciel reste variable avec des éclaircies, mais des averses résiduelles persistent sur la Bretagne (11,7 mm à Brest) et la façade atlantique. Les températures sont douces, de 19°C à Lille à 21°C à Poitiers. Le vent faiblit légèrement mais reste sensible sur les côtes.
+▶ jeudi 10 septembre : Une nouvelle journée calme et globalement sèche, avec un ciel souvent très nuageux mais sans pluie significative. Les températures restent de saison, comprises entre 18 et 22°C selon les régions. Le vent faiblit, sauf en Bretagne où des rafales à 40 km/h persistent.
 
 
 --------------------------------------------------------------------------------
@@ -54,10 +56,10 @@ Ce dimanche après-midi, le soleil dominera largement sur la Bretagne, notamment
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la région Nord se réveille sous un ciel majoritairement peu nuageux, voire ensoleillé par endroits. Les températures minimales affichent 10°C à Valenciennes et Lille, tandis que Maubeuge et Douai enregistrent 12°C. Le soleil domine notamment sur Troisvilles, Maubeuge, Douai et Watten, où le ciel apparaît dégagé. Ailleurs, quelques nuages discrets parsèment le ciel, offrant de belles éclaircies. Le vent souffle faiblement, avec des brises légères autour de 10 à 15 km/h sur l'ensemble du territoire, sans distinction notable entre le littoral et l'intérieur des terres. Aucune précipitation n'est attendue pour cette matinée.
+Ce dimanche matin, le Nord-Pas-de-Calais se réveille sous un ciel majoritairement nuageux. Les éclaircies se feront rares sur l'ensemble de la région, avec un soleil souvent masqué par des nuages denses. Aucune précipitation n'est toutefois attendue. Les températures minimales s'échelonnent de 10°C à Valenciennes et Troisvilles, à 12°C à St-Hilaire-sur-Helpe et Dunkerque. Le vent soufflera faiblement, autour de 10 à 15 km/h, sans rafales notables. Les conditions resteront calmes, mais l'ambiance sera plutôt grise pour ce début de journée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le Nord-Pas-de-Calais bénéficie d'un temps majoritairement ensoleillé. Le soleil domine largement sur l'intérieur des terres, notamment à Troisvilles et Maubeuge. Quelques passages nuageux, sans conséquence, sont observés sur le littoral et l'ouest de la région, comme à Lille et Dunkerque. Le vent reste faible, soufflant entre 10 et 15 km/h. Les températures maximales atteignent 27°C à Valenciennes et Dunkerque, et 26°C à Lille.
+Ce dimanche après-midi, le ciel de la région Nord se partage entre des éclaircies généreuses et une couverture nuageuse plus présente. Des conditions très nuageuses dominent notamment sur Lille, Roubaix et Dunkerque, où les températures atteignent respectivement 26°C et 27°C. Ailleurs, le soleil s'impose largement, comme à Troisvilles, Maubeuge et Douai, où le mercure grimpe jusqu'à 25°C et 27°C. Le vent souffle faiblement, autour de 10 à 15 km/h, sans provoquer de rafales notables. Aucune précipitation n'est à signaler sur l'ensemble du territoire cet après-midi.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 6 septembre 2026)
@@ -100,11 +102,13 @@ Ce dimanche après-midi, le Nord-Pas-de-Calais bénéficie d'un temps majoritair
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Le ciel se charge rapidement avec des nuages porteurs d’averses. Les précipitations sont modérées, de 1 à 5 mm selon les secteurs, et le vent se renforce : 20 à 25 km/h, avec des rafales atteignant 40 à 50 km/h. Les températures maximales baissent, entre 17 et 20°C, pour des minimales de 13 à 16°C.
+📉 Tendance – 3 jours suivants (mardi 8 septembre au jeudi 10 septembre)
 
-▶ mercredi 9 septembre : Temps instable et venteux. Le ciel reste très nuageux, avec des passages pluvieux épars et parfois des accalmies. Les rafales de vent soufflent fort, jusqu’à 55-60 km/h, surtout dans l’intérieur. Les maximales sont stables, autour de 18 à 20°C, et les minimales descendent entre 10 et 14°C.
+▶ mardi 8 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 13°C. L'après-midi, le mercure grimpe jusqu'à 20°C sous abri. Attention aux rafales de vent atteignant 45 km/h.
 
-▶ jeudi 10 septembre : Pluie plus marquée sur l’ensemble de la région. Les cumuls attendus vont de 2 à 6 mm, avec un vent qui faiblit nettement (10 à 15 km/h). Les températures maximales reculent encore, de 15 à 19°C selon les zones, tandis que les minimales oscillent entre 10 et 13°C.
+▶ mercredi 9 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 11°C. L'après-midi, le mercure grimpe jusqu'à 20°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
+
+▶ jeudi 10 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 10°C. L'après-midi, le mercure grimpe jusqu'à 19°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
 
 
 --------------------------------------------------------------------------------
@@ -116,21 +120,21 @@ Ce dimanche après-midi, le Nord-Pas-de-Calais bénéficie d'un temps majoritair
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, le ciel se présente partagé sur la région. Des éclaircies dominent sur une grande partie de l'intérieur des terres, notamment à Chassiron et Blanzac-Porcheresse où le soleil est bien présent. Les températures minimales y sont de 21°C et 19°C respectivement. Cependant, des passages nuageux plus importants sont observés sur le littoral et l'est du département, comme à La Rochelle avec 18°C et à Angoulême où le mercure affiche 23°C. Une légère pluie de 0.1 mm est relevée à Montbron, Soyaux et Angoulême. Le vent souffle modérément, atteignant 20 km/h à La Rochelle et 30 km/h à Chassiron, avec des rafales pouvant atteindre 45 km/h à Cognac.
+Ce dimanche matin, la Charente-Maritime et la Charente se réveillent sous un ciel contrasté. Sur le littoral, La Rochelle affiche une température minimale de 19°C avec un ciel nuageux, tandis que Chassiron bénéficie d'un soleil dominant et d'une douceur de 21°C. Dans l'intérieur des terres, les températures sont plus élevées, atteignant 23°C à Angoulême et La Couronne, où le ciel est couvert. Ailleurs, comme à Cognac et Montbron, le soleil domine avec des minimales autour de 20°C. Le vent souffle modérément, avec des rafales atteignant 40 km/h sur le littoral. Aucune précipitation n'est attendue pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le département connaîtra une nette division météorologique. Le littoral, notamment du côté de Chassiron, bénéficiera d'un soleil dominant avec 30°C, tandis que La Rochelle affichera un ciel très nuageux et une chaleur intense de 38°C. Un vent de 20 km/h, avec des rafales atteignant 40 km/h, soufflera sur la côte. À l'intérieur des terres, les températures resteront élevées, avec 35°C à Angoulême et La Couronne sous un ciel très nuageux, et 34°C à Jarnac où le soleil sera généreux. Des pluies faibles sont signalées localement à Montbron, Soyaux et Angoulême.
+Ce dimanche après-midi, le département de la Charente-Maritime et une partie de la Charente connaissent des conditions météorologiques estivales. Un soleil dominant est observé sur le littoral, notamment à Chassiron avec 31°C, tandis que l'intérieur des terres, comme à Jarnac et Cognac, bénéficie également d'un ciel dégagé et de 32°C. Quelques nuages sont présents localement, notamment sur La Rochelle où le mercure atteint 37°C et à Angoulême avec 36°C. Le vent souffle modérément, avec une brise côtière de 20 à 25 km/h sur le littoral, et des rafales n'excédant pas 40 km/h.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – LITTORAL CHARENTAIS (dimanche 6 septembre 2026)
 
 🌴 La Rochelle / Île de Ré / Île d’Oléron
 ☀️ Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude sur l'ensemble des plages charentaises ce dimanche.
-🌡️ Température sur le littoral : 20°C à 38°C
+🌡️ Température sur le littoral : 21°C à 37°C
 🌊 Température de l’eau : 24°C à 25°C
 
 🌴 Royan / Côte de Beauté / Rochefort
-☀️ Ensoleillement généreux ce dimanche, maximales de 39°C tempérées par la brise marine.
+☀️ Ensoleillement généreux ce dimanche, maximales de 38°C tempérées par la brise marine.
 🌊 Température de l’eau : 25°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -139,7 +143,7 @@ Ce dimanche après-midi, le département connaîtra une nette division météoro
 📍 Zones : La Rochelle • Rochefort • Royan • Pertuis Breton & d'Antioche
 
 ☀️ Situation synoptique : Poussée d'une dorsale anticyclonique d'altitude advectant une masse d'air très chaude.
-🌬️ Vent : Régime de brises thermiques (30 km/h avec rafales atteignant 45 km/h).
+🌬️ Vent : Régime de brises thermiques (25 km/h avec rafales atteignant 40 km/h).
 🌊 État de la mer : Mer peu agitée à agitée au large (vagues 0.8m à 1.3m), prudence pour la baignade.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -163,11 +167,11 @@ Ce dimanche après-midi, le département connaîtra une nette division météoro
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Le ciel se voile et devient plus menaçant. Les passages nuageux se multiplient en cours de journée, donnant des averses parfois soutenues, notamment sur le secteur d’Angoulême (14 mm attendus). Les températures chutent nettement, avec des maximales comprises entre 23°C et 28°C, et un vent d’ouest modéré.
+▶ mardi 8 septembre : Le ciel se charge nettement, notamment sur l’intérieur des terres, avec des nuages porteurs de pluies localement soutenues (jusqu’à 19 mm à Jarnac). Les températures maximales restent douces, comprises entre 25 et 27°C, mais le vent se renforce avec des rafales de 40 à 45 km/h, surtout dans les terres. Sur le littoral, le temps est plus nuageux avec quelques ondées éparses.
 
-▶ mercredi 9 septembre : Le temps reste mitigé mais en amélioration. Les nuages résiduels laissent place à des éclaircies, mais une perturbation active circule sur le nord du secteur, apportant un peu de pluie fine. Les températures baissent encore, oscillant entre 20°C et 24°C, avec un vent sensible qui se renforce en rafales, atteignant 50 km/h sur la côte rochelaise.
+▶ mercredi 9 septembre : Une nette amélioration se dessine avec le retour d’éclaircies sur la majeure partie de la région. Les précipitations deviennent faibles et irrégulières (moins de 5 mm). En revanche, le vent de nord-ouest se lève, atteignant 30 km/h avec des rafales à 50 km/h sur la côte. Les maximales baissent sensiblement, de 20 à 24°C selon les secteurs.
 
-▶ jeudi 10 septembre : Une accalmie s’amorce sur la région, surtout en soirée. La journée débute sous un ciel partagé avec de belles éclaircies l’après-midi, même si quelques averses subsistent localement sur le littoral (jusqu'à 12 mm à La Rochelle). Les températures restent stables, autour de 23°C, avec un vent d’ouest encore sensible.
+▶ jeudi 10 septembre : Le soleil s’impose à nouveau sur l’ensemble du territoire, avec un temps sec et des températures agréables (maximales de 22 à 23°C, minimales fraîches de 12 à 17°C). Le vent faiblit nettement, ne dépassant pas 15 km/h, offrant une journée calme et lumineuse.
 
 
 --------------------------------------------------------------------------------
@@ -179,16 +183,18 @@ Ce dimanche après-midi, le département connaîtra une nette division météoro
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, le ciel se partage entre éclaircies et passages nuageux sur la région. Des conditions majoritairement ensoleillées sont observées à Gravelines, Offekerque et Racquinghem, où le soleil domine. En revanche, un temps plus nuageux caractérise Leffrinckoucke et Marck. Les températures minimales affichent 9°C à Remilly-Wirquin et Racquinghem, tandis que le littoral, comme à Leffrinckoucke, enregistre 12°C. Un vent léger de 15 km/h souffle sur l'ensemble du territoire, sans aucune précipitation à signaler.
+Ce dimanche matin, le temps se partage entre éclaircies et passages nuageux sur la région. Les températures minimales affichent 12°C à Leffrinckoucke et Lefaux, tandis que Racquinghem enregistre 8°C. Le vent souffle modérément, avec des brises de 15 km/h sur l'ensemble du territoire.
+
+Sur le littoral, notamment à Gravelines et Offekerque, le soleil domine largement. Cependant, des nuages plus présents sont observés à Leffrinckoucke, Marck, Groffliers et Robecq, où le ciel apparaît partiellement couvert. Dans l'intérieur des terres, Remilly-Wirquin connaît également un ciel nuageux, contrastant avec le soleil de Cauchy-à-la-Tour. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le ciel se montrera globalement dégagé sur la région, offrant de belles périodes ensoleillées. Des passages nuageux, parfois plus denses, pourront s'observer localement, notamment du côté de Leffrinckoucke et Robecq. Aucune précipitation n'est attendue sur l'ensemble du territoire. Les températures maximales atteindront 27°C à Leffrinckoucke et Racquinghem, 25°C à Gravelines et Marck, et 24°C à Lefaux. Le vent soufflera faiblement, avec des pointes à 15 km/h, sans distinction notable entre le littoral et l'intérieur des terres.
+Ce dimanche après-midi, le temps s'annonce majoritairement ensoleillé sur la région, bien que quelques passages nuageux soient à prévoir. Le soleil dominera notamment à Gravelines, Offekerque et Racquinghem, où les températures atteindront respectivement 25°C et 26°C. Des nuages plus présents masqueront partiellement le soleil à Leffrinckoucke et Marck, avec des maximales de 27°C et 26°C. L'intérieur des terres, comme à Robecq et Remilly-Wirquin, connaîtra également un ciel partagé entre soleil et nuages, avec des températures agréables de 26°C et 25°C. Un vent faible, soufflant autour de 15 km/h, caractérisera l'ensemble de la région.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 6 septembre 2026)
 
 🌴 Dunkerque / Malo-les-Bains / Bray-Dunes
-☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 11°C le matin à 27°C l'après-midi.
+☀️ Installation d'un marais barométrique estival assurant un temps sec et lumineux sur la côte. Températures de 10°C le matin à 27°C l'après-midi.
 🌊 Température de l’eau : 18°C à 19°C
 
 🌴 Le Touquet / Berck / Baie de Somme
@@ -225,11 +231,11 @@ Ce dimanche après-midi, le ciel se montrera globalement dégagé sur la région
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Le ciel se couvre progressivement avec l’arrivée d’un front actif. Des pluies modérées à fortes sont attendues, avec des cumuls atteignant 14 mm à Lefaux. Le vent se renforce nettement, avec des rafales jusqu’à 50 km/h, et les températures maximales plafonnent entre 16°C et 20°C.
+▶ mardi 8 septembre : Le vent se renforce nettement avec des rafales atteignant 45 à 50 km/h sur le littoral. Le ciel alterne entre éclaircies et nuages, avec quelques averses éparses, notamment près des côtes où les cumuls peuvent atteindre 7 mm. Les températures maximales baissent, oscillant entre 17°C et 19°C.
 
-▶ mercredi 9 septembre : Le temps s’améliore avec une accalmie notable, bien que quelques nuages résiduels persistent. Les températures minimales chutent à 11°C à Leffrinckoucke et Remilly-Wirquin. Le vent reste soutenu, avec des rafales pouvant atteindre 55 km/h dans l’intérieur des terres.
+▶ mercredi 9 septembre : Le vent reste soutenu, avec des rafales encore proches de 50 km/h. Les nuages dominent, mais les précipitations restent faibles, voire nulles dans l'intérieur des terres. Les maximales plafonnent entre 17°C et 20°C, pour des minimales plus fraîches, autour de 11°C à 15°C.
 
-▶ jeudi 10 septembre : La matinée sera encore marquée par des passages nuageux, avec un risque d’averses éparses, notamment à Leffrinckoucke et Cauchy-à-la-Tour. L’après-midi se montre plus clément, avec des températures maximales oscillant entre 16°C et 19°C. Le vent faiblit sensiblement.
+▶ jeudi 10 septembre : Le vent faiblit (15 à 20 km/h) et le soleil fait son retour par endroits, bien que quelques nuages résiduels persistent. La journée s'annonce globalement sèche, avec des températures de saison : maximales de 18°C à 19°C, minimales de 11°C à 14°C.
 
 
 --------------------------------------------------------------------------------
@@ -241,10 +247,12 @@ Ce dimanche après-midi, le ciel se montrera globalement dégagé sur la région
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la région se réveille sous un ciel partagé entre éclaircies et quelques passages nuageux. Le soleil domine largement sur l'intérieur des terres, notamment à Troisvilles, Douai et Maubeuge. Sur le littoral et l'ouest, un ciel peu nuageux est attendu, avec de belles périodes ensoleillées, comme à Lille et Dunkerque. Les températures minimales s'établissent entre 10°C à Valenciennes et Lille, et 12°C à St-Hilaire-sur-Helpe et Dunkerque. Le vent soufflera faiblement, avec des brises de 10 à 15 km/h sur l'ensemble du territoire. Aucune précipitation n'est à prévoir pour cette première partie de journée.
+Ce dimanche matin, le ciel présente un aspect mitigé sur la région. Des éclaircies dominent sur l'intérieur des terres, notamment à Troisvilles, Maubeuge, Douai et Watten, où le soleil est bien présent. Sur le littoral, ainsi que du côté de St-Hilaire-sur-Helpe, Valenciennes, Lille, Roubaix, Steenvoorde et Dunkerque, le temps est plus nuageux avec un soleil masqué de moitié par des nuages. Aucune précipitation n'est à signaler. Les températures minimales s'établissent autour de 10°C à Valenciennes, Troisvilles et Watten, et atteignent 12°C à St-Hilaire-sur-Helpe et Maubeuge. Un vent léger souffle, ne dépassant pas les 15 km/h sur l'ensemble du territoire.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, le temps s'annonce majoritairement ensoleillé sur l'ensemble de la région. Le soleil dominera largement le ciel, notamment à Troisvilles, Maubeuge, Douai et Watten. Quelques rares nuages parsèmeront le ciel sans incidence sur l'ensoleillement, comme à St-Hilaire-sur-Helpe, Valenciennes, Lille, Roubaix, Steenvoorde et Dunkerque. Les températures maximales atteindront 27°C à Valenciennes et Douai, 26°C à Lille et Roubaix, et 25°C à Maubeuge et Steenvoorde. Le vent soufflera faiblement, avec des vitesses comprises entre 10 et 15 km/h, sans rafales notables. Aucune précipitation n'est à prévoir pour cette après-midi.
+Ce dimanche après-midi, le ciel de la région se présente sous un aspect majoritairement nuageux à très nuageux. Les éclaircies se feront rares et discrètes sur l'ensemble du territoire. Aucune précipitation n'est attendue, le temps restera sec.
+
+Les températures maximales afficheront des valeurs estivales, atteignant 27°C à Douai et Dunkerque, 26°C à Lille et Valenciennes, et 25°C à Maubeuge et Troisvilles. Le vent soufflera faiblement, avec des pointes n'excédant pas les 15 km/h, principalement d'ouest à nord-ouest, sans impact notable sur les ressentis. Le contraste thermique entre le littoral et l'intérieur des terres sera minime, les températures restant homogènes.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’OPALE & CÔTE PICARDE (dimanche 6 septembre 2026)
@@ -287,11 +295,11 @@ Ce dimanche après-midi, le temps s'annonce majoritairement ensoleillé sur l'en
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Le ciel se charge avec l’arrivée d’averses modérées, notamment sur le littoral et l’est. Les températures maximales chutent entre 17°C et 20°C, avec un vent de secteur ouest soufflant à 20-25 km/h et des rafales atteignant 45 à 50 km/h. Les précipitations totalisent 3 à 5 mm sur la plupart des stations.
+▶ mardi 8 septembre : Le ciel se charge durablement avec de nombreux passages nuageux. Des averses éparses sont possibles sur l’ensemble de la région. Les maximales chutent entre 18 et 20°C, sous un vent d’ouest modéré avec des rafales proches de 45 km/h.
 
-▶ mercredi 9 septembre : Le temps reste instable avec des averses résiduelles faibles, mais le vent se renforce encore. Les rafales atteignent 55 à 60 km/h sur les zones exposées, tandis que les maximales plafonnent entre 18°C et 20°C. Les précipitations deviennent plus éparses, avec moins de 1 mm attendu en général.
+▶ mercredi 9 septembre : Le temps redevient plus sec, même si des nuages résistent encore par moments. Quelques gouttes restent possibles par endroits. Les températures oscillent entre 18 et 20°C, avec un vent encore marqué en rafales.
 
-▶ jeudi 10 septembre : Un nouveau retour de la pluie est attendu, avec des cumuls plus importants, de 2 à 6 mm selon les secteurs. Le vent mollit nettement, revenant à 10-15 km/h, et les températures maximales se situent entre 15°C et 19°C. Le ciel reste très nuageux à couvert.
+▶ jeudi 10 septembre : Le temps s’apaise nettement avec un ciel alternant éclaircies et bancs de nuages. Les pluies s’estompent et le vent faiblit en cours de journée. Les maximales restent douces, autour de 18°C, pour des minimales proches de 10 à 13°C.
 
 
 --------------------------------------------------------------------------------
@@ -303,20 +311,20 @@ Ce dimanche après-midi, le temps s'annonce majoritairement ensoleillé sur l'en
 
 
 🌅 [2/6] COMMENTAIRE CARTE MATIN (summaryMorning) -> Carte J1 Matin :
-Ce dimanche matin, la Normandie se réveille sous un ciel partagé entre nuages et éclaircies. Les températures minimales s'établissent à 9°C à Rouen, 10°C à Lisieux et 11°C à Dieppe. Sur l'ensemble de la région, un vent léger souffle, généralement autour de 10 à 15 km/h, sans rafales significatives. Le littoral, de Cherbourg au Havre, connaît un ciel nuageux avec quelques éclaircies, tandis que l'intérieur des terres, notamment autour de Caen, Alençon et Lisieux, bénéficie d'un soleil plus généreux, seulement voilé par quelques nuages épars. Aucune précipitation n'est à signaler pour cette matinée.
+Ce dimanche matin, la Normandie se réveille sous un ciel partagé entre nuages et éclaircies. Les températures minimales affichent 9°C à Rouen et Lisieux, 13°C à Alençon et 15°C à Cherbourg. Sur l'ensemble de la région, le soleil se montre par intermittence, souvent voilé par des nuages. Des secteurs comme Caen, Dieppe, Lisieux et Alençon bénéficient d'un ciel peu nuageux, tandis que Rouen, Le Havre, Cherbourg et Évreux observent un ciel plus nuageux. Le vent souffle faiblement, avec des vitesses oscillant entre 10 et 15 km/h, sans rafales notables. Aucune précipitation n'est à signaler pour cette matinée.
 
 🌞 [3/6] COMMENTAIRE CARTE APRÈS-MIDI (summaryAfternoon) -> Carte J1 Après-midi :
-Ce dimanche après-midi, la Normandie connaîtra un temps partagé entre éclaircies et passages nuageux. Le ciel sera peu nuageux sur l'ouest de la région, notamment à Caen et Cherbourg, où le soleil dominera. En revanche, l'est, de Rouen à Évreux, verra un ciel plus chargé, avec des nuages parfois très présents. Aucune précipitation n'est attendue. Les températures maximales atteindront 30°C à Alençon et Lisieux, 29°C à Caen et Cherbourg, et 28°C à Rouen et Dieppe. Le vent soufflera faiblement, autour de 10 à 15 km/h, principalement de secteur ouest.
+Ce dimanche après-midi, la Normandie connaît un temps partagé entre soleil et passages nuageux. Les températures maximales atteignent 31°C à Lisieux, 29°C à Rouen et Alençon, et 27°C au Havre. Le ciel présente des phases de très nuageux sur Rouen, Le Havre et Évreux, tandis que Caen, Cherbourg, Alençon, Dieppe et Lisieux bénéficient d'un ciel peu nuageux, laissant apparaître le soleil. Aucune précipitation n'est à signaler sur l'ensemble de la région. Le vent souffle faiblement, autour de 10 à 15 km/h, sans rafales notables.
 
 🏖️ [4/6] MÉTÉO DES PLAGES (beach) -> Littoral J1 :
 🏖️ MÉTÉO DES PLAGES – CÔTE D’ALBÂTRE & MANCHE (dimanche 6 septembre 2026)
 
 🌴 Le Havre / Deauville / Cabourg
-☀️ Temps agréable ce dimanche. Températures sur les plages : 11°C à 30°C.
+☀️ Temps agréable ce dimanche. Températures sur les plages : 11°C à 31°C.
 🌊 Température de l’eau : 19°C à 20°C
 
 🌴 Dieppe / Fécamp / Cherbourg
-☀️ Belle luminosité ce dimanche, brise littorale rafraîchissante avec maximales de 30°C.
+☀️ Belle luminosité ce dimanche, brise littorale rafraîchissante avec maximales de 31°C.
 🌊 Température de l’eau : 19°C
 
 🌊 [5/6] MÉTÉO MARINE (marine) -> Bassin maritime :
@@ -325,7 +333,7 @@ Ce dimanche après-midi, la Normandie connaîtra un temps partagé entre éclair
 📍 Zones : Baie de Seine • Le Havre • Fécamp • Dieppe • Cherbourg
 
 ☀️ Situation générale : Installation d'un marais barométrique estival assurant un temps sec et lumineux.
-🌬️ Vent : Vent modéré de Nord-Est (15 km/h avec rafales atteignant 35 km/h) ce dimanche.
+🌬️ Vent : Vent modéré de Nord-Est (15 km/h) ce dimanche.
 🌊 État de la mer : Mer peu agitée (vagues 0.4m à 0.8m), idéale pour les activités nautiques.
 
 🏔️ [6/6] PHÉNOMÈNES MARQUANTS & MONTAGNE (recordsRaw / mountain) :
@@ -348,9 +356,11 @@ Ce dimanche après-midi, la Normandie connaîtra un temps partagé entre éclair
     Corse : Grand beau temps ensoleillé et très chaud sur les sommets comme sur le littoral pour cette journée du dimanche 6 septembre 2026.
 
 📉 TENDANCE PROCHAINS JOURS (forecastRaw) :
-▶ mardi 8 septembre : Le ciel se charge nettement avec des pluies modérées sur l’ensemble de la région, notamment au Havre (9 mm) et Cherbourg (près de 10 mm). Les températures maximales chutent à 20-21°C, et le vent se renforce avec des rafales jusqu’à 40 km/h sur le littoral.
+📉 Tendance – 3 jours suivants (mardi 8 septembre au jeudi 10 septembre)
 
-▶ mercredi 9 septembre : Temps très nuageux à couvert sur toute la Normandie. Quelques pluies faibles subsistent sur le littoral (Le Havre, Dieppe), mais ailleurs le temps reste sec. Le vent souffle encore fort, avec des rafales atteignant 45 km/h par endroits. Les maximales peinent à dépasser 20°C.
+▶ mardi 8 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 14°C. L'après-midi, le mercure grimpe jusqu'à 20°C sous abri. Attention aux rafales de vent atteignant 40 km/h.
 
-▶ jeudi 10 septembre : Nette amélioration sous un ciel variable, avec des éclaircies de plus en plus larges. Les précipitations sont quasi nulles. Le vent faiblit (15 km/h). Les températures restent stables, entre 18 et 20°C au meilleur de l’après-midi.
+▶ mercredi 9 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 10°C. L'après-midi, le mercure grimpe jusqu'à 20°C sous abri. Attention aux rafales de vent atteignant 50 km/h.
+
+▶ jeudi 10 septembre : Temps calme, sec et largement lumineux. Au lever du jour, les températures minimales oscillent autour de 10°C. L'après-midi, le mercure grimpe jusqu'à 20°C sous abri. Le vent souffle de manière modérée.
 
