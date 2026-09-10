@@ -59,11 +59,13 @@ jobs:
           python meteo_cnews_2/generate_meteofrance_maps.py --zone ${{ matrix.group }} --days 5 --orientation portrait --patrick --temp-highlight
           python meteo_cnews_2/generate_video_bulletin.py --zone ${{ matrix.group }} --days 5 --orientation portrait --patrick --skip-maps
 
-      - name: Téléverser les vidéos générées pour ce groupe
+      - name: Téléverser les vidéos et cartes générées pour ce groupe
         uses: actions/upload-artifact@v4
         with:
           name: video-${{ matrix.group }}
-          path: cartes_alertes/bulletin_${{ matrix.group }}_*.mp4
+          path: |
+            cartes_alertes/bulletin_${{ matrix.group }}_*.mp4
+            cartes_alertes/*.jpg
           retention-days: 1
 
   # ÉTAPE 2 : Rassemblement, auto-vérification, création du ZIP et envoi
