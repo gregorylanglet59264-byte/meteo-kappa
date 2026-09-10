@@ -147,7 +147,7 @@ def main():
     tomorrow = datetime.date.today() + datetime.timedelta(days=1)
     date_suffix = tomorrow.strftime("%Y_%m_%d")
 
-    print("\n=== ÉTAPE 2 : Compression ZIP des vidéos ===")
+    print("\n=== ÉTAPE 2 : Compression ZIP des vidéos et des cartes JPG ===")
     zip_name = f"bulletins_cnews_patrick_{date_suffix}.zip"
     zip_path = os.path.join(cartes_dir, zip_name)
     
@@ -179,23 +179,33 @@ def main():
                 v_path = os.path.join(cartes_dir, v_file)
                 if os.path.exists(v_path):
                     zipf.write(v_path, arcname=v_file)
-                    print(f"  -> Ajouté au ZIP : {v_file}")
+                    print(f"  -> Vidéo ajoutée au ZIP : {v_file}")
                 else:
                     print(f"  -> Avertissement : fichier {v_file} introuvable à {v_path}")
+
+            # Ajouter TOUTES les cartes images (.jpg) dans le dossier cartes/ du ZIP
+            if os.path.exists(cartes_dir):
+                carte_count = 0
+                for f in sorted(os.listdir(cartes_dir)):
+                    if f.lower().endswith(".jpg") or f.lower().endswith(".png"):
+                        c_path = os.path.join(cartes_dir, f)
+                        zipf.write(c_path, arcname=f"cartes/{f}")
+                        carte_count += 1
+                print(f"  -> {carte_count} cartes météo ajoutées au dossier cartes/ du ZIP.")
         print("Archive ZIP créée avec succès.")
     except Exception as e:
         print(f"Erreur lors de la compression ZIP : {e}")
         sys.exit(1)
         
     # Génération du lien de téléchargement (GitHub Releases)
-    download_url = f"https://github.com/gregorylanglet59264-byte/meteo-kappa/releases/download/bulletins-patrick-latest/{zip_name}"
+    download_url = f"https://github.com/sys-auto928178/meteo-kappa/releases/download/bulletins-patrick-latest/{zip_name}"
     
     # Corps HTML de l'e-mail avec style épuré et bouton/lien masqué
     email_body = (
         f"<html><body style='font-family: \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif; font-size: 15px; color: #333; line-height: 1.6;'>"
         f"Bonjour,<br><br>"
-        f"Veuillez trouver ci-joint vos bulletins vidéo, veuillez cliquer sur le lien ci-dessous.<br><br>"
-        f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger vos fichiers</a><br><br>"
+        f"Veuillez trouver ci-joint vos bulletins vidéo ainsi que toutes les cartes météo associées, veuillez cliquer sur le lien ci-dessous.<br><br>"
+        f"👉 <a href='{download_url}' style='color: #1a73e8; font-weight: bold; text-decoration: underline;'>Cliquer sur le lien pour télécharger votre pack (vidéos + cartes)</a><br><br>"
         f"Cordialement,<br>"
         f"L'automatisation Météo CNews"
         f"</body></html>"
