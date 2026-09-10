@@ -296,24 +296,44 @@ def main():
     tomorrow = datetime.date.today() + datetime.timedelta(days=1)
     date_suffix = tomorrow.strftime("%Y_%m_%d")
 
-    print("\n=== ÉTAPE 2 : Compression ZIP des 4 vidéos ===")
+    print("\n=== ÉTAPE 2 : Compression ZIP des 4 vidéos + cartes JPG ===")
     zip_name = f"bulletins_cnews_patrick_{date_suffix}.zip"
     zip_path = os.path.join(cartes_dir, zip_name)
-    
+
     video_files = [
         f"bulletin_france_pictos_patrick_landscape_{date_suffix}.mp4",
         f"bulletin_france_pictos_patrick_portrait_{date_suffix}.mp4",
         f"bulletin_hdf_patrick_landscape_{date_suffix}.mp4",
         f"bulletin_hdf_patrick_portrait_{date_suffix}.mp4"
     ]
-    
+
+    # Cartes JPG France + HDF (J1 à J5, éphéméride, forêts, vigilance)
+    # france_pictos : nommage SANS préfixe de zone (carte_J1_matin.jpg)
+    # hdf : nommage AVEC préfixe de zone (carte_hdf_J1_matin.jpg)
+    jours = [f"J{i}" for i in range(1, 6)]
+    periodes = ["matin", "apresmidi"]
+    carte_files = []
+    # France (sans préfixe zone)
+    for jour in jours:
+        for periode in periodes:
+            carte_files.append((f"carte_{jour}_{periode}.jpg", f"cartes/france/{jour}_{periode}.jpg"))
+    carte_files.append(("carte_france_pictos_ephemeride.jpg", "cartes/france/ephemeride.jpg"))
+    carte_files.append(("carte_forets_france_pictos.jpg",     "cartes/france/forets.jpg"))
+    carte_files.append(("carte_vigilance_france_pictos.jpg",  "cartes/france/vigilance.jpg"))
+    # HDF (avec préfixe zone)
+    for jour in jours:
+        for periode in periodes:
+            carte_files.append((f"carte_hdf_{jour}_{periode}.jpg", f"cartes/hdf/{jour}_{periode}.jpg"))
+    carte_files.append(("carte_hdf_ephemeride.jpg", "cartes/hdf/ephemeride.jpg"))
+    carte_files.append(("carte_forets_hdf.jpg",     "cartes/hdf/forets.jpg"))
+    carte_files.append(("carte_vigilance_hdf.jpg",  "cartes/hdf/vigilance.jpg"))
+
     import zipfile
     print(f"Création de l'archive {zip_path}...")
     try:
-        # Supprimer l'ancien ZIP s'il existe
         if os.path.exists(zip_path):
             os.remove(zip_path)
-            
+
         with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zipf:
             for v_file in video_files:
                 v_path = os.path.join(cartes_dir, v_file)
@@ -322,6 +342,11 @@ def main():
                     print(f"  -> Ajouté au ZIP : {v_file}")
                 else:
                     print(f"  -> Avertissement : fichier {v_file} introuvable à {v_path}")
+            for c_file, c_arcname in carte_files:
+                c_path = os.path.join(cartes_dir, c_file)
+                if os.path.exists(c_path):
+                    zipf.write(c_path, arcname=c_arcname)
+                    print(f"  -> Ajouté au ZIP : {c_arcname}")
         print("Archive ZIP créée avec succès.")
     except Exception as e:
         print(f"Erreur lors de la compression ZIP : {e}")
